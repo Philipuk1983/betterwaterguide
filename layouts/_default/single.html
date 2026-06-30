@@ -20,7 +20,7 @@
     {{ end }}>
     <header data-module="article-header" class="article-header">
     {{ if and $affiliateAllowed .Site.Params.amazonTag $hasPrimaryProduct }}
-    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored Audible offer">
+    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offer">
         {{- partial "audible-sponsored.html" . -}}
     </div>
     {{ end }}
