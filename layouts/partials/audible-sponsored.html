@@ -1,15 +1,16 @@
-{{ $heading := .Site.Params.sponsoredPanelHeading }}
-{{ $body := .Site.Params.sponsoredPanelBody }}
-{{ $cta := .Site.Params.sponsoredPanelCta }}
-{{ $url := .Site.Params.sponsoredPanelUrl }}
-{{ $aria := .Site.Params.sponsoredPanelAria }}
-{{ $image := .Site.Params.sponsoredPanelImage }}
-{{ $alt := .Site.Params.sponsoredPanelAlt }}
-<aside class="audible-sponsored-panel" aria-label="{{ $aria }}">
+{{ $amazonTag := .Site.Params.amazonTag | default "" }}
+{{ $heading := .Site.Params.audiblePanelHeading | default "Listen while you plan your next project" }}
+{{ $body := .Site.Params.audiblePanelBody | default "Try <strong>Audible</strong> through Amazon while you work through practical buying decisions, chores, or weekend projects." }}
+{{ $alt := .Site.Params.audiblePanelAlt | default (printf "%s Audible listening scene" (.Site.Title | default "Sponsored")) }}
+{{ if $amazonTag }}
+{{ $audibleImage := "" }}
+{{ if fileExists "static/images/audible-sidebar.png" }}{{ $audibleImage = "images/audible-sidebar.png" }}{{ end }}
+<aside class="audible-sponsored-panel" aria-label="Sponsored Audible offer">
     <div class="audible-sponsored-panel__badge">Sponsored</div>
     <h3>{{ $heading }}</h3>
     <p>{{ $body | safeHTML }}</p>
-    <a href="{{ $url | safeURL }}" rel="sponsored nofollow">{{ $cta }}</a>
-    {{ with $image }}<img class="audible-sponsored-panel__image" src="{{ . | relURL }}" alt="{{ $alt }}" width="280" height="120" loading="lazy" decoding="async">{{ end }}
+    <a href="{{ printf "https://www.amazon.com/hz/audible/mlp?tag=%s" $amazonTag | safeURL }}" rel="sponsored nofollow">Try Audible Now</a>
+    {{ with $audibleImage }}<img class="audible-sponsored-panel__image" src="{{ . | relURL }}" alt="{{ $alt }}" width="280" height="120" loading="lazy" decoding="async">{{ end }}
     <p class="audible-sponsored-panel__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
 </aside>
+{{ end }}
