@@ -1,4 +1,4 @@
 ---
 title: "Guides"
-description: "Practical guides, explainers, setup advice, maintenance help, and decision support."
+description: "Step-by-step help for selecting water filtration, understanding filter types, choosing replacement cartridges, and using water test kits thoughtfully."
 ---

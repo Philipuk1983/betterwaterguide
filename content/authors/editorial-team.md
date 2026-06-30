@@ -1,6 +1,6 @@
 ---
-title: "Better Water Guide Editorial Team — Author Profile"
-description: "Editorial guidance for home water quality reviews: under-sink, whole-house, RO, hard water, chlorine taste, filter replacement, and testing basics."
+title: "Better Water Guide Editorial Team Author Profile"
+description: "Meet the Better Water Guide team: practical reviews for under-sink filters, whole-house systems, RO, and filter replacement planning."
 slug: "editorial-team"
 url: "/authors/editorial-team/"
 toc: false
@@ -8,14 +8,16 @@ draft: false
 robots: index,follow
 ---
 
-At Better Water Guide, our editorial team reviews home water filtration options with the same mindset we bring to kitchen gear: practical, readable, and ready for real-world use.
+At Better Water Guide, our editorial team covers home water quality and water filtration choices that fit real kitchen routines—under-sink systems, reverse osmosis, whole-house filtration, and shower and countertop options.
 
-We cover under-sink filters, reverse osmosis (RO) systems, whole-house filtration, hard water and limescale support, chlorine taste reduction, shower filters, and water filter replacement schedules.
+We focus on the problems readers actually notice: chlorine taste, sediment, hard-water buildup, and the day-to-day upkeep that keeps filtered tap water tasting fresh. You’ll also find guidance on water test kit basics and how to plan filter cartridge replacements without guesswork.
 
-Our evaluations focus on what matters at the faucet—filter types like carbon and sediment stages, cartridge upkeep, fit and installation considerations, performance for everyday drinking needs, and whether the system is easy to maintain.
+Our product evaluation stays grounded: we compare performance-focused features (like filtration stages, flow rate, and capacity), review manufacturer maintenance requirements, and weigh how installation and cartridge replacement work in typical households.
 
-We also guide buyers through water testing and water test kit basics, so you can match a solution to your home’s water situation instead of guessing. You’ll find straightforward “what to buy” recommendations grounded in spec sheets, manufacturer guidance, and our kitchen-counter approach to clarity.
+We organize recommendations with buyer-friendly decision cards—so you can match the system to your water situation (city or well), plumbing setup, and usage level.
 
-- What we review: under-sink, RO, whole-house, shower, well water filters, and water softener support
-- How we evaluate: cartridge/maintenance practicality, filter stages, installation fit, and everyday water-quality priorities
-- What readers can expect: clear buying help, replacement reminders, and realistic expectations for filtered tap water
+Expect clear pros/cons, practical setup and maintenance notes, and “what to buy” guidance for cleaners, better-tasting drinking water at home.
+
+- What we cover: under-sink filters, RO water systems, whole-house water filters, hard water solutions, shower filters, and replacement cartridges
+- How we evaluate: feature comparisons, real-world maintenance needs, and fit for common home setups
+- What you can expect: straightforward guidance for cleaner, better-tasting filtered tap water—without hype

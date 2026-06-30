@@ -1,4 +1,4 @@
 ---
 title: "Best Picks"
-description: "Our top picks for the best home water filtration products you can buy in the United States."
+description: "Quick, kitchen-friendly recommendations across common filtration needs like under-sink drinking water, RO systems, whole-house filtration, and shower filters."
 ---

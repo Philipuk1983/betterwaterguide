@@ -11,7 +11,7 @@
     {{ $bestPages := slice }}{{ if .Site.Params.showBestSection }}{{ $bestPages = where .Site.RegularPages "Section" "best" }}{{ end }}
     {{ if $bestPages }}
     <section class="home-section">
-        <h2>Best Picks</h2>
+        <h2>Best Picks for cleaner, better-tasting water</h2>
         <div class="article-grid">
             {{ range first 4 ($bestPages.ByDate.Reverse) }}
             <article class="article-card">
@@ -20,13 +20,13 @@
             </article>
             {{ end }}
         </div>
-        <a href="/best/" class="see-all">{{ .Site.Params.homeBestCta | default "See all recommendations ->" }}</a>
+        <a href="/best/" class="see-all">Shop the right filter type</a>
     </section>
     {{ end }}
     {{ $reviewPages := slice }}{{ if .Site.Params.showReviewsSection }}{{ $reviewPages = where .Site.RegularPages "Section" "reviews" }}{{ end }}
     {{ if $reviewPages }}
     <section class="home-section">
-        <h2>Latest Reviews</h2>
+        <h2>Reviews built for everyday homeowners</h2>
         <div class="article-grid">
             {{ range first 6 ($reviewPages.ByDate.Reverse) }}
             <article class="article-card">
@@ -35,13 +35,13 @@
             </article>
             {{ end }}
         </div>
-        <a href="/reviews/" class="see-all">{{ .Site.Params.homeReviewsCta | default "See all reviews ->" }}</a>
+        <a href="/reviews/" class="see-all">Read the fit and upkeep notes</a>
     </section>
     {{ end }}
     {{ $vsPages := slice }}{{ if .Site.Params.showComparisonSection }}{{ $vsPages = where .Site.RegularPages "Section" "vs" }}{{ end }}
     {{ if $vsPages }}
     <section class="home-section">
-        <h2>{{ .Site.Params.homeVsHeading | default "Comparisons" }}</h2>
+        <h2>Compare filters before you commit</h2>
         <div class="article-grid">
             {{ range first 4 ($vsPages.ByDate.Reverse) }}
             <article class="article-card">
@@ -50,13 +50,13 @@
             </article>
             {{ end }}
         </div>
-        <a href="/vs/" class="see-all">{{ .Site.Params.homeVsCta | default "See all comparisons ->" }}</a>
+        <a href="/vs/" class="see-all">See what matches your water concern</a>
     </section>
     {{ end }}
     {{ $guidePages := slice }}{{ if .Site.Params.showGuidesSection }}{{ $guidePages = where .Site.RegularPages "Section" "guides" }}{{ end }}
     {{ if $guidePages }}
     <section class="home-section">
-        <h2>{{ .Site.Params.homeGuidesHeading | default (.Site.Params.guideSectionLabel | default "Guides") }}</h2>
+        <h2>Guides for testing, maintenance, and replacement</h2>
         <div class="article-grid">
             {{ range first 4 ($guidePages.ByDate.Reverse) }}
             <article class="article-card">
@@ -65,7 +65,7 @@
             </article>
             {{ end }}
         </div>
-        <a href="/guides/" class="see-all">{{ .Site.Params.homeGuidesCta | default "See all guides ->" }}</a>
+        <a href="/guides/" class="see-all">Get practical buying help</a>
     </section>
     {{ end }}
 

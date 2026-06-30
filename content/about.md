@@ -1,27 +1,29 @@
 ---
 title: "About Better Water Guide"
-description: "Learn about Better Water Guide and how we research and review products."
+description: "A practical water filtration review site for U.S. shoppers who want cleaner-tasting water and straightforward cartridge and system recommendations."
 date: 2026-06-30
 toc: false
 ---
 
-## Who We Are
+## Who We Help
+Better Water Guide is for people managing everyday water concerns at home, from chlorine taste to limescale buildup, and from under-sink drinking water to whole-home filtration. If you are researching reverse osmosis, want help choosing between filter types, or need a sensible plan for maintenance and replacement cartridges, you are in the right place.
 
-Better Water Guide is an independent product review site focused on home water filtration, water filter, under sink water filter, whole house water filter, reverse osmosis system, hard water filter, water filter pitcher, water test kit, chlorine water filter, drinking water filter, water filter replacement, well water filter, sediment filter, carbon water filter, water softener, filtered tap water, kitchen water filter, shower water filter, limescale filter, ro water system, water filtration guide, best water filter, home water quality, filter cartridges, and clean drinking water for U.S. shoppers. We research specifications, analyze real user feedback, and compare products so you can make confident buying decisions.
+## What We Cover
+We focus on common home water filtration categories, including:
+- Under-sink drinking water filters and replacement cartridges
+- Whole-house filtration and sediment or carbon media options
+- Reverse osmosis (RO) systems and related components
+- Hard water filters and scale-reduction approaches
+- Water test kits and what to do with results
+- Shower filtration and cartridge upkeep
 
-## How We Review Products
+## How Recommendations Are Built
+We do not claim to run in-home testing here. Instead, we compile the information shoppers actually need: manufacturer specifications, compatible part details, and widely reported user feedback patterns (including common complaints such as fit, flow rate expectations, filter change frequency, and cartridge availability).
 
-Every product we cover goes through the same process:
+For each category, we aim to translate specs into buying clarity: what the filter is designed to reduce, what installation and maintenance typically look like, and which use case each option fits best.
 
-1. **Specification analysis** - We compare official specs across competing products, focusing on the numbers that actually affect daily use.
-2. **User feedback research** - We analyze buyer feedback across major U.S. retailers, identifying repeated praise and recurring complaints.
-3. **Comparison context** - Every review places the product against direct competitors so you can see how it stacks up.
-4. **Honest assessment** - We highlight genuine strengths and real limitations. No product is perfect, and we do not pretend otherwise.
+## How Affiliate Links Work
+This site is monetized through affiliate relationships with retailers and manufacturers. When you click an affiliate link and purchase, Better Water Guide may earn a commission at no extra cost to you. Affiliate involvement does not change our editorial stance, but it helps support the ongoing maintenance of our content.
 
-## Editorial Independence
-
-We are not paid by any brand to feature products or change our conclusions. Recommendations are based on research, product context, and reader usefulness. Promotional offers and sponsored modules are not part of the About page.
-
-## Contact
-
-Questions or suggestions? Email us at hello@betterwaterguide.com
+## What You Can Expect
+You can expect clear, kitchen- and household-focused recommendations that prioritize everyday fit over hype: what to buy, why it fits, what to watch for, and how to keep it running. If you are ready to compare options quickly or want a step-by-step guide, start with the sections on the homepage.

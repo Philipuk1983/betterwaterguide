@@ -1,7 +1,7 @@
 {
   "name": "Better Water Guide",
   "domain": "betterwaterguide.com",
-  "description": "A household water quality site for people who want cleaner, better-tasting water at home, covering under-sink filters, whole-house filtration, reverse osmosis, hard water, chlorine taste, filter replacement, water testing, shower filters, and cartridge maintenance.",
+  "description": "Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.",
   "contactEmail": "hello@betterwaterguide.com",
   "niche": "home water filtration,water filter,under sink water filter,whole house water filter,reverse osmosis system,hard water filter,water filter pitcher,water test kit,chlorine water filter,drinking water filter,water filter replacement,well water filter,sediment filter,carbon water filter,water softener,filtered tap water,kitchen water filter,shower water filter,limescale filter,ro water system,water filtration guide,best water filter,home water quality,filter cartridges,clean drinking water",
   "targetAudience": null,
@@ -11,8 +11,8 @@
   "author": {
     "name": "Better Water Guide Editorial Team",
     "slug": "editorial-team",
-    "role": "Home Water Filtration \u0026 Water Quality Review Editors",
-    "bio": "We help home cooks and households choose practical water filtration solutions, from under-sink RO to shower and whole-house systems, with clear maintenance guidance."
+    "role": "Home water filtration \u0026 water quality review team",
+    "bio": "We help homeowners choose home water filtration gear with practical guidance on chlorine taste, hard water, and filter maintenance\u2014built for everyday kitchens."
   },
   "infographics": {
     "enabled": false,
@@ -93,5 +93,5 @@
       }
     }
   },
-  "generated": "2026-06-30T09:28:44.0251501Z"
+  "generated": "2026-06-30T09:29:43.1690927Z"
 }
