@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="section-listing error-shell">
+    <h1>Page Not Found</h1>
+    <p class="section-description">That page may have moved, been removed, or never existed.</p>
+    <div class="article-summary">
+        <p>Try one of these next steps:</p>
+        <p>
+            {{ if eq .Site.Params.siteType "product_answer_index" }}
+            {{ if .Site.Params.showBestSection }}<a href="/best/">browse best-for answers</a>{{ end }}
+            {{ if .Site.Params.showFixSection }}{{ if .Site.Params.showBestSection }}, {{ end }}<a href="/fix/">open fixes</a>{{ end }}
+            {{ if .Site.Params.showCompareSection }}{{ if or .Site.Params.showBestSection .Site.Params.showFixSection }}, {{ end }}<a href="/compare/">compare options</a>{{ end }}
+            {{ if .Site.Params.showSizeSection }}{{ if or .Site.Params.showBestSection .Site.Params.showFixSection .Site.Params.showCompareSection }}, {{ end }}<a href="/size/">check size and fit</a>{{ end }}
+            {{ else }}
+            {{ if .Site.Params.showBestSection }}<a href="/best/">Browse best picks</a>{{ end }}
+            {{ if .Site.Params.showReviewsSection }}{{ if .Site.Params.showBestSection }}, {{ end }}<a href="/reviews/">read the latest reviews</a>{{ end }}
+            {{ if .Site.Params.showComparisonSection }}{{ if or .Site.Params.showBestSection .Site.Params.showReviewsSection }}, {{ end }}<a href="/vs/">open comparisons</a>{{ end }}
+            {{ if .Site.Params.showGuidesSection }}{{ if or .Site.Params.showBestSection .Site.Params.showReviewsSection .Site.Params.showComparisonSection }}, {{ end }}<a href="/guides/">jump into guides</a>{{ end }}
+            {{ end }}
+        </p>
+    </div>
+</section>
+{{ end }}

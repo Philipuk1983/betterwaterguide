@@ -1,0 +1,27 @@
+{{ $amazonTag := .Site.Params.amazonTag | default "" }}
+{{ $products := .Params.products | default slice }}
+{{ $rawContent := .RawContent | default "" }}
+{{ $hasAmazonContentLink := or (in $rawContent "https://www.amazon.com") (in $rawContent "https://amazon.com") (in $rawContent "http://www.amazon.com") (in $rawContent "http://amazon.com") (in $rawContent "https://amzn.to") (in $rawContent "http://amzn.to") }}
+{{ $hasAmazonProductLink := false }}
+{{ range $products }}
+    {{ if or (index . "amazon_url") .asin }}{{ $hasAmazonProductLink = true }}{{ end }}
+{{ end }}
+{{ if and $amazonTag (not $hasAmazonContentLink) (not $hasAmazonProductLink) }}
+{{ $inlineHeading := .Site.Params.audibleInlineHeading | default "" }}
+{{ if not $inlineHeading }}{{ $inlineHeading = "Try audiobooks anytime" }}{{ end }}
+{{ $inlineBody := .Site.Params.audibleInlineBody | default "" }}
+{{ if not $inlineBody }}{{ $inlineBody = "Try <strong>Audible</strong> through Amazon and listen to audiobooks while relaxing, traveling, walking, or taking a break." }}{{ end }}
+<aside class="audible-inline-sponsored" aria-label="Sponsored Audible offer">
+    <div class="audible-inline-sponsored__inner">
+        <div class="audible-inline-sponsored__copy">
+            <div class="audible-inline-sponsored__badge">Sponsored</div>
+            <h3>{{ $inlineHeading }}</h3>
+            <p>{{ $inlineBody | safeHTML }}</p>
+        </div>
+        <div class="audible-inline-sponsored__action">
+            <a href="{{ printf "https://www.amazon.com/hz/audible/mlp?tag=%s" $amazonTag | safeURL }}" rel="sponsored nofollow">Try Audible Now</a>
+        </div>
+    </div>
+    <p class="audible-inline-sponsored__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+{{ end }}

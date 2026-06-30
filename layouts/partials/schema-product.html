@@ -1,0 +1,8 @@
+{{ $items := slice }}
+{{ range $index, $product := (.Params.products | default slice) }}
+  {{ $item := dict "@type" "ListItem" "position" (add $index 1) "name" $product.name }}
+  {{ with (index $product "amazon_url") }}{{ $item = merge $item (dict "url" .) }}{{ end }}
+  {{ $items = $items | append $item }}
+{{ end }}
+{{ $schema := dict "@context" "https://schema.org" "@type" "ItemList" "name" .Title "url" .Permalink "numberOfItems" (len $items) "itemListOrder" "https://schema.org/ItemListOrderAscending" "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) "itemListElement" $items }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

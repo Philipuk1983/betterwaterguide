@@ -1,0 +1,125 @@
+baseURL = "https://betterwaterguide.com/"
+title = "Better Water Guide"
+languageCode = "en-us"
+enableRobotsTXT = true
+
+[build]
+  writeStats = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[params]
+  description = "A household water quality site for people who want cleaner, better-tasting water at home, covering under-sink filters, whole-house filtration, reverse osmosis, hard water, chlorine taste, filter replacement, water testing, shower filters, and cartridge maintenance."
+  amazonTag = "betterwaterguide-20"
+  monetizationMode = "hybrid"
+  siteType = "standard"
+  primaryGeo = "US"
+  themeVariant = "kitchen"
+  seeAlsoMinArticles = 8
+  indexNowKey = "e461ccc126aa4e5a82b7ecfa24944ccd"
+  bingVerification = "F47EA7444EF95B629D2B0B8FB5B6850A"
+  contactEmail = "hello@betterwaterguide.com"
+  targetAudience = ""
+  primaryColor = "#9a3412"
+  secondaryColor = "#431407"
+  accentColor = "#16a34a"
+  backgroundColor = "#fffaf2"
+  textColor = "#2f241f"
+  headingFont = "Merriweather"
+  bodyFont = "Libre Franklin"
+  layout = "full-width"
+  headerStyle = "logo-left"
+  showTableOfContents = true
+  showBestSection = true
+  showReviewsSection = true
+  showComparisonSection = true
+  showGuidesSection = true
+  showToolsSection = false
+  showFixSection = false
+  showCompareSection = false
+  showSizeSection = false
+  showCareSection = false
+  showReplaceSection = false
+  showAvoidSection = false
+  showGuideSection = false
+  showHubSection = false
+  topicFamily = "general"
+  guideSectionLabel = "Guides"
+  articleBriefLabel = "U.S. guide brief"
+  siteKicker = "Better Water, Right at Home"
+  articleKicker = "Practical help for cleaner, better-tasting water"
+  sectionKicker = "Find the right filter and keep it running right"
+  footerLabel = "Better Water Guide"
+  footerBlurb = "Home water quality tips and shopping guidance for under-sink, whole-house, RO, hard water, chlorine taste, and filter replacement."
+  heroEyebrow = "Kitchen-counter useful water advice"
+  audiblePanelHeading = "Listen while you travel, pack, or unwind"
+  audiblePanelBody = "Try <strong>Audible</strong> through Amazon and listen to audiobooks while you pack, travel, walk, cook, or take a break."
+  audiblePanelAlt = "Better Water Guide Audible audiobook listening scene"
+  signalChip1 = "Under-sink filters"
+  signalChip2 = "Whole-house filtration"
+  signalChip3 = "RO and hard water"
+  homeBestHeading = "The best home water filtration picks, matched to your needs"
+  homeBestCta = "Compare filters by problem"
+  homeReviewsHeading = "Buying help with real-world focus"
+  homeReviewsCta = "See our top recommendations"
+  homeVsHeading = "Under-sink vs whole-house vs RO"
+  homeVsCta = "Find your best match"
+  homeGuidesHeading = "Water test and replacement guides"
+  homeGuidesCta = "Use our troubleshooting checklists"
+  homeDepthKicker = "Kitchen-ready clarity"
+  homeDepthHeading = "Understand chlorine taste, sediment, and hard water the easy way"
+  homeDepthBody = "Get clear explanations on filter types, cartridge maintenance, shower filters, and how to choose the right setup for filtered tap water at every sink."
+  homeBestRoute = "/best-water-filter/"
+  homeReviewRoute = "/reviews/"
+  homeCompareRoute = "/compare-water-filters/"
+  homeGuideRoute = "/water-testing-and-replacement/"
+  homeMethodKicker = "Our method"
+  homeMethodHeading = "Pick based on your water, then maintain for lasting results"
+  homeMethodOneTitle = "Test and identify the issue"
+  homeMethodOneBody = "Start with water test kit basics for chlorine taste, sediment, and limescale clues so you buy the right filtration."
+  homeMethodTwoTitle = "Choose the right system"
+  homeMethodTwoBody = "Match your setup to your goals with options like carbon filters, well water filters, water softeners, and RO water system guidance."
+  homeMethodThreeTitle = "Replace cartridges on schedule"
+  homeMethodThreeBody = "Keep performance steady with simple filter replacement timelines and cartridge maintenance tips you can follow at home."
+  homeLatestKicker = "Latest from the Guide"
+  homeLatestHeading = "Latest updates on filters, testing, and replacement tips"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[related]
+  includeNewer = true
+  threshold = 30
+  toLower = false
+
+  [[related.indices]]
+    name = "keywords"
+    weight = 100
+
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+  [[related.indices]]
+    name = "category"
+    weight = 60
+
+  [[related.indices]]
+    name = "type"
+    weight = 40
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "feed"
+
+[outputs]
+  home = ["HTML", "RSS"]

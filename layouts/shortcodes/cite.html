@@ -1,0 +1,8 @@
+{{ $id := .Get "id" }}
+{{ $citation := dict }}
+{{ range .Page.Params.citations }}
+    {{ if eq (index . "id") $id }}{{ $citation = . }}{{ end }}
+{{ end }}
+{{ with $citation }}
+    <a href="{{ index . "url" }}" rel="nofollow noopener noreferrer" target="_blank" class="citation-link" title="{{ index . "title" }}">Source</a>
+{{ end }}

@@ -1,0 +1,35 @@
+{{ $product := .product | default . }}
+{{ $site := .site | default $.Site }}
+{{ $extraClass := .class | default "" }}
+<div class="affiliate-cta{{ if $extraClass }} {{ $extraClass }}{{ end }}">
+    <div>
+        <strong>{{ $product.name }}</strong>        {{ with index $product "buyer_note" }}<p class="affiliate-cta__verdict">{{ . }}</p>{{ end }}
+        {{ with index $product "fit_widget" }}
+        {{ $widget := . }}
+        <div class="affiliate-cta__fit">
+            {{ with index $widget "kicker" }}<p class="affiliate-cta__fit-kicker">{{ . }}</p>{{ end }}
+            {{ with index $widget "headline" }}<p class="affiliate-cta__headline">{{ . }}</p>{{ end }}
+            {{ with index $widget "verdict" }}<p class="affiliate-cta__verdict">{{ . }}</p>{{ end }}
+            <div class="affiliate-cta__fit-grid">
+                {{ with index $widget "best_for" }}<div><span>Best for</span><ul>{{ range first 2 . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
+                {{ with index $widget "skip_if" }}<div><span>Skip if</span><ul>{{ range first 2 . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
+                {{ with index $widget "before_you_buy" }}<div><span>Check first</span><ul>{{ range first 2 . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
+            </div>
+            <div class="affiliate-cta__meta">
+                {{ with index $widget "price_band" }}<span>Price band: {{ . }}</span>{{ end }}
+                {{ with index $widget "availability_status" }}<span>Status: {{ . }}</span>{{ end }}
+                {{ with index $widget "confidence_label" }}<span>Intel: {{ . }}</span>{{ end }}
+                {{ with index $widget "last_checked" }}<span>Checked: {{ . }}</span>{{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    {{ $amazonUrl := index $product "amazon_url" }}
+    {{ if and (not $amazonUrl) $product.asin }}{{ $amazonUrl = printf "https://www.amazon.com/dp/%s?tag=%s" $product.asin $site.Params.amazonTag }}{{ end }}
+    {{ with $amazonUrl }}
+    <div class="affiliate-cta__action">
+        <a href="{{ . }}" rel="nofollow sponsored noopener" target="_blank" class="button-link amazon-button">Check price on Amazon</a>
+        <p class="affiliate-note"><em>As an Amazon Associate, we may earn from qualifying purchases.</em></p>
+    </div>
+    {{ end }}
+</div>

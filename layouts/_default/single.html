@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{ $affiliateAllowed := true }}
+{{ with .File }}{{ if eq .BaseFileName "about" }}{{ $affiliateAllowed = false }}{{ end }}{{ end }}
+{{ $products := .Params.products | default slice }}
+{{ $hasPrimaryProduct := gt (len $products) 0 }}
+{{ $singleProductPage := eq (len $products) 1 }}
+{{ $roundupPage := eq .Type "best_of" }}
+{{ $primaryProduct := dict }}
+{{ $primaryAmazonUrl := "" }}
+{{ if $hasPrimaryProduct }}
+    {{ $primaryProduct = index $products 0 }}
+    {{ $primaryAmazonUrl = index $primaryProduct "amazon_url" }}
+    {{ if and (not $primaryAmazonUrl) $primaryProduct.asin }}{{ $primaryAmazonUrl = printf "https://www.amazon.com/dp/%s?tag=%s" $primaryProduct.asin .Site.Params.amazonTag }}{{ end }}
+{{ end }}
+<article data-module="article-shell" data-module-role="article" class="article-shell clean-shell{{ if $roundupPage }} article-shell--roundup{{ end }}" itemscope itemtype="https://schema.org/Article"
+    data-content-type="{{ .Type }}"
+    {{ if and $affiliateAllowed $singleProductPage $primaryAmazonUrl }}
+    data-primary-product-name="{{ index $primaryProduct "name" }}"
+    data-primary-product-url="{{ $primaryAmazonUrl }}"
+    {{ end }}>
+    <header data-module="article-header" class="article-header">
+    {{ if and $affiliateAllowed .Site.Params.amazonTag $hasPrimaryProduct }}
+    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored Audible offer">
+        {{- partial "audible-sponsored.html" . -}}
+    </div>
+    {{ end }}
+        <h1 itemprop="headline">{{ .Title }}</h1>
+        {{- partial "article-meta.html" . -}}
+    </header>
+    {{ if and $affiliateAllowed $roundupPage $primaryAmazonUrl }}
+    <div data-module="roundup-hero" class="roundup-hero-callout">
+        <div class="roundup-hero-callout__content">
+            <span class="callout-eyebrow">Best Overall</span>
+            <p class="roundup-hero-callout__product"><a href="{{ $primaryAmazonUrl }}" rel="nofollow sponsored noopener" target="_blank">{{ index $primaryProduct "name" }}</a></p>
+            {{ if .Params.summary }}<p class="roundup-hero-callout__summary" itemprop="description">{{ .Params.summary | markdownify | plainify }}</p>{{ end }}
+        </div>
+        <div class="roundup-hero-callout__action">
+            <a class="button-link amazon-button" href="{{ $primaryAmazonUrl }}" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+        </div>
+    </div>
+    {{ else if .Params.summary }}<div data-module="article-summary" class="article-summary" itemprop="description"><p>{{ .Params.summary }}</p></div>{{ end }}
+    {{ if $affiliateAllowed }}{{- partial "disclosure-notice.html" . -}}{{ end }}
+            {{- partial "utility-tool.html" . -}}
+    {{ if and $affiliateAllowed $singleProductPage $primaryAmazonUrl }}{{ if eq (.Type | default "") "review" }}{{ partial "review-verdict-card.html" (dict "Page" . "product" $primaryProduct "site" .Site) }}{{ else }}{{ partial "affiliate-cta.html" (dict "Page" . "product" $primaryProduct "site" .Site "class" "affiliate-cta--hero") }}{{ end }}{{ end }}
+    {{ if and (ne .Section "authors") (.Site.Params.showTableOfContents) (.Params.toc | default true) }}
+    <details data-module="table-of-contents" class="table-of-contents">
+        <summary>Contents</summary>
+        {{ .TableOfContents }}
+    </details>
+    {{ end }}
+    {{ if $affiliateAllowed }}{{- partial "audible-inline-sponsored.html" . -}}{{ end }}
+    {{ if $hasPrimaryProduct }}<script data-module="article-products-data" id="article-products-data" type="application/json">{{ jsonify $products | safeJS }}</script>{{ end }}
+    {{ if and $singleProductPage $primaryAmazonUrl (ne (.Type | default "") "review") }}
+    <template data-module="affiliate-cta-template" id="article-affiliate-cta-template">
+        {{ partial "affiliate-cta.html" (dict "Page" . "product" $primaryProduct "site" .Site "class" "affiliate-cta--context") }}
+    </template>
+    {{ end }}
+    <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody">{{ partial "article-body.html" . }}</div>
+    {{- partial "see-also.html" . -}}
+</article>
+{{ end }}

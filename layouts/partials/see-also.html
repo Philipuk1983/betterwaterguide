@@ -1,0 +1,68 @@
+{{ $articleSections := slice "best" "reviews" "vs" "guides" "fix" "compare" "size" "care" "replace" "avoid" "guide" "hub" }}
+{{ $articlePages := where .Site.RegularPages "Section" "in" $articleSections }}
+{{ $relatedPages := where ($articlePages.Related .) "RelPermalink" "ne" .RelPermalink }}
+{{ $sameSectionPages := sort (where (where $articlePages "Section" .Section) "RelPermalink" "ne" .RelPermalink) "Date" "asc" }}
+{{ $otherSectionPages := sort (where (where $articlePages "Section" "ne" .Section) "RelPermalink" "ne" .RelPermalink) "Date" "asc" }}
+{{ $oldestPages := sort (where $articlePages "RelPermalink" "ne" .RelPermalink) "Date" "asc" }}
+{{ $minArticles := int (.Site.Params.seeAlsoMinArticles | default 8) }}
+{{ if and (in $articleSections .Section) (ge (len $articlePages) $minArticles) (ge (len $oldestPages) 5) }}
+{{ $seed := add (len .RelPermalink) (len .Title) }}
+{{ $picks := slice }}
+{{ $used := slice .RelPermalink }}
+{{ range first 2 $relatedPages }}
+    {{ if not (in $used .RelPermalink) }}
+        {{ $picks = $picks | append . }}
+        {{ $used = $used | append .RelPermalink }}
+    {{ end }}
+{{ end }}
+{{ if gt (len $sameSectionPages) 0 }}
+    {{ $sameOffset := mod $seed (len $sameSectionPages) }}
+    {{ range first 1 (after $sameOffset $sameSectionPages) }}
+        {{ if not (in $used .RelPermalink) }}
+            {{ $picks = $picks | append . }}
+            {{ $used = $used | append .RelPermalink }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ if gt (len $otherSectionPages) 0 }}
+    {{ $otherOffset := mod (add $seed 3) (len $otherSectionPages) }}
+    {{ range first 1 (after $otherOffset $otherSectionPages) }}
+        {{ if not (in $used .RelPermalink) }}
+            {{ $picks = $picks | append . }}
+            {{ $used = $used | append .RelPermalink }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ range $oldestPages }}
+    {{ if and (lt (len $picks) 5) (not (in $used .RelPermalink)) }}
+        {{ $picks = $picks | append . }}
+        {{ $used = $used | append .RelPermalink }}
+    {{ end }}
+{{ end }}
+{{ if ge (len $picks) 5 }}
+{{ $first := index $picks 0 }}
+{{ $second := index $picks 1 }}
+{{ $third := index $picks 2 }}
+{{ $fourth := index $picks 3 }}
+{{ $fifth := index $picks 4 }}
+<section class="see-also" data-module="see-also" data-section-id="see-also" aria-labelledby="see-also-heading">
+    <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
+    {{ if eq .Section "reviews" }}
+    <p>If you are weighing this model, also compare it with <a href="{{ $first.RelPermalink }}">{{ $first.Title }}</a>, <a href="{{ $second.RelPermalink }}">{{ $second.Title }}</a>, and <a href="{{ $third.RelPermalink }}">{{ $third.Title }}</a>.</p>
+    <p>For broader context before you decide, <a href="{{ $fourth.RelPermalink }}">{{ $fourth.Title }}</a> and <a href="{{ $fifth.RelPermalink }}">{{ $fifth.Title }}</a> help round out the trade-offs.</p>
+    {{ else if eq .Section "best" }}
+    <p>If you want to pressure-test this shortlist, read <a href="{{ $first.RelPermalink }}">{{ $first.Title }}</a>, <a href="{{ $second.RelPermalink }}">{{ $second.Title }}</a>, and <a href="{{ $third.RelPermalink }}">{{ $third.Title }}</a> next.</p>
+    <p>For more context beyond the main ranking, <a href="{{ $fourth.RelPermalink }}">{{ $fourth.Title }}</a> and <a href="{{ $fifth.RelPermalink }}">{{ $fifth.Title }}</a> add useful comparison detail.</p>
+    {{ else if eq .Section "vs" }}
+    <p>If you are still weighing both sides of this matchup, keep going with <a href="{{ $first.RelPermalink }}">{{ $first.Title }}</a>, <a href="{{ $second.RelPermalink }}">{{ $second.Title }}</a>, and <a href="{{ $third.RelPermalink }}">{{ $third.Title }}</a>.</p>
+    <p>To widen the decision beyond this head-to-head, <a href="{{ $fourth.RelPermalink }}">{{ $fourth.Title }}</a> and <a href="{{ $fifth.RelPermalink }}">{{ $fifth.Title }}</a> provide the broader context.</p>
+    {{ else if eq .Site.Params.monetizationMode "ads" }}
+    <p>If you want to keep building out the picture, start with <a href="{{ $first.RelPermalink }}">{{ $first.Title }}</a>, <a href="{{ $second.RelPermalink }}">{{ $second.Title }}</a>, and <a href="{{ $third.RelPermalink }}">{{ $third.Title }}</a>.</p>
+    <p>For more context after the basics, <a href="{{ $fourth.RelPermalink }}">{{ $fourth.Title }}</a> and <a href="{{ $fifth.RelPermalink }}">{{ $fifth.Title }}</a> are the next places to read.</p>
+    {{ else }}
+    <p>If you want to move from general advice into actual product choices, start with <a href="{{ $first.RelPermalink }}">{{ $first.Title }}</a>, <a href="{{ $second.RelPermalink }}">{{ $second.Title }}</a>, and <a href="{{ $third.RelPermalink }}">{{ $third.Title }}</a>.</p>
+    <p>For a wider picture after the basics, <a href="{{ $fourth.RelPermalink }}">{{ $fourth.Title }}</a> and <a href="{{ $fifth.RelPermalink }}">{{ $fifth.Title }}</a> are the next places to read.</p>
+    {{ end }}
+</section>
+{{ end }}
+{{ end }}

@@ -1,0 +1,77 @@
+{{ $page := .Page }}
+{{ $slot := .Slot | default "top" }}
+{{ with $page }}
+{{ $amazonTag := .Site.Params.amazonTag | default "" }}
+{{ $placements := .Params.affiliate_placements | default slice }}
+{{ if and $amazonTag (gt (len $placements) 0) }}
+{{ $cluster := .Params.story_cluster | default .Type }}
+{{ $bookTitle := .Params.book_title | default .Params.series_name | default .Params.screen_title | default .Title }}
+{{ $screenTitle := .Params.screen_title | default .Title }}
+{{ $amazonQuery := printf "%s book" $bookTitle }}
+{{ if eq $cluster "reading_order" }}{{ $amazonQuery = printf "%s book one" $bookTitle }}{{ end }}
+{{ if eq $cluster "audiobook_guide" }}{{ $amazonQuery = printf "%s audiobook" $bookTitle }}{{ end }}
+{{ $amazonUrl := printf "https://www.amazon.com/s?k=%s&tag=%s" (urlquery $amazonQuery) $amazonTag | safeURL }}
+{{ $audibleUrl := printf "https://www.amazon.com/hz/audible/mlp?tag=%s" $amazonTag | safeURL }}
+{{ $topHeading := "Want the original story?" }}
+{{ $topBody := "The screen version gives you the headline story, but the book usually adds character detail, internal thoughts, and scenes that do not make it into the adaptation." }}
+{{ $audibleText := "Listen on Audible" }}
+{{ $amazonText := "Find the book on Amazon" }}
+{{ if eq $cluster "reading_order" }}
+    {{ $topHeading = "Starting the series?" }}
+    {{ $topBody = "If you want to move through the books without losing track, start with book one and continue in publication order. Audiobooks are especially useful for long series." }}
+    {{ $audibleText = "Start the audiobook series" }}
+    {{ $amazonText = "Find book one on Amazon" }}
+{{ else if eq $cluster "book_vs_screen" }}
+    {{ $topHeading = "The book goes deeper" }}
+    {{ $topBody = "If the adaptation left you wanting more context, the original book is usually the best next step. The audiobook lets you revisit the story without setting aside reading time." }}
+    {{ $audibleText = "Listen to the full story" }}
+    {{ $amazonText = "See the book edition" }}
+{{ else if eq $cluster "books_like" }}
+    {{ $topHeading = "Want the same mood in audio?" }}
+    {{ $topBody = "If you liked this story world, an audiobook is an easy way to keep the same pace, genre, or atmosphere going while commuting, walking, or relaxing." }}
+    {{ $audibleText = "Try an audiobook pick" }}
+    {{ $amazonText = "Find the books on Amazon" }}
+{{ else if eq $cluster "audiobook_guide" }}
+    {{ $topHeading = "Build your listening queue" }}
+    {{ $topBody = "For streaming fans and commuters, Audible is often the easiest way to start a long series, sample a new genre, or keep a story going between watch sessions." }}
+    {{ $audibleText = "Try Audible Now" }}
+    {{ $amazonText = "Browse audiobook-related books" }}
+{{ else if eq $cluster "genre_guide" }}
+    {{ $topHeading = "Choose your next genre lane" }}
+    {{ $topBody = "If a movie or show sent you looking for the same mood on the page, start with a book that matches the pace, tone, and story promise you already like." }}
+    {{ $audibleText = "Try a genre audiobook" }}
+    {{ $amazonText = "Find genre books on Amazon" }}
+{{ else if eq $cluster "upcoming_adaptation" }}
+    {{ $topHeading = "Read or listen before it reaches the screen" }}
+    {{ $topBody = "When an adaptation is upcoming or in development, the original book is the safest way to understand the story without relying on shifting release news." }}
+    {{ $audibleText = "Listen before release" }}
+    {{ $amazonText = "Find the source book" }}
+{{ else if eq $cluster "ending_explained" }}
+    {{ $topHeading = "Want the full original ending?" }}
+    {{ $topBody = "The ending often lands differently in the book because you get more internal context. Listening to the original can make the final turn clearer." }}
+    {{ $audibleText = "Listen to the original story" }}
+    {{ $amazonText = "Find the book edition" }}
+{{ end }}
+{{ if eq $slot "top" }}
+<aside class="story-affiliate-card story-affiliate-card--top" aria-label="Original story affiliate links">
+    <p class="affiliate-note">Affiliate note: we may earn from qualifying purchases or eligible audiobook sign-ups.</p>
+    <h2>{{ $topHeading }}</h2>
+    <p>{{ $topBody }}</p>
+    <div class="story-affiliate-actions">
+        <a class="button-link amazon-button" href="{{ $audibleUrl }}" rel="sponsored nofollow noopener" target="_blank">{{ $audibleText }}</a>
+        <a class="button-link story-book-button" href="{{ $amazonUrl }}" rel="sponsored nofollow noopener" target="_blank">{{ $amazonText }}</a>
+    </div>
+</aside>
+{{ else }}
+<aside class="story-listen-next-box" aria-label="What to listen to next">
+    <p class="cta-label">What to listen to next</p>
+    <h2>Start with the original story</h2>
+    <p>If {{ $screenTitle }} made you curious about the source material, the book or audiobook is the cleanest next step before jumping into related guides.</p>
+    <div class="story-affiliate-actions">
+        <a class="button-link amazon-button" href="{{ $audibleUrl }}" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+        <a class="button-link story-book-button" href="{{ $amazonUrl }}" rel="sponsored nofollow noopener" target="_blank">Find the book on Amazon</a>
+    </div>
+</aside>
+{{ end }}
+{{ end }}
+{{ end }}

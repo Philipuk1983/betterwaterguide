@@ -1,0 +1,193 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5T2FRHBB');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3GZKYJF7J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-V3GZKYJF7J');
+</script>
+<script>
+(function() {
+    function isAmazonHost(hostname) {
+        var host = (hostname || "").toLowerCase();
+        return host === "amzn.to"
+            || host === "a.co"
+            || /(^|\.)amazon\.[a-z.]+$/.test(host);
+    }
+
+    function cleanText(value) {
+        return (value || "").replace(/\s+/g, " ").trim().slice(0, 160);
+    }
+
+    function dataValue(element, names) {
+        for (var i = 0; i < names.length; i += 1) {
+            if (element.dataset && element.dataset[names[i]]) {
+                return element.dataset[names[i]];
+            }
+        }
+        return "";
+    }
+
+    function closestDataValue(link, names) {
+        var selector = names.map(function(name) { return "[data-" + name.replace(/[A-Z]/g, function(match) { return "-" + match.toLowerCase(); }) + "]"; }).join(",");
+        var node = selector && link.closest ? link.closest(selector) : null;
+        return node ? dataValue(node, names) : "";
+    }
+
+    function amazonProductId(url) {
+        var path = decodeURIComponent(url.pathname || "");
+        var match = path.match(/\/(?:dp|gp\/product|gp\/aw\/d|exec\/obidos\/ASIN)\/([A-Z0-9]{10})(?:[/?]|$)/i);
+        if (match) {
+            return match[1].toUpperCase();
+        }
+
+        var asin = url.searchParams.get("asin") || url.searchParams.get("ASIN");
+        return /^[A-Z0-9]{10}$/i.test(asin || "") ? asin.toUpperCase() : "";
+    }
+
+    function productName(link) {
+        var explicit = dataValue(link, ["productName", "product", "itemName"]) || closestDataValue(link, ["productName", "product", "itemName"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        var cta = link.closest ? link.closest(".affiliate-cta, .product-cta, .section-product-cta, tr, li") : null;
+        var namedNode = cta ? cta.querySelector("[data-product-name], .affiliate-cta__name-link, strong, h2, h3, th") : null;
+        return cleanText((namedNode && namedNode.textContent) || link.getAttribute("aria-label") || link.getAttribute("title") || link.textContent);
+    }
+
+    function placement(link) {
+        var explicit = dataValue(link, ["affiliatePlacement", "placement"]) || closestDataValue(link, ["affiliatePlacement", "placement"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        if (link.closest) {
+            if (link.closest(".affiliate-cta--hero")) return "hero_cta";
+            if (link.closest(".affiliate-cta--mid")) return "mid_article_cta";
+            if (link.closest(".affiliate-cta--post-editor")) return "post_editor_cta";
+            if (link.closest(".affiliate-cta--verdict")) return "verdict_cta";
+            if (link.closest(".affiliate-cta--context")) return "context_cta";
+            if (link.closest(".affiliate-cta")) return "affiliate_cta";
+            if (link.closest("table")) return "comparison_table";
+            if (link.closest("header, .hero, .modern-hero")) return "hero";
+        }
+
+        return "amazon_link";
+    }
+
+    document.addEventListener("click", function(event) {
+        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) {
+            return;
+        }
+
+        var url;
+        try {
+            url = new URL(link.href, window.location.href);
+        } catch (_) {
+            return;
+        }
+
+        if (!isAmazonHost(url.hostname)) {
+            return;
+        }
+
+        var payload = {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            affiliate_network: "amazon",
+            merchant: "amazon",
+            product_id: amazonProductId(url),
+            product_name: productName(link),
+            placement: placement(link),
+            link_url: url.href
+        };
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: "affiliate_click" }, payload));
+        window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
+    }, true);
+})();
+</script>
+{{ $rawDescription := .Description | default .Params.summary | default .Site.Params.description | default .Title | plainify }}
+{{ $description := $rawDescription }}
+{{ if gt (len $description) 160 }}
+  {{ $description = printf "%s..." (replaceRE "\\s+\\S*$" "" (substr $description 0 157)) }}
+{{ end }}
+{{ $seoImage := .Params.seo_image }}
+{{ $seoImageUrl := "" }}
+{{ with $seoImage }}{{ $seoImageUrl = cond (hasPrefix . "http") . (. | absURL) }}{{ end }}
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{ with $seoImageUrl }}<meta property="og:image" content="{{ . }}">{{ end }}
+{{ with .Params.seo_image_alt }}<meta property="og:image:alt" content="{{ . }}">{{ end }}
+{{ with $seoImageUrl }}<link rel="image_src" href="{{ . }}">{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{ with $seoImageUrl }}<meta name="twitter:image" content="{{ . }}">{{ end }}
+{{ with .Params.seo_image_alt }}<meta name="twitter:image:alt" content="{{ . }}">{{ end }}
+
+{{ if .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}feed.xml">
+{{ end }}
+
+{{ $headingFont := .Site.Params.headingFont | default "system-ui" }}
+{{ $bodyFont := .Site.Params.bodyFont | default "system-ui" }}
+{{ $fontFamilies := slice }}
+{{ if ne $headingFont "system-ui" }}
+  {{ $fontFamilies = $fontFamilies | append (printf "family=%s:wght@400;700" (replace $headingFont " " "%20")) }}
+{{ end }}
+{{ if and (ne $bodyFont "system-ui") (ne $bodyFont $headingFont) }}
+  {{ $fontFamilies = $fontFamilies | append (printf "family=%s:wght@400;600;700" (replace $bodyFont " " "%20")) }}
+{{ end }}
+{{ if gt (len $fontFamilies) 0 }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{{ printf "https://fonts.googleapis.com/css2?%s&display=swap" (delimit $fontFamilies "&") | safeURL }}" rel="stylesheet">
+{{ end }}
+
+{{ $css := resources.Get "css/main.css" }}
+{{ if $css }}
+  {{ $styles := $css | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{ else }}
+  <link rel="stylesheet" href="/css/main.css">
+{{ end }}
+<script defer src="/js/article-enhancements.js?v={{ now.Unix }}"></script>
+
+{{- partial "schema-site.html" . -}}
+{{ $articleSections := slice "best" "reviews" "vs" "guides" "fix" "compare" "size" "care" "replace" "avoid" "guide" "hub" }}
+{{ $isArticlePage := and .IsPage (in $articleSections .Section) }}
+{{ $faqItems := .Params.faq | default slice }}
+{{ $products := .Params.products | default slice }}
+{{ $schemaType := .Params.schema_type | default "" }}
+{{ if $isArticlePage }}{{- partial "schema-article.html" . -}}{{ end }}
+{{ if and $isArticlePage (gt (len $faqItems) 0) }}{{- partial "schema-faq.html" . -}}{{ end }}
+{{ if and $isArticlePage (eq $schemaType "Review") }}{{- partial "schema-review.html" . -}}{{ end }}
+{{ if and $isArticlePage (or (eq (.Params.type | default "") "best_of") (gt (len $products) 1)) }}{{- partial "schema-product.html" . -}}{{ end }}
+{{ with .Params.browse_product }}<script id="article-browse-product-data" type="application/json">{{ . | jsonify | safeJS }}</script>{{ end }}
+
+{{ with .Site.Params.bingVerification }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}

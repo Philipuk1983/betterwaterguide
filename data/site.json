@@ -1,0 +1,97 @@
+{
+  "name": "Better Water Guide",
+  "domain": "betterwaterguide.com",
+  "description": "A household water quality site for people who want cleaner, better-tasting water at home, covering under-sink filters, whole-house filtration, reverse osmosis, hard water, chlorine taste, filter replacement, water testing, shower filters, and cartridge maintenance.",
+  "contactEmail": "hello@betterwaterguide.com",
+  "niche": "home water filtration,water filter,under sink water filter,whole house water filter,reverse osmosis system,hard water filter,water filter pitcher,water test kit,chlorine water filter,drinking water filter,water filter replacement,well water filter,sediment filter,carbon water filter,water softener,filtered tap water,kitchen water filter,shower water filter,limescale filter,ro water system,water filtration guide,best water filter,home water quality,filter cartridges,clean drinking water",
+  "targetAudience": null,
+  "variant": "kitchen",
+  "footprint": "warm kitchen layout with pantry-like organization, practical prep cues, and compact product decision cards",
+  "persona": "a kitchen gear editor who helps home cooks choose appliances, cookware, storage, and cleanup tools without hype",
+  "author": {
+    "name": "Better Water Guide Editorial Team",
+    "slug": "editorial-team",
+    "role": "Home Water Filtration \u0026 Water Quality Review Editors",
+    "bio": "We help home cooks and households choose practical water filtration solutions, from under-sink RO to shower and whole-house systems, with clear maintenance guidance."
+  },
+  "infographics": {
+    "enabled": false,
+    "topic": "home water filtration",
+    "visualDirection": "neutral commercial infographic with icon-led panels",
+    "articleTypes": {
+      "guide": {
+        "enabled": false,
+        "supported": true,
+        "concept": "decision map",
+        "placement": "after_intro",
+        "size": "1024x1024",
+        "visualStyle": "clean editorial comparison graphic",
+        "dataFocus": "decision checkpoints, must-check factors, best use case",
+        "sectionFocus": "buyer decision checkpoint",
+        "headingHints": [
+          "Decision checklist",
+          "What to look for",
+          "How to choose",
+          "Where the choice changes",
+          "Real decision",
+          "Final verdict"
+        ]
+      },
+      "best_of": {
+        "enabled": false,
+        "supported": true,
+        "concept": "ranked picks scoreboard",
+        "placement": "after_intro",
+        "size": "1024x1024",
+        "visualStyle": "structured buyer scoreboard",
+        "dataFocus": "best overall, value, premium pick, best use case",
+        "sectionFocus": "shortlist section",
+        "headingHints": [
+          "Quick picks",
+          "Best for",
+          "Who it\u0027s for",
+          "Who should buy",
+          "Value for money",
+          "How we chose"
+        ]
+      },
+      "review": {
+        "enabled": false,
+        "supported": true,
+        "concept": "ownership snapshot",
+        "placement": "after_intro",
+        "size": "1024x1024",
+        "visualStyle": "single-product review card layout",
+        "dataFocus": "ideal buyer, strengths, tradeoffs, caution",
+        "sectionFocus": "ownership trade-off section",
+        "headingHints": [
+          "Trade-Offs to Know",
+          "The Detail That Matters",
+          "Best For",
+          "Who Should Look Elsewhere",
+          "Quick Take",
+          "Constraints to Check"
+        ]
+      },
+      "comparison": {
+        "enabled": false,
+        "supported": true,
+        "concept": "head-to-head decision matrix",
+        "placement": "after_first_h2",
+        "size": "1024x1024",
+        "visualStyle": "versus matrix with clear winner cues",
+        "dataFocus": "core differences, winner by criterion, best buyer",
+        "sectionFocus": "key differences section",
+        "headingHints": [
+          "Decision checklist",
+          "Everyday Usability",
+          "Feature Depth",
+          "Decision constraints",
+          "Quick Verdict",
+          "Value for Money"
+        ]
+      }
+    }
+  },
+  "generated": "2026-06-30T09:28:44.0251501Z"
+}

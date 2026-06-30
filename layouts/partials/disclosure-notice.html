@@ -1,0 +1,7 @@
+{{ $products := .Params.products | default slice }}
+{{ $hasAffiliateLinks := or (in .RawContent "amazon.com") (in .RawContent "amzn.to") }}
+{{ if or (gt (len $products) 0) $hasAffiliateLinks }}
+<aside class="disclosure-inline">
+    <small>This article contains affiliate links. If you make a purchase, we may earn a commission at no extra cost to you. <a href="/disclosure/">Full disclosure</a>.</small>
+</aside>
+{{ end }}

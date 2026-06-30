@@ -1,0 +1,160 @@
+{{ define "main" }}
+<div class="homepage">
+    <section class="hero">
+        <h1>{{ .Site.Title }}</h1>
+        {{ if .Content }}
+        <div class="hero-copy">{{ .Content }}</div>
+        {{ else if .Site.Params.description }}
+        <p>{{ .Site.Params.description }}</p>
+        {{ end }}
+    </section>
+    {{ $bestPages := slice }}{{ if .Site.Params.showBestSection }}{{ $bestPages = where .Site.RegularPages "Section" "best" }}{{ end }}
+    {{ if $bestPages }}
+    <section class="home-section">
+        <h2>Best Picks</h2>
+        <div class="article-grid">
+            {{ range first 4 ($bestPages.ByDate.Reverse) }}
+            <article class="article-card">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Description }}</p>
+            </article>
+            {{ end }}
+        </div>
+        <a href="/best/" class="see-all">{{ .Site.Params.homeBestCta | default "See all recommendations ->" }}</a>
+    </section>
+    {{ end }}
+    {{ $reviewPages := slice }}{{ if .Site.Params.showReviewsSection }}{{ $reviewPages = where .Site.RegularPages "Section" "reviews" }}{{ end }}
+    {{ if $reviewPages }}
+    <section class="home-section">
+        <h2>Latest Reviews</h2>
+        <div class="article-grid">
+            {{ range first 6 ($reviewPages.ByDate.Reverse) }}
+            <article class="article-card">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Description }}</p>
+            </article>
+            {{ end }}
+        </div>
+        <a href="/reviews/" class="see-all">{{ .Site.Params.homeReviewsCta | default "See all reviews ->" }}</a>
+    </section>
+    {{ end }}
+    {{ $vsPages := slice }}{{ if .Site.Params.showComparisonSection }}{{ $vsPages = where .Site.RegularPages "Section" "vs" }}{{ end }}
+    {{ if $vsPages }}
+    <section class="home-section">
+        <h2>{{ .Site.Params.homeVsHeading | default "Comparisons" }}</h2>
+        <div class="article-grid">
+            {{ range first 4 ($vsPages.ByDate.Reverse) }}
+            <article class="article-card">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Description }}</p>
+            </article>
+            {{ end }}
+        </div>
+        <a href="/vs/" class="see-all">{{ .Site.Params.homeVsCta | default "See all comparisons ->" }}</a>
+    </section>
+    {{ end }}
+    {{ $guidePages := slice }}{{ if .Site.Params.showGuidesSection }}{{ $guidePages = where .Site.RegularPages "Section" "guides" }}{{ end }}
+    {{ if $guidePages }}
+    <section class="home-section">
+        <h2>{{ .Site.Params.homeGuidesHeading | default (.Site.Params.guideSectionLabel | default "Guides") }}</h2>
+        <div class="article-grid">
+            {{ range first 4 ($guidePages.ByDate.Reverse) }}
+            <article class="article-card">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Description }}</p>
+            </article>
+            {{ end }}
+        </div>
+        <a href="/guides/" class="see-all">{{ .Site.Params.homeGuidesCta | default "See all guides ->" }}</a>
+    </section>
+    {{ end }}
+
+            {{ $homePages := slice }}
+            {{ if .Site.Params.showBestSection }}{{ range where .Site.RegularPages "Section" "best" }}{{ $homePages = $homePages | append . }}{{ end }}{{ end }}
+            {{ if .Site.Params.showReviewsSection }}{{ range where .Site.RegularPages "Section" "reviews" }}{{ $homePages = $homePages | append . }}{{ end }}{{ end }}
+            {{ if .Site.Params.showComparisonSection }}{{ range where .Site.RegularPages "Section" "vs" }}{{ $homePages = $homePages | append . }}{{ end }}{{ end }}
+            {{ if .Site.Params.showGuidesSection }}{{ range where .Site.RegularPages "Section" "guides" }}{{ $homePages = $homePages | append . }}{{ end }}{{ end }}
+            {{ $latestPages := sort $homePages "Date" "desc" }}
+
+            <section class="home-depth home-depth--clean" aria-labelledby="home-depth-heading">
+                <div class="home-depth__intro">
+                    <p class="section-kicker">{{ .Site.Params.homeDepthKicker | default "Start with the right question" }}</p>
+                    <h2 id="home-depth-heading">{{ .Site.Params.homeDepthHeading | default "Find the help that fits the decision" }}</h2>
+                    <p>{{ .Site.Params.homeDepthBody | default "Use the sections below based on the decision in front of you: a shortlist when you need options, a review when one option is tempting, a comparison when two choices feel close, or a guide when setup and trade-offs need more context." }}</p>
+                </div>
+                <div class="home-browse-grid" aria-label="Browse by decision type">
+                    {{ if .Site.Params.showBestSection }}
+                    <a href="/best/" class="home-browse-card">
+                        <span>Best Picks</span>
+                        <strong>Shortlists</strong>
+                        <em>{{ .Site.Params.homeBestRoute | default "Shortlists for common buying decisions and practical constraints." }}</em>
+                    </a>
+                    {{ end }}
+                    {{ if .Site.Params.showReviewsSection }}
+                    <a href="/reviews/" class="home-browse-card">
+                        <span>Reviews</span>
+                        <strong>One option</strong>
+                        <em>{{ .Site.Params.homeReviewRoute | default "Focused reads on one product, service, tool, or option." }}</em>
+                    </a>
+                    {{ end }}
+                    {{ if .Site.Params.showComparisonSection }}
+                    <a href="/vs/" class="home-browse-card">
+                        <span>Compare</span>
+                        <strong>Two close calls</strong>
+                        <em>{{ .Site.Params.homeCompareRoute | default "Side-by-side context for choices that are not obvious." }}</em>
+                    </a>
+                    {{ end }}
+                    {{ if .Site.Params.showGuidesSection }}
+                    <a href="/guides/" class="home-browse-card">
+                        <span>{{ .Site.Params.guideSectionLabel | default "Guides" }}</span>
+                        <strong>Context</strong>
+                        <em>{{ .Site.Params.homeGuideRoute | default "Category context before you commit to a feature, format, or price tier." }}</em>
+                    </a>
+                    {{ end }}
+                </div>
+            </section>
+
+            <section class="home-method" aria-labelledby="home-method-heading">
+                <div class="home-method__header">
+                    <p class="section-kicker">{{ .Site.Params.homeMethodKicker | default "How we frame the work" }}</p>
+                    <h2 id="home-method-heading">{{ .Site.Params.homeMethodHeading | default "Useful judgment before hype" }}</h2>
+                </div>
+                <div class="home-method-grid">
+                    <div class="home-method-card">
+                        <span>01</span>
+                        <h3>{{ .Site.Params.homeMethodOneTitle | default "Reader problem first" }}</h3>
+                        <p>{{ .Site.Params.homeMethodOneBody | default "We start with the decision a reader is actually trying to make, then shape the article around that need." }}</p>
+                    </div>
+                    <div class="home-method-card">
+                        <span>02</span>
+                        <h3>{{ .Site.Params.homeMethodTwoTitle | default "Trade-offs in plain view" }}</h3>
+                        <p>{{ .Site.Params.homeMethodTwoBody | default "A useful recommendation should explain who should skip it as clearly as who should choose it." }}</p>
+                    </div>
+                    <div class="home-method-card">
+                        <span>03</span>
+                        <h3>{{ .Site.Params.homeMethodThreeTitle | default "Fresh context" }}</h3>
+                        <p>{{ .Site.Params.homeMethodThreeBody | default "Older assumptions get revisited as pricing, availability, and category expectations change." }}</p>
+                    </div>
+                </div>
+            </section>
+
+            {{ if $latestPages }}
+            <section class="home-latest" aria-labelledby="home-latest-heading">
+                <div class="home-latest__header">
+                    <p class="section-kicker">{{ .Site.Params.homeLatestKicker | default "New from the desk" }}</p>
+                    <h2 id="home-latest-heading">{{ .Site.Params.homeLatestHeading | default "Recent practical reads" }}</h2>
+                </div>
+                <div class="home-latest-list">
+                    {{ range first 5 $latestPages }}
+                    <article class="home-latest-item">
+                        <div>
+                            <p class="feature-meta">{{ .Section | humanize }} / {{ .Date.Format "Jan 2, 2006" }}</p>
+                            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                        </div>
+                        <p>{{ .Description }}</p>
+                    </article>
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}</div>
+{{ end }}

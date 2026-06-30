@@ -1,0 +1,42 @@
+{{ $page := .Page }}
+{{ $slot := .Slot | default "end" }}
+{{ with $page }}
+{{ $amazonTag := .Site.Params.amazonTag | default "" }}
+{{ $placements := .Params.affiliate_placements | default slice }}
+{{ if and $amazonTag (gt (len $placements) 0) }}
+{{ $cluster := .Params.scripture_cluster | default .Type }}
+{{ $audibleUrl := printf "https://www.amazon.com/hz/audible/mlp?tag=%s" $amazonTag | safeURL }}
+{{ $heading := "Prefer to listen while you study?" }}
+{{ $body := "Audible includes Bible audio, Christian history, theology, and study-related audiobooks that can make slower study easier during commutes, walks, or quiet time." }}
+{{ $primaryText := "Explore Audible on Amazon" }}
+{{ if eq $cluster "topic_hub" }}
+    {{ $heading = "Study in a slower format" }}
+    {{ $body = "For readers who prefer audio, Audible includes Bible audio and Christian study titles that can help you sit with a topic instead of rushing through it." }}
+{{ else if eq $cluster "denomination_comparison" }}
+    {{ $heading = "Listen while comparing the views" }}
+    {{ $body = "Audio Bibles and study titles can help readers revisit disputed passages slowly while comparing how traditions handle the same text." }}
+{{ else if eq $cluster "sermon_prep" }}
+    {{ $heading = "Prepare with audio study" }}
+    {{ $body = "Audio Bibles and Christian study titles can make it easier to review a passage while planning a lesson, commute, walk, or discussion." }}
+{{ end }}
+{{ if eq $slot "top" }}
+<aside class="passage-affiliate-card passage-affiliate-card--top" aria-label="Bible study affiliate links">
+    <p class="affiliate-note">Affiliate note: we may earn from qualifying purchases or eligible sign-ups.</p>
+    <h2>{{ $heading }}</h2>
+    <p>{{ $body }}</p>
+    <div class="passage-affiliate-actions">
+        <a class="button-link amazon-button" href="{{ $audibleUrl }}" rel="sponsored nofollow noopener" target="_blank">{{ $primaryText }}</a>
+    </div>
+</aside>
+{{ else }}
+<aside class="passage-listen-next-box" aria-label="Bible study audio resources">
+    <p class="cta-label">Study in a slower format</p>
+    <h2>Listen while you study</h2>
+    <p>For readers who prefer audio, Audible includes Bible audio and Christian study titles that can help you sit with a passage instead of rushing through it.</p>
+    <div class="passage-affiliate-actions">
+        <a class="button-link amazon-button" href="{{ $audibleUrl }}" rel="sponsored nofollow noopener" target="_blank">Explore Audible on Amazon</a>
+    </div>
+</aside>
+{{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,30 @@
+{{ with .Params.utility_tool }}
+<section class="utility-tool" data-module="utility-tool" aria-labelledby="utility-tool-title">
+    <div class="utility-tool__intro">
+        <p class="utility-tool__kicker">Interactive Tool</p>
+        <h2 id="utility-tool-title">{{ .title }}</h2>
+        {{ with .dek }}<p>{{ . }}</p>{{ end }}
+        <p class="utility-tool__assumptions">Assumes your inputs reflect the current room, budget, workflow, or constraint. Verify measurements, prices, compatibility, safety limits, and policy requirements before acting.</p>
+    </div>
+    <div class="utility-tool__app" data-tool-root>
+        <noscript>Enable JavaScript to use this tool.</noscript>
+        <script type="application/json" data-tool-spec>{{ . | jsonify | safeJS }}</script>
+    </div>
+    {{ with .examples }}
+    <div class="utility-tool__examples" aria-label="Worked tool example">
+        {{ range first 1 . }}
+        <h3>{{ .title | default "Example" }}</h3>
+        {{ with .inputs }}
+        <dl class="utility-tool__example-inputs">
+            {{ range . }}
+            <div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
+            {{ end }}
+        </dl>
+        {{ end }}
+        {{ with .expected_output }}<p><strong>Expected output:</strong> {{ . }}</p>{{ end }}
+        {{ with .next_decision }}<p><strong>Next decision:</strong> {{ . }}</p>{{ end }}
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+{{ end }}

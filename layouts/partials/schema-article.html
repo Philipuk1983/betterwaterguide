@@ -1,0 +1,32 @@
+{{ $description := .Description | default .Params.summary | default .Site.Params.description | default .Title }}
+{{ $author := dict "@type" "Organization" "name" .Site.Title }}
+{{ with .Site.Data.site.author }}
+  {{ $author = dict "@type" "Organization" "name" .name }}
+  {{ with .slug }}{{ $author = merge $author (dict "url" (printf "%sauthors/%s/" $.Site.BaseURL .)) }}{{ end }}
+{{ end }}
+{{ $publisher := dict "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL }}
+{{ $schema := dict
+    "@context" "https://schema.org"
+    "@type" "BlogPosting"
+    "headline" .Title
+    "description" $description
+    "url" .Permalink
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "inLanguage" (.Site.LanguageCode | default "en-US")
+    "articleSection" (.Section | humanize)
+    "wordCount" .WordCount
+    "author" $author
+    "publisher" $publisher
+    "isAccessibleForFree" true
+  }}
+{{ with .Params.keywords }}{{ $schema = merge $schema (dict "keywords" (delimit . ", ")) }}{{ end }}
+{{ with .Params.seo_image }}
+  {{ $image := dict "@type" "ImageObject" "url" (. | absURL) }}
+  {{ with $.Params.seo_image_title }}{{ $image = merge $image (dict "name" .) }}{{ end }}
+  {{ with $.Params.seo_image_caption }}{{ $image = merge $image (dict "caption" .) }}{{ end }}
+  {{ with $.Params.seo_image_alt }}{{ $image = merge $image (dict "description" .) }}{{ end }}
+  {{ $schema = merge $schema (dict "image" (slice $image)) }}
+{{ end }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

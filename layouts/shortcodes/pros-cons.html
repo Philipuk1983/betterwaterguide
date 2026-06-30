@@ -1,0 +1,10 @@
+<div class="shortcode-box pros-cons pros-cons-{{ $.Site.Params.themeVariant }}">
+    <div>
+        <h4>Pros</h4>
+        <ul>{{ range (split (.Get "pros") "|") }}<li>{{ . }}</li>{{ end }}</ul>
+    </div>
+    <div>
+        <h4>Cons</h4>
+        <ul>{{ range (split (.Get "cons") "|") }}<li>{{ . }}</li>{{ end }}</ul>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="comparison-shell comparison-shell-{{ $.Site.Params.themeVariant }}">
+{{ $headers := split (.Get "headers") "|" }}
+<table class="comparison-table">
+    <thead><tr>{{ range $headers }}<th>{{ . }}</th>{{ end }}</tr></thead>
+    <tbody>{{ .Inner | safeHTML }}</tbody>
+</table>
+</div>

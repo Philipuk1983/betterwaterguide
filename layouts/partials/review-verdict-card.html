@@ -1,0 +1,42 @@
+{{ $page := .Page | default . }}
+{{ $product := .product | default dict }}
+{{ $site := .site | default $page.Site }}
+{{ $card := $page.Params.review_verdict_card | default dict }}
+{{ $widget := (index $product "fit_widget") | default dict }}
+{{ $amazonUrl := index $product "amazon_url" }}
+{{ if and (not $amazonUrl) (index $product "asin") }}{{ $amazonUrl = printf "https://www.amazon.com/dp/%s?tag=%s" (index $product "asin") $site.Params.amazonTag }}{{ end }}
+{{ $primaryCta := (index $card "primary_cta") | default dict }}
+{{ $primaryLabel := (index $primaryCta "label") | default "Check price on Amazon" }}
+{{ $primaryHref := (index $primaryCta "href") | default $amazonUrl }}
+{{ $headline := (index $card "headline") | default (index $widget "headline") }}
+{{ $verdict := (index $card "verdict") | default (index $widget "verdict") }}
+{{ $bestFor := (index $card "best_for") | default (index $widget "best_for") | default (slice) }}
+{{ $skipIf := (index $card "skip_if") | default (index $widget "skip_if") | default (slice) }}
+{{ $hasVerdictSubstance := or $verdict (gt (len $bestFor) 0) (gt (len $skipIf) 0) }}
+{{ if $hasVerdictSubstance }}
+<section class="review-verdict-card" data-module="review-verdict-card">
+    <div class="review-verdict-card__header">
+        <p class="review-verdict-card__eyebrow">Verdict</p>
+        {{ with $headline }}<p class="review-verdict-card__headline">{{ . }}</p>{{ end }}
+        {{ with $verdict }}<p class="review-verdict-card__verdict">{{ . }}</p>{{ end }}
+    </div>
+    <div class="review-verdict-card__fit">
+        {{ if gt (len $bestFor) 0 }}
+        <div>
+            <span>Best for</span>
+            <ul>{{ range first 3 $bestFor }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+        {{ end }}
+        {{ if gt (len $skipIf) 0 }}
+        <div>
+            <span>Skip if</span>
+            <ul>{{ range first 3 $skipIf }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+        {{ end }}
+    </div>
+    <div class="review-verdict-card__actions">
+        {{ with $primaryHref }}<a class="button-link amazon-button review-verdict-card__primary" href="{{ . }}" rel="nofollow sponsored noopener" target="_blank">{{ $primaryLabel }}</a>{{ end }}
+        <p class="affiliate-note"><em>As an Amazon Associate, we may earn from qualifying purchases.</em></p>
+    </div>
+</section>
+{{ end }}

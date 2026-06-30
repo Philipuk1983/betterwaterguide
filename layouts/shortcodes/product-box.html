@@ -1,0 +1,13 @@
+<div class="shortcode-box product-box product-box-{{ $.Site.Params.themeVariant }}">
+    <p class="shortcode-label">Product highlight</p>
+    <h3>{{ .Get "name" }}</h3>
+    {{ with .Get "summary" }}<p>{{ . }}</p>{{ end }}
+    {{ $amazonUrl := .Get "amazon_url" }}
+    {{ if and (not $amazonUrl) (.Get "asin") }}{{ $amazonUrl = printf "https://www.amazon.com/dp/%s?tag=%s" (.Get "asin") $.Site.Params.amazonTag }}{{ end }}
+    {{ with $amazonUrl }}
+    <div class="article-affiliate-cta">
+        <a class="button-link amazon-button" href="{{ . }}" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+        <p class="affiliate-note"><em>As an Amazon Associate, we may earn from qualifying purchases.</em></p>
+    </div>
+    {{ end }}
+</div>
