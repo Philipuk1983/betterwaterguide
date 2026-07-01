@@ -19,7 +19,7 @@
             <p>{{ $inlineBody | safeHTML }}</p>
         </div>
         <div class="audible-inline-sponsored__action">
-            <a href="{{ printf "https://www.amazon.com/hz/audible/mlp?tag=%s" $amazonTag | safeURL }}" rel="sponsored nofollow">Try Audible Now</a>
+            <a href="{{ printf "https://www.amazon.com/hz/audible/mlp?tag=%s" $amazonTag | safeURL }}" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
         </div>
     </div>
     <p class="audible-inline-sponsored__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>

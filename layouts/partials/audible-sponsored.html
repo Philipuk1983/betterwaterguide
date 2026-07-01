@@ -9,7 +9,7 @@
     <div class="audible-sponsored-panel__badge">Sponsored</div>
     <h3>{{ $heading }}</h3>
     <p>{{ $body | safeHTML }}</p>
-    <a href="{{ printf "https://www.amazon.com/hz/audible/mlp?tag=%s" $amazonTag | safeURL }}" rel="sponsored nofollow">Try Audible Now</a>
+    <a href="{{ printf "https://www.amazon.com/hz/audible/mlp?tag=%s" $amazonTag | safeURL }}" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
     {{ with $audibleImage }}<img class="audible-sponsored-panel__image" src="{{ . | relURL }}" alt="{{ $alt }}" width="280" height="120" loading="lazy" decoding="async">{{ end }}
     <p class="audible-sponsored-panel__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
 </aside>
