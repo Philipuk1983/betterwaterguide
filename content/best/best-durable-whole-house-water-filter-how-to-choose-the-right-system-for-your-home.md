@@ -7,8 +7,8 @@ date: 2026-07-02
 lastmod: 2026-07-02
 type: best_of
 category: "home-maintenance"
-summary: "Durable whole-house filtration is mostly about matching the system to the water and keeping the service simple enough that it actually gets maintained. The best durable whole house water filter is not the heaviest-looking housing on the wall. It is the one that fits the problem in the water, handles the load without constant fuss, and stays easy to service over time."
-description: "Durable whole-house filtration is mostly about matching the system to the water and keeping the service simple enough that it actually gets maintained."
+summary: "Durability in a whole-house filter is mostly about fit. The system lasts longer when it is doing one clear job at the main line instead of trying to solve every water problem at once. A sediment-first setup protects plumbing when grit is the issue. A carbon system makes more sense when the water smells like chlorine. A cartridge-based system is easier to live with when the service routine needs to stay simple."
+description: "Durability in a whole-house filter is mostly about fit."
 schema_type: ItemList
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
@@ -86,211 +86,113 @@ tags:
   - "home-maintenance"
   - "lane:audience_specific"
 faq:
-  - question: "Does a whole-house carbon filter remove sediment?"
-    answer: "No. Carbon is for taste and odor. Sediment needs a sediment filter, and heavy grit should be caught before carbon so the carbon stage does not load too quickly."
-  - question: "Is a sediment filter enough for well water?"
-    answer: "Only if sediment is the only issue. Well water can also bring iron staining, sulfur odor, or hardness, and those need separate treatment."
-  - question: "Which matters more: cartridge size or stage count?"
-    answer: "Cartridge size matters more when the water is dirty because it affects how much debris the system can hold before pressure starts to fall. Stage count matters when different water problems need different media."
-  - question: "How often should replacement cartridges be changed?"
-    answer: "Follow a schedule based on the water load and household use, not only flow changes. Waiting until pressure drops usually means the cartridge is already overdue."
+  - question: "What is the best durable whole house water filter in 2026?"
+    answer: "The best durable whole house water filter is the one that balances price, performance, and support most cleanly for U.S. buyers."
+  - question: "Are expensive options worth it?"
+    answer: "Only when the premium features solve a real weekly problem for you."
+  - question: "How do I choose the right pick from this roundup?"
+    answer: "Choose the pick that matches your layout, upkeep tolerance, and the level of automation you actually want to live with every week."
+  - question: "Should I buy from Amazon or compare other U.S. listings first?"
+    answer: "Compare the live Amazon listing first for the exact model and bundle, then sanity-check competing U.S. retailers if return policy or accessories matter to you."
 ---
 
-For most homes dealing with municipal chlorine taste or odor, the APEC Water Systems CF1 2-Stage Carbon Filter Whole House System is the strongest all-around pick. If sediment is the main problem, the best answer changes fast.
+This roundup keeps those jobs separate so you can choose the system that matches your house, not just the most impressive-looking housing.
 
-## Quick Comparison
-
-| Pick | Best for | Filter type | Main trade-off |
+| Pick | Best for | Why it fits | Watch out |
 |---|---|---|---|
-| APEC Water Systems CF1 2-Stage Carbon Filter Whole House System | Chlorine and odor control for an entire home | 2-stage carbon | Not a sediment-first system |
-| DuPont WFPF2002G Whole House Filter System | Budget-friendly sediment and particle reduction | Sediment filtration | Does not improve taste or odor |
-| 3M Aqua-Pure AP904 Whole House Drinking Water Filter System | Households that want simple, repeatable cartridge service | Cartridge-based | Not the strongest choice for heavy sediment |
-| iSpring WGB32B 2-Stage Whole House Water Filter System with 20" Filter Cartridges | Buyers who want to tune filtration to their water issue | 2-stage with 20-inch cartridges | Requires more setup decisions |
-| APEC Water Systems WWS-1 Heavy Duty Whole House Sediment Filter | Well water and homes with visible sediment loads | Heavy-duty sediment | Does not solve chlorine taste |
+| APEC Water Systems CF1 2-Stage Carbon Filter Whole House System | Chlorine and odor control for an entire home | Two-stage carbon is a clean answer when the water is acceptable but does not taste or smell right | Not built for heavy sediment |
+| DuPont WFPF2002G Whole House Filter System | Budget sediment and particle reduction | Simple sediment filtration helps protect fixtures and appliances without adding complexity | Does not improve taste or odor |
+| 3M Aqua-Pure AP904 Whole House Drinking Water Filter System | Households that want repeatable cartridge service | Standard cartridge upkeep is easy to schedule and easier to keep consistent | Less appealing for rough, debris-heavy water |
+| iSpring WGB32B 2-Stage Whole House Water Filter System with 20-inch Filter Cartridges | Homes that need a more flexible two-stage path | Two large cartridge stages let you build around sediment plus another issue | More setup choices to manage |
+| APEC Water Systems WWS-1 Heavy Duty Whole House Sediment Filter | Well water and homes with visible grit | Heavy-duty sediment treatment belongs at the front of rough-water systems | Not a taste or odor solution |
 
-## Start With the Water Problem
+## APEC Water Systems CF1 2-Stage Carbon Filter Whole House System
 
-A whole-house filter works best when it has one clear job.
+The [APEC Water Systems CF1 2-Stage Carbon Filter Whole House System](https://www.amazon.com/s?k=APEC%20Water%20Systems%20CF1%202-Stage%20Carbon%20Filter%20Whole%20House%20System&tag=betterwaterguide-20) is the strongest all-around starting point for homes where chlorine taste or odor shows up at every tap. That is the kind of whole-house problem carbon was built for, and the two-stage layout keeps the system focused on one clear job instead of asking it to do everything.
 
-- If the water smells like chlorine or tastes flat, carbon belongs at the front of the list.
-- If faucet screens catch sand, rust flakes, or cloudy debris, sediment control comes first.
-- If the house has both sediment and taste issues, a two-stage system makes more sense than a single-purpose unit.
-- If you want the same replacement routine every time, cartridge-based service is the easiest to keep on track.
+Who it is for: homes on municipal water where the shower, kitchen, and laundry all carry the same chlorine complaint.
 
-Hard water is a separate issue. These filters do not replace a softener or stop scale on their own.
+Why it helps: it treats the main line, so the improvement reaches the whole house instead of only one faucet. For a home that already has fairly clean water, that is the most direct way to make the water experience feel better.
 
-## 1. APEC Water Systems CF1 2-Stage Carbon Filter Whole House System: Best Overall
+Limitation: it is not the first pick when the water carries sand, rust flakes, or cloudy debris.
 
-The APEC Water Systems CF1 2-Stage Carbon Filter Whole House System [Amazon link](https://www.amazon.com/s?k=APEC%20Water%20Systems%20CF1%202-Stage%20Carbon%20Filter%20Whole%20House%20System&tag=betterwaterguide-20) is the best all-around pick for homes that want better-tasting, better-smelling water at every tap. Its two-stage carbon setup is a strong fit for chlorine taste and odor, which are the complaints many homeowners notice first.
+Choose something else when: sediment is what keeps loading up aerators or you need a filter that can handle grit before carbon gets involved.
 
-### Why it fits
+It also makes sense when the rest of the water is already decent. If the real complaint is the smell at the tap or in the shower, solving that one issue gives the biggest day-to-day payoff without adding needless complexity.
 
-This system is focused on one of the most common whole-house water problems: the smell and taste of chlorine. Carbon is the right tool when the water itself is acceptable but the experience is not. That makes the CF1 a smart choice for kitchens, bathrooms, laundry, and showers when the goal is to improve the feel of the whole house, not just one faucet.
+## DuPont WFPF2002G Whole House Filter System
 
-The two-stage layout also keeps the system straightforward. You are not trying to solve every water issue at once, which keeps the ownership side cleaner.
+The [DuPont WFPF2002G Whole House Filter System](https://www.amazon.com/s?k=DuPont%20WFPF2002G%20Whole%20House%20Filter%20System&tag=betterwaterguide-20) is the practical choice for homes that mainly need sediment and particle reduction without turning the install into a project. It keeps the job narrow: catch the grit, protect the plumbing, and avoid overbuying a system that does more than the water calls for.
 
-### Trade-off
+Who it is for: older homes, homes with occasional municipal debris, or places where faucets and showerheads collect visible particles.
 
-Carbon does not handle gritty water, rust flakes, or visible sediment. If the house is pulling in sand or cloudy debris, this is not the first filter to buy. In that case, a sediment stage should come before carbon so the carbon cartridge is not burdened with the wrong job.
+Why it helps: a simple sediment filter is often the best first line of defense when the problem is debris, not taste. It can keep small particles out of fixtures and appliances, which is useful in houses that want a straightforward whole-house upgrade.
 
-### Who should choose it
+Limitation: it will not change chlorine taste or odor on its own.
 
-Choose the CF1 if your main complaint is chlorine smell or taste and the water is otherwise fairly clean. Skip it if faucet aerators and showerheads keep loading up with sediment.
+Choose something else when: the water also has a noticeable smell or flat taste and you want carbon in the system.
 
-## 2. DuPont WFPF2002G Whole House Filter System: Best Value
+That simplicity is what makes it durable in practice. A straightforward sediment filter is easier to keep in service, and keeping particles out of the plumbing can reduce wear on the parts you touch every day.
 
-The DuPont WFPF2002G Whole House Filter System [Amazon link](https://www.amazon.com/s?k=DuPont%20WFPF2002G%20Whole%20House%20Filter%20System&tag=betterwaterguide-20) is the practical budget pick for sediment and particle reduction. It keeps the job narrow and useful: catch the grit, protect the plumbing, and avoid overbuying a more complex system than the water needs.
+## 3M Aqua-Pure AP904 Whole House Drinking Water Filter System
 
-### Why it fits
+The [3M Aqua-Pure AP904 Whole House Drinking Water Filter System](https://www.amazon.com/s?k=3M%20Aqua-Pure%20AP904%20Whole%20House%20Drinking%20Water%20Filter%20System&tag=betterwaterguide-20) is the pick for households that want a predictable cartridge routine. A lot of whole-house systems fall apart in real life because nobody wants to deal with them. A service plan that is easy to repeat matters more than a dramatic housing when the goal is long-term use.
 
-This is the right kind of system for older homes, homes that have recently had plumbing work, or municipal lines that occasionally shed debris. Sediment filtration helps keep showerheads, valve bodies, and appliance screens from filling with particles.
+Who it is for: busy homes that want a consistent maintenance pattern and prefer a cartridge-based setup that is easy to keep on schedule.
 
-It is a simple answer to a simple problem. If the water is mostly fine but leaves grit behind, that is where this filter makes sense.
+Why it helps: standardized service is easier to remember, easier to hand off, and easier to keep organized over time. That makes it a strong fit for people who want the whole-house filter to be part of ordinary home upkeep rather than a special project.
 
-### Trade-off
+Limitation: it is not the strongest choice for rough water with a lot of sediment.
 
-It does not improve taste or odor. If chlorine smell is part of the complaint, this is the wrong tool by itself.
+Choose something else when: the water carries visible grit or you want to build a more customized multi-stage path.
 
-### Who should choose it
+This is especially useful in homes where one person handles the maintenance and another person lives with the result. When the replacement pattern is predictable, the system is easier to keep from falling behind.
 
-Choose the DuPont if your main issue is sediment and you want the most direct, budget-conscious fix. Skip it if the water also has a noticeable chlorine smell.
+## iSpring WGB32B 2-Stage Whole House Water Filter System with 20-inch Filter Cartridges
 
-## 3. 3M Aqua-Pure AP904 Whole House Drinking Water Filter System: Best for Simple Service
+The [iSpring WGB32B 2-Stage Whole House Water Filter System with 20-inch Filter Cartridges](https://www.amazon.com/s?k=iSpring%20WGB32B%202-Stage%20Whole%20House%20Water%20Filter%20System%20with%2020%22%20Filter%20Cartridges&tag=betterwaterguide-20) is the flexible choice for homes that need more than one filtration step. Two large cartridge stages give you room to separate jobs, which matters when sediment is part of the issue and another problem is sitting beside it.
 
-The 3M Aqua-Pure AP904 Whole House Drinking Water Filter System [Amazon link](https://www.amazon.com/s?k=3M%20Aqua-Pure%20AP904%20Whole%20House%20Drinking%20Water%20Filter%20System&tag=betterwaterguide-20) stands out because it keeps maintenance predictable. For households that want a repeatable cartridge changeout instead of a more customizable setup, that matters.
+Who it is for: homeowners who want to tailor the filtration path instead of forcing every water problem into one cartridge.
 
-### Why it fits
+Why it helps: a two-stage layout is useful when one filter should catch debris first and the second should handle a different concern. That can make the system feel better matched to mixed water conditions than a single-purpose unit.
 
-Some homes do better with a system that is easy to keep on schedule. Standard cartridge service is straightforward to understand and easier to hand off if more than one person handles home maintenance. That makes the AP904 a good fit for busy households that want a whole-house filter without extra guesswork.
+Limitation: flexibility comes with more decisions at setup and replacement time.
 
-It is also appealing when you value a clean, repeatable service routine more than a highly tuned filter path.
+Choose something else when: you want the simplest possible maintenance path and do not want to think through cartridge planning.
 
-### Trade-off
+The trade-off is that you have to be willing to think through the cartridge sequence. If you are comfortable choosing sediment first and a second medium after that, the system gives you room to build a better match.
 
-Predictable service is not the same thing as maximum flexibility. The AP904 is not built for every kind of water problem, and it is not the first pick for heavy sediment loads that can load cartridges too quickly.
+## APEC Water Systems WWS-1 Heavy Duty Whole House Sediment Filter
 
-### Who should choose it
+The [APEC Water Systems WWS-1 Heavy Duty Whole House Sediment Filter](https://www.amazon.com/s?k=APEC%20Water%20Systems%20WWS-1%20Heavy%20Duty%20Whole%20House%20Sediment%20Filter&tag=betterwaterguide-20) is the right starting point for homes with visible grit, sand, or well-water debris. When the incoming water is rough, a heavy-duty sediment filter should be at the front of the system so the rest of the plumbing and any downstream filters do not have to take the punishment.
 
-Choose the AP904 if you want a whole-house system with a simple, repeatable cartridge routine. Skip it if the water issue is especially dirty or you want to customize the filtration media more closely.
+Who it is for: well water homes and any house that sees particles in aerators, showerheads, or toilet valves.
 
-## 4. iSpring WGB32B 2-Stage Whole House Water Filter System with 20" Filter Cartridges: Best for Mixed Water Issues
+Why it helps: it gives the dirt somewhere to go before it reaches the parts of the house that are more annoying or expensive to clean. In homes with serious sediment, that is the most durable way to protect the rest of the setup.
 
-The iSpring WGB32B 2-Stage Whole House Water Filter System with 20" Filter Cartridges [Amazon link](https://www.amazon.com/s?k=iSpring%20WGB32B%202-Stage%20Whole%20House%20Water%20Filter%20System%20with%2020%22%20Filter%20Cartridges&tag=betterwaterguide-20) is the flexible pick for homes that need more than one type of filtration. The two-stage layout and 20-inch cartridges make it a better fit when sediment and another issue need to be handled in the same system.
+Limitation: it does not solve chlorine taste or odor.
 
-### Why it fits
+Choose something else when: the main complaint is smell or taste rather than grit, or you need carbon after the sediment stage.
 
-This system is useful when the water problem is not just one thing. If the home has sediment plus taste concerns, a two-stage setup gives more room to separate the work. The 20-inch cartridge format also gives the system a larger path for filtration, which helps when the water has more debris to deal with.
+That matters on wells because the water load can change over time. A heavy sediment stage gives you a buffer when the source water is rougher than usual.
 
-It is a good choice for buyers who want the filter media to match the issue instead of forcing every house into the same setup.
+## How to choose a durable whole-house filter
 
-### Trade-off
+Durability in this category is less about a heavy housing and more about whether the filter can keep doing its job without constant drama. A few practical checks make the difference.
 
-Flexibility adds more decisions. You need to keep track of the cartridge plan and stay organized about replacements. That is more work than a fixed-purpose sediment filter or a standardized cartridge system.
+- Start with the dominant water issue. Chlorine taste points to carbon. Visible debris points to sediment. If both show up, a two-stage system is usually the cleaner answer.
+- Match the filter to the water load. A house with gritty water needs a sediment-first setup because carbon cartridges should not have to act like a trash can.
+- Keep service access simple. A filter that is awkward to reach is a filter that gets ignored. Straightforward cartridge changes matter more than flashy labels.
+- Decide how much flexibility you actually want. The iSpring WGB32B makes sense when you want to tune the media. The AP904 makes more sense when you want a repeatable routine.
+- Do not use a whole-house filter as a softener substitute. These systems help with particles and taste issues, but hard water is a separate problem. If scale is the issue, a softener belongs in the plan too.
+- If you do not know which problem is dominant, a basic water test or a careful look at what the plumbing is catching can keep you from buying the wrong kind of filter.
+- Placement matters too. If the filter is hard to reach, a good system becomes an annoying one. Leave enough room to open the housing, swap the cartridge, and drain the line without improvising a workaround.
+- More stages are not automatically better. They only help when each stage has a clear job. A sediment stage before carbon is a smart chain. Carbon first in a dirty water line is usually the wrong order.
 
-### Who should choose it
+The homes that get the best long-term results are usually the ones that keep the system simple where possible and specific where needed.
 
-Choose the WGB32B if your water has mixed issues and you want a two-stage system that can be set up more deliberately. Skip it if you want the simplest possible service path.
+## Final verdict
 
-## 5. APEC Water Systems WWS-1 Heavy Duty Whole House Sediment Filter: Best for Heavy Sediment
+For most homes, the [APEC Water Systems CF1 2-Stage Carbon Filter Whole House System](https://www.amazon.com/s?k=APEC%20Water%20Systems%20CF1%202-Stage%20Carbon%20Filter%20Whole%20House%20System&tag=betterwaterguide-20) is the strongest all-around starting point because it handles the most common whole-house complaint - chlorine taste or odor - without turning upkeep into a burden.
 
-The APEC Water Systems WWS-1 Heavy Duty Whole House Sediment Filter [Amazon link](https://www.amazon.com/s?k=APEC%20Water%20Systems%20WWS-1%20Heavy%20Duty%20Whole%20House%20Sediment%20Filter&tag=betterwaterguide-20) is the right call when the home is dealing with visible particles, sand, or well-water grit. It is a front-line sediment filter, which is exactly what some houses need before any carbon stage can do useful work.
-
-### Why it fits
-
-If sediment is showing up in aerators, showerheads, or valve screens, a heavy-duty sediment filter belongs near the start of the system. The WWS-1 is built for that job. It helps keep debris out of the rest of the plumbing and can protect other treatment equipment downstream.
-
-That makes it especially relevant for well water and homes that take a lot of particle load in the line.
-
-### Trade-off
-
-It does not help with chlorine taste or odor. It is a sediment solution, not a taste solution. It also does not address hardness or other dissolved water issues.
-
-### Who should choose it
-
-Choose the WWS-1 if your water brings in grit, sand, or visible debris and you want a strong sediment-first filter. Skip it if the main complaint is taste or odor.
-
-## Which One Fits Your House?
-
-| Water complaint | Best starting point | Why it works |
-|---|---|---|
-| Chlorine smell or flat-tasting water | APEC CF1 | Carbon addresses taste and odor across the house |
-| Visible grit, rust flakes, or cloudy water | APEC WWS-1 | Sediment-first treatment protects the plumbing |
-| Budget sediment cleanup | DuPont WFPF2002G | Simple particle reduction without extra complexity |
-| Predictable cartridge swaps | 3M Aqua-Pure AP904 | Standardized service stays easy to manage |
-| Mixed sediment and taste issues | iSpring WGB32B | Two stages let the filter path match the water |
-
-A sediment prefilter before carbon helps keep the carbon stage cleaner for longer. That matters in homes with well water or older plumbing that sheds debris.
-
-## What to Compare Before You Buy
-
-The best filter for one house can be the wrong filter for the next one, even when the brand names look close.
-
-- **What the water is actually doing:** Chlorine, sediment, and hardness call for different solutions.
-- **How dirty the water is:** A heavy sediment load changes the value of a carbon-first system.
-- **How often the system will be serviced:** The easiest filter to maintain is often the one that gets used properly.
-- **How much room the main line gives you:** A cramped install makes cartridge swaps more annoying than they should be.
-- **Whether one stage needs to protect another:** In many homes, the sediment filter comes first so the rest of the system can do its job.
-
-## Buying Advice That Actually Matters
-
-### 1) Start with the water complaint, not the brand name
-
-If the water smells like chlorine, carbon is the right direction. If it leaves debris behind, sediment control comes first. If both are happening, a two-stage system is usually the better fit.
-
-### 2) Match the filter to the amount of dirt in the water
-
-Homes with heavy sediment need a setup that can take more loading before pressure starts to fall. That is where sediment-first systems and larger cartridge formats make more sense.
-
-### 3) Leave room for service
-
-A whole-house filter is only as useful as the space around it. If the housing is difficult to access, replacing cartridges becomes a chore instead of a routine.
-
-### 4) Think about the replacement path before you buy
-
-A system with standard, repeatable cartridge service is easier to keep on schedule. A more flexible system can do more, but only if someone is willing to stay organized about the parts.
-
-### 5) Keep hard water separate
-
-These filters do not soften water. If scale is the main issue, a water softener belongs in the plan.
-
-## Final Recommendation
-
-For most homes, the APEC Water Systems CF1 2-Stage Carbon Filter Whole House System is the best durable whole house water filter because it handles the most common whole-house complaint without making maintenance complicated.
-
-Choose the DuPont WFPF2002G if you mainly need budget sediment reduction. Choose the APEC WWS-1 if your water brings in a lot of grit or visible debris. Choose the 3M Aqua-Pure AP904 if you want a predictable cartridge routine. Choose the iSpring WGB32B if you need a two-stage system that can handle mixed water issues.
-
-If the water smells like chlorine and the rest of the house is already free of sediment, the CF1 is the cleanest starting point. If the water is dirty, start with sediment first.
-
-## FAQ
-
-### Does a whole-house carbon filter remove sediment?
-
-No. Carbon is for taste and odor. Sediment needs a sediment filter, and heavy grit should be caught before carbon so the carbon stage does not load too quickly.
-
-### Is a sediment filter enough for well water?
-
-Only if sediment is the only issue. Well water can also bring iron staining, sulfur odor, or hardness, and those need separate treatment.
-
-### Which matters more: cartridge size or stage count?
-
-Cartridge size matters more when the water is dirty because it affects how much debris the system can hold before pressure starts to fall. Stage count matters when different water problems need different media.
-
-### How often should replacement cartridges be changed?
-
-Follow a schedule based on the water load and household use, not only flow changes. Waiting until pressure drops usually means the cartridge is already overdue.
-
-### Should a whole-house filter come before a softener?
-
-Yes, when sediment or chlorine is part of the problem. A prefilter helps protect the softener and keeps the rest of the system cleaner. If hardness is the only issue, start with the softener instead.
-
-### Which pick is easiest to maintain?
-
-The 3M Aqua-Pure AP904 is the easiest to keep on a predictable service routine. If sediment is the main problem, the DuPont WFPF2002G or APEC WWS-1 is the better place to start.
-
-### Do I need a water test before buying?
-
-Yes. Even a basic check for chlorine and sediment can change the right answer quickly. A fuller lab panel gives a clearer picture if the water issue is more complicated.
-
-### Can a whole-house filter replace a sink filter?
-
-No. A whole-house filter treats the main line, which is useful when showers, laundry, and appliances all need the same treatment. If only the kitchen sink needs help, a point-of-use filter is the simpler choice.
+If the water is dirty, start with sediment instead. The [APEC Water Systems WWS-1 Heavy Duty Whole House Sediment Filter](https://www.amazon.com/s?k=APEC%20Water%20Systems%20WWS-1%20Heavy%20Duty%20Whole%20House%20Sediment%20Filter&tag=betterwaterguide-20) and [DuPont WFPF2002G Whole House Filter System](https://www.amazon.com/s?k=DuPont%20WFPF2002G%20Whole%20House%20Filter%20System&tag=betterwaterguide-20) are better starting points when grit is the thing wearing down the house. If you want the easiest repeatable service routine, the [3M Aqua-Pure AP904 Whole House Drinking Water Filter System](https://www.amazon.com/s?k=3M%20Aqua-Pure%20AP904%20Whole%20House%20Drinking%20Water%20Filter%20System&tag=betterwaterguide-20) is the simplest path. If you want more control over the filtration stages, the [iSpring WGB32B 2-Stage Whole House Water Filter System with 20-inch Filter Cartridges](https://www.amazon.com/s?k=iSpring%20WGB32B%202-Stage%20Whole%20House%20Water%20Filter%20System%20with%2020%22%20Filter%20Cartridges&tag=betterwaterguide-20) gives you that flexibility.
