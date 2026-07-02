@@ -283,7 +283,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 @media (min-width: 68rem) {
     article.article-shell:has(.audible-sponsored-slot) .audible-inline-sponsored { display: none; }
     .audible-sponsored-slot { display: block; position: absolute; left: calc(100% + 1rem); top: 0; bottom: 0; width: min(20rem, calc((100vw - 100%) / 2 - 1rem)); z-index: 2; pointer-events: none; }
-    .audible-sponsored-slot .audible-sponsored-panel { max-width: none; pointer-events: auto; }
+    .audible-sponsored-slot .audible-sponsored-panel { width: 100%; max-width: 320px; pointer-events: auto; }
 }
 @media (max-width: 67.999rem) {
     .audible-sponsored-slot { display: none !important; }
