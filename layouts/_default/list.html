@@ -1,12 +1,12 @@
 {{ define "main" }}
 <div class="section-listing">
     <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="section-description">{{ . }}</p>{{ end }}
+    {{ with .Description }}<p class="section-description">{{ . | markdownify | plainify }}</p>{{ end }}
     <div class="article-grid">
         {{ range .Pages.ByDate.Reverse }}
         <article class="article-card">
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            <p>{{ .Description }}</p>
+            <p>{{ .Description | markdownify | plainify }}</p>
             <span class="article-date">{{ .Date.Format "January 2, 2006" }}</span>
         </article>
         {{ end }}
