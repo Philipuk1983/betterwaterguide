@@ -2700,6 +2700,22 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
     margin: 2rem 0 2.4rem;
     padding: clamp(2rem, 4vw, 3rem);
 }
+.theme-water article.article-shell:has(.audible-sponsored-slot),
+.theme-sheetops article.article-shell:has(.audible-sponsored-slot),
+.theme-stackaudit article.article-shell:has(.audible-sponsored-slot),
+.theme-toolforge article.article-shell:has(.audible-sponsored-slot),
+.theme-pureairreview article.article-shell:has(.audible-sponsored-slot),
+.theme-coffeereviewlab article.article-shell:has(.audible-sponsored-slot),
+.theme-cleanfloorlab article.article-shell:has(.audible-sponsored-slot),
+.theme-water .article-header:has(.audible-sponsored-slot),
+.theme-sheetops .article-header:has(.audible-sponsored-slot),
+.theme-stackaudit .article-header:has(.audible-sponsored-slot),
+.theme-toolforge .article-header:has(.audible-sponsored-slot),
+.theme-pureairreview .article-header:has(.audible-sponsored-slot),
+.theme-coffeereviewlab .article-header:has(.audible-sponsored-slot),
+.theme-cleanfloorlab .article-header:has(.audible-sponsored-slot) {
+    overflow: visible;
+}
 .theme-water h1,
 .theme-sheetops h1,
 .theme-stackaudit h1,
@@ -2765,7 +2781,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
     .theme-pureairreview article.article-shell,
     .theme-coffeereviewlab article.article-shell,
     .theme-cleanfloorlab article.article-shell { padding: 1rem; }
-    .theme-water h1,
+.theme-water h1,
     .theme-sheetops h1,
     .theme-stackaudit h1,
     .theme-toolforge h1,
