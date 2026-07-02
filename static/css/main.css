@@ -173,7 +173,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .fit-snapshot__label { margin: 0 0 0.45rem; font-size: 0.9rem; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-secondary); }
 .fit-snapshot__body { color: var(--color-text); line-height: 1.65; overflow-wrap: anywhere; }
 .fit-snapshot__body > :last-child { margin-bottom: 0; }
-.disclosure-inline { margin-bottom: 1rem; padding: 0.45rem 0.65rem; font-size: 0.58rem; line-height: 1.2; }
+.disclosure-inline { margin-bottom: 1rem; padding: 0.5rem 0.75rem; font-size: 0.63rem; line-height: 1.2; }
 .disclosure-inline small { display: block; font-size: inherit; line-height: inherit; }
 @media (min-width: 40rem) { .disclosure-inline small { white-space: nowrap; } }
 .product-cta, .affiliate-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; border: 1px solid var(--border); background: #ffffff; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 16px; }
