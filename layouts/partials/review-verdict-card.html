@@ -6,10 +6,11 @@
 {{ $amazonUrl := index $product "amazon_url" }}
 {{ if and (not $amazonUrl) (index $product "asin") }}{{ $amazonUrl = printf "https://www.amazon.com/dp/%s?tag=%s" (index $product "asin") $site.Params.amazonTag }}{{ end }}
 {{ $primaryCta := (index $card "primary_cta") | default dict }}
-{{ $primaryLabel := (index $primaryCta "label") | default "Check price on Amazon" }}
+{{ $primaryLabel := (index $primaryCta "label") | default (index $product "cta_text") | default "Check price on Amazon" }}
 {{ $primaryHref := (index $primaryCta "href") | default $amazonUrl }}
-{{ $headline := (index $card "headline") | default (index $widget "headline") }}
-{{ $verdict := (index $card "verdict") | default (index $widget "verdict") }}
+{{ $buyerNote := index $product "buyer_note" }}
+{{ $headline := (index $card "headline") | default (index $widget "headline") | default (index $product "name") }}
+{{ $verdict := (index $card "verdict") | default (index $widget "verdict") | default $buyerNote }}
 {{ $bestFor := (index $card "best_for") | default (index $widget "best_for") | default (slice) }}
 {{ $skipIf := (index $card "skip_if") | default (index $widget "skip_if") | default (slice) }}
 {{ $hasVerdictSubstance := or $verdict (gt (len $bestFor) 0) (gt (len $skipIf) 0) }}

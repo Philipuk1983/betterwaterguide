@@ -11,8 +11,8 @@
   "author": {
     "name": "Better Water Guide Editorial Team",
     "slug": "editorial-team",
-    "role": "Home Water Filtration Editor (Product Reviews \u0026 Maintenance Guidance)",
-    "bio": "We translate common water concerns into clear, practical filtration choices\u2014covering filter types, cartridge upkeep, and installation trade-offs for U.S. homes."
+    "role": "Home Water Filtration Editor (Testing \u0026 Maintenance Focus)",
+    "bio": "We translate water-quality concerns into practical guidance on filters, RO systems, cartridges, and hard-water solutions for U.S. homeowners."
   },
   "infographics": {
     "enabled": false,
@@ -93,5 +93,5 @@
       }
     }
   },
-  "generated": "2026-07-02T09:05:00.5946025Z"
+  "generated": "2026-07-02T09:25:06.7080209Z"
 }
