@@ -1726,7 +1726,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
 .theme-toolforge .hero::after,
 .theme-toolforge .toolforge-hero::after,
 .theme-toolforge .article-header::after {
-    content: "Workshop-tested buying guidance";
+    content: "Workshop buying guidance";
     position: absolute;
     top: 1.35rem;
     right: 1.5rem;
@@ -2275,7 +2275,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
 .theme-coffeereviewlab .hero::after,
 .theme-coffeereviewlab .coffeereviewlab-hero::after,
 .theme-coffeereviewlab .article-header::after {
-    content: "Brew tested, buyer focused";
+    content: "Brew gear, buyer focused";
     position: absolute;
     top: 1.35rem;
     right: 1.45rem;
@@ -2304,7 +2304,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
 .theme-coffeereviewlab a:hover { color: var(--crl-roast); text-decoration-color: rgba(122,63,34,0.45); }
 .theme-coffeereviewlab .article-grid,
 .theme-coffeereviewlab .home-browse-grid,
-.theme-coffeereviewlab .home-method-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.theme-coffeereviewlab .home-method-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .theme-coffeereviewlab .article-card,
 .theme-coffeereviewlab .home-browse-card,
 .theme-coffeereviewlab .home-method-card,
@@ -2708,7 +2708,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
 .theme-coffeereviewlab h1,
 .theme-cleanfloorlab h1 {
     max-width: 54rem;
-    font-size: clamp(2rem, 3.2vw, 3.1rem);
+    font-size: clamp(1.85rem, 2.5vw, 2.55rem);
     line-height: 1.08;
 }
 .theme-water h2,
@@ -2718,8 +2718,44 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
 .theme-pureairreview h2,
 .theme-coffeereviewlab h2,
 .theme-cleanfloorlab h2 {
-    font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    font-size: clamp(1.25rem, 1.7vw, 1.55rem);
     line-height: 1.15;
+}
+.theme-water .section-listing .article-grid,
+.theme-sheetops .section-listing .article-grid,
+.theme-stackaudit .section-listing .article-grid,
+.theme-toolforge .section-listing .article-grid,
+.theme-pureairreview .section-listing .article-grid,
+.theme-coffeereviewlab .section-listing .article-grid,
+.theme-cleanfloorlab .section-listing .article-grid {
+    grid-template-columns: repeat(2, minmax(18rem, 1fr));
+    gap: 1rem;
+}
+.theme-water .article-card h2,
+.theme-water .article-card h3,
+.theme-sheetops .article-card h2,
+.theme-sheetops .article-card h3,
+.theme-stackaudit .article-card h2,
+.theme-stackaudit .article-card h3,
+.theme-toolforge .article-card h2,
+.theme-toolforge .article-card h3,
+.theme-pureairreview .article-card h2,
+.theme-pureairreview .article-card h3,
+.theme-coffeereviewlab .article-card h2,
+.theme-coffeereviewlab .article-card h3,
+.theme-cleanfloorlab .article-card h2,
+.theme-cleanfloorlab .article-card h3 {
+    font-size: clamp(1rem, 1.25vw, 1.18rem);
+    line-height: 1.25;
+}
+@media (max-width: 860px) {
+    .theme-water .section-listing .article-grid,
+    .theme-sheetops .section-listing .article-grid,
+    .theme-stackaudit .section-listing .article-grid,
+    .theme-toolforge .section-listing .article-grid,
+    .theme-pureairreview .section-listing .article-grid,
+    .theme-coffeereviewlab .section-listing .article-grid,
+    .theme-cleanfloorlab .section-listing .article-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 760px) {
     .theme-water article.article-shell,
@@ -2735,14 +2771,14 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
     .theme-toolforge h1,
     .theme-pureairreview h1,
     .theme-coffeereviewlab h1,
-    .theme-cleanfloorlab h1 { font-size: 2rem; }
+    .theme-cleanfloorlab h1 { font-size: 1.8rem; }
     .theme-water h2,
     .theme-sheetops h2,
     .theme-stackaudit h2,
     .theme-toolforge h2,
     .theme-pureairreview h2,
     .theme-coffeereviewlab h2,
-    .theme-cleanfloorlab h2 { font-size: 1.55rem; }
+    .theme-cleanfloorlab h2 { font-size: 1.35rem; }
 }
 .button-link.amazon-button, .cta-button.amazon-button { background: #f59e0b; color: #ffffff; box-shadow: 0 10px 24px rgba(245,158,11,0.24); }
 @media (max-width: 720px) {
