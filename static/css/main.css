@@ -146,8 +146,7 @@ article[itemtype="https://schema.org/Article"] > * { width: 100%; }
 .article-body td a, .comparison-table td a { overflow-wrap: normal; word-break: normal; }
 .article-body th, .comparison-table th { background: #f3f4f6; }
 article.article-shell:has(.audible-sponsored-slot),
-article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
-.article-header:has(.audible-sponsored-slot) { position: relative; overflow: visible; }
+article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { position: relative; overflow: visible; }
 .article-content-layout { position: relative; }
 .article-main-column { min-width: 0; }
 .audible-sponsored-slot { display: none; }
@@ -2706,14 +2705,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
 .theme-toolforge article.article-shell:has(.audible-sponsored-slot),
 .theme-pureairreview article.article-shell:has(.audible-sponsored-slot),
 .theme-coffeereviewlab article.article-shell:has(.audible-sponsored-slot),
-.theme-cleanfloorlab article.article-shell:has(.audible-sponsored-slot),
-.theme-water .article-header:has(.audible-sponsored-slot),
-.theme-sheetops .article-header:has(.audible-sponsored-slot),
-.theme-stackaudit .article-header:has(.audible-sponsored-slot),
-.theme-toolforge .article-header:has(.audible-sponsored-slot),
-.theme-pureairreview .article-header:has(.audible-sponsored-slot),
-.theme-coffeereviewlab .article-header:has(.audible-sponsored-slot),
-.theme-cleanfloorlab .article-header:has(.audible-sponsored-slot) {
+.theme-cleanfloorlab article.article-shell:has(.audible-sponsored-slot) {
     overflow: visible;
 }
 .theme-water h1,

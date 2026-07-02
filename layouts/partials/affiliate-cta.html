@@ -3,7 +3,10 @@
 {{ $extraClass := .class | default "" }}
 <div class="affiliate-cta{{ if $extraClass }} {{ $extraClass }}{{ end }}">
     <div>
-        <strong>{{ $product.name }}</strong>        {{ with index $product "buyer_note" }}<p class="affiliate-cta__verdict">{{ . }}</p>{{ end }}
+        <strong>{{ $product.name }}</strong>        {{ $rawBuyerNote := index $product "buyer_note" | default "" }}
+        {{ $buyerNoteText := lower $rawBuyerNote }}
+        {{ $genericBuyerNote := or (in $buyerNoteText "readers comparing") (in $buyerNoteText "your material, size, or use case") (in $buyerNoteText "different product category") }}
+        {{ if and $rawBuyerNote (not $genericBuyerNote) }}<p class="affiliate-cta__verdict">{{ $rawBuyerNote }}</p>{{ end }}
         {{ with index $product "fit_widget" }}
         {{ $widget := . }}
         <div class="affiliate-cta__fit">

@@ -18,12 +18,12 @@
     data-primary-product-name="{{ index $primaryProduct "name" }}"
     data-primary-product-url="{{ $primaryAmazonUrl }}"
     {{ end }}>
-    <header data-module="article-header" class="article-header">
     {{ if and $affiliateAllowed .Site.Params.amazonTag $hasPrimaryProduct }}
     <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored Audible offer">
         {{- partial "audible-sponsored.html" . -}}
     </div>
     {{ end }}
+    <header data-module="article-header" class="article-header">
         <h1 itemprop="headline">{{ .Title }}</h1>
         {{- partial "article-meta.html" . -}}
     </header>

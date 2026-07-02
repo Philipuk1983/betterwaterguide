@@ -8,12 +8,17 @@
 {{ $primaryCta := (index $card "primary_cta") | default dict }}
 {{ $primaryLabel := (index $primaryCta "label") | default (index $product "cta_text") | default "Check price on Amazon" }}
 {{ $primaryHref := (index $primaryCta "href") | default $amazonUrl }}
-{{ $buyerNote := index $product "buyer_note" }}
-{{ $headline := (index $card "headline") | default (index $widget "headline") | default (index $product "name") }}
+{{ $rawBuyerNote := index $product "buyer_note" | default "" }}
+{{ $buyerNoteText := lower $rawBuyerNote }}
+{{ $genericBuyerNote := or (in $buyerNoteText "readers comparing") (in $buyerNoteText "your material, size, or use case") (in $buyerNoteText "different product category") }}
+{{ $buyerNote := "" }}
+{{ if and $rawBuyerNote (not $genericBuyerNote) }}{{ $buyerNote = $rawBuyerNote }}{{ end }}
 {{ $verdict := (index $card "verdict") | default (index $widget "verdict") | default $buyerNote }}
 {{ $bestFor := (index $card "best_for") | default (index $widget "best_for") | default (slice) }}
 {{ $skipIf := (index $card "skip_if") | default (index $widget "skip_if") | default (slice) }}
 {{ $hasVerdictSubstance := or $verdict (gt (len $bestFor) 0) (gt (len $skipIf) 0) }}
+{{ $headline := (index $card "headline") | default (index $widget "headline") }}
+{{ if and (not $headline) $hasVerdictSubstance }}{{ $headline = index $product "name" }}{{ end }}
 {{ if $hasVerdictSubstance }}
 <section class="review-verdict-card" data-module="review-verdict-card">
     <div class="review-verdict-card__header">
@@ -40,4 +45,12 @@
         <p class="affiliate-note"><em>As an Amazon Associate, we may earn from qualifying purchases.</em></p>
     </div>
 </section>
+{{ else if $primaryHref }}
+<div class="affiliate-cta affiliate-cta--hero affiliate-cta--review-fallback" data-module="review-product-cta">
+    <div><strong>{{ index $product "name" }}</strong></div>
+    <div class="affiliate-cta__action">
+        <a class="button-link amazon-button" href="{{ $primaryHref }}" rel="nofollow sponsored noopener" target="_blank">{{ $primaryLabel }}</a>
+        <p class="affiliate-note"><em>As an Amazon Associate, we may earn from qualifying purchases.</em></p>
+    </div>
+</div>
 {{ end }}
