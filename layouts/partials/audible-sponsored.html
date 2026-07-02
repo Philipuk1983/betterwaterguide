@@ -1,6 +1,6 @@
 {{ $amazonTag := .Site.Params.amazonTag | default "" }}
-{{ $heading := .Site.Params.audiblePanelHeading | default "Listen while you plan your next project" }}
-{{ $body := .Site.Params.audiblePanelBody | default "Try <strong>Audible</strong> through Amazon while you work through practical buying decisions, chores, or weekend projects." }}
+{{ $heading := .Site.Params.audiblePanelHeading | default "Listen while you travel, pack, or unwind" }}
+{{ $body := .Site.Params.audiblePanelBody | default "Try <strong>Audible</strong> through Amazon and listen to audiobooks while you pack, travel, walk, cook, or take a break." }}
 {{ $alt := .Site.Params.audiblePanelAlt | default (printf "%s Audible listening scene" (.Site.Title | default "Sponsored")) }}
 {{ if $amazonTag }}
 {{ $audibleImage := "" }}

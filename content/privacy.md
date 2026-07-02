@@ -1,29 +1,42 @@
 ---
 title: "Privacy Policy"
-description: "Plain-language privacy notice for a static site that uses analytics/search console style tools and affiliate links."
-date: 2026-06-30
+description: "How Better Water Guide handles privacy and site analytics."
+date: 2026-07-02
 toc: false
 ---
 
-_Last updated: June 30, 2026_
+_Last updated: July 2, 2026_
 
-## Who We Are
+### Who We Are
+
 This website is operated by Better Water Guide. Our website address is https://betterwaterguide.com.
 
-## What Data We Collect
-Because this is a mostly static site, we do not collect information about you in the background the same way a full web app would. We may use third-party tools to help us understand site performance.
+### What Data We Collect
 
-**Analytics and search performance:** We use tools such as Google Search Console and Bing Webmaster Tools (or similar services) to understand how pages perform in search results. These tools generally collect aggregated search performance data rather than personally identifying user profiles.
+**Analytics:** We use search performance tools such as Google Search Console and Bing Webmaster Tools to understand how pages perform in search results. These tools collect aggregated search performance data rather than individual user profiles.
 
-**Cookies and similar technologies:** This site itself does not rely on first-party cookies to operate. Third-party services linked from the site, including affiliate redirects to retailers, may use their own cookies when you interact with their content.
+**Cookies:** This is a static site and does not set first-party cookies. Third-party services such as Amazon affiliate links or ad networks may set their own cookies when you interact with their content.
 
-**Affiliate links:** When you click an affiliate link on this site, you are redirected to a third-party retailer such as Amazon.com. The retailer’s privacy policy governs how they handle any data they collect.
+**Affiliate Links:** When you click an affiliate link on this site, you are redirected to a third-party retailer such as Amazon.com. That retailer's privacy policy governs how they handle your data.
 
-## What We Do Not Collect
-- We do not collect email addresses through this site.
+### What We Do NOT Collect
 
-## Third-Party Links
-Our pages may link to retailers, manufacturers, and other third parties. Those sites have their own privacy practices.
+- We do not collect email addresses through the site
+- We do not require account registration
+- We do not run retargeting pixels
+- We do not sell personal data
 
-## How to Contact Us
-If you have questions about this privacy policy, contact us at **hello@betterwaterguide.com**.
+### Third-Party Services
+
+- **Amazon Associates** - affiliate link tracking
+- **Google Search Console** - search performance analytics
+- **Bing Webmaster Tools** - search performance analytics
+- **Cloudflare** - hosting and CDN
+
+### Contact
+
+For privacy-related questions, contact us at hello@betterwaterguide.com.
+
+### Changes to This Policy
+
+We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.

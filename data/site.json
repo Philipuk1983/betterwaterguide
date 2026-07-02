@@ -11,8 +11,8 @@
   "author": {
     "name": "Better Water Guide Editorial Team",
     "slug": "editorial-team",
-    "role": "Home water filtration \u0026 water quality review team",
-    "bio": "We help homeowners choose home water filtration gear with practical guidance on chlorine taste, hard water, filter types, cartridge upkeep, and maintenance routines."
+    "role": "Home Water Filtration Editor (U.S. buyer guidance)",
+    "bio": "We translate chlorine, sediment, and hard-water concerns into practical filtration choices, with clear guidance on cartridge upkeep and installation trade-offs."
   },
   "infographics": {
     "enabled": false,
@@ -93,5 +93,5 @@
       }
     }
   },
-  "generated": "2026-06-30T09:29:43.1690927Z"
+  "generated": "2026-07-02T08:49:11.9882071Z"
 }

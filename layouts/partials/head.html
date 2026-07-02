@@ -85,67 +85,23 @@ gtag('config', 'G-V3GZKYJF7J');
         return "amazon_link";
     }
 
-    function hardenAmazonLink(link) {
-        if (!link || !link.href) {
-            return false;
+    document.addEventListener("click", function(event) {
+        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) {
+            return;
         }
 
         var url;
         try {
             url = new URL(link.href, window.location.href);
         } catch (_) {
-            return false;
-        }
-
-        if (!isAmazonHost(url.hostname)) {
-            return false;
-        }
-
-        link.setAttribute("target", "_blank");
-        var relValues = (link.getAttribute("rel") || "").split(/\s+/).filter(Boolean);
-        ["sponsored", "nofollow", "noopener", "noreferrer"].forEach(function(value) {
-            if (relValues.indexOf(value) === -1) {
-                relValues.push(value);
-            }
-        });
-        link.setAttribute("rel", relValues.join(" "));
-        return true;
-    }
-
-    function hardenAmazonLinks(root) {
-        var scope = root && root.querySelectorAll ? root : document;
-        scope.querySelectorAll("a[href]").forEach(hardenAmazonLink);
-    }
-
-    if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", function() { hardenAmazonLinks(document); });
-    } else {
-        hardenAmazonLinks(document);
-    }
-
-    if ("MutationObserver" in window) {
-        new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                mutation.addedNodes.forEach(function(node) {
-                    if (node.nodeType !== 1) {
-                        return;
-                    }
-                    if (node.matches && node.matches("a[href]")) {
-                        hardenAmazonLink(node);
-                    }
-                    hardenAmazonLinks(node);
-                });
-            });
-        }).observe(document.documentElement, { childList: true, subtree: true });
-    }
-
-    document.addEventListener("click", function(event) {
-        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
-        if (!link || !hardenAmazonLink(link)) {
             return;
         }
 
-        var url = new URL(link.href, window.location.href);
+        if (!isAmazonHost(url.hostname)) {
+            return;
+        }
+
         var payload = {
             site_host: window.location.hostname,
             page_path: window.location.pathname,
@@ -160,14 +116,7 @@ gtag('config', 'G-V3GZKYJF7J');
 
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push(Object.assign({ event: "affiliate_click" }, payload));
-        if (typeof window.gtag === "function") {
-            window.gtag("event", "amazon_outbound_click", Object.assign({
-                send_to: "G-V3GZKYJF7J",
-                transport_type: "beacon"
-            }, payload));
-        } else {
-            window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
-        }
+        window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
     }, true);
 })();
 </script>

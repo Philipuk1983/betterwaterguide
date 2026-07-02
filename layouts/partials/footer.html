@@ -1,18 +1,18 @@
 <footer class="site-footer">
     {{ $footerAffiliateAllowed := true }}
-    {{ with .File }}{{ if eq .BaseFileName "about" }}{{ $footerAffiliateAllowed = false }}{{ end }}{{ end }}
-    <div class="footer-inner">
-        <p>&#169; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+{{ with .File }}{{ if eq .BaseFileName "about" }}{{ $footerAffiliateAllowed = false }}{{ end }}{{ end }}
+<div class="footer-inner">
+        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
         <nav class="footer-nav">
             <a href="/about/">About</a>
-            <a href="/disclosure/">FTC Disclosure</a>
-            <a href="/privacy/">Privacy</a>
+            <a href="/disclosure/">Disclosure</a>
+            <a href="/privacy/">Privacy Policy</a>
         </nav>
-        {{ if $footerAffiliateAllowed }}
+{{ if $footerAffiliateAllowed }}
         <p class="footer-disclosure">
             As an Amazon Associate, this site earns from qualifying purchases.
-            <a href="/disclosure/">FTC Disclosure</a>.
+            <a href="/disclosure/">Full disclosure</a>.
         </p>
-        {{ end }}
+{{ end }}
     </div>
 </footer>
