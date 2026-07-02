@@ -16,7 +16,7 @@
             {{ range first 4 ($bestPages.ByDate.Reverse) }}
             <article class="article-card">
                 <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Description | markdownify | plainify }}</p>
+                <p>{{ .Description }}</p>
             </article>
             {{ end }}
         </div>
@@ -31,7 +31,7 @@
             {{ range first 6 ($reviewPages.ByDate.Reverse) }}
             <article class="article-card">
                 <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Description | markdownify | plainify }}</p>
+                <p>{{ .Description }}</p>
             </article>
             {{ end }}
         </div>
@@ -46,7 +46,7 @@
             {{ range first 4 ($vsPages.ByDate.Reverse) }}
             <article class="article-card">
                 <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Description | markdownify | plainify }}</p>
+                <p>{{ .Description }}</p>
             </article>
             {{ end }}
         </div>
@@ -61,7 +61,7 @@
             {{ range first 4 ($guidePages.ByDate.Reverse) }}
             <article class="article-card">
                 <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Description | markdownify | plainify }}</p>
+                <p>{{ .Description }}</p>
             </article>
             {{ end }}
         </div>
@@ -151,7 +151,7 @@
                             <p class="feature-meta">{{ .Section | humanize }} / {{ .Date.Format "Jan 2, 2006" }}</p>
                             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
                         </div>
-                        <p>{{ .Description | markdownify | plainify }}</p>
+                        <p>{{ .Description }}</p>
                     </article>
                     {{ end }}
                 </div>

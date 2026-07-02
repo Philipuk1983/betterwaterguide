@@ -38,7 +38,7 @@
             <a class="button-link amazon-button" href="{{ $primaryAmazonUrl }}" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
         </div>
     </div>
-    {{ else if .Params.summary }}<div data-module="article-summary" class="article-summary" itemprop="description"><p>{{ .Params.summary | markdownify | plainify }}</p></div>{{ end }}
+    {{ else if .Params.summary }}<div data-module="article-summary" class="article-summary" itemprop="description"><p>{{ .Params.summary }}</p></div>{{ end }}
     {{ if $affiliateAllowed }}{{- partial "disclosure-notice.html" . -}}{{ end }}
             {{- partial "utility-tool.html" . -}}
     {{ if and $affiliateAllowed $singleProductPage $primaryAmazonUrl }}{{ if eq (.Type | default "") "review" }}{{ partial "review-verdict-card.html" (dict "Page" . "product" $primaryProduct "site" .Site) }}{{ else }}{{ partial "affiliate-cta.html" (dict "Page" . "product" $primaryProduct "site" .Site "class" "affiliate-cta--hero") }}{{ end }}{{ end }}
