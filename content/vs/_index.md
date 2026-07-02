@@ -1,4 +1,4 @@
 ---
-title: "Compare"
-description: "Side-by-side style comparisons to help you choose between similar filters, RO setups, and cartridge options based on your water concern and upkeep preferences."
+title: "Compare Systems"
+description: "Side-by-side comparisons for filter types, RO setups, whole-house systems, softeners, and cartridges based on water concern, installation fit, and upkeep preferences."
 ---

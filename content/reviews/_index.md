@@ -1,4 +1,4 @@
 ---
-title: "Reviews"
-description: "Clear breakdowns of popular water filters and systems, including what each option is best for, what to expect from installation and maintenance, and who it tends to fit."
+title: "Filter Reviews"
+description: "Real-world reviews of popular water filters and systems, with installation fit, cartridge upkeep, maintenance expectations, and household use case in plain view."
 ---

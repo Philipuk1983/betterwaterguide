@@ -1,4 +1,4 @@
 ---
-title: "Best Picks"
-description: "Quick, kitchen-friendly recommendations across common filtration needs like under-sink drinking water, RO systems, whole-house filtration, and shower filters."
+title: "Top Filter Picks"
+description: "Practical shortlists for common water problems, from under-sink drinking water and reverse osmosis to whole-house filtration, shower filters, and cartridge upkeep."
 ---

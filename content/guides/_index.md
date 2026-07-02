@@ -1,4 +1,4 @@
 ---
-title: "Guides"
-description: "Step-by-step help for selecting water filtration, understanding filter types, choosing replacement cartridges, and using water test kits thoughtfully."
+title: "Water Quality Guides"
+description: "Water quality guides for testing, filter types, replacement cartridges, maintenance routines, and practical homeowner decisions before choosing a system."
 ---

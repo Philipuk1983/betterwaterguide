@@ -1,16 +1,16 @@
 :root {
-    --color-primary: #9a3412;
-    --color-secondary: #431407;
-    --color-accent: #16a34a;
-    --color-bg: #fffaf2;
-    --color-text: #2f241f;
-    --font-heading: 'Merriweather', system-ui, sans-serif;
-    --font-body: 'Libre Franklin', system-ui, sans-serif;
+    --color-primary: #1f7fbf;
+    --color-secondary: #123047;
+    --color-accent: #20b7c9;
+    --color-bg: #f3fbff;
+    --color-text: #243746;
+    --font-heading: 'Manrope', system-ui, sans-serif;
+    --font-body: 'Source Sans 3', system-ui, sans-serif;
     --max-width: 72rem;
     --content-width: 48rem;
-    --surface: #f8fafc;
-    --border: #e5e7eb;
-    --muted: #6b7280;
+    --surface: #f8fdff;
+    --border: #c9e8f3;
+    --muted: #647887;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -488,6 +488,185 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
 .theme-garage .site-header,
 .theme-driveway .site-header,
 .theme-trail .site-header,
+.theme-water body, .theme-water {
+    --color-primary: #1f7fbf;
+    --color-secondary: #123047;
+    --color-accent: #20b7c9;
+    --color-bg: #f3fbff;
+    --color-text: #243746;
+    --surface: #f8fdff;
+    --border: #c9e8f3;
+    --muted: #647887;
+    background:
+        radial-gradient(circle at 8% 4%, rgba(32,183,201,0.14), transparent 26rem),
+        linear-gradient(180deg, #f6fcff 0%, #ffffff 42%, #f3fbff 100%);
+    color: #243746;
+}
+.theme-water .site-header {
+    border-bottom: 1px solid #c9e8f3;
+    background: rgba(255,255,255,0.93);
+    box-shadow: 0 2px 18px rgba(18,48,71,0.06);
+    backdrop-filter: blur(10px);
+}
+.theme-water .site-logo,
+.theme-water .site-title,
+.theme-water .site-kicker,
+.theme-water .hero-eyebrow,
+.theme-water .section-kicker,
+.theme-water .footer-label,
+.theme-water .cta-label {
+    color: #1f7fbf;
+    letter-spacing: 0.1em;
+}
+.theme-water .site-nav a,
+.theme-water .footer-nav a {
+    color: #123047;
+    font-weight: 800;
+    text-decoration: none;
+}
+.theme-water .site-nav a::after,
+.theme-water .footer-nav a::after {
+    background: linear-gradient(90deg, #1f7fbf, #20b7c9);
+}
+.theme-water .hero {
+    position: relative;
+    padding: clamp(2.4rem, 4vw, 3.35rem);
+    margin: 1.4rem 0 2.25rem;
+    border: 1px solid #c9e8f3;
+    border-radius: 24px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(233,251,255,0.98) 100%),
+        linear-gradient(90deg, rgba(31,127,191,0.1), rgba(32,183,201,0.12));
+    box-shadow: 0 20px 45px rgba(18,48,71,0.08);
+    overflow: hidden;
+}
+.theme-water .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 7px;
+    background: linear-gradient(180deg, #1f7fbf, #20b7c9);
+}
+.theme-water .hero h1,
+.theme-water h1,
+.theme-water h2,
+.theme-water h3 {
+    color: #123047;
+}
+.theme-water .hero p,
+.theme-water p,
+.theme-water .section-description,
+.theme-water .article-card p,
+.theme-water .home-browse-card em,
+.theme-water .home-latest-item p,
+.theme-water .footer-inner {
+    color: #647887;
+}
+.theme-water a {
+    color: #155f91;
+    text-decoration-color: rgba(31,127,191,0.32);
+    text-underline-offset: 3px;
+}
+.theme-water a:hover {
+    color: #1f7fbf;
+    text-decoration-color: #1f7fbf;
+}
+.theme-water .article-card,
+.theme-water .spotlight-card,
+.theme-water .home-browse-card,
+.theme-water .home-method-card,
+.theme-water .home-latest-item,
+.theme-water .article-summary,
+.theme-water .table-of-contents,
+.theme-water .disclosure-inline,
+.theme-water .affiliate-cta,
+.theme-water .see-also,
+.theme-water .product-box-water,
+.theme-water .comparison-shell-water,
+.theme-water .pros-cons-water {
+    border: 1px solid #c9e8f3;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fdff 100%);
+    box-shadow: 0 14px 34px rgba(18,48,71,0.07);
+}
+.theme-water .article-card,
+.theme-water .home-browse-card,
+.theme-water .home-method-card,
+.theme-water .home-latest-item {
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.theme-water .article-card:hover,
+.theme-water .home-browse-card:hover,
+.theme-water .home-method-card:hover,
+.theme-water .home-latest-item:hover {
+    transform: translateY(-2px);
+    border-color: rgba(31,127,191,0.42);
+    box-shadow: 0 20px 44px rgba(18,48,71,0.11);
+}
+.theme-water .article-card a,
+.theme-water .home-latest-item a,
+.theme-water .home-browse-card strong {
+    color: #123047;
+    font-weight: 800;
+    text-decoration: none;
+}
+.theme-water .article-card a:hover,
+.theme-water .home-latest-item a:hover {
+    color: #155f91;
+    text-decoration: underline;
+    text-decoration-color: rgba(31,127,191,0.35);
+}
+.theme-water .button-link,
+.theme-water .see-all,
+.theme-water .cta-button {
+    border: 1px solid #c9e8f3;
+    border-radius: 999px;
+    background: #e6f7fc;
+    color: #155f91;
+    box-shadow: none;
+    font-weight: 800;
+    text-decoration: none;
+}
+.theme-water .button-link:hover,
+.theme-water .see-all:hover,
+.theme-water .cta-button:hover {
+    background: #1f7fbf;
+    border-color: #1f7fbf;
+    color: #ffffff;
+}
+.theme-water .home-depth,
+.theme-water .home-method,
+.theme-water .home-latest {
+    border-top: 1px solid #c9e8f3;
+}
+.theme-water .home-browse-card span,
+.theme-water .home-method-card span,
+.theme-water .signal-strip span,
+.theme-water .cta-chip,
+.theme-water .callout-eyebrow {
+    border-color: #c9e8f3;
+    background: #e6f7fc;
+    color: #155f91;
+}
+.theme-water .roundup-hero-callout,
+.theme-water .bottom-line-callout {
+    border-color: #c9e8f3;
+    background: linear-gradient(135deg, rgba(32,183,201,0.16), rgba(255,255,255,0.9));
+    box-shadow: 0 18px 38px rgba(18,48,71,0.08);
+}
+.theme-water .feature-row {
+    border-left: 3px solid #20b7c9;
+    padding-left: 1rem;
+}
+.theme-water .comparison-table th {
+    background: #e6f7fc;
+    color: #123047;
+}
+@media (max-width: 760px) {
+    .theme-water .hero {
+        padding: 2rem 1.35rem;
+        border-radius: 18px;
+    }
+}
 .theme-kitchen .site-header,
 .theme-nursery .site-header,
 .theme-sleep .site-header,

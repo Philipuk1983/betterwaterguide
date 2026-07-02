@@ -1,16 +1,16 @@
 :root {
-    --color-primary: #9a3412;
-    --color-secondary: #431407;
-    --color-accent: #16a34a;
-    --color-bg: #fffaf2;
-    --color-text: #2f241f;
-    --font-heading: 'Merriweather', system-ui, sans-serif;
-    --font-body: 'Libre Franklin', system-ui, sans-serif;
+    --color-primary: #1f7fbf;
+    --color-secondary: #123047;
+    --color-accent: #20b7c9;
+    --color-bg: #f3fbff;
+    --color-text: #243746;
+    --font-heading: 'Manrope', system-ui, sans-serif;
+    --font-body: 'Source Sans 3', system-ui, sans-serif;
     --max-width: 72rem;
     --content-width: 48rem;
-    --surface: #f8fafc;
-    --border: #e5e7eb;
-    --muted: #6b7280;
+    --surface: #f8fdff;
+    --border: #c9e8f3;
+    --muted: #647887;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
