@@ -479,6 +479,178 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot),
 .theme-lab .lab-panel, .theme-lab .lab-cta, .theme-lab .home-browse-card, .theme-lab .home-method-card, .theme-lab .home-latest-item { border-color: rgba(29,78,216,0.2); background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%); }
 .theme-lab .lab-strip span { background: #eff6ff; border-color: rgba(29,78,216,0.18); }
 .theme-lab .lab-disclosure { border: 1px solid rgba(6,182,212,0.25); background: #f0fdff; }
+.theme-water body, .theme-water {
+    background:
+        radial-gradient(circle at 8% 4%, rgba(32,183,201,0.14), transparent 26rem),
+        linear-gradient(180deg, #f6fcff 0%, #ffffff 42%, #f3fbff 100%);
+    color: #243746;
+}
+.theme-water .site-header {
+    border-bottom: 1px solid #c9e8f3;
+    background: rgba(255,255,255,0.93);
+    box-shadow: 0 2px 18px rgba(18,48,71,0.06);
+    backdrop-filter: blur(10px);
+}
+.theme-water .site-logo,
+.theme-water .site-title,
+.theme-water .site-kicker,
+.theme-water .hero-eyebrow,
+.theme-water .section-kicker,
+.theme-water .footer-label,
+.theme-water .cta-label {
+    color: #1f7fbf;
+    letter-spacing: 0.1em;
+}
+.theme-water .site-nav a,
+.theme-water .footer-nav a {
+    color: #123047;
+    font-weight: 800;
+    text-decoration: none;
+}
+.theme-water .site-nav a::after,
+.theme-water .footer-nav a::after {
+    background: linear-gradient(90deg, #1f7fbf, #20b7c9);
+}
+.theme-water .hero {
+    position: relative;
+    padding: clamp(2.4rem, 4vw, 3.35rem);
+    margin: 1.4rem 0 2.25rem;
+    border: 1px solid #c9e8f3;
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 92% 18%, rgba(32,183,201,0.2), transparent 8rem),
+        radial-gradient(circle at 82% 74%, rgba(31,127,191,0.13), transparent 10rem),
+        linear-gradient(135deg, #ffffff 0%, #e9fbff 100%);
+    box-shadow: 0 20px 45px rgba(18,48,71,0.08);
+    overflow: hidden;
+}
+.theme-water .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 7px;
+    background: linear-gradient(180deg, #1f7fbf, #20b7c9);
+}
+.theme-water .hero h1,
+.theme-water h1,
+.theme-water h2,
+.theme-water h3 {
+    color: #123047;
+}
+.theme-water .hero p,
+.theme-water p,
+.theme-water .section-description,
+.theme-water .article-card p,
+.theme-water .home-browse-card em,
+.theme-water .home-latest-item p,
+.theme-water .footer-inner {
+    color: #647887;
+}
+.theme-water a {
+    color: #155f91;
+    text-decoration-color: rgba(31,127,191,0.32);
+    text-underline-offset: 3px;
+}
+.theme-water a:hover {
+    color: #1f7fbf;
+    text-decoration-color: #1f7fbf;
+}
+.theme-water .article-card,
+.theme-water .spotlight-card,
+.theme-water .home-browse-card,
+.theme-water .home-method-card,
+.theme-water .home-latest-item,
+.theme-water .article-summary,
+.theme-water .table-of-contents,
+.theme-water .disclosure-inline,
+.theme-water .affiliate-cta,
+.theme-water .see-also,
+.theme-water .product-box-water,
+.theme-water .comparison-shell-water,
+.theme-water .pros-cons-water {
+    border: 1px solid #c9e8f3;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fdff 100%);
+    box-shadow: 0 14px 34px rgba(18,48,71,0.07);
+}
+.theme-water .article-card,
+.theme-water .home-browse-card,
+.theme-water .home-method-card,
+.theme-water .home-latest-item {
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.theme-water .article-card:hover,
+.theme-water .home-browse-card:hover,
+.theme-water .home-method-card:hover,
+.theme-water .home-latest-item:hover {
+    transform: translateY(-2px);
+    border-color: rgba(31,127,191,0.42);
+    box-shadow: 0 20px 44px rgba(18,48,71,0.11);
+}
+.theme-water .article-card a,
+.theme-water .home-latest-item a,
+.theme-water .home-browse-card strong {
+    color: #123047;
+    font-weight: 800;
+    text-decoration: none;
+}
+.theme-water .article-card a:hover,
+.theme-water .home-latest-item a:hover {
+    color: #155f91;
+    text-decoration: underline;
+    text-decoration-color: rgba(31,127,191,0.35);
+}
+.theme-water .button-link,
+.theme-water .see-all,
+.theme-water .cta-button {
+    border: 1px solid #c9e8f3;
+    border-radius: 999px;
+    background: #e6f7fc;
+    color: #155f91;
+    box-shadow: none;
+    font-weight: 800;
+    text-decoration: none;
+}
+.theme-water .button-link:hover,
+.theme-water .see-all:hover,
+.theme-water .cta-button:hover {
+    background: #1f7fbf;
+    border-color: #1f7fbf;
+    color: #ffffff;
+}
+.theme-water .home-depth,
+.theme-water .home-method,
+.theme-water .home-latest {
+    border-top: 1px solid #c9e8f3;
+}
+.theme-water .home-browse-card span,
+.theme-water .home-method-card span,
+.theme-water .signal-strip span,
+.theme-water .cta-chip,
+.theme-water .callout-eyebrow {
+    border-color: #c9e8f3;
+    background: #e6f7fc;
+    color: #155f91;
+}
+.theme-water .roundup-hero-callout,
+.theme-water .bottom-line-callout {
+    border-color: #c9e8f3;
+    background: linear-gradient(135deg, rgba(32,183,201,0.16), rgba(255,255,255,0.9));
+    box-shadow: 0 18px 38px rgba(18,48,71,0.08);
+}
+.theme-water .feature-row {
+    border-left: 3px solid #20b7c9;
+    padding-left: 1rem;
+}
+.theme-water .comparison-table th {
+    background: #e6f7fc;
+    color: #123047;
+}
+@media (max-width: 760px) {
+    .theme-water .hero {
+        padding: 2rem 1.35rem;
+        border-radius: 18px;
+    }
+}
 .theme-fieldguide .fieldguide-row { border-left: 3px solid var(--color-accent); padding-left: 1rem; }
 .theme-fieldguide .fieldguide-cta { background: linear-gradient(180deg, #ffffff 0%, #faf8ef 100%); border-color: rgba(101,163,13,0.24); }
 .theme-fieldguide .fieldguide-disclosure { background: #f7fee7; border: 1px solid rgba(101,163,13,0.24); }

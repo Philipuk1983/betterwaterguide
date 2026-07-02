@@ -5,14 +5,14 @@
   "contactEmail": "hello@betterwaterguide.com",
   "niche": "home water filtration,water filter,under sink water filter,whole house water filter,reverse osmosis system,hard water filter,water filter pitcher,water test kit,chlorine water filter,drinking water filter,water filter replacement,well water filter,sediment filter,carbon water filter,water softener,filtered tap water,kitchen water filter,shower water filter,limescale filter,ro water system,water filtration guide,best water filter,home water quality,filter cartridges,clean drinking water",
   "targetAudience": null,
-  "variant": "kitchen",
-  "footprint": "warm kitchen layout with pantry-like organization, practical prep cues, and compact product decision cards",
-  "persona": "a kitchen gear editor who helps home cooks choose appliances, cookware, storage, and cleanup tools without hype",
+  "variant": "water",
+  "footprint": "fresh water-filtration layout with pale blue surfaces, aqua decision cues, filter-card grids, and practical water-quality navigation",
+  "persona": "a home water filtration editor who translates contaminant concerns, filter types, cartridge upkeep, and installation trade-offs into practical homeowner guidance",
   "author": {
     "name": "Better Water Guide Editorial Team",
     "slug": "editorial-team",
     "role": "Home water filtration \u0026 water quality review team",
-    "bio": "We help homeowners choose home water filtration gear with practical guidance on chlorine taste, hard water, and filter maintenance\u2014built for everyday kitchens."
+    "bio": "We help homeowners choose home water filtration gear with practical guidance on chlorine taste, hard water, filter types, cartridge upkeep, and maintenance routines."
   },
   "infographics": {
     "enabled": false,

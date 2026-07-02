@@ -11,7 +11,7 @@
     {{ $bestPages := slice }}{{ if .Site.Params.showBestSection }}{{ $bestPages = where .Site.RegularPages "Section" "best" }}{{ end }}
     {{ if $bestPages }}
     <section class="home-section">
-        <h2>Best Picks for cleaner, better-tasting water</h2>
+        <h2>Start With the Right Water Filter</h2>
         <div class="article-grid">
             {{ range first 4 ($bestPages.ByDate.Reverse) }}
             <article class="article-card">
@@ -20,13 +20,13 @@
             </article>
             {{ end }}
         </div>
-        <a href="/best/" class="see-all">Shop the right filter type</a>
+        <a href="/best/" class="see-all">Browse top filter picks</a>
     </section>
     {{ end }}
     {{ $reviewPages := slice }}{{ if .Site.Params.showReviewsSection }}{{ $reviewPages = where .Site.RegularPages "Section" "reviews" }}{{ end }}
     {{ if $reviewPages }}
     <section class="home-section">
-        <h2>Reviews built for everyday homeowners</h2>
+        <h2>Real-World Filter Reviews</h2>
         <div class="article-grid">
             {{ range first 6 ($reviewPages.ByDate.Reverse) }}
             <article class="article-card">
@@ -35,13 +35,13 @@
             </article>
             {{ end }}
         </div>
-        <a href="/reviews/" class="see-all">Read the fit and upkeep notes</a>
+        <a href="/reviews/" class="see-all">Read filter reviews</a>
     </section>
     {{ end }}
     {{ $vsPages := slice }}{{ if .Site.Params.showComparisonSection }}{{ $vsPages = where .Site.RegularPages "Section" "vs" }}{{ end }}
     {{ if $vsPages }}
     <section class="home-section">
-        <h2>Compare filters before you commit</h2>
+        <h2>Compare Filter Types Before You Buy</h2>
         <div class="article-grid">
             {{ range first 4 ($vsPages.ByDate.Reverse) }}
             <article class="article-card">
@@ -50,13 +50,13 @@
             </article>
             {{ end }}
         </div>
-        <a href="/vs/" class="see-all">See what matches your water concern</a>
+        <a href="/vs/" class="see-all">Compare systems</a>
     </section>
     {{ end }}
     {{ $guidePages := slice }}{{ if .Site.Params.showGuidesSection }}{{ $guidePages = where .Site.RegularPages "Section" "guides" }}{{ end }}
     {{ if $guidePages }}
     <section class="home-section">
-        <h2>Guides for testing, maintenance, and replacement</h2>
+        <h2>Water Quality Guides</h2>
         <div class="article-grid">
             {{ range first 4 ($guidePages.ByDate.Reverse) }}
             <article class="article-card">
@@ -65,7 +65,7 @@
             </article>
             {{ end }}
         </div>
-        <a href="/guides/" class="see-all">Get practical buying help</a>
+        <a href="/guides/" class="see-all">Read water quality guides</a>
     </section>
     {{ end }}
 
@@ -76,7 +76,7 @@
             {{ if .Site.Params.showGuidesSection }}{{ range where .Site.RegularPages "Section" "guides" }}{{ $homePages = $homePages | append . }}{{ end }}{{ end }}
             {{ $latestPages := sort $homePages "Date" "desc" }}
 
-            <section class="home-depth home-depth--clean" aria-labelledby="home-depth-heading">
+            <section class="home-depth home-depth--water" aria-labelledby="home-depth-heading">
                 <div class="home-depth__intro">
                     <p class="section-kicker">{{ .Site.Params.homeDepthKicker | default "Start with the right question" }}</p>
                     <h2 id="home-depth-heading">{{ .Site.Params.homeDepthHeading | default "Find the help that fits the decision" }}</h2>
@@ -85,21 +85,21 @@
                 <div class="home-browse-grid" aria-label="Browse by decision type">
                     {{ if .Site.Params.showBestSection }}
                     <a href="/best/" class="home-browse-card">
-                        <span>Best Picks</span>
+                        <span>Top Filter Picks</span>
                         <strong>Shortlists</strong>
                         <em>{{ .Site.Params.homeBestRoute | default "Shortlists for common buying decisions and practical constraints." }}</em>
                     </a>
                     {{ end }}
                     {{ if .Site.Params.showReviewsSection }}
                     <a href="/reviews/" class="home-browse-card">
-                        <span>Reviews</span>
+                        <span>Filter Reviews</span>
                         <strong>One option</strong>
                         <em>{{ .Site.Params.homeReviewRoute | default "Focused reads on one product, service, tool, or option." }}</em>
                     </a>
                     {{ end }}
                     {{ if .Site.Params.showComparisonSection }}
                     <a href="/vs/" class="home-browse-card">
-                        <span>Compare</span>
+                        <span>Compare Systems</span>
                         <strong>Two close calls</strong>
                         <em>{{ .Site.Params.homeCompareRoute | default "Side-by-side context for choices that are not obvious." }}</em>
                     </a>
