@@ -19,7 +19,7 @@
     data-primary-product-name="{{ index $primaryProduct "name" }}"
     data-primary-product-url="{{ $primaryAmazonUrl }}"
     {{ end }}>
-    {{ if and $affiliateAllowed .Site.Params.amazonTag $hasPrimaryProduct }}
+    {{ if and $affiliateAllowed .Site.Params.amazonTag }}
     <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offers">
         <div class="sponsored-side-stack">
             {{- partial "audible-sponsored.html" . -}}
