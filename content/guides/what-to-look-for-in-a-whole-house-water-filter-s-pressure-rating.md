@@ -59,10 +59,7 @@ faq:
   - question: "Where should I buy what to look for in a whole house filter pressure rating?"
     answer: "Amazon.com and major U.S. retailers are usually the best places to compare listing details and return terms."
 ---
-
 ## Start with two pressure questions
-A whole-house filter has to survive your home's line pressure and still pass enough water when several fixtures run at once. Those are different jobs. A housing can be strong enough and still be a poor fit if it steals too much pressure once water is moving.
-
 The fastest way to avoid trouble is to measure the home's pressure at a hose bib or laundry tap, then think about how the house is used. A single-bathroom home can tolerate more restriction than a large house with showers, laundry, and irrigation tied to the same main line. If the reading is already modest, choose the least restrictive filter that still solves the water problem.
 
 ## Read the spec sheet in the right order

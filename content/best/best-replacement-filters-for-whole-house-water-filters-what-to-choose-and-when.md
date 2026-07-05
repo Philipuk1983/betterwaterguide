@@ -95,10 +95,7 @@ faq:
   - question: "Should I buy from Amazon or compare other U.S. listings first?"
     answer: "Compare the live Amazon listing first for the exact model and bundle, then sanity-check competing U.S. retailers if return policy or accessories matter to you."
 ---
-
 ## Tier1 WF-SET-50K: Best overall for a full-house cartridge swap
-
-The [Tier1 WF-SET-50K](https://www.amazon.com/s?k=Tier1%20WF-SET-50K%20%2850%2C000%20Gallon%20Whole%20House%20Filter%20Replacement%20Set%29&tag=betterwaterguide-20) is the cleanest answer when your whole-house system is ready for a general refresh. It is the kind of replacement set that makes sense when you want one maintenance event instead of sorting through a stack of separate cartridges. That matters in homes where the system handles several small water issues at once, or where you simply want to stay on top of routine replacement without turning it into a project.
 
 Who it is for: homeowners with a standard whole-house cartridge setup who want a straightforward replacement plan. It works well when you already know the system is due and you are not trying to solve one very specific complaint. The strength here is breadth. You get a broad replacement approach that fits the common whole-home job: keep water moving, keep the cartridge path fresh, and avoid letting one old stage drag down the rest.
 

@@ -65,10 +65,7 @@ faq:
   - question: "What is the biggest downside of pelican whole house water filter review?"
     answer: "The biggest downside is usually refinement rather than core usefulness."
 ---
-
 ## What a whole-house filter does well
-
-A whole-house filter is most useful when the water issue is not limited to one tap. The appeal is simple: instead of improving only the water you drink, it can improve the water you cook with, shower in, wash clothes with, and send through appliances.
 
 For many homes, the first concern is taste. City water can carry a chlorine note that shows up in drinking water, ice, and even cooking. A whole-house filter can help by treating that water before it reaches each fixture. It can also be a good first line of defense when visible sediment or grit is part of the problem, because one filter at the entry point can reduce what reaches the rest of the house.
 

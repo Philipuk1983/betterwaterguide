@@ -95,10 +95,7 @@ faq:
   - question: "Should I buy from Amazon or compare other U.S. listings first?"
     answer: "Compare the live Amazon listing first for the exact model and bundle, then sanity-check competing U.S. retailers if return policy or accessories matter to you."
 ---
-
 ## Best overall: APEC FS-4 Advanced Whole House Carbon Filter System
-
-[APEC FS-4 Advanced Whole House Carbon Filter System](https://www.amazon.com/s?k=APEC%20FS-4%20Advanced%20Whole%20House%20Carbon%20Filter%20System&tag=betterwaterguide-20) is the cleanest all-around starting point for most municipal-water homes that want chlorine control at the point of entry. It makes sense when the complaint shows up everywhere: the shower, the kitchen sink, and the laundry. Central carbon treatment is useful in a busy house because one filter can influence the whole plumbing path instead of leaving every faucet to handle the job separately.
 
 This is the right pick for a household that wants one clear answer to taste and odor without moving into a more complicated setup. The catch is sediment. If the water is carrying grit, if aerators keep loading up, or if cloudy water is part of the story, carbon is not the first stop. In that case, Culligan belongs higher on the list. Choose Express Water instead if the home is especially busy and you want more room for simultaneous use.
 

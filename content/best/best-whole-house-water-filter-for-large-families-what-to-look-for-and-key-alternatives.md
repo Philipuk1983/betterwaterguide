@@ -95,7 +95,6 @@ faq:
   - question: "Should I buy from Amazon or compare other U.S. listings first?"
     answer: "Compare the live Amazon listing first for the exact model and bundle, then sanity-check competing U.S. retailers if return policy or accessories matter to you."
 ---
-
 ## Quick comparison
 
 | Pick | Best for | Why it fits | Watch out |
@@ -107,8 +106,6 @@ faq:
 | Pelican Water PF2000 Whole House Filter System | Large homes with high simultaneous water use | Built to keep up when several fixtures run together | Bigger installation commitment |
 
 ## 1. iSpring WSP50RL2 2-Stage Whole House Water Filter System (50,000 Gallon)
-
-The [iSpring WSP50RL2 2-Stage Whole House Water Filter System (50,000 Gallon)](https://www.amazon.com/s?k=iSpring%20WSP50RL2%202-Stage%20Whole%20House%20Water%20Filter%20System%20%2850%2C000%20Gallon%29&tag=betterwaterguide-20) is the most balanced option for a large family. It is the pick for households that want one system to improve water across the house without moving into a more specialized setup. If the family has mixed complaints and nobody is asking for a single-purpose fix, this is the easiest place to start.
 
 What makes it work for a big home is the way it covers the basics without forcing the household to choose only one benefit. Sediment control matters for plumbing and fixtures, while carbon-based improvement helps with the water people drink, cook with, and shower in. That is useful in a busy home because the same system has to serve the kitchen and the bathrooms every day.
 

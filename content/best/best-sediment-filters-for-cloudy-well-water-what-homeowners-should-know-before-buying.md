@@ -95,7 +95,6 @@ faq:
   - question: "Should I buy from Amazon or compare other U.S. listings first?"
     answer: "Compare the live Amazon listing first for the exact model and bundle, then sanity-check competing U.S. retailers if return policy or accessories matter to you."
 ---
-
 ## Quick comparison
 
 | Pick | Best for | Why it fits | Watch out |
@@ -105,8 +104,6 @@ faq:
 | [Home Master HMF3SDGD 5 Micron Sediment Filter](https://www.amazon.com/s?k=Home%20Master%20HMF3SDGD%205%20Micron%20Sediment%20Filter&tag=betterwaterguide-20) | Reverse osmosis pre-filtration | Helps keep grit and particulate load away from the RO membrane | Only serves the RO line |
 | [iSpring IS-5SD 5 Micron Sediment Filter](https://www.amazon.com/s?k=iSpring%20IS-5SD%205%20Micron%20Sediment%20Filter&tag=betterwaterguide-20) | Fine cloudiness at a single tap | 5-micron under-sink option for smaller suspended particles | Shorter service life in a dirty well |
 | [DuPont 5 Micron Whole House Sediment Filter Cartridge](https://www.amazon.com/s?k=DuPont%205%20Micron%20Whole%20House%20Sediment%20Filter%20Cartridge&tag=betterwaterguide-20) | Whole-home sediment control | Whole-house 5-micron stage treats water before it reaches fixtures and appliances | More maintenance than a looser cartridge |
-
-Use the table to match the filter to the part of the house that looks cloudy, then read the sections for the practical limits. The biggest mistake is choosing a cartridge by micron rating alone and ignoring where the sediment is showing up.
 
 ## [APEC Water Systems CF-5 5 Micron Sediment Filter](https://www.amazon.com/s?k=APEC%20Water%20Systems%20CF-5%205%20Micron%20Sediment%20Filter&tag=betterwaterguide-20)
 
