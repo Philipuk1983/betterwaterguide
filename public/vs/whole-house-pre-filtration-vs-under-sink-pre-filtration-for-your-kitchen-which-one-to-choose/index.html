@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5T2FRHBB');</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3GZKYJF7J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-V3GZKYJF7J');
+</script>
+<script>
+(function() {
+    function isAmazonHost(hostname) {
+        var host = (hostname || "").toLowerCase();
+        return host === "amzn.to"
+            || host === "a.co"
+            || /(^|\.)amazon\.[a-z.]+$/.test(host);
+    }
+
+    function cleanText(value) {
+        return (value || "").replace(/\s+/g, " ").trim().slice(0, 160);
+    }
+
+    function dataValue(element, names) {
+        for (var i = 0; i < names.length; i += 1) {
+            if (element.dataset && element.dataset[names[i]]) {
+                return element.dataset[names[i]];
+            }
+        }
+        return "";
+    }
+
+    function closestDataValue(link, names) {
+        var selector = names.map(function(name) { return "[data-" + name.replace(/[A-Z]/g, function(match) { return "-" + match.toLowerCase(); }) + "]"; }).join(",");
+        var node = selector && link.closest ? link.closest(selector) : null;
+        return node ? dataValue(node, names) : "";
+    }
+
+    function amazonProductId(url) {
+        var path = decodeURIComponent(url.pathname || "");
+        var match = path.match(/\/(?:dp|gp\/product|gp\/aw\/d|exec\/obidos\/ASIN)\/([A-Z0-9]{10})(?:[/?]|$)/i);
+        if (match) {
+            return match[1].toUpperCase();
+        }
+
+        var asin = url.searchParams.get("asin") || url.searchParams.get("ASIN");
+        return /^[A-Z0-9]{10}$/i.test(asin || "") ? asin.toUpperCase() : "";
+    }
+
+    function productName(link) {
+        var explicit = dataValue(link, ["productName", "product", "itemName"]) || closestDataValue(link, ["productName", "product", "itemName"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        var cta = link.closest ? link.closest(".affiliate-cta, .product-cta, .section-product-cta, tr, li") : null;
+        var namedNode = cta ? cta.querySelector("[data-product-name], .affiliate-cta__name-link, strong, h2, h3, th") : null;
+        return cleanText((namedNode && namedNode.textContent) || link.getAttribute("aria-label") || link.getAttribute("title") || link.textContent);
+    }
+
+    function placement(link) {
+        var explicit = dataValue(link, ["affiliatePlacement", "placement"]) || closestDataValue(link, ["affiliatePlacement", "placement"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        if (link.closest) {
+            if (link.closest(".affiliate-cta--hero")) return "hero_cta";
+            if (link.closest(".affiliate-cta--mid")) return "mid_article_cta";
+            if (link.closest(".affiliate-cta--post-editor")) return "post_editor_cta";
+            if (link.closest(".affiliate-cta--verdict")) return "verdict_cta";
+            if (link.closest(".affiliate-cta--context")) return "context_cta";
+            if (link.closest(".affiliate-cta")) return "affiliate_cta";
+            if (link.closest("table")) return "comparison_table";
+            if (link.closest("header, .hero, .modern-hero")) return "hero";
+        }
+
+        return "amazon_link";
+    }
+
+    document.addEventListener("click", function(event) {
+        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) {
+            return;
+        }
+
+        var url;
+        try {
+            url = new URL(link.href, window.location.href);
+        } catch (_) {
+            return;
+        }
+
+        if (!isAmazonHost(url.hostname)) {
+            return;
+        }
+
+        var payload = {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            affiliate_network: "amazon",
+            merchant: "amazon",
+            product_id: amazonProductId(url),
+            product_name: productName(link),
+            placement: placement(link),
+            link_url: url.href
+        };
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: "affiliate_click" }, payload));
+        window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
+    }, true);
+})();
+</script>
+
+
+
+
+
+
+<title>Whole-House Pre-Filtration vs Under-Sink Pre-Filtration for Your Kitchen: Which One to Choose? | Better Water Guide</title>
+<meta name="description" content="Whole-house pre-filtration and under-sink pre-filtration solve different versions of the same kitchen problem.">
+<link rel="canonical" href="https://betterwaterguide.com/vs/whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose/">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:title" content="Whole-House Pre-Filtration vs Under-Sink Pre-Filtration for Your Kitchen: Which One to Choose? | Better Water Guide">
+<meta property="og:description" content="Whole-house pre-filtration and under-sink pre-filtration solve different versions of the same kitchen problem.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://betterwaterguide.com/vs/whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose/">
+<meta property="og:site_name" content="Better Water Guide">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Whole-House Pre-Filtration vs Under-Sink Pre-Filtration for Your Kitchen: Which One to Choose? | Better Water Guide">
+<meta name="twitter:description" content="Whole-house pre-filtration and under-sink pre-filtration solve different versions of the same kitchen problem.">
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Source%20Sans%203:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/main.min.df9f327814c854086be85c2802c454e7325ad6f1892eaa842b85a348287eda1a.css" integrity="sha256-358yeBTIVAhr6FwoAsRU5zJa1vGJLqqEK4WjSCh&#43;2ho=">
+
+<script defer src="/js/article-enhancements.js?v=1783274236"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.","name":"Better Water Guide","url":"https://betterwaterguide.com/"}</script>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Vs","author":{"@type":"Organization","name":"Better Water Guide Editorial Team","url":"https://betterwaterguide.com/authors/editorial-team/"},"dateModified":"2026-07-01T00:00:00Z","datePublished":"2026-07-01T00:00:00Z","description":"Whole-house pre-filtration and under-sink pre-filtration solve different versions of the same kitchen problem.","headline":"Whole-House Pre-Filtration vs Under-Sink Pre-Filtration for Your Kitchen: Which One to Choose?","inLanguage":"en-us","isAccessibleForFree":true,"keywords":"whole house pre filtration vs under sink pre filtration, whole house pre filtration vs under sink pre filtration comparison, whole house pre filtration or under sink pre filtration","mainEntityOfPage":{"@id":"https://betterwaterguide.com/vs/whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose/","@type":"WebPage"},"publisher":{"@type":"Organization","name":"Better Water Guide","url":"https://betterwaterguide.com/"},"url":"https://betterwaterguide.com/vs/whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose/","wordCount":1044}</script>
+
+
+  
+
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"The better option for most people is the one with the stronger value and fewer ownership compromises."},"name":"Which option is better for most people?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"The pricier option is only worth it if its premium strengths matter in normal use."},"name":"Is the pricier option worth it?"}],"mainEntityOfPage":{"@id":"https://betterwaterguide.com/vs/whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose/","@type":"WebPage"}}</script>
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","name":"whole house pre filtration","position":1,"url":"https://www.amazon.com/s?k=whole%20house%20pre%20filtration\u0026tag=betterwaterguide-20"},{"@type":"ListItem","name":"under sink pre filtration","position":2,"url":"https://www.amazon.com/s?k=under%20sink%20pre%20filtration\u0026tag=betterwaterguide-20"}],"itemListOrder":"https://schema.org/ItemListOrderAscending","mainEntityOfPage":{"@id":"https://betterwaterguide.com/vs/whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose/","@type":"WebPage"},"name":"Whole-House Pre-Filtration vs Under-Sink Pre-Filtration for Your Kitchen: Which One to Choose?","numberOfItems":2,"url":"https://betterwaterguide.com/vs/whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose/"}</script>
+
+
+<meta name="msvalidate.01" content="F47EA7444EF95B629D2B0B8FB5B6850A"></head>
+<body class="theme-water layout-full-width">
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T2FRHBB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="site-header clean-head">
+    <div class="header-inner">
+        <a href="/" class="site-logo" aria-label="Better Water Guide">
+            <img src="/logo.svg?v=1783274236" alt="Better Water Guide" height="40">
+        </a>
+        <nav class="site-nav">
+            <a href="/best/">Best Picks</a>
+            <a href="/reviews/">Reviews</a>
+            <a href="/vs/">Compare</a>
+            <a href="/guides/">Guides</a>
+            <a href="/about/">About</a>
+        </nav>
+    </div>
+</header><main>
+        
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+<article data-module="article-shell" data-module-role="article" class="article-shell clean-shell" itemscope itemtype="https://schema.org/Article"
+    data-content-type="comparison"
+    >
+    
+    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offers">
+        <div class="sponsored-side-stack">
+
+
+
+
+
+
+<aside class="audible-sponsored-panel" aria-label="Sponsored Audible offer">
+    <div class="audible-sponsored-panel__badge">Sponsored</div>
+    <h3>Listen while you travel, pack, or unwind</h3>
+    <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while you pack, travel, walk, cook, or take a break.</p>
+    <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+    
+    <p class="audible-sponsored-panel__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+
+<aside class="kindle-sponsored-panel" aria-label="Sponsored Kindle Unlimited offer" data-affiliate-placement="kindle_unlimited_side_panel" data-product-name="Kindle Unlimited">
+    <a href="https://www.amazon.com/kindle-dbs/hz/subscribe/ku/?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank" aria-label="Explore Kindle Unlimited on Amazon">
+        <picture>
+            <source type="image/webp" srcset="/images/kindle-unlimited-panel-320.webp 320w, /images/kindle-unlimited-panel-640.webp 640w" sizes="320px">
+            <img src="/images/kindle-unlimited-panel-320.webp" width="320" height="489" loading="lazy" decoding="async" alt="Kindle Unlimited sponsored offer: read more of what you love, explore on Amazon.">
+        </picture>
+    </a>
+</aside>
+
+</div>
+    </div>
+    
+    <header data-module="article-header" class="article-header">
+        <h1 itemprop="headline">Whole-House Pre-Filtration vs Under-Sink Pre-Filtration for Your Kitchen: Which One to Choose?</h1><div class="article-meta">
+    
+    <span>Published July 1, 2026</span>
+    
+    <span>By <a href="/authors/editorial-team/">Better Water Guide Editorial Team</a></span>
+    
+    <span>5 min read</span>
+    
+</div></header>
+    <div data-module="article-summary" class="article-summary" itemprop="description"><p>Whole-house pre-filtration and under-sink pre-filtration solve different versions of the same kitchen problem. One starts at the main line and treats water for the whole house. The other stays under the sink and focuses on the kitchen tap. If the kitchen is the only place you care about, the smaller setup is usually easier to live with. If the same water issue shows up in more than one room, the broader setup is the better starting point.</p></div>
+    
+
+
+<aside class="disclosure-inline">
+    <small><a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.</small>
+</aside>
+
+    
+    <details data-module="table-of-contents" class="table-of-contents">
+        <summary>Contents</summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#quick-comparison">Quick comparison</a></li>
+    <li><a href="#what-whole-house-pre-filtration-gives-you-in-a-kitchen-decision">What whole-house pre-filtration gives you in a kitchen decision</a></li>
+    <li><a href="#what-under-sink-pre-filtration-gives-you-in-a-kitchen-decision">What under-sink pre-filtration gives you in a kitchen decision</a></li>
+    <li><a href="#cabinet-space-and-access-can-decide-the-choice-faster-than-the-water-issue">Cabinet space and access can decide the choice faster than the water issue</a></li>
+    <li><a href="#a-smaller-filter-can-be-enough-for-lighter-kitchen-needs">A smaller filter can be enough for lighter kitchen needs</a></li>
+    <li><a href="#how-to-choose-without-getting-stuck">How to choose without getting stuck</a></li>
+    <li><a href="#final-verdict">Final verdict</a></li>
+  </ul>
+</nav>
+    </details>
+    
+    
+
+
+
+
+
+    
+
+    
+
+
+    <script data-module="article-products-data" id="article-products-data" type="application/json">[{"amazon_url":"https://www.amazon.com/s?k=whole%20house%20pre%20filtration\u0026tag=betterwaterguide-20","cta_label":"Product link","cta_text":"Check price on Amazon","name":"whole house pre filtration"},{"amazon_url":"https://www.amazon.com/s?k=under%20sink%20pre%20filtration\u0026tag=betterwaterguide-20","cta_label":"Product link","cta_text":"Check price on Amazon","name":"under sink pre filtration"}]</script>
+    
+    <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody"><section class="article-section article-section--intro" data-module="article-section" data-section-role="intro" data-section-level="intro" data-section-id="intro"><div class='section-product-cta comparison-cta-pair'>
+    <a class='button-link amazon-button' href='https://www.amazon.com/s?k=whole%20house%20pre%20filtration&amp;tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>See whole-house pre-filtration on Amazon</a>
+    <a class='button-link amazon-button' href='https://www.amazon.com/s?k=under%20sink%20pre%20filtration&amp;tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>See under-sink pre-filtration on Amazon</a>
+</div>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="quick-comparison"><h2 id="quick-comparison" data-module="section-heading" data-section-id="quick-comparison">Quick comparison</h2>
+<div class="table-scroll"><table>
+	<thead>
+			<tr>
+					<th>Decision point</th>
+					<th>Whole-house pre-filtration</th>
+					<th>Under-sink pre-filtration</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Best fit</td>
+					<td>Water issues show up at multiple fixtures</td>
+					<td>The problem is mainly at the kitchen tap</td>
+			</tr>
+			<tr>
+					<td>Where it sits</td>
+					<td>At the main entry point before the home branches</td>
+					<td>In the kitchen cabinet near the sink</td>
+			</tr>
+			<tr>
+					<td>Main upside</td>
+					<td>One upstream stage for the entire home</td>
+					<td>A focused fix right where you cook and drink</td>
+			</tr>
+			<tr>
+					<td>Main drawback</td>
+					<td>More system than a single tap needs</td>
+					<td>Does not help showers, laundry, or other faucets</td>
+			</tr>
+			<tr>
+					<td>Skip it when</td>
+					<td>Only the kitchen bothers you</td>
+					<td>The same issue appears throughout the house</td>
+			</tr>
+	</tbody>
+</table></div>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-whole-house-pre-filtration-gives-you-in-a-kitchen-decision"><h2 id="what-whole-house-pre-filtration-gives-you-in-a-kitchen-decision" data-module="section-heading" data-section-id="what-whole-house-pre-filtration-gives-you-in-a-kitchen-decision">What whole-house pre-filtration gives you in a kitchen decision</h2>
+<p>Whole-house pre-filtration is the better choice when the kitchen problem is part of a larger home problem. If sediment, grit, or similar water quality issues are showing up at several fixtures, it makes more sense to treat water before it splits to the rest of the house. That way, the kitchen tap is not being handled separately from everything else.</p>
+<p>This option is useful when you want one treatment point for the whole home. It is also the cleaner approach when you do not want to build a kitchen-only setup that leaves the rest of the plumbing untouched. If the shower, utility sink, dishwasher, or other outlets show the same signs, a whole-house stage is the more complete answer.</p>
+<p>The trade-off is that it is broader than a kitchen-only problem needs. If the only thing you care about is better water for drinking, cooking, and coffee, whole-house pre-filtration can be more plumbing than necessary. It moves the equipment away from the sink, which helps keep the cabinet clear, but it also means you are solving a bigger problem than the one that started the search.</p>
+<p>Skip whole-house pre-filtration when the kitchen is the only place that needs attention. A broad upstream setup does not add much if the rest of the house is fine.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-under-sink-pre-filtration-gives-you-in-a-kitchen-decision"><h2 id="what-under-sink-pre-filtration-gives-you-in-a-kitchen-decision" data-module="section-heading" data-section-id="what-under-sink-pre-filtration-gives-you-in-a-kitchen-decision">What under-sink pre-filtration gives you in a kitchen decision</h2>
+<p>Under-sink pre-filtration is the more direct kitchen choice. It keeps the treatment close to the faucet you use for food prep, bottles, coffee, and everyday drinking water. That matters when the goal is not to rework the whole house, but to make the sink water feel more usable.</p>
+<p>This setup is a good fit when the concern is limited to the kitchen. It lets you stay focused on one tap instead of pulling the entire plumbing system into the decision. If the rest of the home is acceptable and only the kitchen water needs a first-stage filter, under-sink pre-filtration keeps the scope tight.</p>
+<p>It is also a practical option when you already have a second-stage kitchen filter or plan to add one later. In that kind of layout, the pre-filter handles the larger particles first so the finer stage is not doing all the work alone. That is a common way to build a kitchen water setup without overcomplicating it.</p>
+<p>Skip under-sink pre-filtration when the same issue is showing up in other rooms. If the problem reaches beyond the kitchen, fixing only the sink leaves the larger issue in place.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="cabinet-space-and-access-can-decide-the-choice-faster-than-the-water-issue"><h2 id="cabinet-space-and-access-can-decide-the-choice-faster-than-the-water-issue" data-module="section-heading" data-section-id="cabinet-space-and-access-can-decide-the-choice-faster-than-the-water-issue">Cabinet space and access can decide the choice faster than the water issue</h2>
+<p>Space matters. Under-sink systems live in the same cabinet as whatever else is already there, and that cabinet often fills up faster than people expect. Cleaners, a disposer, a pullout trash bin, and general storage can make the area feel crowded. If the cabinet is already tight, a kitchen-only setup can be awkward to install and maintain.</p>
+<p>Whole-house pre-filtration avoids that cabinet problem by moving the equipment away from the kitchen. That keeps the sink area cleaner and frees up storage space. The trade-off is that service happens at the main plumbing entry point instead of right under the tap. If that area is hard to reach, the convenience advantage gets smaller.</p>
+<p>A useful rule is simple: if the kitchen cabinet is the only easy place to work, under-sink may still be the easier path. If the utility area is the easier place to reach and the whole home needs help, whole-house usually fits better.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="a-smaller-filter-can-be-enough-for-lighter-kitchen-needs"><h2 id="a-smaller-filter-can-be-enough-for-lighter-kitchen-needs" data-module="section-heading" data-section-id="a-smaller-filter-can-be-enough-for-lighter-kitchen-needs">A smaller filter can be enough for lighter kitchen needs</h2>
+<p>Not every kitchen needs a full pre-filtration setup. If you only want a modest improvement for drinking water and you do not want plumbing changes, a pitcher filter or faucet-mounted filter can be enough. That path is simpler and better for temporary living arrangements, rentals, or any setup where you want to avoid a permanent installation.</p>
+<p>The limit is obvious: a smaller filter only helps at one point and usually gives you less room to build a larger system around it. If the same water issue shows up in more than one room, a pitcher will not address the bigger pattern. It is a lighter tool for a lighter problem.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="how-to-choose-without-getting-stuck"><h2 id="how-to-choose-without-getting-stuck" data-module="section-heading" data-section-id="how-to-choose-without-getting-stuck">How to choose without getting stuck</h2>
+<p>Use this simple order of operations:</p>
+<ul>
+<li>If the issue is only at the kitchen sink, start with under-sink pre-filtration.</li>
+<li>If the issue shows up at several faucets or fixtures, start with whole-house pre-filtration.</li>
+<li>If you only want a basic drinking-water upgrade and do not want plumbing work, use a smaller point-of-use filter.</li>
+<li>If your cabinet is cramped, weigh where the equipment will actually live before you choose.</li>
+</ul>
+<p>That is the practical difference between the two. Whole-house pre-filtration is the broader answer. Under-sink pre-filtration is the tighter, more kitchen-specific answer. Neither is automatically better; the right choice is the one that matches where the problem appears and where the equipment can live.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="final-verdict"><h2 id="final-verdict" data-module="section-heading" data-section-id="final-verdict">Final verdict</h2>
+<p>For a kitchen-only water concern, under-sink pre-filtration is the cleaner choice. It keeps the fix close to the tap you use every day and avoids turning a single-room issue into a whole-house project.</p>
+<p>For water issues that reach beyond the kitchen, whole-house pre-filtration is the stronger starting point. It handles the water before it splits to the rest of the home, which makes more sense when more than one fixture is part of the problem.</p>
+<p>If you want the short version: one tap points to under-sink; several fixtures point to whole-house. Start there, and most of the decision is already made.</p>
+<div class='section-product-cta comparison-cta-pair'>
+    <a class='button-link amazon-button' href='https://www.amazon.com/s?k=whole%20house%20pre%20filtration&amp;tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>See whole-house pre-filtration on Amazon</a>
+    <a class='button-link amazon-button' href='https://www.amazon.com/s?k=under%20sink%20pre%20filtration&amp;tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>See under-sink pre-filtration on Amazon</a>
+</div>
+</section></div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+    
+        
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+<section class="see-also" data-module="see-also" data-section-id="see-also" aria-labelledby="see-also-heading">
+    <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
+    
+    <p>If you are still weighing both sides of this matchup, keep going with <a href="/vs/entry-level-vs-advanced-whole-house-water-filters-which-one-fits-your-home/">Entry-Level vs Advanced Whole House Water Filters: Which One Fits Your Home?</a>, <a href="/vs/whole-house-water-filtration-beginner-vs-pro-system-setup-and-what-to-choose/">Whole-House Water Filtration: Beginner vs Pro System Setup and What to Choose</a>, and <a href="/vs/whole-house-carbon-filter-vs-whole-house-sediment-filter-for-kitchen-water-which-one-to-choose/">Whole House Carbon Filter vs Whole House Sediment Filter for Kitchen Water: Which One to Choose?</a>.</p>
+    <p>To widen the decision beyond this head-to-head, <a href="/guides/how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen/">How to Perform a Simple Whole-House Filter Pressure Check in Your Kitchen</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs: Buyer Guide</a> provide the broader context.</p>
+    
+</section>
+
+</article>
+
+    </main><footer class="site-footer">
+    
+
+<div class="footer-inner">
+        <p>&copy; 2026 Better Water Guide. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="/about/">About</a>
+            <a href="/disclosure/">Disclosure</a>
+            <a href="/privacy/">Privacy Policy</a>
+        </nav>
+
+        <p class="footer-disclosure">
+            <a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.
+        </p>
+
+    </div>
+</footer></body>
+</html>

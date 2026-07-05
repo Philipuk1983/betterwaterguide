@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5T2FRHBB');</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3GZKYJF7J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-V3GZKYJF7J');
+</script>
+<script>
+(function() {
+    function isAmazonHost(hostname) {
+        var host = (hostname || "").toLowerCase();
+        return host === "amzn.to"
+            || host === "a.co"
+            || /(^|\.)amazon\.[a-z.]+$/.test(host);
+    }
+
+    function cleanText(value) {
+        return (value || "").replace(/\s+/g, " ").trim().slice(0, 160);
+    }
+
+    function dataValue(element, names) {
+        for (var i = 0; i < names.length; i += 1) {
+            if (element.dataset && element.dataset[names[i]]) {
+                return element.dataset[names[i]];
+            }
+        }
+        return "";
+    }
+
+    function closestDataValue(link, names) {
+        var selector = names.map(function(name) { return "[data-" + name.replace(/[A-Z]/g, function(match) { return "-" + match.toLowerCase(); }) + "]"; }).join(",");
+        var node = selector && link.closest ? link.closest(selector) : null;
+        return node ? dataValue(node, names) : "";
+    }
+
+    function amazonProductId(url) {
+        var path = decodeURIComponent(url.pathname || "");
+        var match = path.match(/\/(?:dp|gp\/product|gp\/aw\/d|exec\/obidos\/ASIN)\/([A-Z0-9]{10})(?:[/?]|$)/i);
+        if (match) {
+            return match[1].toUpperCase();
+        }
+
+        var asin = url.searchParams.get("asin") || url.searchParams.get("ASIN");
+        return /^[A-Z0-9]{10}$/i.test(asin || "") ? asin.toUpperCase() : "";
+    }
+
+    function productName(link) {
+        var explicit = dataValue(link, ["productName", "product", "itemName"]) || closestDataValue(link, ["productName", "product", "itemName"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        var cta = link.closest ? link.closest(".affiliate-cta, .product-cta, .section-product-cta, tr, li") : null;
+        var namedNode = cta ? cta.querySelector("[data-product-name], .affiliate-cta__name-link, strong, h2, h3, th") : null;
+        return cleanText((namedNode && namedNode.textContent) || link.getAttribute("aria-label") || link.getAttribute("title") || link.textContent);
+    }
+
+    function placement(link) {
+        var explicit = dataValue(link, ["affiliatePlacement", "placement"]) || closestDataValue(link, ["affiliatePlacement", "placement"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        if (link.closest) {
+            if (link.closest(".affiliate-cta--hero")) return "hero_cta";
+            if (link.closest(".affiliate-cta--mid")) return "mid_article_cta";
+            if (link.closest(".affiliate-cta--post-editor")) return "post_editor_cta";
+            if (link.closest(".affiliate-cta--verdict")) return "verdict_cta";
+            if (link.closest(".affiliate-cta--context")) return "context_cta";
+            if (link.closest(".affiliate-cta")) return "affiliate_cta";
+            if (link.closest("table")) return "comparison_table";
+            if (link.closest("header, .hero, .modern-hero")) return "hero";
+        }
+
+        return "amazon_link";
+    }
+
+    document.addEventListener("click", function(event) {
+        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) {
+            return;
+        }
+
+        var url;
+        try {
+            url = new URL(link.href, window.location.href);
+        } catch (_) {
+            return;
+        }
+
+        if (!isAmazonHost(url.hostname)) {
+            return;
+        }
+
+        var payload = {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            affiliate_network: "amazon",
+            merchant: "amazon",
+            product_id: amazonProductId(url),
+            product_name: productName(link),
+            placement: placement(link),
+            link_url: url.href
+        };
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: "affiliate_click" }, payload));
+        window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
+    }, true);
+})();
+</script>
+
+
+
+
+
+
+<title>Water Filtration Starter Priority Sorter for New Homeowners Picker | Better Water Guide</title>
+<meta name="description" content="This sorter is for the moment when you have the keys, a sink full of possibilities, and no clear idea which water problem to solve first.">
+<link rel="canonical" href="https://betterwaterguide.com/guides/water-filtration-starter-priority-sorter-for-new-homeowners-picker/">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:title" content="Water Filtration Starter Priority Sorter for New Homeowners Picker | Better Water Guide">
+<meta property="og:description" content="This sorter is for the moment when you have the keys, a sink full of possibilities, and no clear idea which water problem to solve first.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://betterwaterguide.com/guides/water-filtration-starter-priority-sorter-for-new-homeowners-picker/">
+<meta property="og:site_name" content="Better Water Guide">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Water Filtration Starter Priority Sorter for New Homeowners Picker | Better Water Guide">
+<meta name="twitter:description" content="This sorter is for the moment when you have the keys, a sink full of possibilities, and no clear idea which water problem to solve first.">
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Source%20Sans%203:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/main.min.df9f327814c854086be85c2802c454e7325ad6f1892eaa842b85a348287eda1a.css" integrity="sha256-358yeBTIVAhr6FwoAsRU5zJa1vGJLqqEK4WjSCh&#43;2ho=">
+
+<script defer src="/js/article-enhancements.js?v=1783274236"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.","name":"Better Water Guide","url":"https://betterwaterguide.com/"}</script>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Guides","author":{"@type":"Organization","name":"Better Water Guide Editorial Team","url":"https://betterwaterguide.com/authors/editorial-team/"},"dateModified":"2026-07-03T00:00:00Z","datePublished":"2026-07-03T00:00:00Z","description":"This sorter is for the moment when you have the keys, a sink full of possibilities, and no clear idea which water problem to solve first.","headline":"Water Filtration Starter Priority Sorter for New Homeowners Picker","inLanguage":"en-us","isAccessibleForFree":true,"keywords":"new homeowner water filtration startup priority sorter, new homeowner water filtration startup priority tool, new homeowner water filtration startup priority picker","mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/water-filtration-starter-priority-sorter-for-new-homeowners-picker/","@type":"WebPage"},"publisher":{"@type":"Organization","name":"Better Water Guide","url":"https://betterwaterguide.com/"},"url":"https://betterwaterguide.com/guides/water-filtration-starter-priority-sorter-for-new-homeowners-picker/","wordCount":1412}</script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Yes, especially if the home is older, uses a private well, or has no recent water information. A test gives the filter a real target."},"name":"Should a new homeowner test water before buying a filter?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"It can be, if the concern is mild taste or a temporary setup. It is not the right answer for every house."},"name":"Is a pitcher enough for the first step?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Use under-sink treatment when the kitchen gets heavy daily use and the household wants a cleaner counter and less refill work. A faucet filter is better when simple setup matters most."},"name":"When does under-sink filtration make more sense than a faucet filter?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"No. It treats water entering the house, but the specific treatment still has to match the problem. Some homes need more than one stage."},"name":"Does a whole-house system replace everything else?"}],"mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/water-filtration-starter-priority-sorter-for-new-homeowners-picker/","@type":"WebPage"}}</script>
+
+
+
+
+<meta name="msvalidate.01" content="F47EA7444EF95B629D2B0B8FB5B6850A"></head>
+<body class="theme-water layout-full-width">
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T2FRHBB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="site-header clean-head">
+    <div class="header-inner">
+        <a href="/" class="site-logo" aria-label="Better Water Guide">
+            <img src="/logo.svg?v=1783274236" alt="Better Water Guide" height="40">
+        </a>
+        <nav class="site-nav">
+            <a href="/best/">Best Picks</a>
+            <a href="/reviews/">Reviews</a>
+            <a href="/vs/">Compare</a>
+            <a href="/guides/">Guides</a>
+            <a href="/about/">About</a>
+        </nav>
+    </div>
+</header><main>
+        
+
+
+
+
+
+
+
+
+
+
+<article data-module="article-shell" data-module-role="article" class="article-shell clean-shell" itemscope itemtype="https://schema.org/Article"
+    data-content-type="guide"
+    >
+    
+    <header data-module="article-header" class="article-header">
+        <h1 itemprop="headline">Water Filtration Starter Priority Sorter for New Homeowners Picker</h1><div class="article-meta">
+    
+    <span>Published July 3, 2026</span>
+    
+    <span>By <a href="/authors/editorial-team/">Better Water Guide Editorial Team</a></span>
+    
+    <span>7 min read</span>
+    
+</div></header>
+    <div data-module="article-summary" class="article-summary" itemprop="description"><p>This sorter is for the moment when you have the keys, a sink full of possibilities, and no clear idea which water problem to solve first. The right order is simple: learn where the water comes from, find out whether the issue is only at the kitchen sink or throughout the house, and then choose the smallest treatment that matches the problem. That keeps a new homeowner from putting money into a filter that is too small, too large, or aimed at the wrong job.</p></div>
+    
+
+
+<section class="utility-tool" data-module="utility-tool" aria-labelledby="utility-tool-title">
+    <div class="utility-tool__intro">
+        <p class="utility-tool__kicker">Interactive Tool</p>
+        <h2 id="utility-tool-title">New-Home Water Filtration Startup Priority Sorter</h2>
+        <p>Pick the safest first step - test, point-of-use filter, or whole-house plan - by matching your water source, evidence, and install/upkeep limits.</p>
+        <p class="utility-tool__assumptions">Assumes your inputs reflect the current room, budget, workflow, or constraint. Verify measurements, prices, compatibility, safety limits, and policy requirements before acting.</p>
+    </div>
+    <div class="utility-tool__app" data-tool-root>
+        <noscript>Enable JavaScript to use this tool.</noscript>
+        <script type="application/json" data-tool-spec>{"dek":"Pick the safest first step - test, point-of-use filter, or whole-house plan - by matching your water source, evidence, and install/upkeep limits.","examples":[{"expected_output":"Priority next step: Test before buying.","inputs":[{"label":"Which water source serves your home?","value":"unknown"},{"label":"What evidence do you have right now?","value":"no_records"},{"label":"What issue is most noticeable at home?","value":"health_risk"},{"label":"How many fixtures need treatment first?","value":"kitchen_only"},{"label":"What installation can you tolerate this month?","value":"portable"}],"next_decision":"Book a lab test immediately, follow sampling instructions, and hold off on a generic filter until you know what contaminant(s) you're addressing.","title":"Worked example: new move-in"}],"formula":"weighted_choice","inputs":[{"key":"water_source","label":"Which water source serves your home?","options":[{"label":"Municipal supply","result":"test_first","value":"municipal","weight":1},{"label":"Private well","result":"test_first","value":"well","weight":2},{"label":"Unknown history","result":"test_first","value":"unknown","weight":3}],"type":"select"},{"key":"current_evidence","label":"What evidence do you have right now?","options":[{"label":"Recent lab/utility report","result":"match_point_of_use","value":"lab_report","weight":2},{"label":"Taste/odor or visible sediment","result":"match_point_of_use","value":"symptoms_or_sediment","weight":1},{"label":"No records from past year","result":"test_first","value":"no_records","weight":3}],"type":"select"},{"key":"top_issue","label":"What issue is most noticeable at home?","options":[{"label":"Chlorine taste or odor","result":"start_point_of_use","value":"chlorine","weight":2},{"label":"Hardness, limescale, spotting","result":"plan_whole_house","value":"hardness","weight":2},{"label":"Sediment/staining or clogging","result":"start_point_of_use","value":"sediment","weight":2},{"label":"Health risk suggested (lead/microbes)","result":"test_first","value":"health_risk","weight":3}],"type":"select"},{"key":"coverage_scope","label":"How many fixtures need treatment first?","options":[{"label":"Single kitchen sink only","result":"start_point_of_use","value":"kitchen_only","weight":2},{"label":"Multiple sinks, busy family kitchen","result":"match_point_of_use","value":"busy_kitchen","weight":2},{"label":"Whole-home water (showers + sinks)","result":"plan_whole_house","value":"whole_home","weight":2}],"type":"select"},{"key":"install_limit","label":"What installation can you tolerate this month?","options":[{"label":"No-drill portable or pitcher","result":"start_point_of_use","value":"portable","weight":2},{"label":"Under-sink or faucet filter","result":"match_point_of_use","value":"under_sink","weight":2},{"label":"Whole-house plumbing work ok","result":"plan_whole_house","value":"whole_house_work","weight":2}],"type":"select"}],"kind":"picker","result_label":"Priority next step","results":[{"body":"Schedule a water test before spending on treatment, especially with unknown history or implied health risks. Verify you follow the lab's sampling instructions and test the same source the house uses; avoid guessing with a generic taste-only filter.","key":"test_first","title":"Test Before Buying"},{"body":"Begin with a point-of-use kitchen setup that targets today's symptom (chlorine taste/odor or sediment reduction) while you confirm details later.","key":"start_point_of_use","title":"Start a Kitchen Fix"},{"body":"Choose a point-of-use filter that directly matches your lab/utility findings and your kitchen flow needs. Verify stated certified targets cover your contaminant(s) and that cartridge replacements are accessible; avoid assuming 'carbon' covers every issue.","key":"match_point_of_use","title":"Match Filter to Evidence"},{"body":"Plan whole-house treatment when the issue affects scale, staining, or comfort across multiple fixtures. Verify the system type matches the contaminant class (e.g.","key":"plan_whole_house","title":"Plan Whole-House Treatment"}],"title":"New-Home Water Filtration Startup Priority Sorter"}</script>
+    </div>
+    
+    <div class="utility-tool__examples" aria-label="Worked tool example">
+        
+        <h3>Worked example: new move-in</h3>
+        
+        <dl class="utility-tool__example-inputs">
+            
+            <div><dt>Which water source serves your home?</dt><dd>unknown</dd></div>
+            
+            <div><dt>What evidence do you have right now?</dt><dd>no_records</dd></div>
+            
+            <div><dt>What issue is most noticeable at home?</dt><dd>health_risk</dd></div>
+            
+            <div><dt>How many fixtures need treatment first?</dt><dd>kitchen_only</dd></div>
+            
+            <div><dt>What installation can you tolerate this month?</dt><dd>portable</dd></div>
+            
+        </dl>
+        
+        <p><strong>Expected output:</strong> Priority next step: Test before buying.</p>
+        <p><strong>Next decision:</strong> Book a lab test immediately, follow sampling instructions, and hold off on a generic filter until you know what contaminant(s) you&#39;re addressing.</p>
+        
+    </div>
+    
+</section>
+
+    
+    <details data-module="table-of-contents" class="table-of-contents">
+        <summary>Contents</summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-to-read-the-sorter">How to read the sorter</a></li>
+    <li><a href="#priority-sorter">Priority sorter</a></li>
+    <li><a href="#choose-the-treatment-that-matches-the-problem">Choose the treatment that matches the problem</a></li>
+    <li><a href="#what-new-homeowners-get-wrong">What new homeowners get wrong</a></li>
+    <li><a href="#what-to-look-at-before-you-buy">What to look at before you buy</a></li>
+    <li><a href="#simple-first-week-plan">Simple first-week plan</a></li>
+    <li><a href="#bottom-line">Bottom line</a></li>
+    <li><a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#should-a-new-homeowner-test-water-before-buying-a-filter">Should a new homeowner test water before buying a filter?</a></li>
+        <li><a href="#is-a-pitcher-enough-for-the-first-step">Is a pitcher enough for the first step?</a></li>
+        <li><a href="#when-does-under-sink-filtration-make-more-sense-than-a-faucet-filter">When does under-sink filtration make more sense than a faucet filter?</a></li>
+        <li><a href="#does-a-whole-house-system-replace-everything-else">Does a whole-house system replace everything else?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+    
+    
+
+
+
+
+
+
+
+
+
+
+<aside class="audible-inline-sponsored" aria-label="Sponsored Audible offer">
+    <div class="audible-inline-sponsored__inner">
+        <div class="audible-inline-sponsored__copy">
+            <div class="audible-inline-sponsored__badge">Sponsored</div>
+            <h3>Try audiobooks anytime</h3>
+            <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while relaxing, traveling, walking, or taking a break.</p>
+        </div>
+        <div class="audible-inline-sponsored__action">
+            <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+        </div>
+    </div>
+    <p class="audible-inline-sponsored__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+    
+    
+    <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody"><section class="article-section article-section--intro" data-module="article-section" data-section-role="intro" data-section-level="intro" data-section-id="intro"></section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="how-to-read-the-sorter"><h2 id="how-to-read-the-sorter" data-module="section-heading" data-section-id="how-to-read-the-sorter">How to read the sorter</h2>
+<p>Think in five pieces:</p>
+<ul>
+<li>Water source: municipal supply, private well, or unknown.</li>
+<li>Evidence: a recent water report, a test result, stains, sediment, taste or odor complaints, or no useful clue yet.</li>
+<li>Where the issue shows up: one faucet, the kitchen, several fixtures, or the whole house.</li>
+<li>Install tolerance: portable, simple faucet mount, under-sink work, or a larger plumbing job.</li>
+<li>Upkeep tolerance: easy cartridge changes or a system that needs more room and attention.</li>
+</ul>
+<p>If the home is older and the water history is unclear, information comes before hardware. A quick strip test can help with basic screening, but it does not answer everything. A water report or lab result gives a better starting point because it names the problem instead of leaving you to guess between taste, hardness, sediment, or something else.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="priority-sorter"><h2 id="priority-sorter" data-module="section-heading" data-section-id="priority-sorter">Priority sorter</h2>
+<div class="table-scroll"><table>
+	<thead>
+			<tr>
+					<th>Situation</th>
+					<th>First move</th>
+					<th>Why it belongs first</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Unknown source or older home with no recent report</td>
+					<td>Get a water test or report first</td>
+					<td>The plumbing history may matter more than the filter type</td>
+			</tr>
+			<tr>
+					<td>Municipal water and the complaint is mainly taste at the sink</td>
+					<td>Start with a point-of-use filter</td>
+					<td>A kitchen-level fix can handle a local comfort issue</td>
+			</tr>
+			<tr>
+					<td>Private well with sediment, staining, or odor in several places</td>
+					<td>Test first, then plan treatment</td>
+					<td>Wells often need problem-specific treatment, not a generic filter</td>
+			</tr>
+			<tr>
+					<td>Hard water is the main complaint</td>
+					<td>Look at softening, not just filtration</td>
+					<td>Hardness is a different problem from contaminant removal</td>
+			</tr>
+			<tr>
+					<td>Rental unit or temporary stay</td>
+					<td>Choose a pitcher or faucet filter</td>
+					<td>Permanent plumbing work may not be the right first move</td>
+			</tr>
+			<tr>
+					<td>Busy kitchen, heavy daily use, clutter already feels crowded</td>
+					<td>Under-sink filtration</td>
+					<td>It keeps the counter clearer and is easier to live with day to day</td>
+			</tr>
+			<tr>
+					<td>Every tap has the same issue</td>
+					<td>Start thinking about whole-house treatment</td>
+					<td>A single sink filter will not solve a whole-home problem</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>The sorter works because it separates the problem from the product. Taste complaints do not automatically call for a large system. Sediment does not automatically call for a pitcher. Hard water does not automatically call for a standard filter. The first decision is about scope, not brand.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="choose-the-treatment-that-matches-the-problem"><h2 id="choose-the-treatment-that-matches-the-problem" data-module="section-heading" data-section-id="choose-the-treatment-that-matches-the-problem">Choose the treatment that matches the problem</h2>
+<p>A pitcher is the simplest way to get started. It suits a light taste or odor complaint, a short-term living situation, or a household that wants no install at all. The trade-off is refilling, fridge or counter space, and slower daily use. It is a small answer, so it belongs with a small problem.</p>
+<p>A faucet filter keeps the water close to the sink and is easy to understand. It works best when the faucet shape allows it and when the household wants a no-plumbing start. The downside is visible hardware and a setup that can feel awkward if the faucet is unusual or the sink area already feels busy.</p>
+<p>An under-sink system is often the better choice for a homeowner who cooks often, fills a lot of glasses, or wants the counter clear. It fits the routine of a busy kitchen better than a pitcher because it removes the refill step. The trade-off is cabinet space, access around the plumbing, and the need to handle cartridge changes without making the space hard to reach.</p>
+<p>A whole-house system belongs when the issue reaches more than one tap. If every fixture shows the same stain, sediment, or water quality complaint, a kitchen-only solution is too narrow. Whole-house treatment also makes sense when the goal is to address the water entering the home before it reaches showers, laundry, and every sink. That is a bigger project, so it should follow a real understanding of the problem.</p>
+<p>A softener is not the same thing as a filter. Softening handles hardness. Filtration handles contaminants, taste, odor, sediment, or other water quality concerns. Some homes need both, but they should not be treated as interchangeable.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-new-homeowners-get-wrong"><h2 id="what-new-homeowners-get-wrong" data-module="section-heading" data-section-id="what-new-homeowners-get-wrong">What new homeowners get wrong</h2>
+<p>The most common mistake is buying a filter before naming the problem. A homeowner sees a strange taste, assumes the answer is a kitchen filter, and then learns later that the concern is sediment, plumbing age, or hard water. That is an expensive way to find out the first choice was too narrow.</p>
+<p>Another common mistake is choosing the largest system first. Whole-house treatment sounds impressive, but it is unnecessary when the problem only shows up at one sink. Bigger is not automatically better. The right system is the one that matches the scope of the issue and can be kept in place without turning maintenance into a hassle.</p>
+<p>A third mistake is ignoring replacement parts. A system can look simple on day one and become irritating if cartridges are hard to source, awkward to install, or buried in a cabinet that is difficult to reach. A filter that is hard to maintain often gets used less, and that defeats the point of buying it.</p>
+<p>A fourth mistake is focusing on flow before the filter type is settled. Fast water is nice, but speed does not fix the wrong treatment. The filter has to address the problem first, and only then should flow rate become part of the decision.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-to-look-at-before-you-buy"><h2 id="what-to-look-at-before-you-buy" data-module="section-heading" data-section-id="what-to-look-at-before-you-buy">What to look at before you buy</h2>
+<p>Once the sorter points you toward a category, use these checks to narrow the choice:</p>
+<ul>
+<li>Certification matters more than marketing language. NSF/ANSI 42 is tied to chlorine taste and odor reduction. NSF/ANSI 53 is used for health-related contaminant claims. NSF/ANSI 58 applies to reverse osmosis systems. NSF/ANSI 401 covers some newer compound claims, but it does not replace the right certification for the main problem.</li>
+<li>Space matters. Under-sink systems need cabinet room around shutoff valves, drain lines, and other hardware. Faucet filters need a faucet that can actually accept the attachment. Pitchers need storage space and a place where they will be used, not forgotten.</li>
+<li>Replacement path matters. Standard cartridge sizes are easier for most households to keep up with. Proprietary parts can work well too, but they make the replacement step more specific.</li>
+<li>Daily use matters. A system that fits a single person with light use may feel annoying in a house where several people fill bottles, cook, and wash up all day.</li>
+</ul>
+<p>If you want the shortest possible rule, use this one: choose the smallest system that solves the named problem and fits the way the house is actually used.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="simple-first-week-plan"><h2 id="simple-first-week-plan" data-module="section-heading" data-section-id="simple-first-week-plan">Simple first-week plan</h2>
+<p>For a new homeowner, the first week does not need to be complicated.</p>
+<ol>
+<li>Identify the water source.</li>
+<li>Find any recent report, utility information, or test result.</li>
+<li>Name the main issue in plain language: taste, odor, sediment, hardness, stains, or a broader concern.</li>
+<li>Decide whether the problem belongs at one faucet or throughout the house.</li>
+<li>Measure the install space before buying anything permanent.</li>
+<li>Choose the category that matches both the problem and the amount of upkeep the household will tolerate.</li>
+<li>Plan the replacement path before the first cartridge change is due.</li>
+</ol>
+<p>If the home is older and there is no useful water information yet, stop after step 3 and test the water before making a permanent purchase. That one pause can prevent the wrong system from becoming a fixture in the house.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="bottom-line"><h2 id="bottom-line" data-module="section-heading" data-section-id="bottom-line">Bottom line</h2>
+<p>This sorter is best used as a decision order, not a shopping list. Start with the water source and the evidence, then choose between a simple point-of-use filter, under-sink treatment, or whole-house planning. A pitcher is fine for a light, local issue. Under-sink filtration is a strong fit when daily kitchen use and clean counter space matter. Whole-house treatment belongs when the problem reaches every tap. Hard water should be treated as its own job, not folded into a generic filter choice.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="faq"><h2 id="faq" data-module="section-heading" data-section-id="faq">FAQ</h2>
+<h3 id="should-a-new-homeowner-test-water-before-buying-a-filter" data-module="section-subheading" data-section-id="should-a-new-homeowner-test-water-before-buying-a-filter">Should a new homeowner test water before buying a filter?</h3>
+<p>Yes, especially if the home is older, uses a private well, or has no recent water information. A test gives the filter a real target.</p>
+<h3 id="is-a-pitcher-enough-for-the-first-step" data-module="section-subheading" data-section-id="is-a-pitcher-enough-for-the-first-step">Is a pitcher enough for the first step?</h3>
+<p>It can be, if the concern is mild taste or a temporary setup. It is not the right answer for every house.</p>
+<h3 id="when-does-under-sink-filtration-make-more-sense-than-a-faucet-filter" data-module="section-subheading" data-section-id="when-does-under-sink-filtration-make-more-sense-than-a-faucet-filter">When does under-sink filtration make more sense than a faucet filter?</h3>
+<p>Use under-sink treatment when the kitchen gets heavy daily use and the household wants a cleaner counter and less refill work. A faucet filter is better when simple setup matters most.</p>
+<h3 id="does-a-whole-house-system-replace-everything-else" data-module="section-subheading" data-section-id="does-a-whole-house-system-replace-everything-else">Does a whole-house system replace everything else?</h3>
+<p>No. It treats water entering the house, but the specific treatment still has to match the problem. Some homes need more than one stage.</p>
+</section></div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+    
+        
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+<section class="see-also" data-module="see-also" data-section-id="see-also" aria-labelledby="see-also-heading">
+    <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
+    
+    <p>If you want to move from general advice into actual product choices, start with <a href="/guides/whole-house-water-softener-brine-tank-capacity-calculator-size-it-correctly/">Whole House Water Softener Brine Tank Capacity Calculator: Size It Correctly</a>, <a href="/guides/whole-house-filter-bypass-valve-sealing-readiness-check-tool-checklist/">Whole-House Filter Bypass Valve Sealing Readiness Check Tool Checklist</a>, and <a href="/guides/what-to-look-for-in-a-whole-house-water-filter-pressure-gauge/">What to Look for in a Whole House Water Filter Pressure Gauge</a>.</p>
+    <p>For a wider picture after the basics, <a href="/vs/whole-house-water-softener-vs-whole-house-water-conditioning-system-which-one-fits-your-kitchen-plumbing/">Whole House Water Softener vs Whole House Water Conditioning System: Which One Fits Your Kitchen Plumbing?</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs: Buyer Guide</a> are the next places to read.</p>
+    
+</section>
+
+</article>
+
+    </main><footer class="site-footer">
+    
+
+<div class="footer-inner">
+        <p>&copy; 2026 Better Water Guide. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="/about/">About</a>
+            <a href="/disclosure/">Disclosure</a>
+            <a href="/privacy/">Privacy Policy</a>
+        </nav>
+
+        <p class="footer-disclosure">
+            <a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.
+        </p>
+
+    </div>
+</footer></body>
+</html>

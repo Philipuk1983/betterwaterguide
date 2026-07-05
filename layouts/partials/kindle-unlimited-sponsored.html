@@ -1,0 +1,11 @@
+{{ $amazonTag := .Site.Params.amazonTag | default "" }}
+{{ if $amazonTag }}
+<aside class="kindle-sponsored-panel" aria-label="Sponsored Kindle Unlimited offer" data-affiliate-placement="kindle_unlimited_side_panel" data-product-name="Kindle Unlimited">
+    <a href="{{ printf "https://www.amazon.com/kindle-dbs/hz/subscribe/ku/?tag=%s" $amazonTag | safeURL }}" rel="sponsored nofollow noopener" target="_blank" aria-label="Explore Kindle Unlimited on Amazon">
+        <picture>
+            <source type="image/webp" srcset="{{ "images/kindle-unlimited-panel-320.webp" | relURL }} 320w, {{ "images/kindle-unlimited-panel-640.webp" | relURL }} 640w" sizes="320px">
+            <img src="{{ "images/kindle-unlimited-panel-320.webp" | relURL }}" width="320" height="489" loading="lazy" decoding="async" alt="Kindle Unlimited sponsored offer: read more of what you love, explore on Amazon.">
+        </picture>
+    </a>
+</aside>
+{{ end }}

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5T2FRHBB');</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3GZKYJF7J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-V3GZKYJF7J');
+</script>
+<script>
+(function() {
+    function isAmazonHost(hostname) {
+        var host = (hostname || "").toLowerCase();
+        return host === "amzn.to"
+            || host === "a.co"
+            || /(^|\.)amazon\.[a-z.]+$/.test(host);
+    }
+
+    function cleanText(value) {
+        return (value || "").replace(/\s+/g, " ").trim().slice(0, 160);
+    }
+
+    function dataValue(element, names) {
+        for (var i = 0; i < names.length; i += 1) {
+            if (element.dataset && element.dataset[names[i]]) {
+                return element.dataset[names[i]];
+            }
+        }
+        return "";
+    }
+
+    function closestDataValue(link, names) {
+        var selector = names.map(function(name) { return "[data-" + name.replace(/[A-Z]/g, function(match) { return "-" + match.toLowerCase(); }) + "]"; }).join(",");
+        var node = selector && link.closest ? link.closest(selector) : null;
+        return node ? dataValue(node, names) : "";
+    }
+
+    function amazonProductId(url) {
+        var path = decodeURIComponent(url.pathname || "");
+        var match = path.match(/\/(?:dp|gp\/product|gp\/aw\/d|exec\/obidos\/ASIN)\/([A-Z0-9]{10})(?:[/?]|$)/i);
+        if (match) {
+            return match[1].toUpperCase();
+        }
+
+        var asin = url.searchParams.get("asin") || url.searchParams.get("ASIN");
+        return /^[A-Z0-9]{10}$/i.test(asin || "") ? asin.toUpperCase() : "";
+    }
+
+    function productName(link) {
+        var explicit = dataValue(link, ["productName", "product", "itemName"]) || closestDataValue(link, ["productName", "product", "itemName"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        var cta = link.closest ? link.closest(".affiliate-cta, .product-cta, .section-product-cta, tr, li") : null;
+        var namedNode = cta ? cta.querySelector("[data-product-name], .affiliate-cta__name-link, strong, h2, h3, th") : null;
+        return cleanText((namedNode && namedNode.textContent) || link.getAttribute("aria-label") || link.getAttribute("title") || link.textContent);
+    }
+
+    function placement(link) {
+        var explicit = dataValue(link, ["affiliatePlacement", "placement"]) || closestDataValue(link, ["affiliatePlacement", "placement"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        if (link.closest) {
+            if (link.closest(".affiliate-cta--hero")) return "hero_cta";
+            if (link.closest(".affiliate-cta--mid")) return "mid_article_cta";
+            if (link.closest(".affiliate-cta--post-editor")) return "post_editor_cta";
+            if (link.closest(".affiliate-cta--verdict")) return "verdict_cta";
+            if (link.closest(".affiliate-cta--context")) return "context_cta";
+            if (link.closest(".affiliate-cta")) return "affiliate_cta";
+            if (link.closest("table")) return "comparison_table";
+            if (link.closest("header, .hero, .modern-hero")) return "hero";
+        }
+
+        return "amazon_link";
+    }
+
+    document.addEventListener("click", function(event) {
+        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) {
+            return;
+        }
+
+        var url;
+        try {
+            url = new URL(link.href, window.location.href);
+        } catch (_) {
+            return;
+        }
+
+        if (!isAmazonHost(url.hostname)) {
+            return;
+        }
+
+        var payload = {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            affiliate_network: "amazon",
+            merchant: "amazon",
+            product_id: amazonProductId(url),
+            product_name: productName(link),
+            placement: placement(link),
+            link_url: url.href
+        };
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: "affiliate_click" }, payload));
+        window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
+    }, true);
+})();
+</script>
+
+
+
+
+
+
+<title>How to Perform a Simple Whole-House Filter Pressure Check in Your Kitchen | Better Water Guide</title>
+<meta name="description" content="The easiest place to run a whole-house filter pressure check is the kitchen because the cold tap gives a steady draw and keeps the water heater out.">
+<link rel="canonical" href="https://betterwaterguide.com/guides/how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen/">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:title" content="How to Perform a Simple Whole-House Filter Pressure Check in Your Kitchen | Better Water Guide">
+<meta property="og:description" content="The easiest place to run a whole-house filter pressure check is the kitchen because the cold tap gives a steady draw and keeps the water heater out.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://betterwaterguide.com/guides/how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen/">
+<meta property="og:site_name" content="Better Water Guide">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Perform a Simple Whole-House Filter Pressure Check in Your Kitchen | Better Water Guide">
+<meta name="twitter:description" content="The easiest place to run a whole-house filter pressure check is the kitchen because the cold tap gives a steady draw and keeps the water heater out.">
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Source%20Sans%203:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/main.min.df9f327814c854086be85c2802c454e7325ad6f1892eaa842b85a348287eda1a.css" integrity="sha256-358yeBTIVAhr6FwoAsRU5zJa1vGJLqqEK4WjSCh&#43;2ho=">
+
+<script defer src="/js/article-enhancements.js?v=1783274236"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.","name":"Better Water Guide","url":"https://betterwaterguide.com/"}</script>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Guides","author":{"@type":"Organization","name":"Better Water Guide Editorial Team","url":"https://betterwaterguide.com/authors/editorial-team/"},"dateModified":"2026-07-01T00:00:00Z","datePublished":"2026-07-01T00:00:00Z","description":"The easiest place to run a whole-house filter pressure check is the kitchen because the cold tap gives a steady draw and keeps the water heater out.","headline":"How to Perform a Simple Whole-House Filter Pressure Check in Your Kitchen","inLanguage":"en-us","isAccessibleForFree":true,"keywords":"how to perform a simple whole house filter pressure check, how to choose how to perform a simple whole-house filter pressure check in your kitchen, how to perform a simple whole-house filter pressure check in your kitchen guide","mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen/","@type":"WebPage"},"publisher":{"@type":"Organization","name":"Better Water Guide","url":"https://betterwaterguide.com/"},"url":"https://betterwaterguide.com/guides/how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen/","wordCount":1227}</script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Two gauges make the reading easier to understand because you can see the pressure drop directly. One gauge still works if you keep a baseline and compare it after each filter change."},"name":"Do I need two gauges?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"It is the easiest household tap to repeat month after month, and cold water keeps the heater and mixing valve out of the reading."},"name":"Why use the kitchen cold faucet?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"A pressure check only shows restriction. If the pressure is steady but the faucet still feels weak, the aerator, stop valve, regulator, or another part of the plumbing may be involved."},"name":"What if the pressure looks fine but the flow feels weak?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"A monthly note is enough for many homes. After a line flush, a main repair, or any sudden change in flow, run the check again sooner so you have a fresh baseline."},"name":"How often should I do this?"}],"mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen/","@type":"WebPage"}}</script>
+
+
+
+
+<meta name="msvalidate.01" content="F47EA7444EF95B629D2B0B8FB5B6850A"></head>
+<body class="theme-water layout-full-width">
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T2FRHBB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="site-header clean-head">
+    <div class="header-inner">
+        <a href="/" class="site-logo" aria-label="Better Water Guide">
+            <img src="/logo.svg?v=1783274236" alt="Better Water Guide" height="40">
+        </a>
+        <nav class="site-nav">
+            <a href="/best/">Best Picks</a>
+            <a href="/reviews/">Reviews</a>
+            <a href="/vs/">Compare</a>
+            <a href="/guides/">Guides</a>
+            <a href="/about/">About</a>
+        </nav>
+    </div>
+</header><main>
+        
+
+
+
+
+
+
+
+
+
+
+<article data-module="article-shell" data-module-role="article" class="article-shell clean-shell" itemscope itemtype="https://schema.org/Article"
+    data-content-type="guide"
+    >
+    
+    <header data-module="article-header" class="article-header">
+        <h1 itemprop="headline">How to Perform a Simple Whole-House Filter Pressure Check in Your Kitchen</h1><div class="article-meta">
+    
+    <span>Published July 1, 2026</span>
+    
+    <span>By <a href="/authors/editorial-team/">Better Water Guide Editorial Team</a></span>
+    
+    <span>6 min read</span>
+    
+</div></header>
+    <div data-module="article-summary" class="article-summary" itemprop="description"><p>The easiest place to run a whole-house filter pressure check is the kitchen because the cold tap gives a steady draw and keeps the water heater out of the picture. With the rest of the house quiet, you can see whether the filter stage is adding normal resistance or starting to slow the system down.</p></div>
+    
+
+
+    
+    <details data-module="table-of-contents" class="table-of-contents">
+        <summary>Contents</summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-you-need">What you need</a></li>
+    <li><a href="#run-the-check-the-same-way-each-time">Run the check the same way each time</a></li>
+    <li><a href="#how-to-read-the-result">How to read the result</a></li>
+    <li><a href="#when-the-reading-points-somewhere-else">When the reading points somewhere else</a></li>
+    <li><a href="#a-simple-setup-that-is-easy-to-keep-using">A simple setup that is easy to keep using</a></li>
+    <li><a href="#common-mistakes-that-blur-the-result">Common mistakes that blur the result</a></li>
+    <li><a href="#when-to-skip-this-method-as-your-main-answer">When to skip this method as your main answer</a></li>
+    <li><a href="#a-practical-rule-for-service-timing">A practical rule for service timing</a></li>
+    <li><a href="#short-verdict">Short verdict</a></li>
+    <li><a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#do-i-need-two-gauges">Do I need two gauges?</a></li>
+        <li><a href="#why-use-the-kitchen-cold-faucet">Why use the kitchen cold faucet?</a></li>
+        <li><a href="#what-if-the-pressure-looks-fine-but-the-flow-feels-weak">What if the pressure looks fine but the flow feels weak?</a></li>
+        <li><a href="#how-often-should-i-do-this">How often should I do this?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+    
+    
+
+
+
+
+
+
+
+
+
+
+<aside class="audible-inline-sponsored" aria-label="Sponsored Audible offer">
+    <div class="audible-inline-sponsored__inner">
+        <div class="audible-inline-sponsored__copy">
+            <div class="audible-inline-sponsored__badge">Sponsored</div>
+            <h3>Try audiobooks anytime</h3>
+            <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while relaxing, traveling, walking, or taking a break.</p>
+        </div>
+        <div class="audible-inline-sponsored__action">
+            <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+        </div>
+    </div>
+    <p class="audible-inline-sponsored__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+    
+    
+    <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody"><section class="article-section article-section--intro" data-module="article-section" data-section-role="intro" data-section-level="intro" data-section-id="intro"></section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-you-need"><h2 id="what-you-need" data-module="section-heading" data-section-id="what-you-need">What you need</h2>
+<ul>
+<li>One pressure gauge, or two if the filter setup supports inlet and outlet readings.</li>
+<li>A towel for the valve area and gauge threads.</li>
+<li>Pen and paper or a note on your phone.</li>
+<li>Access to the filter inlet, outlet, and bypass if your system has one.</li>
+</ul>
+<p>A simple setup beats a clever one. If the gauge is hard to read or awkward to move, the check gets skipped.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="run-the-check-the-same-way-each-time"><h2 id="run-the-check-the-same-way-each-time" data-module="section-heading" data-section-id="run-the-check-the-same-way-each-time">Run the check the same way each time</h2>
+<ol>
+<li>Turn off dishwasher, laundry, irrigation, and anything else that can pull water.</li>
+<li>Put the filter in its normal operating position. If there is a bypass, leave it in the filtered position for the first reading.</li>
+<li>Read the gauge with no fixtures running.</li>
+<li>Open the kitchen cold faucet fully for 30 to 60 seconds.</li>
+<li>Read the gauge again while the faucet is still running, or note the upstream and downstream readings if you have two gauges in place.</li>
+<li>If you have two gauges, subtract the outlet pressure from the inlet pressure.</li>
+<li>If you have one gauge, compare the new reading with the clean baseline you wrote down after the last filter change.</li>
+<li>Record the date, the reading, and whether other water use was shut off.</li>
+</ol>
+<p>The kitchen cold tap is the right choice because it is easy to repeat. Hot water adds the heater, mixing valve, and extra plumbing into the picture, which makes the result harder to interpret.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="how-to-read-the-result"><h2 id="how-to-read-the-result" data-module="section-heading" data-section-id="how-to-read-the-result">How to read the result</h2>
+<p>Pressure is most useful when you compare it with your own earlier reading. A clean filter can still create a small drop, so the goal is not zero. The goal is to spot a change that grows over time.</p>
+<div class="table-scroll"><table>
+	<thead>
+			<tr>
+					<th>Pressure change</th>
+					<th>Usual meaning</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>0 to 5 PSI drop</td>
+					<td>Normal for many homes</td>
+			</tr>
+			<tr>
+					<td>Around 8 PSI drop</td>
+					<td>Early warning</td>
+			</tr>
+			<tr>
+					<td>About 10 PSI drop</td>
+					<td>Service the filter stage</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>A sudden change matters too. If last month was steady and this month is sharply lower, the filter stage may be loading faster than usual. Sediment after a line flush or a water main repair can make that happen.</p>
+<p>If a bypass is present and opening it brings the reading back up, the filter stage is the likely restriction. If the bypass does not help, the issue is more likely upstream or downstream from the filter.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="when-the-reading-points-somewhere-else"><h2 id="when-the-reading-points-somewhere-else" data-module="section-heading" data-section-id="when-the-reading-points-somewhere-else">When the reading points somewhere else</h2>
+<p>A weak kitchen stream does not always mean the filter is the problem. Other parts of the house can change the reading fast.</p>
+<div class="table-scroll"><table>
+	<thead>
+			<tr>
+					<th>Situation</th>
+					<th>What it often means</th>
+					<th>Where to look first</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Pressure rises and falls with pump cycles</td>
+					<td>The well system is driving the change</td>
+					<td>Tank, switch, and bladder</td>
+			</tr>
+			<tr>
+					<td>Both hot and cold feel weak</td>
+					<td>The problem may be in the main supply</td>
+					<td>Regulator, shutoff valve, or filter housing</td>
+			</tr>
+			<tr>
+					<td>Only one faucet is weak</td>
+					<td>The problem is local to that fixture</td>
+					<td>Aerator or stop valve</td>
+			</tr>
+			<tr>
+					<td>Pressure changes when laundry or irrigation starts</td>
+					<td>Another large draw is affecting the line</td>
+					<td>Wait and repeat the check</td>
+			</tr>
+			<tr>
+					<td>Bypass does not restore flow</td>
+					<td>The filter is not the only suspect</td>
+					<td>Valve position, regulator, or house plumbing</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>This is why a quiet house matters. Once another fixture starts drawing water, the filter reading stops being clean and starts becoming a mix of several problems.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="a-simple-setup-that-is-easy-to-keep-using"><h2 id="a-simple-setup-that-is-easy-to-keep-using" data-module="section-heading" data-section-id="a-simple-setup-that-is-easy-to-keep-using">A simple setup that is easy to keep using</h2>
+<p>You do not need a complicated gauge kit to make this useful. You do need a setup that can be put back in the same place without fuss.</p>
+<ul>
+<li>Two gauges give the clearest reading when the housing supports them.</li>
+<li>One gauge still works if you keep a baseline after every filter change.</li>
+<li>A readable dial matters more than a long feature list.</li>
+<li>Standard fittings that match the system are easier to manage than a pile of adapters.</li>
+<li>A small note card near the filter cabinet helps you remember the last clean reading.</li>
+</ul>
+<p>If the setup is annoying to store, wipe dry, or reinstall, it is less likely to get used on schedule. The best method is the one that takes a few minutes and leaves the cabinet tidy.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="common-mistakes-that-blur-the-result"><h2 id="common-mistakes-that-blur-the-result" data-module="section-heading" data-section-id="common-mistakes-that-blur-the-result">Common mistakes that blur the result</h2>
+<p>Most bad readings come from mixing the wrong water use with the wrong tap.</p>
+<ul>
+<li>Using the hot tap instead of the cold tap</li>
+<li>Running the dishwasher or laundry during the check</li>
+<li>Forgetting to reset the baseline after a filter change</li>
+<li>Leaving a valve partly closed after service</li>
+<li>Ignoring a clogged aerator at the kitchen sink</li>
+<li>Taking only one reading and never repeating it</li>
+</ul>
+<p>A slow kitchen faucet does not automatically mean the whole-house filter is loaded. Start with the simplest causes and move outward only if the pressure reading stays low.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="when-to-skip-this-method-as-your-main-answer"><h2 id="when-to-skip-this-method-as-your-main-answer" data-module="section-heading" data-section-id="when-to-skip-this-method-as-your-main-answer">When to skip this method as your main answer</h2>
+<p>The kitchen pressure check is most useful when the home has a whole-house filter, a clear gauge point, and a quiet plumbing layout. It is less useful when the problem is obviously tied to another part of the system.</p>
+<p>Skip the filter as the first suspect when:</p>
+<ul>
+<li>Only the hot water is weak</li>
+<li>A single fixture is acting up</li>
+<li>The pressure tank is short cycling</li>
+<li>The regulator is already known to be unstable</li>
+<li>You cannot quiet the house long enough to get a stable reading</li>
+</ul>
+<p>In those cases, start with the plumbing source or the specific fixture. A filter pressure check tells you about restriction, not every cause of weak water.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="a-practical-rule-for-service-timing"><h2 id="a-practical-rule-for-service-timing" data-module="section-heading" data-section-id="a-practical-rule-for-service-timing">A practical rule for service timing</h2>
+<p>Use your own baseline, then watch for drift. If the reading stays close to the clean number, the system is probably still moving water well. If the drop grows toward the warning line, plan a filter change before the flow gets annoying. If the drop reaches the service line, the filter stage is doing too much work.</p>
+<p>That simple rule is better than waiting until the stream feels obviously weak. By then, the cartridge or filter stage is already past the easy warning stage.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="short-verdict"><h2 id="short-verdict" data-module="section-heading" data-section-id="short-verdict">Short verdict</h2>
+<p>A kitchen-based whole-house filter pressure check is one of the simplest ways to tell whether the filter is starting to restrict flow. It works because the cold tap gives you a repeatable household load and keeps extra variables out of the reading. The method is most useful when you keep a clean baseline, quiet the house, and compare readings over time.</p>
+<p>Use the filter reading to guide service when the drop climbs, especially if bypassing the filter restores pressure. Look elsewhere when the kitchen stream is only one part of a larger plumbing problem.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="faq"><h2 id="faq" data-module="section-heading" data-section-id="faq">FAQ</h2>
+<h3 id="do-i-need-two-gauges" data-module="section-subheading" data-section-id="do-i-need-two-gauges">Do I need two gauges?</h3>
+<p>Two gauges make the reading easier to understand because you can see the pressure drop directly. One gauge still works if you keep a baseline and compare it after each filter change.</p>
+<h3 id="why-use-the-kitchen-cold-faucet" data-module="section-subheading" data-section-id="why-use-the-kitchen-cold-faucet">Why use the kitchen cold faucet?</h3>
+<p>It is the easiest household tap to repeat month after month, and cold water keeps the heater and mixing valve out of the reading.</p>
+<h3 id="what-if-the-pressure-looks-fine-but-the-flow-feels-weak" data-module="section-subheading" data-section-id="what-if-the-pressure-looks-fine-but-the-flow-feels-weak">What if the pressure looks fine but the flow feels weak?</h3>
+<p>A pressure check only shows restriction. If the pressure is steady but the faucet still feels weak, the aerator, stop valve, regulator, or another part of the plumbing may be involved.</p>
+<h3 id="how-often-should-i-do-this" data-module="section-subheading" data-section-id="how-often-should-i-do-this">How often should I do this?</h3>
+<p>A monthly note is enough for many homes. After a line flush, a main repair, or any sudden change in flow, run the check again sooner so you have a fresh baseline.</p>
+</section></div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+    
+        
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+<section class="see-also" data-module="see-also" data-section-id="see-also" aria-labelledby="see-also-heading">
+    <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
+    
+    <p>If you want to move from general advice into actual product choices, start with <a href="/guides/how-to-choose-a-whole-house-water-filter-for-hard-water-in-your-kitchen-and-beyond/">How to Choose a Whole-House Water Treatment System for Hard Water</a>, <a href="/guides/how-to-sanitize-a-whole-house-water-filter-system-safely-beginner-steps/">How to Sanitize a Whole-House Water Filter System Safely (Beginner Steps)</a>, and <a href="/guides/whole-house-water-filter-installation-steps-for-first-time-homeowners-kitchen-system-setup/">Whole-House Water Filter Installation Steps for First-Time Homeowners (Kitchen System Setup)</a>.</p>
+    <p>For a wider picture after the basics, <a href="/vs/entry-level-vs-pro-whole-house-water-filters-which-one-is-right-for-your-home/">Entry-Level vs Pro Whole-House Water Filters: How to Choose</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs: Buyer Guide</a> are the next places to read.</p>
+    
+</section>
+
+</article>
+
+    </main><footer class="site-footer">
+    
+
+<div class="footer-inner">
+        <p>&copy; 2026 Better Water Guide. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="/about/">About</a>
+            <a href="/disclosure/">Disclosure</a>
+            <a href="/privacy/">Privacy Policy</a>
+        </nav>
+
+        <p class="footer-disclosure">
+            <a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.
+        </p>
+
+    </div>
+</footer></body>
+</html>

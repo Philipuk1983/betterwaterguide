@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $affiliateAllowed := true }}
-{{ with .File }}{{ if eq .BaseFileName "about" }}{{ $affiliateAllowed = false }}{{ end }}{{ end }}
+{{ if eq .Section "authors" }}{{ $affiliateAllowed = false }}{{ end }}
+{{ with .File }}{{ if in (slice "about" "privacy" "disclosure" "editorial-policy" "spoiler-policy") .BaseFileName }}{{ $affiliateAllowed = false }}{{ end }}{{ end }}
 {{ $products := .Params.products | default slice }}
 {{ $hasPrimaryProduct := gt (len $products) 0 }}
 {{ $singleProductPage := eq (len $products) 1 }}
@@ -19,8 +20,11 @@
     data-primary-product-url="{{ $primaryAmazonUrl }}"
     {{ end }}>
     {{ if and $affiliateAllowed .Site.Params.amazonTag $hasPrimaryProduct }}
-    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored Audible offer">
-        {{- partial "audible-sponsored.html" . -}}
+    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offers">
+        <div class="sponsored-side-stack">
+            {{- partial "audible-sponsored.html" . -}}
+            {{- partial "kindle-unlimited-sponsored.html" . -}}
+        </div>
     </div>
     {{ end }}
     <header data-module="article-header" class="article-header">
