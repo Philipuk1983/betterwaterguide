@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Categories on Better Water Guide</title>
-		<link>http://127.0.0.1:5097/categories/</link>
+		<link>https://betterwaterguide.com/categories/</link>
 		<description>Recent content in Categories on Better Water Guide</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,6 +10,6 @@
 		
 		
 		
-			<atom:link href="http://127.0.0.1:5097/categories/feed.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://betterwaterguide.com/categories/feed.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

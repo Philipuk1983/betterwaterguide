@@ -854,12 +854,20 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .theme-betterwaterguide .cta-chip,
 .theme-betterwaterguide .callout-eyebrow {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
+    min-height: 2.35rem;
+    padding: 0.55rem 1.05rem;
     border: 1px solid var(--bwg-border);
     border-radius: 999px;
     background: var(--bwg-soft-aqua);
     color: var(--bwg-blue-dark);
-    font-weight: 850;
+    font-size: 0.82rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-transform: none;
 }
 .theme-betterwaterguide .article-summary,
 .theme-betterwaterguide .quick-take,
