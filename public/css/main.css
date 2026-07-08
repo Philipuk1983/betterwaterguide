@@ -2129,22 +2129,40 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 }
 .theme-betterwaterguide .directory-hero-copy { display: grid; align-content: center; min-width: 0; }
 .theme-betterwaterguide .directory-hero-copy .hero-copy { max-width: 42rem; }
-.theme-betterwaterguide .directory-hero::after {
-    position: static;
-    content: "Filter route check\A Test -> Type -> Flow -> Cartridge";
-    white-space: pre-line;
+.directory-water-note { display: none; }
+.theme-betterwaterguide .directory-water-note {
     align-self: stretch;
     display: grid;
-    place-items: center start;
+    align-content: center;
+    gap: 0.65rem;
     padding: 1.5rem;
     border: 1px solid rgba(15,142,199,0.18);
     border-radius: 20px;
     background: repeating-linear-gradient(0deg, rgba(15,142,199,0.08) 0 1px, transparent 1px 2.1rem), linear-gradient(135deg, #f8fdff, #c9f4ff);
     color: var(--bwg-navy);
+}
+.theme-betterwaterguide .directory-water-note strong {
     font-family: var(--font-heading);
     font-size: clamp(1.05rem, 1.5vw, 1.35rem);
     font-weight: 900;
-    line-height: 1.5;
+    line-height: 1.25;
+}
+.theme-betterwaterguide .directory-water-note span {
+    position: relative;
+    padding-left: 1.25rem;
+    color: #386075;
+    font-weight: 800;
+    line-height: 1.35;
+}
+.theme-betterwaterguide .directory-water-note span::before {
+    position: absolute;
+    left: 0;
+    top: 0.45em;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 999px;
+    background: var(--bwg-aqua);
+    content: "";
 }
 .theme-betterwaterguide .directory-list { border-left: 6px solid var(--bwg-aqua); padding-left: clamp(1rem, 2vw, 1.5rem); }
 .theme-betterwaterguide .directory-row { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 0.35rem 1.25rem; align-items: start; border-radius: 0; border-width: 0 0 1px; box-shadow: none; }

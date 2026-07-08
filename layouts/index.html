@@ -6,6 +6,12 @@
             <h1>{{ .Site.Title }}</h1>
             <div class="hero-copy">{{ if .Content }}{{ .Content }}{{ else }}<p>{{ .Site.Params.description }}</p>{{ end }}</div>
         </div>
+        <aside class="directory-water-note" aria-label="Water filter decision checklist">
+            <strong>Water fit check</strong>
+            <span>Start with test results</span>
+            <span>Match the filter to the problem</span>
+            <span>Plan cartridge access</span>
+        </aside>
     </section>
     {{ $bestPages := slice }}{{ if .Site.Params.showBestSection }}{{ $bestPages = where .Site.RegularPages "Section" "best" }}{{ end }}
     {{ if $bestPages }}

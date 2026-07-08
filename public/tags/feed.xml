@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Tags on Better Water Guide</title>
-		<link>https://betterwaterguide.com/tags/</link>
+		<link>http://127.0.0.1:5097/tags/</link>
 		<description>Recent content in Tags on Better Water Guide</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,250 +12,250 @@
 		
 			<lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://betterwaterguide.com/tags/feed.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://127.0.0.1:5097/tags/feed.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Best Water Filter</title>
-				<link>https://betterwaterguide.com/tags/best-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/best-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/best-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/best-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Carbon Water Filter</title>
-				<link>https://betterwaterguide.com/tags/carbon-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/carbon-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/carbon-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/carbon-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Chlorine Water Filter</title>
-				<link>https://betterwaterguide.com/tags/chlorine-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/chlorine-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/chlorine-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/chlorine-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Clean Drinking Water</title>
-				<link>https://betterwaterguide.com/tags/clean-drinking-water/</link>
+				<link>http://127.0.0.1:5097/tags/clean-drinking-water/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/clean-drinking-water/</guid>
+				<guid>http://127.0.0.1:5097/tags/clean-drinking-water/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Drinking Water Filter</title>
-				<link>https://betterwaterguide.com/tags/drinking-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/drinking-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/drinking-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/drinking-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Filter Cartridges</title>
-				<link>https://betterwaterguide.com/tags/filter-cartridges/</link>
+				<link>http://127.0.0.1:5097/tags/filter-cartridges/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/filter-cartridges/</guid>
+				<guid>http://127.0.0.1:5097/tags/filter-cartridges/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Filtered Tap Water</title>
-				<link>https://betterwaterguide.com/tags/filtered-tap-water/</link>
+				<link>http://127.0.0.1:5097/tags/filtered-tap-water/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/filtered-tap-water/</guid>
+				<guid>http://127.0.0.1:5097/tags/filtered-tap-water/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Hard Water Filter</title>
-				<link>https://betterwaterguide.com/tags/hard-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/hard-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/hard-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/hard-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Home Water Filtration</title>
-				<link>https://betterwaterguide.com/tags/home-water-filtration/</link>
+				<link>http://127.0.0.1:5097/tags/home-water-filtration/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/home-water-filtration/</guid>
+				<guid>http://127.0.0.1:5097/tags/home-water-filtration/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Home Water Quality</title>
-				<link>https://betterwaterguide.com/tags/home-water-quality/</link>
+				<link>http://127.0.0.1:5097/tags/home-water-quality/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/home-water-quality/</guid>
+				<guid>http://127.0.0.1:5097/tags/home-water-quality/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Home-Maintenance</title>
-				<link>https://betterwaterguide.com/tags/home-maintenance/</link>
+				<link>http://127.0.0.1:5097/tags/home-maintenance/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/home-maintenance/</guid>
+				<guid>http://127.0.0.1:5097/tags/home-maintenance/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Kitchen Water Filter</title>
-				<link>https://betterwaterguide.com/tags/kitchen-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/kitchen-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/kitchen-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/kitchen-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Lane:audience_specific</title>
-				<link>https://betterwaterguide.com/tags/laneaudience_specific/</link>
+				<link>http://127.0.0.1:5097/tags/laneaudience_specific/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/laneaudience_specific/</guid>
+				<guid>http://127.0.0.1:5097/tags/laneaudience_specific/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Limescale Filter</title>
-				<link>https://betterwaterguide.com/tags/limescale-filter/</link>
+				<link>http://127.0.0.1:5097/tags/limescale-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/limescale-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/limescale-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Reverse Osmosis System</title>
-				<link>https://betterwaterguide.com/tags/reverse-osmosis-system/</link>
+				<link>http://127.0.0.1:5097/tags/reverse-osmosis-system/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/reverse-osmosis-system/</guid>
+				<guid>http://127.0.0.1:5097/tags/reverse-osmosis-system/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Ro Water System</title>
-				<link>https://betterwaterguide.com/tags/ro-water-system/</link>
+				<link>http://127.0.0.1:5097/tags/ro-water-system/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/ro-water-system/</guid>
+				<guid>http://127.0.0.1:5097/tags/ro-water-system/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Sediment Filter</title>
-				<link>https://betterwaterguide.com/tags/sediment-filter/</link>
+				<link>http://127.0.0.1:5097/tags/sediment-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/sediment-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/sediment-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Shower Water Filter</title>
-				<link>https://betterwaterguide.com/tags/shower-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/shower-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/shower-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/shower-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Under Sink Water Filter</title>
-				<link>https://betterwaterguide.com/tags/under-sink-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/under-sink-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/under-sink-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/under-sink-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Water Filter</title>
-				<link>https://betterwaterguide.com/tags/water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Water Filter Pitcher</title>
-				<link>https://betterwaterguide.com/tags/water-filter-pitcher/</link>
+				<link>http://127.0.0.1:5097/tags/water-filter-pitcher/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/water-filter-pitcher/</guid>
+				<guid>http://127.0.0.1:5097/tags/water-filter-pitcher/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Water Filter Replacement</title>
-				<link>https://betterwaterguide.com/tags/water-filter-replacement/</link>
+				<link>http://127.0.0.1:5097/tags/water-filter-replacement/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/water-filter-replacement/</guid>
+				<guid>http://127.0.0.1:5097/tags/water-filter-replacement/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Water Filtration Guide</title>
-				<link>https://betterwaterguide.com/tags/water-filtration-guide/</link>
+				<link>http://127.0.0.1:5097/tags/water-filtration-guide/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/water-filtration-guide/</guid>
+				<guid>http://127.0.0.1:5097/tags/water-filtration-guide/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Water Softener</title>
-				<link>https://betterwaterguide.com/tags/water-softener/</link>
+				<link>http://127.0.0.1:5097/tags/water-softener/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/water-softener/</guid>
+				<guid>http://127.0.0.1:5097/tags/water-softener/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Water Test Kit</title>
-				<link>https://betterwaterguide.com/tags/water-test-kit/</link>
+				<link>http://127.0.0.1:5097/tags/water-test-kit/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/water-test-kit/</guid>
+				<guid>http://127.0.0.1:5097/tags/water-test-kit/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Well Water Filter</title>
-				<link>https://betterwaterguide.com/tags/well-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/well-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/well-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/well-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Whole House Water Filter</title>
-				<link>https://betterwaterguide.com/tags/whole-house-water-filter/</link>
+				<link>http://127.0.0.1:5097/tags/whole-house-water-filter/</link>
 				<pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/whole-house-water-filter/</guid>
+				<guid>http://127.0.0.1:5097/tags/whole-house-water-filter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Lane:convenience_vs_performance</title>
-				<link>https://betterwaterguide.com/tags/laneconvenience_vs_performance/</link>
+				<link>http://127.0.0.1:5097/tags/laneconvenience_vs_performance/</link>
 				<pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/laneconvenience_vs_performance/</guid>
+				<guid>http://127.0.0.1:5097/tags/laneconvenience_vs_performance/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Lane:material_or_spec_risk</title>
-				<link>https://betterwaterguide.com/tags/lanematerial_or_spec_risk/</link>
+				<link>http://127.0.0.1:5097/tags/lanematerial_or_spec_risk/</link>
 				<pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/lanematerial_or_spec_risk/</guid>
+				<guid>http://127.0.0.1:5097/tags/lanematerial_or_spec_risk/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Lane:beginner_easy</title>
-				<link>https://betterwaterguide.com/tags/lanebeginner_easy/</link>
+				<link>http://127.0.0.1:5097/tags/lanebeginner_easy/</link>
 				<pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/lanebeginner_easy/</guid>
+				<guid>http://127.0.0.1:5097/tags/lanebeginner_easy/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Lane:buying_factors</title>
-				<link>https://betterwaterguide.com/tags/lanebuying_factors/</link>
+				<link>http://127.0.0.1:5097/tags/lanebuying_factors/</link>
 				<pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/lanebuying_factors/</guid>
+				<guid>http://127.0.0.1:5097/tags/lanebuying_factors/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Lane:mainstream_pick</title>
-				<link>https://betterwaterguide.com/tags/lanemainstream_pick/</link>
+				<link>http://127.0.0.1:5097/tags/lanemainstream_pick/</link>
 				<pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/lanemainstream_pick/</guid>
+				<guid>http://127.0.0.1:5097/tags/lanemainstream_pick/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Lane:beginner_vs_pro</title>
-				<link>https://betterwaterguide.com/tags/lanebeginner_vs_pro/</link>
+				<link>http://127.0.0.1:5097/tags/lanebeginner_vs_pro/</link>
 				<pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/lanebeginner_vs_pro/</guid>
+				<guid>http://127.0.0.1:5097/tags/lanebeginner_vs_pro/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Lane:budget_vs_upgrade</title>
-				<link>https://betterwaterguide.com/tags/lanebudget_vs_upgrade/</link>
+				<link>http://127.0.0.1:5097/tags/lanebudget_vs_upgrade/</link>
 				<pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/lanebudget_vs_upgrade/</guid>
+				<guid>http://127.0.0.1:5097/tags/lanebudget_vs_upgrade/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Lane:beginner_basics</title>
-				<link>https://betterwaterguide.com/tags/lanebeginner_basics/</link>
+				<link>http://127.0.0.1:5097/tags/lanebeginner_basics/</link>
 				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/tags/lanebeginner_basics/</guid>
+				<guid>http://127.0.0.1:5097/tags/lanebeginner_basics/</guid>
 				<description></description>
 			</item>
 	</channel>

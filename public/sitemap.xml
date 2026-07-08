@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/</loc>
+      <loc>http://127.0.0.1:5097/best/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -14,7 +14,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/best-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/best-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -25,7 +25,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-water-test-kit-for-homeowners-what-to-buy-for-safe-drinking-water-screening/</loc>
+      <loc>http://127.0.0.1:5097/best/best-water-test-kit-for-homeowners-what-to-buy-for-safe-drinking-water-screening/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -36,7 +36,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -47,7 +47,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filtration-system-for-espresso-line-cleaning-what-to-look-for/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filtration-system-for-espresso-line-cleaning-what-to-look-for/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -58,7 +58,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/</loc>
+      <loc>http://127.0.0.1:5097/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -69,7 +69,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/carbon-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/carbon-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -80,7 +80,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/chlorine-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/chlorine-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -91,7 +91,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/clean-drinking-water/</loc>
+      <loc>http://127.0.0.1:5097/tags/clean-drinking-water/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -102,7 +102,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/drinking-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/drinking-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -113,7 +113,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/filter-cartridges/</loc>
+      <loc>http://127.0.0.1:5097/tags/filter-cartridges/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -124,7 +124,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/filtered-tap-water/</loc>
+      <loc>http://127.0.0.1:5097/tags/filtered-tap-water/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -135,7 +135,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/hard-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/hard-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -146,7 +146,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/home-water-filtration/</loc>
+      <loc>http://127.0.0.1:5097/tags/home-water-filtration/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -157,7 +157,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/home-water-quality/</loc>
+      <loc>http://127.0.0.1:5097/tags/home-water-quality/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -168,7 +168,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/home-maintenance/</loc>
+      <loc>http://127.0.0.1:5097/tags/home-maintenance/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -179,7 +179,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/kitchen-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/kitchen-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -190,7 +190,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/laneaudience_specific/</loc>
+      <loc>http://127.0.0.1:5097/tags/laneaudience_specific/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -201,7 +201,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/limescale-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/limescale-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -212,7 +212,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/reverse-osmosis-system/</loc>
+      <loc>http://127.0.0.1:5097/tags/reverse-osmosis-system/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -223,7 +223,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/ro-water-system/</loc>
+      <loc>http://127.0.0.1:5097/tags/ro-water-system/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -234,7 +234,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/sediment-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/sediment-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -245,7 +245,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/shower-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/shower-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -256,7 +256,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/</loc>
+      <loc>http://127.0.0.1:5097/tags/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -267,7 +267,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/under-sink-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/under-sink-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -278,7 +278,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -289,7 +289,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/water-filter-pitcher/</loc>
+      <loc>http://127.0.0.1:5097/tags/water-filter-pitcher/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -300,7 +300,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/water-filter-replacement/</loc>
+      <loc>http://127.0.0.1:5097/tags/water-filter-replacement/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -311,7 +311,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/water-filtration-guide/</loc>
+      <loc>http://127.0.0.1:5097/tags/water-filtration-guide/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -322,7 +322,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/water-softener/</loc>
+      <loc>http://127.0.0.1:5097/tags/water-softener/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -333,7 +333,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/water-test-kit/</loc>
+      <loc>http://127.0.0.1:5097/tags/water-test-kit/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -344,7 +344,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/well-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/well-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -355,7 +355,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/whole-house-water-filter/</loc>
+      <loc>http://127.0.0.1:5097/tags/whole-house-water-filter/</loc>
       <lastmod>2026-07-08T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -366,7 +366,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-premium-whole-house-water-filter-for-long-cartridge-life-what-to-look-for-and-how-to-compare-systems/</loc>
+      <loc>http://127.0.0.1:5097/best/best-premium-whole-house-water-filter-for-long-cartridge-life-what-to-look-for-and-how-to-compare-systems/</loc>
       <lastmod>2026-07-07T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -377,7 +377,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-frequent-skin-rinsing-what-to-look-for-and-how-to-choose/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-frequent-skin-rinsing-what-to-look-for-and-how-to-choose/</loc>
       <lastmod>2026-07-07T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -388,7 +388,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-frequent-laundry-what-to-look-for-and-key-models/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-frequent-laundry-what-to-look-for-and-key-models/</loc>
       <lastmod>2026-07-07T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -399,7 +399,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/</loc>
+      <loc>http://127.0.0.1:5097/vs/</loc>
       <lastmod>2026-07-06T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -410,7 +410,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/</loc>
+      <loc>http://127.0.0.1:5097/guides/</loc>
       <lastmod>2026-07-06T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -421,7 +421,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/laneconvenience_vs_performance/</loc>
+      <loc>http://127.0.0.1:5097/tags/laneconvenience_vs_performance/</loc>
       <lastmod>2026-07-06T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -432,7 +432,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/lanematerial_or_spec_risk/</loc>
+      <loc>http://127.0.0.1:5097/tags/lanematerial_or_spec_risk/</loc>
       <lastmod>2026-07-06T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -443,7 +443,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/undersink-carbon-filter-vs-whole-house-carbon-filter-which-one-fits-your-water-needs/</loc>
+      <loc>http://127.0.0.1:5097/vs/undersink-carbon-filter-vs-whole-house-carbon-filter-which-one-fits-your-water-needs/</loc>
       <lastmod>2026-07-06T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -454,7 +454,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/undersink-water-filter-vs-whole-house-water-filter-which-one-fits-your-home/</loc>
+      <loc>http://127.0.0.1:5097/vs/undersink-water-filter-vs-whole-house-water-filter-which-one-fits-your-home/</loc>
       <lastmod>2026-07-06T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -465,7 +465,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/whole-house-water-filtration-vs-under-sink-drinking-water-filtration-which-one-fits-your-home/</loc>
+      <loc>http://127.0.0.1:5097/vs/whole-house-water-filtration-vs-under-sink-drinking-water-filtration-which-one-fits-your-home/</loc>
       <lastmod>2026-07-06T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -476,7 +476,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/whole-house-water-softener-vs-undersink-water-softener-which-one-fits-your-home/</loc>
+      <loc>http://127.0.0.1:5097/vs/whole-house-water-softener-vs-undersink-water-softener-which-one-fits-your-home/</loc>
       <lastmod>2026-07-06T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -487,7 +487,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-water-filter-owners-say-incorrect-o-ring-material-causes-leaks/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-water-filter-owners-say-incorrect-o-ring-material-causes-leaks/</loc>
       <lastmod>2026-07-06T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -498,7 +498,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-allergy-prone-households-what-to-look-for-and-key-alternatives/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-allergy-prone-households-what-to-look-for-and-key-alternatives/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -509,7 +509,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-beginners-what-to-buy-and-what-to-avoid/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-beginners-what-to-buy-and-what-to-avoid/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -520,7 +520,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-large-families-what-to-look-for-and-key-alternatives/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-large-families-what-to-look-for-and-key-alternatives/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -531,7 +531,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-sulfur-smell-what-to-choose-for-rotten-egg-odor/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-sulfur-smell-what-to-choose-for-rotten-egg-odor/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -542,7 +542,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/how-to-choose-the-right-whole-house-filter-housing-size-for-your-water-system/</loc>
+      <loc>http://127.0.0.1:5097/guides/how-to-choose-the-right-whole-house-filter-housing-size-for-your-water-system/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -553,7 +553,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/lanebeginner_easy/</loc>
+      <loc>http://127.0.0.1:5097/tags/lanebeginner_easy/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -564,7 +564,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/lanebuying_factors/</loc>
+      <loc>http://127.0.0.1:5097/tags/lanebuying_factors/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -575,7 +575,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/lanemainstream_pick/</loc>
+      <loc>http://127.0.0.1:5097/tags/lanemainstream_pick/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -586,7 +586,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/reviews/pelican-whole-house-water-filter-key-trade-offs-for-cleaner-better-tasting-water-buyer-guide/</loc>
+      <loc>http://127.0.0.1:5097/reviews/pelican-whole-house-water-filter-key-trade-offs-for-cleaner-better-tasting-water-buyer-guide/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -597,7 +597,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/reverse-osmosis-system-buying-guide-for-homeowners-what-to-check-before-you-buy/</loc>
+      <loc>http://127.0.0.1:5097/guides/reverse-osmosis-system-buying-guide-for-homeowners-what-to-check-before-you-buy/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -608,7 +608,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/reviews/</loc>
+      <loc>http://127.0.0.1:5097/reviews/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -619,7 +619,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/what-to-look-for-in-a-whole-house-water-filter-pressure-gauge/</loc>
+      <loc>http://127.0.0.1:5097/guides/what-to-look-for-in-a-whole-house-water-filter-pressure-gauge/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -630,7 +630,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/what-to-look-for-in-a-whole-house-water-filter-s-pressure-rating/</loc>
+      <loc>http://127.0.0.1:5097/guides/what-to-look-for-in-a-whole-house-water-filter-s-pressure-rating/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -641,7 +641,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-water-filter-sizing-how-to-match-capacity-to-your-household/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-water-filter-sizing-how-to-match-capacity-to-your-household/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -652,7 +652,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-city-water-backup-what-to-choose-when-pressure-drops/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-city-water-backup-what-to-choose-when-pressure-drops/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -663,7 +663,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-spot-free-dishes/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-spot-free-dishes/</loc>
       <lastmod>2026-07-04T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -674,7 +674,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/entry-level-vs-advanced-whole-house-water-filters-which-one-fits-your-home/</loc>
+      <loc>http://127.0.0.1:5097/vs/entry-level-vs-advanced-whole-house-water-filters-which-one-fits-your-home/</loc>
       <lastmod>2026-07-04T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -685,7 +685,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/lanebeginner_vs_pro/</loc>
+      <loc>http://127.0.0.1:5097/tags/lanebeginner_vs_pro/</loc>
       <lastmod>2026-07-04T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -696,7 +696,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/lanebudget_vs_upgrade/</loc>
+      <loc>http://127.0.0.1:5097/tags/lanebudget_vs_upgrade/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -707,7 +707,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/low-flow-vs-high-flow-whole-house-water-filter-which-is-worth-the-upgrade/</loc>
+      <loc>http://127.0.0.1:5097/vs/low-flow-vs-high-flow-whole-house-water-filter-which-is-worth-the-upgrade/</loc>
       <lastmod>2026-07-05T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -718,7 +718,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/whole-house-water-filtration-beginner-vs-pro-system-setup-and-what-to-choose/</loc>
+      <loc>http://127.0.0.1:5097/vs/whole-house-water-filtration-beginner-vs-pro-system-setup-and-what-to-choose/</loc>
       <lastmod>2026-07-04T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -729,7 +729,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/reviews/bluevua-whole-house-water-filter-worth-it-for-clean-scale-free-water-buyer-guide/</loc>
+      <loc>http://127.0.0.1:5097/reviews/bluevua-whole-house-water-filter-worth-it-for-clean-scale-free-water-buyer-guide/</loc>
       <lastmod>2026-07-03T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -740,7 +740,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/entry-level-vs-pro-whole-house-water-filters-which-one-is-right-for-your-home/</loc>
+      <loc>http://127.0.0.1:5097/vs/entry-level-vs-pro-whole-house-water-filters-which-one-is-right-for-your-home/</loc>
       <lastmod>2026-07-03T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -751,7 +751,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/reviews/ispring-whole-house-water-filter-is-it-worth-the-cost-for-cleaner-water-buyer-guide/</loc>
+      <loc>http://127.0.0.1:5097/reviews/ispring-whole-house-water-filter-is-it-worth-the-cost-for-cleaner-water-buyer-guide/</loc>
       <lastmod>2026-07-03T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -762,7 +762,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/shower-water-filter-people-say-leaks-from-shower-head-adapter-lead-to-water-buildup/</loc>
+      <loc>http://127.0.0.1:5097/guides/shower-water-filter-people-say-leaks-from-shower-head-adapter-lead-to-water-buildup/</loc>
       <lastmod>2026-07-03T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -773,7 +773,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/water-filtration-starter-priority-sorter-for-new-homeowners-picker/</loc>
+      <loc>http://127.0.0.1:5097/guides/water-filtration-starter-priority-sorter-for-new-homeowners-picker/</loc>
       <lastmod>2026-07-03T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -784,7 +784,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-water-softener-brine-tank-capacity-calculator-size-it-correctly/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-water-softener-brine-tank-capacity-calculator-size-it-correctly/</loc>
       <lastmod>2026-07-03T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -795,7 +795,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-filter-bypass-valve-sealing-readiness-check-tool-checklist/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-filter-bypass-valve-sealing-readiness-check-tool-checklist/</loc>
       <lastmod>2026-07-03T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -806,7 +806,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-ro-vs-water-softener-staged-rollout-estimator-tool/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-ro-vs-water-softener-staged-rollout-estimator-tool/</loc>
       <lastmod>2026-07-03T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -817,7 +817,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-water-filtration-owners-say-leaks-from-the-bypass-valve-can-cause-slow-water-problems/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-water-filtration-owners-say-leaks-from-the-bypass-valve-can-cause-slow-water-problems/</loc>
       <lastmod>2026-07-03T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -828,7 +828,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/about/</loc>
+      <loc>http://127.0.0.1:5097/about/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -839,7 +839,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/disclosure/</loc>
+      <loc>http://127.0.0.1:5097/disclosure/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -850,7 +850,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-budget-whole-house-water-filter-under-300-what-to-buy-and-what-to-skip/</loc>
+      <loc>http://127.0.0.1:5097/best/best-budget-whole-house-water-filter-under-300-what-to-buy-and-what-to-skip/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -861,7 +861,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-durable-whole-house-water-filter-how-to-choose-the-right-system-for-your-home/</loc>
+      <loc>http://127.0.0.1:5097/best/best-durable-whole-house-water-filter-how-to-choose-the-right-system-for-your-home/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -872,7 +872,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-replacement-filters-for-whole-house-water-filters-what-to-choose-and-when/</loc>
+      <loc>http://127.0.0.1:5097/best/best-replacement-filters-for-whole-house-water-filters-what-to-choose-and-when/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -883,7 +883,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-sediment-filter-for-a-beach-house-what-to-choose-and-size-for-sand-and-silt/</loc>
+      <loc>http://127.0.0.1:5097/best/best-sediment-filter-for-a-beach-house-what-to-choose-and-size-for-sand-and-silt/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -894,7 +894,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-sediment-filters-for-cloudy-well-water-what-homeowners-should-know-before-buying/</loc>
+      <loc>http://127.0.0.1:5097/best/best-sediment-filters-for-cloudy-well-water-what-homeowners-should-know-before-buying/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -905,7 +905,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-a-mobile-home-how-to-choose-the-right-system/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-a-mobile-home-how-to-choose-the-right-system/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -916,7 +916,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-high-flow-households/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-high-flow-households/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -927,7 +927,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-older-homes-with-lead-risk-what-to-look-for-and-common-options/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-older-homes-with-lead-risk-what-to-look-for-and-common-options/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -938,7 +938,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-rust-and-sediment-what-to-choose-when-pipes-are-corroding/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-rust-and-sediment-what-to-choose-when-pipes-are-corroding/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -949,7 +949,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filtration-system-for-clean-smelling-water/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filtration-system-for-clean-smelling-water/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -960,7 +960,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/privacy/</loc>
+      <loc>http://127.0.0.1:5097/privacy/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -971,7 +971,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/beginner-vs-pro-whole-house-water-filter-installation-what-to-expect-for-a-kitchen-setup/</loc>
+      <loc>http://127.0.0.1:5097/vs/beginner-vs-pro-whole-house-water-filter-installation-what-to-expect-for-a-kitchen-setup/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -982,7 +982,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/how-to-choose-a-whole-house-water-filter-for-hard-water-in-your-kitchen-and-beyond/</loc>
+      <loc>http://127.0.0.1:5097/guides/how-to-choose-a-whole-house-water-filter-for-hard-water-in-your-kitchen-and-beyond/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -993,7 +993,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen/</loc>
+      <loc>http://127.0.0.1:5097/guides/how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1004,7 +1004,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/how-to-sanitize-a-whole-house-water-filter-system-safely-beginner-steps/</loc>
+      <loc>http://127.0.0.1:5097/guides/how-to-sanitize-a-whole-house-water-filter-system-safely-beginner-steps/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1015,7 +1015,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/how-to-test-your-whole-house-water-filter-s-performance-at-home-beginner-steps/</loc>
+      <loc>http://127.0.0.1:5097/guides/how-to-test-your-whole-house-water-filter-s-performance-at-home-beginner-steps/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1026,7 +1026,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/kitchen-water-filter-maintenance-tips-for-busy-homeowners/</loc>
+      <loc>http://127.0.0.1:5097/guides/kitchen-water-filter-maintenance-tips-for-busy-homeowners/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1037,7 +1037,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/tags/lanebeginner_basics/</loc>
+      <loc>http://127.0.0.1:5097/tags/lanebeginner_basics/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1048,7 +1048,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/ro-system-waste-water-ratio-what-homeowners-should-know-for-kitchen-use/</loc>
+      <loc>http://127.0.0.1:5097/guides/ro-system-waste-water-ratio-what-homeowners-should-know-for-kitchen-use/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1059,7 +1059,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/ro-vs-whole-house-filtration-how-to-choose-for-cleaner-kitchen-water/</loc>
+      <loc>http://127.0.0.1:5097/guides/ro-vs-whole-house-filtration-how-to-choose-for-cleaner-kitchen-water/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1070,7 +1070,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/sediment-filter-vs-whole-house-water-filter-for-a-kitchen-which-one-to-choose/</loc>
+      <loc>http://127.0.0.1:5097/vs/sediment-filter-vs-whole-house-water-filter-for-a-kitchen-which-one-to-choose/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1081,7 +1081,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/shower-filter-vs-whole-house-filter-for-hard-water-which-protects-your-home-better/</loc>
+      <loc>http://127.0.0.1:5097/vs/shower-filter-vs-whole-house-filter-for-hard-water-which-protects-your-home-better/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1092,7 +1092,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/water-test-kit-results-explained-for-homeowners-what-they-mean-for-your-kitchen/</loc>
+      <loc>http://127.0.0.1:5097/guides/water-test-kit-results-explained-for-homeowners-what-they-mean-for-your-kitchen/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1103,7 +1103,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/well-water-filtration-checklist-for-first-time-homeowners-kitchen-setup/</loc>
+      <loc>http://127.0.0.1:5097/guides/well-water-filtration-checklist-for-first-time-homeowners-kitchen-setup/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1114,7 +1114,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/well-water-whole-house-filter-vs-point-of-use-filter-for-the-kitchen-which-one-to-choose/</loc>
+      <loc>http://127.0.0.1:5097/vs/well-water-whole-house-filter-vs-point-of-use-filter-for-the-kitchen-which-one-to-choose/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1125,7 +1125,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/whole-house-carbon-filter-vs-whole-house-sediment-filter-for-kitchen-water-which-one-to-choose/</loc>
+      <loc>http://127.0.0.1:5097/vs/whole-house-carbon-filter-vs-whole-house-sediment-filter-for-kitchen-water-which-one-to-choose/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1136,7 +1136,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-water-filter-bypass-valve-how-to-use-it-in-the-kitchen/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-water-filter-bypass-valve-how-to-use-it-in-the-kitchen/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1147,7 +1147,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/whole-house-water-softener-vs-whole-house-water-conditioning-system-which-one-fits-your-kitchen-plumbing/</loc>
+      <loc>http://127.0.0.1:5097/vs/whole-house-water-softener-vs-whole-house-water-conditioning-system-which-one-fits-your-kitchen-plumbing/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1158,7 +1158,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose/</loc>
+      <loc>http://127.0.0.1:5097/vs/whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1169,7 +1169,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/vs/whole-house-reverse-osmosis-vs-point-of-use-reverse-osmosis-for-your-kitchen-what-to-choose/</loc>
+      <loc>http://127.0.0.1:5097/vs/whole-house-reverse-osmosis-vs-point-of-use-reverse-osmosis-for-your-kitchen-what-to-choose/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1180,7 +1180,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-water-filter-installation-steps-for-first-time-homeowners-kitchen-system-setup/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-water-filter-installation-steps-for-first-time-homeowners-kitchen-system-setup/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1191,7 +1191,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-water-filtration-pressure-basics-what-to-expect-for-your-home-s-water-flow/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-water-filtration-pressure-basics-what-to-expect-for-your-home-s-water-flow/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1202,7 +1202,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/</loc>
+      <loc>http://127.0.0.1:5097/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/</loc>
       <lastmod>2026-07-02T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1213,7 +1213,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-budget-whole-house-water-filter-under-250-for-kitchen-drinking-water/</loc>
+      <loc>http://127.0.0.1:5097/best/best-budget-whole-house-water-filter-under-250-for-kitchen-drinking-water/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1224,7 +1224,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/best/best-whole-house-water-filter-for-high-sediment-what-to-know-for-cleaner-kitchen-water/</loc>
+      <loc>http://127.0.0.1:5097/best/best-whole-house-water-filter-for-high-sediment-what-to-know-for-cleaner-kitchen-water/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1235,7 +1235,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-filtration-vs-point-of-use-systems-for-your-kitchen-what-to-choose/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-filtration-vs-point-of-use-systems-for-your-kitchen-what-to-choose/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1246,7 +1246,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/guides/whole-house-water-filter-maintenance-checklist-for-beginners-kitchen-focus/</loc>
+      <loc>http://127.0.0.1:5097/guides/whole-house-water-filter-maintenance-checklist-for-beginners-kitchen-focus/</loc>
       <lastmod>2026-07-01T00:00:00Z</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1257,7 +1257,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/authors/</loc>
+      <loc>http://127.0.0.1:5097/authors/</loc>
       
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1268,7 +1268,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/authors/editorial-team/</loc>
+      <loc>http://127.0.0.1:5097/authors/editorial-team/</loc>
       
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1279,7 +1279,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/categories/</loc>
+      <loc>http://127.0.0.1:5097/categories/</loc>
       
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
@@ -1290,7 +1290,7 @@
   
     
     <url>
-      <loc>https://betterwaterguide.com/editorial-policy/</loc>
+      <loc>http://127.0.0.1:5097/editorial-policy/</loc>
       
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>

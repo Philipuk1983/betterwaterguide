@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Lane:budget_vs_upgrade on Better Water Guide</title>
-		<link>https://betterwaterguide.com/tags/lanebudget_vs_upgrade/</link>
+		<link>http://127.0.0.1:5097/tags/lanebudget_vs_upgrade/</link>
 		<description>Recent content in Lane:budget_vs_upgrade on Better Water Guide</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://betterwaterguide.com/tags/lanebudget_vs_upgrade/feed.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://127.0.0.1:5097/tags/lanebudget_vs_upgrade/feed.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Low-Flow vs High-Flow Whole House Water Filter: Which Is Worth the Upgrade?</title>
-				<link>https://betterwaterguide.com/vs/low-flow-vs-high-flow-whole-house-water-filter-which-is-worth-the-upgrade/</link>
+				<link>http://127.0.0.1:5097/vs/low-flow-vs-high-flow-whole-house-water-filter-which-is-worth-the-upgrade/</link>
 				<pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://betterwaterguide.com/vs/low-flow-vs-high-flow-whole-house-water-filter-which-is-worth-the-upgrade/</guid>
+				<guid>http://127.0.0.1:5097/vs/low-flow-vs-high-flow-whole-house-water-filter-which-is-worth-the-upgrade/</guid>
 				<description>The choice between low flow and high flow is not about one being good and the other being bad. It is about how much restriction your house can live with before the filter starts to feel like a bottleneck. A whole-house system should solve a water problem without making showers, laundry, and kitchen use feel awkward.</description>
 			</item>
 	</channel>
