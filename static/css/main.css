@@ -4863,3 +4863,299 @@ body.theme-soundsleepgear article.article-shell > * { box-sizing: border-box; ma
     main { padding-left: 1rem; padding-right: 1rem; }
     .article-side { position: static; width: 100%; }
 }
+
+/* Better Water Guide dedicated water filtration theme */
+        .theme-betterwaterguide {
+            --bwg-navy: #09263f;
+            --bwg-blue: #0f8ec7;
+            --bwg-blue-dark: #056b9b;
+            --bwg-aqua: #41d6e8;
+            --bwg-soft-aqua: #e8fbff;
+            --bwg-pale-blue: #f3fbff;
+            --bwg-ice: #f8fdff;
+            --bwg-text: #27475d;
+            --bwg-muted: #6d8493;
+            --bwg-border: #c9ebf7;
+            --bwg-green: #1f9f74;
+            --bwg-sand: #fff8eb;
+            --bwg-radius: 18px;
+            --bwg-shadow: 0 18px 45px rgba(7,85,125,0.10);
+            --bwg-shadow-soft: 0 8px 22px rgba(7,85,125,0.08);
+            background:
+                radial-gradient(circle at 8% 0%, rgba(65,214,232,0.18), transparent 34rem),
+                radial-gradient(circle at 96% 16%, rgba(15,142,199,0.11), transparent 28rem),
+                linear-gradient(180deg, #f5fcff 0%, #ffffff 42%, var(--bwg-ice) 100%);
+            color: var(--bwg-text);
+            overflow-x: hidden;
+        }
+        .theme-betterwaterguide .site-header {
+            background: rgba(255,255,255,0.94);
+            border-bottom: 1px solid rgba(15,142,199,0.16);
+            box-shadow: 0 8px 28px rgba(8,54,82,0.05);
+            backdrop-filter: blur(12px);
+        }
+        .theme-betterwaterguide .header-inner { min-height: 76px; }
+        .theme-betterwaterguide .site-logo {
+            gap: 0.55rem;
+            color: var(--bwg-navy);
+            font-weight: 950;
+            letter-spacing: 0;
+            text-decoration: none;
+        }
+        .theme-betterwaterguide .site-logo::before {
+            content: "";
+            flex: 0 0 auto;
+            width: 32px;
+            height: 32px;
+            border-radius: 70% 70% 70% 18%;
+            transform: rotate(45deg);
+            background: linear-gradient(135deg, var(--bwg-aqua), var(--bwg-blue));
+            box-shadow: 0 0 0 6px rgba(65,214,232,0.14), 0 10px 22px rgba(15,142,199,0.18);
+        }
+        .theme-betterwaterguide .site-nav { align-items: center; gap: 1rem; }
+        .theme-betterwaterguide .site-nav a,
+        .theme-betterwaterguide .footer-nav a {
+            color: var(--bwg-navy);
+            font-weight: 850;
+            text-decoration: none;
+        }
+        .theme-betterwaterguide .site-nav a::after,
+        .theme-betterwaterguide .footer-nav a::after {
+            height: 3px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--bwg-blue), var(--bwg-aqua));
+        }
+        .theme-betterwaterguide .site-nav a:hover,
+        .theme-betterwaterguide .footer-nav a:hover { color: var(--bwg-blue-dark); }
+        .theme-betterwaterguide .site-kicker,
+        .theme-betterwaterguide .hero-eyebrow,
+        .theme-betterwaterguide .section-kicker,
+        .theme-betterwaterguide .feature-meta,
+        .theme-betterwaterguide .article-kicker,
+        .theme-betterwaterguide .footer-label,
+        .theme-betterwaterguide .cta-label {
+            color: var(--bwg-blue-dark);
+            font-size: 0.72rem;
+            font-weight: 950;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+        }
+        .theme-betterwaterguide .hero,
+        .theme-betterwaterguide .modern-hero {
+            position: relative;
+            margin: 2.5rem 0 2.8rem;
+            padding: clamp(2.1rem, 4.2vw, 3.35rem);
+            border: 1px solid var(--bwg-border);
+            border-left: 7px solid var(--bwg-blue);
+            border-radius: 24px;
+            background:
+                radial-gradient(circle at 92% 10%, rgba(65,214,232,0.28), transparent 18rem),
+                radial-gradient(circle at 3% 100%, rgba(15,142,199,0.11), transparent 16rem),
+                linear-gradient(135deg, #ffffff 0%, #f1fbff 100%);
+            box-shadow: var(--bwg-shadow);
+            overflow: hidden;
+        }
+        .theme-betterwaterguide .hero::after,
+        .theme-betterwaterguide .modern-hero::after {
+            content: "Filter type / water concern / upkeep";
+            position: absolute;
+            top: 1.2rem;
+            right: 1.25rem;
+            display: inline-flex;
+            max-width: calc(100% - 2.5rem);
+            padding: 0.42rem 0.7rem;
+            border: 1px solid rgba(65,214,232,0.36);
+            border-radius: 999px;
+            background: var(--bwg-soft-aqua);
+            color: var(--bwg-blue-dark);
+            font-size: 0.72rem;
+            font-weight: 950;
+            letter-spacing: 0.02em;
+            white-space: normal;
+        }
+        .theme-betterwaterguide .hero > *,
+        .theme-betterwaterguide .modern-hero > * { position: relative; z-index: 1; }
+        .theme-betterwaterguide .hero h1,
+        .theme-betterwaterguide h1,
+        .theme-betterwaterguide h2,
+        .theme-betterwaterguide h3 { color: var(--bwg-navy); letter-spacing: 0; }
+        .theme-betterwaterguide .hero h1,
+        .theme-betterwaterguide h1 { max-width: 56rem; font-size: clamp(1.95rem, 3.1vw, 3rem); line-height: 1.08; }
+        .theme-betterwaterguide h2,
+        .theme-betterwaterguide .section-title { font-size: clamp(1.28rem, 1.9vw, 1.72rem); line-height: 1.16; }
+        .theme-betterwaterguide .article-body h2 { padding-top: 0.42rem; border-top: 1px solid rgba(15,142,199,0.14); }
+        .theme-betterwaterguide .article-body h2::before {
+            content: "";
+            display: inline-block;
+            width: 0.62rem;
+            height: 0.62rem;
+            margin-right: 0.45rem;
+            border-radius: 70% 70% 70% 20%;
+            transform: rotate(45deg);
+            background: linear-gradient(135deg, var(--bwg-aqua), var(--bwg-blue));
+            vertical-align: 0.08em;
+        }
+        .theme-betterwaterguide p,
+        .theme-betterwaterguide .section-description,
+        .theme-betterwaterguide .article-card p,
+        .theme-betterwaterguide .article-meta,
+        .theme-betterwaterguide .footer-inner { color: var(--bwg-muted); }
+        .theme-betterwaterguide a { color: var(--bwg-blue-dark); text-decoration-color: rgba(15,142,199,0.35); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+        .theme-betterwaterguide a:hover { color: var(--bwg-navy); text-decoration-color: var(--bwg-blue); }
+        .theme-betterwaterguide article.article-shell { padding: clamp(1.4rem, 3vw, 2.6rem); }
+        .theme-betterwaterguide article.article-shell:has(.audible-sponsored-slot) { overflow: visible; }
+        .theme-betterwaterguide .article-card,
+        .theme-betterwaterguide .spotlight-card,
+        .theme-betterwaterguide .home-browse-card,
+        .theme-betterwaterguide .home-method-card,
+        .theme-betterwaterguide .home-latest-item,
+        .theme-betterwaterguide .simple-row,
+        .theme-betterwaterguide .article-summary,
+        .theme-betterwaterguide .table-of-contents,
+        .theme-betterwaterguide .disclosure-inline,
+        .theme-betterwaterguide .affiliate-cta,
+        .theme-betterwaterguide .see-also,
+        .theme-betterwaterguide .review-verdict-card,
+        .theme-betterwaterguide .utility-tool,
+        .theme-betterwaterguide .product-box-water,
+        .theme-betterwaterguide .comparison-shell-water,
+        .theme-betterwaterguide .pros-cons-water {
+            border: 1px solid var(--bwg-border);
+            border-radius: var(--bwg-radius);
+            background: linear-gradient(180deg, #ffffff 0%, var(--bwg-ice) 100%);
+            box-shadow: var(--bwg-shadow-soft);
+        }
+        .theme-betterwaterguide .article-card,
+        .theme-betterwaterguide .home-browse-card,
+        .theme-betterwaterguide .home-method-card,
+        .theme-betterwaterguide .home-latest-item,
+        .theme-betterwaterguide .simple-row { position: relative; overflow: hidden; transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
+        .theme-betterwaterguide .article-card::before,
+        .theme-betterwaterguide .home-browse-card::before,
+        .theme-betterwaterguide .home-method-card::before,
+        .theme-betterwaterguide .home-latest-item::before,
+        .theme-betterwaterguide .simple-row::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--bwg-blue), var(--bwg-aqua)); opacity: 0; transition: opacity 160ms ease; }
+        .theme-betterwaterguide .article-card:hover,
+        .theme-betterwaterguide .home-browse-card:hover,
+        .theme-betterwaterguide .home-method-card:hover,
+        .theme-betterwaterguide .home-latest-item:hover,
+        .theme-betterwaterguide .simple-row:hover { transform: translateY(-3px); border-color: rgba(15,142,199,0.45); box-shadow: 0 20px 45px rgba(7,85,125,0.14); }
+        .theme-betterwaterguide .article-card:hover::before,
+        .theme-betterwaterguide .home-browse-card:hover::before,
+        .theme-betterwaterguide .home-method-card:hover::before,
+        .theme-betterwaterguide .home-latest-item:hover::before,
+        .theme-betterwaterguide .simple-row:hover::before { opacity: 1; }
+        .theme-betterwaterguide .article-card h2,
+        .theme-betterwaterguide .article-card h3,
+        .theme-betterwaterguide .home-browse-card h3,
+        .theme-betterwaterguide .home-method-card h3,
+        .theme-betterwaterguide .home-latest-item h3 { margin-top: 0; font-size: clamp(1rem, 1.25vw, 1.18rem); line-height: 1.25; }
+        .theme-betterwaterguide .home-depth,
+        .theme-betterwaterguide .home-method,
+        .theme-betterwaterguide .home-latest { border-top: 1px solid var(--bwg-border); }
+        .theme-betterwaterguide .home-browse-card span,
+        .theme-betterwaterguide .home-method-card span,
+        .theme-betterwaterguide .signal-strip span,
+        .theme-betterwaterguide .tag,
+        .theme-betterwaterguide .badge,
+        .theme-betterwaterguide .cta-chip,
+        .theme-betterwaterguide .callout-eyebrow {
+            display: inline-flex;
+            width: fit-content;
+            border: 1px solid var(--bwg-border);
+            border-radius: 999px;
+            background: var(--bwg-soft-aqua);
+            color: var(--bwg-blue-dark);
+            font-weight: 850;
+        }
+        .theme-betterwaterguide .article-summary,
+        .theme-betterwaterguide .quick-take,
+        .theme-betterwaterguide .summary-box,
+        .theme-betterwaterguide .buyer-fit,
+        .theme-betterwaterguide blockquote,
+        .theme-betterwaterguide .bottom-line-callout,
+        .theme-betterwaterguide .roundup-hero-callout {
+            border-left: 6px solid var(--bwg-blue);
+            background: linear-gradient(135deg, #ffffff 0%, var(--bwg-pale-blue) 100%);
+        }
+        .theme-betterwaterguide .affiliate-cta,
+        .theme-betterwaterguide .product-cta,
+        .theme-betterwaterguide .review-verdict-card {
+            background:
+                radial-gradient(circle at 100% 0%, rgba(65,214,232,0.16), transparent 12rem),
+                linear-gradient(135deg, #ffffff 0%, #f7fdff 100%);
+        }
+        .theme-betterwaterguide .button-link,
+        .theme-betterwaterguide .amazon-button,
+        .theme-betterwaterguide .cta-button,
+        .theme-betterwaterguide .review-verdict-card__primary,
+        .theme-betterwaterguide button,
+        .theme-betterwaterguide input[type="submit"] {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            border: 0;
+            border-radius: 999px;
+            padding: 0.72rem 1.05rem;
+            background: linear-gradient(135deg, var(--bwg-blue), var(--bwg-blue-dark));
+            color: #ffffff;
+            font-weight: 950;
+            text-decoration: none;
+            box-shadow: 0 12px 24px rgba(15,142,199,0.23);
+        }
+        .theme-betterwaterguide .button-link:hover,
+        .theme-betterwaterguide .amazon-button:hover,
+        .theme-betterwaterguide .cta-button:hover,
+        .theme-betterwaterguide .review-verdict-card__primary:hover { color: #ffffff; transform: translateY(-1px); box-shadow: 0 16px 32px rgba(15,142,199,0.30); }
+        .theme-betterwaterguide table,
+        .theme-betterwaterguide .comparison-table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid var(--bwg-border);
+            border-radius: 16px;
+            background: #ffffff;
+            box-shadow: var(--bwg-shadow-soft);
+            overflow: hidden;
+        }
+        .theme-betterwaterguide th,
+        .theme-betterwaterguide .comparison-table th { background: linear-gradient(135deg, #e7faff, #d7f5ff); color: var(--bwg-navy); font-weight: 900; }
+        .theme-betterwaterguide td,
+        .theme-betterwaterguide th,
+        .theme-betterwaterguide .comparison-table td,
+        .theme-betterwaterguide .comparison-table th { border-color: rgba(15,142,199,0.13); overflow-wrap: anywhere; word-break: normal; }
+        .theme-betterwaterguide tr:nth-child(even) td { background: var(--bwg-ice); }
+        .theme-betterwaterguide .site-footer {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(65,214,232,0.22);
+            background: radial-gradient(circle at 20% 0%, rgba(65,214,232,0.15), transparent 22rem), linear-gradient(180deg, var(--bwg-navy) 0%, #071d31 100%);
+            color: rgba(255,255,255,0.78);
+        }
+        .theme-betterwaterguide .site-footer a { color: #bff5ff; }
+        .theme-betterwaterguide a:focus-visible,
+        .theme-betterwaterguide button:focus-visible,
+        .theme-betterwaterguide input:focus-visible,
+        .theme-betterwaterguide select:focus-visible,
+        .theme-betterwaterguide textarea:focus-visible { outline: 3px solid rgba(65,214,232,0.42); outline-offset: 3px; }
+        @media (max-width: 760px) {
+            .theme-betterwaterguide .header-inner { min-height: auto; padding: 0.85rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+            .theme-betterwaterguide .site-nav { width: 100%; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.2rem; }
+            .theme-betterwaterguide .site-nav a { white-space: nowrap; font-size: 0.86rem; }
+            .theme-betterwaterguide main,
+            .theme-betterwaterguide .container,
+            .theme-betterwaterguide .content { width: auto; padding-left: 1rem; padding-right: 1rem; }
+            .theme-betterwaterguide .hero,
+            .theme-betterwaterguide .modern-hero,
+            .theme-betterwaterguide .article-header { margin: 2rem 0; padding: 1.65rem 1.2rem; border-radius: 20px; }
+            .theme-betterwaterguide .hero::after,
+            .theme-betterwaterguide .modern-hero::after { position: static; margin-top: 1rem; }
+            .theme-betterwaterguide h1 { font-size: 1.85rem; }
+            .theme-betterwaterguide h2 { font-size: 1.35rem; }
+            .theme-betterwaterguide .article-grid,
+            .theme-betterwaterguide .home-browse-grid,
+            .theme-betterwaterguide .home-method-grid,
+            .theme-betterwaterguide .section-listing .article-grid { grid-template-columns: 1fr; }
+        }

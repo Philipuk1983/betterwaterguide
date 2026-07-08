@@ -5,9 +5,9 @@
   "contactEmail": "hello@betterwaterguide.com",
   "niche": "home water filtration,water filter,under sink water filter,whole house water filter,reverse osmosis system,hard water filter,water filter pitcher,water test kit,chlorine water filter,drinking water filter,water filter replacement,well water filter,sediment filter,carbon water filter,water softener,filtered tap water,kitchen water filter,shower water filter,limescale filter,ro water system,water filtration guide,best water filter,home water quality,filter cartridges,clean drinking water",
   "targetAudience": null,
-  "variant": "water",
-  "footprint": "fresh water-filtration layout with pale blue surfaces, aqua decision cues, filter-card grids, and practical water-quality navigation",
-  "persona": "a home water filtration editor who translates contaminant concerns, filter types, cartridge upkeep, and installation trade-offs into practical homeowner guidance",
+  "variant": "betterwaterguide",
+  "footprint": "clean buyer-guide water filtration layout with navy trust framing, aqua decision cues, filter-route cards, practical maintenance callouts, and crisp product CTAs",
+  "persona": "a home water filtration editor who turns water concerns, filter types, cartridge upkeep, pressure, flow, and installation trade-offs into practical buyer guidance",
   "author": {
     "name": "Better Water Guide Editorial Team",
     "slug": "editorial-team",

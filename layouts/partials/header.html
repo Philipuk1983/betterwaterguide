@@ -1,13 +1,13 @@
-<header class="site-header clean-head">
-    <div class="header-inner">
+<header class="site-header betterwaterguide-head">
+    <div class="header-inner betterwaterguide-inner">
         <a href="/" class="site-logo" aria-label="{{ .Site.Title }}">
-            <img src="/logo.svg?v={{ now.Unix }}" alt="{{ .Site.Title }}" height="40">
+            <img src="/logo.svg?v={{ now.Unix }}" alt="{{ .Site.Title }}" height="42">
         </a>
-        <nav class="site-nav">
-            {{ if .Site.Params.showBestSection }}<a href="/best/">Best Picks</a>{{ end }}
-            {{ if .Site.Params.showReviewsSection }}<a href="/reviews/">Reviews</a>{{ end }}
-            {{ if .Site.Params.showComparisonSection }}<a href="/vs/">Compare</a>{{ end }}
-            {{ if .Site.Params.showGuidesSection }}<a href="/guides/">Guides</a>{{ end }}
+        <nav class="site-nav betterwaterguide-nav">
+            {{ if .Site.Params.showBestSection }}<a href="/best/">Best Water Filters</a>{{ end }}
+            {{ if .Site.Params.showReviewsSection }}<a href="/reviews/">Filter Reviews</a>{{ end }}
+            {{ if .Site.Params.showComparisonSection }}<a href="/vs/">Compare Systems</a>{{ end }}
+            {{ if .Site.Params.showGuidesSection }}<a href="/guides/">Water Quality Guides</a>{{ end }}
             <a href="/about/">About</a>
         </nav>
     </div>

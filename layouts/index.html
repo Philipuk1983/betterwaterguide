@@ -76,7 +76,7 @@
             {{ if .Site.Params.showGuidesSection }}{{ range where .Site.RegularPages "Section" "guides" }}{{ $homePages = $homePages | append . }}{{ end }}{{ end }}
             {{ $latestPages := sort $homePages "Date" "desc" }}
 
-            <section class="home-depth home-depth--water" aria-labelledby="home-depth-heading">
+            <section class="home-depth home-depth--betterwaterguide" aria-labelledby="home-depth-heading">
                 <div class="home-depth__intro">
                     <p class="section-kicker">{{ .Site.Params.homeDepthKicker | default "Start with the right question" }}</p>
                     <h2 id="home-depth-heading">{{ .Site.Params.homeDepthHeading | default "Find the help that fits the decision" }}</h2>
