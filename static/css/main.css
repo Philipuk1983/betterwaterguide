@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #1f7fbf;
-    --color-secondary: #123047;
-    --color-accent: #20b7c9;
-    --color-bg: #f3fbff;
-    --color-text: #243746;
+    --color-primary: #0f8ec7;
+    --color-secondary: #09263f;
+    --color-accent: #41d6e8;
+    --color-bg: #f8fdff;
+    --color-text: #27475d;
     --font-heading: 'Manrope', system-ui, sans-serif;
     --font-body: 'Source Sans 3', system-ui, sans-serif;
     --max-width: 72rem;
@@ -656,6 +656,1570 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
         padding: 2rem 1.35rem;
         border-radius: 18px;
     }
+}
+/* Better Water Guide dedicated water filtration theme */
+.theme-betterwaterguide {
+    --bwg-navy: #09263f;
+    --bwg-blue: #0f8ec7;
+    --bwg-blue-dark: #056b9b;
+    --bwg-aqua: #41d6e8;
+    --bwg-soft-aqua: #e8fbff;
+    --bwg-pale-blue: #f3fbff;
+    --bwg-ice: #f8fdff;
+    --bwg-text: #27475d;
+    --bwg-muted: #6d8493;
+    --bwg-border: #c9ebf7;
+    --bwg-green: #1f9f74;
+    --bwg-sand: #fff8eb;
+    --bwg-radius: 18px;
+    --bwg-shadow: 0 18px 45px rgba(7,85,125,0.10);
+    --bwg-shadow-soft: 0 8px 22px rgba(7,85,125,0.08);
+    background:
+        radial-gradient(circle at 8% 0%, rgba(65,214,232,0.18), transparent 34rem),
+        radial-gradient(circle at 96% 16%, rgba(15,142,199,0.11), transparent 28rem),
+        linear-gradient(180deg, #f5fcff 0%, #ffffff 42%, var(--bwg-ice) 100%);
+    color: var(--bwg-text);
+    overflow-x: hidden;
+}
+.theme-betterwaterguide .site-header {
+    background: rgba(255,255,255,0.94);
+    border-bottom: 1px solid rgba(15,142,199,0.16);
+    box-shadow: 0 8px 28px rgba(8,54,82,0.05);
+    backdrop-filter: blur(12px);
+}
+.theme-betterwaterguide .header-inner { min-height: 76px; }
+.theme-betterwaterguide .site-logo {
+    gap: 0.55rem;
+    color: var(--bwg-navy);
+    font-weight: 950;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+.theme-betterwaterguide .site-logo::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 70% 70% 70% 18%;
+    transform: rotate(45deg);
+    background: linear-gradient(135deg, var(--bwg-aqua), var(--bwg-blue));
+    box-shadow: 0 0 0 6px rgba(65,214,232,0.14), 0 10px 22px rgba(15,142,199,0.18);
+}
+.theme-betterwaterguide .site-nav { align-items: center; gap: 1rem; }
+.theme-betterwaterguide .site-nav a,
+.theme-betterwaterguide .footer-nav a {
+    color: var(--bwg-navy);
+    font-weight: 850;
+    text-decoration: none;
+}
+.theme-betterwaterguide .site-nav a::after,
+.theme-betterwaterguide .footer-nav a::after {
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--bwg-blue), var(--bwg-aqua));
+}
+.theme-betterwaterguide .site-nav a:hover,
+.theme-betterwaterguide .footer-nav a:hover { color: var(--bwg-blue-dark); }
+.theme-betterwaterguide .site-kicker,
+.theme-betterwaterguide .hero-eyebrow,
+.theme-betterwaterguide .section-kicker,
+.theme-betterwaterguide .feature-meta,
+.theme-betterwaterguide .article-kicker,
+.theme-betterwaterguide .footer-label,
+.theme-betterwaterguide .cta-label {
+    color: var(--bwg-blue-dark);
+    font-size: 0.72rem;
+    font-weight: 950;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+.theme-betterwaterguide .hero,
+.theme-betterwaterguide .modern-hero {
+    position: relative;
+    margin: 2.5rem 0 2.8rem;
+    padding: clamp(2.1rem, 4.2vw, 3.35rem);
+    border: 1px solid var(--bwg-border);
+    border-left: 7px solid var(--bwg-blue);
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 92% 10%, rgba(65,214,232,0.28), transparent 18rem),
+        radial-gradient(circle at 3% 100%, rgba(15,142,199,0.11), transparent 16rem),
+        linear-gradient(135deg, #ffffff 0%, #f1fbff 100%);
+    box-shadow: var(--bwg-shadow);
+    overflow: hidden;
+}
+.theme-betterwaterguide .hero::after,
+.theme-betterwaterguide .modern-hero::after {
+    content: "Filter type / water concern / upkeep";
+    position: absolute;
+    top: 1.2rem;
+    right: 1.25rem;
+    display: inline-flex;
+    max-width: calc(100% - 2.5rem);
+    padding: 0.42rem 0.7rem;
+    border: 1px solid rgba(65,214,232,0.36);
+    border-radius: 999px;
+    background: var(--bwg-soft-aqua);
+    color: var(--bwg-blue-dark);
+    font-size: 0.72rem;
+    font-weight: 950;
+    letter-spacing: 0.02em;
+    white-space: normal;
+}
+.theme-betterwaterguide .hero > *,
+.theme-betterwaterguide .modern-hero > * { position: relative; z-index: 1; }
+.theme-betterwaterguide .hero h1,
+.theme-betterwaterguide h1,
+.theme-betterwaterguide h2,
+.theme-betterwaterguide h3 { color: var(--bwg-navy); letter-spacing: 0; }
+.theme-betterwaterguide .hero h1,
+.theme-betterwaterguide h1 { max-width: 56rem; font-size: clamp(1.95rem, 3.1vw, 3rem); line-height: 1.08; }
+.theme-betterwaterguide h2,
+.theme-betterwaterguide .section-title { font-size: clamp(1.28rem, 1.9vw, 1.72rem); line-height: 1.16; }
+.theme-betterwaterguide .article-body h2 { padding-top: 0.42rem; border-top: 1px solid rgba(15,142,199,0.14); }
+.theme-betterwaterguide .article-body h2::before {
+    content: "";
+    display: inline-block;
+    width: 0.62rem;
+    height: 0.62rem;
+    margin-right: 0.45rem;
+    border-radius: 70% 70% 70% 20%;
+    transform: rotate(45deg);
+    background: linear-gradient(135deg, var(--bwg-aqua), var(--bwg-blue));
+    vertical-align: 0.08em;
+}
+.theme-betterwaterguide p,
+.theme-betterwaterguide .section-description,
+.theme-betterwaterguide .article-card p,
+.theme-betterwaterguide .article-meta,
+.theme-betterwaterguide .footer-inner { color: var(--bwg-muted); }
+.theme-betterwaterguide a { color: var(--bwg-blue-dark); text-decoration-color: rgba(15,142,199,0.35); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-betterwaterguide a:hover { color: var(--bwg-navy); text-decoration-color: var(--bwg-blue); }
+.theme-betterwaterguide article.article-shell { padding: clamp(1.4rem, 3vw, 2.6rem); }
+.theme-betterwaterguide article.article-shell:has(.audible-sponsored-slot) { overflow: visible; }
+.theme-betterwaterguide .article-card,
+.theme-betterwaterguide .spotlight-card,
+.theme-betterwaterguide .home-browse-card,
+.theme-betterwaterguide .home-method-card,
+.theme-betterwaterguide .home-latest-item,
+.theme-betterwaterguide .simple-row,
+.theme-betterwaterguide .article-summary,
+.theme-betterwaterguide .table-of-contents,
+.theme-betterwaterguide .disclosure-inline,
+.theme-betterwaterguide .affiliate-cta,
+.theme-betterwaterguide .see-also,
+.theme-betterwaterguide .review-verdict-card,
+.theme-betterwaterguide .utility-tool,
+.theme-betterwaterguide .product-box-water,
+.theme-betterwaterguide .comparison-shell-water,
+.theme-betterwaterguide .pros-cons-water {
+    border: 1px solid var(--bwg-border);
+    border-radius: var(--bwg-radius);
+    background: linear-gradient(180deg, #ffffff 0%, var(--bwg-ice) 100%);
+    box-shadow: var(--bwg-shadow-soft);
+}
+.theme-betterwaterguide .article-card,
+.theme-betterwaterguide .home-browse-card,
+.theme-betterwaterguide .home-method-card,
+.theme-betterwaterguide .home-latest-item,
+.theme-betterwaterguide .simple-row { position: relative; overflow: hidden; transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
+.theme-betterwaterguide .article-card::before,
+.theme-betterwaterguide .home-browse-card::before,
+.theme-betterwaterguide .home-method-card::before,
+.theme-betterwaterguide .home-latest-item::before,
+.theme-betterwaterguide .simple-row::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--bwg-blue), var(--bwg-aqua)); opacity: 0; transition: opacity 160ms ease; }
+.theme-betterwaterguide .article-card:hover,
+.theme-betterwaterguide .home-browse-card:hover,
+.theme-betterwaterguide .home-method-card:hover,
+.theme-betterwaterguide .home-latest-item:hover,
+.theme-betterwaterguide .simple-row:hover { transform: translateY(-3px); border-color: rgba(15,142,199,0.45); box-shadow: 0 20px 45px rgba(7,85,125,0.14); }
+.theme-betterwaterguide .article-card:hover::before,
+.theme-betterwaterguide .home-browse-card:hover::before,
+.theme-betterwaterguide .home-method-card:hover::before,
+.theme-betterwaterguide .home-latest-item:hover::before,
+.theme-betterwaterguide .simple-row:hover::before { opacity: 1; }
+.theme-betterwaterguide .article-card h2,
+.theme-betterwaterguide .article-card h3,
+.theme-betterwaterguide .home-browse-card h3,
+.theme-betterwaterguide .home-method-card h3,
+.theme-betterwaterguide .home-latest-item h3 { margin-top: 0; font-size: clamp(1rem, 1.25vw, 1.18rem); line-height: 1.25; }
+.theme-betterwaterguide .home-depth,
+.theme-betterwaterguide .home-method,
+.theme-betterwaterguide .home-latest { border-top: 1px solid var(--bwg-border); }
+.theme-betterwaterguide .home-browse-card span,
+.theme-betterwaterguide .home-method-card span,
+.theme-betterwaterguide .signal-strip span,
+.theme-betterwaterguide .tag,
+.theme-betterwaterguide .badge,
+.theme-betterwaterguide .cta-chip,
+.theme-betterwaterguide .callout-eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    border: 1px solid var(--bwg-border);
+    border-radius: 999px;
+    background: var(--bwg-soft-aqua);
+    color: var(--bwg-blue-dark);
+    font-weight: 850;
+}
+.theme-betterwaterguide .article-summary,
+.theme-betterwaterguide .quick-take,
+.theme-betterwaterguide .summary-box,
+.theme-betterwaterguide .buyer-fit,
+.theme-betterwaterguide blockquote,
+.theme-betterwaterguide .bottom-line-callout,
+.theme-betterwaterguide .roundup-hero-callout {
+    border-left: 6px solid var(--bwg-blue);
+    background: linear-gradient(135deg, #ffffff 0%, var(--bwg-pale-blue) 100%);
+}
+.theme-betterwaterguide .affiliate-cta,
+.theme-betterwaterguide .product-cta,
+.theme-betterwaterguide .review-verdict-card {
+    background:
+        radial-gradient(circle at 100% 0%, rgba(65,214,232,0.16), transparent 12rem),
+        linear-gradient(135deg, #ffffff 0%, #f7fdff 100%);
+}
+.theme-betterwaterguide .button-link,
+.theme-betterwaterguide .amazon-button,
+.theme-betterwaterguide .cta-button,
+.theme-betterwaterguide .review-verdict-card__primary,
+.theme-betterwaterguide button,
+.theme-betterwaterguide input[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.72rem 1.05rem;
+    background: linear-gradient(135deg, var(--bwg-blue), var(--bwg-blue-dark));
+    color: #ffffff;
+    font-weight: 950;
+    text-decoration: none;
+    box-shadow: 0 12px 24px rgba(15,142,199,0.23);
+}
+.theme-betterwaterguide .button-link:hover,
+.theme-betterwaterguide .amazon-button:hover,
+.theme-betterwaterguide .cta-button:hover,
+.theme-betterwaterguide .review-verdict-card__primary:hover { color: #ffffff; transform: translateY(-1px); box-shadow: 0 16px 32px rgba(15,142,199,0.30); }
+.theme-betterwaterguide table,
+.theme-betterwaterguide .comparison-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--bwg-border);
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: var(--bwg-shadow-soft);
+    overflow: hidden;
+}
+.theme-betterwaterguide th,
+.theme-betterwaterguide .comparison-table th { background: linear-gradient(135deg, #e7faff, #d7f5ff); color: var(--bwg-navy); font-weight: 900; }
+.theme-betterwaterguide td,
+.theme-betterwaterguide th,
+.theme-betterwaterguide .comparison-table td,
+.theme-betterwaterguide .comparison-table th { border-color: rgba(15,142,199,0.13); overflow-wrap: anywhere; word-break: normal; }
+.theme-betterwaterguide tr:nth-child(even) td { background: var(--bwg-ice); }
+.theme-betterwaterguide .site-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(65,214,232,0.22);
+    background: radial-gradient(circle at 20% 0%, rgba(65,214,232,0.15), transparent 22rem), linear-gradient(180deg, var(--bwg-navy) 0%, #071d31 100%);
+    color: rgba(255,255,255,0.78);
+}
+.theme-betterwaterguide .site-footer a { color: #bff5ff; }
+.theme-betterwaterguide a:focus-visible,
+.theme-betterwaterguide button:focus-visible,
+.theme-betterwaterguide input:focus-visible,
+.theme-betterwaterguide select:focus-visible,
+.theme-betterwaterguide textarea:focus-visible { outline: 3px solid rgba(65,214,232,0.42); outline-offset: 3px; }
+@media (max-width: 760px) {
+    .theme-betterwaterguide .header-inner { min-height: auto; padding: 0.85rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .theme-betterwaterguide .site-nav { width: 100%; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.2rem; }
+    .theme-betterwaterguide .site-nav a { white-space: nowrap; font-size: 0.86rem; }
+    .theme-betterwaterguide main,
+    .theme-betterwaterguide .container,
+    .theme-betterwaterguide .content { width: auto; padding-left: 1rem; padding-right: 1rem; }
+    .theme-betterwaterguide .hero,
+    .theme-betterwaterguide .modern-hero,
+    .theme-betterwaterguide .article-header { margin: 2rem 0; padding: 1.65rem 1.2rem; border-radius: 20px; }
+    .theme-betterwaterguide .hero::after,
+    .theme-betterwaterguide .modern-hero::after { position: static; margin-top: 1rem; }
+    .theme-betterwaterguide h1 { font-size: 1.85rem; }
+    .theme-betterwaterguide h2 { font-size: 1.35rem; }
+    .theme-betterwaterguide .article-grid,
+    .theme-betterwaterguide .home-browse-grid,
+    .theme-betterwaterguide .home-method-grid,
+    .theme-betterwaterguide .section-listing .article-grid { grid-template-columns: 1fr; }
+}
+
+/* Home Gym Starter dedicated garage gym theme */
+.theme-homegymstarter {
+    --hgs-ink: #18202b;
+    --hgs-charcoal: #242a32;
+    --hgs-steel: #465563;
+    --hgs-muted: #6e7884;
+    --hgs-orange: #f28a00;
+    --hgs-orange-dark: #c66b00;
+    --hgs-amber: #ffb02e;
+    --hgs-rubber: #2f343a;
+    --hgs-concrete: #f3f4f3;
+    --hgs-light: #fbfbf8;
+    --hgs-card: #ffffff;
+    --hgs-warm: #fff7e8;
+    --hgs-border: #d8d9d6;
+    --hgs-border-dark: #bfc3c3;
+    --hgs-shadow: 0 18px 44px rgba(24,32,43,0.12);
+    --hgs-shadow-soft: 0 8px 22px rgba(24,32,43,0.08);
+    --hgs-radius: 15px;
+    background:
+        radial-gradient(circle at 8% 0%, rgba(242,138,0,0.10), transparent 30rem),
+        radial-gradient(circle at 92% 18%, rgba(70,85,99,0.10), transparent 28rem),
+        linear-gradient(180deg, var(--hgs-light) 0%, #ffffff 42%, var(--hgs-concrete) 100%);
+    color: var(--hgs-steel);
+    overflow-x: hidden;
+}
+.theme-homegymstarter .site-header {
+    background: rgba(251,251,248,0.96);
+    border-bottom: 3px solid var(--hgs-charcoal);
+    box-shadow: 0 8px 24px rgba(24,32,43,0.06);
+    backdrop-filter: blur(10px);
+}
+.theme-homegymstarter .header-inner { min-height: 76px; }
+.theme-homegymstarter .site-logo {
+    gap: 0.55rem;
+    color: var(--hgs-charcoal);
+    font-weight: 950;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+.theme-homegymstarter .site-logo::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 34px;
+    height: 16px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--hgs-charcoal) 0 16%, transparent 16% 24%, var(--hgs-orange) 24% 76%, transparent 76% 84%, var(--hgs-charcoal) 84% 100%);
+    box-shadow: 0 0 0 5px rgba(242,138,0,0.12), 0 8px 18px rgba(24,32,43,0.14);
+}
+.theme-homegymstarter .site-nav { align-items: center; gap: 1rem; }
+.theme-homegymstarter .site-nav a,
+.theme-homegymstarter .footer-nav a {
+    color: var(--hgs-charcoal);
+    font-weight: 850;
+    text-decoration: none;
+}
+.theme-homegymstarter .site-nav a::after,
+.theme-homegymstarter .footer-nav a::after {
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--hgs-orange), var(--hgs-amber));
+}
+.theme-homegymstarter .site-nav a:hover,
+.theme-homegymstarter .footer-nav a:hover { color: var(--hgs-orange-dark); }
+.theme-homegymstarter .site-kicker,
+.theme-homegymstarter .hero-eyebrow,
+.theme-homegymstarter .section-kicker,
+.theme-homegymstarter .feature-meta,
+.theme-homegymstarter .article-kicker,
+.theme-homegymstarter .footer-label,
+.theme-homegymstarter .cta-label {
+    color: var(--hgs-orange-dark);
+    font-size: 0.72rem;
+    font-weight: 950;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+.theme-homegymstarter .hero,
+.theme-homegymstarter .modern-hero {
+    position: relative;
+    margin: 2.4rem 0 2.8rem;
+    padding: clamp(2.1rem, 4.2vw, 3.35rem);
+    border: 1px solid var(--hgs-border);
+    border-left: 7px solid var(--hgs-orange);
+    border-radius: 0 var(--hgs-radius) var(--hgs-radius) 0;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(251,251,248,0.96)),
+        repeating-linear-gradient(45deg, rgba(24,32,43,0.035) 0, rgba(24,32,43,0.035) 6px, transparent 6px, transparent 18px);
+    box-shadow: var(--hgs-shadow);
+    overflow: hidden;
+}
+.theme-homegymstarter .hero::after,
+.theme-homegymstarter .modern-hero::after {
+    content: "TRAIN";
+    position: absolute;
+    right: -1.2rem;
+    bottom: 1.4rem;
+    transform: rotate(-10deg);
+    color: rgba(24,32,43,0.055);
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 1000;
+    letter-spacing: 0.08em;
+    pointer-events: none;
+}
+.theme-homegymstarter .hero > *,
+.theme-homegymstarter .modern-hero > * { position: relative; z-index: 1; }
+.theme-homegymstarter .hero h1,
+.theme-homegymstarter h1,
+.theme-homegymstarter h2,
+.theme-homegymstarter h3 { color: var(--hgs-ink); letter-spacing: 0; }
+.theme-homegymstarter .hero h1,
+.theme-homegymstarter h1 { max-width: 56rem; font-size: clamp(1.95rem, 3.1vw, 3rem); line-height: 1.08; }
+.theme-homegymstarter h2,
+.theme-homegymstarter .section-title { font-size: clamp(1.28rem, 1.9vw, 1.72rem); line-height: 1.16; }
+.theme-homegymstarter .article-body h2 { padding-top: 0.5rem; border-top: 1px solid rgba(24,32,43,0.14); }
+.theme-homegymstarter .article-body h2::before {
+    content: "";
+    display: inline-block;
+    width: 0.95rem;
+    height: 0.42rem;
+    margin-right: 0.45rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--hgs-charcoal) 0 22%, transparent 22% 31%, var(--hgs-orange) 31% 69%, transparent 69% 78%, var(--hgs-charcoal) 78% 100%);
+    vertical-align: 0.05em;
+}
+.theme-homegymstarter p,
+.theme-homegymstarter .section-description,
+.theme-homegymstarter .article-card p,
+.theme-homegymstarter .article-meta,
+.theme-homegymstarter .footer-inner { color: var(--hgs-muted); }
+.theme-homegymstarter a { color: var(--hgs-charcoal); text-decoration-color: rgba(242,138,0,0.42); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-homegymstarter a:hover { color: var(--hgs-orange-dark); text-decoration-color: var(--hgs-orange); }
+.theme-homegymstarter article.article-shell { padding: clamp(1.4rem, 3vw, 2.6rem); }
+.theme-homegymstarter article.article-shell:has(.audible-sponsored-slot) { overflow: visible; }
+.theme-homegymstarter .article-card,
+.theme-homegymstarter .spotlight-card,
+.theme-homegymstarter .home-browse-card,
+.theme-homegymstarter .home-method-card,
+.theme-homegymstarter .home-latest-item,
+.theme-homegymstarter .simple-row,
+.theme-homegymstarter .article-summary,
+.theme-homegymstarter .table-of-contents,
+.theme-homegymstarter .disclosure-inline,
+.theme-homegymstarter .affiliate-cta,
+.theme-homegymstarter .see-also,
+.theme-homegymstarter .review-verdict-card,
+.theme-homegymstarter .utility-tool,
+.theme-homegymstarter .product-box-garage,
+.theme-homegymstarter .comparison-shell-garage,
+.theme-homegymstarter .pros-cons-garage {
+    border: 1px solid var(--hgs-border);
+    border-radius: var(--hgs-radius);
+    background: linear-gradient(180deg, var(--hgs-card) 0%, var(--hgs-light) 100%);
+    box-shadow: var(--hgs-shadow-soft);
+}
+.theme-homegymstarter .article-card,
+.theme-homegymstarter .home-browse-card,
+.theme-homegymstarter .home-method-card,
+.theme-homegymstarter .home-latest-item,
+.theme-homegymstarter .simple-row { position: relative; overflow: hidden; transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
+.theme-homegymstarter .article-card::before,
+.theme-homegymstarter .home-browse-card::before,
+.theme-homegymstarter .home-method-card::before,
+.theme-homegymstarter .home-latest-item::before,
+.theme-homegymstarter .simple-row::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--hgs-charcoal), var(--hgs-steel), var(--hgs-orange)); opacity: 0.95; }
+.theme-homegymstarter .article-card:hover,
+.theme-homegymstarter .home-browse-card:hover,
+.theme-homegymstarter .home-method-card:hover,
+.theme-homegymstarter .home-latest-item:hover,
+.theme-homegymstarter .simple-row:hover { transform: translateY(-3px); border-color: var(--hgs-border-dark); box-shadow: 0 20px 42px rgba(24,32,43,0.16); }
+.theme-homegymstarter .article-card a,
+.theme-homegymstarter .home-latest-item a,
+.theme-homegymstarter .home-browse-card,
+.theme-homegymstarter .home-browse-card strong { color: var(--hgs-ink); text-decoration: none; }
+.theme-homegymstarter .article-card a:hover,
+.theme-homegymstarter .home-latest-item a:hover,
+.theme-homegymstarter .home-browse-card:hover strong { color: var(--hgs-orange-dark); text-decoration: none; }
+.theme-homegymstarter .article-card h2,
+.theme-homegymstarter .article-card h3,
+.theme-homegymstarter .home-browse-card h3,
+.theme-homegymstarter .home-method-card h3,
+.theme-homegymstarter .home-latest-item h3 { margin-top: 0; font-size: clamp(1rem, 1.25vw, 1.18rem); line-height: 1.25; }
+.theme-homegymstarter .home-depth,
+.theme-homegymstarter .home-method,
+.theme-homegymstarter .home-latest { border-top: 1px solid var(--hgs-border); }
+.theme-homegymstarter .home-browse-card span,
+.theme-homegymstarter .home-method-card span,
+.theme-homegymstarter .signal-strip span,
+.theme-homegymstarter .tag,
+.theme-homegymstarter .badge,
+.theme-homegymstarter .cta-chip,
+.theme-homegymstarter .callout-eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    border: 1px solid var(--hgs-border);
+    border-radius: 999px;
+    background: var(--hgs-warm);
+    color: var(--hgs-orange-dark);
+    font-weight: 850;
+}
+.theme-homegymstarter .article-summary,
+.theme-homegymstarter .quick-take,
+.theme-homegymstarter .summary-box,
+.theme-homegymstarter .buyer-fit,
+.theme-homegymstarter blockquote,
+.theme-homegymstarter .bottom-line-callout,
+.theme-homegymstarter .roundup-hero-callout {
+    border-left: 6px solid var(--hgs-charcoal);
+    background: linear-gradient(135deg, var(--hgs-card) 0%, #f4f5f4 100%);
+}
+.theme-homegymstarter .affiliate-cta,
+.theme-homegymstarter .product-cta,
+.theme-homegymstarter .review-verdict-card {
+    background: radial-gradient(circle at 100% 0%, rgba(242,138,0,0.12), transparent 12rem), linear-gradient(135deg, var(--hgs-card) 0%, #f7f7f4 100%);
+}
+.theme-homegymstarter .button-link,
+.theme-homegymstarter .amazon-button,
+.theme-homegymstarter .cta-button,
+.theme-homegymstarter .review-verdict-card__primary,
+.theme-homegymstarter button,
+.theme-homegymstarter input[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.72rem 1.05rem;
+    background: linear-gradient(135deg, var(--hgs-orange), var(--hgs-orange-dark));
+    color: #ffffff;
+    font-weight: 950;
+    text-decoration: none;
+    box-shadow: 0 12px 24px rgba(198,107,0,0.24);
+}
+.theme-homegymstarter .button-link:hover,
+.theme-homegymstarter .amazon-button:hover,
+.theme-homegymstarter .cta-button:hover,
+.theme-homegymstarter .review-verdict-card__primary:hover { color: #ffffff; transform: translateY(-1px); box-shadow: 0 16px 32px rgba(198,107,0,0.31); }
+.theme-homegymstarter table,
+.theme-homegymstarter .comparison-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--hgs-border);
+    border-radius: var(--hgs-radius);
+    background: var(--hgs-card);
+    box-shadow: var(--hgs-shadow-soft);
+    overflow: hidden;
+}
+.theme-homegymstarter th,
+.theme-homegymstarter .comparison-table th { background: linear-gradient(135deg, var(--hgs-charcoal), var(--hgs-steel)); color: #ffffff; font-weight: 950; }
+.theme-homegymstarter td,
+.theme-homegymstarter th,
+.theme-homegymstarter .comparison-table td,
+.theme-homegymstarter .comparison-table th { border-color: rgba(24,32,43,0.13); overflow-wrap: anywhere; word-break: normal; }
+.theme-homegymstarter tr:nth-child(even) td { background: #f5f6f5; }
+.theme-homegymstarter .article-body li::marker { color: var(--hgs-orange); }
+.theme-homegymstarter .site-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 4px solid var(--hgs-orange);
+    background: radial-gradient(circle at 20% 0%, rgba(242,138,0,0.16), transparent 22rem), linear-gradient(180deg, var(--hgs-charcoal) 0%, #181f28 100%);
+    color: rgba(255,255,255,0.76);
+}
+.theme-homegymstarter .site-footer a { color: #ffc76d; }
+.theme-homegymstarter a:focus-visible,
+.theme-homegymstarter button:focus-visible,
+.theme-homegymstarter input:focus-visible,
+.theme-homegymstarter select:focus-visible,
+.theme-homegymstarter textarea:focus-visible { outline: 3px solid rgba(242,138,0,0.36); outline-offset: 3px; }
+@media (max-width: 760px) {
+    .theme-homegymstarter .header-inner { min-height: auto; padding: 0.85rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .theme-homegymstarter .site-nav { width: 100%; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.2rem; }
+    .theme-homegymstarter .site-nav a { white-space: nowrap; font-size: 0.86rem; }
+    .theme-homegymstarter main,
+    .theme-homegymstarter .container,
+    .theme-homegymstarter .content { width: auto; padding-left: 1rem; padding-right: 1rem; }
+    .theme-homegymstarter .hero,
+    .theme-homegymstarter .modern-hero,
+    .theme-homegymstarter .article-header { margin: 2rem 0; padding: 1.65rem 1.2rem; border-radius: 0 12px 12px 0; }
+    .theme-homegymstarter h1 { font-size: 1.85rem; }
+    .theme-homegymstarter h2 { font-size: 1.35rem; }
+    .theme-homegymstarter .article-grid,
+    .theme-homegymstarter .home-browse-grid,
+    .theme-homegymstarter .home-method-grid,
+    .theme-homegymstarter .section-listing .article-grid { grid-template-columns: 1fr; }
+}
+/* Camping Kit List dedicated campground field-guide theme */
+.theme-campingkitlist {
+    --ckl-forest: #244626;
+    --ckl-forest-dark: #172f19;
+    --ckl-moss: #5f7935;
+    --ckl-moss-soft: #eef4e5;
+    --ckl-campfire: #d98500;
+    --ckl-campfire-dark: #a96500;
+    --ckl-ember: #f2a51a;
+    --ckl-bark: #3a2a1a;
+    --ckl-tent: #fff8ea;
+    --ckl-canvas: #f6efe0;
+    --ckl-card: #fffdf7;
+    --ckl-border: #d9cdb7;
+    --ckl-border-green: #c7d6b2;
+    --ckl-text: #3f4a3b;
+    --ckl-muted: #6c7467;
+    --ckl-shadow: 0 18px 44px rgba(42,55,30,0.12);
+    --ckl-shadow-soft: 0 8px 22px rgba(42,55,30,0.08);
+    --ckl-radius: 16px;
+    background:
+        radial-gradient(circle at 8% 0%, rgba(95,121,53,0.13), transparent 30rem),
+        radial-gradient(circle at 90% 18%, rgba(217,133,0,0.10), transparent 26rem),
+        linear-gradient(180deg, #fffaf0 0%, #ffffff 42%, var(--ckl-canvas) 100%);
+    color: var(--ckl-text);
+    overflow-x: hidden;
+}
+.theme-campingkitlist .site-header {
+    background: rgba(255,250,240,0.96);
+    border-bottom: 3px solid var(--ckl-forest);
+    box-shadow: 0 8px 24px rgba(36,70,38,0.06);
+    backdrop-filter: blur(10px);
+}
+.theme-campingkitlist .header-inner { min-height: 76px; }
+.theme-campingkitlist .site-logo {
+    gap: 0.55rem;
+    color: var(--ckl-forest);
+    font-weight: 950;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+.theme-campingkitlist .site-logo::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--ckl-campfire) 0 48%, var(--ckl-forest) 49% 100%);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    filter: drop-shadow(0 8px 12px rgba(217,133,0,0.22));
+}
+.theme-campingkitlist .site-nav { align-items: center; gap: 1rem; }
+.theme-campingkitlist .site-nav a,
+.theme-campingkitlist .footer-nav a {
+    color: var(--ckl-forest);
+    font-weight: 850;
+    text-decoration: none;
+}
+.theme-campingkitlist .site-nav a::after,
+.theme-campingkitlist .footer-nav a::after {
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--ckl-moss), var(--ckl-campfire));
+}
+.theme-campingkitlist .site-nav a:hover,
+.theme-campingkitlist .footer-nav a:hover { color: var(--ckl-campfire-dark); }
+.theme-campingkitlist .site-kicker,
+.theme-campingkitlist .hero-eyebrow,
+.theme-campingkitlist .section-kicker,
+.theme-campingkitlist .feature-meta,
+.theme-campingkitlist .article-kicker,
+.theme-campingkitlist .footer-label,
+.theme-campingkitlist .cta-label {
+    color: var(--ckl-forest);
+    font-size: 0.72rem;
+    font-weight: 950;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+.theme-campingkitlist .hero,
+.theme-campingkitlist .modern-hero {
+    position: relative;
+    margin: 2.4rem 0 2.8rem;
+    padding: clamp(2.1rem, 4.2vw, 3.35rem);
+    border: 1px solid var(--ckl-border);
+    border-left: 7px solid var(--ckl-campfire);
+    border-radius: 0 var(--ckl-radius) var(--ckl-radius) 0;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(255,248,234,0.96)),
+        repeating-linear-gradient(-35deg, rgba(95,121,53,0.045) 0, rgba(95,121,53,0.045) 8px, transparent 8px, transparent 20px);
+    box-shadow: var(--ckl-shadow);
+    overflow: hidden;
+}
+.theme-campingkitlist .hero::after,
+.theme-campingkitlist .modern-hero::after {
+    content: "CAMP";
+    position: absolute;
+    right: -1.1rem;
+    bottom: 1.3rem;
+    transform: rotate(-10deg);
+    color: rgba(95,121,53,0.08);
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 1000;
+    letter-spacing: 0.1em;
+    pointer-events: none;
+}
+.theme-campingkitlist .hero > *,
+.theme-campingkitlist .modern-hero > * { position: relative; z-index: 1; }
+.theme-campingkitlist .hero h1,
+.theme-campingkitlist h1,
+.theme-campingkitlist h2,
+.theme-campingkitlist h3 { color: var(--ckl-bark); letter-spacing: 0; }
+.theme-campingkitlist .hero h1,
+.theme-campingkitlist h1 { max-width: 56rem; font-size: clamp(1.95rem, 3.1vw, 3rem); line-height: 1.08; }
+.theme-campingkitlist h2,
+.theme-campingkitlist .section-title { font-size: clamp(1.28rem, 1.9vw, 1.72rem); line-height: 1.16; }
+.theme-campingkitlist .article-body h2 { padding-top: 0.5rem; border-top: 1px solid rgba(95,121,53,0.18); }
+.theme-campingkitlist .article-body h2::before {
+    content: "";
+    display: inline-block;
+    width: 0.66rem;
+    height: 0.8rem;
+    margin-right: 0.45rem;
+    background: linear-gradient(180deg, var(--ckl-moss), var(--ckl-forest));
+    clip-path: polygon(50% 0%, 100% 100%, 58% 82%, 58% 100%, 42% 100%, 42% 82%, 0% 100%);
+    vertical-align: 0.02em;
+}
+.theme-campingkitlist p,
+.theme-campingkitlist .section-description,
+.theme-campingkitlist .article-card p,
+.theme-campingkitlist .article-meta,
+.theme-campingkitlist .footer-inner { color: var(--ckl-muted); }
+.theme-campingkitlist a { color: var(--ckl-forest); text-decoration-color: rgba(95,121,53,0.38); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-campingkitlist a:hover { color: var(--ckl-campfire-dark); text-decoration-color: var(--ckl-campfire); }
+.theme-campingkitlist article.article-shell { padding: clamp(1.4rem, 3vw, 2.6rem); }
+.theme-campingkitlist article.article-shell:has(.audible-sponsored-slot) { overflow: visible; }
+.theme-campingkitlist .article-card,
+.theme-campingkitlist .spotlight-card,
+.theme-campingkitlist .home-browse-card,
+.theme-campingkitlist .home-method-card,
+.theme-campingkitlist .home-latest-item,
+.theme-campingkitlist .simple-row,
+.theme-campingkitlist .article-summary,
+.theme-campingkitlist .table-of-contents,
+.theme-campingkitlist .disclosure-inline,
+.theme-campingkitlist .affiliate-cta,
+.theme-campingkitlist .see-also,
+.theme-campingkitlist .review-verdict-card,
+.theme-campingkitlist .utility-tool,
+.theme-campingkitlist .product-box-trail,
+.theme-campingkitlist .comparison-shell-trail,
+.theme-campingkitlist .pros-cons-trail {
+    border: 1px solid var(--ckl-border-green);
+    border-radius: var(--ckl-radius);
+    background: linear-gradient(180deg, var(--ckl-card) 0%, #f8f2e6 100%);
+    box-shadow: var(--ckl-shadow-soft);
+}
+.theme-campingkitlist .article-card,
+.theme-campingkitlist .home-browse-card,
+.theme-campingkitlist .home-method-card,
+.theme-campingkitlist .home-latest-item,
+.theme-campingkitlist .simple-row { position: relative; overflow: hidden; transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
+.theme-campingkitlist .article-card::before,
+.theme-campingkitlist .home-browse-card::before,
+.theme-campingkitlist .home-method-card::before,
+.theme-campingkitlist .home-latest-item::before,
+.theme-campingkitlist .simple-row::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--ckl-forest), var(--ckl-moss), var(--ckl-campfire)); opacity: 0.95; }
+.theme-campingkitlist .article-card:hover,
+.theme-campingkitlist .home-browse-card:hover,
+.theme-campingkitlist .home-method-card:hover,
+.theme-campingkitlist .home-latest-item:hover,
+.theme-campingkitlist .simple-row:hover { transform: translateY(-3px); border-color: var(--ckl-moss); box-shadow: 0 20px 42px rgba(42,55,30,0.16); }
+.theme-campingkitlist .article-card a,
+.theme-campingkitlist .home-latest-item a,
+.theme-campingkitlist .home-browse-card,
+.theme-campingkitlist .home-browse-card strong { color: var(--ckl-forest-dark); text-decoration: none; }
+.theme-campingkitlist .article-card a:hover,
+.theme-campingkitlist .home-latest-item a:hover,
+.theme-campingkitlist .home-browse-card:hover strong { color: var(--ckl-campfire-dark); text-decoration: none; }
+.theme-campingkitlist .article-card h2,
+.theme-campingkitlist .article-card h3,
+.theme-campingkitlist .home-browse-card h3,
+.theme-campingkitlist .home-method-card h3,
+.theme-campingkitlist .home-latest-item h3 { margin-top: 0; font-size: clamp(1rem, 1.25vw, 1.18rem); line-height: 1.25; }
+.theme-campingkitlist .home-depth,
+.theme-campingkitlist .home-method,
+.theme-campingkitlist .home-latest { border-top: 1px solid var(--ckl-border-green); }
+.theme-campingkitlist .home-browse-card span,
+.theme-campingkitlist .home-method-card span,
+.theme-campingkitlist .signal-strip span,
+.theme-campingkitlist .tag,
+.theme-campingkitlist .badge,
+.theme-campingkitlist .cta-chip,
+.theme-campingkitlist .callout-eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    border: 1px solid var(--ckl-border-green);
+    border-radius: 999px;
+    background: var(--ckl-moss-soft);
+    color: var(--ckl-forest);
+    font-weight: 850;
+}
+.theme-campingkitlist .article-summary,
+.theme-campingkitlist .quick-take,
+.theme-campingkitlist .summary-box,
+.theme-campingkitlist .buyer-fit,
+.theme-campingkitlist blockquote,
+.theme-campingkitlist .bottom-line-callout,
+.theme-campingkitlist .roundup-hero-callout {
+    border-left: 6px solid var(--ckl-moss);
+    background: linear-gradient(135deg, var(--ckl-card) 0%, var(--ckl-moss-soft) 100%);
+}
+.theme-campingkitlist .affiliate-cta,
+.theme-campingkitlist .product-cta,
+.theme-campingkitlist .review-verdict-card {
+    background: radial-gradient(circle at 100% 0%, rgba(217,133,0,0.12), transparent 12rem), linear-gradient(135deg, var(--ckl-card) 0%, #f7f0e2 100%);
+}
+.theme-campingkitlist .button-link,
+.theme-campingkitlist .amazon-button,
+.theme-campingkitlist .cta-button,
+.theme-campingkitlist .review-verdict-card__primary,
+.theme-campingkitlist button,
+.theme-campingkitlist input[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.72rem 1.05rem;
+    background: linear-gradient(135deg, var(--ckl-campfire), var(--ckl-campfire-dark));
+    color: #ffffff;
+    font-weight: 950;
+    text-decoration: none;
+    box-shadow: 0 12px 24px rgba(169,101,0,0.24);
+}
+.theme-campingkitlist .button-link:hover,
+.theme-campingkitlist .amazon-button:hover,
+.theme-campingkitlist .cta-button:hover,
+.theme-campingkitlist .review-verdict-card__primary:hover { color: #ffffff; transform: translateY(-1px); box-shadow: 0 16px 32px rgba(169,101,0,0.31); }
+.theme-campingkitlist table,
+.theme-campingkitlist .comparison-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--ckl-border-green);
+    border-radius: var(--ckl-radius);
+    background: var(--ckl-card);
+    box-shadow: var(--ckl-shadow-soft);
+    overflow: hidden;
+}
+.theme-campingkitlist th,
+.theme-campingkitlist .comparison-table th { background: linear-gradient(135deg, var(--ckl-forest), var(--ckl-moss)); color: #fffaf0; font-weight: 950; }
+.theme-campingkitlist td,
+.theme-campingkitlist th,
+.theme-campingkitlist .comparison-table td,
+.theme-campingkitlist .comparison-table th { border-color: rgba(95,121,53,0.14); overflow-wrap: anywhere; word-break: normal; }
+.theme-campingkitlist tr:nth-child(even) td { background: #f8f2e6; }
+.theme-campingkitlist .article-body li::marker { color: var(--ckl-moss); }
+.theme-campingkitlist .site-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 4px solid var(--ckl-campfire);
+    background: radial-gradient(circle at 20% 0%, rgba(217,133,0,0.16), transparent 22rem), linear-gradient(180deg, var(--ckl-forest) 0%, var(--ckl-forest-dark) 100%);
+    color: rgba(255,250,240,0.78);
+}
+.theme-campingkitlist .site-footer a { color: #ffd891; }
+.theme-campingkitlist a:focus-visible,
+.theme-campingkitlist button:focus-visible,
+.theme-campingkitlist input:focus-visible,
+.theme-campingkitlist select:focus-visible,
+.theme-campingkitlist textarea:focus-visible { outline: 3px solid rgba(217,133,0,0.36); outline-offset: 3px; }
+@media (max-width: 760px) {
+    .theme-campingkitlist .header-inner { min-height: auto; padding: 0.85rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .theme-campingkitlist .site-nav { width: 100%; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.2rem; }
+    .theme-campingkitlist .site-nav a { white-space: nowrap; font-size: 0.86rem; }
+    .theme-campingkitlist main,
+    .theme-campingkitlist .container,
+    .theme-campingkitlist .content { width: auto; padding-left: 1rem; padding-right: 1rem; }
+    .theme-campingkitlist .hero,
+    .theme-campingkitlist .modern-hero,
+    .theme-campingkitlist .article-header { margin: 2rem 0; padding: 1.65rem 1.2rem; border-radius: 0 12px 12px 0; }
+    .theme-campingkitlist h1 { font-size: 1.85rem; }
+    .theme-campingkitlist h2 { font-size: 1.35rem; }
+    .theme-campingkitlist .article-grid,
+    .theme-campingkitlist .home-browse-grid,
+    .theme-campingkitlist .home-method-grid,
+    .theme-campingkitlist .section-listing .article-grid { grid-template-columns: 1fr; }
+}
+/* The Prepper Zone dedicated emergency preparedness theme */
+.theme-theprepperzone {
+    --tpz-ink: #17212f;
+    --tpz-charcoal: #222831;
+    --tpz-slate: #3e4b59;
+    --tpz-muted: #687482;
+    --tpz-orange: #e67800;
+    --tpz-orange-dark: #b85b00;
+    --tpz-amber: #f6a623;
+    --tpz-olive: #5f6f3a;
+    --tpz-olive-dark: #3f4d25;
+    --tpz-sand: #f7f1e7;
+    --tpz-paper: #fffaf1;
+    --tpz-card: #fffdf8;
+    --tpz-border: #dfd4c2;
+    --tpz-border-dark: #c9b79d;
+    --tpz-shadow: 0 18px 44px rgba(36,28,18,0.12);
+    --tpz-shadow-soft: 0 8px 22px rgba(36,28,18,0.08);
+    --tpz-radius: 14px;
+    background:
+        radial-gradient(circle at 8% 0%, rgba(230,120,0,0.10), transparent 30rem),
+        radial-gradient(circle at 92% 20%, rgba(95,111,58,0.10), transparent 26rem),
+        linear-gradient(180deg, var(--tpz-paper) 0%, #ffffff 42%, var(--tpz-sand) 100%);
+    color: var(--tpz-slate);
+    overflow-x: hidden;
+}
+.theme-theprepperzone .site-header {
+    background: rgba(255,250,241,0.96);
+    border-bottom: 3px solid var(--tpz-charcoal);
+    box-shadow: 0 8px 24px rgba(23,33,47,0.06);
+    backdrop-filter: blur(10px);
+}
+.theme-theprepperzone .header-inner { min-height: 76px; }
+.theme-theprepperzone .site-logo {
+    gap: 0.55rem;
+    color: var(--tpz-charcoal);
+    font-weight: 950;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+.theme-theprepperzone .site-logo::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 31px;
+    height: 31px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, var(--tpz-orange) 0 50%, var(--tpz-charcoal) 50% 100%);
+    box-shadow: 0 0 0 5px rgba(230,120,0,0.13), 0 9px 20px rgba(36,28,18,0.16);
+    transform: rotate(45deg);
+}
+.theme-theprepperzone .site-nav { align-items: center; gap: 1rem; }
+.theme-theprepperzone .site-nav a,
+.theme-theprepperzone .footer-nav a {
+    color: var(--tpz-charcoal);
+    font-weight: 850;
+    text-decoration: none;
+}
+.theme-theprepperzone .site-nav a::after,
+.theme-theprepperzone .footer-nav a::after {
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--tpz-orange), var(--tpz-amber));
+}
+.theme-theprepperzone .site-nav a:hover,
+.theme-theprepperzone .footer-nav a:hover { color: var(--tpz-orange-dark); }
+.theme-theprepperzone .site-kicker,
+.theme-theprepperzone .hero-eyebrow,
+.theme-theprepperzone .section-kicker,
+.theme-theprepperzone .feature-meta,
+.theme-theprepperzone .article-kicker,
+.theme-theprepperzone .footer-label,
+.theme-theprepperzone .cta-label {
+    color: var(--tpz-orange-dark);
+    font-size: 0.72rem;
+    font-weight: 950;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+.theme-theprepperzone .hero,
+.theme-theprepperzone .modern-hero {
+    position: relative;
+    margin: 2.4rem 0 2.8rem;
+    padding: clamp(2.1rem, 4.2vw, 3.35rem);
+    border: 1px solid var(--tpz-border);
+    border-left: 7px solid var(--tpz-orange);
+    border-radius: 0 var(--tpz-radius) var(--tpz-radius) 0;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.88), rgba(255,250,241,0.96)),
+        repeating-linear-gradient(45deg, rgba(230,120,0,0.045) 0, rgba(230,120,0,0.045) 8px, transparent 8px, transparent 18px);
+    box-shadow: var(--tpz-shadow);
+    overflow: hidden;
+}
+.theme-theprepperzone .hero::after,
+.theme-theprepperzone .modern-hero::after {
+    content: "READY";
+    position: absolute;
+    right: -1.2rem;
+    bottom: 1.6rem;
+    transform: rotate(-12deg);
+    color: rgba(230,120,0,0.075);
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 1000;
+    letter-spacing: 0.08em;
+    pointer-events: none;
+}
+.theme-theprepperzone .hero > *,
+.theme-theprepperzone .modern-hero > * { position: relative; z-index: 1; }
+.theme-theprepperzone .hero h1,
+.theme-theprepperzone h1,
+.theme-theprepperzone h2,
+.theme-theprepperzone h3 { color: var(--tpz-ink); letter-spacing: 0; }
+.theme-theprepperzone .hero h1,
+.theme-theprepperzone h1 { max-width: 56rem; font-size: clamp(1.95rem, 3.1vw, 3rem); line-height: 1.08; }
+.theme-theprepperzone h2,
+.theme-theprepperzone .section-title { font-size: clamp(1.28rem, 1.9vw, 1.72rem); line-height: 1.16; }
+.theme-theprepperzone .article-body h2 { padding-top: 0.5rem; border-top: 1px solid rgba(62,75,89,0.14); }
+.theme-theprepperzone .article-body h2::before {
+    content: "";
+    display: inline-block;
+    width: 0.58rem;
+    height: 0.58rem;
+    margin-right: 0.45rem;
+    border-radius: 2px;
+    background: var(--tpz-orange);
+    box-shadow: 4px 4px 0 rgba(230,120,0,0.18);
+    transform: rotate(45deg);
+    vertical-align: 0.06em;
+}
+.theme-theprepperzone p,
+.theme-theprepperzone .section-description,
+.theme-theprepperzone .article-card p,
+.theme-theprepperzone .article-meta,
+.theme-theprepperzone .footer-inner { color: var(--tpz-muted); }
+.theme-theprepperzone a { color: var(--tpz-orange-dark); text-decoration-color: rgba(230,120,0,0.38); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-theprepperzone a:hover { color: var(--tpz-charcoal); text-decoration-color: var(--tpz-orange); }
+.theme-theprepperzone article.article-shell { padding: clamp(1.4rem, 3vw, 2.6rem); }
+.theme-theprepperzone article.article-shell:has(.audible-sponsored-slot) { overflow: visible; }
+.theme-theprepperzone .article-card,
+.theme-theprepperzone .spotlight-card,
+.theme-theprepperzone .home-browse-card,
+.theme-theprepperzone .home-method-card,
+.theme-theprepperzone .home-latest-item,
+.theme-theprepperzone .simple-row,
+.theme-theprepperzone .article-summary,
+.theme-theprepperzone .table-of-contents,
+.theme-theprepperzone .disclosure-inline,
+.theme-theprepperzone .affiliate-cta,
+.theme-theprepperzone .see-also,
+.theme-theprepperzone .review-verdict-card,
+.theme-theprepperzone .utility-tool,
+.theme-theprepperzone .product-box-garage,
+.theme-theprepperzone .comparison-shell-garage,
+.theme-theprepperzone .pros-cons-garage {
+    border: 1px solid var(--tpz-border);
+    border-radius: var(--tpz-radius);
+    background: linear-gradient(180deg, var(--tpz-card) 0%, #faf3e8 100%);
+    box-shadow: var(--tpz-shadow-soft);
+}
+.theme-theprepperzone .article-card,
+.theme-theprepperzone .home-browse-card,
+.theme-theprepperzone .home-method-card,
+.theme-theprepperzone .home-latest-item,
+.theme-theprepperzone .simple-row { position: relative; overflow: hidden; transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
+.theme-theprepperzone .article-card::before,
+.theme-theprepperzone .home-browse-card::before,
+.theme-theprepperzone .home-method-card::before,
+.theme-theprepperzone .home-latest-item::before,
+.theme-theprepperzone .simple-row::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--tpz-orange), var(--tpz-amber), var(--tpz-olive)); opacity: 0.9; }
+.theme-theprepperzone .article-card:hover,
+.theme-theprepperzone .home-browse-card:hover,
+.theme-theprepperzone .home-method-card:hover,
+.theme-theprepperzone .home-latest-item:hover,
+.theme-theprepperzone .simple-row:hover { transform: translateY(-3px); border-color: var(--tpz-border-dark); box-shadow: 0 20px 42px rgba(36,28,18,0.16); }
+.theme-theprepperzone .article-card a,
+.theme-theprepperzone .home-latest-item a,
+.theme-theprepperzone .home-browse-card,
+.theme-theprepperzone .home-browse-card strong { color: var(--tpz-ink); text-decoration: none; }
+.theme-theprepperzone .article-card a:hover,
+.theme-theprepperzone .home-latest-item a:hover,
+.theme-theprepperzone .home-browse-card:hover strong { color: var(--tpz-orange-dark); text-decoration: none; }
+.theme-theprepperzone .article-card h2,
+.theme-theprepperzone .article-card h3,
+.theme-theprepperzone .home-browse-card h3,
+.theme-theprepperzone .home-method-card h3,
+.theme-theprepperzone .home-latest-item h3 { margin-top: 0; font-size: clamp(1rem, 1.25vw, 1.18rem); line-height: 1.25; }
+.theme-theprepperzone .home-depth,
+.theme-theprepperzone .home-method,
+.theme-theprepperzone .home-latest { border-top: 1px solid var(--tpz-border); }
+.theme-theprepperzone .home-browse-card span,
+.theme-theprepperzone .home-method-card span,
+.theme-theprepperzone .signal-strip span,
+.theme-theprepperzone .tag,
+.theme-theprepperzone .badge,
+.theme-theprepperzone .cta-chip,
+.theme-theprepperzone .callout-eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    border: 1px solid var(--tpz-border);
+    border-radius: 999px;
+    background: #fff3df;
+    color: var(--tpz-orange-dark);
+    font-weight: 850;
+}
+.theme-theprepperzone .article-summary,
+.theme-theprepperzone .quick-take,
+.theme-theprepperzone .summary-box,
+.theme-theprepperzone .buyer-fit,
+.theme-theprepperzone blockquote,
+.theme-theprepperzone .bottom-line-callout,
+.theme-theprepperzone .roundup-hero-callout {
+    border-left: 6px solid var(--tpz-charcoal);
+    background: linear-gradient(135deg, var(--tpz-card) 0%, #f8efe1 100%);
+}
+.theme-theprepperzone .affiliate-cta,
+.theme-theprepperzone .product-cta,
+.theme-theprepperzone .review-verdict-card {
+    background: linear-gradient(135deg, var(--tpz-card) 0%, #f7efe2 100%);
+}
+.theme-theprepperzone .button-link,
+.theme-theprepperzone .amazon-button,
+.theme-theprepperzone .cta-button,
+.theme-theprepperzone .review-verdict-card__primary,
+.theme-theprepperzone button,
+.theme-theprepperzone input[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.72rem 1.05rem;
+    background: linear-gradient(135deg, var(--tpz-orange), var(--tpz-orange-dark));
+    color: #ffffff;
+    font-weight: 950;
+    text-decoration: none;
+    box-shadow: 0 12px 24px rgba(184,91,0,0.24);
+}
+.theme-theprepperzone .button-link:hover,
+.theme-theprepperzone .amazon-button:hover,
+.theme-theprepperzone .cta-button:hover,
+.theme-theprepperzone .review-verdict-card__primary:hover { color: #ffffff; transform: translateY(-1px); box-shadow: 0 16px 32px rgba(184,91,0,0.31); }
+.theme-theprepperzone table,
+.theme-theprepperzone .comparison-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--tpz-border);
+    border-radius: var(--tpz-radius);
+    background: var(--tpz-card);
+    box-shadow: var(--tpz-shadow-soft);
+    overflow: hidden;
+}
+.theme-theprepperzone th,
+.theme-theprepperzone .comparison-table th { background: linear-gradient(135deg, var(--tpz-charcoal), #303947); color: var(--tpz-paper); font-weight: 950; }
+.theme-theprepperzone td,
+.theme-theprepperzone th,
+.theme-theprepperzone .comparison-table td,
+.theme-theprepperzone .comparison-table th { border-color: rgba(62,75,89,0.13); overflow-wrap: anywhere; word-break: normal; }
+.theme-theprepperzone tr:nth-child(even) td { background: #faf3e8; }
+.theme-theprepperzone .article-body li::marker { color: var(--tpz-orange); }
+.theme-theprepperzone .site-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 4px solid var(--tpz-orange);
+    background: radial-gradient(circle at 20% 0%, rgba(230,120,0,0.14), transparent 22rem), linear-gradient(180deg, var(--tpz-charcoal) 0%, #171d25 100%);
+    color: rgba(255,250,241,0.76);
+}
+.theme-theprepperzone .site-footer a { color: #ffd08a; }
+.theme-theprepperzone a:focus-visible,
+.theme-theprepperzone button:focus-visible,
+.theme-theprepperzone input:focus-visible,
+.theme-theprepperzone select:focus-visible,
+.theme-theprepperzone textarea:focus-visible { outline: 3px solid rgba(230,120,0,0.36); outline-offset: 3px; }
+@media (max-width: 760px) {
+    .theme-theprepperzone .header-inner { min-height: auto; padding: 0.85rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .theme-theprepperzone .site-nav { width: 100%; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.2rem; }
+    .theme-theprepperzone .site-nav a { white-space: nowrap; font-size: 0.86rem; }
+    .theme-theprepperzone main,
+    .theme-theprepperzone .container,
+    .theme-theprepperzone .content { width: auto; padding-left: 1rem; padding-right: 1rem; }
+    .theme-theprepperzone .hero,
+    .theme-theprepperzone .modern-hero,
+    .theme-theprepperzone .article-header { margin: 2rem 0; padding: 1.65rem 1.2rem; border-radius: 0 12px 12px 0; }
+    .theme-theprepperzone h1 { font-size: 1.85rem; }
+    .theme-theprepperzone h2 { font-size: 1.35rem; }
+    .theme-theprepperzone .article-grid,
+    .theme-theprepperzone .home-browse-grid,
+    .theme-theprepperzone .home-method-grid,
+    .theme-theprepperzone .section-listing .article-grid { grid-template-columns: 1fr; }
+}
+
+/* Beginner Hiking Guide dedicated trail guide theme */
+.theme-beginnerhikingguide {
+    --bhg-pine: #274f2f;
+    --bhg-pine-dark: #18341f;
+    --bhg-leaf: #5d7f35;
+    --bhg-leaf-soft: #eef5e7;
+    --bhg-sky: #dff4ff;
+    --bhg-sky-line: #b9e2f3;
+    --bhg-trail: #f6efe1;
+    --bhg-paper: #fffdf6;
+    --bhg-card: #ffffff;
+    --bhg-sun: #d88900;
+    --bhg-sun-dark: #a76500;
+    --bhg-soil: #3a2a1d;
+    --bhg-text: #3f4b3f;
+    --bhg-muted: #6d786c;
+    --bhg-border: #d8cfbb;
+    --bhg-border-green: #c7d8b5;
+    --bhg-radius: 16px;
+    --bhg-shadow: 0 18px 44px rgba(39,79,47,0.12);
+    --bhg-shadow-soft: 0 8px 22px rgba(39,79,47,0.08);
+    background:
+        radial-gradient(circle at top left, rgba(93,127,53,0.14), transparent 30rem),
+        radial-gradient(circle at 90% 16%, rgba(216,137,0,0.10), transparent 24rem),
+        linear-gradient(180deg, #fffaf0 0%, #ffffff 42%, var(--bhg-trail) 100%);
+    color: var(--bhg-text);
+    overflow-x: hidden;
+}
+.theme-beginnerhikingguide .site-header {
+    background: rgba(255,250,240,0.96);
+    border-bottom: 3px solid var(--bhg-pine);
+    box-shadow: 0 8px 24px rgba(24,52,31,0.06);
+    backdrop-filter: blur(10px);
+}
+.theme-beginnerhikingguide .header-inner { min-height: 76px; }
+.theme-beginnerhikingguide .site-logo {
+    gap: 0.55rem;
+    color: var(--bhg-pine);
+    font-weight: 950;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+.theme-beginnerhikingguide .site-logo::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    background: linear-gradient(135deg, var(--bhg-sun), var(--bhg-leaf));
+    box-shadow: 0 0 0 5px rgba(93,127,53,0.14), 0 8px 18px rgba(24,52,31,0.10);
+}
+.theme-beginnerhikingguide .site-nav { align-items: center; gap: 1rem; }
+.theme-beginnerhikingguide .site-nav a,
+.theme-beginnerhikingguide .footer-nav a {
+    color: var(--bhg-pine);
+    font-weight: 850;
+    text-decoration: none;
+}
+.theme-beginnerhikingguide .site-nav a::after,
+.theme-beginnerhikingguide .footer-nav a::after {
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--bhg-leaf), var(--bhg-sun));
+}
+.theme-beginnerhikingguide .site-nav a:hover,
+.theme-beginnerhikingguide .footer-nav a:hover { color: var(--bhg-sun-dark); }
+.theme-beginnerhikingguide .site-kicker,
+.theme-beginnerhikingguide .hero-eyebrow,
+.theme-beginnerhikingguide .section-kicker,
+.theme-beginnerhikingguide .feature-meta,
+.theme-beginnerhikingguide .article-kicker,
+.theme-beginnerhikingguide .footer-label,
+.theme-beginnerhikingguide .cta-label {
+    color: var(--bhg-sun-dark);
+    font-size: 0.72rem;
+    font-weight: 950;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.theme-beginnerhikingguide .hero,
+.theme-beginnerhikingguide .modern-hero {
+    position: relative;
+    margin: 2.4rem 0 2.8rem;
+    padding: clamp(2rem, 4vw, 3.2rem);
+    border: 1px solid var(--bhg-border-green);
+    border-left: 7px solid var(--bhg-sun);
+    border-radius: 0 var(--bhg-radius) var(--bhg-radius) 0;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(255,250,240,0.96)),
+        repeating-linear-gradient(-35deg, rgba(93,127,53,0.045) 0, rgba(93,127,53,0.045) 7px, transparent 7px, transparent 20px);
+    box-shadow: var(--bhg-shadow);
+    overflow: hidden;
+}
+.theme-beginnerhikingguide .hero::after,
+.theme-beginnerhikingguide .modern-hero::after {
+    content: "TRAIL";
+    position: absolute;
+    right: -1.1rem;
+    bottom: 1.3rem;
+    transform: rotate(-10deg);
+    color: rgba(93,127,53,0.075);
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 1000;
+    letter-spacing: 0.1em;
+    pointer-events: none;
+}
+.theme-beginnerhikingguide .hero > *,
+.theme-beginnerhikingguide .modern-hero > * { position: relative; z-index: 1; }
+.theme-beginnerhikingguide .hero h1,
+.theme-beginnerhikingguide h1,
+.theme-beginnerhikingguide h2,
+.theme-beginnerhikingguide h3 { color: var(--bhg-soil); letter-spacing: 0; }
+.theme-beginnerhikingguide .hero h1,
+.theme-beginnerhikingguide h1 { max-width: 56rem; font-size: clamp(1.95rem, 3.1vw, 3rem); line-height: 1.08; }
+.theme-beginnerhikingguide h2,
+.theme-beginnerhikingguide .section-title { font-size: clamp(1.28rem, 1.9vw, 1.72rem); line-height: 1.16; }
+.theme-beginnerhikingguide .article-body h2 { padding-top: 0.5rem; border-top: 1px solid rgba(93,127,53,0.18); }
+.theme-beginnerhikingguide .article-body h2::before {
+    content: "";
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.82rem;
+    margin-right: 0.45rem;
+    background: linear-gradient(180deg, var(--bhg-leaf), var(--bhg-pine));
+    clip-path: polygon(50% 0%, 100% 100%, 58% 82%, 58% 100%, 42% 100%, 42% 82%, 0% 100%);
+    vertical-align: 0.02em;
+}
+.theme-beginnerhikingguide p,
+.theme-beginnerhikingguide .section-description,
+.theme-beginnerhikingguide .article-card p,
+.theme-beginnerhikingguide .article-meta,
+.theme-beginnerhikingguide .footer-inner { color: var(--bhg-muted); }
+.theme-beginnerhikingguide a { color: var(--bhg-pine); text-decoration-color: rgba(93,127,53,0.38); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-beginnerhikingguide a:hover { color: var(--bhg-sun-dark); text-decoration-color: var(--bhg-sun); }
+.theme-beginnerhikingguide article.article-shell { padding: clamp(1.4rem, 3vw, 2.6rem); }
+.theme-beginnerhikingguide article.article-shell:has(.audible-sponsored-slot) { overflow: visible; }
+.theme-beginnerhikingguide .article-card,
+.theme-beginnerhikingguide .spotlight-card,
+.theme-beginnerhikingguide .home-browse-card,
+.theme-beginnerhikingguide .home-method-card,
+.theme-beginnerhikingguide .home-latest-item,
+.theme-beginnerhikingguide .simple-row,
+.theme-beginnerhikingguide .article-summary,
+.theme-beginnerhikingguide .table-of-contents,
+.theme-beginnerhikingguide .disclosure-inline,
+.theme-beginnerhikingguide .affiliate-cta,
+.theme-beginnerhikingguide .see-also,
+.theme-beginnerhikingguide .review-verdict-card,
+.theme-beginnerhikingguide .utility-tool,
+.theme-beginnerhikingguide .product-box-trail,
+.theme-beginnerhikingguide .comparison-shell-trail,
+.theme-beginnerhikingguide .pros-cons-trail {
+    border: 1px solid var(--bhg-border-green);
+    border-radius: var(--bhg-radius);
+    background: linear-gradient(180deg, var(--bhg-paper) 0%, #f8f2e6 100%);
+    box-shadow: var(--bhg-shadow-soft);
+}
+.theme-beginnerhikingguide .article-card,
+.theme-beginnerhikingguide .home-browse-card,
+.theme-beginnerhikingguide .home-method-card,
+.theme-beginnerhikingguide .home-latest-item,
+.theme-beginnerhikingguide .simple-row { position: relative; overflow: hidden; transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
+.theme-beginnerhikingguide .article-card::before,
+.theme-beginnerhikingguide .home-browse-card::before,
+.theme-beginnerhikingguide .home-method-card::before,
+.theme-beginnerhikingguide .home-latest-item::before,
+.theme-beginnerhikingguide .simple-row::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--bhg-pine), var(--bhg-leaf), var(--bhg-sun)); opacity: 0.95; }
+.theme-beginnerhikingguide .article-card:hover,
+.theme-beginnerhikingguide .home-browse-card:hover,
+.theme-beginnerhikingguide .home-method-card:hover,
+.theme-beginnerhikingguide .home-latest-item:hover,
+.theme-beginnerhikingguide .simple-row:hover { transform: translateY(-4px); border-color: var(--bhg-leaf); box-shadow: 0 20px 42px rgba(39,79,47,0.16); }
+.theme-beginnerhikingguide .article-card a,
+.theme-beginnerhikingguide .home-latest-item a,
+.theme-beginnerhikingguide .home-browse-card,
+.theme-beginnerhikingguide .home-browse-card strong { color: var(--bhg-pine-dark); text-decoration: none; }
+.theme-beginnerhikingguide .article-card a:hover,
+.theme-beginnerhikingguide .home-latest-item a:hover,
+.theme-beginnerhikingguide .home-browse-card:hover strong { color: var(--bhg-sun-dark); text-decoration: none; }
+.theme-beginnerhikingguide .article-card h2,
+.theme-beginnerhikingguide .article-card h3,
+.theme-beginnerhikingguide .home-browse-card h3,
+.theme-beginnerhikingguide .home-method-card h3,
+.theme-beginnerhikingguide .home-latest-item h3 { margin-top: 0; font-size: clamp(1rem, 1.25vw, 1.18rem); line-height: 1.25; }
+.theme-beginnerhikingguide .home-depth,
+.theme-beginnerhikingguide .home-method,
+.theme-beginnerhikingguide .home-latest { border-top: 1px solid var(--bhg-border-green); }
+.theme-beginnerhikingguide .home-browse-card span,
+.theme-beginnerhikingguide .home-method-card span,
+.theme-beginnerhikingguide .signal-strip span,
+.theme-beginnerhikingguide .tag,
+.theme-beginnerhikingguide .badge,
+.theme-beginnerhikingguide .cta-chip,
+.theme-beginnerhikingguide .callout-eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    border: 1px solid var(--bhg-border-green);
+    border-radius: 999px;
+    background: var(--bhg-leaf-soft);
+    color: var(--bhg-pine-dark);
+    font-weight: 850;
+}
+.theme-beginnerhikingguide .article-summary,
+.theme-beginnerhikingguide .quick-take,
+.theme-beginnerhikingguide .summary-box,
+.theme-beginnerhikingguide .buyer-fit,
+.theme-beginnerhikingguide blockquote,
+.theme-beginnerhikingguide .bottom-line-callout,
+.theme-beginnerhikingguide .roundup-hero-callout {
+    border-left: 6px solid var(--bhg-leaf);
+    background: linear-gradient(135deg, var(--bhg-paper) 0%, var(--bhg-leaf-soft) 100%);
+}
+.theme-beginnerhikingguide .disclosure-inline,
+.theme-beginnerhikingguide .table-of-contents { background: var(--bhg-paper); }
+.theme-beginnerhikingguide .affiliate-cta,
+.theme-beginnerhikingguide .product-cta,
+.theme-beginnerhikingguide .review-verdict-card {
+    background: radial-gradient(circle at 100% 0%, rgba(216,137,0,0.12), transparent 12rem), linear-gradient(135deg, var(--bhg-paper) 0%, #f7f0e3 100%);
+}
+.theme-beginnerhikingguide .button-link,
+.theme-beginnerhikingguide .amazon-button,
+.theme-beginnerhikingguide .cta-button,
+.theme-beginnerhikingguide .review-verdict-card__primary,
+.theme-beginnerhikingguide button,
+.theme-beginnerhikingguide input[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.72rem 1.05rem;
+    background: linear-gradient(135deg, var(--bhg-sun), var(--bhg-sun-dark));
+    color: #ffffff;
+    font-weight: 950;
+    text-decoration: none;
+    box-shadow: 0 12px 24px rgba(167,101,0,0.24);
+}
+.theme-beginnerhikingguide .button-link:hover,
+.theme-beginnerhikingguide .amazon-button:hover,
+.theme-beginnerhikingguide .cta-button:hover,
+.theme-beginnerhikingguide .review-verdict-card__primary:hover { color: #ffffff; transform: translateY(-2px); box-shadow: 0 16px 32px rgba(167,101,0,0.31); }
+.theme-beginnerhikingguide table,
+.theme-beginnerhikingguide .comparison-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--bhg-border-green);
+    border-radius: var(--bhg-radius);
+    background: var(--bhg-paper);
+    box-shadow: var(--bhg-shadow-soft);
+    overflow: hidden;
+}
+.theme-beginnerhikingguide th,
+.theme-beginnerhikingguide .comparison-table th { background: linear-gradient(135deg, var(--bhg-pine), var(--bhg-leaf)); color: #fffaf0; font-weight: 950; }
+.theme-beginnerhikingguide td,
+.theme-beginnerhikingguide th,
+.theme-beginnerhikingguide .comparison-table td,
+.theme-beginnerhikingguide .comparison-table th { border-color: rgba(93,127,53,0.14); overflow-wrap: anywhere; word-break: normal; }
+.theme-beginnerhikingguide tr:nth-child(even) td { background: #f8f2e6; }
+.theme-beginnerhikingguide .article-body li::marker { color: var(--bhg-leaf); }
+.theme-beginnerhikingguide .site-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 4px solid var(--bhg-sun);
+    background: radial-gradient(circle at 20% 0%, rgba(216,137,0,0.16), transparent 22rem), linear-gradient(180deg, var(--bhg-pine) 0%, var(--bhg-pine-dark) 100%);
+    color: rgba(255,250,240,0.78);
+}
+.theme-beginnerhikingguide .site-footer a { color: #ffd891; }
+.theme-beginnerhikingguide a:focus-visible,
+.theme-beginnerhikingguide button:focus-visible,
+.theme-beginnerhikingguide input:focus-visible,
+.theme-beginnerhikingguide select:focus-visible,
+.theme-beginnerhikingguide textarea:focus-visible { outline: 3px solid rgba(216,137,0,0.36); outline-offset: 3px; }
+@media (max-width: 760px) {
+    .theme-beginnerhikingguide .header-inner { min-height: auto; padding: 0.85rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .theme-beginnerhikingguide .site-nav { width: 100%; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.2rem; }
+    .theme-beginnerhikingguide .site-nav a { white-space: nowrap; font-size: 0.86rem; }
+    .theme-beginnerhikingguide main,
+    .theme-beginnerhikingguide .container,
+    .theme-beginnerhikingguide .content { width: auto; padding-left: 1rem; padding-right: 1rem; }
+    .theme-beginnerhikingguide .hero,
+    .theme-beginnerhikingguide .modern-hero,
+    .theme-beginnerhikingguide .article-header { margin: 2rem 0; padding: 1.65rem 1.2rem; border-radius: 0 12px 12px 0; }
+    .theme-beginnerhikingguide h1 { font-size: 1.85rem; }
+    .theme-beginnerhikingguide h2 { font-size: 1.35rem; }
+    .theme-beginnerhikingguide .article-grid,
+    .theme-beginnerhikingguide .home-browse-grid,
+    .theme-beginnerhikingguide .home-method-grid,
+    .theme-beginnerhikingguide .section-listing .article-grid { grid-template-columns: 1fr; }
+}
+.theme-betterwaterguide .directory-home { max-width: 68rem; margin: 0 auto; }
+.theme-betterwaterguide .directory-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: stretch;
+    padding: clamp(2rem, 5vw, 4.5rem);
+    border: 1px solid rgba(15,142,199,0.22);
+    border-radius: 28px;
+    background: linear-gradient(135deg, #ffffff 0%, #e9fbff 55%, #d9f5ff 100%);
+    box-shadow: 0 24px 70px rgba(7,85,125,0.12);
+}
+.theme-betterwaterguide .directory-hero::after {
+    content: "Filter route check\A Test -> Type -> Flow -> Cartridge";
+    white-space: pre-line;
+    align-self: stretch;
+    display: grid;
+    place-items: center start;
+    padding: 1.5rem;
+    border: 1px solid rgba(15,142,199,0.18);
+    border-radius: 20px;
+    background: repeating-linear-gradient(0deg, rgba(15,142,199,0.08) 0 1px, transparent 1px 2.1rem), linear-gradient(135deg, #f8fdff, #c9f4ff);
+    color: var(--bwg-navy);
+    font-family: var(--font-heading);
+    font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+    font-weight: 900;
+    line-height: 1.5;
+}
+.theme-betterwaterguide .directory-list { border-left: 6px solid var(--bwg-aqua); padding-left: clamp(1rem, 2vw, 1.5rem); }
+.theme-betterwaterguide .directory-row { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 1rem; align-items: start; border-radius: 0; border-width: 0 0 1px; box-shadow: none; }
+.theme-betterwaterguide .directory-row::before { content: "WATER CHECK"; color: var(--bwg-blue-dark); font-size: 0.72rem; font-weight: 950; letter-spacing: 0.08em; }
+
+.theme-homegymstarter .workbench-home { max-width: 76rem; margin: 0 auto; }
+.theme-homegymstarter .workbench-hero {
+    border-radius: 8px;
+    padding: clamp(2rem, 5vw, 4rem);
+    background: linear-gradient(135deg, #1f2933 0%, #303844 62%, #f28a00 62%, #f7a21e 100%);
+    box-shadow: 0 28px 70px rgba(24,32,43,0.22);
+}
+.theme-homegymstarter .workbench-hero h1,
+.theme-homegymstarter .workbench-hero p { color: #ffffff; }
+.theme-homegymstarter .workbench-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.theme-homegymstarter .workbench-strip span { border-radius: 8px; background: #242a32; color: #fff6e6; border: 1px solid rgba(242,138,0,0.45); text-align: center; }
+.theme-homegymstarter .workbench-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+.theme-homegymstarter .workbench-card { border-radius: 6px; border-left: 8px solid var(--hgs-orange); background: linear-gradient(180deg, #ffffff, #f3f4f4); }
+
+.theme-campingkitlist .fieldguide-home { max-width: 64rem; margin: 0 auto; }
+.theme-campingkitlist .fieldguide-hero {
+    padding: clamp(2rem, 5vw, 4rem);
+    border-radius: 0 32px 32px 0;
+    border-left: 10px solid var(--ckl-fire);
+    background: linear-gradient(135deg, rgba(36,70,38,0.96), rgba(28,54,30,0.92)), repeating-linear-gradient(45deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 12px);
+    box-shadow: 0 20px 60px rgba(23,47,25,0.20);
+}
+.theme-campingkitlist .fieldguide-hero h1,
+.theme-campingkitlist .fieldguide-hero p { color: #fffaf0; }
+.theme-campingkitlist .simple-list { padding: clamp(1rem, 3vw, 2rem); background: #fff8e8; border: 1px solid rgba(36,70,38,0.18); border-radius: 10px; }
+.theme-campingkitlist .fieldguide-row { display: grid; grid-template-columns: 1.25rem minmax(0, 1fr); gap: 0.85rem; border-left: 0; padding-left: 0; }
+.theme-campingkitlist .fieldguide-row::before { content: ""; width: 0.8rem; height: 0.8rem; margin-top: 0.45rem; border-radius: 50%; background: var(--ckl-fire); box-shadow: 0 0 0 4px rgba(217,133,0,0.16); }
+
+.theme-beginnerhikingguide .beginnerhikingguide-home { max-width: 70rem; margin: 0 auto; }
+.theme-beginnerhikingguide .beginnerhikingguide-hero {
+    padding: clamp(2rem, 5vw, 4rem);
+    border-radius: 30px;
+    background: linear-gradient(135deg, #eef8e5 0%, #fff7e8 68%, #dceefa 100%);
+    border: 1px solid rgba(93,127,53,0.22);
+}
+.theme-beginnerhikingguide .trailhead-panel { display: grid; grid-template-columns: 1.2fr 0.9fr 0.9fr; gap: 1rem; margin-top: 1.5rem; }
+.theme-beginnerhikingguide .trailhead-card { display: grid; gap: 0.45rem; min-height: 12rem; padding: 1.25rem; border-radius: 22px; background: #fffaf0; border: 1px solid rgba(93,127,53,0.18); text-decoration: none; box-shadow: 0 16px 38px rgba(39,79,47,0.10); }
+.theme-beginnerhikingguide .trailhead-card--wide { background: linear-gradient(135deg, #274f2f, #5d7f35); color: #fffaf0; }
+.theme-beginnerhikingguide .trailhead-card--wide strong,
+.theme-beginnerhikingguide .trailhead-card--wide em,
+.theme-beginnerhikingguide .trailhead-card--wide span { color: #fffaf0; }
+.theme-beginnerhikingguide .trailhead-card span { font-family: var(--font-heading); font-weight: 950; color: var(--bhg-sun-dark); }
+.theme-beginnerhikingguide .trailhead-card strong { font-size: 1.15rem; color: var(--bhg-pine-dark); }
+.theme-beginnerhikingguide .trailhead-card em { color: var(--bhg-muted); font-style: normal; }
+.theme-beginnerhikingguide .trail-checklist-row { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 0.75rem; border-left: 0; padding-left: 0; }
+.theme-beginnerhikingguide .trail-checklist-row > span { width: 1.45rem; height: 1.45rem; border: 3px solid var(--bhg-leaf); border-radius: 6px; margin-top: 0.25rem; background: #fffaf0; }
+
+.theme-theprepperzone .theprepperzone-home { max-width: 76rem; margin: 0 auto; }
+.theme-theprepperzone .theprepperzone-hero {
+    padding: clamp(2rem, 5vw, 4rem);
+    border-radius: 4px;
+    border: 1px solid rgba(34,40,49,0.35);
+    background: linear-gradient(135deg, #222831 0%, #303947 58%, #e67800 58%, #f09322 100%);
+    box-shadow: 0 24px 70px rgba(36,28,18,0.24);
+}
+.theme-theprepperzone .theprepperzone-hero h1,
+.theme-theprepperzone .theprepperzone-hero p { color: #fffaf1; }
+.theme-theprepperzone .readiness-rack { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; padding: 1rem; border-radius: 8px; background: #222831; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08); }
+.theme-theprepperzone .readiness-bin { display: grid; gap: 0.45rem; min-height: 11rem; padding: 1.15rem; border-radius: 4px; color: #fffaf1; text-decoration: none; background: linear-gradient(180deg, #3b4655, #29313d); border-left: 7px solid var(--tpz-orange); }
+.theme-theprepperzone .readiness-bin span { color: #ffd08a; text-transform: uppercase; font-weight: 950; font-size: 0.72rem; letter-spacing: 0.08em; }
+.theme-theprepperzone .readiness-bin strong { color: #fffaf1; font-size: 1.2rem; }
+.theme-theprepperzone .readiness-bin em { color: rgba(255,250,241,0.78); font-style: normal; }
+.theme-theprepperzone .readiness-ledger { padding: clamp(1rem, 3vw, 2rem); background: #fff4df; border: 1px solid rgba(230,120,0,0.24); border-radius: 6px; }
+.theme-theprepperzone .readiness-row { border-radius: 0; border-width: 0 0 1px; box-shadow: none; background: transparent; }
+@media (max-width: 760px) {
+    .theme-betterwaterguide .directory-hero,
+    .theme-betterwaterguide .directory-row,
+    .theme-homegymstarter .workbench-grid,
+    .theme-homegymstarter .workbench-strip,
+    .theme-beginnerhikingguide .trailhead-panel,
+    .theme-theprepperzone .readiness-rack { grid-template-columns: 1fr; }
+    .theme-homegymstarter .workbench-hero,
+    .theme-theprepperzone .theprepperzone-hero { background: var(--color-secondary); }
 }
 .theme-fieldguide .fieldguide-row { border-left: 3px solid var(--color-accent); padding-left: 1rem; }
 .theme-fieldguide .fieldguide-cta { background: linear-gradient(180deg, #ffffff 0%, #faf8ef 100%); border-color: rgba(101,163,13,0.24); }
@@ -2687,21 +4251,209 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
     .theme-cleanfloorlab .home-method-card,
     .theme-cleanfloorlab .home-latest-item { min-height: auto; }
 }
-/* Hobby Guru custom workbench theme */
+/* 3D Printer Lab custom maker-lab theme */
+.theme-3dprinterlab {
+    --pl-bg: #f6f9fc; --pl-bg-soft: #eef5ff; --pl-card: #ffffff; --pl-card-blue: #f3f8ff; --pl-text: #101827; --pl-muted: #627087; --pl-line: #dce7f5;
+    --pl-blue: #155dfc; --pl-blue-dark: #0b3fb3; --pl-cyan: #00a6c8; --pl-cyan-soft: #dff8ff; --pl-orange: #ff8a00; --pl-green: #13a36f; --pl-navy: #0b1220;
+    --pl-radius: 18px; --pl-shadow: 0 16px 34px rgba(15,38,75,0.10); --pl-shadow-soft: 0 8px 20px rgba(15,38,75,0.07);
+    background: radial-gradient(circle at 12% 8%, rgba(21,93,252,0.11), transparent 28rem), radial-gradient(circle at 88% 12%, rgba(0,166,200,0.12), transparent 30rem), linear-gradient(180deg, #f6f9fc 0%, #ffffff 42%, #f6f9fc 100%);
+    color: var(--pl-text);
+}
+.theme-3dprinterlab::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; background-image: linear-gradient(rgba(21,93,252,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(21,93,252,0.035) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.15)); }
+.theme-3dprinterlab .site-header { background: rgba(246,249,252,0.94); border-bottom: 1px solid var(--pl-line); backdrop-filter: blur(10px); }
+.theme-3dprinterlab .header-inner, .theme-3dprinterlab .printerlab-inner { min-height: 76px; padding-top: 0.95rem; padding-bottom: 0.95rem; }
+.theme-3dprinterlab .site-logo { color: var(--pl-blue); font-weight: 950; letter-spacing: 0; text-decoration: none; }
+.theme-3dprinterlab .site-logo::before { content: ""; display: inline-block; width: 0.78em; height: 0.78em; margin-right: 0.42rem; border-radius: 4px; background: linear-gradient(135deg, var(--pl-cyan) 0 50%, transparent 50%), linear-gradient(315deg, var(--pl-blue) 0 50%, transparent 50%), #ffffff; border: 2px solid var(--pl-blue); box-shadow: 0 3px 0 rgba(21,93,252,0.18); transform: rotate(-4deg); }
+.theme-3dprinterlab .site-kicker, .theme-3dprinterlab .hero-eyebrow, .theme-3dprinterlab .feature-meta, .theme-3dprinterlab .section-kicker { color: var(--pl-blue-dark); font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; }
+.theme-3dprinterlab .site-nav { display: flex; align-items: center; gap: 0.7rem; }
+.theme-3dprinterlab .site-nav a { color: var(--pl-blue-dark); font-weight: 850; font-size: 0.95rem; text-decoration: none; border-radius: 999px; padding: 0.46rem 0.76rem; }
+.theme-3dprinterlab .site-nav a:hover { background: #eaf2ff; color: var(--pl-cyan); }
+.theme-3dprinterlab .hero, .theme-3dprinterlab .printerlab-hero, .theme-3dprinterlab .article-header { position: relative; margin: 3.5rem 0 2.75rem; padding: clamp(2rem, 4vw, 3.25rem); border: 1px solid var(--pl-line); border-left: 6px solid var(--pl-blue); border-radius: var(--pl-radius); background: linear-gradient(135deg, rgba(21,93,252,0.09), rgba(0,166,200,0.08)), #ffffff; box-shadow: var(--pl-shadow-soft); overflow: hidden; }
+.theme-3dprinterlab .hero::after, .theme-3dprinterlab .printerlab-hero::after, .theme-3dprinterlab .article-header::after { content: "Lab pick"; display: inline-flex; position: absolute; right: 1.25rem; top: 1.15rem; padding: 0.42rem 0.72rem; border-radius: 999px; background: var(--pl-cyan-soft); color: var(--pl-blue-dark); border: 1px solid #b8eefa; font-size: 0.74rem; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; }
+.theme-3dprinterlab h1, .theme-3dprinterlab h2, .theme-3dprinterlab h3 { color: var(--pl-text); letter-spacing: 0; }
+.theme-3dprinterlab h1 { max-width: 780px; line-height: 1.04; }
+.theme-3dprinterlab h2 { margin-top: 2.15rem; margin-bottom: 0.85rem; line-height: 1.15; }
+.theme-3dprinterlab h2::after { content: ""; display: block; width: 118px; height: 6px; margin-top: 0.75rem; border-radius: 999px; background: linear-gradient(90deg, var(--pl-blue), var(--pl-cyan), var(--pl-orange)); }
+.theme-3dprinterlab p, .theme-3dprinterlab .article-card p, .theme-3dprinterlab .section-description, .theme-3dprinterlab .footer-inner { color: var(--pl-muted); }
+.theme-3dprinterlab a { color: var(--pl-blue-dark); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-3dprinterlab a:hover { color: var(--pl-cyan); }
+.theme-3dprinterlab .signal-strip span, .theme-3dprinterlab .printerlab-strip span { background: #ffffff; border: 1px solid #bfd4ff; color: var(--pl-blue-dark); box-shadow: var(--pl-shadow-soft); }
+.theme-3dprinterlab .article-grid, .theme-3dprinterlab .printerlab-grid, .theme-3dprinterlab .home-browse-grid, .theme-3dprinterlab .home-method-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.theme-3dprinterlab .article-card, .theme-3dprinterlab .printerlab-card, .theme-3dprinterlab .printerlab-panel, .theme-3dprinterlab .home-browse-card, .theme-3dprinterlab .home-method-card, .theme-3dprinterlab .home-latest-item, .theme-3dprinterlab .article-summary, .theme-3dprinterlab .table-of-contents, .theme-3dprinterlab .shortcode-box, .theme-3dprinterlab .see-also, .theme-3dprinterlab .affiliate-cta, .theme-3dprinterlab .review-verdict-card, .theme-3dprinterlab article.article-shell { position: relative; border: 1px solid var(--pl-line); border-radius: var(--pl-radius); background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%); box-shadow: var(--pl-shadow-soft); }
+.theme-3dprinterlab .article-card, .theme-3dprinterlab .printerlab-card, .theme-3dprinterlab .printerlab-panel, .theme-3dprinterlab .home-browse-card, .theme-3dprinterlab .home-method-card, .theme-3dprinterlab .home-latest-item { min-height: 150px; padding: 1.45rem; transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; overflow: hidden; }
+.theme-3dprinterlab .article-card::before, .theme-3dprinterlab .printerlab-card::before, .theme-3dprinterlab .printerlab-panel::before, .theme-3dprinterlab .home-browse-card::before, .theme-3dprinterlab .home-method-card::before, .theme-3dprinterlab .home-latest-item::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--pl-blue), var(--pl-cyan), var(--pl-orange)); opacity: 0; transition: opacity 160ms ease; }
+.theme-3dprinterlab .article-card:hover, .theme-3dprinterlab .printerlab-card:hover, .theme-3dprinterlab .printerlab-panel:hover, .theme-3dprinterlab .home-browse-card:hover, .theme-3dprinterlab .home-method-card:hover, .theme-3dprinterlab .home-latest-item:hover { transform: translateY(-3px); border-color: rgba(21,93,252,0.30); box-shadow: var(--pl-shadow); }
+.theme-3dprinterlab .article-card:hover::before, .theme-3dprinterlab .printerlab-card:hover::before, .theme-3dprinterlab .printerlab-panel:hover::before, .theme-3dprinterlab .home-browse-card:hover::before, .theme-3dprinterlab .home-method-card:hover::before, .theme-3dprinterlab .home-latest-item:hover::before { opacity: 1; }
+.theme-3dprinterlab .affiliate-cta, .theme-3dprinterlab .product-cta, .theme-3dprinterlab .button-link, .theme-3dprinterlab .see-all, .theme-3dprinterlab .cta-button, .theme-3dprinterlab button, .theme-3dprinterlab input[type="submit"] { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; width: fit-content; min-height: 44px; border-radius: 999px; border: 1px solid var(--pl-orange); background: var(--pl-orange); color: #111827; font-weight: 900; text-decoration: none; padding: 0.72rem 1.05rem; box-shadow: 0 10px 24px rgba(255,138,0,0.16); }
+.theme-3dprinterlab .affiliate-cta:hover, .theme-3dprinterlab .product-cta:hover, .theme-3dprinterlab .button-link:hover, .theme-3dprinterlab .see-all:hover, .theme-3dprinterlab .cta-button:hover, .theme-3dprinterlab button:hover, .theme-3dprinterlab input[type="submit"]:hover { background: var(--pl-blue); border-color: var(--pl-blue); color: #ffffff; transform: translateY(-1px); }
+.theme-3dprinterlab table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 1.5rem 0; border: 1px solid var(--pl-line); border-radius: var(--pl-radius); background: #ffffff; box-shadow: var(--pl-shadow-soft); overflow: hidden; }
+.theme-3dprinterlab th, .theme-3dprinterlab td { padding: 0.9rem 1rem; border-bottom: 1px solid var(--pl-line); text-align: left; }
+.theme-3dprinterlab th { background: var(--pl-bg-soft); color: var(--pl-text); font-weight: 900; }
+.theme-3dprinterlab tr:last-child td { border-bottom: 0; }
+.theme-3dprinterlab blockquote { border-left: 6px solid var(--pl-cyan); background: var(--pl-cyan-soft); border-radius: 14px; margin: 1.5rem 0; padding: 1rem 1.2rem; color: var(--pl-navy); }
+.theme-3dprinterlab .site-footer { margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--pl-line); background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%); color: var(--pl-muted); }
+.theme-3dprinterlab a:focus-visible, .theme-3dprinterlab button:focus-visible, .theme-3dprinterlab input:focus-visible, .theme-3dprinterlab select:focus-visible, .theme-3dprinterlab textarea:focus-visible { outline: 3px solid rgba(21,93,252,0.35); outline-offset: 3px; }
+@media (max-width: 760px) {
+    .theme-3dprinterlab .header-inner, .theme-3dprinterlab .printerlab-inner { min-height: auto; padding: 0.85rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .theme-3dprinterlab .site-nav { width: 100%; gap: 0.55rem; overflow-x: auto; padding-bottom: 0.2rem; }
+    .theme-3dprinterlab .site-nav a { white-space: nowrap; font-size: 0.86rem; }
+    .theme-3dprinterlab .hero, .theme-3dprinterlab .printerlab-hero, .theme-3dprinterlab .article-header { margin: 2rem 0; padding: 2rem 1.35rem; }
+    .theme-3dprinterlab .hero::after, .theme-3dprinterlab .printerlab-hero::after, .theme-3dprinterlab .article-header::after { position: static; margin-top: 1.2rem; }
+    .theme-3dprinterlab .article-grid, .theme-3dprinterlab .printerlab-grid, .theme-3dprinterlab .home-browse-grid, .theme-3dprinterlab .home-method-grid { grid-template-columns: 1fr; }
+    .theme-3dprinterlab .article-card, .theme-3dprinterlab .printerlab-card, .theme-3dprinterlab .printerlab-panel, .theme-3dprinterlab .home-browse-card, .theme-3dprinterlab .home-method-card, .theme-3dprinterlab .home-latest-item { min-height: auto; }
+}
+/* 3D Printer Lab article layout repair: keep article hero, nav, and CTA controls compact. */
+.theme-3dprinterlab .header-inner,
+.theme-3dprinterlab .printerlab-inner {
+    min-height: 70px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    gap: 1.1rem;
+    flex-wrap: nowrap;
+}
+.theme-3dprinterlab .header-mark { display: flex; flex-direction: column; gap: 0.35rem; min-width: 13rem; }
+.theme-3dprinterlab .site-kicker { max-width: 31rem; font-size: 0.68rem; line-height: 1.35; }
+.theme-3dprinterlab .site-nav { flex: 1 1 auto; flex-wrap: wrap; justify-content: flex-end; gap: 0.35rem 0.55rem; }
+.theme-3dprinterlab .site-nav a { padding: 0.34rem 0.52rem; font-size: 0.9rem; line-height: 1.1; }
+.theme-3dprinterlab article.article-shell { overflow: visible; border-radius: 16px; box-shadow: 0 10px 24px rgba(15,38,75,0.06); }
+.theme-3dprinterlab .article-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(12rem, 0.4fr);
+    align-items: center;
+    gap: clamp(1rem, 2vw, 1.6rem);
+    min-height: 0;
+    margin: 0 0 1.15rem;
+    padding: clamp(1.45rem, 2.8vw, 2.15rem);
+    border-left-width: 5px;
+}
+.theme-3dprinterlab .article-header .article-kicker { grid-column: 1 / -1; max-width: 40rem; margin: 0 8rem 0 0; font-size: 0.68rem; line-height: 1.35; }
+.theme-3dprinterlab .article-header .article-intro-grid { display: contents; }
+.theme-3dprinterlab .article-header h1 { max-width: 46rem; margin: 0 0 0.8rem; font-size: clamp(1.9rem, 2.85vw, 2.6rem); line-height: 1.08; }
+.theme-3dprinterlab .article-header .article-meta { display: flex; flex-wrap: wrap; gap: 0.45rem 0.85rem; font-size: 0.88rem; }
+.theme-3dprinterlab .article-header .article-summary,
+.theme-3dprinterlab .article-header .roundup-hero-callout {
+    max-width: 16rem;
+    align-self: center;
+    padding: 1rem 1.1rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(15,38,75,0.06);
+}
+.theme-3dprinterlab .article-header::after { top: 1rem; right: 1rem; padding: 0.34rem 0.62rem; font-size: 0.68rem; }
+.theme-3dprinterlab .disclosure-inline { margin: 0.45rem 0 1rem; padding: 0.42rem 0.6rem; border-radius: 10px; background: #f6f9fc; font-size: 0.68rem; line-height: 1.25; }
+.theme-3dprinterlab table { table-layout: fixed; }
+.theme-3dprinterlab th,
+.theme-3dprinterlab td { min-width: 0; overflow-wrap: anywhere; word-break: normal; }
+@media (min-width: 68rem) {
+    .theme-3dprinterlab .audible-sponsored-slot { width: min(18rem, calc((100vw - var(--content-width, 48rem)) / 2 - 1.5rem)); }
+    .theme-3dprinterlab .audible-sponsored-slot .sponsored-side-stack,
+    .theme-3dprinterlab .audible-sponsored-slot .audible-sponsored-panel,
+    .theme-3dprinterlab .audible-sponsored-slot .kindle-sponsored-panel { max-width: 100%; }
+}
+.theme-3dprinterlab .affiliate-cta,
+.theme-3dprinterlab .product-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.9rem 1rem;
+    width: 100%;
+    min-height: 0;
+    margin: 1rem 0 1.55rem;
+    padding: 0.95rem 1.1rem;
+    border: 1px solid var(--pl-line);
+    border-radius: 16px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    color: var(--pl-text);
+    font-weight: 400;
+    box-shadow: var(--pl-shadow-soft);
+    transform: none;
+}
+.theme-3dprinterlab .affiliate-cta:hover,
+.theme-3dprinterlab .product-cta:hover {
+    border-color: var(--pl-line);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    color: var(--pl-text);
+    transform: none;
+}
+.theme-3dprinterlab .affiliate-cta > div:first-child,
+.theme-3dprinterlab .product-cta > div:first-child { flex: 1 1 auto; min-width: 12rem; }
+.theme-3dprinterlab .affiliate-cta__action { align-items: flex-end; flex: 0 0 auto; }
+.theme-3dprinterlab .affiliate-cta__name-link,
+.theme-3dprinterlab .affiliate-cta strong,
+.theme-3dprinterlab .product-cta strong { color: var(--pl-text); font-weight: 850; }
+.theme-3dprinterlab .affiliate-note { flex-basis: 100%; margin: 0; color: var(--pl-muted); font-size: 0.74rem; text-align: right; }
+.theme-3dprinterlab .affiliate-cta .button-link,
+.theme-3dprinterlab .product-cta .button-link,
+.theme-3dprinterlab .section-product-cta .button-link,
+.theme-3dprinterlab .button-link.amazon-button,
+.theme-3dprinterlab .see-all,
+.theme-3dprinterlab .cta-button,
+.theme-3dprinterlab button,
+.theme-3dprinterlab input[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: auto;
+    min-width: 11rem;
+    max-width: 100%;
+    min-height: 42px;
+    border-radius: 999px;
+    border: 1px solid var(--pl-orange);
+    background: var(--pl-orange);
+    color: #111827;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 1.15;
+    padding: 0.66rem 1rem;
+    box-shadow: 0 10px 22px rgba(255,138,0,0.18);
+    transform: none;
+}
+.theme-3dprinterlab .affiliate-cta .button-link:hover,
+.theme-3dprinterlab .product-cta .button-link:hover,
+.theme-3dprinterlab .section-product-cta .button-link:hover,
+.theme-3dprinterlab .button-link.amazon-button:hover,
+.theme-3dprinterlab .see-all:hover,
+.theme-3dprinterlab .cta-button:hover,
+.theme-3dprinterlab button:hover,
+.theme-3dprinterlab input[type="submit"]:hover {
+    background: var(--pl-blue);
+    border-color: var(--pl-blue);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+@media (max-width: 760px) {
+    .theme-3dprinterlab .header-inner,
+    .theme-3dprinterlab .printerlab-inner { flex-direction: column; align-items: flex-start; gap: 0.65rem; }
+    .theme-3dprinterlab .site-nav { width: 100%; justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; }
+    .theme-3dprinterlab .article-header { grid-template-columns: 1fr; margin: 1.4rem 0 1rem; padding: 1.35rem; }
+    .theme-3dprinterlab .article-header .article-kicker { margin-right: 0; }
+    .theme-3dprinterlab .article-header h1 { font-size: clamp(1.75rem, 7vw, 2.35rem); }
+    .theme-3dprinterlab .article-header .article-summary,
+    .theme-3dprinterlab .article-header .roundup-hero-callout { max-width: none; }
+    .theme-3dprinterlab .article-header::after { position: static; width: max-content; margin: 0 0 0.75rem; }
+    .theme-3dprinterlab .affiliate-cta,
+    .theme-3dprinterlab .product-cta { align-items: stretch; flex-direction: column; }
+    .theme-3dprinterlab .affiliate-cta__action,
+    .theme-3dprinterlab .affiliate-cta .button-link,
+    .theme-3dprinterlab .product-cta .button-link { width: 100%; align-items: stretch; }
+    .theme-3dprinterlab .affiliate-note { text-align: left; }
+}
+
+/* Hobby Guru custom craft bench theme */
 .theme-hobbyguru {
-    --hg-ink: #241f1a;
-    --hg-text: #56645f;
-    --hg-muted: #6f7a73;
-    --hg-green: #0f6f61;
-    --hg-green-dark: #084f45;
+    --hg-ink: #2d2924;
+    --hg-text: #443d36;
+    --hg-muted: #6f665c;
+    --hg-green: #176b5b;
+    --hg-green-dark: #0f4f43;
     --hg-green-soft: #eaf7f2;
-    --hg-clay: #c95f2f;
-    --hg-clay-dark: #9e431d;
+    --hg-clay: #c46332;
+    --hg-clay-dark: #9b431c;
     --hg-clay-soft: #fff0e8;
-    --hg-gold: #e5ad3f;
+    --hg-gold: #d8a84d;
     --hg-gold-soft: #fff7df;
-    --hg-cream: #fffaf0;
-    --hg-line: #e5dac8;
+    --hg-cream: #fffaf2;
+    --hg-line: #e4d7c5;
     --hg-line-strong: #d6c5ad;
     --hg-radius-lg: 22px;
     --hg-radius-md: 14px;
@@ -2712,7 +4464,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
         linear-gradient(180deg, rgba(15,111,97,0.035) 1px, transparent 1px),
         radial-gradient(circle at 12% 0%, rgba(201,95,47,0.10), transparent 28rem),
         radial-gradient(circle at 88% 10%, rgba(229,173,63,0.10), transparent 26rem),
-        linear-gradient(180deg, #ffffff 0%, #f8f4ec 54%, #ffffff 100%);
+        linear-gradient(180deg, #fbf6ec 0%, #ffffff 44%, #fbf6ec 100%);
     background-size: 42px 42px, 42px 42px, auto, auto, auto;
     color: var(--hg-text);
 }
@@ -2784,7 +4536,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .theme-hobbyguru .hero::after,
 .theme-hobbyguru .modern-hero::after,
 .theme-hobbyguru .article-header::after {
-    content: "Workbench buying notes";
+    content: "Bench pick notes";
     position: absolute;
     top: 1.25rem;
     right: 1.35rem;
@@ -3520,6 +5272,13 @@ body.theme-metaldetectingreview { overflow-x: hidden; }
 .theme-metaldetectingreview .review-verdict-card { padding: 1.25rem; border-left: 5px solid var(--mdr-gold); }
 .theme-metaldetectingreview .affiliate-cta,
 .theme-metaldetectingreview .product-cta { padding: 1.15rem 1.25rem; border-radius: var(--mdr-radius-md); background: linear-gradient(90deg, #ffffff 0%, #fffaf0 100%); }
+.theme-metaldetectingreview .product-box::before,
+.theme-metaldetectingreview .buy-box::before,
+.theme-metaldetectingreview .affiliate-box::before,
+.theme-metaldetectingreview .amazon-box::before,
+.theme-metaldetectingreview .cta-box::before,
+.theme-metaldetectingreview .affiliate-cta::before,
+.theme-metaldetectingreview .product-cta::before { content: "Field pick"; display: inline-flex; width: fit-content; margin-bottom: 0.7rem; padding: 0.28rem 0.62rem; border-radius: 999px; background: var(--mdr-gold-soft); color: var(--mdr-gold-dark); font-size: 0.68rem; font-weight: 950; letter-spacing: 0.08em; text-transform: uppercase; }
 .theme-metaldetectingreview .entry-content .button-link,
 .theme-metaldetectingreview .article-content .button-link,
 .theme-metaldetectingreview .affiliate-cta .button-link,
@@ -3618,8 +5377,7 @@ body.theme-hobbyguru {
 .theme-toolforge article.article-shell:has(.audible-sponsored-slot),
 .theme-pureairreview article.article-shell:has(.audible-sponsored-slot),
 .theme-coffeereviewlab article.article-shell:has(.audible-sponsored-slot),
-.theme-cleanfloorlab article.article-shell:has(.audible-sponsored-slot),
-.theme-cleanfloorlab article.article-shell:has(.amazon-sponsored-slot) {
+.theme-cleanfloorlab article.article-shell:has(.audible-sponsored-slot) {
     overflow: visible;
 }
 .theme-water h1,
@@ -3680,21 +5438,21 @@ body.theme-hobbyguru {
     .theme-cleanfloorlab .section-listing .article-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 760px) {
-    /* Hobby Guru custom workbench theme */
+    /* Hobby Guru custom craft bench theme */
 .theme-hobbyguru {
-    --hg-ink: #241f1a;
-    --hg-text: #56645f;
-    --hg-muted: #6f7a73;
-    --hg-green: #0f6f61;
-    --hg-green-dark: #084f45;
+    --hg-ink: #2d2924;
+    --hg-text: #443d36;
+    --hg-muted: #6f665c;
+    --hg-green: #176b5b;
+    --hg-green-dark: #0f4f43;
     --hg-green-soft: #eaf7f2;
-    --hg-clay: #c95f2f;
-    --hg-clay-dark: #9e431d;
+    --hg-clay: #c46332;
+    --hg-clay-dark: #9b431c;
     --hg-clay-soft: #fff0e8;
-    --hg-gold: #e5ad3f;
+    --hg-gold: #d8a84d;
     --hg-gold-soft: #fff7df;
-    --hg-cream: #fffaf0;
-    --hg-line: #e5dac8;
+    --hg-cream: #fffaf2;
+    --hg-line: #e4d7c5;
     --hg-line-strong: #d6c5ad;
     --hg-radius-lg: 22px;
     --hg-radius-md: 14px;
@@ -3705,7 +5463,7 @@ body.theme-hobbyguru {
         linear-gradient(180deg, rgba(15,111,97,0.035) 1px, transparent 1px),
         radial-gradient(circle at 12% 0%, rgba(201,95,47,0.10), transparent 28rem),
         radial-gradient(circle at 88% 10%, rgba(229,173,63,0.10), transparent 26rem),
-        linear-gradient(180deg, #ffffff 0%, #f8f4ec 54%, #ffffff 100%);
+        linear-gradient(180deg, #fbf6ec 0%, #ffffff 44%, #fbf6ec 100%);
     background-size: 42px 42px, 42px 42px, auto, auto, auto;
     color: var(--hg-text);
 }
@@ -3777,7 +5535,7 @@ body.theme-hobbyguru {
 .theme-hobbyguru .hero::after,
 .theme-hobbyguru .modern-hero::after,
 .theme-hobbyguru .article-header::after {
-    content: "Workbench buying notes";
+    content: "Bench pick notes";
     position: absolute;
     top: 1.25rem;
     right: 1.35rem;
@@ -4513,6 +6271,13 @@ body.theme-metaldetectingreview { overflow-x: hidden; }
 .theme-metaldetectingreview .review-verdict-card { padding: 1.25rem; border-left: 5px solid var(--mdr-gold); }
 .theme-metaldetectingreview .affiliate-cta,
 .theme-metaldetectingreview .product-cta { padding: 1.15rem 1.25rem; border-radius: var(--mdr-radius-md); background: linear-gradient(90deg, #ffffff 0%, #fffaf0 100%); }
+.theme-metaldetectingreview .product-box::before,
+.theme-metaldetectingreview .buy-box::before,
+.theme-metaldetectingreview .affiliate-box::before,
+.theme-metaldetectingreview .amazon-box::before,
+.theme-metaldetectingreview .cta-box::before,
+.theme-metaldetectingreview .affiliate-cta::before,
+.theme-metaldetectingreview .product-cta::before { content: "Field pick"; display: inline-flex; width: fit-content; margin-bottom: 0.7rem; padding: 0.28rem 0.62rem; border-radius: 999px; background: var(--mdr-gold-soft); color: var(--mdr-gold-dark); font-size: 0.68rem; font-weight: 950; letter-spacing: 0.08em; text-transform: uppercase; }
 .theme-metaldetectingreview .entry-content .button-link,
 .theme-metaldetectingreview .article-content .button-link,
 .theme-metaldetectingreview .affiliate-cta .button-link,
@@ -4849,6 +6614,163 @@ body.theme-soundsleepgear article.article-shell > * { box-sizing: border-box; ma
     .theme-soundsleepgear .section-listing .article-grid { grid-template-columns: 1fr; }
     .theme-soundsleepgear .disclosure-inline { white-space: normal; border-radius: 12px; }
 }
+.theme-bestpetstuff {
+    --bps-bg: #fffaf3;
+    --bps-bg-soft: #f7efe4;
+    --bps-card: #ffffff;
+    --bps-card-warm: #fff6eb;
+    --bps-text: #2d2723;
+    --bps-muted: #6f655d;
+    --bps-line: #eadccf;
+    --bps-green: #4f8f24;
+    --bps-green-dark: #2f6415;
+    --bps-orange: #c35b18;
+    --bps-orange-dark: #8d3d0d;
+    --bps-blue-soft: #eef7f8;
+    --bps-radius: 18px;
+    --bps-shadow: 0 12px 28px rgba(65,42,23,0.08);
+    --bps-shadow-soft: 0 6px 18px rgba(65,42,23,0.06);
+    color: var(--bps-text);
+    background:
+        radial-gradient(circle at top left, rgba(255,230,194,0.55), transparent 34rem),
+        linear-gradient(180deg, #fffaf3 0%, #ffffff 42%, #fffaf3 100%);
+}
+.theme-bestpetstuff body { color: var(--bps-text); background: transparent; }
+.theme-bestpetstuff main { max-width: 74rem; }
+.theme-bestpetstuff article[itemtype="https://schema.org/Article"],
+.theme-bestpetstuff article.article-shell { max-width: 54rem; }
+.theme-bestpetstuff h1,
+.theme-bestpetstuff h2,
+.theme-bestpetstuff h3,
+.theme-bestpetstuff h4,
+.theme-bestpetstuff .entry-title { color: var(--bps-text); letter-spacing: 0; }
+.theme-bestpetstuff h1 { line-height: 1.06; }
+.theme-bestpetstuff h2 { margin-top: 2.2rem; margin-bottom: 0.8rem; line-height: 1.15; }
+.theme-bestpetstuff p,
+.theme-bestpetstuff .section-description,
+.theme-bestpetstuff .article-card p,
+.theme-bestpetstuff .home-latest-item p,
+.theme-bestpetstuff .article-meta,
+.theme-bestpetstuff .footer-inner { color: var(--bps-muted); }
+.theme-bestpetstuff a { color: var(--bps-orange-dark); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-bestpetstuff a:hover { color: var(--bps-green-dark); }
+.theme-bestpetstuff .site-header { background: rgba(255,250,243,0.92); border-bottom: 1px solid var(--bps-line); backdrop-filter: blur(10px); box-shadow: 0 2px 18px rgba(65,42,23,0.05); }
+.theme-bestpetstuff .header-inner { padding-top: 0.9rem; padding-bottom: 0.9rem; }
+.theme-bestpetstuff .site-logo { position: relative; gap: 0.5rem; font-weight: 900; color: var(--bps-text); text-decoration: none; }
+.theme-bestpetstuff .site-logo::before { content: ""; width: 1.05rem; height: 1.05rem; border-radius: 999px; background: radial-gradient(circle, #ffffff 0 26%, var(--bps-green) 28% 47%, transparent 49%), radial-gradient(circle at 22% 20%, var(--bps-orange) 0 15%, transparent 16%), radial-gradient(circle at 78% 20%, var(--bps-orange) 0 15%, transparent 16%), radial-gradient(circle at 30% 82%, var(--bps-orange) 0 14%, transparent 15%), radial-gradient(circle at 70% 82%, var(--bps-orange) 0 14%, transparent 15%); box-shadow: 0 4px 10px rgba(79,143,36,0.18); }
+.theme-bestpetstuff .site-logo img { height: 44px; }
+.theme-bestpetstuff .site-nav a,
+.theme-bestpetstuff .footer-nav a { padding: 0.45rem 0.75rem; border-radius: 999px; color: #7b3812; font-size: 0.95rem; font-weight: 800; text-decoration: none; }
+.theme-bestpetstuff .site-nav a::after,
+.theme-bestpetstuff .footer-nav a::after { display: none; }
+.theme-bestpetstuff .site-nav a:hover,
+.theme-bestpetstuff .footer-nav a:hover { background: #fff0df; color: var(--bps-green-dark); }
+.theme-bestpetstuff .hero,
+.theme-bestpetstuff .fieldguide-hero,
+.theme-bestpetstuff .bestpetstuff-hero { position: relative; margin: 1.35rem 0 2.1rem; padding: clamp(2rem, 4vw, 3.2rem); border: 1px solid #efd9c1; border-left: 6px solid var(--bps-green); border-radius: 22px; background: linear-gradient(135deg, #fff6eb 0%, #ffffff 70%); box-shadow: var(--bps-shadow-soft); }
+.theme-bestpetstuff .hero h1::after,
+.theme-bestpetstuff .bestpetstuff-hero h1::after { content: ""; display: block; width: 92px; height: 6px; margin-top: 0.7rem; border-radius: 999px; background: linear-gradient(90deg, var(--bps-green), var(--bps-orange)); }
+.theme-bestpetstuff .site-kicker,
+.theme-bestpetstuff .hero-eyebrow,
+.theme-bestpetstuff .section-kicker,
+.theme-bestpetstuff .feature-meta,
+.theme-bestpetstuff .article-kicker,
+.theme-bestpetstuff .footer-label,
+.theme-bestpetstuff .cta-label { color: var(--bps-green-dark); letter-spacing: 0.1em; }
+.theme-bestpetstuff .article-card,
+.theme-bestpetstuff .spotlight-card,
+.theme-bestpetstuff .home-browse-card,
+.theme-bestpetstuff .home-method-card,
+.theme-bestpetstuff .home-latest-item,
+.theme-bestpetstuff .simple-row,
+.theme-bestpetstuff .article-summary,
+.theme-bestpetstuff .table-of-contents,
+.theme-bestpetstuff .disclosure-inline,
+.theme-bestpetstuff .affiliate-cta,
+.theme-bestpetstuff .see-also,
+.theme-bestpetstuff .shortcode-box,
+.theme-bestpetstuff .review-verdict-card,
+.theme-bestpetstuff .utility-tool { border: 1px solid var(--bps-line); border-radius: var(--bps-radius); background: var(--bps-card); box-shadow: var(--bps-shadow-soft); }
+.theme-bestpetstuff .article-card,
+.theme-bestpetstuff .home-browse-card,
+.theme-bestpetstuff .home-method-card,
+.theme-bestpetstuff .home-latest-item,
+.theme-bestpetstuff .simple-row { border-left: 6px solid var(--bps-green); transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
+.theme-bestpetstuff .article-card:hover,
+.theme-bestpetstuff .home-browse-card:hover,
+.theme-bestpetstuff .home-method-card:hover,
+.theme-bestpetstuff .home-latest-item:hover,
+.theme-bestpetstuff .simple-row:hover { transform: translateY(-2px); box-shadow: var(--bps-shadow); border-left-color: var(--bps-orange); }
+.theme-bestpetstuff .simple-row { padding: 1.05rem 1.15rem; margin-bottom: 0.85rem; }
+.theme-bestpetstuff .article-card h2,
+.theme-bestpetstuff .article-card h3,
+.theme-bestpetstuff .home-browse-card h3,
+.theme-bestpetstuff .home-method-card h3,
+.theme-bestpetstuff .home-latest-item h3,
+.theme-bestpetstuff .simple-row h3 { margin-top: 0; }
+.theme-bestpetstuff .article-summary { border-left: 6px solid var(--bps-orange); background: linear-gradient(90deg, rgba(79,143,36,0.12), rgba(255,246,235,0.95)); color: #312b26; }
+.theme-bestpetstuff .article-body h2 { padding-top: 0.4rem; border-top: 1px solid rgba(234,220,207,0.8); }
+.theme-bestpetstuff .article-body h2::before { content: ""; display: inline-block; width: 0.7rem; height: 0.7rem; margin-right: 0.45rem; border-radius: 999px; background: linear-gradient(135deg, var(--bps-green), var(--bps-orange)); vertical-align: 0.12em; }
+.theme-bestpetstuff .article-body ul,
+.theme-bestpetstuff .article-body ol { background: #fffdf9; border: 1px solid var(--bps-line); border-radius: 16px; padding: 1rem 1.2rem 1rem 2.1rem; box-shadow: var(--bps-shadow-soft); }
+.theme-bestpetstuff .article-body li::marker { color: var(--bps-green); }
+.theme-bestpetstuff table,
+.theme-bestpetstuff .comparison-table { border-collapse: separate; border-spacing: 0; border: 1px solid var(--bps-line); border-radius: 16px; background: #ffffff; box-shadow: var(--bps-shadow-soft); overflow: hidden; }
+.theme-bestpetstuff th,
+.theme-bestpetstuff .comparison-table th { background: #f1e4d4; color: var(--bps-text); font-weight: 900; }
+.theme-bestpetstuff td,
+.theme-bestpetstuff th,
+.theme-bestpetstuff .comparison-table td,
+.theme-bestpetstuff .comparison-table th { border-color: #eadccf; }
+.theme-bestpetstuff tbody tr:nth-child(even) { background: #fffaf3; }
+.theme-bestpetstuff blockquote,
+.theme-bestpetstuff .callout,
+.theme-bestpetstuff .note,
+.theme-bestpetstuff .tip,
+.theme-bestpetstuff .warning,
+.theme-bestpetstuff .bottom-line-callout,
+.theme-bestpetstuff .roundup-hero-callout { border: 1px solid #d7ecef; border-left: 6px solid var(--bps-green); border-radius: var(--bps-radius); background: var(--bps-blue-soft); color: #283a3d; box-shadow: var(--bps-shadow-soft); }
+.theme-bestpetstuff .button-link,
+.theme-bestpetstuff .amazon-button,
+.theme-bestpetstuff .cta-button,
+.theme-bestpetstuff .review-verdict-card__primary,
+.theme-bestpetstuff button,
+.theme-bestpetstuff input[type="button"],
+.theme-bestpetstuff input[type="submit"] { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; border: 0; border-radius: 999px; padding: 0.76rem 1.1rem; background: linear-gradient(180deg, #ff9f2e 0%, #e36f12 100%); color: #ffffff; font-weight: 900; text-decoration: none; box-shadow: 0 8px 18px rgba(195,91,24,0.22); transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease; }
+.theme-bestpetstuff .button-link:hover,
+.theme-bestpetstuff .amazon-button:hover,
+.theme-bestpetstuff .cta-button:hover,
+.theme-bestpetstuff .review-verdict-card__primary:hover { transform: translateY(-1px); filter: brightness(1.02); box-shadow: 0 12px 24px rgba(195,91,24,0.3); color: #ffffff; }
+.theme-bestpetstuff .tag,
+.theme-bestpetstuff .badge,
+.theme-bestpetstuff .signal-chip,
+.theme-bestpetstuff .home-browse-card span,
+.theme-bestpetstuff .home-method-card span,
+.theme-bestpetstuff .callout-eyebrow,
+.theme-bestpetstuff .cta-chip { display: inline-flex; width: fit-content; border: 1px solid #efd9c1; border-radius: 999px; background: #fff0df; color: #73340f; font-weight: 800; }
+.theme-bestpetstuff .site-footer { margin-top: 4rem; padding: 2rem 0; border-top: 6px solid var(--bps-green); background: var(--bps-text); color: #f8eadb; }
+.theme-bestpetstuff .site-footer a { color: #ffd1a0; }
+.theme-bestpetstuff .site-footer p,
+.theme-bestpetstuff .site-footer .footer-inner { color: #f2e3d2; }
+.theme-bestpetstuff input[type="search"],
+.theme-bestpetstuff .search-field { border: 1px solid var(--bps-line); border-radius: 999px; padding: 0.75rem 1rem; background: #ffffff; color: var(--bps-text); }
+.theme-bestpetstuff a:focus-visible,
+.theme-bestpetstuff button:focus-visible,
+.theme-bestpetstuff input:focus-visible,
+.theme-bestpetstuff select:focus-visible,
+.theme-bestpetstuff textarea:focus-visible { outline: 3px solid rgba(79,143,36,0.35); outline-offset: 3px; }
+@media (max-width: 768px) {
+    .theme-bestpetstuff .header-inner { flex-direction: column; align-items: flex-start; }
+    .theme-bestpetstuff .site-nav { width: 100%; gap: 0.55rem; overflow-x: auto; padding-bottom: 0.2rem; }
+    .theme-bestpetstuff .site-nav a { white-space: nowrap; padding: 0.45rem 0.55rem; }
+    .theme-bestpetstuff .hero,
+    .theme-bestpetstuff .fieldguide-hero,
+    .theme-bestpetstuff .bestpetstuff-hero { padding: 1.6rem 1.1rem; border-radius: 16px; }
+    .theme-bestpetstuff h1 { font-size: clamp(2rem, 9vw, 3rem); }
+    .theme-bestpetstuff h2 { font-size: clamp(1.45rem, 6vw, 2rem); }
+    .theme-bestpetstuff .article-body table,
+    .theme-bestpetstuff .comparison-table { font-size: 0.92rem; }
+}
 .button-link.amazon-button, .cta-button.amazon-button { background: #f59e0b; color: #ffffff; box-shadow: 0 10px 24px rgba(245,158,11,0.24); }
 @media (max-width: 720px) {
     .header-inner, .site-header.logo-center .header-inner, .product-cta, .affiliate-cta, .modern-hero, .article-intro-grid, .editorial-columns { flex-direction: column; align-items: flex-start; display: flex; }
@@ -4863,299 +6785,3 @@ body.theme-soundsleepgear article.article-shell > * { box-sizing: border-box; ma
     main { padding-left: 1rem; padding-right: 1rem; }
     .article-side { position: static; width: 100%; }
 }
-
-/* Better Water Guide dedicated water filtration theme */
-        .theme-betterwaterguide {
-            --bwg-navy: #09263f;
-            --bwg-blue: #0f8ec7;
-            --bwg-blue-dark: #056b9b;
-            --bwg-aqua: #41d6e8;
-            --bwg-soft-aqua: #e8fbff;
-            --bwg-pale-blue: #f3fbff;
-            --bwg-ice: #f8fdff;
-            --bwg-text: #27475d;
-            --bwg-muted: #6d8493;
-            --bwg-border: #c9ebf7;
-            --bwg-green: #1f9f74;
-            --bwg-sand: #fff8eb;
-            --bwg-radius: 18px;
-            --bwg-shadow: 0 18px 45px rgba(7,85,125,0.10);
-            --bwg-shadow-soft: 0 8px 22px rgba(7,85,125,0.08);
-            background:
-                radial-gradient(circle at 8% 0%, rgba(65,214,232,0.18), transparent 34rem),
-                radial-gradient(circle at 96% 16%, rgba(15,142,199,0.11), transparent 28rem),
-                linear-gradient(180deg, #f5fcff 0%, #ffffff 42%, var(--bwg-ice) 100%);
-            color: var(--bwg-text);
-            overflow-x: hidden;
-        }
-        .theme-betterwaterguide .site-header {
-            background: rgba(255,255,255,0.94);
-            border-bottom: 1px solid rgba(15,142,199,0.16);
-            box-shadow: 0 8px 28px rgba(8,54,82,0.05);
-            backdrop-filter: blur(12px);
-        }
-        .theme-betterwaterguide .header-inner { min-height: 76px; }
-        .theme-betterwaterguide .site-logo {
-            gap: 0.55rem;
-            color: var(--bwg-navy);
-            font-weight: 950;
-            letter-spacing: 0;
-            text-decoration: none;
-        }
-        .theme-betterwaterguide .site-logo::before {
-            content: "";
-            flex: 0 0 auto;
-            width: 32px;
-            height: 32px;
-            border-radius: 70% 70% 70% 18%;
-            transform: rotate(45deg);
-            background: linear-gradient(135deg, var(--bwg-aqua), var(--bwg-blue));
-            box-shadow: 0 0 0 6px rgba(65,214,232,0.14), 0 10px 22px rgba(15,142,199,0.18);
-        }
-        .theme-betterwaterguide .site-nav { align-items: center; gap: 1rem; }
-        .theme-betterwaterguide .site-nav a,
-        .theme-betterwaterguide .footer-nav a {
-            color: var(--bwg-navy);
-            font-weight: 850;
-            text-decoration: none;
-        }
-        .theme-betterwaterguide .site-nav a::after,
-        .theme-betterwaterguide .footer-nav a::after {
-            height: 3px;
-            border-radius: 999px;
-            background: linear-gradient(90deg, var(--bwg-blue), var(--bwg-aqua));
-        }
-        .theme-betterwaterguide .site-nav a:hover,
-        .theme-betterwaterguide .footer-nav a:hover { color: var(--bwg-blue-dark); }
-        .theme-betterwaterguide .site-kicker,
-        .theme-betterwaterguide .hero-eyebrow,
-        .theme-betterwaterguide .section-kicker,
-        .theme-betterwaterguide .feature-meta,
-        .theme-betterwaterguide .article-kicker,
-        .theme-betterwaterguide .footer-label,
-        .theme-betterwaterguide .cta-label {
-            color: var(--bwg-blue-dark);
-            font-size: 0.72rem;
-            font-weight: 950;
-            letter-spacing: 0.11em;
-            text-transform: uppercase;
-        }
-        .theme-betterwaterguide .hero,
-        .theme-betterwaterguide .modern-hero {
-            position: relative;
-            margin: 2.5rem 0 2.8rem;
-            padding: clamp(2.1rem, 4.2vw, 3.35rem);
-            border: 1px solid var(--bwg-border);
-            border-left: 7px solid var(--bwg-blue);
-            border-radius: 24px;
-            background:
-                radial-gradient(circle at 92% 10%, rgba(65,214,232,0.28), transparent 18rem),
-                radial-gradient(circle at 3% 100%, rgba(15,142,199,0.11), transparent 16rem),
-                linear-gradient(135deg, #ffffff 0%, #f1fbff 100%);
-            box-shadow: var(--bwg-shadow);
-            overflow: hidden;
-        }
-        .theme-betterwaterguide .hero::after,
-        .theme-betterwaterguide .modern-hero::after {
-            content: "Filter type / water concern / upkeep";
-            position: absolute;
-            top: 1.2rem;
-            right: 1.25rem;
-            display: inline-flex;
-            max-width: calc(100% - 2.5rem);
-            padding: 0.42rem 0.7rem;
-            border: 1px solid rgba(65,214,232,0.36);
-            border-radius: 999px;
-            background: var(--bwg-soft-aqua);
-            color: var(--bwg-blue-dark);
-            font-size: 0.72rem;
-            font-weight: 950;
-            letter-spacing: 0.02em;
-            white-space: normal;
-        }
-        .theme-betterwaterguide .hero > *,
-        .theme-betterwaterguide .modern-hero > * { position: relative; z-index: 1; }
-        .theme-betterwaterguide .hero h1,
-        .theme-betterwaterguide h1,
-        .theme-betterwaterguide h2,
-        .theme-betterwaterguide h3 { color: var(--bwg-navy); letter-spacing: 0; }
-        .theme-betterwaterguide .hero h1,
-        .theme-betterwaterguide h1 { max-width: 56rem; font-size: clamp(1.95rem, 3.1vw, 3rem); line-height: 1.08; }
-        .theme-betterwaterguide h2,
-        .theme-betterwaterguide .section-title { font-size: clamp(1.28rem, 1.9vw, 1.72rem); line-height: 1.16; }
-        .theme-betterwaterguide .article-body h2 { padding-top: 0.42rem; border-top: 1px solid rgba(15,142,199,0.14); }
-        .theme-betterwaterguide .article-body h2::before {
-            content: "";
-            display: inline-block;
-            width: 0.62rem;
-            height: 0.62rem;
-            margin-right: 0.45rem;
-            border-radius: 70% 70% 70% 20%;
-            transform: rotate(45deg);
-            background: linear-gradient(135deg, var(--bwg-aqua), var(--bwg-blue));
-            vertical-align: 0.08em;
-        }
-        .theme-betterwaterguide p,
-        .theme-betterwaterguide .section-description,
-        .theme-betterwaterguide .article-card p,
-        .theme-betterwaterguide .article-meta,
-        .theme-betterwaterguide .footer-inner { color: var(--bwg-muted); }
-        .theme-betterwaterguide a { color: var(--bwg-blue-dark); text-decoration-color: rgba(15,142,199,0.35); text-decoration-thickness: 2px; text-underline-offset: 3px; }
-        .theme-betterwaterguide a:hover { color: var(--bwg-navy); text-decoration-color: var(--bwg-blue); }
-        .theme-betterwaterguide article.article-shell { padding: clamp(1.4rem, 3vw, 2.6rem); }
-        .theme-betterwaterguide article.article-shell:has(.audible-sponsored-slot) { overflow: visible; }
-        .theme-betterwaterguide .article-card,
-        .theme-betterwaterguide .spotlight-card,
-        .theme-betterwaterguide .home-browse-card,
-        .theme-betterwaterguide .home-method-card,
-        .theme-betterwaterguide .home-latest-item,
-        .theme-betterwaterguide .simple-row,
-        .theme-betterwaterguide .article-summary,
-        .theme-betterwaterguide .table-of-contents,
-        .theme-betterwaterguide .disclosure-inline,
-        .theme-betterwaterguide .affiliate-cta,
-        .theme-betterwaterguide .see-also,
-        .theme-betterwaterguide .review-verdict-card,
-        .theme-betterwaterguide .utility-tool,
-        .theme-betterwaterguide .product-box-water,
-        .theme-betterwaterguide .comparison-shell-water,
-        .theme-betterwaterguide .pros-cons-water {
-            border: 1px solid var(--bwg-border);
-            border-radius: var(--bwg-radius);
-            background: linear-gradient(180deg, #ffffff 0%, var(--bwg-ice) 100%);
-            box-shadow: var(--bwg-shadow-soft);
-        }
-        .theme-betterwaterguide .article-card,
-        .theme-betterwaterguide .home-browse-card,
-        .theme-betterwaterguide .home-method-card,
-        .theme-betterwaterguide .home-latest-item,
-        .theme-betterwaterguide .simple-row { position: relative; overflow: hidden; transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
-        .theme-betterwaterguide .article-card::before,
-        .theme-betterwaterguide .home-browse-card::before,
-        .theme-betterwaterguide .home-method-card::before,
-        .theme-betterwaterguide .home-latest-item::before,
-        .theme-betterwaterguide .simple-row::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--bwg-blue), var(--bwg-aqua)); opacity: 0; transition: opacity 160ms ease; }
-        .theme-betterwaterguide .article-card:hover,
-        .theme-betterwaterguide .home-browse-card:hover,
-        .theme-betterwaterguide .home-method-card:hover,
-        .theme-betterwaterguide .home-latest-item:hover,
-        .theme-betterwaterguide .simple-row:hover { transform: translateY(-3px); border-color: rgba(15,142,199,0.45); box-shadow: 0 20px 45px rgba(7,85,125,0.14); }
-        .theme-betterwaterguide .article-card:hover::before,
-        .theme-betterwaterguide .home-browse-card:hover::before,
-        .theme-betterwaterguide .home-method-card:hover::before,
-        .theme-betterwaterguide .home-latest-item:hover::before,
-        .theme-betterwaterguide .simple-row:hover::before { opacity: 1; }
-        .theme-betterwaterguide .article-card h2,
-        .theme-betterwaterguide .article-card h3,
-        .theme-betterwaterguide .home-browse-card h3,
-        .theme-betterwaterguide .home-method-card h3,
-        .theme-betterwaterguide .home-latest-item h3 { margin-top: 0; font-size: clamp(1rem, 1.25vw, 1.18rem); line-height: 1.25; }
-        .theme-betterwaterguide .home-depth,
-        .theme-betterwaterguide .home-method,
-        .theme-betterwaterguide .home-latest { border-top: 1px solid var(--bwg-border); }
-        .theme-betterwaterguide .home-browse-card span,
-        .theme-betterwaterguide .home-method-card span,
-        .theme-betterwaterguide .signal-strip span,
-        .theme-betterwaterguide .tag,
-        .theme-betterwaterguide .badge,
-        .theme-betterwaterguide .cta-chip,
-        .theme-betterwaterguide .callout-eyebrow {
-            display: inline-flex;
-            width: fit-content;
-            border: 1px solid var(--bwg-border);
-            border-radius: 999px;
-            background: var(--bwg-soft-aqua);
-            color: var(--bwg-blue-dark);
-            font-weight: 850;
-        }
-        .theme-betterwaterguide .article-summary,
-        .theme-betterwaterguide .quick-take,
-        .theme-betterwaterguide .summary-box,
-        .theme-betterwaterguide .buyer-fit,
-        .theme-betterwaterguide blockquote,
-        .theme-betterwaterguide .bottom-line-callout,
-        .theme-betterwaterguide .roundup-hero-callout {
-            border-left: 6px solid var(--bwg-blue);
-            background: linear-gradient(135deg, #ffffff 0%, var(--bwg-pale-blue) 100%);
-        }
-        .theme-betterwaterguide .affiliate-cta,
-        .theme-betterwaterguide .product-cta,
-        .theme-betterwaterguide .review-verdict-card {
-            background:
-                radial-gradient(circle at 100% 0%, rgba(65,214,232,0.16), transparent 12rem),
-                linear-gradient(135deg, #ffffff 0%, #f7fdff 100%);
-        }
-        .theme-betterwaterguide .button-link,
-        .theme-betterwaterguide .amazon-button,
-        .theme-betterwaterguide .cta-button,
-        .theme-betterwaterguide .review-verdict-card__primary,
-        .theme-betterwaterguide button,
-        .theme-betterwaterguide input[type="submit"] {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 42px;
-            border: 0;
-            border-radius: 999px;
-            padding: 0.72rem 1.05rem;
-            background: linear-gradient(135deg, var(--bwg-blue), var(--bwg-blue-dark));
-            color: #ffffff;
-            font-weight: 950;
-            text-decoration: none;
-            box-shadow: 0 12px 24px rgba(15,142,199,0.23);
-        }
-        .theme-betterwaterguide .button-link:hover,
-        .theme-betterwaterguide .amazon-button:hover,
-        .theme-betterwaterguide .cta-button:hover,
-        .theme-betterwaterguide .review-verdict-card__primary:hover { color: #ffffff; transform: translateY(-1px); box-shadow: 0 16px 32px rgba(15,142,199,0.30); }
-        .theme-betterwaterguide table,
-        .theme-betterwaterguide .comparison-table {
-            width: 100%;
-            table-layout: fixed;
-            border-collapse: separate;
-            border-spacing: 0;
-            border: 1px solid var(--bwg-border);
-            border-radius: 16px;
-            background: #ffffff;
-            box-shadow: var(--bwg-shadow-soft);
-            overflow: hidden;
-        }
-        .theme-betterwaterguide th,
-        .theme-betterwaterguide .comparison-table th { background: linear-gradient(135deg, #e7faff, #d7f5ff); color: var(--bwg-navy); font-weight: 900; }
-        .theme-betterwaterguide td,
-        .theme-betterwaterguide th,
-        .theme-betterwaterguide .comparison-table td,
-        .theme-betterwaterguide .comparison-table th { border-color: rgba(15,142,199,0.13); overflow-wrap: anywhere; word-break: normal; }
-        .theme-betterwaterguide tr:nth-child(even) td { background: var(--bwg-ice); }
-        .theme-betterwaterguide .site-footer {
-            margin-top: 4rem;
-            padding: 2rem 0;
-            border-top: 1px solid rgba(65,214,232,0.22);
-            background: radial-gradient(circle at 20% 0%, rgba(65,214,232,0.15), transparent 22rem), linear-gradient(180deg, var(--bwg-navy) 0%, #071d31 100%);
-            color: rgba(255,255,255,0.78);
-        }
-        .theme-betterwaterguide .site-footer a { color: #bff5ff; }
-        .theme-betterwaterguide a:focus-visible,
-        .theme-betterwaterguide button:focus-visible,
-        .theme-betterwaterguide input:focus-visible,
-        .theme-betterwaterguide select:focus-visible,
-        .theme-betterwaterguide textarea:focus-visible { outline: 3px solid rgba(65,214,232,0.42); outline-offset: 3px; }
-        @media (max-width: 760px) {
-            .theme-betterwaterguide .header-inner { min-height: auto; padding: 0.85rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
-            .theme-betterwaterguide .site-nav { width: 100%; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.2rem; }
-            .theme-betterwaterguide .site-nav a { white-space: nowrap; font-size: 0.86rem; }
-            .theme-betterwaterguide main,
-            .theme-betterwaterguide .container,
-            .theme-betterwaterguide .content { width: auto; padding-left: 1rem; padding-right: 1rem; }
-            .theme-betterwaterguide .hero,
-            .theme-betterwaterguide .modern-hero,
-            .theme-betterwaterguide .article-header { margin: 2rem 0; padding: 1.65rem 1.2rem; border-radius: 20px; }
-            .theme-betterwaterguide .hero::after,
-            .theme-betterwaterguide .modern-hero::after { position: static; margin-top: 1rem; }
-            .theme-betterwaterguide h1 { font-size: 1.85rem; }
-            .theme-betterwaterguide h2 { font-size: 1.35rem; }
-            .theme-betterwaterguide .article-grid,
-            .theme-betterwaterguide .home-browse-grid,
-            .theme-betterwaterguide .home-method-grid,
-            .theme-betterwaterguide .section-listing .article-grid { grid-template-columns: 1fr; }
-        }

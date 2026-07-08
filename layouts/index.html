@@ -1,71 +1,20 @@
 {{ define "main" }}
-<div class="homepage">
-    <section class="hero">
+<div class="homepage directory-home">
+    <section class="hero directory-hero">
+        <p class="hero-eyebrow">{{ .Site.Params.heroEyebrow | default "Practical guidance" }}</p>
         <h1>{{ .Site.Title }}</h1>
-        {{ if .Content }}
-        <div class="hero-copy">{{ .Content }}</div>
-        {{ else if .Site.Params.description }}
-        <p>{{ .Site.Params.description }}</p>
-        {{ end }}
+        <div class="hero-copy">{{ if .Content }}{{ .Content }}{{ else }}<p>{{ .Site.Params.description }}</p>{{ end }}</div>
     </section>
     {{ $bestPages := slice }}{{ if .Site.Params.showBestSection }}{{ $bestPages = where .Site.RegularPages "Section" "best" }}{{ end }}
     {{ if $bestPages }}
-    <section class="home-section">
-        <h2>Best Picks</h2>
-        <div class="article-grid">
-            {{ range first 4 ($bestPages.ByDate.Reverse) }}
-            <article class="article-card">
-                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Description }}</p>
-            </article>
-            {{ end }}
-        </div>
-        <a href="/best/" class="see-all">{{ .Site.Params.homeBestCta | default "See all recommendations ->" }}</a>
-    </section>
-    {{ end }}
-    {{ $reviewPages := slice }}{{ if .Site.Params.showReviewsSection }}{{ $reviewPages = where .Site.RegularPages "Section" "reviews" }}{{ end }}
-    {{ if $reviewPages }}
-    <section class="home-section">
-        <h2>Latest Reviews</h2>
-        <div class="article-grid">
-            {{ range first 6 ($reviewPages.ByDate.Reverse) }}
-            <article class="article-card">
-                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Description }}</p>
-            </article>
-            {{ end }}
-        </div>
-        <a href="/reviews/" class="see-all">{{ .Site.Params.homeReviewsCta | default "See all reviews ->" }}</a>
-    </section>
-    {{ end }}
-    {{ $vsPages := slice }}{{ if .Site.Params.showComparisonSection }}{{ $vsPages = where .Site.RegularPages "Section" "vs" }}{{ end }}
-    {{ if $vsPages }}
-    <section class="home-section">
-        <h2>{{ .Site.Params.homeVsHeading | default "Comparisons" }}</h2>
-        <div class="article-grid">
-            {{ range first 4 ($vsPages.ByDate.Reverse) }}
-            <article class="article-card">
-                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Description }}</p>
-            </article>
-            {{ end }}
-        </div>
-        <a href="/vs/" class="see-all">{{ .Site.Params.homeVsCta | default "See all comparisons ->" }}</a>
-    </section>
-    {{ end }}
-    {{ $guidePages := slice }}{{ if .Site.Params.showGuidesSection }}{{ $guidePages = where .Site.RegularPages "Section" "guides" }}{{ end }}
-    {{ if $guidePages }}
-    <section class="home-section">
-        <h2>{{ .Site.Params.homeGuidesHeading | default (.Site.Params.guideSectionLabel | default "Guides") }}</h2>
-        <div class="article-grid">
-            {{ range first 4 ($guidePages.ByDate.Reverse) }}
-            <article class="article-card">
-                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p>{{ .Description }}</p>
-            </article>
-            {{ end }}
-        </div>
-        <a href="/guides/" class="see-all">{{ .Site.Params.homeGuidesCta | default "See all guides ->" }}</a>
+    <section class="home-section simple-list directory-list">
+        <h2>Indexed starting points</h2>
+        {{ range first 6 ($bestPages.ByDate.Reverse) }}
+        <article class="simple-row directory-row">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Description }}</p>
+        </article>
+        {{ end }}
     </section>
     {{ end }}
 
