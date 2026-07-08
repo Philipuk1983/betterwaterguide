@@ -1,9 +1,11 @@
 {{ define "main" }}
 <div class="homepage directory-home">
     <section class="hero directory-hero">
-        <p class="hero-eyebrow">{{ .Site.Params.heroEyebrow | default "Practical guidance" }}</p>
-        <h1>{{ .Site.Title }}</h1>
-        <div class="hero-copy">{{ if .Content }}{{ .Content }}{{ else }}<p>{{ .Site.Params.description }}</p>{{ end }}</div>
+        <div class="directory-hero-copy">
+            <p class="hero-eyebrow">{{ .Site.Params.heroEyebrow | default "Practical guidance" }}</p>
+            <h1>{{ .Site.Title }}</h1>
+            <div class="hero-copy">{{ if .Content }}{{ .Content }}{{ else }}<p>{{ .Site.Params.description }}</p>{{ end }}</div>
+        </div>
     </section>
     {{ $bestPages := slice }}{{ if .Site.Params.showBestSection }}{{ $bestPages = where .Site.RegularPages "Section" "best" }}{{ end }}
     {{ if $bestPages }}

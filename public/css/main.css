@@ -2127,7 +2127,10 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
     background: linear-gradient(135deg, #ffffff 0%, #e9fbff 55%, #d9f5ff 100%);
     box-shadow: 0 24px 70px rgba(7,85,125,0.12);
 }
+.theme-betterwaterguide .directory-hero-copy { display: grid; align-content: center; min-width: 0; }
+.theme-betterwaterguide .directory-hero-copy .hero-copy { max-width: 42rem; }
 .theme-betterwaterguide .directory-hero::after {
+    position: static;
     content: "Filter route check\A Test -> Type -> Flow -> Cartridge";
     white-space: pre-line;
     align-self: stretch;
@@ -2144,14 +2147,18 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
     line-height: 1.5;
 }
 .theme-betterwaterguide .directory-list { border-left: 6px solid var(--bwg-aqua); padding-left: clamp(1rem, 2vw, 1.5rem); }
-.theme-betterwaterguide .directory-row { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 1rem; align-items: start; border-radius: 0; border-width: 0 0 1px; box-shadow: none; }
-.theme-betterwaterguide .directory-row::before { content: "WATER CHECK"; color: var(--bwg-blue-dark); font-size: 0.72rem; font-weight: 950; letter-spacing: 0.08em; }
+.theme-betterwaterguide .directory-row { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 0.35rem 1.25rem; align-items: start; border-radius: 0; border-width: 0 0 1px; box-shadow: none; }
+.theme-betterwaterguide .directory-row::before { grid-row: 1 / span 2; content: "WATER CHECK"; color: var(--bwg-blue-dark); font-size: 0.72rem; font-weight: 950; letter-spacing: 0.08em; }
+.theme-betterwaterguide .directory-row h3,
+.theme-betterwaterguide .directory-row p { grid-column: 2; min-width: 0; }
+.theme-betterwaterguide .directory-row h3 { margin-bottom: 0.2rem; }
+.theme-betterwaterguide .directory-row p { margin-top: 0; }
 
 .theme-homegymstarter .workbench-home { max-width: 76rem; margin: 0 auto; }
 .theme-homegymstarter .workbench-hero {
     border-radius: 8px;
     padding: clamp(2rem, 5vw, 4rem);
-    background: linear-gradient(135deg, #1f2933 0%, #303844 62%, #f28a00 62%, #f7a21e 100%);
+    background: linear-gradient(90deg, #f28a00 0 10px, transparent 10px 100%), repeating-linear-gradient(0deg, rgba(255,255,255,0.055) 0 1px, transparent 1px 16px), repeating-linear-gradient(90deg, rgba(255,255,255,0.045) 0 1px, transparent 1px 16px), linear-gradient(135deg, #1f2933 0%, #303844 100%);
     box-shadow: 0 28px 70px rgba(24,32,43,0.22);
 }
 .theme-homegymstarter .workbench-hero h1,
@@ -2165,15 +2172,19 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .theme-campingkitlist .fieldguide-hero {
     padding: clamp(2rem, 5vw, 4rem);
     border-radius: 0 32px 32px 0;
-    border-left: 10px solid var(--ckl-fire);
+    border-left: 10px solid var(--ckl-campfire);
     background: linear-gradient(135deg, rgba(36,70,38,0.96), rgba(28,54,30,0.92)), repeating-linear-gradient(45deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 12px);
     box-shadow: 0 20px 60px rgba(23,47,25,0.20);
 }
 .theme-campingkitlist .fieldguide-hero h1,
 .theme-campingkitlist .fieldguide-hero p { color: #fffaf0; }
 .theme-campingkitlist .simple-list { padding: clamp(1rem, 3vw, 2rem); background: #fff8e8; border: 1px solid rgba(36,70,38,0.18); border-radius: 10px; }
-.theme-campingkitlist .fieldguide-row { display: grid; grid-template-columns: 1.25rem minmax(0, 1fr); gap: 0.85rem; border-left: 0; padding-left: 0; }
-.theme-campingkitlist .fieldguide-row::before { content: ""; width: 0.8rem; height: 0.8rem; margin-top: 0.45rem; border-radius: 50%; background: var(--ckl-fire); box-shadow: 0 0 0 4px rgba(217,133,0,0.16); }
+.theme-campingkitlist .fieldguide-row { display: grid; grid-template-columns: 1.25rem minmax(0, 1fr); gap: 0.25rem 0.85rem; border-left: 0; padding-left: 0; }
+.theme-campingkitlist .fieldguide-row::before { grid-row: 1 / span 2; content: ""; width: 0.8rem; height: 0.8rem; margin-top: 0.45rem; border-radius: 50%; background: var(--ckl-campfire); box-shadow: 0 0 0 4px rgba(217,133,0,0.16); }
+.theme-campingkitlist .fieldguide-row h3,
+.theme-campingkitlist .fieldguide-row p { grid-column: 2; min-width: 0; }
+.theme-campingkitlist .fieldguide-row h3 { margin-bottom: 0.15rem; }
+.theme-campingkitlist .fieldguide-row p { margin-top: 0; }
 
 .theme-beginnerhikingguide .beginnerhikingguide-home { max-width: 70rem; margin: 0 auto; }
 .theme-beginnerhikingguide .beginnerhikingguide-hero {
@@ -2185,12 +2196,12 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .theme-beginnerhikingguide .trailhead-panel { display: grid; grid-template-columns: 1.2fr 0.9fr 0.9fr; gap: 1rem; margin-top: 1.5rem; }
 .theme-beginnerhikingguide .trailhead-card { display: grid; gap: 0.45rem; min-height: 12rem; padding: 1.25rem; border-radius: 22px; background: #fffaf0; border: 1px solid rgba(93,127,53,0.18); text-decoration: none; box-shadow: 0 16px 38px rgba(39,79,47,0.10); }
 .theme-beginnerhikingguide .trailhead-card--wide { background: linear-gradient(135deg, #274f2f, #5d7f35); color: #fffaf0; }
-.theme-beginnerhikingguide .trailhead-card--wide strong,
-.theme-beginnerhikingguide .trailhead-card--wide em,
-.theme-beginnerhikingguide .trailhead-card--wide span { color: #fffaf0; }
 .theme-beginnerhikingguide .trailhead-card span { font-family: var(--font-heading); font-weight: 950; color: var(--bhg-sun-dark); }
 .theme-beginnerhikingguide .trailhead-card strong { font-size: 1.15rem; color: var(--bhg-pine-dark); }
 .theme-beginnerhikingguide .trailhead-card em { color: var(--bhg-muted); font-style: normal; }
+.theme-beginnerhikingguide .trailhead-card--wide strong,
+.theme-beginnerhikingguide .trailhead-card--wide em,
+.theme-beginnerhikingguide .trailhead-card--wide span { color: #fffaf0; }
 .theme-beginnerhikingguide .trail-checklist-row { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 0.75rem; border-left: 0; padding-left: 0; }
 .theme-beginnerhikingguide .trail-checklist-row > span { width: 1.45rem; height: 1.45rem; border: 3px solid var(--bhg-leaf); border-radius: 6px; margin-top: 0.25rem; background: #fffaf0; }
 
