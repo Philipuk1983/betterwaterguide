@@ -1,5 +1,5 @@
 ---
-title: "Ro System Recovery Rate Explained for Homeowners: What It Means for Your Water Use"
+title: "RO System Recovery Rate Explained for Homeowners: What It Means for Your Water Use"
 slug: "ro-system-recovery-rate-explained-for-homeowners-what-it-means-for-your-water-use"
 keyword_id: 40525456
 topic_key: "guide:ro system recovery rate explained for homeowner"

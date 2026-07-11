@@ -1,5 +1,5 @@
 ---
-title: "Aquasana Whole House Water Filter: Who It's for, Costs, and Trade-Offs: Buyer Guide"
+title: "Aquasana Whole House Water Filter: Who It's for, Costs, and Trade-Offs"
 slug: "aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide"
 keyword_id: 26188765
 topic_key: "review:aquasana whole house water filter review"

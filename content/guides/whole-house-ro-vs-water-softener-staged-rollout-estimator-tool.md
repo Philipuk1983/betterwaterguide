@@ -1,5 +1,5 @@
 ---
-title: "Whole-House Ro vs Water Softener Staged Rollout Estimator Tool"
+title: "Whole-House RO vs Water Softener Staged Rollout Estimator Tool"
 slug: "whole-house-ro-vs-water-softener-staged-rollout-estimator-tool"
 keyword_id: 40438902
 topic_key: "tool:whole house ro vs softener staged rollout estimator tool"

@@ -1,5 +1,5 @@
 ---
-title: "Ro System Waste Water Ratio: What Homeowners Should Know for Kitchen Use"
+title: "RO System Waste Water Ratio: What Homeowners Should Know for Kitchen Use"
 slug: "ro-system-waste-water-ratio-what-homeowners-should-know-for-kitchen-use"
 keyword_id: 40433170
 topic_key: "guide:ro system waste water ratio explained for homeowner"

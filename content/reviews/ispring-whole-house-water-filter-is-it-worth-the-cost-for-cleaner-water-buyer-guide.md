@@ -1,5 +1,5 @@
 ---
-title: "Ispring Whole House Water Filter: What to Know Before You Buy"
+title: "iSpring Whole House Water Filter: What to Know Before You Buy"
 slug: "ispring-whole-house-water-filter-is-it-worth-the-cost-for-cleaner-water-buyer-guide"
 keyword_id: 26650518
 topic_key: "review:ispring whole house water filter review"

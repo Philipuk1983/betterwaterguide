@@ -1,5 +1,5 @@
 ---
-title: "Bluevua Whole House Water Filter: Worth It for Clean, Scale-Free Water?: Buyer Guide"
+title: "Bluevua Whole House Water Filter: Worth It for Clean, Scale-Free Water?"
 slug: "bluevua-whole-house-water-filter-worth-it-for-clean-scale-free-water-buyer-guide"
 keyword_id: 40440103
 topic_key: "review:bluevua whole house filter review"

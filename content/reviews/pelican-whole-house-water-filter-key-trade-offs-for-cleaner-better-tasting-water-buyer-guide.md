@@ -1,5 +1,5 @@
 ---
-title: "Pelican Whole House Water Filter: Key Trade-Offs for Cleaner, Better-Tasting Water: Buyer Guide"
+title: "Pelican Whole House Water Filter: Key Trade-Offs for Cleaner, Better-Tasting Water"
 slug: "pelican-whole-house-water-filter-key-trade-offs-for-cleaner-better-tasting-water-buyer-guide"
 keyword_id: 28403495
 topic_key: "review:pelican whole house water filter review"
