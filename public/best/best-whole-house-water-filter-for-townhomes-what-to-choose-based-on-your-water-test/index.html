@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5T2FRHBB');</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3GZKYJF7J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-V3GZKYJF7J');
+</script>
+<script>
+(function() {
+    var requiredVisibleMilliseconds = 5000;
+    var visibleSince = document.visibilityState === "visible" ? Date.now() : null;
+    var accumulatedVisibleMilliseconds = 0;
+    var qualificationTimer = null;
+    var qualified = false;
+
+    function visibleMilliseconds() {
+        return accumulatedVisibleMilliseconds
+            + (visibleSince === null ? 0 : Date.now() - visibleSince);
+    }
+
+    function clearQualificationTimer() {
+        if (qualificationTimer !== null) {
+            window.clearTimeout(qualificationTimer);
+            qualificationTimer = null;
+        }
+    }
+
+    function qualify(reason) {
+        if (qualified) {
+            return;
+        }
+
+        qualified = true;
+        clearQualificationTimer();
+        document.documentElement.setAttribute("data-human-traffic-qualified", reason);
+        window.gtag('event', 'human_page_view', {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            qualification_reason: reason,
+            visible_milliseconds: Math.round(visibleMilliseconds())
+        });
+    }
+
+    function scheduleVisibleQualification() {
+        clearQualificationTimer();
+        if (qualified || document.visibilityState !== "visible") {
+            return;
+        }
+
+        var remaining = requiredVisibleMilliseconds - visibleMilliseconds();
+        if (remaining <= 0) {
+            qualify("visible_5_seconds");
+            return;
+        }
+
+        qualificationTimer = window.setTimeout(function() {
+            qualify("visible_5_seconds");
+        }, remaining);
+    }
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === "visible") {
+            if (visibleSince === null) {
+                visibleSince = Date.now();
+            }
+            scheduleVisibleQualification();
+            return;
+        }
+
+        if (visibleSince !== null) {
+            accumulatedVisibleMilliseconds += Date.now() - visibleSince;
+            visibleSince = null;
+        }
+        clearQualificationTimer();
+    });
+
+    function qualifyFromInteraction() {
+        qualify("interaction");
+    }
+
+    document.addEventListener("pointerdown", qualifyFromInteraction, { once: true, passive: true });
+    document.addEventListener("keydown", qualifyFromInteraction, { once: true });
+    document.addEventListener("scroll", qualifyFromInteraction, { once: true, passive: true });
+    window.addEventListener("pagehide", function() {
+        if (visibleMilliseconds() >= requiredVisibleMilliseconds) {
+            qualify("visible_5_seconds");
+        }
+    }, { once: true });
+
+    scheduleVisibleQualification();
+})();
+</script>
+<script>
+(function() {
+    function isAmazonHost(hostname) {
+        var host = (hostname || "").toLowerCase();
+        return host === "amzn.to"
+            || host === "a.co"
+            || /(^|\.)amazon\.[a-z.]+$/.test(host);
+    }
+
+    function cleanText(value) {
+        return (value || "").replace(/\s+/g, " ").trim().slice(0, 160);
+    }
+
+    function dataValue(element, names) {
+        for (var i = 0; i < names.length; i += 1) {
+            if (element.dataset && element.dataset[names[i]]) {
+                return element.dataset[names[i]];
+            }
+        }
+        return "";
+    }
+
+    function closestDataValue(link, names) {
+        var selector = names.map(function(name) { return "[data-" + name.replace(/[A-Z]/g, function(match) { return "-" + match.toLowerCase(); }) + "]"; }).join(",");
+        var node = selector && link.closest ? link.closest(selector) : null;
+        return node ? dataValue(node, names) : "";
+    }
+
+    function amazonProductId(url) {
+        var path = decodeURIComponent(url.pathname || "");
+        var match = path.match(/\/(?:dp|gp\/product|gp\/aw\/d|exec\/obidos\/ASIN)\/([A-Z0-9]{10})(?:[/?]|$)/i);
+        if (match) {
+            return match[1].toUpperCase();
+        }
+
+        var asin = url.searchParams.get("asin") || url.searchParams.get("ASIN");
+        return /^[A-Z0-9]{10}$/i.test(asin || "") ? asin.toUpperCase() : "";
+    }
+
+    function productName(link) {
+        var explicit = dataValue(link, ["productName", "product", "itemName"]) || closestDataValue(link, ["productName", "product", "itemName"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        var cta = link.closest ? link.closest(".affiliate-cta, .product-cta, .section-product-cta, tr, li") : null;
+        var namedNode = cta ? cta.querySelector("[data-product-name], .affiliate-cta__name-link, strong, h2, h3, th") : null;
+        return cleanText((namedNode && namedNode.textContent) || link.getAttribute("aria-label") || link.getAttribute("title") || link.textContent);
+    }
+
+    function placement(link) {
+        var explicit = dataValue(link, ["affiliatePlacement", "placement"]) || closestDataValue(link, ["affiliatePlacement", "placement"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        if (link.closest) {
+            if (link.closest(".affiliate-cta--hero")) return "hero_cta";
+            if (link.closest(".affiliate-cta--mid")) return "mid_article_cta";
+            if (link.closest(".affiliate-cta--post-editor")) return "post_editor_cta";
+            if (link.closest(".affiliate-cta--verdict")) return "verdict_cta";
+            if (link.closest(".affiliate-cta--context")) return "context_cta";
+            if (link.closest(".affiliate-cta")) return "affiliate_cta";
+            if (link.closest("table")) return "comparison_table";
+            if (link.closest("header, .hero, .modern-hero")) return "hero";
+        }
+
+        return "amazon_link";
+    }
+
+    document.addEventListener("click", function(event) {
+        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) {
+            return;
+        }
+
+        var url;
+        try {
+            url = new URL(link.href, window.location.href);
+        } catch (_) {
+            return;
+        }
+
+        if (!isAmazonHost(url.hostname)) {
+            return;
+        }
+
+        var payload = {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            affiliate_network: "amazon",
+            merchant: "amazon",
+            product_id: amazonProductId(url),
+            product_name: productName(link),
+            placement: placement(link),
+            link_url: url.href
+        };
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: "affiliate_click" }, payload));
+        window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
+    }, true);
+})();
+</script>
+
+
+
+
+
+
+<title>Best Whole House Water Filter for Townhomes: What to Choose Based on Your Water Test | Better Water Guide</title>
+<meta name="description" content="For most townhomes, the best whole house water filter is the one that matches the water test and stays manageable in a tight service area.">
+<link rel="canonical" href="https://betterwaterguide.com/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:title" content="Best Whole House Water Filter for Townhomes: What to Choose Based on Your Water Test | Better Water Guide">
+<meta property="og:description" content="For most townhomes, the best whole house water filter is the one that matches the water test and stays manageable in a tight service area.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://betterwaterguide.com/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/">
+<meta property="og:site_name" content="Better Water Guide">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Best Whole House Water Filter for Townhomes: What to Choose Based on Your Water Test | Better Water Guide">
+<meta name="twitter:description" content="For most townhomes, the best whole house water filter is the one that matches the water test and stays manageable in a tight service area.">
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Source%20Sans%203:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/main.min.3ddf1c2bfbab0997c3c28e503cbe87c78119b9aedd59250bb456b4d73a1454f9.css" integrity="sha256-Pd8cK/urCZfDwo5QPL6Hx4EZua7dWSULtFa01zoUVPk=">
+
+<script defer src="/js/article-enhancements.js?v=1783871056"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.","name":"Better Water Guide","url":"https://betterwaterguide.com/"}</script>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Best","author":{"@type":"Organization","name":"Better Water Guide Editorial Team","url":"https://betterwaterguide.com/authors/editorial-team/"},"dateModified":"2026-07-08T00:00:00Z","datePublished":"2026-07-08T00:00:00Z","description":"For most townhomes, the best whole house water filter is the one that matches the water test and stays manageable in a tight service area.","headline":"Best Whole House Water Filter for Townhomes: What to Choose Based on Your Water Test","inLanguage":"en-us","isAccessibleForFree":true,"keywords":"best whole house water filter for townhomes, best whole house water filter for townhomes 2026, top whole house water filter for townhomes","mainEntityOfPage":{"@id":"https://betterwaterguide.com/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/","@type":"WebPage"},"publisher":{"@type":"Organization","name":"Better Water Guide","url":"https://betterwaterguide.com/"},"url":"https://betterwaterguide.com/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/","wordCount":1957}</script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Use a whole-house filter when the same problem shows up at showers, bathroom sinks, kitchen taps, and laundry. An under-sink filter only improves water at one faucet."},"name":"Do townhomes need a whole house water filter or just an under-sink filter?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Cloudiness, visible grit, rust-colored particles, and dirty sink screens point to sediment. Chlorine shows up more as taste or odor, often when the water looks clear."},"name":"What water test result points to sediment instead of chlorine?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"No. Hard water needs a softener or a softener-plus-filter setup. Filtration handles particles, taste, and odor, not scale."},"name":"Will a whole house water filter fix hard water?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"It can be, but only when the water report shows several issues and the service area is roomy enough for replacement work. If chlorine is the only complaint, a simpler carbon system is the cleaner buy."},"name":"Is a 20-stage system worth it in a townhome?"}],"mainEntityOfPage":{"@id":"https://betterwaterguide.com/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/","@type":"WebPage"}}</script>
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","name":"AquaPure EPWHEC-2000E","position":1,"url":"https://www.amazon.com/s?k=AquaPure%20EPWHEC-2000E\u0026tag=betterwaterguide-20"},{"@type":"ListItem","name":"Home Master HMF3SDGCC-R","position":2,"url":"https://www.amazon.com/s?k=Home%20Master%20HMF3SDGCC-R\u0026tag=betterwaterguide-20"},{"@type":"ListItem","name":"APEC Whole House Water Filter System (Model WFH3000)","position":3,"url":"https://www.amazon.com/s?k=APEC%20Whole%20House%20Water%20Filter%20System%20%28Model%20WFH3000%29\u0026tag=betterwaterguide-20"},{"@type":"ListItem","name":"Pelican Water Whole House Filter System (Model PC-600D)","position":4,"url":"https://www.amazon.com/s?k=Pelican%20Water%20Whole%20House%20Filter%20System%20%28Model%20PC-600D%29\u0026tag=betterwaterguide-20"},{"@type":"ListItem","name":"iSpring WGB32B 20-Stage Whole House Water Filter System","position":5,"url":"https://www.amazon.com/s?k=iSpring%20WGB32B%2020-Stage%20Whole%20House%20Water%20Filter%20System\u0026tag=betterwaterguide-20"}],"itemListOrder":"https://schema.org/ItemListOrderAscending","mainEntityOfPage":{"@id":"https://betterwaterguide.com/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/","@type":"WebPage"},"name":"Best Whole House Water Filter for Townhomes: What to Choose Based on Your Water Test","numberOfItems":5,"url":"https://betterwaterguide.com/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/"}</script>
+
+
+<meta name="msvalidate.01" content="F47EA7444EF95B629D2B0B8FB5B6850A"></head>
+<body class="theme-betterwaterguide layout-full-width">
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T2FRHBB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="site-header betterwaterguide-head">
+    <div class="header-inner betterwaterguide-inner">
+        <a href="/" class="site-logo" aria-label="Better Water Guide">
+            <img src="/logo.svg?v=1783871056" alt="Better Water Guide" height="42">
+        </a>
+        <nav class="site-nav betterwaterguide-nav">
+            <a href="/best/">Best Water Filters</a>
+            <a href="/reviews/">Filter Reviews</a>
+            <a href="/vs/">Compare Systems</a>
+            <a href="/guides/">Water Quality Guides</a>
+            <a href="/about/">About</a>
+        </nav>
+    </div>
+</header><main>
+        
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+<article data-module="article-shell" data-module-role="article" class="article-shell clean-shell article-shell--roundup" itemscope itemtype="https://schema.org/Article"
+    data-content-type="best_of"
+    >
+    
+    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offers">
+        <div class="sponsored-side-stack">
+
+
+
+
+
+
+<aside class="audible-sponsored-panel" aria-label="Sponsored Audible offer">
+    <div class="audible-sponsored-panel__badge">Sponsored</div>
+    <h3>Listen while you travel, pack, or unwind</h3>
+    <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while you pack, travel, walk, cook, or take a break.</p>
+    <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+    
+    <p class="audible-sponsored-panel__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+
+<aside class="kindle-sponsored-panel" aria-label="Sponsored Kindle Unlimited offer" data-affiliate-placement="kindle_unlimited_side_panel" data-product-name="Kindle Unlimited">
+    <a href="https://www.amazon.com/kindle-dbs/hz/subscribe/ku/?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank" aria-label="Explore Kindle Unlimited on Amazon">
+        <picture>
+            <source type="image/webp" srcset="/images/kindle-unlimited-panel-320.webp 320w, /images/kindle-unlimited-panel-640.webp 640w" sizes="320px">
+            <img src="/images/kindle-unlimited-panel-320.webp" width="320" height="489" loading="lazy" decoding="async" alt="Kindle Unlimited sponsored offer: read more of what you love, explore on Amazon.">
+        </picture>
+    </a>
+</aside>
+
+</div>
+    </div>
+    
+    <header data-module="article-header" class="article-header">
+        <h1 itemprop="headline">Best Whole House Water Filter for Townhomes: What to Choose Based on Your Water Test</h1><div class="article-meta">
+    
+    <span>Published July 8, 2026</span>
+    
+    <span>By <a href="/authors/editorial-team/">Better Water Guide Editorial Team</a></span>
+    
+    <span>10 min read</span>
+    
+</div></header>
+    
+    <div data-module="roundup-hero" class="roundup-hero-callout">
+        <div class="roundup-hero-callout__content">
+            <span class="callout-eyebrow">Best Overall</span>
+            <p class="roundup-hero-callout__product"><a href="https://www.amazon.com/s?k=AquaPure%20EPWHEC-2000E&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">AquaPure EPWHEC-2000E</a></p>
+            <p class="roundup-hero-callout__summary" itemprop="description">For most townhomes, the best whole house water filter is the one that matches the water test and stays manageable in a tight service area. In this roundup, AquaPure EPWHEC-2000E is the strongest overall fit because it handles the most common combination townhome owners run into: sediment plus chlorine taste or odor.</p>
+        </div>
+        <div class="roundup-hero-callout__action">
+            <a class="button-link amazon-button" href="https://www.amazon.com/s?k=AquaPure%20EPWHEC-2000E&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+        </div>
+    </div>
+    
+    
+
+
+<aside class="disclosure-inline">
+    <small><a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.</small>
+</aside>
+
+    
+    <details data-module="table-of-contents" class="table-of-contents">
+        <summary>Contents</summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#quick-picks">Quick Picks</a></li>
+    <li><a href="#start-with-the-water-test">Start With the Water Test</a></li>
+    <li><a href="#what-matters-in-a-townhome">What Matters in a Townhome</a></li>
+    <li><a href="#1-aquapure-epwhec-2000e-best-overall">1. AquaPure EPWHEC-2000E: Best Overall</a>
+      <ul>
+        <li><a href="#balanced-for-the-most-common-townhome-water-problems">Balanced for the most common townhome water problems</a></li>
+        <li><a href="#the-trade-off-is-specialization">The trade-off is specialization</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-home-master-hmf3sdgcc-r-best-value">2. Home Master HMF3SDGCC-R: Best Value</a>
+      <ul>
+        <li><a href="#straightforward-carbon-filtration-for-cleaner-water-throughout-the-home">Straightforward carbon filtration for cleaner water throughout the home</a></li>
+        <li><a href="#the-limitation-is-sediment-handling">The limitation is sediment handling</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-apec-whole-house-water-filter-system-model-wfh3000-best-for-chlorine-taste-and-odor">3. APEC Whole House Water Filter System (Model WFH3000): Best for Chlorine Taste and Odor</a>
+      <ul>
+        <li><a href="#a-cleaner-match-when-the-water-smells-like-disinfectant">A cleaner match when the water smells like disinfectant</a></li>
+        <li><a href="#it-is-not-the-right-tool-for-debris">It is not the right tool for debris</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-pelican-water-whole-house-filter-system-model-pc-600d-best-for-sediment-and-cloudy-water">4. Pelican Water Whole House Filter System (Model PC-600D): Best for Sediment and Cloudy Water</a>
+      <ul>
+        <li><a href="#the-clearest-fit-for-grit-sand-and-cloudy-starts">The clearest fit for grit, sand, and cloudy starts</a></li>
+        <li><a href="#it-does-not-address-taste-and-odor-well">It does not address taste and odor well</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-ispring-wgb32b-20-stage-whole-house-water-filter-system-best-for-multiple-issues">5. iSpring WGB32B 20-Stage Whole House Water Filter System: Best for Multiple Issues</a>
+      <ul>
+        <li><a href="#a-broader-system-for-homes-with-more-than-one-complaint">A broader system for homes with more than one complaint</a></li>
+        <li><a href="#more-stages-also-mean-more-upkeep">More stages also mean more upkeep</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-choose">How to Choose</a></li>
+    <li><a href="#when-to-spend-more-or-less">When to Spend More or Less</a></li>
+    <li><a href="#who-should-skip-a-whole-house-filter">Who Should Skip a Whole House Filter</a></li>
+    <li><a href="#final-recommendation">Final Recommendation</a></li>
+    <li><a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#do-townhomes-need-a-whole-house-water-filter-or-just-an-under-sink-filter">Do townhomes need a whole house water filter or just an under-sink filter?</a></li>
+        <li><a href="#what-water-test-result-points-to-sediment-instead-of-chlorine">What water test result points to sediment instead of chlorine?</a></li>
+        <li><a href="#will-a-whole-house-water-filter-fix-hard-water">Will a whole house water filter fix hard water?</a></li>
+        <li><a href="#is-a-20-stage-system-worth-it-in-a-townhome">Is a 20-stage system worth it in a townhome?</a></li>
+        <li><a href="#how-much-should-replacement-routine-affect-the-decision">How much should replacement routine affect the decision?</a></li>
+        <li><a href="#what-if-my-water-only-smells-bad-at-the-shower">What if my water only smells bad at the shower?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    <script data-module="article-products-data" id="article-products-data" type="application/json">[{"amazon_url":"https://www.amazon.com/s?k=AquaPure%20EPWHEC-2000E\u0026tag=betterwaterguide-20","brand":"AquaPure (Culligan)","buyer_note":"Best for: Townhome households that want whole-house improvement without committing to a full softener.","cta_label":"Product link","cta_text":"Check price on Amazon","name":"AquaPure EPWHEC-2000E"},{"amazon_url":"https://www.amazon.com/s?k=Home%20Master%20HMF3SDGCC-R\u0026tag=betterwaterguide-20","brand":"Home Master","buyer_note":"Best for: Value focused townhomes prioritizing cleaner drinking water from every tap.","cta_label":"Product link","cta_text":"Check price on Amazon","name":"Home Master HMF3SDGCC-R"},{"amazon_url":"https://www.amazon.com/s?k=APEC%20Whole%20House%20Water%20Filter%20System%20%28Model%20WFH3000%29\u0026tag=betterwaterguide-20","brand":"APEC","buyer_note":"Best for: Townhomes with noticeable chlorine odor coming through the plumbing.","cta_label":"Product link","cta_text":"Check price on Amazon","name":"APEC Whole House Water Filter System (Model WFH3000)"},{"amazon_url":"https://www.amazon.com/s?k=Pelican%20Water%20Whole%20House%20Filter%20System%20%28Model%20PC-600D%29\u0026tag=betterwaterguide-20","brand":"Pelican Water","buyer_note":"Best for: Townhomes dealing with sediment, sand, or intermittent cloudiness.","cta_label":"Product link","cta_text":"Check price on Amazon","name":"Pelican Water Whole House Filter System (Model PC-600D)"},{"amazon_url":"https://www.amazon.com/s?k=iSpring%20WGB32B%2020-Stage%20Whole%20House%20Water%20Filter%20System\u0026tag=betterwaterguide-20","brand":"iSpring","buyer_note":"Best for: Busy townhomes where multiple taps run frequently and water issues show up in more than one way.","cta_label":"Product link","cta_text":"Check price on Amazon","name":"iSpring WGB32B 20-Stage Whole House Water Filter System"}]</script>
+    
+    <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody"><section class="article-section article-section--intro" data-module="article-section" data-section-role="intro" data-section-level="intro" data-section-id="intro"></section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="quick-picks"><h2 id="quick-picks" data-module="section-heading" data-section-id="quick-picks">Quick Picks</h2>
+<div class="table-scroll"><table>
+	<thead>
+			<tr>
+					<th>Pick</th>
+					<th>Treatment style</th>
+					<th>Best water-test match</th>
+					<th>Main trade-off</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>AquaPure EPWHEC-2000E</td>
+					<td>Sediment + carbon, point-of-entry</td>
+					<td>Mixed sediment and chlorine taste or odor</td>
+					<td>Less specialized than a sediment-first or chlorine-first unit</td>
+			</tr>
+			<tr>
+					<td>Home Master HMF3SDGCC-R</td>
+					<td>Carbon-based whole-house filtration</td>
+					<td>Chlorine taste and odor with simple upkeep</td>
+					<td>Not the strongest match for gritty water</td>
+			</tr>
+			<tr>
+					<td>APEC Whole House Water Filter System (Model WFH3000)</td>
+					<td>Whole-house carbon and sediment oriented</td>
+					<td>Chlorine smell and taste at multiple taps</td>
+					<td>Not a sediment specialist</td>
+			</tr>
+			<tr>
+					<td>Pelican Water Whole House Filter System (Model PC-600D)</td>
+					<td>Sediment reduction</td>
+					<td>Cloudy water, sand, or visible particles</td>
+					<td>Does little for taste and odor</td>
+			</tr>
+			<tr>
+					<td>iSpring WGB32B 20-Stage Whole House Water Filter System</td>
+					<td>Multi-stage carbon + media</td>
+					<td>Multiple water issues across the home</td>
+					<td>More replacement parts to manage</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>In a townhome, the right system is usually the one that solves the actual complaint without turning filter changes into a space problem.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="start-with-the-water-test"><h2 id="start-with-the-water-test" data-module="section-heading" data-section-id="start-with-the-water-test">Start With the Water Test</h2>
+<p>A townhome filter decision gets much easier once the water report is broken into a few common buckets.</p>
+<div class="table-scroll"><table>
+	<thead>
+			<tr>
+					<th>Water-test result</th>
+					<th>What it points to</th>
+					<th>Better match in this roundup</th>
+					<th>Avoid</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Chlorine taste or odor</td>
+					<td>Municipal disinfectant is the main complaint</td>
+					<td>Home Master HMF3SDGCC-R, APEC WFH3000, AquaPure EPWHEC-2000E</td>
+					<td>Sediment-only systems</td>
+			</tr>
+			<tr>
+					<td>Visible grit, turbidity, or cloudy starts</td>
+					<td>Particles are moving through the plumbing</td>
+					<td>Pelican Water Whole House Filter System (Model PC-600D), AquaPure EPWHEC-2000E</td>
+					<td>Carbon-only systems</td>
+			</tr>
+			<tr>
+					<td>Mixed complaints across kitchen, bath, and laundry</td>
+					<td>More than one issue is happening at once</td>
+					<td>AquaPure EPWHEC-2000E, iSpring WGB32B 20-Stage Whole House Water Filter System</td>
+					<td>Single-purpose picks</td>
+			</tr>
+			<tr>
+					<td>Hardness only</td>
+					<td>Scale is the issue, not filtration</td>
+					<td>A softener or softener-plus-filter setup</td>
+					<td>Any stand-alone whole-house filter</td>
+			</tr>
+			<tr>
+					<td>Iron staining or sulfur smell</td>
+					<td>A different treatment path is needed</td>
+					<td>A specialty iron or sulfur system</td>
+					<td>These five filters as the only solution</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>If the report shows one clear problem, buy for that problem. If it shows several, pick the broadest system you can service comfortably.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-matters-in-a-townhome"><h2 id="what-matters-in-a-townhome" data-module="section-heading" data-section-id="what-matters-in-a-townhome">What Matters in a Townhome</h2>
+<p>Townhome water treatment has two realities: the water problem reaches every tap, and the installation space is usually smaller than in a detached house.</p>
+<p>These are the factors that matter most here:</p>
+<ul>
+<li><strong>Treatment match</strong>: Carbon helps with taste and odor. Sediment reduction helps with grit, cloudy water, and debris.</li>
+<li><strong>Maintenance simplicity</strong>: A cramped utility closet makes a complicated replacement routine a real drawback.</li>
+<li><strong>Installation fit</strong>: Wall space, access to the shutoff, and room to service the unit matter more than flashy features.</li>
+<li><strong>Flow and pressure</strong>: The system still has to live in a home that may have showers, laundry, and kitchen use happening at the same time.</li>
+<li><strong>Replacement planning</strong>: If the cartridges are easy to store and swap, the system is more likely to stay on schedule.</li>
+</ul>
+<p>That last point is easy to ignore until the first filter change. In a small home, the best system is often the one that people will actually maintain.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="1-aquapure-epwhec-2000e-best-overall"><h2 id="1-aquapure-epwhec-2000e-best-overall" data-module="section-heading" data-section-id="1-aquapure-epwhec-2000e-best-overall">1. AquaPure EPWHEC-2000E: Best Overall</h2>
+<h3 id="balanced-for-the-most-common-townhome-water-problems" data-module="section-subheading" data-section-id="balanced-for-the-most-common-townhome-water-problems">Balanced for the most common townhome water problems</h3>
+<p>The <a href="https://www.amazon.com/s?k=AquaPure%20EPWHEC-2000E&amp;tag=betterwaterguide-20">AquaPure EPWHEC-2000E</a> is the best overall pick for townhomes because it covers the middle ground most households land in. It addresses sediment and chlorine-related taste and odor without asking for a complicated ownership setup.</p>
+<p>That makes it a strong choice when the water test shows more than one issue, but none of them is severe enough to call for a specialty system.</p>
+<h3 id="the-trade-off-is-specialization" data-module="section-subheading" data-section-id="the-trade-off-is-specialization">The trade-off is specialization</h3>
+<p>The compromise is simple: a balanced whole-home filter will not beat a sediment-first unit at heavy grit, and it will not beat a chlorine-focused carbon setup when chlorine is the only complaint.</p>
+<p>Best fit: townhomes with one point-of-entry line, modest service space, and a water report that shows both taste/odor issues and some particulate load.<br>
+Skip it if the report shows hardness only, because filtration does not solve scale.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="2-home-master-hmf3sdgcc-r-best-value"><h2 id="2-home-master-hmf3sdgcc-r-best-value" data-module="section-heading" data-section-id="2-home-master-hmf3sdgcc-r-best-value">2. Home Master HMF3SDGCC-R: Best Value</h2>
+<h3 id="straightforward-carbon-filtration-for-cleaner-water-throughout-the-home" data-module="section-subheading" data-section-id="straightforward-carbon-filtration-for-cleaner-water-throughout-the-home">Straightforward carbon filtration for cleaner water throughout the home</h3>
+<p>The <a href="https://www.amazon.com/s?k=Home%20Master%20HMF3SDGCC-R&amp;tag=betterwaterguide-20">Home Master HMF3SDGCC-R</a> is the value pick because it keeps the setup simple. It is a 3-stage carbon-based whole-house system, which works well for townhomes where the main goal is cleaner-tasting water at every tap.</p>
+<p>This is the right kind of pick for households that want a practical upgrade and do not want to overbuild the system for a fairly ordinary chlorine problem.</p>
+<h3 id="the-limitation-is-sediment-handling" data-module="section-subheading" data-section-id="the-limitation-is-sediment-handling">The limitation is sediment handling</h3>
+<p>Carbon does not solve gritty water. If the test shows cloudiness, sand, or particles after plumbing work or service interruptions, a sediment-first unit is the better fit.</p>
+<p>Best fit: value-focused townhomes with chlorine taste or odor across the home and a preference for a familiar replacement routine.<br>
+Skip it if the water test shows repeated particles or cloudy starts.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="3-apec-whole-house-water-filter-system-model-wfh3000-best-for-chlorine-taste-and-odor"><h2 id="3-apec-whole-house-water-filter-system-model-wfh3000-best-for-chlorine-taste-and-odor" data-module="section-heading" data-section-id="3-apec-whole-house-water-filter-system-model-wfh3000-best-for-chlorine-taste-and-odor">3. APEC Whole House Water Filter System (Model WFH3000): Best for Chlorine Taste and Odor</h2>
+<h3 id="a-cleaner-match-when-the-water-smells-like-disinfectant" data-module="section-subheading" data-section-id="a-cleaner-match-when-the-water-smells-like-disinfectant">A cleaner match when the water smells like disinfectant</h3>
+<p>The <a href="https://www.amazon.com/s?k=APEC%20Whole%20House%20Water%20Filter%20System%20%28Model%20WFH3000%29&amp;tag=betterwaterguide-20">APEC Whole House Water Filter System (Model WFH3000)</a> belongs on the shortlist when the main complaint is chlorine smell or taste at more than one tap. That is exactly the kind of issue a whole-house carbon-oriented system is built to address.</p>
+<p>If the shower, kitchen sink, and laundry sink all have the same off smell, the problem is in the main water path, not just one faucet.</p>
+<h3 id="it-is-not-the-right-tool-for-debris" data-module="section-subheading" data-section-id="it-is-not-the-right-tool-for-debris">It is not the right tool for debris</h3>
+<p>The trade-off is that chlorine control is not sediment control. If the water shows visible particles, rust-colored debris, or cloudy starts, a sediment-first system is the better call.</p>
+<p>Best fit: townhomes on municipal water where chlorine taste and odor are the clear complaint.<br>
+Skip it if the water is visibly dirty or the sink strainers keep catching grit.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="4-pelican-water-whole-house-filter-system-model-pc-600d-best-for-sediment-and-cloudy-water"><h2 id="4-pelican-water-whole-house-filter-system-model-pc-600d-best-for-sediment-and-cloudy-water" data-module="section-heading" data-section-id="4-pelican-water-whole-house-filter-system-model-pc-600d-best-for-sediment-and-cloudy-water">4. Pelican Water Whole House Filter System (Model PC-600D): Best for Sediment and Cloudy Water</h2>
+<h3 id="the-clearest-fit-for-grit-sand-and-cloudy-starts" data-module="section-subheading" data-section-id="the-clearest-fit-for-grit-sand-and-cloudy-starts">The clearest fit for grit, sand, and cloudy starts</h3>
+<p>The <a href="https://www.amazon.com/s?k=Pelican%20Water%20Whole%20House%20Filter%20System%20%28Model%20PC-600D%29&amp;tag=betterwaterguide-20">Pelican Water Whole House Filter System (Model PC-600D)</a> makes sense when the water test and the fixtures tell the same story: sediment is getting through. That can show up as cloudy water, grit in aerators, or debris after neighborhood plumbing work.</p>
+<p>In a townhome, that matters because sediment problems show up fast. Showerheads clog, faucet screens collect debris, and the water looks wrong before it even hits the glass.</p>
+<h3 id="it-does-not-address-taste-and-odor-well" data-module="section-subheading" data-section-id="it-does-not-address-taste-and-odor-well">It does not address taste and odor well</h3>
+<p>The limit is just as clear. A sediment-focused system is not the answer when the water looks clear but still smells or tastes like chlorine.</p>
+<p>Best fit: townhomes dealing with visible particles, cloudy water, or sand in the plumbing.<br>
+Skip it if the main complaint is taste or smell rather than debris.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="5-ispring-wgb32b-20-stage-whole-house-water-filter-system-best-for-multiple-issues"><h2 id="5-ispring-wgb32b-20-stage-whole-house-water-filter-system-best-for-multiple-issues" data-module="section-heading" data-section-id="5-ispring-wgb32b-20-stage-whole-house-water-filter-system-best-for-multiple-issues">5. iSpring WGB32B 20-Stage Whole House Water Filter System: Best for Multiple Issues</h2>
+<h3 id="a-broader-system-for-homes-with-more-than-one-complaint" data-module="section-subheading" data-section-id="a-broader-system-for-homes-with-more-than-one-complaint">A broader system for homes with more than one complaint</h3>
+<p>The <a href="https://www.amazon.com/s?k=iSpring%20WGB32B%2020-Stage%20Whole%20House%20Water%20Filter%20System&amp;tag=betterwaterguide-20">iSpring WGB32B 20-Stage Whole House Water Filter System</a> is the broadest option here. It is a good fit when several taps show different problems and the household wants one system to handle more than a single annoyance.</p>
+<p>That can matter in a busy townhome where the kitchen, baths, and laundry all get heavy use and the water report is not neatly one-dimensional.</p>
+<h3 id="more-stages-also-mean-more-upkeep" data-module="section-subheading" data-section-id="more-stages-also-mean-more-upkeep">More stages also mean more upkeep</h3>
+<p>The trade-off is maintenance. More stages usually mean more parts to replace and more time spent on service work, which is not ideal in a cramped utility area.</p>
+<p>Best fit: larger households with multiple water complaints and enough room for a more involved maintenance routine.<br>
+Skip it if the report points to one simple issue, because the extra upkeep does not buy much.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="how-to-choose"><h2 id="how-to-choose" data-module="section-heading" data-section-id="how-to-choose">How to Choose</h2>
+<p>Start with the result from the water test and match the filter to the problem.</p>
+<ol>
+<li><strong>If chlorine is the only clear issue, choose a carbon-first system.</strong> That points to Home Master or APEC. AquaPure works well if the report also hints at sediment.</li>
+<li><strong>If the water looks cloudy or gritty, choose sediment-first.</strong> Pelican is the cleanest match here.</li>
+<li><strong>If the report shows several issues at once, choose the broadest system you can maintain easily.</strong> That is where AquaPure and iSpring make sense.</li>
+<li><strong>If the report shows hardness only, stop and look at softening instead.</strong> A whole-house filter will not fix scale.</li>
+<li><strong>If the service area is tight, favor simplicity over a longer feature list.</strong> A system that is easy to change gets serviced on time.</li>
+</ol>
+<p>Flow still matters in a townhome. A filter that is a poor fit for the plumbing can become a daily annoyance in showers and upstairs baths, even if it solves the water complaint on paper.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="when-to-spend-more-or-less"><h2 id="when-to-spend-more-or-less" data-module="section-heading" data-section-id="when-to-spend-more-or-less">When to Spend More or Less</h2>
+<p>Spend more when the water report shows more than one issue and the installation space is easy to work in. That is when a broader system can justify its extra upkeep.</p>
+<p>Spend less when the test points to one clear problem and the utility area is cramped. In that case, a simpler carbon or sediment unit is easier to live with and easier to maintain.</p>
+<p>Do not spend more just because the water is hard. Hardness needs a softener, not a bigger filter.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="who-should-skip-a-whole-house-filter"><h2 id="who-should-skip-a-whole-house-filter" data-module="section-heading" data-section-id="who-should-skip-a-whole-house-filter">Who Should Skip a Whole House Filter</h2>
+<p>Whole-house filtration is not the right answer for every townhome.</p>
+<ul>
+<li><strong>Skip it if hardness is the only issue.</strong> A softener is the right tool for scale.</li>
+<li><strong>Skip it if the problem is iron staining or sulfur odor.</strong> Those need a dedicated treatment system.</li>
+<li><strong>Skip it if you only want cleaner drinking water at one sink.</strong> A point-of-use filter or reverse osmosis setup is more appropriate.</li>
+<li><strong>Skip it if plumbing access is blocked by HOA rules or a cramped utility area.</strong> A hard-to-reach filter turns into a maintenance burden.</li>
+<li><strong>Skip it if you want zero service work.</strong> Every whole-house system needs replacement attention.</li>
+</ul>
+<p>A townhome does not need the biggest system available. It needs the smallest system that solves the actual water complaint and can still be maintained without a hassle.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="final-recommendation"><h2 id="final-recommendation" data-module="section-heading" data-section-id="final-recommendation">Final Recommendation</h2>
+<p>AquaPure EPWHEC-2000E is the best whole house water filter for townhomes when the water test shows a mix of sediment and chlorine taste or odor. Home Master HMF3SDGCC-R is the best value choice for straightforward chlorine problems, APEC WFH3000 is the better fit when chlorine smell is the main complaint, Pelican PC-600D is the sediment specialist, and iSpring WGB32B 20-Stage makes sense when several water issues are showing up across the home.</p>
+<p>The right choice is the one that matches the report, fits the space, and stays easy enough to service that it actually gets serviced.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="faq"><h2 id="faq" data-module="section-heading" data-section-id="faq">FAQ</h2>
+<h3 id="do-townhomes-need-a-whole-house-water-filter-or-just-an-under-sink-filter" data-module="section-subheading" data-section-id="do-townhomes-need-a-whole-house-water-filter-or-just-an-under-sink-filter">Do townhomes need a whole house water filter or just an under-sink filter?</h3>
+<p>Use a whole-house filter when the same problem shows up at showers, bathroom sinks, kitchen taps, and laundry. An under-sink filter only improves water at one faucet.</p>
+<h3 id="what-water-test-result-points-to-sediment-instead-of-chlorine" data-module="section-subheading" data-section-id="what-water-test-result-points-to-sediment-instead-of-chlorine">What water test result points to sediment instead of chlorine?</h3>
+<p>Cloudiness, visible grit, rust-colored particles, and dirty sink screens point to sediment. Chlorine shows up more as taste or odor, often when the water looks clear.</p>
+<h3 id="will-a-whole-house-water-filter-fix-hard-water" data-module="section-subheading" data-section-id="will-a-whole-house-water-filter-fix-hard-water">Will a whole house water filter fix hard water?</h3>
+<p>No. Hard water needs a softener or a softener-plus-filter setup. Filtration handles particles, taste, and odor, not scale.</p>
+<h3 id="is-a-20-stage-system-worth-it-in-a-townhome" data-module="section-subheading" data-section-id="is-a-20-stage-system-worth-it-in-a-townhome">Is a 20-stage system worth it in a townhome?</h3>
+<p>It can be, but only when the water report shows several issues and the service area is roomy enough for replacement work. If chlorine is the only complaint, a simpler carbon system is the cleaner buy.</p>
+<h3 id="how-much-should-replacement-routine-affect-the-decision" data-module="section-subheading" data-section-id="how-much-should-replacement-routine-affect-the-decision">How much should replacement routine affect the decision?</h3>
+<p>A lot. If cartridge changes are awkward or the parts are hard to store, the system is more likely to get serviced late. In a small home, easy maintenance matters as much as treatment style.</p>
+<h3 id="what-if-my-water-only-smells-bad-at-the-shower" data-module="section-subheading" data-section-id="what-if-my-water-only-smells-bad-at-the-shower">What if my water only smells bad at the shower?</h3>
+<p>That still points to a whole-house issue. If the smell is in the shower, the main water line is carrying it through the home, so a point-of-entry carbon system usually makes more sense than a drinking-water-only filter.</p>
+</section></div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+    
+        
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+<section class="see-also" data-module="see-also" data-section-id="see-also" aria-labelledby="see-also-heading">
+    <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
+    
+    <p>If you want to pressure-test this shortlist, read <a href="/best/best-water-test-kit-for-homeowners-what-to-buy-for-safe-drinking-water-screening/">Best Water Test Kit for Homeowners: What to Buy for Safe Drinking Water Screening</a>, <a href="/best/best-whole-house-water-filtration-system-for-espresso-line-cleaning-what-to-look-for/">Best Whole-House Water Filtration System for Espresso Line Cleaning: What to Look for in 2026</a>, and <a href="/best/best-whole-house-water-filter-for-spot-free-dishes/">Best Whole-House Water Filter for Spot-Free Dishes in 2026</a> next.</p>
+    <p>For more context beyond the main ranking, <a href="/vs/beginner-vs-pro-whole-house-water-filter-installation-what-to-expect-for-a-kitchen-setup/">Beginner vs Pro Whole-House Water Filter Installation: What to Expect for a Kitchen Setup</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs</a> add useful comparison detail.</p>
+    
+</section>
+
+</article>
+
+    </main><footer class="site-footer">
+    
+
+<div class="footer-inner">
+        <p>&copy; 2026 Better Water Guide. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="/about/">About</a>
+            <a href="/disclosure/">Disclosure</a>
+            <a href="/privacy/">Privacy Policy</a>
+        </nav>
+
+        <p class="footer-disclosure">
+            <a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.
+        </p>
+
+    </div>
+</footer></body>
+</html>

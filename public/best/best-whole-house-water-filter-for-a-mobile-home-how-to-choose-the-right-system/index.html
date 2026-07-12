@@ -19,6 +19,92 @@ gtag('config', 'G-V3GZKYJF7J');
 </script>
 <script>
 (function() {
+    var requiredVisibleMilliseconds = 5000;
+    var visibleSince = document.visibilityState === "visible" ? Date.now() : null;
+    var accumulatedVisibleMilliseconds = 0;
+    var qualificationTimer = null;
+    var qualified = false;
+
+    function visibleMilliseconds() {
+        return accumulatedVisibleMilliseconds
+            + (visibleSince === null ? 0 : Date.now() - visibleSince);
+    }
+
+    function clearQualificationTimer() {
+        if (qualificationTimer !== null) {
+            window.clearTimeout(qualificationTimer);
+            qualificationTimer = null;
+        }
+    }
+
+    function qualify(reason) {
+        if (qualified) {
+            return;
+        }
+
+        qualified = true;
+        clearQualificationTimer();
+        document.documentElement.setAttribute("data-human-traffic-qualified", reason);
+        window.gtag('event', 'human_page_view', {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            qualification_reason: reason,
+            visible_milliseconds: Math.round(visibleMilliseconds())
+        });
+    }
+
+    function scheduleVisibleQualification() {
+        clearQualificationTimer();
+        if (qualified || document.visibilityState !== "visible") {
+            return;
+        }
+
+        var remaining = requiredVisibleMilliseconds - visibleMilliseconds();
+        if (remaining <= 0) {
+            qualify("visible_5_seconds");
+            return;
+        }
+
+        qualificationTimer = window.setTimeout(function() {
+            qualify("visible_5_seconds");
+        }, remaining);
+    }
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === "visible") {
+            if (visibleSince === null) {
+                visibleSince = Date.now();
+            }
+            scheduleVisibleQualification();
+            return;
+        }
+
+        if (visibleSince !== null) {
+            accumulatedVisibleMilliseconds += Date.now() - visibleSince;
+            visibleSince = null;
+        }
+        clearQualificationTimer();
+    });
+
+    function qualifyFromInteraction() {
+        qualify("interaction");
+    }
+
+    document.addEventListener("pointerdown", qualifyFromInteraction, { once: true, passive: true });
+    document.addEventListener("keydown", qualifyFromInteraction, { once: true });
+    document.addEventListener("scroll", qualifyFromInteraction, { once: true, passive: true });
+    window.addEventListener("pagehide", function() {
+        if (visibleMilliseconds() >= requiredVisibleMilliseconds) {
+            qualify("visible_5_seconds");
+        }
+    }, { once: true });
+
+    scheduleVisibleQualification();
+})();
+</script>
+<script>
+(function() {
     function isAmazonHost(hostname) {
         var host = (hostname || "").toLowerCase();
         return host === "amzn.to"
@@ -170,9 +256,9 @@ gtag('config', 'G-V3GZKYJF7J');
 
 
   
-  <link rel="stylesheet" href="/css/main.min.00aa49f1fe64acc4e7b9a8cc83eb903c4fb6f95780eeaed231d3f446bdb9eeb6.css" integrity="sha256-AKpJ8f5krMTnuajMg&#43;uQPE&#43;2&#43;VeA7q7SMdP0Rr257rY=">
+  <link rel="stylesheet" href="/css/main.min.3ddf1c2bfbab0997c3c28e503cbe87c78119b9aedd59250bb456b4d73a1454f9.css" integrity="sha256-Pd8cK/urCZfDwo5QPL6Hx4EZua7dWSULtFa01zoUVPk=">
 
-<script defer src="/js/article-enhancements.js?v=1783516887"></script>
+<script defer src="/js/article-enhancements.js?v=1783871056"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.","name":"Better Water Guide","url":"https://betterwaterguide.com/"}</script>
 
 
@@ -235,7 +321,7 @@ gtag('config', 'G-V3GZKYJF7J');
     <header class="site-header betterwaterguide-head">
     <div class="header-inner betterwaterguide-inner">
         <a href="/" class="site-logo" aria-label="Better Water Guide">
-            <img src="/logo.svg?v=1783516887" alt="Better Water Guide" height="42">
+            <img src="/logo.svg?v=1783871056" alt="Better Water Guide" height="42">
         </a>
         <nav class="site-nav betterwaterguide-nav">
             <a href="/best/">Best Water Filters</a>
@@ -629,6 +715,30 @@ gtag('config', 'G-V3GZKYJF7J');
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
 
 
 
@@ -639,7 +749,7 @@ gtag('config', 'G-V3GZKYJF7J');
     <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
     
     <p>If you want to pressure-test this shortlist, read <a href="/best/best-water-test-kit-for-homeowners-what-to-buy-for-safe-drinking-water-screening/">Best Water Test Kit for Homeowners: What to Buy for Safe Drinking Water Screening</a>, <a href="/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/">Best Whole House Water Filter for Townhomes: What to Choose Based on Your Water Test</a>, and <a href="/best/best-durable-whole-house-water-filter-how-to-choose-the-right-system-for-your-home/">Best Durable Whole House Water Filter: How to Choose the Right System for Your Home</a> next.</p>
-    <p>For more context beyond the main ranking, <a href="/guides/whole-house-filter-bypass-valve-sealing-readiness-check-tool-checklist/">Whole-House Filter Bypass Valve Sealing Readiness Check Tool Checklist</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs: Buyer Guide</a> add useful comparison detail.</p>
+    <p>For more context beyond the main ranking, <a href="/guides/whole-house-water-filter-placement-what-to-prioritize-before-you-install/">Whole-House Water Filter Placement: What to Prioritize Before You Install</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs</a> add useful comparison detail.</p>
     
 </section>
 

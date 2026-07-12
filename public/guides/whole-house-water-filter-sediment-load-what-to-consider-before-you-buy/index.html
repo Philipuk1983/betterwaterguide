@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5T2FRHBB');</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3GZKYJF7J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-V3GZKYJF7J');
+</script>
+<script>
+(function() {
+    var requiredVisibleMilliseconds = 5000;
+    var visibleSince = document.visibilityState === "visible" ? Date.now() : null;
+    var accumulatedVisibleMilliseconds = 0;
+    var qualificationTimer = null;
+    var qualified = false;
+
+    function visibleMilliseconds() {
+        return accumulatedVisibleMilliseconds
+            + (visibleSince === null ? 0 : Date.now() - visibleSince);
+    }
+
+    function clearQualificationTimer() {
+        if (qualificationTimer !== null) {
+            window.clearTimeout(qualificationTimer);
+            qualificationTimer = null;
+        }
+    }
+
+    function qualify(reason) {
+        if (qualified) {
+            return;
+        }
+
+        qualified = true;
+        clearQualificationTimer();
+        document.documentElement.setAttribute("data-human-traffic-qualified", reason);
+        window.gtag('event', 'human_page_view', {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            qualification_reason: reason,
+            visible_milliseconds: Math.round(visibleMilliseconds())
+        });
+    }
+
+    function scheduleVisibleQualification() {
+        clearQualificationTimer();
+        if (qualified || document.visibilityState !== "visible") {
+            return;
+        }
+
+        var remaining = requiredVisibleMilliseconds - visibleMilliseconds();
+        if (remaining <= 0) {
+            qualify("visible_5_seconds");
+            return;
+        }
+
+        qualificationTimer = window.setTimeout(function() {
+            qualify("visible_5_seconds");
+        }, remaining);
+    }
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === "visible") {
+            if (visibleSince === null) {
+                visibleSince = Date.now();
+            }
+            scheduleVisibleQualification();
+            return;
+        }
+
+        if (visibleSince !== null) {
+            accumulatedVisibleMilliseconds += Date.now() - visibleSince;
+            visibleSince = null;
+        }
+        clearQualificationTimer();
+    });
+
+    function qualifyFromInteraction() {
+        qualify("interaction");
+    }
+
+    document.addEventListener("pointerdown", qualifyFromInteraction, { once: true, passive: true });
+    document.addEventListener("keydown", qualifyFromInteraction, { once: true });
+    document.addEventListener("scroll", qualifyFromInteraction, { once: true, passive: true });
+    window.addEventListener("pagehide", function() {
+        if (visibleMilliseconds() >= requiredVisibleMilliseconds) {
+            qualify("visible_5_seconds");
+        }
+    }, { once: true });
+
+    scheduleVisibleQualification();
+})();
+</script>
+<script>
+(function() {
+    function isAmazonHost(hostname) {
+        var host = (hostname || "").toLowerCase();
+        return host === "amzn.to"
+            || host === "a.co"
+            || /(^|\.)amazon\.[a-z.]+$/.test(host);
+    }
+
+    function cleanText(value) {
+        return (value || "").replace(/\s+/g, " ").trim().slice(0, 160);
+    }
+
+    function dataValue(element, names) {
+        for (var i = 0; i < names.length; i += 1) {
+            if (element.dataset && element.dataset[names[i]]) {
+                return element.dataset[names[i]];
+            }
+        }
+        return "";
+    }
+
+    function closestDataValue(link, names) {
+        var selector = names.map(function(name) { return "[data-" + name.replace(/[A-Z]/g, function(match) { return "-" + match.toLowerCase(); }) + "]"; }).join(",");
+        var node = selector && link.closest ? link.closest(selector) : null;
+        return node ? dataValue(node, names) : "";
+    }
+
+    function amazonProductId(url) {
+        var path = decodeURIComponent(url.pathname || "");
+        var match = path.match(/\/(?:dp|gp\/product|gp\/aw\/d|exec\/obidos\/ASIN)\/([A-Z0-9]{10})(?:[/?]|$)/i);
+        if (match) {
+            return match[1].toUpperCase();
+        }
+
+        var asin = url.searchParams.get("asin") || url.searchParams.get("ASIN");
+        return /^[A-Z0-9]{10}$/i.test(asin || "") ? asin.toUpperCase() : "";
+    }
+
+    function productName(link) {
+        var explicit = dataValue(link, ["productName", "product", "itemName"]) || closestDataValue(link, ["productName", "product", "itemName"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        var cta = link.closest ? link.closest(".affiliate-cta, .product-cta, .section-product-cta, tr, li") : null;
+        var namedNode = cta ? cta.querySelector("[data-product-name], .affiliate-cta__name-link, strong, h2, h3, th") : null;
+        return cleanText((namedNode && namedNode.textContent) || link.getAttribute("aria-label") || link.getAttribute("title") || link.textContent);
+    }
+
+    function placement(link) {
+        var explicit = dataValue(link, ["affiliatePlacement", "placement"]) || closestDataValue(link, ["affiliatePlacement", "placement"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        if (link.closest) {
+            if (link.closest(".affiliate-cta--hero")) return "hero_cta";
+            if (link.closest(".affiliate-cta--mid")) return "mid_article_cta";
+            if (link.closest(".affiliate-cta--post-editor")) return "post_editor_cta";
+            if (link.closest(".affiliate-cta--verdict")) return "verdict_cta";
+            if (link.closest(".affiliate-cta--context")) return "context_cta";
+            if (link.closest(".affiliate-cta")) return "affiliate_cta";
+            if (link.closest("table")) return "comparison_table";
+            if (link.closest("header, .hero, .modern-hero")) return "hero";
+        }
+
+        return "amazon_link";
+    }
+
+    document.addEventListener("click", function(event) {
+        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) {
+            return;
+        }
+
+        var url;
+        try {
+            url = new URL(link.href, window.location.href);
+        } catch (_) {
+            return;
+        }
+
+        if (!isAmazonHost(url.hostname)) {
+            return;
+        }
+
+        var payload = {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            affiliate_network: "amazon",
+            merchant: "amazon",
+            product_id: amazonProductId(url),
+            product_name: productName(link),
+            placement: placement(link),
+            link_url: url.href
+        };
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: "affiliate_click" }, payload));
+        window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
+    }, true);
+})();
+</script>
+
+
+
+
+
+
+<title>Whole-House Water Filter Sediment Load: What to Consider Before You Buy | Better Water Guide</title>
+<meta name="description" content="For heavy sediment, start coarse: a 50 to 100 micron first stage for sand and grit, a 20 to 50 micron stage for moderate rust or silt.">
+<link rel="canonical" href="https://betterwaterguide.com/guides/whole-house-water-filter-sediment-load-what-to-consider-before-you-buy/">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:title" content="Whole-House Water Filter Sediment Load: What to Consider Before You Buy | Better Water Guide">
+<meta property="og:description" content="For heavy sediment, start coarse: a 50 to 100 micron first stage for sand and grit, a 20 to 50 micron stage for moderate rust or silt.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://betterwaterguide.com/guides/whole-house-water-filter-sediment-load-what-to-consider-before-you-buy/">
+<meta property="og:site_name" content="Better Water Guide">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Whole-House Water Filter Sediment Load: What to Consider Before You Buy | Better Water Guide">
+<meta name="twitter:description" content="For heavy sediment, start coarse: a 50 to 100 micron first stage for sand and grit, a 20 to 50 micron stage for moderate rust or silt.">
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Source%20Sans%203:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/main.min.3ddf1c2bfbab0997c3c28e503cbe87c78119b9aedd59250bb456b4d73a1454f9.css" integrity="sha256-Pd8cK/urCZfDwo5QPL6Hx4EZua7dWSULtFa01zoUVPk=">
+
+<script defer src="/js/article-enhancements.js?v=1783871056"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.","name":"Better Water Guide","url":"https://betterwaterguide.com/"}</script>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Guides","author":{"@type":"Organization","name":"Better Water Guide Editorial Team","url":"https://betterwaterguide.com/authors/editorial-team/"},"dateModified":"2026-07-11T00:00:00Z","datePublished":"2026-07-11T00:00:00Z","description":"For heavy sediment, start coarse: a 50 to 100 micron first stage for sand and grit, a 20 to 50 micron stage for moderate rust or silt.","headline":"Whole-House Water Filter Sediment Load: What to Consider Before You Buy","inLanguage":"en-us","isAccessibleForFree":true,"keywords":"whole house water filter sediment load considerations, how to choose whole-house water filter sediment load: what to consider before you buy, whole-house water filter sediment load: what to consider before you buy guide","mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/whole-house-water-filter-sediment-load-what-to-consider-before-you-buy/","@type":"WebPage"},"publisher":{"@type":"Organization","name":"Better Water Guide","url":"https://betterwaterguide.com/"},"url":"https://betterwaterguide.com/guides/whole-house-water-filter-sediment-load-what-to-consider-before-you-buy/","wordCount":1547}</script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Start at 50 to 100 microns for sand and larger grit. Move finer only if the first stage keeps the water clear enough and does not create an annoying pressure drop."},"name":"What micron rating works best for heavy sediment?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"No. TDS measures dissolved solids, not suspended particles. A clear-glass settle test or a filter housing pressure gauge tells you more about sediment load."},"name":"Does a TDS meter tell me if sediment is a problem?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"It is enough for sand, grit, and large rust flakes. Fine silt needs a cartridge stage or media stage after the separator."},"name":"Is a spin-down filter enough for a whole house?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Service it when flow drops, the pressure gauge shows a larger pressure difference, or the screen and cartridge visibly fill with debris. A fixed calendar schedule can miss storm events and sudden bursts of rust."},"name":"How often should a sediment filter be serviced?"}],"mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/whole-house-water-filter-sediment-load-what-to-consider-before-you-buy/","@type":"WebPage"}}</script>
+
+
+
+
+<meta name="msvalidate.01" content="F47EA7444EF95B629D2B0B8FB5B6850A"></head>
+<body class="theme-betterwaterguide layout-full-width">
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T2FRHBB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="site-header betterwaterguide-head">
+    <div class="header-inner betterwaterguide-inner">
+        <a href="/" class="site-logo" aria-label="Better Water Guide">
+            <img src="/logo.svg?v=1783871056" alt="Better Water Guide" height="42">
+        </a>
+        <nav class="site-nav betterwaterguide-nav">
+            <a href="/best/">Best Water Filters</a>
+            <a href="/reviews/">Filter Reviews</a>
+            <a href="/vs/">Compare Systems</a>
+            <a href="/guides/">Water Quality Guides</a>
+            <a href="/about/">About</a>
+        </nav>
+    </div>
+</header><main>
+        
+
+
+
+
+
+
+
+
+
+
+<article data-module="article-shell" data-module-role="article" class="article-shell clean-shell" itemscope itemtype="https://schema.org/Article"
+    data-content-type="guide"
+    >
+    
+    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offers">
+        <div class="sponsored-side-stack">
+
+
+
+
+
+
+<aside class="audible-sponsored-panel" aria-label="Sponsored Audible offer">
+    <div class="audible-sponsored-panel__badge">Sponsored</div>
+    <h3>Listen while you travel, pack, or unwind</h3>
+    <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while you pack, travel, walk, cook, or take a break.</p>
+    <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+    
+    <p class="audible-sponsored-panel__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+
+<aside class="kindle-sponsored-panel" aria-label="Sponsored Kindle Unlimited offer" data-affiliate-placement="kindle_unlimited_side_panel" data-product-name="Kindle Unlimited">
+    <a href="https://www.amazon.com/kindle-dbs/hz/subscribe/ku/?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank" aria-label="Explore Kindle Unlimited on Amazon">
+        <picture>
+            <source type="image/webp" srcset="/images/kindle-unlimited-panel-320.webp 320w, /images/kindle-unlimited-panel-640.webp 640w" sizes="320px">
+            <img src="/images/kindle-unlimited-panel-320.webp" width="320" height="489" loading="lazy" decoding="async" alt="Kindle Unlimited sponsored offer: read more of what you love, explore on Amazon.">
+        </picture>
+    </a>
+</aside>
+
+</div>
+    </div>
+    
+    <header data-module="article-header" class="article-header">
+        <h1 itemprop="headline">Whole-House Water Filter Sediment Load: What to Consider Before You Buy</h1><div class="article-meta">
+    
+    <span>Published July 11, 2026</span>
+    
+    <span>By <a href="/authors/editorial-team/">Better Water Guide Editorial Team</a></span>
+    
+    <span>8 min read</span>
+    
+</div></header>
+    <div data-module="article-summary" class="article-summary" itemprop="description"><p>For heavy sediment, start coarse: a 50 to 100 micron first stage for sand and grit, a 20 to 50 micron stage for moderate rust or silt, and a 5 to 10 micron stage only when the water is already fairly clean.</p></div>
+    
+
+
+    
+    <details data-module="table-of-contents" class="table-of-contents">
+        <summary>Contents</summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#start-with-the-sediment-not-the-brand">Start with the Sediment, Not the Brand</a></li>
+    <li><a href="#filter-types-and-where-they-fit">Filter Types and Where They Fit</a></li>
+    <li><a href="#why-micron-rating-is-not-the-whole-story">Why Micron Rating Is Not the Whole Story</a></li>
+    <li><a href="#what-changes-the-setup">What Changes the Setup</a></li>
+    <li><a href="#keep-maintenance-realistic">Keep Maintenance Realistic</a></li>
+    <li><a href="#what-to-confirm-before-buying">What to Confirm Before Buying</a></li>
+    <li><a href="#when-a-sediment-filter-is-the-wrong-fix">When a Sediment Filter Is the Wrong Fix</a></li>
+    <li><a href="#before-you-buy">Before You Buy</a></li>
+    <li><a href="#mistakes-to-avoid">Mistakes to Avoid</a></li>
+    <li><a href="#bottom-line">Bottom Line</a></li>
+    <li><a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#what-micron-rating-works-best-for-heavy-sediment">What micron rating works best for heavy sediment?</a></li>
+        <li><a href="#does-a-tds-meter-tell-me-if-sediment-is-a-problem">Does a TDS meter tell me if sediment is a problem?</a></li>
+        <li><a href="#is-a-spin-down-filter-enough-for-a-whole-house">Is a spin-down filter enough for a whole house?</a></li>
+        <li><a href="#how-often-should-a-sediment-filter-be-serviced">How often should a sediment filter be serviced?</a></li>
+        <li><a href="#what-if-sediment-keeps-coming-back-after-a-filter-change">What if sediment keeps coming back after a filter change?</a></li>
+        <li><a href="#do-larger-housings-really-help">Do larger housings really help?</a></li>
+        <li><a href="#should-sediment-filtration-come-before-a-softener-or-carbon-filter">Should sediment filtration come before a softener or carbon filter?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+    
+    
+
+
+
+
+
+
+
+
+
+
+<aside class="audible-inline-sponsored" aria-label="Sponsored Audible offer">
+    <div class="audible-inline-sponsored__inner">
+        <div class="audible-inline-sponsored__copy">
+            <div class="audible-inline-sponsored__badge">Sponsored</div>
+            <h3>Try audiobooks anytime</h3>
+            <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while relaxing, traveling, walking, or taking a break.</p>
+        </div>
+        <div class="audible-inline-sponsored__action">
+            <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+        </div>
+    </div>
+    <p class="audible-inline-sponsored__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+    
+    
+    <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody"><section class="article-section article-section--intro" data-module="article-section" data-section-role="intro" data-section-level="intro" data-section-id="intro"><p>That choice matters because a whole-house filter has to do two jobs at once: catch debris before it reaches fixtures and stay easy enough to live with. A clean municipal line that occasionally spits rust after service work is a very different problem from a well line that sends sand or cloudy silt on a regular basis.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="start-with-the-sediment-not-the-brand"><h2 id="start-with-the-sediment-not-the-brand" data-module="section-heading" data-section-id="start-with-the-sediment-not-the-brand">Start with the Sediment, Not the Brand</h2>
+<p>Treat sediment as a source problem first. If water is carrying sand, rust flakes, or cloudy silt into faucets and appliance valves, a single fine cartridge is usually the wrong starting point.</p>
+<p>Use the particle size to set the first stage:</p>
+<ul>
+<li><strong>Sand, grit, and larger rust flakes:</strong> start with a washable spin-down or screen separator in the 50 to 100 micron range.</li>
+<li><strong>Moderate rust haze or mixed debris:</strong> move toward a larger cartridge or media stage in the 20 to 50 micron range.</li>
+<li><strong>Fine silt that stays suspended:</strong> a 5 to 20 micron stage only works well if the housing has enough surface area to hold dirt without choking flow.</li>
+</ul>
+<p>If a filter clogs in a few days, it is usually too fine, too small, or both. The goal is to keep showers, laundry, and appliance use normal while catching the debris before it spreads through the house.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="filter-types-and-where-they-fit"><h2 id="filter-types-and-where-they-fit" data-module="section-heading" data-section-id="filter-types-and-where-they-fit">Filter Types and Where They Fit</h2>
+<p>Different filter styles handle sediment in different ways. A coarse separator, a pleated cartridge, and a backwashing media tank all solve different problems.</p>
+<div class="table-scroll"><table>
+  <thead>
+    <tr>
+      <th scope="col">Filter type</th>
+      <th scope="col">Best sediment pattern</th>
+      <th scope="col">Flow and pressure behavior</th>
+      <th scope="col">Maintenance</th>
+      <th scope="col">Main trade-off</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spin-down separator</td>
+      <td>Sand, grit, and larger rust flakes</td>
+      <td>Low restriction until the screen loads</td>
+      <td>Quick flush to drain</td>
+      <td>Weak on fine silt</td>
+    </tr>
+    <tr>
+      <td>Pleated cartridge stage</td>
+      <td>Mixed fine sediment and moderate rust</td>
+      <td>More restriction as debris fills the media</td>
+      <td>Cartridge swap and housing rinse</td>
+      <td>Pressure drops faster on dirty water</td>
+    </tr>
+    <tr>
+      <td>Backwashing media tank</td>
+      <td>Heavy, recurring sediment</td>
+      <td>Stable flow once sized correctly</td>
+      <td>Drain and valve service</td>
+      <td>Needs space and a drain</td>
+    </tr>
+    <tr>
+      <td>Staged setup, separator plus cartridge</td>
+      <td>Mixed coarse and fine sediment</td>
+      <td>Best balance when each stage has a clear job</td>
+      <td>More parts to maintain</td>
+      <td>Larger footprint and more setup work</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>A spin-down separator is the cleanest starting point when the water carries visible grit. It keeps cleanup quick, but it does not do much for fine haze. A staged setup does more, but it only makes sense when the sediment load is mixed enough to justify the extra parts.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="why-micron-rating-is-not-the-whole-story"><h2 id="why-micron-rating-is-not-the-whole-story" data-module="section-heading" data-section-id="why-micron-rating-is-not-the-whole-story">Why Micron Rating Is Not the Whole Story</h2>
+<p>Finer filtration catches smaller particles, but it also adds pressure loss and maintenance. A 5 micron cartridge will grab more of the tiny stuff, yet it usually loads faster than a coarser stage.</p>
+<p>Surface area matters as much as micron rating. A larger cartridge body holds more dirt before flow drops, which is why a bigger housing often outperforms a small ultra-fine filter on a whole-house line. Two filters with the same micron number can behave very differently if one has much more media.</p>
+<p>The flip side is simple too: a coarse separator will not solve fine silt. Homes that get cloudy water after storms, or after a well recovers, usually need a second stage or a different filter style.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-changes-the-setup"><h2 id="what-changes-the-setup" data-module="section-heading" data-section-id="what-changes-the-setup">What Changes the Setup</h2>
+<p>The water source changes the answer faster than brand choice does.</p>
+<ul>
+<li><strong>Wells with sand or pump grit</strong> usually need a separator or backwashing stage first.</li>
+<li><strong>Municipal water with occasional rust</strong> often works with a larger cartridge stage or a simple separator.</li>
+<li><strong>Old galvanized pipe</strong> can keep shedding rust no matter how many cartridges are replaced. In that case, the filter is catching the symptom, not fixing the source.</li>
+</ul>
+<p>A clear-glass settle test tells more than a TDS meter for this problem. TDS measures dissolved solids, not sand, rust, or suspended silt. If particles settle in a few minutes or leave visible dust in the bottom of a glass, sediment is the issue.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="keep-maintenance-realistic"><h2 id="keep-maintenance-realistic" data-module="section-heading" data-section-id="keep-maintenance-realistic">Keep Maintenance Realistic</h2>
+<p>Buy for the service job as much as for the install.</p>
+<p>A filter tucked behind a water heater, in a crawlspace, or in a cramped corner turns flushing and cartridge swaps into a nuisance. Access matters. So does a pressure gauge before and after the filter, because that is the clearest sign that the system is loading up.</p>
+<p>Keep the basics close to the unit:</p>
+<ul>
+<li>spare O-rings</li>
+<li>a housing wrench</li>
+<li>replacement cartridges or media</li>
+<li>a dry place for storage</li>
+</ul>
+<p>Weekly use matters too. A home running laundry, showers, and dishwashing every day needs a filter setup that stays manageable without constant disassembly. If the sediment trap needs attention every week, a larger body, a different stage order, or a backwashing design is usually a better fit.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-to-confirm-before-buying"><h2 id="what-to-confirm-before-buying" data-module="section-heading" data-section-id="what-to-confirm-before-buying">What to Confirm Before Buying</h2>
+<p>Focus on the parts that affect flow and service:</p>
+<ul>
+<li>rated service flow</li>
+<li>maximum pressure</li>
+<li>housing size</li>
+<li>cartridge length</li>
+<li>drain requirement</li>
+<li>bypass option for maintenance</li>
+</ul>
+<p>Also confirm that the filter fits the space around it. Cartridge housings need room to drop the sump or swap the element, and backwashing units need a drain path that can handle purge cycles without flooding the area.</p>
+<p>The parts ecosystem matters too. Standard cartridge sizes, common O-rings, and easy-to-find flush parts make ownership simpler. Odd sizes and unusual connections can turn routine maintenance into a sourcing problem.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="when-a-sediment-filter-is-the-wrong-fix"><h2 id="when-a-sediment-filter-is-the-wrong-fix" data-module="section-heading" data-section-id="when-a-sediment-filter-is-the-wrong-fix">When a Sediment Filter Is the Wrong Fix</h2>
+<p>Skip a sediment-first whole-house filter if the real problem is dissolved iron, scale, or odor without visible particles. Sediment filtration catches grit and turbidity, not chemistry. A fine filter placed in front of a dissolved-mineral problem only adds pressure loss.</p>
+<p>Choose a different approach if the home has no drain, very low incoming pressure, or too little space for service access. Backwashing systems need a place to discharge water, and fine cartridges need enough pressure head to keep showers and appliances comfortable.</p>
+<p>A filter also loses value when the plumbing upstream keeps shedding debris. If cartridges are filling up every few weeks, the source needs attention, not just a smaller micron rating.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="before-you-buy"><h2 id="before-you-buy" data-module="section-heading" data-section-id="before-you-buy">Before You Buy</h2>
+<p>Use this checklist:</p>
+<ul>
+<li>Identify the sediment type: sand, rust flakes, or fine silt.</li>
+<li>Note how fast fixtures clog or pressure drops after cleaning.</li>
+<li>Match the first stage to the particle size, not the smallest micron number.</li>
+<li>Confirm there is enough space for service and removal.</li>
+<li>Make sure a drain or flush path exists where the system will sit.</li>
+<li>Check that replacement parts are standard and easy to source.</li>
+<li>Plan for a pressure gauge so you know when the filter is loading.</li>
+</ul>
+<p>If two or more of those items are a poor fit, the system is likely undersized for the house or too hard to maintain.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="mistakes-to-avoid"><h2 id="mistakes-to-avoid" data-module="section-heading" data-section-id="mistakes-to-avoid">Mistakes to Avoid</h2>
+<p>The biggest mistake is choosing the finest micron rating and assuming finer means better. In a sediment-heavy house, that usually means faster clogging, weaker showers, and more cartridge changes.</p>
+<p>Another common mistake is ignoring surface area. A small housing with a tight cartridge loads quickly, even when the micron number looks right on paper. Bigger bodies and staged setups handle the same sediment load with less service hassle.</p>
+<p>Do not use TDS as a sediment test. It does not measure sand, rust, or suspended silt. And do not treat the filter as the fix when the real source is an aging pipe or recurring well debris.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="bottom-line"><h2 id="bottom-line" data-module="section-heading" data-section-id="bottom-line">Bottom Line</h2>
+<p>For wells, sand, or recurring rust, start with a coarse, serviceable first stage and add finer filtration only if the house still needs it. That keeps pressure loss under control and avoids constant cartridge changes.</p>
+<p>For municipal water with occasional particles, a larger cartridge stage or a simple separator usually covers the problem without overbuilding the system. If the water is already mostly clean, skip the aggressive fine filter and keep maintenance light.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="faq"><h2 id="faq" data-module="section-heading" data-section-id="faq">FAQ</h2>
+<h3 id="what-micron-rating-works-best-for-heavy-sediment" data-module="section-subheading" data-section-id="what-micron-rating-works-best-for-heavy-sediment">What micron rating works best for heavy sediment?</h3>
+<p>Start at 50 to 100 microns for sand and larger grit. Move finer only if the first stage keeps the water clear enough and does not create an annoying pressure drop.</p>
+<h3 id="does-a-tds-meter-tell-me-if-sediment-is-a-problem" data-module="section-subheading" data-section-id="does-a-tds-meter-tell-me-if-sediment-is-a-problem">Does a TDS meter tell me if sediment is a problem?</h3>
+<p>No. TDS measures dissolved solids, not suspended particles. A clear-glass settle test or a filter housing pressure gauge tells you more about sediment load.</p>
+<h3 id="is-a-spin-down-filter-enough-for-a-whole-house" data-module="section-subheading" data-section-id="is-a-spin-down-filter-enough-for-a-whole-house">Is a spin-down filter enough for a whole house?</h3>
+<p>It is enough for sand, grit, and large rust flakes. Fine silt needs a cartridge stage or media stage after the separator.</p>
+<h3 id="how-often-should-a-sediment-filter-be-serviced" data-module="section-subheading" data-section-id="how-often-should-a-sediment-filter-be-serviced">How often should a sediment filter be serviced?</h3>
+<p>Service it when flow drops, the pressure gauge shows a larger pressure difference, or the screen and cartridge visibly fill with debris. A fixed calendar schedule can miss storm events and sudden bursts of rust.</p>
+<h3 id="what-if-sediment-keeps-coming-back-after-a-filter-change" data-module="section-subheading" data-section-id="what-if-sediment-keeps-coming-back-after-a-filter-change">What if sediment keeps coming back after a filter change?</h3>
+<p>Trace the source upstream. A well pump, disturbed main line, or corroding galvanized pipe keeps sending debris, and the filter only catches what the plumbing sheds.</p>
+<h3 id="do-larger-housings-really-help" data-module="section-subheading" data-section-id="do-larger-housings-really-help">Do larger housings really help?</h3>
+<p>Yes. More surface area slows loading and reduces how fast pressure falls. A larger body does not change the water source, but it gives the filter more room to hold sediment before cleanup.</p>
+<h3 id="should-sediment-filtration-come-before-a-softener-or-carbon-filter" data-module="section-subheading" data-section-id="should-sediment-filtration-come-before-a-softener-or-carbon-filter">Should sediment filtration come before a softener or carbon filter?</h3>
+<p>Yes, in most homes. Sediment protection upstream keeps softener resin, carbon blocks, and fixtures from loading with grit. Fine debris belongs out of the system before it reaches the more delicate stages.</p>
+</section></div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+    
+        
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+<section class="see-also" data-module="see-also" data-section-id="see-also" aria-labelledby="see-also-heading">
+    <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
+    
+    <p>If you want to move from general advice into actual product choices, start with <a href="/guides/whole-house-carbon-water-filter-capacity-planning-what-to-size-and-how-to-match-your-household/">How to Size a Whole-House Carbon Filter for Your Household</a>, <a href="/guides/water-softener-vs-whole-house-sediment-filter-what-to-install-first/">Water Softener vs Whole-House Sediment Filter: What to Install First</a>, and <a href="/guides/shower-water-filter-people-say-leaks-from-shower-head-adapter-lead-to-water-buildup/">Shower Water Filter People Say Leaks from Shower Head Adapter Lead to Water Buildup</a>.</p>
+    <p>For a wider picture after the basics, <a href="/best/best-durable-whole-house-water-filter-how-to-choose-the-right-system-for-your-home/">Best Durable Whole House Water Filter: How to Choose the Right System for Your Home</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs</a> are the next places to read.</p>
+    
+</section>
+
+</article>
+
+    </main><footer class="site-footer">
+    
+
+<div class="footer-inner">
+        <p>&copy; 2026 Better Water Guide. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="/about/">About</a>
+            <a href="/disclosure/">Disclosure</a>
+            <a href="/privacy/">Privacy Policy</a>
+        </nav>
+
+        <p class="footer-disclosure">
+            <a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.
+        </p>
+
+    </div>
+</footer></body>
+</html>

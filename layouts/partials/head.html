@@ -17,6 +17,92 @@ gtag('config', 'G-V3GZKYJF7J');
 </script>
 <script>
 (function() {
+    var requiredVisibleMilliseconds = 5000;
+    var visibleSince = document.visibilityState === "visible" ? Date.now() : null;
+    var accumulatedVisibleMilliseconds = 0;
+    var qualificationTimer = null;
+    var qualified = false;
+
+    function visibleMilliseconds() {
+        return accumulatedVisibleMilliseconds
+            + (visibleSince === null ? 0 : Date.now() - visibleSince);
+    }
+
+    function clearQualificationTimer() {
+        if (qualificationTimer !== null) {
+            window.clearTimeout(qualificationTimer);
+            qualificationTimer = null;
+        }
+    }
+
+    function qualify(reason) {
+        if (qualified) {
+            return;
+        }
+
+        qualified = true;
+        clearQualificationTimer();
+        document.documentElement.setAttribute("data-human-traffic-qualified", reason);
+        window.gtag('event', 'human_page_view', {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            qualification_reason: reason,
+            visible_milliseconds: Math.round(visibleMilliseconds())
+        });
+    }
+
+    function scheduleVisibleQualification() {
+        clearQualificationTimer();
+        if (qualified || document.visibilityState !== "visible") {
+            return;
+        }
+
+        var remaining = requiredVisibleMilliseconds - visibleMilliseconds();
+        if (remaining <= 0) {
+            qualify("visible_5_seconds");
+            return;
+        }
+
+        qualificationTimer = window.setTimeout(function() {
+            qualify("visible_5_seconds");
+        }, remaining);
+    }
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === "visible") {
+            if (visibleSince === null) {
+                visibleSince = Date.now();
+            }
+            scheduleVisibleQualification();
+            return;
+        }
+
+        if (visibleSince !== null) {
+            accumulatedVisibleMilliseconds += Date.now() - visibleSince;
+            visibleSince = null;
+        }
+        clearQualificationTimer();
+    });
+
+    function qualifyFromInteraction() {
+        qualify("interaction");
+    }
+
+    document.addEventListener("pointerdown", qualifyFromInteraction, { once: true, passive: true });
+    document.addEventListener("keydown", qualifyFromInteraction, { once: true });
+    document.addEventListener("scroll", qualifyFromInteraction, { once: true, passive: true });
+    window.addEventListener("pagehide", function() {
+        if (visibleMilliseconds() >= requiredVisibleMilliseconds) {
+            qualify("visible_5_seconds");
+        }
+    }, { once: true });
+
+    scheduleVisibleQualification();
+})();
+</script>
+<script>
+(function() {
     function isAmazonHost(hostname) {
         var host = (hostname || "").toLowerCase();
         return host === "amzn.to"

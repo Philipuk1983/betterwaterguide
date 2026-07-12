@@ -19,6 +19,92 @@ gtag('config', 'G-V3GZKYJF7J');
 </script>
 <script>
 (function() {
+    var requiredVisibleMilliseconds = 5000;
+    var visibleSince = document.visibilityState === "visible" ? Date.now() : null;
+    var accumulatedVisibleMilliseconds = 0;
+    var qualificationTimer = null;
+    var qualified = false;
+
+    function visibleMilliseconds() {
+        return accumulatedVisibleMilliseconds
+            + (visibleSince === null ? 0 : Date.now() - visibleSince);
+    }
+
+    function clearQualificationTimer() {
+        if (qualificationTimer !== null) {
+            window.clearTimeout(qualificationTimer);
+            qualificationTimer = null;
+        }
+    }
+
+    function qualify(reason) {
+        if (qualified) {
+            return;
+        }
+
+        qualified = true;
+        clearQualificationTimer();
+        document.documentElement.setAttribute("data-human-traffic-qualified", reason);
+        window.gtag('event', 'human_page_view', {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            qualification_reason: reason,
+            visible_milliseconds: Math.round(visibleMilliseconds())
+        });
+    }
+
+    function scheduleVisibleQualification() {
+        clearQualificationTimer();
+        if (qualified || document.visibilityState !== "visible") {
+            return;
+        }
+
+        var remaining = requiredVisibleMilliseconds - visibleMilliseconds();
+        if (remaining <= 0) {
+            qualify("visible_5_seconds");
+            return;
+        }
+
+        qualificationTimer = window.setTimeout(function() {
+            qualify("visible_5_seconds");
+        }, remaining);
+    }
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === "visible") {
+            if (visibleSince === null) {
+                visibleSince = Date.now();
+            }
+            scheduleVisibleQualification();
+            return;
+        }
+
+        if (visibleSince !== null) {
+            accumulatedVisibleMilliseconds += Date.now() - visibleSince;
+            visibleSince = null;
+        }
+        clearQualificationTimer();
+    });
+
+    function qualifyFromInteraction() {
+        qualify("interaction");
+    }
+
+    document.addEventListener("pointerdown", qualifyFromInteraction, { once: true, passive: true });
+    document.addEventListener("keydown", qualifyFromInteraction, { once: true });
+    document.addEventListener("scroll", qualifyFromInteraction, { once: true, passive: true });
+    window.addEventListener("pagehide", function() {
+        if (visibleMilliseconds() >= requiredVisibleMilliseconds) {
+            qualify("visible_5_seconds");
+        }
+    }, { once: true });
+
+    scheduleVisibleQualification();
+})();
+</script>
+<script>
+(function() {
     function isAmazonHost(hostname) {
         var host = (hostname || "").toLowerCase();
         return host === "amzn.to"
@@ -128,7 +214,7 @@ gtag('config', 'G-V3GZKYJF7J');
 
 
 
-<title>Whole-House Ro vs Water Softener Staged Rollout Estimator Tool | Better Water Guide</title>
+<title>Whole-House RO vs Water Softener Staged Rollout Estimator Tool | Better Water Guide</title>
 <meta name="description" content="This estimator is for one job: helping you decide what should happen first when a home may need both whole-house reverse osmosis and a water softener.">
 <link rel="canonical" href="https://betterwaterguide.com/guides/whole-house-ro-vs-water-softener-staged-rollout-estimator-tool/">
 <link rel="icon" type="image/svg+xml" href="/logo.svg">
@@ -136,7 +222,7 @@ gtag('config', 'G-V3GZKYJF7J');
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-<meta property="og:title" content="Whole-House Ro vs Water Softener Staged Rollout Estimator Tool | Better Water Guide">
+<meta property="og:title" content="Whole-House RO vs Water Softener Staged Rollout Estimator Tool | Better Water Guide">
 <meta property="og:description" content="This estimator is for one job: helping you decide what should happen first when a home may need both whole-house reverse osmosis and a water softener.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://betterwaterguide.com/guides/whole-house-ro-vs-water-softener-staged-rollout-estimator-tool/">
@@ -145,7 +231,7 @@ gtag('config', 'G-V3GZKYJF7J');
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Whole-House Ro vs Water Softener Staged Rollout Estimator Tool | Better Water Guide">
+<meta name="twitter:title" content="Whole-House RO vs Water Softener Staged Rollout Estimator Tool | Better Water Guide">
 <meta name="twitter:description" content="This estimator is for one job: helping you decide what should happen first when a home may need both whole-house reverse osmosis and a water softener.">
 
 
@@ -170,9 +256,9 @@ gtag('config', 'G-V3GZKYJF7J');
 
 
   
-  <link rel="stylesheet" href="/css/main.min.00aa49f1fe64acc4e7b9a8cc83eb903c4fb6f95780eeaed231d3f446bdb9eeb6.css" integrity="sha256-AKpJ8f5krMTnuajMg&#43;uQPE&#43;2&#43;VeA7q7SMdP0Rr257rY=">
+  <link rel="stylesheet" href="/css/main.min.3ddf1c2bfbab0997c3c28e503cbe87c78119b9aedd59250bb456b4d73a1454f9.css" integrity="sha256-Pd8cK/urCZfDwo5QPL6Hx4EZua7dWSULtFa01zoUVPk=">
 
-<script defer src="/js/article-enhancements.js?v=1783516887"></script>
+<script defer src="/js/article-enhancements.js?v=1783871056"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.","name":"Better Water Guide","url":"https://betterwaterguide.com/"}</script>
 
 
@@ -188,7 +274,7 @@ gtag('config', 'G-V3GZKYJF7J');
 
 
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Guides","author":{"@type":"Organization","name":"Better Water Guide Editorial Team","url":"https://betterwaterguide.com/authors/editorial-team/"},"dateModified":"2026-07-03T00:00:00Z","datePublished":"2026-07-03T00:00:00Z","description":"This estimator is for one job: helping you decide what should happen first when a home may need both whole-house reverse osmosis and a water softener.","headline":"Whole-House Ro vs Water Softener Staged Rollout Estimator Tool","inLanguage":"en-us","isAccessibleForFree":true,"keywords":"whole house ro vs softener staged rollout estimator tool, whole house ro vs softener staged rollout tool tool, whole house ro vs softener staged rollout tool calculator","mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/whole-house-ro-vs-water-softener-staged-rollout-estimator-tool/","@type":"WebPage"},"publisher":{"@type":"Organization","name":"Better Water Guide","url":"https://betterwaterguide.com/"},"url":"https://betterwaterguide.com/guides/whole-house-ro-vs-water-softener-staged-rollout-estimator-tool/","wordCount":1328}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Guides","author":{"@type":"Organization","name":"Better Water Guide Editorial Team","url":"https://betterwaterguide.com/authors/editorial-team/"},"dateModified":"2026-07-03T00:00:00Z","datePublished":"2026-07-03T00:00:00Z","description":"This estimator is for one job: helping you decide what should happen first when a home may need both whole-house reverse osmosis and a water softener.","headline":"Whole-House RO vs Water Softener Staged Rollout Estimator Tool","inLanguage":"en-us","isAccessibleForFree":true,"keywords":"whole house ro vs softener staged rollout estimator tool, whole house ro vs softener staged rollout tool tool, whole house ro vs softener staged rollout tool calculator","mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/whole-house-ro-vs-water-softener-staged-rollout-estimator-tool/","@type":"WebPage"},"publisher":{"@type":"Organization","name":"Better Water Guide","url":"https://betterwaterguide.com/"},"url":"https://betterwaterguide.com/guides/whole-house-ro-vs-water-softener-staged-rollout-estimator-tool/","wordCount":1328}</script>
 
 
   
@@ -208,7 +294,7 @@ gtag('config', 'G-V3GZKYJF7J');
     <header class="site-header betterwaterguide-head">
     <div class="header-inner betterwaterguide-inner">
         <a href="/" class="site-logo" aria-label="Better Water Guide">
-            <img src="/logo.svg?v=1783516887" alt="Better Water Guide" height="42">
+            <img src="/logo.svg?v=1783871056" alt="Better Water Guide" height="42">
         </a>
         <nav class="site-nav betterwaterguide-nav">
             <a href="/best/">Best Water Filters</a>
@@ -265,7 +351,7 @@ gtag('config', 'G-V3GZKYJF7J');
     </div>
     
     <header data-module="article-header" class="article-header">
-        <h1 itemprop="headline">Whole-House Ro vs Water Softener Staged Rollout Estimator Tool</h1><div class="article-meta">
+        <h1 itemprop="headline">Whole-House RO vs Water Softener Staged Rollout Estimator Tool</h1><div class="article-meta">
     
     <span>Published July 3, 2026</span>
     
@@ -655,6 +741,30 @@ gtag('config', 'G-V3GZKYJF7J');
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
 
 
 
@@ -664,8 +774,8 @@ gtag('config', 'G-V3GZKYJF7J');
 <section class="see-also" data-module="see-also" data-section-id="see-also" aria-labelledby="see-also-heading">
     <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
     
-    <p>If you want to move from general advice into actual product choices, start with <a href="/guides/water-filtration-starter-priority-sorter-for-new-homeowners-picker/">Water Filtration Starter Priority Sorter for New Homeowners Picker</a>, <a href="/guides/whole-house-water-softener-brine-tank-capacity-calculator-size-it-correctly/">Whole House Water Softener Brine Tank Capacity Calculator: Size It Correctly</a>, and <a href="/guides/ro-vs-whole-house-filtration-how-to-choose-for-cleaner-kitchen-water/">Ro vs Whole-House Filtration: How to Choose for Cleaner Kitchen Water</a>.</p>
-    <p>For a wider picture after the basics, <a href="/vs/sediment-filter-vs-whole-house-water-filter-for-a-kitchen-which-one-to-choose/">Sediment Filter vs Whole-House Water Filter for a Kitchen: Which One to Choose?</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs: Buyer Guide</a> are the next places to read.</p>
+    <p>If you want to move from general advice into actual product choices, start with <a href="/guides/water-filtration-starter-priority-sorter-for-new-homeowners-picker/">Water Filtration Starter Priority Sorter for New Homeowners Picker</a>, <a href="/guides/whole-house-water-softener-brine-tank-capacity-calculator-size-it-correctly/">Whole House Water Softener Brine Tank Capacity Calculator: Size It Correctly</a>, and <a href="/guides/whole-house-carbon-water-filter-capacity-planning-what-to-size-and-how-to-match-your-household/">How to Size a Whole-House Carbon Filter for Your Household</a>.</p>
+    <p>For a wider picture after the basics, <a href="/best/best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test/">Best Whole House Water Filter for Townhomes: What to Choose Based on Your Water Test</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs</a> are the next places to read.</p>
     
 </section>
 

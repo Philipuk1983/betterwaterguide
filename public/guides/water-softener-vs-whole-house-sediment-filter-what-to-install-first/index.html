@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5T2FRHBB');</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3GZKYJF7J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-V3GZKYJF7J');
+</script>
+<script>
+(function() {
+    var requiredVisibleMilliseconds = 5000;
+    var visibleSince = document.visibilityState === "visible" ? Date.now() : null;
+    var accumulatedVisibleMilliseconds = 0;
+    var qualificationTimer = null;
+    var qualified = false;
+
+    function visibleMilliseconds() {
+        return accumulatedVisibleMilliseconds
+            + (visibleSince === null ? 0 : Date.now() - visibleSince);
+    }
+
+    function clearQualificationTimer() {
+        if (qualificationTimer !== null) {
+            window.clearTimeout(qualificationTimer);
+            qualificationTimer = null;
+        }
+    }
+
+    function qualify(reason) {
+        if (qualified) {
+            return;
+        }
+
+        qualified = true;
+        clearQualificationTimer();
+        document.documentElement.setAttribute("data-human-traffic-qualified", reason);
+        window.gtag('event', 'human_page_view', {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            qualification_reason: reason,
+            visible_milliseconds: Math.round(visibleMilliseconds())
+        });
+    }
+
+    function scheduleVisibleQualification() {
+        clearQualificationTimer();
+        if (qualified || document.visibilityState !== "visible") {
+            return;
+        }
+
+        var remaining = requiredVisibleMilliseconds - visibleMilliseconds();
+        if (remaining <= 0) {
+            qualify("visible_5_seconds");
+            return;
+        }
+
+        qualificationTimer = window.setTimeout(function() {
+            qualify("visible_5_seconds");
+        }, remaining);
+    }
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === "visible") {
+            if (visibleSince === null) {
+                visibleSince = Date.now();
+            }
+            scheduleVisibleQualification();
+            return;
+        }
+
+        if (visibleSince !== null) {
+            accumulatedVisibleMilliseconds += Date.now() - visibleSince;
+            visibleSince = null;
+        }
+        clearQualificationTimer();
+    });
+
+    function qualifyFromInteraction() {
+        qualify("interaction");
+    }
+
+    document.addEventListener("pointerdown", qualifyFromInteraction, { once: true, passive: true });
+    document.addEventListener("keydown", qualifyFromInteraction, { once: true });
+    document.addEventListener("scroll", qualifyFromInteraction, { once: true, passive: true });
+    window.addEventListener("pagehide", function() {
+        if (visibleMilliseconds() >= requiredVisibleMilliseconds) {
+            qualify("visible_5_seconds");
+        }
+    }, { once: true });
+
+    scheduleVisibleQualification();
+})();
+</script>
+<script>
+(function() {
+    function isAmazonHost(hostname) {
+        var host = (hostname || "").toLowerCase();
+        return host === "amzn.to"
+            || host === "a.co"
+            || /(^|\.)amazon\.[a-z.]+$/.test(host);
+    }
+
+    function cleanText(value) {
+        return (value || "").replace(/\s+/g, " ").trim().slice(0, 160);
+    }
+
+    function dataValue(element, names) {
+        for (var i = 0; i < names.length; i += 1) {
+            if (element.dataset && element.dataset[names[i]]) {
+                return element.dataset[names[i]];
+            }
+        }
+        return "";
+    }
+
+    function closestDataValue(link, names) {
+        var selector = names.map(function(name) { return "[data-" + name.replace(/[A-Z]/g, function(match) { return "-" + match.toLowerCase(); }) + "]"; }).join(",");
+        var node = selector && link.closest ? link.closest(selector) : null;
+        return node ? dataValue(node, names) : "";
+    }
+
+    function amazonProductId(url) {
+        var path = decodeURIComponent(url.pathname || "");
+        var match = path.match(/\/(?:dp|gp\/product|gp\/aw\/d|exec\/obidos\/ASIN)\/([A-Z0-9]{10})(?:[/?]|$)/i);
+        if (match) {
+            return match[1].toUpperCase();
+        }
+
+        var asin = url.searchParams.get("asin") || url.searchParams.get("ASIN");
+        return /^[A-Z0-9]{10}$/i.test(asin || "") ? asin.toUpperCase() : "";
+    }
+
+    function productName(link) {
+        var explicit = dataValue(link, ["productName", "product", "itemName"]) || closestDataValue(link, ["productName", "product", "itemName"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        var cta = link.closest ? link.closest(".affiliate-cta, .product-cta, .section-product-cta, tr, li") : null;
+        var namedNode = cta ? cta.querySelector("[data-product-name], .affiliate-cta__name-link, strong, h2, h3, th") : null;
+        return cleanText((namedNode && namedNode.textContent) || link.getAttribute("aria-label") || link.getAttribute("title") || link.textContent);
+    }
+
+    function placement(link) {
+        var explicit = dataValue(link, ["affiliatePlacement", "placement"]) || closestDataValue(link, ["affiliatePlacement", "placement"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        if (link.closest) {
+            if (link.closest(".affiliate-cta--hero")) return "hero_cta";
+            if (link.closest(".affiliate-cta--mid")) return "mid_article_cta";
+            if (link.closest(".affiliate-cta--post-editor")) return "post_editor_cta";
+            if (link.closest(".affiliate-cta--verdict")) return "verdict_cta";
+            if (link.closest(".affiliate-cta--context")) return "context_cta";
+            if (link.closest(".affiliate-cta")) return "affiliate_cta";
+            if (link.closest("table")) return "comparison_table";
+            if (link.closest("header, .hero, .modern-hero")) return "hero";
+        }
+
+        return "amazon_link";
+    }
+
+    document.addEventListener("click", function(event) {
+        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) {
+            return;
+        }
+
+        var url;
+        try {
+            url = new URL(link.href, window.location.href);
+        } catch (_) {
+            return;
+        }
+
+        if (!isAmazonHost(url.hostname)) {
+            return;
+        }
+
+        var payload = {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            affiliate_network: "amazon",
+            merchant: "amazon",
+            product_id: amazonProductId(url),
+            product_name: productName(link),
+            placement: placement(link),
+            link_url: url.href
+        };
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: "affiliate_click" }, payload));
+        window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
+    }, true);
+})();
+</script>
+
+
+
+
+
+
+<title>Water Softener vs Whole-House Sediment Filter: What to Install First | Better Water Guide</title>
+<meta name="description" content="If the water is clear but leaves scale behind, start with a softener. If the water carries sand, rust, or visible grit, start with a sediment filter.">
+<link rel="canonical" href="https://betterwaterguide.com/guides/water-softener-vs-whole-house-sediment-filter-what-to-install-first/">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:title" content="Water Softener vs Whole-House Sediment Filter: What to Install First | Better Water Guide">
+<meta property="og:description" content="If the water is clear but leaves scale behind, start with a softener. If the water carries sand, rust, or visible grit, start with a sediment filter.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://betterwaterguide.com/guides/water-softener-vs-whole-house-sediment-filter-what-to-install-first/">
+<meta property="og:site_name" content="Better Water Guide">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Water Softener vs Whole-House Sediment Filter: What to Install First | Better Water Guide">
+<meta name="twitter:description" content="If the water is clear but leaves scale behind, start with a softener. If the water carries sand, rust, or visible grit, start with a sediment filter.">
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Source%20Sans%203:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/main.min.3ddf1c2bfbab0997c3c28e503cbe87c78119b9aedd59250bb456b4d73a1454f9.css" integrity="sha256-Pd8cK/urCZfDwo5QPL6Hx4EZua7dWSULtFa01zoUVPk=">
+
+<script defer src="/js/article-enhancements.js?v=1783871056"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.","name":"Better Water Guide","url":"https://betterwaterguide.com/"}</script>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Guides","author":{"@type":"Organization","name":"Better Water Guide Editorial Team","url":"https://betterwaterguide.com/authors/editorial-team/"},"dateModified":"2026-07-11T00:00:00Z","datePublished":"2026-07-11T00:00:00Z","description":"If the water is clear but leaves scale behind, start with a softener. If the water carries sand, rust, or visible grit, start with a sediment filter.","headline":"Water Softener vs Whole-House Sediment Filter: What to Install First","inLanguage":"en-us","isAccessibleForFree":true,"keywords":"water softener vs whole house sediment filter what to buy first, how to choose water softener vs whole-house sediment filter: what to install first, water softener vs whole-house sediment filter: what to install first guide","mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/water-softener-vs-whole-house-sediment-filter-what-to-install-first/","@type":"WebPage"},"publisher":{"@type":"Organization","name":"Better Water Guide","url":"https://betterwaterguide.com/"},"url":"https://betterwaterguide.com/guides/water-softener-vs-whole-house-sediment-filter-what-to-install-first/","wordCount":1151}</script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Yes. If both systems are installed, the sediment filter should sit upstream so grit does not reach the softener."},"name":"Does a sediment filter go before a softener?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"No. A softener removes hardness minerals. It does not remove sand, rust, or visible particles."},"name":"Can a softener replace a sediment filter?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"A 20-micron cartridge is the easier place to start when flow matters. A 5-micron cartridge catches finer debris, but it loads faster and can reduce pressure sooner."},"name":"What micron rating should I start with?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Use a hardness strip, a clear-jar settle test, and a pressure gauge. TDS alone does not tell you whether the issue is hardness or sediment."},"name":"What test tells me the order fastest?"}],"mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/water-softener-vs-whole-house-sediment-filter-what-to-install-first/","@type":"WebPage"}}</script>
+
+
+
+
+<meta name="msvalidate.01" content="F47EA7444EF95B629D2B0B8FB5B6850A"></head>
+<body class="theme-betterwaterguide layout-full-width">
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T2FRHBB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="site-header betterwaterguide-head">
+    <div class="header-inner betterwaterguide-inner">
+        <a href="/" class="site-logo" aria-label="Better Water Guide">
+            <img src="/logo.svg?v=1783871056" alt="Better Water Guide" height="42">
+        </a>
+        <nav class="site-nav betterwaterguide-nav">
+            <a href="/best/">Best Water Filters</a>
+            <a href="/reviews/">Filter Reviews</a>
+            <a href="/vs/">Compare Systems</a>
+            <a href="/guides/">Water Quality Guides</a>
+            <a href="/about/">About</a>
+        </nav>
+    </div>
+</header><main>
+        
+
+
+
+
+
+
+
+
+
+
+<article data-module="article-shell" data-module-role="article" class="article-shell clean-shell" itemscope itemtype="https://schema.org/Article"
+    data-content-type="guide"
+    >
+    
+    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offers">
+        <div class="sponsored-side-stack">
+
+
+
+
+
+
+<aside class="audible-sponsored-panel" aria-label="Sponsored Audible offer">
+    <div class="audible-sponsored-panel__badge">Sponsored</div>
+    <h3>Listen while you travel, pack, or unwind</h3>
+    <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while you pack, travel, walk, cook, or take a break.</p>
+    <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+    
+    <p class="audible-sponsored-panel__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+
+<aside class="kindle-sponsored-panel" aria-label="Sponsored Kindle Unlimited offer" data-affiliate-placement="kindle_unlimited_side_panel" data-product-name="Kindle Unlimited">
+    <a href="https://www.amazon.com/kindle-dbs/hz/subscribe/ku/?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank" aria-label="Explore Kindle Unlimited on Amazon">
+        <picture>
+            <source type="image/webp" srcset="/images/kindle-unlimited-panel-320.webp 320w, /images/kindle-unlimited-panel-640.webp 640w" sizes="320px">
+            <img src="/images/kindle-unlimited-panel-320.webp" width="320" height="489" loading="lazy" decoding="async" alt="Kindle Unlimited sponsored offer: read more of what you love, explore on Amazon.">
+        </picture>
+    </a>
+</aside>
+
+</div>
+    </div>
+    
+    <header data-module="article-header" class="article-header">
+        <h1 itemprop="headline">Water Softener vs Whole-House Sediment Filter: What to Install First</h1><div class="article-meta">
+    
+    <span>Published July 11, 2026</span>
+    
+    <span>By <a href="/authors/editorial-team/">Better Water Guide Editorial Team</a></span>
+    
+    <span>6 min read</span>
+    
+</div></header>
+    <div data-module="article-summary" class="article-summary" itemprop="description"><p>If the water is clear but leaves scale behind, start with a softener. If the water carries sand, rust, or visible grit, start with a sediment filter. If both problems show up, put the sediment filter first so the softener is not asked to trap debris it cannot remove.</p></div>
+    
+
+
+    
+    <details data-module="table-of-contents" class="table-of-contents">
+        <summary>Contents</summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-short-answer">The short answer</a></li>
+    <li><a href="#what-each-system-handles">What each system handles</a></li>
+    <li><a href="#how-to-decide-first">How to decide first</a></li>
+    <li><a href="#why-the-order-matters">Why the order matters</a></li>
+    <li><a href="#the-pressure-trade-off">The pressure trade-off</a></li>
+    <li><a href="#upkeep-is-different-for-each-system">Upkeep is different for each system</a></li>
+    <li><a href="#space-and-installation-basics">Space and installation basics</a></li>
+    <li><a href="#when-neither-should-be-first">When neither should be first</a></li>
+    <li><a href="#mistakes-that-make-this-decision-worse">Mistakes that make this decision worse</a></li>
+    <li><a href="#quick-buy-first-guide">Quick buy-first guide</a></li>
+    <li><a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#does-a-sediment-filter-go-before-a-softener">Does a sediment filter go before a softener?</a></li>
+        <li><a href="#can-a-softener-replace-a-sediment-filter">Can a softener replace a sediment filter?</a></li>
+        <li><a href="#what-micron-rating-should-i-start-with">What micron rating should I start with?</a></li>
+        <li><a href="#what-test-tells-me-the-order-fastest">What test tells me the order fastest?</a></li>
+        <li><a href="#is-a-spin-down-filter-enough-before-a-softener">Is a spin-down filter enough before a softener?</a></li>
+        <li><a href="#what-if-my-water-pressure-is-already-low">What if my water pressure is already low?</a></li>
+        <li><a href="#if-my-water-is-hard-but-looks-clean-what-should-i-buy-first">If my water is hard but looks clean, what should I buy first?</a></li>
+        <li><a href="#what-if-the-water-turns-brown-after-a-plumbing-repair">What if the water turns brown after a plumbing repair?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+    
+    
+
+
+
+
+
+
+
+
+
+
+<aside class="audible-inline-sponsored" aria-label="Sponsored Audible offer">
+    <div class="audible-inline-sponsored__inner">
+        <div class="audible-inline-sponsored__copy">
+            <div class="audible-inline-sponsored__badge">Sponsored</div>
+            <h3>Try audiobooks anytime</h3>
+            <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while relaxing, traveling, walking, or taking a break.</p>
+        </div>
+        <div class="audible-inline-sponsored__action">
+            <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+        </div>
+    </div>
+    <p class="audible-inline-sponsored__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+    
+    
+    <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody"><section class="article-section article-section--intro" data-module="article-section" data-section-role="intro" data-section-level="intro" data-section-id="intro"></section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="the-short-answer"><h2 id="the-short-answer" data-module="section-heading" data-section-id="the-short-answer">The short answer</h2>
+<p>Use this order:</p>
+<ul>
+<li>Clear water, scale on fixtures, hardness above about 7 grains per gallon: install the softener first.</li>
+<li>Rust specks, sandy sediment, brown water after repairs, or a jar that still settles dirty after 24 hours: install the sediment filter first.</li>
+<li>Both scale and debris: sediment filter first, softener second.</li>
+</ul>
+<p>That sequence protects the softener&rsquo;s resin bed and control valve from grit, and it keeps the house from treating the wrong problem first.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-each-system-handles"><h2 id="what-each-system-handles" data-module="section-heading" data-section-id="what-each-system-handles">What each system handles</h2>
+<div class="table-scroll"><table>
+	<thead>
+			<tr>
+					<th>Water clue</th>
+					<th>Install first</th>
+					<th>Why</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>White crust on faucets, cloudy soap residue, clear water</td>
+					<td>Softener</td>
+					<td>Hardness causes scale, not particles</td>
+			</tr>
+			<tr>
+					<td>Rust specks, sandy sediment, brown water after plumbing work</td>
+					<td>Sediment filter</td>
+					<td>Grit belongs upstream of the softener</td>
+			</tr>
+			<tr>
+					<td>Scale plus visible debris</td>
+					<td>Sediment filter, then softener</td>
+					<td>Keeps debris out of the resin bed and valve</td>
+			</tr>
+			<tr>
+					<td>Clear water, hardness under 3 gpg, no staining</td>
+					<td>Neither one is urgent</td>
+					<td>There is no strong treatment priority yet</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>A softener handles hardness. It does not remove sand, rust, or silt. A sediment filter handles particles. It does not solve scale.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="how-to-decide-first"><h2 id="how-to-decide-first" data-module="section-heading" data-section-id="how-to-decide-first">How to decide first</h2>
+<p>Start with the water, not the equipment.</p>
+<ol>
+<li>Test hardness.</li>
+<li>Look for visible particles.</li>
+<li>Use a clear jar and let it sit for 24 hours.</li>
+<li>Check pressure before choosing a tight filter.</li>
+</ol>
+<p>A hardness reading above about 7 gpg with clear water points to the softener. A jar that still leaves grit after 24 hours points to sediment treatment first. If the house runs on a well and the water turns sandy after rain or pump work, sediment gets priority.</p>
+<p>Brown water after plumbing work is often temporary. Flush the lines and retest before buying anything.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="why-the-order-matters"><h2 id="why-the-order-matters" data-module="section-heading" data-section-id="why-the-order-matters">Why the order matters</h2>
+<p>A softener without a sediment stage can still work, but it ends up dealing with the wrong load. Sand and rust do not cause hardness, and they do not belong in the resin bed or control valve. That grit can also show up in aerators and fixtures, which adds more cleanup later.</p>
+<p>If both problems exist, putting the sediment filter ahead of the softener keeps the softener cleaner and helps it last longer.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="the-pressure-trade-off"><h2 id="the-pressure-trade-off" data-module="section-heading" data-section-id="the-pressure-trade-off">The pressure trade-off</h2>
+<p>Filter choice affects flow.</p>
+<p>A 20-micron cartridge is usually easier on flow than a 5-micron cartridge. The finer cartridge catches more silt and fine rust, but it loads faster and can make showers feel weaker or tub fills slower. If the house already has modest pressure, starting with a tighter cartridge can create a problem you do not want.</p>
+<p>A spin-down prefilter makes more sense than a fine cartridge when the water is sandy. It can flush out coarse debris without constant cartridge waste. That does not replace a finer sediment stage for rust or silt, but it handles heavy grit more cleanly.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="upkeep-is-different-for-each-system"><h2 id="upkeep-is-different-for-each-system" data-module="section-heading" data-section-id="upkeep-is-different-for-each-system">Upkeep is different for each system</h2>
+<p>A softener asks for salt, brine care, and enough space to service the tank. A sediment filter asks for cartridge changes, housing cleanup, and a place to throw away used filters.</p>
+<ul>
+<li>Softener upkeep: keep salt on hand, break up salt bridges if they form, and keep the brine area clean.</li>
+<li>Sediment filter upkeep: replace cartridges when pressure drops or debris returns, rinse the housing, and keep spare O-rings ready.</li>
+<li>If the house uses more water, the sediment filter usually needs attention sooner.</li>
+</ul>
+<p>Storage matters too. Salt bags need a dry place. Used cartridges need a disposal spot. In a crowded utility room, the easier system to service is the one that stays easier to live with.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="space-and-installation-basics"><h2 id="space-and-installation-basics" data-module="section-heading" data-section-id="space-and-installation-basics">Space and installation basics</h2>
+<p>Plan around the plumbing, not just the footprint.</p>
+<ul>
+<li>A softener needs drain access, power, and room to service the tank.</li>
+<li>A sediment filter needs vertical clearance to open the housing and enough space for a bucket or towel.</li>
+<li>If pressure is already weak, avoid a tight cartridge first.</li>
+<li>If both systems are going in, sediment goes upstream of the softener.</li>
+<li>If the house uses a well, expect sediment levels to change after heavy rain or pump work.</li>
+</ul>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="when-neither-should-be-first"><h2 id="when-neither-should-be-first" data-module="section-heading" data-section-id="when-neither-should-be-first">When neither should be first</h2>
+<p>Some water problems sit outside this choice.</p>
+<p>A sediment filter and softener do not fix sulfur odor, bacteria, or dissolved iron staining on their own. If the house already has low pressure, a fine cartridge can make the problem feel worse. If the water is clear and hardness stays under 3 gpg, the softener is not the urgent purchase.</p>
+<p>Old scale in a water heater or on aerators is another separate issue. A softener stops new scale from forming, but it does not remove old buildup.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="mistakes-that-make-this-decision-worse"><h2 id="mistakes-that-make-this-decision-worse" data-module="section-heading" data-section-id="mistakes-that-make-this-decision-worse">Mistakes that make this decision worse</h2>
+<ul>
+<li>Putting the softener in front of gritty water.</li>
+<li>Choosing a 5-micron cartridge before checking pressure.</li>
+<li>Using TDS as the only test.</li>
+<li>Ignoring where salt bags or used cartridges will go.</li>
+<li>Treating brown water after utility work as a permanent water problem without flushing and retesting.</li>
+</ul>
+<p>If the plumbing is old, the pressure is weak, or construction debris keeps showing up, let the house conditions decide the order.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="quick-buy-first-guide"><h2 id="quick-buy-first-guide" data-module="section-heading" data-section-id="quick-buy-first-guide">Quick buy-first guide</h2>
+<p>Use a sediment filter first when:</p>
+<ul>
+<li>You see rust, sand, or visible grit.</li>
+<li>A jar test still shows debris after 24 hours.</li>
+<li>The water turns brown after plumbing work.</li>
+<li>The home is on a well with seasonal sediment spikes.</li>
+</ul>
+<p>Use a softener first when:</p>
+<ul>
+<li>The water is clear.</li>
+<li>Scale is the main complaint.</li>
+<li>Hardness tests above about 7 gpg.</li>
+<li>There is no visible particle problem.</li>
+</ul>
+<p>If both are true, install the sediment filter first and the softener second.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="faq"><h2 id="faq" data-module="section-heading" data-section-id="faq">FAQ</h2>
+<h3 id="does-a-sediment-filter-go-before-a-softener" data-module="section-subheading" data-section-id="does-a-sediment-filter-go-before-a-softener">Does a sediment filter go before a softener?</h3>
+<p>Yes. If both systems are installed, the sediment filter should sit upstream so grit does not reach the softener.</p>
+<h3 id="can-a-softener-replace-a-sediment-filter" data-module="section-subheading" data-section-id="can-a-softener-replace-a-sediment-filter">Can a softener replace a sediment filter?</h3>
+<p>No. A softener removes hardness minerals. It does not remove sand, rust, or visible particles.</p>
+<h3 id="what-micron-rating-should-i-start-with" data-module="section-subheading" data-section-id="what-micron-rating-should-i-start-with">What micron rating should I start with?</h3>
+<p>A 20-micron cartridge is the easier place to start when flow matters. A 5-micron cartridge catches finer debris, but it loads faster and can reduce pressure sooner.</p>
+<h3 id="what-test-tells-me-the-order-fastest" data-module="section-subheading" data-section-id="what-test-tells-me-the-order-fastest">What test tells me the order fastest?</h3>
+<p>Use a hardness strip, a clear-jar settle test, and a pressure gauge. TDS alone does not tell you whether the issue is hardness or sediment.</p>
+<h3 id="is-a-spin-down-filter-enough-before-a-softener" data-module="section-subheading" data-section-id="is-a-spin-down-filter-enough-before-a-softener">Is a spin-down filter enough before a softener?</h3>
+<p>It can be enough for sandy well water with heavy particles because it flushes coarse debris without constant cartridge waste. It does not replace a finer sediment stage if the water also carries rust or silt.</p>
+<h3 id="what-if-my-water-pressure-is-already-low" data-module="section-subheading" data-section-id="what-if-my-water-pressure-is-already-low">What if my water pressure is already low?</h3>
+<p>Do not start with a tight sediment cartridge. Solve the pressure problem first or use a lower-restriction prefilter.</p>
+<h3 id="if-my-water-is-hard-but-looks-clean-what-should-i-buy-first" data-module="section-subheading" data-section-id="if-my-water-is-hard-but-looks-clean-what-should-i-buy-first">If my water is hard but looks clean, what should I buy first?</h3>
+<p>The softener comes first. Clear water with hardness above about 7 gpg points to scale, not sediment.</p>
+<h3 id="what-if-the-water-turns-brown-after-a-plumbing-repair" data-module="section-subheading" data-section-id="what-if-the-water-turns-brown-after-a-plumbing-repair">What if the water turns brown after a plumbing repair?</h3>
+<p>Flush the lines and retest before buying anything. Temporary brown water usually means disturbed sediment, not a softener problem.</p>
+</section></div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+    
+        
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+<section class="see-also" data-module="see-also" data-section-id="see-also" aria-labelledby="see-also-heading">
+    <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
+    
+    <p>If you want to move from general advice into actual product choices, start with <a href="/guides/whole-house-carbon-water-filter-capacity-planning-what-to-size-and-how-to-match-your-household/">How to Size a Whole-House Carbon Filter for Your Household</a>, <a href="/guides/whole-house-water-filter-sediment-load-what-to-consider-before-you-buy/">Whole-House Water Filter Sediment Load: What to Consider Before You Buy</a>, and <a href="/guides/ro-vs-whole-house-filtration-how-to-choose-for-cleaner-kitchen-water/">RO vs Whole-House Filtration: How to Choose for Cleaner Kitchen Water</a>.</p>
+    <p>For a wider picture after the basics, <a href="/vs/well-water-whole-house-filter-vs-point-of-use-filter-for-the-kitchen-which-one-to-choose/">Well Water Whole-House Filter vs. Point-Of-Use Filter for the Kitchen</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs</a> are the next places to read.</p>
+    
+</section>
+
+</article>
+
+    </main><footer class="site-footer">
+    
+
+<div class="footer-inner">
+        <p>&copy; 2026 Better Water Guide. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="/about/">About</a>
+            <a href="/disclosure/">Disclosure</a>
+            <a href="/privacy/">Privacy Policy</a>
+        </nav>
+
+        <p class="footer-disclosure">
+            <a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.
+        </p>
+
+    </div>
+</footer></body>
+</html>

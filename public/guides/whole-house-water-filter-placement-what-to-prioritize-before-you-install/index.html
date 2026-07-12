@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5T2FRHBB');</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3GZKYJF7J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-V3GZKYJF7J');
+</script>
+<script>
+(function() {
+    var requiredVisibleMilliseconds = 5000;
+    var visibleSince = document.visibilityState === "visible" ? Date.now() : null;
+    var accumulatedVisibleMilliseconds = 0;
+    var qualificationTimer = null;
+    var qualified = false;
+
+    function visibleMilliseconds() {
+        return accumulatedVisibleMilliseconds
+            + (visibleSince === null ? 0 : Date.now() - visibleSince);
+    }
+
+    function clearQualificationTimer() {
+        if (qualificationTimer !== null) {
+            window.clearTimeout(qualificationTimer);
+            qualificationTimer = null;
+        }
+    }
+
+    function qualify(reason) {
+        if (qualified) {
+            return;
+        }
+
+        qualified = true;
+        clearQualificationTimer();
+        document.documentElement.setAttribute("data-human-traffic-qualified", reason);
+        window.gtag('event', 'human_page_view', {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            qualification_reason: reason,
+            visible_milliseconds: Math.round(visibleMilliseconds())
+        });
+    }
+
+    function scheduleVisibleQualification() {
+        clearQualificationTimer();
+        if (qualified || document.visibilityState !== "visible") {
+            return;
+        }
+
+        var remaining = requiredVisibleMilliseconds - visibleMilliseconds();
+        if (remaining <= 0) {
+            qualify("visible_5_seconds");
+            return;
+        }
+
+        qualificationTimer = window.setTimeout(function() {
+            qualify("visible_5_seconds");
+        }, remaining);
+    }
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === "visible") {
+            if (visibleSince === null) {
+                visibleSince = Date.now();
+            }
+            scheduleVisibleQualification();
+            return;
+        }
+
+        if (visibleSince !== null) {
+            accumulatedVisibleMilliseconds += Date.now() - visibleSince;
+            visibleSince = null;
+        }
+        clearQualificationTimer();
+    });
+
+    function qualifyFromInteraction() {
+        qualify("interaction");
+    }
+
+    document.addEventListener("pointerdown", qualifyFromInteraction, { once: true, passive: true });
+    document.addEventListener("keydown", qualifyFromInteraction, { once: true });
+    document.addEventListener("scroll", qualifyFromInteraction, { once: true, passive: true });
+    window.addEventListener("pagehide", function() {
+        if (visibleMilliseconds() >= requiredVisibleMilliseconds) {
+            qualify("visible_5_seconds");
+        }
+    }, { once: true });
+
+    scheduleVisibleQualification();
+})();
+</script>
+<script>
+(function() {
+    function isAmazonHost(hostname) {
+        var host = (hostname || "").toLowerCase();
+        return host === "amzn.to"
+            || host === "a.co"
+            || /(^|\.)amazon\.[a-z.]+$/.test(host);
+    }
+
+    function cleanText(value) {
+        return (value || "").replace(/\s+/g, " ").trim().slice(0, 160);
+    }
+
+    function dataValue(element, names) {
+        for (var i = 0; i < names.length; i += 1) {
+            if (element.dataset && element.dataset[names[i]]) {
+                return element.dataset[names[i]];
+            }
+        }
+        return "";
+    }
+
+    function closestDataValue(link, names) {
+        var selector = names.map(function(name) { return "[data-" + name.replace(/[A-Z]/g, function(match) { return "-" + match.toLowerCase(); }) + "]"; }).join(",");
+        var node = selector && link.closest ? link.closest(selector) : null;
+        return node ? dataValue(node, names) : "";
+    }
+
+    function amazonProductId(url) {
+        var path = decodeURIComponent(url.pathname || "");
+        var match = path.match(/\/(?:dp|gp\/product|gp\/aw\/d|exec\/obidos\/ASIN)\/([A-Z0-9]{10})(?:[/?]|$)/i);
+        if (match) {
+            return match[1].toUpperCase();
+        }
+
+        var asin = url.searchParams.get("asin") || url.searchParams.get("ASIN");
+        return /^[A-Z0-9]{10}$/i.test(asin || "") ? asin.toUpperCase() : "";
+    }
+
+    function productName(link) {
+        var explicit = dataValue(link, ["productName", "product", "itemName"]) || closestDataValue(link, ["productName", "product", "itemName"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        var cta = link.closest ? link.closest(".affiliate-cta, .product-cta, .section-product-cta, tr, li") : null;
+        var namedNode = cta ? cta.querySelector("[data-product-name], .affiliate-cta__name-link, strong, h2, h3, th") : null;
+        return cleanText((namedNode && namedNode.textContent) || link.getAttribute("aria-label") || link.getAttribute("title") || link.textContent);
+    }
+
+    function placement(link) {
+        var explicit = dataValue(link, ["affiliatePlacement", "placement"]) || closestDataValue(link, ["affiliatePlacement", "placement"]);
+        if (explicit) {
+            return cleanText(explicit);
+        }
+
+        if (link.closest) {
+            if (link.closest(".affiliate-cta--hero")) return "hero_cta";
+            if (link.closest(".affiliate-cta--mid")) return "mid_article_cta";
+            if (link.closest(".affiliate-cta--post-editor")) return "post_editor_cta";
+            if (link.closest(".affiliate-cta--verdict")) return "verdict_cta";
+            if (link.closest(".affiliate-cta--context")) return "context_cta";
+            if (link.closest(".affiliate-cta")) return "affiliate_cta";
+            if (link.closest("table")) return "comparison_table";
+            if (link.closest("header, .hero, .modern-hero")) return "hero";
+        }
+
+        return "amazon_link";
+    }
+
+    document.addEventListener("click", function(event) {
+        var link = event.target && event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) {
+            return;
+        }
+
+        var url;
+        try {
+            url = new URL(link.href, window.location.href);
+        } catch (_) {
+            return;
+        }
+
+        if (!isAmazonHost(url.hostname)) {
+            return;
+        }
+
+        var payload = {
+            site_host: window.location.hostname,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            affiliate_network: "amazon",
+            merchant: "amazon",
+            product_id: amazonProductId(url),
+            product_name: productName(link),
+            placement: placement(link),
+            link_url: url.href
+        };
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({ event: "affiliate_click" }, payload));
+        window.dataLayer.push(Object.assign({ event: "amazon_outbound_click" }, payload));
+    }, true);
+})();
+</script>
+
+
+
+
+
+
+<title>Whole-House Water Filter Placement: What to Prioritize Before You Install | Better Water Guide</title>
+<meta name="description" content="Whole-house filter placement comes down to three things: leave 12 to 18 inches of service clearance, keep pressure loss near or under 10 PSI at peak demand.">
+<link rel="canonical" href="https://betterwaterguide.com/guides/whole-house-water-filter-placement-what-to-prioritize-before-you-install/">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:title" content="Whole-House Water Filter Placement: What to Prioritize Before You Install | Better Water Guide">
+<meta property="og:description" content="Whole-house filter placement comes down to three things: leave 12 to 18 inches of service clearance, keep pressure loss near or under 10 PSI at peak demand.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://betterwaterguide.com/guides/whole-house-water-filter-placement-what-to-prioritize-before-you-install/">
+<meta property="og:site_name" content="Better Water Guide">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Whole-House Water Filter Placement: What to Prioritize Before You Install | Better Water Guide">
+<meta name="twitter:description" content="Whole-house filter placement comes down to three things: leave 12 to 18 inches of service clearance, keep pressure loss near or under 10 PSI at peak demand.">
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Source%20Sans%203:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/main.min.3ddf1c2bfbab0997c3c28e503cbe87c78119b9aedd59250bb456b4d73a1454f9.css" integrity="sha256-Pd8cK/urCZfDwo5QPL6Hx4EZua7dWSULtFa01zoUVPk=">
+
+<script defer src="/js/article-enhancements.js?v=1783871056"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance. Explore under-sink filters, reverse osmosis systems, whole-house filtration, hard water and chlorine solutions, water test kits, shower filters, and replacement cartridges.","name":"Better Water Guide","url":"https://betterwaterguide.com/"}</script>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Guides","author":{"@type":"Organization","name":"Better Water Guide Editorial Team","url":"https://betterwaterguide.com/authors/editorial-team/"},"dateModified":"2026-07-10T00:00:00Z","datePublished":"2026-07-10T00:00:00Z","description":"Whole-house filter placement comes down to three things: leave 12 to 18 inches of service clearance, keep pressure loss near or under 10 PSI at peak demand.","headline":"Whole-House Water Filter Placement: What to Prioritize Before You Install","inLanguage":"en-us","isAccessibleForFree":true,"keywords":"whole house water filter placement: what to prioritize, how to choose whole-house water filter placement: what to prioritize before you install, whole-house water filter placement: what to prioritize before you install guide","mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/whole-house-water-filter-placement-what-to-prioritize-before-you-install/","@type":"WebPage"},"publisher":{"@type":"Organization","name":"Better Water Guide","url":"https://betterwaterguide.com/"},"url":"https://betterwaterguide.com/guides/whole-house-water-filter-placement-what-to-prioritize-before-you-install/","wordCount":1101}</script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Before the water heater. That keeps treated water in both the hot and cold lines."},"name":"Should a whole-house water filter go before or after the water heater?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Sediment goes before the softener. That keeps grit out of the resin and valve parts."},"name":"Does a whole-house filter go before or after a softener?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Plan for 12 to 18 inches of clearance around the housing, plus room to remove the sump or cap and catch drips during service."},"name":"How much space does a whole-house filter need?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"A water report plus targeted checks for sediment, hardness, iron, chlorine, or chloramine matter most. A TDS meter alone does not show the full problem."},"name":"What water test matters most for placement?"}],"mainEntityOfPage":{"@id":"https://betterwaterguide.com/guides/whole-house-water-filter-placement-what-to-prioritize-before-you-install/","@type":"WebPage"}}</script>
+
+
+
+
+<meta name="msvalidate.01" content="F47EA7444EF95B629D2B0B8FB5B6850A"></head>
+<body class="theme-betterwaterguide layout-full-width">
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T2FRHBB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="site-header betterwaterguide-head">
+    <div class="header-inner betterwaterguide-inner">
+        <a href="/" class="site-logo" aria-label="Better Water Guide">
+            <img src="/logo.svg?v=1783871056" alt="Better Water Guide" height="42">
+        </a>
+        <nav class="site-nav betterwaterguide-nav">
+            <a href="/best/">Best Water Filters</a>
+            <a href="/reviews/">Filter Reviews</a>
+            <a href="/vs/">Compare Systems</a>
+            <a href="/guides/">Water Quality Guides</a>
+            <a href="/about/">About</a>
+        </nav>
+    </div>
+</header><main>
+        
+
+
+
+
+
+
+
+
+
+
+<article data-module="article-shell" data-module-role="article" class="article-shell clean-shell" itemscope itemtype="https://schema.org/Article"
+    data-content-type="guide"
+    >
+    
+    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offers">
+        <div class="sponsored-side-stack">
+
+
+
+
+
+
+<aside class="audible-sponsored-panel" aria-label="Sponsored Audible offer">
+    <div class="audible-sponsored-panel__badge">Sponsored</div>
+    <h3>Listen while you travel, pack, or unwind</h3>
+    <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while you pack, travel, walk, cook, or take a break.</p>
+    <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+    
+    <p class="audible-sponsored-panel__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+
+<aside class="kindle-sponsored-panel" aria-label="Sponsored Kindle Unlimited offer" data-affiliate-placement="kindle_unlimited_side_panel" data-product-name="Kindle Unlimited">
+    <a href="https://www.amazon.com/kindle-dbs/hz/subscribe/ku/?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank" aria-label="Explore Kindle Unlimited on Amazon">
+        <picture>
+            <source type="image/webp" srcset="/images/kindle-unlimited-panel-320.webp 320w, /images/kindle-unlimited-panel-640.webp 640w" sizes="320px">
+            <img src="/images/kindle-unlimited-panel-320.webp" width="320" height="489" loading="lazy" decoding="async" alt="Kindle Unlimited sponsored offer: read more of what you love, explore on Amazon.">
+        </picture>
+    </a>
+</aside>
+
+</div>
+    </div>
+    
+    <header data-module="article-header" class="article-header">
+        <h1 itemprop="headline">Whole-House Water Filter Placement: What to Prioritize Before You Install</h1><div class="article-meta">
+    
+    <span>Published July 10, 2026</span>
+    
+    <span>By <a href="/authors/editorial-team/">Better Water Guide Editorial Team</a></span>
+    
+    <span>6 min read</span>
+    
+</div></header>
+    <div data-module="article-summary" class="article-summary" itemprop="description"><p>Whole-house filter placement comes down to three things: leave 12 to 18 inches of service clearance, keep pressure loss near or under 10 PSI at peak demand, and install the unit on the cold main before the water heater. Those choices decide whether the system is easy to live with or a pain to service.</p></div>
+    
+
+
+    
+    <details data-module="table-of-contents" class="table-of-contents">
+        <summary>Contents</summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#start-with-the-water-problem">Start with the water problem</a></li>
+    <li><a href="#where-the-filter-usually-belongs">Where the filter usually belongs</a></li>
+    <li><a href="#what-to-check-before-anyone-cuts-pipe">What to check before anyone cuts pipe</a></li>
+    <li><a href="#choose-the-filter-style-that-matches-the-job">Choose the filter style that matches the job</a></li>
+    <li><a href="#when-whole-house-placement-is-the-wrong-move">When whole-house placement is the wrong move</a></li>
+    <li><a href="#a-few-layout-mistakes-to-avoid">A few layout mistakes to avoid</a></li>
+    <li><a href="#keep-maintenance-easy-from-the-start">Keep maintenance easy from the start</a></li>
+    <li><a href="#when-a-water-test-changes-the-plan">When a water test changes the plan</a></li>
+    <li><a href="#bottom-line">Bottom line</a></li>
+    <li><a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#should-a-whole-house-water-filter-go-before-or-after-the-water-heater">Should a whole-house water filter go before or after the water heater?</a></li>
+        <li><a href="#does-a-whole-house-filter-go-before-or-after-a-softener">Does a whole-house filter go before or after a softener?</a></li>
+        <li><a href="#how-much-space-does-a-whole-house-filter-need">How much space does a whole-house filter need?</a></li>
+        <li><a href="#what-water-test-matters-most-for-placement">What water test matters most for placement?</a></li>
+        <li><a href="#is-whole-house-filtration-the-right-choice-for-one-bad-tap">Is whole-house filtration the right choice for one bad tap?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+    
+    
+
+
+
+
+
+
+
+
+
+
+<aside class="audible-inline-sponsored" aria-label="Sponsored Audible offer">
+    <div class="audible-inline-sponsored__inner">
+        <div class="audible-inline-sponsored__copy">
+            <div class="audible-inline-sponsored__badge">Sponsored</div>
+            <h3>Try audiobooks anytime</h3>
+            <p>Try <strong>Audible</strong> through Amazon and listen to audiobooks while relaxing, traveling, walking, or taking a break.</p>
+        </div>
+        <div class="audible-inline-sponsored__action">
+            <a href="https://www.amazon.com/hz/audible/mlp?tag=betterwaterguide-20" rel="sponsored nofollow noopener" target="_blank">Try Audible Now</a>
+        </div>
+    </div>
+    <p class="audible-inline-sponsored__disclosure">As an Amazon Associate, we earn from qualifying purchases.</p>
+</aside>
+
+    
+    
+    <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody"><section class="article-section article-section--intro" data-module="article-section" data-section-role="intro" data-section-level="intro" data-section-id="intro"></section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="start-with-the-water-problem"><h2 id="start-with-the-water-problem" data-module="section-heading" data-section-id="start-with-the-water-problem">Start with the water problem</h2>
+<p>A whole-house filter makes sense when the water issue shows up everywhere: showers, laundry, fixtures, and appliances. If only one drinking tap tastes bad, the whole-house route adds maintenance without fixing the rest of the plumbing.</p>
+<p>Before you pick a location, pin down three basics:</p>
+<ul>
+<li>Where the water comes from: city line or well</li>
+<li>What the problem is: sediment, chlorine, hardness, iron, sulfur</li>
+<li>How the filter will be serviced: shutoff, bypass, drain, and room to open the housing</li>
+</ul>
+<p>That order matters more than the shape of the housing. A neat-looking pipe run is no help if nobody can change the cartridge or reach the bypass later.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="where-the-filter-usually-belongs"><h2 id="where-the-filter-usually-belongs" data-module="section-heading" data-section-id="where-the-filter-usually-belongs">Where the filter usually belongs</h2>
+<p>The right spot depends on the plumbing around it, not just the filter type.</p>
+<ul>
+<li><strong>City water:</strong> place the treatment on the main line after the meter and pressure regulator, before the branches and before the water heater.</li>
+<li><strong>Well water:</strong> place it after the pressure tank and pressure switch.</li>
+<li><strong>Sediment and softeners:</strong> put sediment control ahead of the softener so grit does not wear out the resin and valve parts.</li>
+<li><strong>High-demand homes:</strong> keep the run short, use full-size pipe, and avoid turning the filter into the tightest point in the system.</li>
+<li><strong>Tankless or busy households:</strong> pressure loss shows up quickly when more than one fixture runs at once, so restrictive placement hurts faster.</li>
+</ul>
+<p>The water heater is the line you do not want to cross. Put the filter before it so the hot and cold sides both benefit from the treated water.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="what-to-check-before-anyone-cuts-pipe"><h2 id="what-to-check-before-anyone-cuts-pipe" data-module="section-heading" data-section-id="what-to-check-before-anyone-cuts-pipe">What to check before anyone cuts pipe</h2>
+<p>A good install starts with the service envelope, not the housing label.</p>
+<ul>
+<li>Leave <strong>12 to 18 inches</strong> of clearance around the unit.</li>
+<li>Make sure the sump or cap can come off without hitting a wall, furnace, or storage shelf.</li>
+<li>Keep the shutoff and bypass easy to reach.</li>
+<li>Give backwashing systems a drain.</li>
+<li>Keep the filter on the cold main.</li>
+<li>Leave enough pressure headroom so the filter does not become the narrowest part of the house.</li>
+<li>Use a pressure gauge before and after the filter if you want a real service signal.</li>
+<li>Keep standard cartridges, common O-rings, a housing wrench, and seal grease close by.</li>
+</ul>
+<p>A simple pressure rule helps here: if the filter is costing about 10 PSI or more at peak household use, the setup is too restrictive for a whole-house line.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="choose-the-filter-style-that-matches-the-job"><h2 id="choose-the-filter-style-that-matches-the-job" data-module="section-heading" data-section-id="choose-the-filter-style-that-matches-the-job">Choose the filter style that matches the job</h2>
+<p>Placement and filter type go together.</p>
+<ul>
+<li><strong>Cartridge filters</strong> fit in smaller mechanical rooms, but they need regular swaps and can drip during service.</li>
+<li><strong>Backwashing media tanks</strong> take more room and need a drain, but they reduce how often you replace cartridges.</li>
+<li><strong>Fine micron cartridges</strong> catch smaller particles, but they clog faster and drop pressure sooner.</li>
+<li><strong>Carbon stages</strong> handle chlorine, taste, and odor, but they add pressure loss and replacement work.</li>
+</ul>
+<p>If only drinking water needs treatment, an under-sink or point-of-use filter is usually the cleaner option. It keeps showers, laundry, and hose bibs out of the maintenance loop.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="when-whole-house-placement-is-the-wrong-move"><h2 id="when-whole-house-placement-is-the-wrong-move" data-module="section-heading" data-section-id="when-whole-house-placement-is-the-wrong-move">When whole-house placement is the wrong move</h2>
+<p>Skip the main-line route when the problem stays narrow.</p>
+<ul>
+<li>Only the kitchen tap needs better taste</li>
+<li>The utility area has no drain or no service space</li>
+<li>The home already runs low on pressure</li>
+<li>Pipe access is tight in a rental or condo</li>
+<li>The issue affects drinking water, not the whole house</li>
+</ul>
+<p>In those cases, a point-of-use filter does the job with less plumbing work and less pressure loss across the house.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="a-few-layout-mistakes-to-avoid"><h2 id="a-few-layout-mistakes-to-avoid" data-module="section-heading" data-section-id="a-few-layout-mistakes-to-avoid">A few layout mistakes to avoid</h2>
+<p>These are the mistakes that turn a useful filter into a service headache:</p>
+<ul>
+<li>Installing after the water heater</li>
+<li>Putting a fine cartridge first on gritty water</li>
+<li>Installing before the pressure tank on a well system</li>
+<li>Skipping the bypass</li>
+<li>Using a TDS reading as the only guide</li>
+<li>Crowding the housing into a dead corner</li>
+<li>Choosing obscure cartridges or seals that are hard to replace later</li>
+</ul>
+<p>If the lid, sump, or valve cannot open cleanly, the placement fails in practice even if the pipe work looks tidy.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="keep-maintenance-easy-from-the-start"><h2 id="keep-maintenance-easy-from-the-start" data-module="section-heading" data-section-id="keep-maintenance-easy-from-the-start">Keep maintenance easy from the start</h2>
+<p>A filter is only as convenient as its service path. Put the parts you need near the shutoff or in a labeled utility bin:</p>
+<ul>
+<li>Replacement cartridges or media</li>
+<li>Spare O-rings</li>
+<li>Silicone grease for seals</li>
+<li>Housing wrench</li>
+<li>Small towel or drip tray</li>
+</ul>
+<p>That small setup pays off the first time a housing drips or a cartridge loads up faster than expected. A standard cartridge or common seal is far easier to live with than specialty parts that send you hunting for replacements after every leak.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="when-a-water-test-changes-the-plan"><h2 id="when-a-water-test-changes-the-plan" data-module="section-heading" data-section-id="when-a-water-test-changes-the-plan">When a water test changes the plan</h2>
+<p>A better test can change the layout faster than a new filter can.</p>
+<ul>
+<li><strong>Chlorine or chloramine present:</strong> carbon belongs early in the treatment train so the whole house gets the benefit.</li>
+<li><strong>Iron, manganese, or orange staining present:</strong> sediment and oxidation needs come before fine filtration.</li>
+<li><strong>Sand or rust filling cartridges quickly:</strong> use a coarse prefilter or backwashing stage first.</li>
+<li><strong>Static pressure already low:</strong> short runs and low restriction matter more than compact placement.</li>
+<li><strong>Only a TDS meter is available:</strong> that reading does not tell you whether you are dealing with sediment, chlorine, hardness, or iron.</li>
+</ul>
+<p>If the test result changes, the placement changes with it.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="bottom-line"><h2 id="bottom-line" data-module="section-heading" data-section-id="bottom-line">Bottom line</h2>
+<p>The best whole-house filter placement protects the right equipment, preserves pressure, and stays easy to service. For city water, that usually means after the meter and pressure regulator, before the branches and water heater. For well water, that usually means after the pressure tank and pressure switch, with sediment handled before finer stages.</p>
+<p>If only one drinking tap needs help, use a point-of-use filter instead. Whole-house placement pays off when the water issue affects the entire home and the service setup stays practical.</p>
+</section><section class="article-section" data-module="article-section" data-section-role="body-section" data-section-level="h2" data-section-id="faq"><h2 id="faq" data-module="section-heading" data-section-id="faq">FAQ</h2>
+<h3 id="should-a-whole-house-water-filter-go-before-or-after-the-water-heater" data-module="section-subheading" data-section-id="should-a-whole-house-water-filter-go-before-or-after-the-water-heater">Should a whole-house water filter go before or after the water heater?</h3>
+<p>Before the water heater. That keeps treated water in both the hot and cold lines.</p>
+<h3 id="does-a-whole-house-filter-go-before-or-after-a-softener" data-module="section-subheading" data-section-id="does-a-whole-house-filter-go-before-or-after-a-softener">Does a whole-house filter go before or after a softener?</h3>
+<p>Sediment goes before the softener. That keeps grit out of the resin and valve parts.</p>
+<h3 id="how-much-space-does-a-whole-house-filter-need" data-module="section-subheading" data-section-id="how-much-space-does-a-whole-house-filter-need">How much space does a whole-house filter need?</h3>
+<p>Plan for 12 to 18 inches of clearance around the housing, plus room to remove the sump or cap and catch drips during service.</p>
+<h3 id="what-water-test-matters-most-for-placement" data-module="section-subheading" data-section-id="what-water-test-matters-most-for-placement">What water test matters most for placement?</h3>
+<p>A water report plus targeted checks for sediment, hardness, iron, chlorine, or chloramine matter most. A TDS meter alone does not show the full problem.</p>
+<h3 id="is-whole-house-filtration-the-right-choice-for-one-bad-tap" data-module="section-subheading" data-section-id="is-whole-house-filtration-the-right-choice-for-one-bad-tap">Is whole-house filtration the right choice for one bad tap?</h3>
+<p>No. A point-of-use or under-sink filter is the simpler fit for a single drinking-water problem.</p>
+</section></div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+    
+        
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+    
+        
+            
+            
+        
+    
+
+
+    
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+<section class="see-also" data-module="see-also" data-section-id="see-also" aria-labelledby="see-also-heading">
+    <h2 id="see-also-heading" data-module="section-heading" data-section-id="see-also">See Also</h2>
+    
+    <p>If you want to move from general advice into actual product choices, start with <a href="/guides/whole-house-carbon-water-filter-capacity-planning-what-to-size-and-how-to-match-your-household/">How to Size a Whole-House Carbon Filter for Your Household</a>, <a href="/guides/water-softener-vs-whole-house-sediment-filter-what-to-install-first/">Water Softener vs Whole-House Sediment Filter: What to Install First</a>, and <a href="/guides/whole-house-ro-vs-water-softener-staged-rollout-estimator-tool/">Whole-House RO vs Water Softener Staged Rollout Estimator Tool</a>.</p>
+    <p>For a wider picture after the basics, <a href="/best/best-whole-house-water-filter-for-a-mobile-home-how-to-choose-the-right-system/">Best Whole House Water Filter for a Mobile Home: How to Choose the Right System</a> and <a href="/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/">Aquasana Whole House Water Filter: Who It&#39;s for, Costs, and Trade-Offs</a> are the next places to read.</p>
+    
+</section>
+
+</article>
+
+    </main><footer class="site-footer">
+    
+
+<div class="footer-inner">
+        <p>&copy; 2026 Better Water Guide. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="/about/">About</a>
+            <a href="/disclosure/">Disclosure</a>
+            <a href="/privacy/">Privacy Policy</a>
+        </nav>
+
+        <p class="footer-disclosure">
+            <a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.
+        </p>
+
+    </div>
+</footer></body>
+</html>
