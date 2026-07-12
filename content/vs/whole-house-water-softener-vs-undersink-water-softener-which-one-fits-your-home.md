@@ -69,7 +69,6 @@ faq:
   - question: "Is the pricier option worth it?"
     answer: "The pricier option is only worth it if its premium strengths matter in normal use."
 ---
-
 Choose a [whole house water softener](https://www.amazon.com/s?k=whole%20house%20water%20softener&tag=betterwaterguide-20) when you want softened water at every fixture. Choose an [undersink water softener](https://www.amazon.com/s?k=undersink%20water%20softener&tag=betterwaterguide-20) when one faucet is the only place that needs attention or when you want the plumbing work to stay under one cabinet.
 
 Neither option removes contaminants on its own. Hardness is one issue. Chlorine, lead, PFAS, sediment, taste, and odor are separate problems that need separate filtration.
@@ -120,6 +119,18 @@ Softening and filtration can work together, but they are not the same job. A sof
 
 ## Comparison table
 
+| Decision point | Whole house water softener | Undersink water softener |
+|---|---|---|
+| Coverage | Treats water on the main line, so showers, laundry, appliances, and every faucet receive softened water | Treats water at one sink only |
+| Plumbing path | Becomes part of the home’s central plumbing before water branches out | Stays localized under a single cabinet and faucet |
+| Space needs | Works best with utility space such as a basement, garage, or laundry area | Fits a smaller project area, but cabinet space can be crowded |
+| Hard-water pattern | Addresses scale and mineral film across multiple rooms and fixtures | Leaves other fixtures unchanged if they also show buildup |
+| Service access | Keeps maintenance in one central location | Keeps the scope small, though the working space is tighter |
+
+The main trade-off is reach versus confinement. A whole-house softener solves a homewide hardness problem by treating water before it spreads through the plumbing. An undersink softener narrows the job to one outlet, which keeps the solution focused but leaves the rest of the house untouched.
+
+Choose whole-house softening when hard water is showing up in more than one room or affecting the water heater and appliances, and there is a practical place for central equipment. Choose undersink softening when the kitchen sink is the only faucet that needs attention, or when you want to keep the installation limited to one cabinet and one draw point.
+
 ## Simple way to choose
 
 If the mineral buildup is spread across the home, the whole-house system is the cleaner fit. It treats the water before it reaches the fixtures that need it.
@@ -131,11 +142,3 @@ If you also care about taste, odor, sediment, or contaminant removal, build filt
 ## Final take
 
 The whole house water softener vs undersink water softener decision comes down to scope. Whole-house softening is the broader fix for scale around the home. Undersink softening is the narrower fix for one faucet. If the hard water is everywhere, treat the whole home. If it is just at the kitchen sink, keep the solution under the sink. If the real problem is water quality rather than hardness, start with filtration.
-
-## Comparison Table for whole house water softener vs undersink water softener
-
-| Decision point | whole house water softener | undersink water softener |
-|---|---|---|
-| Best fit | Choose when its main strength matches the reader's highest-priority use case | Choose when its trade-off is easier to live with |
-| Constraint to check | Verify setup, compatibility, capacity, and upkeep before choosing | Verify the same constraint so the comparison stays fair |
-| Wrong-fit signal | Skip if the main limitation affects daily use | Skip if the alternative handles that limitation better |

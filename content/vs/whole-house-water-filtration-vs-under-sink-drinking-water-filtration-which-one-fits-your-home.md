@@ -73,7 +73,6 @@ faq:
   - question: "Do I need a water test before buying either one?"
     answer: "A water report or basic home test is the most useful way to tell whether the problem is house-wide or limited to one tap."
 ---
-
 ## The Short Version
 
 - Choose under-sink filtration when the problem is taste, odor, or drinking-water quality at one faucet.
@@ -123,6 +122,19 @@ Strip kits are useful for basic chlorine and hardness questions. Lab testing is 
 
 ## Quick Comparison
 
+| Topic | Whole-house water filtration | Under-sink drinking water filtration |
+|---|---|---|
+| Where it installs | At the point where water enters the home | In the cabinet under one sink, usually the kitchen tap |
+| What water it treats | Every fixture and appliance line in the house | One branch line used for drinking and cooking |
+| Problems it addresses | Sediment, chlorine smell, rust-related residue, buildup across the home | Taste and odor at the faucet people use most |
+| What changes after installation | Shower, laundry, fixtures, and appliances all receive treated water | The rest of the house keeps its normal flow and pressure |
+| Upkeep and access | Larger service event at the main shutoff or utility area | Smaller cartridge changes in the sink cabinet |
+| Space requirements | Needs room and easier access to the main line | Depends on cabinet space, which can be crowded |
+
+The core trade-off is scope: whole-house filtration treats the entire plumbing system, so it reaches the places where nuisance water issues show up outside the kitchen. Under-sink filtration stays narrow, which makes it a cleaner, simpler way to improve the water people drink and cook with without affecting showers, laundry, or the rest of the home.
+
+Whole-house water filtration suits homes where the same problem shows up in multiple places, such as chlorine odor in showers, sediment on fixtures, or off tastes and residue throughout the house. Under-sink drinking water filtration suits homes where the complaint is mostly at one faucet and the goal is better-tasting water for drinking, coffee, tea, and ice.
+
 <div class="section-product-cta comparison-cta-pair">
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20filtration&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house water filtration on Amazon</a>
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=under%20sink%20drinking%20water%20filtration&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View under sink drinking water filtration on Amazon</a>
@@ -137,14 +149,6 @@ Choose [whole house water filtration](https://www.amazon.com/s?k=whole%20house%2
 <div class="section-product-cta">
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20filtration&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
 </div>
-
-## Comparison Table for whole house water filtration vs under sink drinking water filtration
-
-| Decision point | whole house water filtration | under sink drinking water filtration |
-|---|---|---|
-| Best fit | Choose when its main strength matches the reader's highest-priority use case | Choose when its trade-off is easier to live with |
-| Constraint to check | Verify setup, compatibility, capacity, and upkeep before choosing | Verify the same constraint so the comparison stays fair |
-| Wrong-fit signal | Skip if the main limitation affects daily use | Skip if the alternative handles that limitation better |
 
 ## FAQ
 

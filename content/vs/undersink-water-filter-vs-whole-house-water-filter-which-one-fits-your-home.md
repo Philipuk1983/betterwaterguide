@@ -73,10 +73,21 @@ faq:
   - question: "Can either one fix hard water?"
     answer: "No. Hard water scale usually needs a softener or another dedicated treatment system."
 ---
-
 For most homes, undersink is the easier fit. It puts the treatment where drinking and cooking happen, keeps the install local, and avoids turning the main line into a bigger job. Whole-house filtration still has a clear place, but only when the same issue shows up across the house.
 
 ## Quick comparison
+
+| Decision point | Undersink water filter | Whole house water filter |
+|---|---|---|
+| Where treatment happens | Treats water at one faucet, usually the kitchen sink | Treats water at the main line before it branches through the house |
+| Problems it targets | Focuses on taste or odor at the tap you drink and cook from | Covers sediment, odor, or taste that shows up at multiple fixtures |
+| Install footprint | Fits under a sink, so the job stays local and compact | Needs a central utility spot with room to work on the plumbing |
+| Service routine | Cartridge changes happen in a cabinet and stay relatively contained | Service is larger and feels more like plumbing work than a quick swap |
+| Household coverage | Leaves showers, laundry, and other taps untouched | Reaches showers, laundry, and every other downstream fixture |
+
+The main trade-off is scope versus simplicity. Undersink keeps the fix close to the kitchen, which makes it easier to install and maintain, but it only addresses one outlet. Whole-house moves the treatment to the main line, so the whole plumbing run gets covered, but the equipment needs more space and more involved service access.
+
+Choose undersink if the complaint is limited to drinking and cooking water at the sink, especially in a smaller home, condo, or crowded cabinet. Choose whole-house if the same water issue shows up at showers, laundry, or other taps and the home has a practical place for a central install.
 
 <div class="section-product-cta comparison-cta-pair">
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=undersink%20water%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View undersink water filter on Amazon</a>
@@ -148,14 +159,6 @@ If the complaint is local, keep the fix local. If the complaint is throughout th
 <div class="section-product-cta">
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=undersink%20water%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
 </div>
-
-## Comparison Table for undersink water filter vs whole house water filter
-
-| Decision point | undersink water filter | whole house water filter |
-|---|---|---|
-| Best fit | Choose when its main strength matches the reader's highest-priority use case | Choose when its trade-off is easier to live with |
-| Constraint to check | Verify setup, compatibility, capacity, and upkeep before choosing | Verify the same constraint so the comparison stays fair |
-| Wrong-fit signal | Skip if the main limitation affects daily use | Skip if the alternative handles that limitation better |
 
 ## FAQ
 

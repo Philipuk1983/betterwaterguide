@@ -69,10 +69,21 @@ faq:
   - question: "Is the pricier option worth it?"
     answer: "The pricier option is only worth it if its premium strengths matter in normal use."
 ---
-
 If the goal is better-tasting drinking water at the kitchen sink, the undersink route keeps the job local. If the goal is to improve the water that reaches showers, laundry, and every indoor tap, the whole-house route reaches farther. Neither choice is a cure-all, and that matters more than the marketing language around either one.
 
 ## Quick comparison
+
+| Decision point | Undersink carbon filter | Whole-house carbon filter |
+|---|---|---|
+| Treatment reach | Serves one drinking-water tap | Treats water at the main line for all indoor fixtures |
+| Main use case | Kitchen taste or odor on drinking and cooking water | Chlorine-style smell or taste in showers, sinks, and laundry |
+| Installation scope | Smaller cabinet-based project | More involved entry-point plumbing work |
+| Maintenance access | Easier to isolate at one faucet during service | Broader system affects the whole house during service |
+| When it is too broad | Too much if only one tap is affected | More system than needed when the complaint stays at the sink |
+
+The core trade-off is reach versus simplicity. Undersink carbon keeps the fix local, so it stays focused on the water people drink and cook with. Whole-house carbon spreads the same treatment to every indoor fixture, which makes sense when the complaint shows up beyond the kitchen but also turns the project into a main-line plumbing decision.
+
+For a single faucet with taste or odor, undersink carbon is the tighter match. For housewide chlorine-style smell or taste in showers, bathrooms, and laundry, whole-house carbon is the broader option. If the issue is hardness, iron, visible sediment, or microbial safety, neither style should be treated as the first solution; and if chloramine is involved, the media and system design matter more than the filter category alone.
 
 Shop the two styles: [undersink carbon filter](https://www.amazon.com/s?k=undersink%20carbon%20filter&tag=betterwaterguide-20) or [whole-house carbon filter](https://www.amazon.com/s?k=whole%20house%20carbon%20filter&tag=betterwaterguide-20).
 
@@ -146,11 +157,3 @@ If the water issue is not mainly taste or smell, neither of these should be trea
 <div class="section-product-cta">
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=undersink%20carbon%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
 </div>
-
-## Comparison Table for undersink carbon filter vs whole house carbon filter
-
-| Decision point | undersink carbon filter | whole house carbon filter |
-|---|---|---|
-| Best fit | Choose when its main strength matches the reader's highest-priority use case | Choose when its trade-off is easier to live with |
-| Constraint to check | Verify setup, compatibility, capacity, and upkeep before choosing | Verify the same constraint so the comparison stays fair |
-| Wrong-fit signal | Skip if the main limitation affects daily use | Skip if the alternative handles that limitation better |

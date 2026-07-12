@@ -73,7 +73,6 @@ faq:
   - question: "When is under-sink filtration better than either whole-house choice?"
     answer: "When the issue is only at one faucet. A single-tap filter is the cleaner fix for a drinking-water problem that does not need whole-home treatment."
 ---
-
 ## Quick answer
 
 Choose the beginner setup if:
@@ -134,6 +133,18 @@ If the system is hard to reach, filter changes are easier to put off. A setup th
 
 ## Side-by-side comparison
 
+| Decision point | Beginner setup | Pro setup |
+|---|---|---|
+| Treatment scope | Uses a short treatment path for one clear issue | Adds stages to handle layered water problems |
+| Water source match | Works smoothly with municipal water and a simple goal | Fits well water and more mixed concerns |
+| Space around the main line | Smaller footprint with fewer housings and connections | Needs more room for extra housings and stages |
+| Service load | Fewer cartridges, seals, and parts to track | More replacement parts and service steps to organize |
+| System pairing | Stays simple when used as a standalone whole-house filter | Pairs with a softener, UV unit, or other treatment stage |
+
+The core trade-off is scope versus simplicity. The beginner setup keeps the path short, which makes it easier to install, reach, and service. The pro setup broadens what the system can address, but that extra reach comes with more parts to manage and more attention at changeout time.
+
+Pick the beginner setup if the water report points to one main issue, the home is on municipal water, or the utility area is tight. Pick the pro setup if the report shows several concerns, the home runs on well water, or the treatment plan already includes other stages that need to work together.
+
 ## When neither whole-house option is the right tool
 
 If the problem is only at one drinking faucet, whole-house filtration is more system than the job needs. An under-sink filter is the more direct fix because it treats one tap without changing the rest of the plumbing layout.
@@ -149,14 +160,6 @@ Choose [pro water filtration guide](https://www.amazon.com/s?k=pro%20water%20fil
 <div class="section-product-cta">
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20filtration%20guide&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
 </div>
-
-## Comparison Table for whole house water filtration guide for beginners vs pro water filtration guide
-
-| Decision point | whole house water filtration guide | pro water filtration guide |
-|---|---|---|
-| Best fit | Choose when its main strength matches the reader's highest-priority use case | Choose when its trade-off is easier to live with |
-| Constraint to check | Verify setup, compatibility, capacity, and upkeep before choosing | Verify the same constraint so the comparison stays fair |
-| Wrong-fit signal | Skip if the main limitation affects daily use | Skip if the alternative handles that limitation better |
 
 ## FAQ
 
