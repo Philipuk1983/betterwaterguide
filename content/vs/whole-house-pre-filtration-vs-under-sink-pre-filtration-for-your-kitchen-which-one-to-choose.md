@@ -1,5 +1,5 @@
 ---
-title: "Whole-House Pre-Filtration vs Under-Sink Pre-Filtration for Your Kitchen: Which One to Choose?"
+title: "Whole-House Pre-Filtration vs. Under-Sink Pre-Filtration: Which Is Better for Your Kitchen?"
 slug: "whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-which-one-to-choose"
 keyword_id: 40436455
 topic_key: "comparison:under sink pre filtration vs whole house pre filtration"
