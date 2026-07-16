@@ -1,5 +1,5 @@
 ---
-title: "Whole-House Water Filtration: Beginner vs Pro System Setup and What to Choose"
+title: "Whole-House Water Filtration for Beginners vs Pro Systems: What to Choose"
 slug: "whole-house-water-filtration-beginner-vs-pro-system-setup-and-what-to-choose"
 keyword_id: 40436630
 topic_key: "comparison:pro water filtration guide vs whole house water filtration guide"
