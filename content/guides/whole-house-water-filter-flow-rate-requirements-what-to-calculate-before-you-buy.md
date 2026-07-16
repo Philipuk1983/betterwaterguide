@@ -1,5 +1,5 @@
 ---
-title: "Whole-House Water Filter Flow Rate Requirements: What to Calculate Before You Buy"
+title: "Whole-House Water Filter Flow Rate Requirements: What to Know Before You Buy"
 slug: "whole-house-water-filter-flow-rate-requirements-what-to-calculate-before-you-buy"
 keyword_id: 40596834
 topic_key: "guide:whole house water filter flow rate requirement explained"
