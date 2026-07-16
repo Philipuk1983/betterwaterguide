@@ -1,5 +1,5 @@
 ---
-title: "Shower Filter vs Whole-House Filter for Hard Water: Which One Covers More of the Home?"
+title: "Shower Filter vs. Whole-House Filter for Hard Water: Which Protects More of the Home?"
 slug: "shower-filter-vs-whole-house-filter-for-hard-water-which-protects-your-home-better"
 keyword_id: 40436395
 topic_key: "comparison:shower filter vs whole house filter"
