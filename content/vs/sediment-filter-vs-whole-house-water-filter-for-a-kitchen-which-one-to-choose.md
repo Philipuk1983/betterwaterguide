@@ -1,5 +1,5 @@
 ---
-title: "Sediment Filter vs Whole-House Water Filter for a Kitchen: Which One to Choose?"
+title: "Sediment Filter vs. Whole-House Water Filter: Which Is Better for a Kitchen?"
 slug: "sediment-filter-vs-whole-house-water-filter-for-a-kitchen-which-one-to-choose"
 keyword_id: 40436393
 topic_key: "comparison:sediment filter vs whole house water filter"
