@@ -1,5 +1,5 @@
 ---
-title: "Best Whole-House Water Filter for Frequent Laundry: What to Look for and Key Models"
+title: "Best Whole-House Water Filter for Frequent Laundry"
 slug: "best-whole-house-water-filter-for-frequent-laundry-what-to-look-for-and-key-models"
 keyword_id: 40433452
 topic_key: "best_of:best whole house water filter for frequent laundry"
