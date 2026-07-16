@@ -1,5 +1,5 @@
 ---
-title: "Best Whole House Water Filter for Townhomes: What to Choose Based on Your Water Test"
+title: "Best Whole-House Water Filter for Townhomes"
 slug: "best-whole-house-water-filter-for-townhomes-what-to-choose-based-on-your-water-test"
 keyword_id: 40595008
 topic_key: "best_of:best whole house water filter for townhome"
