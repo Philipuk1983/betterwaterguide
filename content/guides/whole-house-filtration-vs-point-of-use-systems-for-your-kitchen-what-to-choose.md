@@ -1,5 +1,5 @@
 ---
-title: "Whole-House Filtration vs Point-Of-Use Systems for Your Kitchen: What to Choose"
+title: "Whole-House Filtration vs. Point-of-Use Systems: Which Is Better for Your Kitchen?"
 slug: "whole-house-filtration-vs-point-of-use-systems-for-your-kitchen-what-to-choose"
 keyword_id: 40431076
 topic_key: "guide:whole house filtration vs point of use"
