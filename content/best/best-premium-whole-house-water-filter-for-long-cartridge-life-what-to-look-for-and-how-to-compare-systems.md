@@ -1,5 +1,5 @@
 ---
-title: "Best Premium Whole House Water Filter for Long Cartridge Life: What to Look for and How to Compare Systems"
+title: "Best Premium Whole House Water Filter for Long Cartridge Life"
 slug: "best-premium-whole-house-water-filter-for-long-cartridge-life-what-to-look-for-and-how-to-compare-systems"
 keyword_id: 40433448
 topic_key: "best_of:best premium whole house water filter for long cartridge life"
