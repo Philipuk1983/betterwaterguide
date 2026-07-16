@@ -1,5 +1,5 @@
 ---
-title: "Well Water Whole-House Filter vs. Point-Of-Use Filter for the Kitchen"
+title: "Well Water Whole-House Filter vs. Point-of-Use Filter: Which Should You Choose?"
 slug: "well-water-whole-house-filter-vs-point-of-use-filter-for-the-kitchen-which-one-to-choose"
 keyword_id: 40436417
 topic_key: "comparison:point of use filter vs well water whole house filter"
