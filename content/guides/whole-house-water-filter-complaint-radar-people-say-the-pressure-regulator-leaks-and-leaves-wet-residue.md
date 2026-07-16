@@ -1,5 +1,5 @@
 ---
-title: "Whole-House Water Filter Complaint Radar: People Say the Pressure Regulator Leaks and Leaves Wet Residue"
+title: "Whole-House Water Filter Complaint Radar: Pressure Regulator Leaks and Wet Residue Reports"
 slug: "whole-house-water-filter-complaint-radar-people-say-the-pressure-regulator-leaks-and-leaves-wet-residue"
 keyword_id: 40592054
 topic_key: "complaint_radar:whole house water filter people say pressure regulator leak complaint radar"
