@@ -1,5 +1,5 @@
 ---
-title: "Water Test Kit Results Explained for Homeowners: What They Mean for Your Kitchen"
+title: "Water Test Kit Results Explained for Homeowners"
 slug: "water-test-kit-results-explained-for-homeowners-what-they-mean-for-your-kitchen"
 keyword_id: 40525457
 topic_key: "guide:water test kit result explained for homeowner"
