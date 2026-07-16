@@ -1,5 +1,5 @@
 ---
-title: "Whole House Filter Bypass Basics for Maintenance Planning: What to Know and When to Use It"
+title: "Whole House Filter Bypass Basics: What to Know and When to Use It"
 slug: "whole-house-filter-bypass-basics-for-maintenance-planning-what-to-know-and-when-to-use-it"
 keyword_id: 40596258
 topic_key: "guide:whole house filter bypass basic for maintenance planning"
