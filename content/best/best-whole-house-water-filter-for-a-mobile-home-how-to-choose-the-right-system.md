@@ -1,5 +1,5 @@
 ---
-title: "Best Whole House Water Filter for a Mobile Home: How to Choose the Right System"
+title: "Best Whole-House Water Filter for a Mobile Home: How to Choose the Right System"
 slug: "best-whole-house-water-filter-for-a-mobile-home-how-to-choose-the-right-system"
 keyword_id: 40434281
 topic_key: "best_of:best whole house water filter for mobile home"
