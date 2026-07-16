@@ -1,5 +1,5 @@
 ---
-title: "Whole House Carbon Filter vs Whole House Sediment Filter for Kitchen Water: Which One to Choose?"
+title: "Whole-House Carbon Filter vs. Whole-House Sediment Filter: Which Should You Choose?"
 slug: "whole-house-carbon-filter-vs-whole-house-sediment-filter-for-kitchen-water-which-one-to-choose"
 keyword_id: 40436419
 topic_key: "comparison:whole house carbon filter vs whole house sediment filter"
