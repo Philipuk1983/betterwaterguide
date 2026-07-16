@@ -1,5 +1,5 @@
 ---
-title: "Best Value Whole House Water Filter for Families: What to Buy and Why in 2026"
+title: "Best Value Whole-House Water Filter for Families: What to Buy in 2026"
 slug: "best-value-whole-house-water-filter-for-families-what-to-buy-and-why"
 keyword_id: 40895011
 topic_key: "best_of:best best value whole house water filter for family"
