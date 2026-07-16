@@ -1,5 +1,5 @@
 ---
-title: "Best Whole House Water Filter for Frequent Skin Rinsing: What to Look for and How to Choose"
+title: "Best Whole-House Water Filter for Frequent Skin Rinsing"
 slug: "best-whole-house-water-filter-for-frequent-skin-rinsing-what-to-look-for-and-how-to-choose"
 keyword_id: 40594281
 topic_key: "best_of:best whole house water filter for frequent skin rinsing"
