@@ -1,5 +1,5 @@
 ---
-title: "Whole-House Reverse Osmosis vs Point-Of-Use Reverse Osmosis for Your Kitchen: What to Choose"
+title: "Whole-House Reverse Osmosis vs. Point-of-Use Reverse Osmosis: Which Should You Choose?"
 slug: "whole-house-reverse-osmosis-vs-point-of-use-reverse-osmosis-for-your-kitchen-what-to-choose"
 keyword_id: 40436629
 topic_key: "comparison:point of use reverse osmosis vs whole house reverse osmosis"
