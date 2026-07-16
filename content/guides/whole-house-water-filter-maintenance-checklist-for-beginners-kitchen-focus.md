@@ -1,5 +1,5 @@
 ---
-title: "Whole-House Water Filter Maintenance Checklist for Beginners (Kitchen Focus)"
+title: "Whole-House Water Filter Maintenance Checklist"
 slug: "whole-house-water-filter-maintenance-checklist-for-beginners-kitchen-focus"
 keyword_id: 40431108
 topic_key: "guide:whole house water filter maintenance checklist"
