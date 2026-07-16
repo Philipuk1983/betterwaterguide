@@ -1,5 +1,5 @@
 ---
-title: "Water Filtration Starter Priority Sorter for New Homeowners Picker"
+title: "Water Filtration Priority Sorter for New Homeowners"
 slug: "water-filtration-starter-priority-sorter-for-new-homeowners-picker"
 keyword_id: 40436669
 topic_key: "tool:new homeowner water filtration startup priority sorter tool"
