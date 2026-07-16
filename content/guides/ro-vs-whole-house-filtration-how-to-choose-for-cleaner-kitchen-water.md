@@ -1,5 +1,5 @@
 ---
-title: "RO vs Whole-House Filtration: How to Choose for Cleaner Kitchen Water"
+title: "RO vs. Whole-House Filtration: How to Choose for Cleaner Water"
 slug: "ro-vs-whole-house-filtration-how-to-choose-for-cleaner-kitchen-water"
 keyword_id: 40433396
 topic_key: "guide:between ro and whole house filtration"
