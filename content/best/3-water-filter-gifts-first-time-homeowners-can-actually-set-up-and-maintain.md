@@ -1,5 +1,5 @@
 ---
-title: "3 Water Filter Gifts First-Time Homeowners Can Actually Set Up and Maintain"
+title: "3 Water Filter Gifts First-Time Homeowners Can Set Up and Maintain"
 slug: "3-water-filter-gifts-first-time-homeowners-can-actually-set-up-and-maintain"
 keyword_id: 41005875
 topic_key: "best_of:best christma gift water filter for first time homeowner"
