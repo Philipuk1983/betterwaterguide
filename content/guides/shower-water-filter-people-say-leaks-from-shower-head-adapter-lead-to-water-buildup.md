@@ -1,5 +1,5 @@
 ---
-title: "Shower Water Filter People Say Leaks from Shower Head Adapter Lead to Water Buildup"
+title: "Shower Water Filter Leak Complaints: Shower Head Adapter Problems and Water Buildup"
 slug: "shower-water-filter-people-say-leaks-from-shower-head-adapter-lead-to-water-buildup"
 keyword_id: 40441579
 topic_key: "complaint_radar:shower water filter people say filter leak from shower head adapter complaint radar"
