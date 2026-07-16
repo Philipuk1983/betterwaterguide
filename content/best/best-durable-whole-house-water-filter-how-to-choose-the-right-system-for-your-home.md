@@ -1,5 +1,5 @@
 ---
-title: "Best Durable Whole House Water Filter: How to Choose the Right System for Your Home"
+title: "Best Durable Whole-House Water Filter: How to Choose the Right System for Your Home"
 slug: "best-durable-whole-house-water-filter-how-to-choose-the-right-system-for-your-home"
 keyword_id: 40431129
 topic_key: "best_of:best durable whole house water filter"
