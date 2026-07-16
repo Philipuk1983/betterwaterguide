@@ -1,5 +1,5 @@
 ---
-title: "Best Whole House Water Filter for City Water Backup: What to Choose When Pressure Drops"
+title: "Best Whole-House Water Filter for City Water Backup in 2026"
 slug: "best-whole-house-water-filter-for-city-water-backup-what-to-choose-when-pressure-drops"
 keyword_id: 40595070
 topic_key: "best_of:best whole house water filter for city water backup"
