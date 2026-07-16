@@ -1,5 +1,5 @@
 ---
-title: "Beginner vs Pro Whole-House Water Filter Installation: What to Expect for a Kitchen Setup"
+title: "Beginner vs. Pro Whole-House Water Filter Installation: What to Expect"
 slug: "beginner-vs-pro-whole-house-water-filter-installation-what-to-expect-for-a-kitchen-setup"
 keyword_id: 40436427
 topic_key: "comparison:beginner whole house filter installation vs pro whole house filter installation"
