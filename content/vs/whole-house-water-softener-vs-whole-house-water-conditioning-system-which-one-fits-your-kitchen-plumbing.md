@@ -1,5 +1,5 @@
 ---
-title: "Whole House Water Softener vs Whole House Water Conditioning System: Which One Fits Your Kitchen Plumbing?"
+title: "Whole-House Water Softener vs. Whole-House Water Conditioning System: Which Is Right for Your Home?"
 slug: "whole-house-water-softener-vs-whole-house-water-conditioning-system-which-one-fits-your-kitchen-plumbing"
 keyword_id: 40436632
 topic_key: "comparison:whole house water conditioning system vs whole house water softener"
