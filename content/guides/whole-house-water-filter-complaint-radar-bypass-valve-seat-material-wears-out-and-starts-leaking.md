@@ -1,5 +1,5 @@
 ---
-title: "Whole-House Water Filter Complaint Radar: Bypass Valve Seat Material Wears Out and Starts Leaking"
+title: "Whole-House Water Filter Complaint Radar: Bypass Valve Seat Wear and Leak Reports"
 slug: "whole-house-water-filter-complaint-radar-bypass-valve-seat-material-wears-out-and-starts-leaking"
 keyword_id: 41216042
 topic_key: "complaint_radar:whole house water filter people say bypass valve seat material wear out and start leaking complaint radar"
