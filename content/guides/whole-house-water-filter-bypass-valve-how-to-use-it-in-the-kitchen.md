@@ -1,5 +1,5 @@
 ---
-title: "Whole House Water Filter Bypass Valve: How to Use It in the Kitchen"
+title: "Whole-House Water Filter Bypass Valve: How to Use It"
 slug: "whole-house-water-filter-bypass-valve-how-to-use-it-in-the-kitchen"
 keyword_id: 40433425
 topic_key: "guide:whole house water filter bypass valve how to use"
