@@ -1,5 +1,5 @@
 ---
-title: "Well Water Filtration Checklist for First-Time Homeowners (Kitchen Setup)"
+title: "Well Water Filtration Checklist for First-Time Homeowners"
 slug: "well-water-filtration-checklist-for-first-time-homeowners-kitchen-setup"
 keyword_id: 40433206
 topic_key: "guide:well water filtration checklist for first time homeowner"
