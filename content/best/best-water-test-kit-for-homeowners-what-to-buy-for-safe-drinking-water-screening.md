@@ -1,5 +1,5 @@
 ---
-title: "Best Water Test Kit for Homeowners: What to Buy for Safe Drinking Water Screening"
+title: "Best Water Test Kit for Homeowners"
 slug: "best-water-test-kit-for-homeowners-what-to-buy-for-safe-drinking-water-screening"
 keyword_id: 40431133
 topic_key: "best_of:best water test kit for homeowner"
