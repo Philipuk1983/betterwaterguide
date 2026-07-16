@@ -1,5 +1,5 @@
 ---
-title: "Best Whole House Water Filter for Allergy-Prone Households: What to Look for and Key Alternatives"
+title: "Best Whole House Water Filter for Allergy-Prone Households: What to Look For"
 slug: "best-whole-house-water-filter-for-allergy-prone-households-what-to-look-for-and-key-alternatives"
 keyword_id: 40433449
 topic_key: "best_of:best whole house water filter for allergy prone household"
