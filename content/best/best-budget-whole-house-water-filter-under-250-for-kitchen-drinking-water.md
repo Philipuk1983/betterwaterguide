@@ -1,5 +1,5 @@
 ---
-title: "Best Budget Whole House Water Filter Under $250 for Kitchen Drinking Water (2026)"
+title: "Best Budget Whole-House Water Filters Under $250 (2026)"
 slug: "best-budget-whole-house-water-filter-under-250-for-kitchen-drinking-water"
 keyword_id: 40431127
 topic_key: "best_of:best budget whole house water filter under 250"
