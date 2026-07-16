@@ -1,5 +1,5 @@
 ---
-title: "How to Perform a Simple Whole-House Filter Pressure Check in Your Kitchen"
+title: "How to Perform a Simple Whole-House Filter Pressure Check"
 slug: "how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen"
 keyword_id: 40433193
 topic_key: "guide:how to perform a simple whole house filter pressure check"
