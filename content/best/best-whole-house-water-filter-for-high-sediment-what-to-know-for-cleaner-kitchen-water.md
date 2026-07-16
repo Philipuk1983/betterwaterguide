@@ -1,5 +1,5 @@
 ---
-title: "Best Whole House Water Filter for High Sediment: What to Know for Cleaner Kitchen Water"
+title: "Best Whole-House Water Filters for High Sediment"
 slug: "best-whole-house-water-filter-for-high-sediment-what-to-know-for-cleaner-kitchen-water"
 keyword_id: 40434279
 topic_key: "best_of:best whole house water filter for high sediment"
