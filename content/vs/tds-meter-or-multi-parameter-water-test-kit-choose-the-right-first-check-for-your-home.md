@@ -1,5 +1,5 @@
 ---
-title: "TDS Meter or Multi-Parameter Water Test Kit? Choose the Right First Check for Your Home"
+title: "TDS Meter vs Multi-Parameter Water Test Kit: Which Should You Use First at Home?"
 slug: "tds-meter-or-multi-parameter-water-test-kit-choose-the-right-first-check-for-your-home"
 keyword_id: 40811274
 topic_key: "comparison:tap water tds meter vs whole house water tester"
