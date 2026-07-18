@@ -14,13 +14,13 @@ Better Water Guide publishes reader-first guidance for U.S. shoppers. Our goal i
 
 We use available product details, manufacturer information, retailer listings, public documentation, and editorial judgment to identify the trade-offs that matter before a reader acts.
 
-We separate hands-on reviews from researched buyer analysis. If a page is not based on first-hand testing, the page should say so and should avoid language that implies lab testing, long-term ownership, or measured performance.
+We use research-backed buyer analysis grounded in manufacturer documentation, specifications, retailer details, owner-feedback patterns, and comparison context. Pages avoid implying firsthand use, long-term ownership, or measured performance unless documented evidence is provided.
 
 Product recommendations are selected for buyer fit, category relevance, trade-offs, supportability, and available product details. Affiliate links do not decide whether a product belongs in a recommendation.
 
 ## Evidence Labels
 
-Pages may use evidence labels such as editorial research, structured product research, or hands-on testing. A page should not claim hands-on testing unless that testing actually happened and is clearly described.
+Pages use evidence labels such as editorial research or structured product research. Claims should match the documentation, specifications, retailer details, and owner-feedback patterns actually reviewed.
 
 ## High-Risk Topics
 
