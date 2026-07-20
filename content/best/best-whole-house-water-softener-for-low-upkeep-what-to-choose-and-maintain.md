@@ -275,16 +275,6 @@ Choose Fleck 5600SXT if you want value and a familiar control head. Choose Aquas
 
 For most buyers who want fewer chores and fewer salt trips, Whirlpool WHES30E is the cleanest fit.
 
-## Picks at a Glance
-
-| Pick role | Best fit | What to verify |
-|---|---|---|
-| Whirlpool WHES30E | Best Overall | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| Fleck 5600SXT | Best Value | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| Aquasure Harmony Series 32,000-Grain Water Softener | Low Upkeep for Moderate Hardness Homes | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| GE Appliances 40,000-Grain Water Softener System | Best for Larger Households | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| SpringWell Whole House Water Softener (Salt-Based) with Fleck Control Valve | Best for Buyers Who Want Proven Control, Simple Service | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-
 ## FAQ
 
 ### Do whole-house water softeners need filter cartridges?

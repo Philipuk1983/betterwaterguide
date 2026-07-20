@@ -346,16 +346,6 @@ The [DuPont WPH3000K](https://www.amazon.com/s?k=DuPont%20WPH3000K&tag=betterwat
 
 Pick the [APEC Water Systems CB3-75](https://www.amazon.com/s?k=APEC%20Water%20Systems%20CB3-75&tag=betterwaterguide-20) for a lower-cost three-stage sediment-and-carbon route. Choose the [iSpring WGB32BM](https://www.amazon.com/s?k=iSpring%20WGB32BM&tag=betterwaterguide-20) when iron or manganese concerns belong in the treatment plan. The SpringWell CF-2 Whole House Carbon Filter System suits chlorine-focused homes that want less cartridge handling, while the Home Master HMF-2SD-LS is the better match for sediment-heavy water.
 
-## Picks at a Glance
-
-| Pick role | Best fit | What to verify |
-|---|---|---|
-| DuPont WPH3000K | Best Overall | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| APEC Water Systems CB3-75 | Best Value | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| iSpring WGB32BM | Best for Whole-Home Chlorine Taste and Odor Reduction | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| SpringWell CF-2 Whole House Carbon Filter System | Best for Laundry Area Proximity and Hard Water Prep | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| Home Master HMF-2SD-LS | Best for Sediment-Heavy Homes | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-
 ## FAQ
 
 ### Should a whole-house water filter go before or after a water softener?

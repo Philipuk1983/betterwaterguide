@@ -238,16 +238,6 @@ If the water is clear city water and chlorine smell is the main complaint, the *
 
 If sediment is part of the problem, step up to **SpringWell CF-SOFT** or **Aquasana AOS-WH-SD-2** instead of trying to make a basic carbon cartridge do everything.
 
-## Picks at a Glance
-
-| Pick role | Best fit | What to verify |
-|---|---|---|
-| Culligan Whole House Water Filter System with Cartridge Life Monitor (IC50C) | Best Overall | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| APEC Water Systems Carbon Block Whole House Filter, 20" x 4.5" (CB20-4.5-100) | Best Value | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| Express Water Whole House Water Filter System (Carbon Filter) with 10" x 2.5" Filter Cartridges | Best for chlorine and odor comfort | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| SpringWell CF-SOFT Whole House Water Filter System with Carbon Filter | Best for skin rinsing where sediment is also present | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-| Aquasana Whole House Well Water Filter System, 3-Stage Sediment and Carbon (AOS-WH-SD-2) | Best for well water and frequent rinsing | Check dimensions, included pieces, setup needs, and the main drawback before choosing |
-
 ## FAQ
 
 ### Does a whole-house water filter help with skin rinsing?
