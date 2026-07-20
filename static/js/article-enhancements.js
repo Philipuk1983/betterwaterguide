@@ -561,6 +561,57 @@
         return wrapper;
     };
 
+    const createProductLinksCta = (products, modifier, headingText) => {
+        const usableProducts = products
+            .filter((product) => product?.name && product?.amazon_url)
+            .slice(0, 5);
+        if (usableProducts.length === 0) {
+            return null;
+        }
+
+        const wrapper = document.createElement("div");
+        wrapper.className = "affiliate-cta";
+        if (document.body.classList.contains("theme-minimal")) wrapper.classList.add("minimal-cta");
+        if (document.body.classList.contains("theme-lab")) wrapper.classList.add("lab-cta");
+        if (document.body.classList.contains("theme-modern")) wrapper.classList.add("modern-cta");
+        if (document.body.classList.contains("theme-bold")) wrapper.classList.add("bold-cta");
+        if (document.body.classList.contains("theme-editorial")) wrapper.classList.add("editorial-cta");
+        if (document.body.classList.contains("theme-catalog")) wrapper.classList.add("catalog-cta");
+        if (document.body.classList.contains("theme-digest")) wrapper.classList.add("digest-cta");
+        if (document.body.classList.contains("theme-fieldguide")) wrapper.classList.add("fieldguide-cta");
+        if (document.body.classList.contains("theme-directory")) wrapper.classList.add("directory-cta");
+        modifier.split(/\s+/).filter(Boolean).forEach((className) => wrapper.classList.add(className));
+
+        const copy = document.createElement("div");
+        const label = document.createElement("p");
+        label.className = "cta-label";
+        label.textContent = usableProducts.length === 1 ? "Product link" : "Product links";
+        const title = document.createElement("strong");
+        title.textContent = headingText;
+        copy.append(label, title);
+
+        const action = document.createElement("div");
+        action.className = "affiliate-cta__action";
+        usableProducts.forEach((product) => {
+            const link = document.createElement("a");
+            link.href = product.amazon_url;
+            link.target = "_blank";
+            link.rel = "nofollow sponsored noopener";
+            link.className = "button-link amazon-button";
+            link.textContent = usableProducts.length === 1
+                ? "Check price on Amazon"
+                : `View ${product.name} on Amazon`;
+            action.appendChild(link);
+        });
+
+        const note = document.createElement("p");
+        note.className = "affiliate-note";
+        note.innerHTML = "<em>As an Amazon Associate, we may earn from qualifying purchases.</em>";
+        action.appendChild(note);
+        wrapper.append(copy, action);
+        return wrapper;
+    };
+
     const insertNodeAfterSection = (heading, node) => {
         if (!heading) {
             return;
@@ -625,6 +676,50 @@
             const text = normalize(heading.textContent);
             return !faqHeadings.has(text);
         });
+
+    const ensureProductHeroCta = (article, products) => {
+        if (!article || products.length === 0
+            || article.querySelector(".affiliate-cta--hero, .review-verdict-card, .roundup-hero-callout")) {
+            return;
+        }
+
+        const cta = createProductLinksCta(products, "affiliate-cta--hero", "Compare the current Amazon listings");
+        const anchor = article.querySelector(".disclosure-inline");
+        if (cta && anchor?.parentNode) {
+            anchor.parentNode.insertBefore(cta, anchor.nextSibling);
+        }
+    };
+
+    const ensureProductMidCta = (articleBody, products) => {
+        if (products.length === 0
+            || articleBody.querySelector(".affiliate-cta--mid, .section-product-cta")) {
+            return;
+        }
+
+        const headings = candidateSectionHeadings(articleBody);
+        if (headings.length === 0) {
+            return;
+        }
+
+        const product = products[Math.floor(products.length / 2)];
+        const cta = createProductLinksCta([product], "affiliate-cta--mid", product.name);
+        if (cta) {
+            insertNodeAfterSection(headings[Math.floor(headings.length / 2)], cta);
+        }
+    };
+
+    const ensureProductClosingCta = (articleBody, products) => {
+        if (products.length === 0
+            || articleBody.querySelector(".affiliate-cta--post-editor, .affiliate-cta--verdict")) {
+            return;
+        }
+
+        const headingText = products.length === 1 ? products[0].name : "Product links at a glance";
+        const cta = createProductLinksCta(products, "affiliate-cta--post-editor", headingText);
+        if (cta) {
+            articleBody.appendChild(cta);
+        }
+    };
 
     const placeContextualCtas = (articleBody) => {
         const headings = candidateSectionHeadings(articleBody);
@@ -710,28 +805,29 @@
 
     const placeRoundupSectionCtas = (articleBody, products) => {
         const headings = candidateSectionHeadings(articleBody);
-        products.forEach((product) => {
-            const productKey = normalize(product.name);
-            const heading = headings.find((candidate) => normalize(candidate.textContent).includes(productKey));
-            if (!heading) {
-                return;
-            }
+        if (headings.length === 0 || products.length === 0) {
+            return;
+        }
 
-            const sectionNodes = collectSectionNodes(heading).filter(hasMeaningfulContent);
-            const existingCta = sectionNodes.find((node) =>
-                node.nodeType === Node.ELEMENT_NODE
-                && node.classList?.contains("section-product-cta"));
-            if (existingCta) {
-                return;
-            }
+        const product = products[Math.floor(products.length / 2)];
+        const productKey = normalize(product.name);
+        const heading = headings.find((candidate) => normalize(candidate.textContent).includes(productKey));
+        if (!heading) {
+            return;
+        }
 
-            const cta = createRoundupSectionCta(product);
-            if (!cta) {
-                return;
-            }
+        const sectionNodes = collectSectionNodes(heading).filter(hasMeaningfulContent);
+        const existingCta = sectionNodes.find((node) =>
+            node.nodeType === Node.ELEMENT_NODE
+            && node.classList?.contains("section-product-cta"));
+        if (existingCta) {
+            return;
+        }
 
+        const cta = createRoundupSectionCta(product);
+        if (cta) {
             insertNodeAfterSection(heading, cta);
-        });
+        }
     };
 
     const shouldSkipInlineLinkNode = (node) => {
@@ -1276,7 +1372,8 @@
         const singleProductArticle = article?.matches("article[data-primary-product-name][data-primary-product-url]");
         const hasReviewVerdictCard = !!article?.querySelector(".review-verdict-card");
         const roundupArticle = article?.dataset.contentType === "best_of" || products.length > 2;
-        const browseGuideArticle = !!browseProduct && !singleProductArticle && !roundupArticle;
+        const multiProductArticle = products.length > 1;
+        const browseGuideArticle = !!browseProduct && !singleProductArticle && !multiProductArticle;
 
         if (singleProductArticle) {
             linkLeadMentions(article, articleBody);
@@ -1288,10 +1385,18 @@
             enhanceRoundupHero(article, products);
             removeLegacyRoundupBlocks(articleBody);
             linkProductMentions(articleBody, products);
+            placeRoundupSectionCtas(articleBody, products);
+        } else if (multiProductArticle) {
+            removeLegacyRoundupBlocks(articleBody);
+            linkProductMentions(articleBody, products);
+            placeRoundupSectionCtas(articleBody, products);
         } else if (browseGuideArticle) {
             placeBrowseHeroCta(article, browseProduct);
             placeBrowseClosingCta(articleBody, browseProduct);
         }
+
+        ensureProductHeroCta(article, products);
+        ensureProductMidCta(articleBody, products);
 
         if (products.length > 1) {
             enhanceComparisonTable(articleBody, products);
@@ -1307,5 +1412,7 @@
         if (singleProductArticle && !hasReviewVerdictCard) {
             placeVerdictCta(articleBody);
         }
+
+        ensureProductClosingCta(articleBody, products);
     });
 })();
