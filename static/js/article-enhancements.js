@@ -691,7 +691,7 @@
     };
 
     const ensureProductMidCta = (articleBody, products) => {
-        if (products.length === 0
+        if (products.length !== 1
             || articleBody.querySelector(".affiliate-cta--mid, .section-product-cta")) {
             return;
         }
@@ -701,7 +701,7 @@
             return;
         }
 
-        const product = products[Math.floor(products.length / 2)];
+        const product = products[0];
         const cta = createProductLinksCta([product], "affiliate-cta--mid", product.name);
         if (cta) {
             insertNodeAfterSection(headings[Math.floor(headings.length / 2)], cta);
@@ -709,13 +709,13 @@
     };
 
     const ensureProductClosingCta = (articleBody, products) => {
-        if (products.length === 0
+        if (products.length !== 1
             || articleBody.querySelector(".affiliate-cta--post-editor, .affiliate-cta--verdict")) {
             return;
         }
 
-        const headingText = products.length === 1 ? products[0].name : "Product links at a glance";
-        const cta = createProductLinksCta(products, "affiliate-cta--post-editor", headingText);
+        const product = products[0];
+        const cta = createProductLinksCta([product], "affiliate-cta--post-editor", product.name);
         if (cta) {
             articleBody.appendChild(cta);
         }
@@ -1371,7 +1371,8 @@
         const browseProduct = readBrowseProduct();
         const singleProductArticle = article?.matches("article[data-primary-product-name][data-primary-product-url]");
         const hasReviewVerdictCard = !!article?.querySelector(".review-verdict-card");
-        const roundupArticle = article?.dataset.contentType === "best_of" || products.length > 2;
+        const comparisonArticle = article?.dataset.contentType === "comparison";
+        const roundupArticle = !comparisonArticle && (article?.dataset.contentType === "best_of" || products.length > 2);
         const multiProductArticle = products.length > 1;
         const browseGuideArticle = !!browseProduct && !singleProductArticle && !multiProductArticle;
 
@@ -1385,18 +1386,23 @@
             enhanceRoundupHero(article, products);
             removeLegacyRoundupBlocks(articleBody);
             linkProductMentions(articleBody, products);
-            placeRoundupSectionCtas(articleBody, products);
+        } else if (comparisonArticle) {
+            removeLegacyRoundupBlocks(articleBody);
+            linkProductMentions(articleBody, products);
         } else if (multiProductArticle) {
             removeLegacyRoundupBlocks(articleBody);
             linkProductMentions(articleBody, products);
-            placeRoundupSectionCtas(articleBody, products);
         } else if (browseGuideArticle) {
             placeBrowseHeroCta(article, browseProduct);
             placeBrowseClosingCta(articleBody, browseProduct);
         }
 
-        ensureProductHeroCta(article, products);
-        ensureProductMidCta(articleBody, products);
+        if (singleProductArticle) {
+            ensureProductHeroCta(article, products);
+            ensureProductMidCta(articleBody, products);
+        } else if (comparisonArticle) {
+            ensureProductHeroCta(article, products);
+        }
 
         if (products.length > 1) {
             enhanceComparisonTable(articleBody, products);
@@ -1413,6 +1419,8 @@
             placeVerdictCta(articleBody);
         }
 
-        ensureProductClosingCta(articleBody, products);
+        if (singleProductArticle) {
+            ensureProductClosingCta(articleBody, products);
+        }
     });
 })();

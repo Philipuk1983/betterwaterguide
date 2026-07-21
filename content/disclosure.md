@@ -1,7 +1,7 @@
 ---
 title: "Affiliate Disclosure"
 description: "Information about affiliate links and how Better Water Guide earns revenue."
-date: 2026-07-02
+date: 2026-07-21
 toc: false
 ---
 
@@ -25,4 +25,4 @@ This site may display advertisements through third-party ad networks. Those ads 
 
 If you have questions about our affiliate relationships or editorial policies, contact us at hello@betterwaterguide.com.
 
-_Last updated: July 2, 2026._
+_Last updated: July 21, 2026._

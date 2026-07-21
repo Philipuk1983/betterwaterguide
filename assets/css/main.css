@@ -1443,12 +1443,20 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .theme-campingkitlist .cta-chip,
 .theme-campingkitlist .callout-eyebrow {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
+    min-height: 2.35rem;
+    padding: 0.55rem 1.05rem;
     border: 1px solid var(--ckl-border-green);
     border-radius: 999px;
     background: var(--ckl-moss-soft);
     color: var(--ckl-forest);
-    font-weight: 850;
+    font-size: 0.82rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-transform: none;
 }
 .theme-campingkitlist .article-summary,
 .theme-campingkitlist .quick-take,
@@ -2026,12 +2034,20 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .theme-beginnerhikingguide .cta-chip,
 .theme-beginnerhikingguide .callout-eyebrow {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
+    min-height: 2.35rem;
+    padding: 0.55rem 1.05rem;
     border: 1px solid var(--bhg-border-green);
     border-radius: 999px;
     background: var(--bhg-leaf-soft);
     color: var(--bhg-pine-dark);
-    font-weight: 850;
+    font-size: 0.82rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-transform: none;
 }
 .theme-beginnerhikingguide .article-summary,
 .theme-beginnerhikingguide .quick-take,
@@ -2228,8 +2244,8 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .theme-beginnerhikingguide .trailhead-card--wide strong,
 .theme-beginnerhikingguide .trailhead-card--wide em,
 .theme-beginnerhikingguide .trailhead-card--wide span { color: #fffaf0; }
-.theme-beginnerhikingguide .trail-checklist-row { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 0.75rem; border-left: 0; padding-left: 0; }
-.theme-beginnerhikingguide .trail-checklist-row > span { width: 1.45rem; height: 1.45rem; border: 3px solid var(--bhg-leaf); border-radius: 6px; margin-top: 0.25rem; background: #fffaf0; }
+.theme-beginnerhikingguide .trail-checklist-row { display: block; border-left: 0; padding-left: 0; }
+.theme-beginnerhikingguide .trail-checklist-row > span { display: none; }
 
 .theme-theprepperzone .theprepperzone-home { max-width: 76rem; margin: 0 auto; }
 .theme-theprepperzone .theprepperzone-hero {
@@ -6807,6 +6823,222 @@ body.theme-soundsleepgear article.article-shell > * { box-sizing: border-box; ma
     .theme-bestpetstuff h2 { font-size: clamp(1.45rem, 6vw, 2rem); }
     .theme-bestpetstuff .article-body table,
     .theme-bestpetstuff .comparison-table { font-size: 0.92rem; }
+}
+.theme-scentforhim {
+    --sfh-bg: #f6f1e8;
+    --sfh-bg-soft: #efe5d6;
+    --sfh-card: #fffaf3;
+    --sfh-card-dark: #1f1b18;
+    --sfh-text: #171717;
+    --sfh-muted: #6f675d;
+    --sfh-line: rgba(31,27,24,0.14);
+    --sfh-gold: #b58a42;
+    --sfh-gold-dark: #7c5624;
+    --sfh-cream: #f3eadc;
+    --sfh-slate: #354252;
+    --sfh-radius: 8px;
+    --sfh-shadow: 0 14px 34px rgba(31,27,24,0.1);
+    --sfh-shadow-soft: 0 8px 20px rgba(31,27,24,0.07);
+    color: var(--sfh-text);
+    background: linear-gradient(180deg, #f6f1e8 0%, #ffffff 46%, #f1e7d8 100%);
+}
+.theme-scentforhim body { color: var(--sfh-text); background: transparent; }
+.theme-scentforhim main { max-width: 74rem; }
+.theme-scentforhim article[itemtype="https://schema.org/Article"],
+.theme-scentforhim article.article-shell { max-width: 56rem; }
+.theme-scentforhim h1,
+.theme-scentforhim h2,
+.theme-scentforhim h3,
+.theme-scentforhim h4,
+.theme-scentforhim .entry-title { color: var(--sfh-text); letter-spacing: 0; }
+.theme-scentforhim h1 { line-height: 1.03; }
+.theme-scentforhim h2 { margin-top: 2.3rem; margin-bottom: 0.8rem; line-height: 1.12; }
+.theme-scentforhim p,
+.theme-scentforhim .section-description,
+.theme-scentforhim .article-card p,
+.theme-scentforhim .home-latest-item p,
+.theme-scentforhim .article-meta,
+.theme-scentforhim .footer-inner { color: var(--sfh-muted); }
+.theme-scentforhim a { color: var(--sfh-gold-dark); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-scentforhim a:hover { color: var(--sfh-text); }
+.theme-scentforhim .site-header { background: rgba(246,241,232,0.94); border-bottom: 1px solid var(--sfh-line); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(31,27,24,0.06); }
+.theme-scentforhim .header-inner,
+.theme-scentforhim .petal-inner { padding-top: 0.9rem; padding-bottom: 0.9rem; gap: 0.85rem; }
+.theme-scentforhim .site-logo { color: var(--sfh-text); text-decoration: none; }
+.theme-scentforhim .site-logo img { height: 48px; max-width: min(100%, 22rem); filter: drop-shadow(0 8px 16px rgba(31,27,24,0.1)); }
+.theme-scentforhim .site-nav a { padding: 0.45rem 0.78rem; border-radius: 999px; color: var(--sfh-text); font-size: 0.95rem; font-weight: 800; text-decoration: none; background: rgba(255,250,243,0.72); box-shadow: inset 0 0 0 1px rgba(181,138,66,0.18); }
+.theme-scentforhim .footer-nav a { padding: 0.5rem 0.82rem; border-radius: 999px; color: #fff8eb; font-size: 0.95rem; font-weight: 800; text-decoration: none; background: rgba(255,248,235,0.1); box-shadow: inset 0 0 0 1px rgba(255,248,235,0.2); }
+.theme-scentforhim .site-nav a::after,
+.theme-scentforhim .footer-nav a::after { display: none; }
+.theme-scentforhim .site-nav a:hover { background: var(--sfh-text); color: var(--sfh-cream); }
+.theme-scentforhim .footer-nav a:hover { background: #fff2dc; color: var(--sfh-text); }
+.theme-scentforhim .hero,
+.theme-scentforhim .atelier-hero,
+.theme-scentforhim .petal-hero { position: relative; margin: 1.35rem 0 2.1rem; padding: clamp(2rem, 4vw, 3.4rem); border: 1px solid rgba(181,138,66,0.28); border-radius: var(--sfh-radius); background: linear-gradient(135deg, var(--sfh-card-dark) 0%, #312923 100%); color: var(--sfh-cream); box-shadow: var(--sfh-shadow); overflow: hidden; }
+.theme-scentforhim .hero h1,
+.theme-scentforhim .petal-hero h1 { color: #fff8eb; }
+.theme-scentforhim .hero p,
+.theme-scentforhim .petal-hero p,
+.theme-scentforhim .hero-copy { color: #dccfbc; }
+.theme-scentforhim .hero h1::after,
+.theme-scentforhim .petal-hero h1::after { content: ""; display: block; width: 96px; height: 3px; margin-top: 0.8rem; border-radius: 999px; background: linear-gradient(90deg, var(--sfh-gold), #e5c27d); }
+.theme-scentforhim .site-kicker,
+.theme-scentforhim .hero-eyebrow,
+.theme-scentforhim .section-kicker,
+.theme-scentforhim .feature-meta,
+.theme-scentforhim .article-kicker,
+.theme-scentforhim .footer-label,
+.theme-scentforhim .cta-label { color: var(--sfh-gold-dark); letter-spacing: 0.12em; }
+.theme-scentforhim .hero-eyebrow,
+.theme-scentforhim .petal-hero .hero-eyebrow { color: #e8c982; }
+.theme-scentforhim .signal-strip span,
+.theme-scentforhim .petal-strip span,
+.theme-scentforhim .callout-eyebrow,
+.theme-scentforhim .cta-chip { display: inline-flex; width: fit-content; border: 1px solid rgba(181,138,66,0.28); border-radius: 999px; background: #fff2dc; color: #5f401b; font-weight: 800; }
+.theme-scentforhim .article-card,
+.theme-scentforhim .spotlight-card,
+.theme-scentforhim .home-browse-card,
+.theme-scentforhim .home-method-card,
+.theme-scentforhim .home-latest-item,
+.theme-scentforhim .simple-row,
+.theme-scentforhim .article-summary,
+.theme-scentforhim .table-of-contents,
+.theme-scentforhim .disclosure-inline,
+.theme-scentforhim .affiliate-cta,
+.theme-scentforhim .see-also,
+.theme-scentforhim .shortcode-box,
+.theme-scentforhim .review-verdict-card,
+.theme-scentforhim .utility-tool { border: 1px solid var(--sfh-line); border-radius: var(--sfh-radius); background: var(--sfh-card); box-shadow: var(--sfh-shadow-soft); }
+.theme-scentforhim .article-card,
+.theme-scentforhim .home-browse-card,
+.theme-scentforhim .home-method-card,
+.theme-scentforhim .home-latest-item,
+.theme-scentforhim .simple-row { border-left: 4px solid var(--sfh-gold); transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease; }
+.theme-scentforhim .article-card:hover,
+.theme-scentforhim .home-browse-card:hover,
+.theme-scentforhim .home-method-card:hover,
+.theme-scentforhim .home-latest-item:hover,
+.theme-scentforhim .simple-row:hover { transform: translateY(-2px); box-shadow: var(--sfh-shadow); border-left-color: var(--sfh-slate); }
+.theme-scentforhim .simple-row { padding: 1.05rem 1.15rem; margin-bottom: 0.85rem; }
+.theme-scentforhim .article-card h2,
+.theme-scentforhim .article-card h3,
+.theme-scentforhim .home-browse-card h3,
+.theme-scentforhim .home-method-card h3,
+.theme-scentforhim .home-latest-item h3,
+.theme-scentforhim .simple-row h3 { margin-top: 0; }
+.theme-scentforhim .article-summary { border-left: 4px solid var(--sfh-text); background: linear-gradient(90deg, rgba(181,138,66,0.16), rgba(255,250,243,0.98)); color: #2a211b; }
+.theme-scentforhim .article-body h2 { padding-top: 0.4rem; border-top: 1px solid rgba(31,27,24,0.12); }
+.theme-scentforhim .article-body h2::before { content: ""; display: inline-block; width: 0.62rem; height: 0.62rem; margin-right: 0.45rem; border-radius: 999px; background: var(--sfh-gold); vertical-align: 0.12em; box-shadow: 0 0 0 4px rgba(181,138,66,0.16); }
+.theme-scentforhim .article-body ul,
+.theme-scentforhim .article-body ol { background: #fffdf9; border: 1px solid var(--sfh-line); border-radius: var(--sfh-radius); padding: 1rem 1.2rem 1rem 2.1rem; box-shadow: var(--sfh-shadow-soft); }
+.theme-scentforhim .article-body li::marker { color: var(--sfh-gold-dark); }
+.theme-scentforhim table,
+.theme-scentforhim .comparison-table { border-collapse: separate; border-spacing: 0; border: 1px solid var(--sfh-line); border-radius: var(--sfh-radius); background: #ffffff; box-shadow: var(--sfh-shadow-soft); overflow: hidden; }
+.theme-scentforhim th,
+.theme-scentforhim .comparison-table th { background: #efe1ca; color: var(--sfh-text); font-weight: 900; }
+.theme-scentforhim td,
+.theme-scentforhim th,
+.theme-scentforhim .comparison-table td,
+.theme-scentforhim .comparison-table th { border-color: #e6d7c3; }
+.theme-scentforhim tbody tr:nth-child(even) { background: #fffaf3; }
+.theme-scentforhim blockquote,
+.theme-scentforhim .callout,
+.theme-scentforhim .note,
+.theme-scentforhim .tip,
+.theme-scentforhim .warning,
+.theme-scentforhim .bottom-line-callout,
+.theme-scentforhim .roundup-hero-callout { border: 1px solid rgba(53,66,82,0.18); border-left: 4px solid var(--sfh-slate); border-radius: var(--sfh-radius); background: #eef0ee; color: #28303a; box-shadow: var(--sfh-shadow-soft); }
+.theme-scentforhim .button-link,
+.theme-scentforhim .amazon-button,
+.theme-scentforhim .cta-button,
+.theme-scentforhim .review-verdict-card__primary,
+.theme-scentforhim button,
+.theme-scentforhim input[type="button"],
+.theme-scentforhim input[type="submit"] { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; border: 0; border-radius: 999px; padding: 0.76rem 1.1rem; background: linear-gradient(180deg, #c49a51 0%, #8a642c 100%); color: #ffffff; font-weight: 900; text-decoration: none; box-shadow: 0 8px 18px rgba(124,86,36,0.24); transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease; }
+.theme-scentforhim .button-link:hover,
+.theme-scentforhim .amazon-button:hover,
+.theme-scentforhim .cta-button:hover,
+.theme-scentforhim .review-verdict-card__primary:hover { transform: translateY(-1px); filter: brightness(1.04); box-shadow: 0 12px 24px rgba(124,86,36,0.32); color: #ffffff; }
+.theme-scentforhim .button-link.amazon-button,
+.theme-scentforhim .cta-button.amazon-button { background: linear-gradient(180deg, #c49a51 0%, #8a642c 100%); color: #ffffff; box-shadow: 0 8px 18px rgba(124,86,36,0.24); }
+.theme-scentforhim .tag,
+.theme-scentforhim .badge,
+.theme-scentforhim .signal-chip,
+.theme-scentforhim .home-browse-card span,
+.theme-scentforhim .home-method-card span { display: inline-flex; align-items: center; width: fit-content; max-width: 100%; padding: 0.34rem 0.62rem; border: 1px solid rgba(181,138,66,0.24); border-radius: 999px; background: #fff2dc; color: #5f401b; font-weight: 800; line-height: 1.15; white-space: normal; }
+.theme-scentforhim .site-footer { margin-top: 4rem; padding: 2rem 0; border-top: 4px solid var(--sfh-gold); background: var(--sfh-card-dark); color: #f8eadb; }
+.theme-scentforhim .site-footer a { color: #fff8eb; }
+.theme-scentforhim .site-footer p,
+.theme-scentforhim .site-footer .footer-inner { color: #e8ddcf; }
+.theme-scentforhim input[type="search"],
+.theme-scentforhim .search-field { border: 1px solid var(--sfh-line); border-radius: 999px; padding: 0.75rem 1rem; background: #ffffff; color: var(--sfh-text); }
+.theme-scentforhim a:focus-visible,
+.theme-scentforhim button:focus-visible,
+.theme-scentforhim input:focus-visible,
+.theme-scentforhim select:focus-visible,
+.theme-scentforhim textarea:focus-visible { outline: 3px solid rgba(181,138,66,0.38); outline-offset: 3px; }
+@media (max-width: 768px) {
+    .theme-scentforhim .header-inner { flex-direction: column; align-items: flex-start; }
+    .theme-scentforhim .site-nav { width: 100%; gap: 0.55rem; overflow-x: auto; padding-bottom: 0.2rem; }
+    .theme-scentforhim .site-nav a { white-space: nowrap; padding: 0.45rem 0.55rem; }
+    .theme-scentforhim .hero,
+    .theme-scentforhim .atelier-hero,
+    .theme-scentforhim .petal-hero { padding: 1.6rem 1.1rem; }
+    .theme-scentforhim h1 { font-size: clamp(2rem, 2rem + 1.2vw, 3rem); }
+    .theme-scentforhim h2 { font-size: clamp(1.45rem, 1.3rem + 0.9vw, 2rem); }
+    .theme-scentforhim .article-body table,
+    .theme-scentforhim .comparison-table { font-size: 0.92rem; }
+}
+.theme-scentforhim .scentforhim-home { box-sizing: border-box; width: min(100%, 76rem); margin: 0 auto; padding-inline: clamp(1rem, 2vw, 1.25rem); }
+.theme-scentforhim .scentforhim-head { background: rgba(251,247,239,0.94); }
+.theme-scentforhim .scentforhim-inner { max-width: 76rem; display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; }
+.theme-scentforhim .scentforhim-brand { display: flex; flex-direction: column; gap: 0.18rem; }
+.theme-scentforhim .scentforhim-brand .site-kicker { margin: 0; font-size: 0.72rem; font-weight: 900; text-transform: uppercase; color: #7c5624; }
+.theme-scentforhim .scentforhim-nav { gap: 0.45rem; }
+.theme-scentforhim .scentforhim-nav a { background: transparent; box-shadow: none; color: #3c332b; padding: 0.52rem 0.85rem; }
+.theme-scentforhim .scentforhim-nav a:hover { background: #171717; color: #f3eadc; }
+.theme-scentforhim .scentforhim-hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 0.65fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; min-height: 28rem; padding: clamp(2.4rem, 6vw, 4.8rem); border-radius: 22px; background: radial-gradient(circle at 78% 18%, rgba(195,146,71,0.42), transparent 18rem), linear-gradient(135deg, #101010 0%, #1d1711 55%, #412715 100%); overflow: hidden; }
+.theme-scentforhim .scentforhim-hero h1 { max-width: 48rem; font-size: clamp(3rem, 6vw, 5.8rem); line-height: 0.95; margin-bottom: 1.1rem; }
+.theme-scentforhim .scentforhim-hero .hero-copy { max-width: 42rem; font-size: 1.08rem; line-height: 1.7; color: rgba(255,255,255,0.76); }
+.theme-scentforhim .scentforhim-hero__actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.7rem; }
+.theme-scentforhim .scentforhim-hero__actions a { display: inline-flex; align-items: center; min-height: 42px; border: 1px solid rgba(195,146,71,0.42); border-radius: 999px; padding: 0.72rem 1rem; background: rgba(255,255,255,0.08); color: #f7ead7; font-weight: 900; text-decoration: none; box-shadow: none; }
+.theme-scentforhim .scentforhim-hero__actions a:first-child { background: linear-gradient(180deg, #c49a51 0%, #8a642c 100%); border-color: transparent; color: #ffffff; box-shadow: 0 12px 28px rgba(124,86,36,0.3); }
+.theme-scentforhim .scentforhim-hero__actions a:hover { transform: translateY(-1px); filter: brightness(1.04); }
+.theme-scentforhim .scentforhim-bottle { justify-self: center; display: block; width: min(100%, 16.5rem); height: auto; object-fit: contain; opacity: 0.96; filter: drop-shadow(0 30px 42px rgba(0,0,0,0.32)); transform: rotate(3deg); }
+.theme-scentforhim .scentforhim-category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.6rem 0 2.8rem; }
+.theme-scentforhim .scentforhim-category-card { display: flex; flex-direction: column; gap: 0.55rem; min-height: 10.5rem; border: 1px solid rgba(195,146,71,0.32); border-radius: 18px; padding: 1.45rem; background: linear-gradient(180deg, #ffffff 0%, #fbf7ef 100%); color: #171717; text-decoration: none; box-shadow: 0 12px 30px rgba(20,20,20,0.08); }
+.theme-scentforhim .scentforhim-category-card span { width: fit-content; max-width: 100%; border-radius: 999px; padding: 0.34rem 0.64rem; background: #fff2dc; color: #6f471d; font-size: 0.76rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.15; white-space: normal; }
+.theme-scentforhim .scentforhim-category-card strong { display: block; color: #171717; font-family: var(--font-heading); font-size: 1.35rem; line-height: 1.1; }
+.theme-scentforhim .scentforhim-category-card em { color: #606773; font-style: normal; line-height: 1.5; }
+.theme-scentforhim .scentforhim-category-card:hover { transform: translateY(-2px); box-shadow: 0 18px 42px rgba(20,20,20,0.12); border-color: rgba(195,146,71,0.55); }
+.theme-scentforhim .scentforhim-section { margin-top: 3rem; }
+.theme-scentforhim .scentforhim-section__head { max-width: 52rem; margin-bottom: 1.2rem; }
+.theme-scentforhim .scentforhim-section__head h2 { font-size: clamp(2rem, 3vw, 3rem); line-height: 1.02; }
+.theme-scentforhim .scentforhim-article-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.theme-scentforhim .scentforhim-article-card { border-radius: 18px; border-left-width: 0; min-height: 13rem; }
+.theme-scentforhim .scentforhim-feature-row { border-left: 4px solid var(--sfh-gold); border-radius: 18px; }
+.theme-scentforhim .home-depth.home-depth--scentforhim { margin-top: 3rem; padding: clamp(2rem, 4vw, 3.25rem); border-radius: 22px; border: 1px solid rgba(195,146,71,0.28); background: linear-gradient(135deg, #171717 0%, #2d2117 100%); color: #f7ead7; overflow: hidden; }
+.theme-scentforhim .home-depth--scentforhim h2,
+.theme-scentforhim .home-depth--scentforhim strong { color: #fff8eb; }
+.theme-scentforhim .home-depth--scentforhim p,
+.theme-scentforhim .home-depth--scentforhim em { color: rgba(247,234,215,0.75); }
+.theme-scentforhim .home-depth--scentforhim .home-browse-grid { gap: 1rem; }
+.theme-scentforhim .home-depth--scentforhim .home-browse-card { min-width: 0; padding: 1.35rem; background: rgba(255,255,255,0.07); border-color: rgba(195,146,71,0.3); box-shadow: none; }
+.theme-scentforhim .home-depth--scentforhim .home-browse-card p { margin-bottom: 0; }
+@media (max-width: 920px) {
+    .theme-scentforhim .scentforhim-inner { align-items: flex-start; flex-direction: column; }
+    .theme-scentforhim .scentforhim-hero { grid-template-columns: minmax(0, 1fr); min-height: 0; border-radius: 18px; }
+    .theme-scentforhim .scentforhim-bottle { display: none; }
+    .theme-scentforhim .scentforhim-category-grid,
+    .theme-scentforhim .scentforhim-article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+    .theme-scentforhim .scentforhim-home { width: 100%; }
+    .theme-scentforhim .scentforhim-hero { padding: 1.75rem 1.15rem; }
+    .theme-scentforhim .scentforhim-hero h1 { font-size: clamp(2.35rem, 12vw, 3.4rem); }
+    .theme-scentforhim .scentforhim-hero__actions a { width: 100%; justify-content: center; }
+    .theme-scentforhim .scentforhim-category-grid,
+    .theme-scentforhim .scentforhim-article-grid { grid-template-columns: minmax(0, 1fr); }
 }
 .button-link.amazon-button, .cta-button.amazon-button { background: #f59e0b; color: #ffffff; box-shadow: 0 10px 24px rgba(245,158,11,0.24); }
 @media (max-width: 720px) {

@@ -1,7 +1,7 @@
 ---
 title: "About Better Water Guide"
 description: "Learn about Better Water Guide and how we research and review products."
-date: 2026-07-02
+date: 2026-07-21
 toc: false
 ---
 

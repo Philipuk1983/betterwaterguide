@@ -59,7 +59,16 @@
         {{ partial "affiliate-cta.html" (dict "Page" . "product" $primaryProduct "site" .Site "class" "affiliate-cta--context") }}
     </template>
     {{ end }}
+    {{ if and $affiliateAllowed .Site.Params.amazonTag }}
+    <div class="article-content-layout" style="position: relative;">
+        <div class="article-main-column">
+            <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody">{{ partial "article-body.html" . }}</div>
+            {{- partial "see-also.html" . -}}
+        </div>
+    </div>
+    {{ else }}
     <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody">{{ partial "article-body.html" . }}</div>
     {{- partial "see-also.html" . -}}
+    {{ end }}
 </article>
 {{ end }}

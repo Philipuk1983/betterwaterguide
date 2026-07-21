@@ -1,11 +1,11 @@
 ---
 title: "Privacy Policy"
 description: "How Better Water Guide handles privacy and site analytics."
-date: 2026-07-02
+date: 2026-07-21
 toc: false
 ---
 
-_Last updated: July 2, 2026_
+_Last updated: July 21, 2026_
 
 ### Who We Are
 
