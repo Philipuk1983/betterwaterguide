@@ -29,7 +29,6 @@ products:
     cta_text: "Check price on Amazon"
 keywords:
   - "pelican whole house water filter review"
-  - "pelican whole house water filter review review"
   - "is pelican whole house water filter review worth it"
 tags:
   - "home water filtration"

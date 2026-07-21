@@ -32,7 +32,6 @@ review_verdict_card:
   verdict: "The iSpring K1 Kitchen Faucet Filter is a practical option for a compatible fixed kitchen faucet where the goal is convenient filtered water for drinking and cooking. Its biggest advantage is removing the refill-and-store routine that comes with pitchers while avoiding an under-sink installation."
 keywords:
   - "i spring k1 kitchen faucet filter easy install review"
-  - "i spring k1 kitchen faucet filter easy install review review"
   - "is i spring k1 kitchen faucet filter easy install review worth it"
 tags:
   - "home water filtration"

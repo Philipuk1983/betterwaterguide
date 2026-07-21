@@ -8,7 +8,7 @@ lastmod: 2026-07-02
 type: best_of
 category: "home-maintenance"
 summary: "Durability in a whole-house filter is mostly about fit. The system lasts longer when it is doing one clear job at the main line instead of trying to solve every water problem at once. A sediment-first setup protects plumbing when grit is the issue. A carbon system makes more sense when the water smells like chlorine. A cartridge-based system is easier to live with when the service routine needs to stay simple."
-description: "Durability in a whole-house filter is mostly about fit."
+description: "Durability in a whole-house filter is mostly about fit. The system lasts longer when it is doing one clear job at the main line instead of trying to solve."
 schema_type: ItemList
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"

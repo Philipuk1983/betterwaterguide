@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-description: "How Better Water Guide handles privacy and site analytics."
+description: "Privacy Policy. Compare buyer fit, key differences, setup needs, maintenance, and practical trade-offs before choosing."
 date: 2026-07-21
 toc: false
 ---

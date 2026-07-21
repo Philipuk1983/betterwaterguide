@@ -29,7 +29,6 @@ products:
     cta_text: "Check price on Amazon"
 keywords:
   - "ispring whole house water filter review"
-  - "ispring whole house water filter review review"
   - "is ispring whole house water filter review worth it"
 tags:
   - "home water filtration"

@@ -8,7 +8,7 @@ lastmod: 2026-07-02
 type: best_of
 category: "home-maintenance"
 summary: "Older homes often need more than one water fix. Aging pipes can send rust and grit into the line, municipal treatment can leave chlorine taste behind, and lead risk can still show up at the kitchen tap from service lines, solder, or fixtures. A whole-house filter helps with the water that enters the home, so showers, laundry, and appliances all benefit from cleaner water. It does not replace a lead-certified filter at the drinking sink when lead is part of the concern, but it can make the rest of the house easier to live with."
-description: "Older homes often need more than one water fix."
+description: "Best Whole-House Water Filter for Older Homes with Lead Risk: What to Look for and Common Options."
 schema_type: ItemList
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"

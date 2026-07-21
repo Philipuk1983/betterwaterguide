@@ -8,7 +8,7 @@ lastmod: 2026-07-05
 type: guide
 category: "home-maintenance"
 summary: "A whole-house filter has to survive your home's line pressure and still pass enough water when several fixtures run at once. Those are different jobs. A housing can be strong enough and still be a poor fit if it steals too much pressure once water is moving."
-description: "A whole-house filter has to survive your home's line pressure and still pass enough water when several fixtures run at once. Those are different jobs. A."
+description: "What to Look for in a Whole House Water Filter's Pressure Rating."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"

@@ -8,7 +8,7 @@ lastmod: 2026-07-09
 type: guide
 category: "home-maintenance"
 summary: "Use this guide in order. Start with the odor source, then match the carbon media, then add pretreatment if the water is dirty, and finally size the system for the house's real demand. Whole-house carbon makes sense when the smell is in the incoming water and every tap is affected."
-description: "Use this guide in order."
+description: "How to Choose a Whole-House Carbon Filter for Odor Control. Compare buyer fit, setup, maintenance, and practical trade-offs."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"

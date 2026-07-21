@@ -29,7 +29,6 @@ products:
     cta_text: "Check price on Amazon"
 keywords:
   - "aquasana whole house water filter review"
-  - "aquasana whole house water filter review review"
   - "is aquasana whole house water filter review worth it"
 tags:
   - "home water filtration"

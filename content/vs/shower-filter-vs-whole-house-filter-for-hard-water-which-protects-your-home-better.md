@@ -8,7 +8,7 @@ lastmod: 2026-07-01
 type: comparison
 category: "home-maintenance"
 summary: "That is the main reason this comparison matters. People often want one purchase to handle white crust on fixtures, spots on glass, and water that feels rough in the shower. A shower filter and a whole-house filter can be useful tools, but they do different jobs and cover very different parts of the home."
-description: "That is the main reason this comparison matters."
+description: "That is the main reason this comparison matters. People often want one purchase to handle white crust on fixtures, spots on glass, and water that feels rough."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
