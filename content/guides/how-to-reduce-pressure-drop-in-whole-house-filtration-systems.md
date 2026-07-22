@@ -53,11 +53,6 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:audience_specific"
-faq:
-  - question: "How should I choose how to reduce pressure drop in whole house filtration systems?"
-    answer: "Choose how to reduce pressure drop in whole house filtration systems by starting with budget, warranty, and the specs that affect daily use."
-  - question: "Where should I buy how to reduce pressure drop in whole house filtration systems?"
-    answer: "Amazon.com and major U.S. retailers are usually the best places to compare listing details and return terms."
 ---
 
 Start with pressure readings before changing cartridges or adding equipment. Then match the filter path to the water problem and the amount of water your household uses at once.

@@ -180,11 +180,6 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:audience_specific"
-faq:
-  - question: "How should I choose whole house water softener brine tank capacity calculator?"
-    answer: "Choose whole house water softener brine tank capacity calculator by starting with budget, warranty, and the specs that affect daily use."
-  - question: "Where should I buy whole house water softener brine tank capacity calculator?"
-    answer: "Amazon.com and major U.S. retailers are usually the best places to compare listing details and return terms."
 ---
 
 The other mistake to avoid is mixing up brine tank capacity with grain capacity. Grain capacity is about how much hardness the resin can treat before it needs to regenerate. Brine tank capacity is about how much salt the system can hold for those regeneration cycles. Those are related, but they are not the same number, and sizing one from the other leads to frustration later.

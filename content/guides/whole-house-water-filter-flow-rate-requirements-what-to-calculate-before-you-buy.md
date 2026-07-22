@@ -53,11 +53,6 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:buying_factors"
-faq:
-  - question: "How should I choose whole house water filter flow rate requirements explained?"
-    answer: "Choose whole house water filter flow rate requirements explained by starting with budget, warranty, and the specs that affect daily use."
-  - question: "Where should I buy whole house water filter flow rate requirements explained?"
-    answer: "Amazon.com and major U.S. retailers are usually the best places to compare listing details and return terms."
 ---
 
 ## Start with peak simultaneous demand

@@ -2,6 +2,7 @@ baseURL = "https://betterwaterguide.com/"
 title = "Better Water Guide"
 languageCode = "en-us"
 enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
 
 [build]
   writeStats = true

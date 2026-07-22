@@ -1,2 +1,3 @@
-{{ $schema := dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL "description" (.Site.Params.description | default .Site.Title) }}
+{{ $siteName := .Site.Params.footerLabel | default .Site.Title }}
+{{ $schema := dict "@context" "https://schema.org" "@type" "WebSite" "name" $siteName "url" .Site.BaseURL "description" (.Site.Params.description | default .Site.Title) }}
 <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

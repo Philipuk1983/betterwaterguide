@@ -53,11 +53,6 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:buying_factors"
-faq:
-  - question: "How should I choose what to look for in a whole house water filter pressure gauge?"
-    answer: "Choose what to look for in a whole house water filter pressure gauge by starting with budget, warranty, and the specs that affect daily use."
-  - question: "Where should I buy what to look for in a whole house water filter pressure gauge?"
-    answer: "Amazon.com and major U.S. retailers are usually the best places to compare listing details and return terms."
 ---
 
 ## Start With the Job the Gauge Has to Do

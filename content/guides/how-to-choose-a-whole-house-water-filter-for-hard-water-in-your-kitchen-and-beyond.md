@@ -53,11 +53,6 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:beginner_basics"
-faq:
-  - question: "How should I choose how to choose a whole house filter for hard water?"
-    answer: "Choose how to choose a whole house filter for hard water by starting with budget, warranty, and the specs that affect daily use."
-  - question: "Where should I buy how to choose a whole house filter for hard water?"
-    answer: "Amazon.com and major U.S. retailers are usually the best places to compare listing details and return terms."
 ---
 
 The main job is not to buy the biggest unit you can find. It is to match the treatment to the water problem, the plumbing layout, and the amount of upkeep the household can actually handle.

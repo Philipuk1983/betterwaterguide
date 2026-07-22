@@ -53,11 +53,6 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:beginner_basics"
-faq:
-  - question: "How should I choose water filter maintenance tips for busy homeowners?"
-    answer: "Choose water filter maintenance tips for busy homeowners by starting with budget, warranty, and the specs that affect daily use."
-  - question: "Where should I buy water filter maintenance tips for busy homeowners?"
-    answer: "Amazon.com and major U.S. retailers are usually the best places to compare listing details and return terms."
 ---
 
 ## Start with the setup that is easiest to live with

@@ -53,11 +53,6 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:beginner_basics"
-faq:
-  - question: "How should I choose whole house filtration vs point of use (guide)?"
-    answer: "Choose whole house filtration vs point of use (guide) by starting with budget, warranty, and the specs that affect daily use."
-  - question: "Where should I buy whole house filtration vs point of use (guide)?"
-    answer: "Amazon.com and major U.S. retailers are usually the best places to compare listing details and return terms."
 ---
 
 ## Start with where the water issue shows up

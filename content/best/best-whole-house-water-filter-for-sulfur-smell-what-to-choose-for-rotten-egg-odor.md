@@ -7,8 +7,8 @@ date: 2026-07-05
 lastmod: 2026-07-05
 type: best_of
 category: "home-maintenance"
-summary: "Practical buying guidance with clear trade-offs and fit checks."
-description: "Practical buying guidance with clear trade-offs and fit checks."
+summary: "Choose a whole-house filter for sulfur smell by diagnosing where the odor appears first. This guide compares carbon-only systems, sediment-plus-carbon setups, and replacement cartridges by water clarity, flow, upkeep, and installation fit."
+description: "Choose a whole-house filter for sulfur smell by diagnosing where the odor appears first. This guide compares carbon-only systems, sediment-plus-carbon."
 schema_type: ItemList
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
@@ -85,7 +85,6 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:audience_specific"
-
 ---
 
 ## APEC Water Systems CF-8 8-Pack Carbon Filter Set

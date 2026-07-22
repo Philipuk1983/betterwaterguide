@@ -1,10 +1,11 @@
 {{ $description := .Description | default .Params.summary | default .Site.Params.description | default .Title | plainify }}
-{{ $author := dict "@type" "Organization" "name" .Site.Title }}
+{{ $siteName := .Site.Params.footerLabel | default .Site.Title }}
+{{ $author := dict "@type" "Organization" "name" $siteName }}
 {{ with .Site.Data.site.author }}
   {{ $author = dict "@type" "Organization" "name" .name }}
   {{ with .slug }}{{ $author = merge $author (dict "url" (printf "%sauthors/%s/" $.Site.BaseURL .)) }}{{ end }}
 {{ end }}
-{{ $publisher := dict "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL }}
+{{ $publisher := dict "@type" "Organization" "name" $siteName "url" .Site.BaseURL }}
 {{ $schema := dict
     "@context" "https://schema.org"
     "@type" "BlogPosting"
