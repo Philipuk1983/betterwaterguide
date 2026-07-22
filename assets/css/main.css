@@ -27,6 +27,13 @@ a { color: var(--color-primary); text-decoration-thickness: 0.08em; text-underli
 a:hover { color: var(--color-secondary); }
 img { max-width: 100%; height: auto; }
 main { margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+.breadcrumbs { margin: 0 0 1.25rem; color: var(--muted); font-size: 0.86rem; }
+.breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; margin: 0; padding: 0; list-style: none; }
+.breadcrumbs li { display: inline-flex; align-items: center; gap: 0.45rem; }
+.breadcrumbs li + li::before { content: "/"; color: var(--border); }
+.breadcrumbs a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+.breadcrumbs a:hover { color: var(--accent); }
+.breadcrumbs [aria-current="page"] { color: var(--text); font-weight: 700; }
 article[itemtype="https://schema.org/Article"] { width: min(100%, var(--content-width, 48rem)); margin: 0 auto; }
 body.layout-full-width article[data-module="article-shell"],
 body.layout-full-width article.article-shell,

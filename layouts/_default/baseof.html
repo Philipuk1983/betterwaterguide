@@ -10,6 +10,7 @@
     <!-- End Google Tag Manager (noscript) -->
     {{- partial "header.html" . -}}
     <main>
+        {{ if not .IsHome }}{{- partial "breadcrumbs.html" . -}}{{ end }}
         {{ block "main" . }}{{ end }}
     </main>
     {{- partial "footer.html" . -}}

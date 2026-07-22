@@ -1,0 +1,20 @@
+{{ $isSection := and .IsSection (ne .Section "") }}
+{{ $sectionPage := .CurrentSection }}
+{{ $hasSectionParent := and (ne .Section "") (not $isSection) $sectionPage (ne $sectionPage.RelPermalink "/") }}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    {{ if $hasSectionParent }}
+    <li><a href="{{ $sectionPage.RelPermalink }}">{{ $sectionPage.Title | default (.Section | humanize) }}</a></li>
+    {{ end }}
+    <li aria-current="page">{{ .Title }}</li>
+  </ol>
+</nav>
+{{ $items := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" .Site.BaseURL) }}
+{{ if $hasSectionParent }}
+  {{ $items = $items | append (dict "@type" "ListItem" "position" 2 "name" ($sectionPage.Title | default (.Section | humanize)) "item" $sectionPage.Permalink) }}
+  {{ $items = $items | append (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink) }}
+{{ else }}
+  {{ $items = $items | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) }}
+{{ end }}
+<script type="application/ld+json">{{ (dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items) | jsonify | safeJS }}</script>
