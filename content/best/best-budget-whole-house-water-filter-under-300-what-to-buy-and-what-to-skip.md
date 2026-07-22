@@ -85,15 +85,7 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:audience_specific"
-faq:
-  - question: "What is the best budget whole house water filter under $300 in 2026?"
-    answer: "The best budget whole house water filter under $300 is the one that balances price, performance, and support most cleanly for U.S. buyers."
-  - question: "Are expensive options worth it?"
-    answer: "Only when the premium features solve a real weekly problem for you."
-  - question: "How do I choose the right pick from this roundup?"
-    answer: "Choose the pick that matches your layout, upkeep tolerance, and the level of automation you actually want to live with every week."
-  - question: "Should I buy from Amazon or compare other U.S. listings first?"
-    answer: "Compare the live Amazon listing first for the exact model and bundle, then sanity-check competing U.S. retailers if return policy or accessories matter to you."
+
 ---
 
 In this price range, the smartest buy is usually the one that solves the one problem you notice every week. This roundup keeps to that logic. The picks below are not trying to do everything at once. They are meant to solve the most common household complaints in a way that still makes sense for an ordinary main-line install.

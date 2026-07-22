@@ -480,14 +480,6 @@
 
         content.append(eyebrow, productName);
 
-        if (summaryText) {
-            const body = document.createElement("p");
-            body.className = "roundup-hero-callout__summary";
-            body.setAttribute("itemprop", "description");
-            body.textContent = summaryText;
-            content.appendChild(body);
-        }
-
         const action = document.createElement("div");
         action.className = "roundup-hero-callout__action";
 
@@ -498,8 +490,17 @@
         link.className = "button-link amazon-button";
         link.textContent = "Check price on Amazon";
         action.appendChild(link);
+        content.appendChild(action);
 
-        summary.append(content, action);
+        if (summaryText) {
+            const body = document.createElement("p");
+            body.className = "roundup-hero-callout__summary";
+            body.setAttribute("itemprop", "description");
+            body.textContent = summaryText;
+            content.appendChild(body);
+        }
+
+        summary.appendChild(content);
     };
 
     const createAffiliateCta = (modifier) => {
@@ -708,17 +709,79 @@
         }
     };
 
-    const ensureProductClosingCta = (articleBody, products) => {
-        if (products.length !== 1
+    const ensureProductClosingCta = (articleBody, products, headingText) => {
+        if (products.length === 0
             || articleBody.querySelector(".affiliate-cta--post-editor, .affiliate-cta--verdict")) {
             return;
         }
 
-        const product = products[0];
-        const cta = createProductLinksCta([product], "affiliate-cta--post-editor", product.name);
+        const cta = createProductLinksCta(products, "affiliate-cta--post-editor", headingText);
         if (cta) {
             articleBody.appendChild(cta);
         }
+    };
+
+    const commercialGuideMarkers = [
+        "best ",
+        "before you buy",
+        "buying checklist",
+        "buying consideration",
+        "buying guide",
+        "buying tip",
+        "how to choose",
+        "review",
+        "worth upgrading",
+        "what to check",
+        "what to look for",
+        "which one should you buy",
+        "which vacuum",
+        "which robot vacuum"
+    ];
+
+    const isCommercialGuideArticle = (article) => {
+        if (article?.dataset.contentType !== "guide") {
+            return false;
+        }
+
+        if (article.dataset.reviewFraming === "structured_commercial_analysis") {
+            return true;
+        }
+
+        const title = normalize(article.querySelector("h1")?.textContent || "");
+        return commercialGuideMarkers.some((marker) => title.includes(marker));
+    };
+
+    const ensureGuideShopperNextStep = (articleBody) => {
+        if (articleBody.querySelector(".shopper-next-step")) {
+            return;
+        }
+
+        const headings = candidateSectionHeadings(articleBody);
+        if (headings.length === 0) {
+            return;
+        }
+
+        const wrapper = document.createElement("div");
+        wrapper.className = "affiliate-cta shopper-next-step";
+
+        const copy = document.createElement("div");
+        const label = document.createElement("p");
+        label.className = "cta-label";
+        label.textContent = "Shopper next step";
+        const title = document.createElement("strong");
+        title.textContent = "Compare the models that fit these buying criteria";
+        copy.append(label, title);
+
+        const action = document.createElement("div");
+        action.className = "affiliate-cta__action";
+        const link = document.createElement("a");
+        link.href = "/best/";
+        link.className = "button-link";
+        link.textContent = "See current product picks";
+        action.appendChild(link);
+
+        wrapper.append(copy, action);
+        insertNodeAfterSection(headings[Math.floor(headings.length / 2)], wrapper);
     };
 
     const placeContextualCtas = (articleBody) => {
@@ -1375,6 +1438,7 @@
         const roundupArticle = !comparisonArticle && (article?.dataset.contentType === "best_of" || products.length > 2);
         const multiProductArticle = products.length > 1;
         const browseGuideArticle = !!browseProduct && !singleProductArticle && !multiProductArticle;
+        const commercialGuideArticle = !browseGuideArticle && isCommercialGuideArticle(article);
 
         if (singleProductArticle) {
             linkLeadMentions(article, articleBody);
@@ -1395,6 +1459,8 @@
         } else if (browseGuideArticle) {
             placeBrowseHeroCta(article, browseProduct);
             placeBrowseClosingCta(articleBody, browseProduct);
+        } else if (commercialGuideArticle) {
+            ensureGuideShopperNextStep(articleBody);
         }
 
         if (singleProductArticle) {
@@ -1420,7 +1486,11 @@
         }
 
         if (singleProductArticle) {
-            ensureProductClosingCta(articleBody, products);
+            ensureProductClosingCta(articleBody, products, products[0].name);
+        } else if (comparisonArticle) {
+            ensureProductClosingCta(articleBody, products.slice(0, 2), "Compare both options");
+        } else if (roundupArticle) {
+            ensureProductClosingCta(articleBody, products.slice(0, 1), `Best overall: ${products[0].name}`);
         }
     });
 })();

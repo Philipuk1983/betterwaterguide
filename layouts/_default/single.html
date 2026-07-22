@@ -15,6 +15,7 @@
 {{ end }}
 <article data-module="article-shell" data-module-role="article" class="article-shell clean-shell{{ if $roundupPage }} article-shell--roundup{{ end }}" itemscope itemtype="https://schema.org/Article"
     data-content-type="{{ .Type }}"
+    data-review-framing="{{ .Params.review_framing | default "" }}"
     {{ if and $affiliateAllowed $singleProductPage $primaryAmazonUrl }}
     data-primary-product-name="{{ index $primaryProduct "name" }}"
     data-primary-product-url="{{ $primaryAmazonUrl }}"
@@ -36,11 +37,11 @@
         <div class="roundup-hero-callout__content">
             <span class="callout-eyebrow">Best Overall</span>
             <p class="roundup-hero-callout__product"><a href="{{ $primaryAmazonUrl }}" rel="nofollow sponsored noopener" target="_blank">{{ index $primaryProduct "name" }}</a></p>
+            <div class="roundup-hero-callout__action">
+                <a class="button-link amazon-button" href="{{ $primaryAmazonUrl }}" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+            </div>
             {{ if .Params.summary }}<p class="roundup-hero-callout__summary" itemprop="description">{{ .Params.summary | markdownify | plainify }}</p>{{ end }}
-        </div>
-        <div class="roundup-hero-callout__action">
-            <a class="button-link amazon-button" href="{{ $primaryAmazonUrl }}" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
-        </div>
+            </div>
     </div>
     {{ else if .Params.summary }}<div data-module="article-summary" class="article-summary" itemprop="description"><p>{{ .Params.summary }}</p></div>{{ end }}
     {{ if $affiliateAllowed }}{{- partial "disclosure-notice.html" . -}}{{ end }}

@@ -85,15 +85,7 @@ tags:
   - "clean drinking water"
   - "home-maintenance"
   - "lane:audience_specific"
-faq:
-  - question: "What is the best whole house water filter for older homes with lead risk in 2026?"
-    answer: "The best whole house water filter for older homes with lead risk is the one that balances price, performance, and support most cleanly for U.S. buyers."
-  - question: "Are expensive options worth it?"
-    answer: "Only when the premium features solve a real weekly problem for you."
-  - question: "How do I choose the right pick from this roundup?"
-    answer: "Choose the pick that matches your layout, upkeep tolerance, and the level of automation you actually want to live with every week."
-  - question: "Should I buy from Amazon or compare other U.S. listings first?"
-    answer: "Compare the live Amazon listing first for the exact model and bundle, then sanity-check competing U.S. retailers if return policy or accessories matter to you."
+
 ---
 
 The smartest way to buy one is to match the first filter stage to the problem you notice most. Carbon block is the strongest all-around starting point when you want broader cleanup. Sediment filtration should come first when old plumbing is shedding debris. Larger homes need a system that can keep up with several bathrooms. Use the comparison below to sort the options by the job they handle best.
