@@ -4,7 +4,7 @@ slug: "whole-house-water-filter-sizing-how-to-match-capacity-to-your-household"
 keyword_id: 40525504
 topic_key: "guide:whole house water filter sizing guide for household"
 date: 2026-07-05
-lastmod: 2026-07-05
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "A whole-house filter should be sized for the busiest stretch of the day, not for the number of bedrooms or the square footage of the house. The right system is the one that can keep water moving when a shower, a load of laundry, and the kitchen tap are all open at once."
@@ -25,33 +25,11 @@ keywords:
   - "whole house water filter sizing guide for households"
   - "how to choose whole house water filter sizing: how to match capacity to your household"
   - "whole house water filter sizing: how to match capacity to your household guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house water filter sizing guide for households"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:buying_factors"
 ---
 

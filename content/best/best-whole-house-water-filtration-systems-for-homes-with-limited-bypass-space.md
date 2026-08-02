@@ -4,7 +4,7 @@ slug: "best-whole-house-water-filtration-systems-for-homes-with-limited-bypass-s
 keyword_id: 41431786
 topic_key: "best_of:best whole house water filtration for home with limited bypass space"
 date: 2026-07-29
-lastmod: 2026-07-29
+lastmod: 2026-08-02
 type: best_of
 category: "home-maintenance"
 summary: "The Waterdrop BB Series 20-Inch Whole House Water Filter Housing System with Sediment/Carbon Cartridges is the leading choice for a cramped main-line installation when you want separate sediment and carbon filtration. The APEC CB10-20 is the better fit when particles are the only concern and one housing is all the space allows."
@@ -57,33 +57,11 @@ keywords:
   - "best whole house water filtration for homes with limited bypass space"
   - "best whole house water filtration for homes with limited bypass space 2026"
   - "top whole house water filtration for homes with limited bypass space"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "best whole house water filtration for homes with limited bypass space"
+  - "water filter buying guide"
+  - "home water filtration"
   - "lane:space_fit"
 faq:
   - question: "How much clearance does a 20-inch whole-house filter need below it?"

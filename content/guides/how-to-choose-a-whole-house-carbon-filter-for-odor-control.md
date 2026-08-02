@@ -4,7 +4,7 @@ slug: "how-to-choose-a-whole-house-carbon-filter-for-odor-control"
 keyword_id: 40525810
 topic_key: "guide:a whole house carbon filter for odor"
 date: 2026-07-09
-lastmod: 2026-07-09
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Use this guide in order. Start with the odor source, then match the carbon media, then add pretreatment if the water is dirty, and finally size the system for the house's real demand. Whole-house carbon makes sense when the smell is in the incoming water and every tap is affected."
@@ -25,33 +25,11 @@ keywords:
   - "how to choose a whole house carbon filter for odor"
   - "how to choose a whole-house carbon filter for odor control"
   - "a whole-house carbon filter for odor control guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to choose a whole house carbon filter for odor"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:buying_factors"
 faq:
   - question: "Can carbon fix a rotten egg smell?"

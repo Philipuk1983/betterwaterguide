@@ -4,11 +4,11 @@ slug: "ro-system-waste-water-ratio-what-homeowners-should-know-for-kitchen-use"
 keyword_id: 40433170
 topic_key: "guide:ro system waste water ratio explained for homeowner"
 date: 2026-07-01
-lastmod: 2026-07-01
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "A reverse osmosis system always sends some water down the drain. That is part of how it separates purified water from the minerals and other dissolved material the membrane rejects. The waste water ratio tells you how much drain water the system uses for each gallon of clean water it keeps."
-description: "A reverse osmosis system always sends some water down the drain."
+description: "Learn what an RO waste-water ratio means, how to calculate it, what changes the ratio, and when a more efficient kitchen system is worth considering."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -25,33 +25,11 @@ keywords:
   - "ro system waste water ratio explained for homeowners"
   - "how to choose ro system waste water ratio: what homeowners should know for kitchen use"
   - "ro system waste water ratio: what homeowners should know for kitchen use guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "ro system waste water ratio explained for homeowners"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:beginner_basics"
 faq:
   - question: "Is a 4:1 RO waste water ratio bad?"

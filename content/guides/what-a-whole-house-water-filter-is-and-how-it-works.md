@@ -4,7 +4,7 @@ slug: "what-a-whole-house-water-filter-is-and-how-it-works"
 keyword_id: 40596284
 topic_key: "guide:what is a whole house water filter and how it work"
 date: 2026-07-10
-lastmod: 2026-07-10
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "A whole-house water filter installs on the main water line and treats water before it reaches showers, sinks, laundry, and appliances. One system treats the water for the house instead of only one tap."
@@ -25,33 +25,11 @@ keywords:
   - "what is a whole house water filter and how it works"
   - "how to choose what a whole-house water filter is and how it works"
   - "what a whole-house water filter is and how it works guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "what is a whole house water filter and how it works"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:buying_factors"
 faq:
   - question: "Where does a whole-house water filter install?"

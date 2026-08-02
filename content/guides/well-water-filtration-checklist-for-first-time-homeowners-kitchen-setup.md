@@ -4,7 +4,7 @@ slug: "well-water-filtration-checklist-for-first-time-homeowners-kitchen-setup"
 keyword_id: 40433206
 topic_key: "guide:well water filtration checklist for first time homeowner"
 date: 2026-07-01
-lastmod: 2026-07-01
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Private well water can be perfectly usable in the kitchen, but it rarely behaves like city water. The first step is not buying the biggest filter. The first step is figuring out what the water actually needs, then building a kitchen setup that handles that problem without turning the sink cabinet into a storage headache."
@@ -25,33 +25,11 @@ keywords:
   - "well water filtration checklist for first time homeowners"
   - "how to choose well water filtration checklist for first-time homeowners (kitchen setup)"
   - "well water filtration checklist for first-time homeowners (kitchen setup) guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "well water filtration checklist for first time homeowners"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:beginner_basics"
 faq:
   - question: "Do I need whole-house treatment or just kitchen treatment?"

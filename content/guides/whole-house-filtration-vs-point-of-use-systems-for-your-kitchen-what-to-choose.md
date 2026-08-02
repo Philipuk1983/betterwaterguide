@@ -4,7 +4,7 @@ slug: "whole-house-filtration-vs-point-of-use-systems-for-your-kitchen-what-to-c
 keyword_id: 40431076
 topic_key: "guide:whole house filtration vs point of use"
 date: 2026-06-30
-lastmod: 2026-07-01
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "The best kitchen setup is the one that solves the water problem without turning the cabinet under the sink into a storage headache. For many homes, the choice comes down to whether you want one faucet treated well or every fixture treated the same way."
@@ -25,33 +25,11 @@ keywords:
   - "whole house filtration vs point of use (guide)"
   - "how to choose whole-house filtration vs point-of-use systems for your kitchen: what to choose"
   - "whole-house filtration vs point-of-use systems for your kitchen: what to choose guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house filtration vs point of use (guide)"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:beginner_basics"
 ---
 

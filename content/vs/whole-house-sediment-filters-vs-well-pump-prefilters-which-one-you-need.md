@@ -4,7 +4,7 @@ slug: "whole-house-sediment-filters-vs-well-pump-prefilters-which-one-you-need"
 keyword_id: 41353967
 topic_key: "comparison:well pump prefilter vs whole house sediment filter"
 date: 2026-07-19
-lastmod: 2026-07-19
+lastmod: 2026-08-02
 type: comparison
 category: "home-maintenance"
 summary: "A whole-house sediment filter is the right starting point when sediment is showing up at faucets, in toilet tanks, on appliance inlet screens, or in other parts of the home's plumbing. It sits after the pressure tank and filters water before it branches to fixtures and appliances."
@@ -35,33 +35,11 @@ keywords:
   - "whole house sediment filter vs well pump prefilter"
   - "whole house sediment filter vs well pump prefilter comparison"
   - "whole house sediment filter or well pump prefilter"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "whole house sediment filter vs well pump prefilter"
+  - "water filter comparison"
+  - "home water filtration"
   - "lane:problem_solution"
 faq:
   - question: "Does a whole-house sediment filter protect a well pump?"

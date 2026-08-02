@@ -4,11 +4,11 @@ slug: "whole-house-water-filtration-vs-under-sink-drinking-water-filtration-whic
 keyword_id: 40708205
 topic_key: "comparison:under sink drinking water filtration vs whole house water filtration"
 date: 2026-07-06
-lastmod: 2026-07-06
+lastmod: 2026-08-02
 type: comparison
 category: "home-maintenance"
 summary: "Comparing whole house water filtration vs under sink drinking water filtration comes down to scope. Whole-house treatment sits at the main line and treats water for the entire home."
-description: "Comparing whole house water filtration vs under sink drinking water filtration comes down to scope."
+description: "Choose whole-house filtration for problems at every tap or under-sink treatment for drinking and cooking water, with cost and maintenance compared."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
@@ -35,33 +35,11 @@ keywords:
   - "whole house water filtration vs under sink drinking water filtration"
   - "whole house water filtration vs under sink drinking water filtration comparison"
   - "whole house water filtration or under sink drinking water filtration"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "whole house water filtration vs under sink drinking water filtration"
+  - "water filter comparison"
+  - "home water filtration"
   - "lane:convenience_vs_performance"
 faq:
   - question: "Does whole-house filtration replace under-sink drinking water filtration?"

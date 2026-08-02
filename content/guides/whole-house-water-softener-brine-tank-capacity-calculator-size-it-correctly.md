@@ -4,11 +4,11 @@ slug: "whole-house-water-softener-brine-tank-capacity-calculator-size-it-correct
 keyword_id: 40436690
 topic_key: "tool:whole house water softener brine tank capacity tool"
 date: 2026-07-03
-lastmod: 2026-07-03
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "A brine tank calculator is useful because the right answer is not the biggest tank that fits. It is the tank that gives you enough salt storage for your household's water use without turning refills and cleaning into a hassle. In a whole-house softener, the brine tank stores the salt and water used to make brine for regeneration. That makes it a storage choice, not a treatment rating. A larger tank does not make the water softer on its own. It only changes how much reserve you have between refills."
-description: "A brine tank calculator is useful because the right answer is not the biggest tank that fits."
+description: "Size a water-softener brine tank by household use, salt reserve, regeneration schedule, refill frequency, cleaning access, and available floor space."
 schema_type: Article
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -152,33 +152,11 @@ utility_tool:
 keywords:
   - "whole house water softener brine tank capacity calculator"
   - "whole house water softener brine tank capacity tool"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house water softener brine tank capacity calculator"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:audience_specific"
 ---
 
@@ -209,7 +187,7 @@ Start with hardness. If you do not know it, a quick test is more useful than gue
 
 Next add iron if it is part of your water. Iron does not change the job of the brine tank, but it does make the maintenance side less forgiving. If staining has shown up on sinks, toilets, or fixtures, build that into the decision instead of treating the tank as if the water were only hard and nothing else.
 
-Then think about daily use. A family with back-to-back showers, laundry, and cooking water will use the system differently from a lightly occupied house. This is where many sizing mistakes happen, because people picture the home at its busiest instead of across a normal month.
+Then think about daily use. A family with back-to-back showers, laundry, and cooking water will use the system differently from a lightly occupied house. Many sizing mistakes happen here, because people picture the home at its busiest instead of across a normal month.
 
 After that, decide how often you are willing to refill. Some homeowners want a longer gap between salt additions. Others are fine with a smaller tank if it keeps the unit easier to handle. That is a valid trade-off. The wrong choice is picking a size that sounds convenient but is awkward to inspect, awkward to fill, and awkward to clean.
 

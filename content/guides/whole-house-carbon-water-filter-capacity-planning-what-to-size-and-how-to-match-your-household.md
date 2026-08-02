@@ -4,11 +4,11 @@ slug: "whole-house-carbon-water-filter-capacity-planning-what-to-size-and-how-to
 keyword_id: 40596832
 topic_key: "guide:whole house carbon filter capacity planning"
 date: 2026-07-11
-lastmod: 2026-07-11
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Size a whole-house carbon filter by the fixtures that can run at the same time, not by bedroom count or square footage. A large floor plan with light fixture overlap may need less capacity than a smaller house where a shower, dishwasher, and laundry can all run together."
-description: "Size a whole-house carbon filter by the fixtures that can run at the same time, not by bedroom count or square footage."
+description: "Size whole-house carbon filtration from simultaneous fixture demand, required contact time, tested contaminants, pressure loss, and media service life."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -25,33 +25,11 @@ keywords:
   - "whole house carbon filter capacity planning guide"
   - "how to choose how to size a whole-house carbon filter for your household"
   - "how to size a whole-house carbon filter for your household guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house carbon filter capacity planning guide"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:buying_factors"
 ---
 

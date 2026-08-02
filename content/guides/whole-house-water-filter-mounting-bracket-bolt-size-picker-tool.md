@@ -4,11 +4,11 @@ slug: "whole-house-water-filter-mounting-bracket-bolt-size-picker-tool"
 keyword_id: 41299500
 topic_key: "tool:whole house filter mounting bracket bolt size picker tool"
 date: 2026-07-17
-lastmod: 2026-07-17
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "The picker helps narrow down a starting bolt diameter and mounting route for a whole-house filter bracket. Use it to match the bracket opening to a fastener size, then match that fastener to the wall or backing behind it."
-description: "The picker helps narrow down a starting bolt diameter and mounting route for a whole-house filter bracket."
+description: "Choose a whole-house filter mounting method by checking loaded housing weight, wall structure, bracket holes, fastener material, and manufacturer guidance."
 schema_type: Article
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -45,7 +45,7 @@ utility_tool:
           result: "plan_3_8_stud_or_masonry"
           weight: 1
     - key: "mounting_surface_backing"
-      label: "What does the bolt ultimately bite into?"
+      label: "What material will the bolt anchor into?"
       type: "select"
       options:
         - label: "Wood stud / structural framing"
@@ -145,7 +145,7 @@ utility_tool:
       inputs:
         - label: "Bracket hole diameter (approx.)?"
           value: "hole_5_16"
-        - label: "What does the bolt ultimately bite into?"
+        - label: "What material will the bolt anchor into?"
           value: "wood_stud"
         - label: "How does the bolt fit the bracket hole?"
           value: "good_clearance"
@@ -159,33 +159,11 @@ keywords:
   - "whole house filter mounting bracket bolt size picker tool"
   - "whole house filter mounting bracket bolt size tool tool"
   - "whole house filter mounting bracket bolt size tool picker"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house filter mounting bracket bolt size picker tool"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:problem_solution"
 faq:
   - question: "Does the bracket-hole diameter tell me exactly which bolt to use?"

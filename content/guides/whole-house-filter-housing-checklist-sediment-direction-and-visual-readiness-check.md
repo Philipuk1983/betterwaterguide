@@ -4,7 +4,7 @@ slug: "whole-house-filter-housing-checklist-sediment-direction-and-visual-readin
 keyword_id: 41584695
 topic_key: "tool:whole house filter housing sediment direction visual check readiness tool"
 date: 2026-07-22
-lastmod: 2026-07-22
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Start with the housing head, not the sediment in the bowl. The flow arrow or molded IN and OUT markings show how the housing is meant to be plumbed."
@@ -137,33 +137,11 @@ keywords:
   - "whole house filter housing sediment direction visual check readiness tool"
   - "whole house filter housing sediment direction visual tool tool"
   - "whole house filter housing sediment direction visual tool checklist"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house filter housing sediment direction visual check readiness tool"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:space_fit"
 faq:
   - question: "Does sediment in the bottom of a filter housing mean the filter is installed backward?"

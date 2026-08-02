@@ -4,10 +4,10 @@ slug: "best-whole-house-sediment-filter-for-small-homes-under-sink-options"
 keyword_id: 41431781
 topic_key: "best_of:best under sink whole house style sediment filter for small home"
 date: 2026-07-20
-lastmod: 2026-07-20
+lastmod: 2026-08-02
 type: best_of
 category: "home-maintenance"
-summary: "An under-sink sediment filter can make sense in a small home when one kitchen sink needs cleaner water before it reaches a drinking-water filter. It is not a substitute for a main-line whole-house system: it treats only the water routed through that sink."
+summary: "Use an under-sink sediment cartridge only when one kitchen line has the problem. APEC CB1-MD is the housing option here; choose the APEC, DuPont, Hydrotech, or EcoPure cartridge only after confirming size, micron rating, and compatibility."
 description: "An under-sink sediment filter can make sense in a small home when one kitchen sink needs cleaner water before it reaches a drinking-water filter."
 schema_type: ItemList
 evidence_tier: "specs_plus_sources"
@@ -57,33 +57,11 @@ keywords:
   - "best under sink whole house-style sediment filter for small homes"
   - "best under sink whole house-style sediment filter for small homes 2026"
   - "top under sink whole house-style sediment filter for small homes"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "best under sink whole house-style sediment filter for small homes"
+  - "water filter buying guide"
+  - "home water filtration"
   - "lane:space_fit"
 faq:
   - question: "Is an under-sink whole-house-style sediment filter a true whole-house filter?"

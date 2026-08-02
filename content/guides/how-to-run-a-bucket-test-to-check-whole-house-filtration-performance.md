@@ -4,7 +4,7 @@ slug: "how-to-run-a-bucket-test-to-check-whole-house-filtration-performance"
 keyword_id: 41588981
 topic_key: "guide:how to run a bucket test for whole house filtration performance"
 date: 2026-07-23
-lastmod: 2026-07-23
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "A 5-gallon bucket test is a simple way to see how much water your whole-house filtration system delivers at a high-flow fixture. Time how long it takes to fill a marked 5-gallon bucket from a fully open cold-water faucet, then convert that time to gallons per minute (GPM)."
@@ -25,33 +25,11 @@ keywords:
   - "how to run a bucket test for whole house filtration performance"
   - "how to choose how to run a bucket test to check whole-house filtration performance"
   - "how to run a bucket test to check whole-house filtration performance guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to run a bucket test for whole house filtration performance"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:how_to"
 faq:
   - question: "How long should it take to fill a 5-gallon bucket?"

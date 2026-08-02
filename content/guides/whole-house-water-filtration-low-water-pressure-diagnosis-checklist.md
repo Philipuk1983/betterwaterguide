@@ -4,7 +4,7 @@ slug: "whole-house-water-filtration-low-water-pressure-diagnosis-checklist"
 keyword_id: 41858073
 topic_key: "tool:whole house water filtration low water pressure diagnosis checklist tool"
 date: 2026-07-29
-lastmod: 2026-07-29
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Use this checklist to find out whether a whole-house filter is actually causing low water pressure or whether the restriction is elsewhere in the plumbing, well system, or incoming water supply."
@@ -143,33 +143,11 @@ keywords:
   - "whole house water filtration low water pressure diagnosis checklist tool"
   - "whole house water filtration low water pressure diagnosis tool tool"
   - "whole house water filtration low water pressure diagnosis tool checklist"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house water filtration low water pressure diagnosis checklist tool"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:troubleshooting"
 faq:
   - question: "Can a clogged whole-house filter show normal pressure on a gauge?"

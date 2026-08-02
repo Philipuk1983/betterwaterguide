@@ -4,11 +4,11 @@ slug: "whole-house-water-filtration-owners-say-leaks-from-the-bypass-valve-can-c
 keyword_id: 40441130
 topic_key: "complaint_radar:whole house filtration owner say install leak from bypass valve complaint radar"
 date: 2026-07-03
-lastmod: 2026-07-03
+lastmod: 2026-08-02
 type: complaint_radar
 category: "home-maintenance"
 summary: "Whole-house filtration complaints are rarely about the filter media alone. When a bypass valve starts to seep after installation, the house can feel slower even if the treatment stage is doing its job. Faucets take longer to fill, showers feel weaker, and a damp patch appears around the bypass body, union, or threaded adapter. That is the pattern homeowners usually notice first."
-description: "Whole-house filtration complaints are rarely about the filter media alone."
+description: "Diagnose a bypass-valve leak that coincides with low household flow by checking valve position, seals, unions, pressure drop, and cartridge loading."
 schema_type: Article
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -25,34 +25,11 @@ keywords:
   - "whole house filtration owners say install leaks from bypass valve"
   - "whole house filtration owners say install leaks from bypass valve complaints"
   - "whole house filtration owners say install leaks from bypass valve issues"
-  - "whole house filtration owners say install leaks from bypass valve to avoid"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house filtration owners say install leaks from bypass valve"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:material_or_spec_risk"
 faq:
   - question: "Why does a bypass-valve leak feel like low water pressure?"

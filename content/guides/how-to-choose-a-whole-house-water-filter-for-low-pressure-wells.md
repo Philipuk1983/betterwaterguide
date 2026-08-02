@@ -4,11 +4,11 @@ slug: "how-to-choose-a-whole-house-water-filter-for-low-pressure-wells"
 keyword_id: 41588336
 topic_key: "guide:a whole house filter for low pressure well"
 date: 2026-07-20
-lastmod: 2026-07-20
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Start by sizing the filter around the pressure your well system can actually deliver during household use. A whole-house filter should meet peak demand with no more than about 3 to 5 PSI of pressure loss while the system is near its pressure-switch cut-in point."
-description: "Start by sizing the filter around the pressure your well system can actually deliver during household use."
+description: "Choose whole-house filtration for a low-pressure well by measuring pump performance, peak demand, filter flow, pressure drop, and service condition."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -25,33 +25,11 @@ keywords:
   - "how to choose a whole house filter for low pressure wells"
   - "how to choose a whole-house water filter for low-pressure wells"
   - "a whole-house water filter for low-pressure wells guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to choose a whole house filter for low pressure wells"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:how_to"
 faq:
   - question: "What PSI is too low for a whole-house water filter?"

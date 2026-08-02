@@ -4,11 +4,11 @@ slug: "how-to-choose-a-whole-house-water-filter-for-hard-water-in-your-kitchen-a
 keyword_id: 40433395
 topic_key: "guide:a whole house filter for hard water"
 date: 2026-07-01
-lastmod: 2026-07-01
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Hard water often announces itself in plain sight: white crust around faucets, spots on glass, dull laundry, and scale that keeps coming back on showerheads and fixtures. When those signs show up across the house, a whole-house system is the right place to start."
-description: "Hard water often announces itself in plain sight: white crust around faucets, spots on glass, dull laundry."
+description: "Learn why ordinary filters do not remove hardness and how to choose between softening, conditioning, and targeted filtration after testing your water."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -25,33 +25,11 @@ keywords:
   - "how to choose a whole house filter for hard water"
   - "how to choose a whole-house water treatment system for hard water"
   - "a whole-house water treatment system for hard water guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to choose a whole house filter for hard water"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:beginner_basics"
 ---
 

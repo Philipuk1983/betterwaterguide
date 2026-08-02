@@ -4,11 +4,11 @@ slug: "best-whole-house-water-filtration-system-for-clean-smelling-water"
 keyword_id: 40435774
 topic_key: "best_of:best whole house water filtration system for clean smelling water"
 date: 2026-07-02
-lastmod: 2026-07-02
+lastmod: 2026-08-02
 type: best_of
 category: "home-maintenance"
-summary: "Water that smells clean usually comes from the right treatment in the right place. If every shower, sink, and appliance has the same chlorine-like odor, a whole-house filter belongs on the short list. If only the kitchen glass tastes off, a sink-level system is the smarter buy. And if the smell comes with scale or a sulfur note, you are dealing with a different problem, not just a stronger version of the same one."
-description: "Water that smells clean usually comes from the right treatment in the right place."
+summary: "Choose 3M Filtrete or iSpring for chlorine odor that affects the whole house, APEC under-sink treatment when only one drinking tap is affected, and a contaminant-specific system when the smell is sulfur rather than chlorine."
+description: "Choose whole-house carbon filtration for chlorine odor, point-of-use treatment for one faucet, or targeted treatment when sulfur or scale is the problem."
 schema_type: ItemList
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
@@ -57,33 +57,11 @@ keywords:
   - "best whole house water filtration system for clean smelling water"
   - "best whole house water filtration system for clean smelling water 2026"
   - "top whole house water filtration system for clean smelling water"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "best whole house water filtration system for clean smelling water"
+  - "water filter buying guide"
+  - "home water filtration"
   - "lane:audience_specific"
 
 ---

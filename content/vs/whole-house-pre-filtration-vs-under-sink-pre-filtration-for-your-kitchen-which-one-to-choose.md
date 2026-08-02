@@ -4,11 +4,11 @@ slug: "whole-house-pre-filtration-vs-under-sink-pre-filtration-for-your-kitchen-
 keyword_id: 40436455
 topic_key: "comparison:under sink pre filtration vs whole house pre filtration"
 date: 2026-07-01
-lastmod: 2026-07-01
+lastmod: 2026-08-02
 type: comparison
 category: "home-maintenance"
 summary: "Whole-house pre-filtration and under-sink pre-filtration solve different versions of the same kitchen problem. One starts at the main line and treats water for the whole house. The other stays under the sink and focuses on the kitchen tap. If the kitchen is the only place you care about, the smaller setup is usually easier to live with. If the same water issue shows up in more than one room, the broader setup is the better starting point."
-description: "Whole-house pre-filtration and under-sink pre-filtration solve different versions of the same kitchen problem."
+description: "Compare whole-house and under-sink pre-filtration by contaminant location, appliance protection, drinking-water goals, flow, plumbing, and maintenance."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
@@ -35,33 +35,11 @@ keywords:
   - "whole house pre filtration vs under sink pre filtration"
   - "whole house pre filtration vs under sink pre filtration comparison"
   - "whole house pre filtration or under sink pre filtration"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "whole house pre filtration vs under sink pre filtration"
+  - "water filter comparison"
+  - "home water filtration"
   - "lane:beginner_vs_pro"
 faq:
   - question: "Which option is better for most people?"

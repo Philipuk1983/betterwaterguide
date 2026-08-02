@@ -4,7 +4,7 @@ slug: "how-to-perform-a-simple-whole-house-filter-pressure-check-in-your-kitchen
 keyword_id: 40433193
 topic_key: "guide:how to perform a simple whole house filter pressure check"
 date: 2026-07-01
-lastmod: 2026-07-01
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "The easiest place to run a whole-house filter pressure check is the kitchen because the cold tap gives a steady draw and keeps the water heater out of the picture. With the rest of the house quiet, you can see whether the filter stage is adding normal resistance or starting to slow the system down."
@@ -25,33 +25,11 @@ keywords:
   - "how to perform a simple whole house filter pressure check"
   - "how to choose how to perform a simple whole-house filter pressure check in your kitchen"
   - "how to perform a simple whole-house filter pressure check in your kitchen guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to perform a simple whole house filter pressure check"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:beginner_basics"
 faq:
   - question: "Do I need two gauges?"

@@ -4,11 +4,11 @@ slug: "best-whole-house-carbon-water-filter-with-minimal-bypass-lines"
 keyword_id: 41430947
 topic_key: "best_of:best carbon water filter for whole house with minimal bypass line"
 date: 2026-07-23
-lastmod: 2026-07-23
+lastmod: 2026-08-02
 type: best_of
 category: "home-maintenance"
 summary: "For a whole-house carbon filter with a clean main-line installation, the Watts Premier Whole House 1,000,000-gallon AC-20B Carbon Filter System is the strongest overall pick. Its stated 1,000,000-gallon capacity suits homeowners who want carbon filtration at the water entry point without planning around frequent cartridge changes."
-description: "For a whole-house carbon filter with a clean main-line installation, the Watts Premier Whole House 1,000."
+description: "Compare compact whole-house carbon filters for tight bypass layouts, including connection size, service clearance, peak flow, and cartridge cost."
 schema_type: ItemList
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
@@ -57,33 +57,11 @@ keywords:
   - "best carbon water filter for whole house with minimal bypass lines"
   - "best carbon water filter for whole house with minimal bypass lines 2026"
   - "top carbon water filter for whole house with minimal bypass lines"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "best carbon water filter for whole house with minimal bypass lines"
+  - "water filter buying guide"
+  - "home water filtration"
   - "lane:space_fit"
 faq:
   - question: "Does minimal bypass plumbing mean installing the filter without a bypass valve?"

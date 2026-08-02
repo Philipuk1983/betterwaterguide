@@ -4,11 +4,11 @@ slug: "best-whole-house-water-filter-for-rust-and-sediment-what-to-choose-when-p
 keyword_id: 40431134
 topic_key: "best_of:best whole house filter for rust and sediment"
 date: 2026-07-02
-lastmod: 2026-07-02
+lastmod: 2026-08-02
 type: best_of
 category: "home-maintenance"
-summary: "When corroding pipes start shedding orange flakes, the goal is not to make the water look polished. The goal is to keep loose rust, grit, and silt out of the rest of the house. A whole-house filter sits at the main entry point, so it can protect faucet aerators, shower valves, appliance screens, and the water heater from collecting that debris. It will not rebuild old pipe walls, but it can keep the mess from spreading while you deal with the bigger plumbing issue."
-description: "When corroding pipes start shedding orange flakes, the goal is not to make the water look polished."
+summary: "DuPont SC100 is the best sediment-first pick here for loose rust and grit. Choose iSpring for staged treatment or another compatible housing only after confirming micron rating and flow. Filtration limits debris but does not repair corroded pipes."
+description: "Choose a whole-house filter for rust and sediment by particle load, micron rating, flow demand, housing size, and whether corroded pipes also need repair."
 schema_type: ItemList
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
@@ -57,33 +57,11 @@ keywords:
   - "best whole house filter for rust and sediment"
   - "best whole house filter for rust and sediment 2026"
   - "top whole house filter for rust and sediment"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "best whole house filter for rust and sediment"
+  - "water filter buying guide"
+  - "home water filtration"
   - "lane:audience_specific"
 faq:
   - question: "Can a whole-house sediment filter remove rust?"

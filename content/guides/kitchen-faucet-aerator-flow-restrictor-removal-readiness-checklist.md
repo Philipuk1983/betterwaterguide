@@ -4,7 +4,7 @@ slug: "kitchen-faucet-aerator-flow-restrictor-removal-readiness-checklist"
 keyword_id: 41361212
 topic_key: "tool:kitchen faucet aerator flow restrictor removal readiness check tool"
 date: 2026-07-17
-lastmod: 2026-07-17
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "The readiness checklist above helps you decide whether the aerator at the end of your kitchen faucet can be cleaned or removed safely before you put force on it."
@@ -143,33 +143,11 @@ keywords:
   - "kitchen faucet aerator flow restrictor removal readiness check tool"
   - "kitchen faucet aerator flow restrictor removal tool tool"
   - "kitchen faucet aerator flow restrictor removal tool checklist"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "kitchen faucet aerator flow restrictor removal readiness check tool"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:problem_solution"
 faq:
   - question: "Do I need a special tool to remove a kitchen faucet aerator?"

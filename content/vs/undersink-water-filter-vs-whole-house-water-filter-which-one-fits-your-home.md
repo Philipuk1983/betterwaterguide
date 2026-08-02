@@ -4,11 +4,11 @@ slug: "undersink-water-filter-vs-whole-house-water-filter-which-one-fits-your-ho
 keyword_id: 40708188
 topic_key: "comparison:undersink water filter vs whole house water filter"
 date: 2026-07-06
-lastmod: 2026-07-06
+lastmod: 2026-08-02
 type: comparison
 category: "home-maintenance"
 summary: "The undersink water filter vs whole house water filter choice is mostly about where the problem lives. An undersink water filter treats one faucet, usually the kitchen sink. A whole house water filter treats the water before it branches to the rest of the plumbing."
-description: "The undersink water filter vs whole house water filter choice is mostly about where the problem lives."
+description: "Choose under-sink or whole-house filtration based on where the water problem appears, required reduction claims, plumbing access, flow, and total cost."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
@@ -35,33 +35,11 @@ keywords:
   - "undersink water filter vs whole house water filter"
   - "undersink water filter vs whole house water filter comparison"
   - "undersink water filter or whole house water filter"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "undersink water filter vs whole house water filter"
+  - "water filter comparison"
+  - "home water filtration"
   - "lane:convenience_vs_performance"
 faq:
   - question: "Which option is better for drinking water at the kitchen sink?"

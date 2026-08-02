@@ -4,11 +4,11 @@ slug: "whole-house-water-filter-maintenance-checklist-for-beginners-kitchen-focu
 keyword_id: 40431108
 topic_key: "guide:whole house water filter maintenance checklist"
 date: 2026-06-30
-lastmod: 2026-07-01
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "A whole-house filter is easiest to manage when you treat the kitchen sink as the first warning light. That faucet gets used every day, so small problems show up there before they are obvious elsewhere: a slower fill, a return of taste or odor, or a cloudy burst right after service."
-description: "A whole-house filter is easiest to manage when you treat the kitchen sink as the first warning light."
+description: "Use this beginner maintenance checklist to track filter age, pressure, kitchen water changes, housing condition, bypass operation, leaks, and service dates."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -25,33 +25,11 @@ keywords:
   - "whole house water filter maintenance checklist"
   - "how to choose whole-house water filter maintenance checklist for beginners (kitchen focus)"
   - "whole-house water filter maintenance checklist for beginners (kitchen focus) guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house water filter maintenance checklist"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:beginner_basics"
 faq:
   - question: "How often should a whole-house water filter be checked?"

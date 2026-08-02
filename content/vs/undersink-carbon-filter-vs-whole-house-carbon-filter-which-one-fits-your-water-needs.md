@@ -4,11 +4,11 @@ slug: "undersink-carbon-filter-vs-whole-house-carbon-filter-which-one-fits-your-
 keyword_id: 40708217
 topic_key: "comparison:undersink carbon filter vs whole house carbon filter"
 date: 2026-07-06
-lastmod: 2026-07-06
+lastmod: 2026-08-02
 type: comparison
 category: "home-maintenance"
 summary: "An undersink carbon filter is the narrower fix when the problem is mainly at one faucet. A whole-house carbon filter makes more sense when the same chlorine taste or smell shows up across the home."
-description: "An undersink carbon filter is the narrower fix when the problem is mainly at one faucet."
+description: "Choose an under-sink carbon filter for one drinking tap or whole-house carbon when chlorine taste and odor affect showers, laundry, and every faucet."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
@@ -35,33 +35,11 @@ keywords:
   - "undersink carbon filter vs whole house carbon filter"
   - "undersink carbon filter vs whole house carbon filter comparison"
   - "undersink carbon filter or whole house carbon filter"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+tags:
+  - "undersink carbon filter vs whole house carbon filter"
+  - "water filter comparison"
+  - "home water filtration"
   - "lane:convenience_vs_performance"
 faq:
   - question: "Which option is better for most people?"

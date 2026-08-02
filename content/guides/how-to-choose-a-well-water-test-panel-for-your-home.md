@@ -4,7 +4,7 @@ slug: "how-to-choose-a-well-water-test-panel-for-your-home"
 keyword_id: 41740697
 topic_key: "guide:a well water test panel for homeowner"
 date: 2026-07-26
-lastmod: 2026-07-26
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Start with a state-certified laboratory panel that includes total coliform bacteria, E. coli, nitrate, pH, and total dissolved solids. Add arsenic when local groundwater conditions point to a risk; the federal drinking-water standard for arsenic is 10 µg/L."
@@ -25,33 +25,11 @@ keywords:
   - "how to choose a well water test panel for homeowners"
   - "how to choose a well water test panel for your home"
   - "a well water test panel for your home guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to choose a well water test panel for homeowners"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:how_to"
 faq:
   - question: "How often should a private well be tested?"

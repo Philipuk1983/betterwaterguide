@@ -4,7 +4,7 @@ slug: "how-to-set-up-a-whole-house-water-filtration-system-from-the-main-shutoff
 keyword_id: 41590327
 topic_key: "guide:how to set up a whole house water filtration system from the main shutoff"
 date: 2026-07-29
-lastmod: 2026-07-29
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "A whole-house water filter belongs on the main cold-water line immediately downstream of the home's main shutoff, before the line branches to fixtures. On a municipal supply, this is generally after the water meter. On a well system, start after the pressure tank."
@@ -25,33 +25,11 @@ keywords:
   - "how to set up a whole house water filtration system from the main shutoff"
   - "how to choose how to set up a whole-house water filtration system from the main shutoff"
   - "how to set up a whole-house water filtration system from the main shutoff guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to set up a whole house water filtration system from the main shutoff"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:how_to"
 faq:
   - question: "Should a whole-house filter go before or after the water softener?"
@@ -70,14 +48,14 @@ This placement sends treated water to indoor fixtures while keeping the equipmen
 
 A practical layout is:
 
-1. Water meter or well pressure tank  
-2. Existing main shutoff  
-3. Inlet isolation valve  
-4. Sediment filter, when sediment is present  
-5. Carbon filter or another treatment stage  
-6. Water softener, when hardness treatment is needed  
-7. Outlet isolation valve  
-8. Bypass line connecting the inlet and outlet sides  
+1. Water meter or well pressure tank
+2. Existing main shutoff
+3. Inlet isolation valve
+4. Sediment filter, when sediment is present
+5. Carbon filter or another treatment stage
+6. Water softener, when hardness treatment is needed
+7. Outlet isolation valve
+8. Bypass line connecting the inlet and outlet sides
 
 Use full-port ball valves that match the main pipe size. A reduced-size valve can become a restriction even when the filter housings have larger ports.
 
@@ -183,16 +161,16 @@ Change cartridges based on the service schedule, rated gallon capacity, and pres
 
 To change a cartridge:
 
-1. Close the inlet and outlet isolation valves.  
-2. Open the bypass valve.  
-3. Relieve pressure from the filter housing.  
-4. Place a bucket beneath the sump.  
-5. Remove the housing and cartridge.  
-6. Clean the housing according to its instructions.  
-7. Inspect the O-ring for flattening or damage.  
-8. Lubricate the O-ring with food-grade silicone lubricant if directed.  
-9. Tighten the housing evenly.  
-10. Return the valves to the normal filtration position and watch for leaks.  
+1. Close the inlet and outlet isolation valves.
+2. Open the bypass valve.
+3. Relieve pressure from the filter housing.
+4. Place a bucket beneath the sump.
+5. Remove the housing and cartridge.
+6. Clean the housing according to its instructions.
+7. Inspect the O-ring for flattening or damage.
+8. Lubricate the O-ring with food-grade silicone lubricant if directed.
+9. Tighten the housing evenly.
+10. Return the valves to the normal filtration position and watch for leaks.
 
 ## Installation Limits That Matter
 
@@ -211,11 +189,11 @@ Pay attention to the following:
 
 Certification standards help narrow the choices, but a certification mark applies only to the stated claim.
 
-- **NSF/ANSI 42:** Aesthetic effects, including chlorine taste and odor  
-- **NSF/ANSI 53:** Reduction claims for specific health-related contaminants  
-- **NSF/ANSI 58:** Reverse osmosis systems  
-- **NSF/ANSI 55:** UV microbiological treatment systems  
-- **NSF/ANSI 44:** Residential water softeners  
+- **NSF/ANSI 42:** Aesthetic effects, including chlorine taste and odor
+- **NSF/ANSI 53:** Reduction claims for specific health-related contaminants
+- **NSF/ANSI 58:** Reverse osmosis systems
+- **NSF/ANSI 55:** UV microbiological treatment systems
+- **NSF/ANSI 44:** Residential water softeners
 
 Read the performance data sheet for the specific substances reduced, rated flow rate, and cartridge change interval. Carbon media alone is not proof of lead reduction, for example; lead reduction requires a documented claim for that contaminant.
 

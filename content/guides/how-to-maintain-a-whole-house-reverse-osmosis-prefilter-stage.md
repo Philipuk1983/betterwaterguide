@@ -4,11 +4,11 @@ slug: "how-to-maintain-a-whole-house-reverse-osmosis-prefilter-stage"
 keyword_id: 41860588
 topic_key: "guide:how to maintain a whole house reverse osmosis prefilter stage"
 date: 2026-07-28
-lastmod: 2026-07-28
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Start with two measurements: pressure drop across the prefilter stage and chlorine after the carbon stage. Replace sediment cartridges when the differential pressure rises by 10 to 15 PSI. Replace carbon media before chlorine or chloramine reaches the RO membrane. Clean and sanitize filter housings during every cartridge change."
-description: "Start with two measurements: pressure drop across the prefilter stage and chlorine after the carbon stage."
+description: "Maintain a whole-house RO prefilter by tracking pressure drop, chlorine breakthrough, cartridge condition, change intervals, sanitation, and leak checks."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -25,33 +25,11 @@ keywords:
   - "how to maintain a whole house reverse osmosis prefilter stage"
   - "how to choose how to maintain a whole-house reverse osmosis prefilter stage"
   - "how to maintain a whole-house reverse osmosis prefilter stage guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to maintain a whole house reverse osmosis prefilter stage"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:how_to"
 faq:
   - question: "How often should whole-house RO prefilters be changed?"

@@ -4,7 +4,7 @@ slug: "whole-house-water-filter-sediment-load-what-to-consider-before-you-buy"
 keyword_id: 40596837
 topic_key: "guide:whole house water filter sediment load consideration"
 date: 2026-07-11
-lastmod: 2026-07-11
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "For heavy sediment, start coarse: a 50 to 100 micron first stage for sand and grit, a 20 to 50 micron stage for moderate rust or silt, and a 5 to 10 micron stage only when the water is already fairly clean."
@@ -25,33 +25,11 @@ keywords:
   - "whole house water filter sediment load considerations"
   - "how to choose whole-house water filter sediment load: what to consider before you buy"
   - "whole-house water filter sediment load: what to consider before you buy guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house water filter sediment load considerations"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:buying_factors"
 faq:
   - question: "What micron rating works best for heavy sediment?"

@@ -4,7 +4,7 @@ slug: "whole-house-water-filter-flow-rate-requirements-what-to-calculate-before-
 keyword_id: 40596834
 topic_key: "guide:whole house water filter flow rate requirement explained"
 date: 2026-07-10
-lastmod: 2026-07-10
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "A whole-house water filter has to keep up when more than one fixture runs at once. For many homes, a planning range of 8 to 12 GPM covers moderate use."
@@ -25,33 +25,11 @@ keywords:
   - "whole house water filter flow rate requirements explained"
   - "how to choose whole-house water filter flow rate requirements: what to calculate before you buy"
   - "whole-house water filter flow rate requirements: what to calculate before you buy guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house water filter flow rate requirements explained"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:buying_factors"
 ---
 

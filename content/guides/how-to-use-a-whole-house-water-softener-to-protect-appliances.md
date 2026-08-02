@@ -4,7 +4,7 @@ slug: "how-to-use-a-whole-house-water-softener-to-protect-appliances"
 keyword_id: 41588988
 topic_key: "guide:how to use a whole house water softener to protect appliance"
 date: 2026-07-23
-lastmod: 2026-07-23
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Hard water can leave mineral scale on water-heater surfaces, dishwasher components, washing-machine parts, ice makers, and hot-water plumbing. For homes with hardness around 7 grains per gallon (gpg) or higher, a whole-house ion-exchange softener reduces the calcium and magnesium that cause those new deposits."
@@ -25,33 +25,11 @@ keywords:
   - "how to use a whole house water softener to protect appliances"
   - "how to choose how to use a whole-house water softener to protect appliances"
   - "how to use a whole-house water softener to protect appliances guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to use a whole house water softener to protect appliances"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:how_to"
 faq:
   - question: "Does a whole-house water softener protect a water heater?"

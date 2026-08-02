@@ -4,11 +4,11 @@ slug: "how-to-sanitize-a-whole-house-water-filter-system-safely-beginner-steps"
 keyword_id: 40433400
 topic_key: "guide:how to sanitize a whole house water filter system safely"
 date: 2026-07-01
-lastmod: 2026-07-01
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "If you are staring at a whole-house filter and wondering how to clean it without turning the basement into a mess, the safe answer is to slow down and follow the system's own service order. For a basic cartridge housing, the job is usually simple: shut off the water, relieve the pressure, clean the parts that touch water, use the right sanitizer for the right amount of time, and flush the line until the chlorine smell is gone."
-description: "If you are staring at a whole-house filter and wondering how to clean it without turning the basement into a mess."
+description: "Sanitize a whole-house filter safely with isolation, depressurization, manufacturer-approved disinfectant, correct contact time, flushing, and leak checks."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -25,33 +25,11 @@ keywords:
   - "how to sanitize a whole house water filter system safely"
   - "how to choose how to sanitize a whole-house water filter system safely (beginner steps)"
   - "how to sanitize a whole-house water filter system safely (beginner steps) guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to sanitize a whole house water filter system safely"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:beginner_basics"
 faq:
   - question: "How often should a whole-house water filter system be sanitized?"

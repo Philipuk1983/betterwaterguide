@@ -4,11 +4,11 @@ slug: "how-to-use-a-whole-house-water-filter-to-protect-your-appliances"
 keyword_id: 41590340
 topic_key: "guide:how to use a whole house water filter to protect appliance"
 date: 2026-07-21
-lastmod: 2026-07-21
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Install whole-house treatment on the main incoming water line before the water heater and appliance branches. That placement protects the water heater, dishwasher, washing machine, ice maker, humidifier, and fixture valves rather than treating water after it has already passed through them."
-description: "Install whole-house treatment on the main incoming water line before the water heater and appliance branches."
+description: "Use tested water results to select whole-house treatment that protects appliances from sediment or hardness without sacrificing household flow."
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
@@ -25,33 +25,11 @@ keywords:
   - "how to use a whole house water filter to protect appliances"
   - "how to choose how to use a whole-house water filter to protect your appliances"
   - "how to use a whole-house water filter to protect your appliances guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to use a whole house water filter to protect appliances"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:how_to"
 faq:
   - question: "What micron filter protects appliances best?"

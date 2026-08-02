@@ -4,7 +4,7 @@ slug: "whole-house-water-filter-placement-what-to-prioritize-before-you-install"
 keyword_id: 40526086
 topic_key: "guide:whole house water filter placement what to prioritize"
 date: 2026-07-10
-lastmod: 2026-07-10
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "Whole-house filter placement comes down to three things: leave 12 to 18 inches of service clearance, keep pressure loss near or under 10 PSI at peak demand, and install the unit on the cold main before the water heater. Those choices decide whether the system is easy to live with or a pain to service."
@@ -25,33 +25,11 @@ keywords:
   - "whole house water filter placement: what to prioritize"
   - "how to choose whole-house water filter placement: what to prioritize before you install"
   - "whole-house water filter placement: what to prioritize before you install guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "whole house water filter placement: what to prioritize"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:buying_factors"
 faq:
   - question: "Should a whole-house water filter go before or after the water heater?"

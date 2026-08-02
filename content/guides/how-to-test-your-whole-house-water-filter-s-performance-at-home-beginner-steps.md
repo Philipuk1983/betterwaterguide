@@ -4,7 +4,7 @@ slug: "how-to-test-your-whole-house-water-filter-s-performance-at-home-beginner-
 keyword_id: 40433404
 topic_key: "guide:how to test whole house water filter performance at home"
 date: 2026-07-01
-lastmod: 2026-07-01
+lastmod: 2026-08-02
 type: guide
 category: "home-maintenance"
 summary: "A whole-house filter is easiest to judge when the test matches the job the filter is supposed to do. If the goal is chlorine reduction, test chlorine. If the goal is hardness control, test hardness. If the goal is sediment control, watch pressure and cartridge loading. Taste alone is too vague, and a TDS reading by itself can miss a carbon stage that is working normally."
@@ -25,33 +25,11 @@ keywords:
   - "how to test whole house water filter performance at home"
   - "how to choose how to test a whole-house water filter at home"
   - "how to test a whole-house water filter at home guide"
-tags:
   - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
+tags:
+  - "how to test whole house water filter performance at home"
   - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "home-maintenance"
+  - "home water filtration"
   - "lane:beginner_basics"
 faq:
   - question: "What should I test first?"
