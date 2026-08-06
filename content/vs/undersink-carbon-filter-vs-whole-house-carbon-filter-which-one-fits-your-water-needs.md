@@ -1,10 +1,10 @@
 ---
-title: "Undersink Carbon Filter vs Whole-House Carbon Filter: Which One Fits Your Water Needs?"
+title: "Under-Sink vs Whole-House Carbon Filters"
 slug: "undersink-carbon-filter-vs-whole-house-carbon-filter-which-one-fits-your-water-needs"
 keyword_id: 40708217
 topic_key: "comparison:undersink carbon filter vs whole house carbon filter"
 date: 2026-07-06
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: comparison
 category: "home-maintenance"
 summary: "An undersink carbon filter is the narrower fix when the problem is mainly at one faucet. A whole-house carbon filter makes more sense when the same chlorine taste or smell shows up across the home."
@@ -124,8 +124,7 @@ If the complaint is hardness, iron, visible sediment, or microbial safety, carbo
 
 If chloramine is the concern, the carbon media and system design matter more than the filter category alone.
 
-## Final verdict
-
+## The decision
 For a single tap that tastes or smells off, an [undersink carbon filter](https://www.amazon.com/s?k=undersink%20carbon%20filter&tag=betterwaterguide-20) is the more direct fix. It focuses on the water people drink and cook with, and it keeps the project smaller.
 
 For housewide chlorine-style taste or odor, a [whole-house carbon filter](https://www.amazon.com/s?k=whole%20house%20carbon%20filter&tag=betterwaterguide-20) reaches farther and treats every indoor fixture.
@@ -135,3 +134,7 @@ If the water issue is not mainly taste or smell, neither of these should be trea
 <div class="section-product-cta">
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=undersink%20carbon%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
 </div>
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

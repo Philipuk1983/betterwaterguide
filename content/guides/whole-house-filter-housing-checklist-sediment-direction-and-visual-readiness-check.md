@@ -1,10 +1,10 @@
 ---
-title: "Whole-House Filter Housing Checklist: Sediment Direction and Visual Readiness Check"
+title: "Whole-House Filter Housing Installation Checklist"
 slug: "whole-house-filter-housing-checklist-sediment-direction-and-visual-readiness-check"
 keyword_id: 41584695
 topic_key: "tool:whole house filter housing sediment direction visual check readiness tool"
 date: 2026-07-22
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
 summary: "Start with the housing head, not the sediment in the bowl. The flow arrow or molded IN and OUT markings show how the housing is meant to be plumbed."
@@ -306,13 +306,16 @@ Use this list before opening the housing:
 - [ ] A clean-cartridge pressure baseline is recorded when gauges are installed.
 - [ ] Water testing is arranged when staining, odor, unusual taste, or source-water changes continue after sediment service.
 
-## Bottom Line
-
+## The practical decision
 The housing arrow and the inlet-to-outlet pipe route determine whether a whole-house filter housing is installed in the intended direction. Sediment at the bottom of the sump only shows that particles are reaching the filter.
 
 Choose a clear sump when changing sediment levels make visual inspection useful. An opaque sump can work well with a documented cartridge schedule, pressure readings, and stable water conditions. In either case, easy shutoff access, safe pressure relief, adequate clearance, and a clean O-ring groove matter more than the appearance of the housing.
 
 Recurring staining, odor, rapid cartridge loading, or unexplained pressure loss call for a broader look at the water source and treatment route. Sediment inspection is a starting point, while water testing can identify concerns that a filter bowl cannot show.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

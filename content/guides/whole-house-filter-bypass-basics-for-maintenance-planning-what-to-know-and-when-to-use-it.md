@@ -4,7 +4,7 @@ slug: "whole-house-filter-bypass-basics-for-maintenance-planning-what-to-know-an
 keyword_id: 40596258
 topic_key: "guide:whole house filter bypass basic for maintenance planning"
 date: 2026-07-09
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
 summary: "A whole-house filter bypass is a service path, not a normal setting. Its job is simple: keep water moving through the house while a cartridge, valve, or housing is opened."
@@ -145,8 +145,7 @@ Do not skip the flush after reassembly. Carbon dust, trapped air, and loose sedi
 
 Finally, do not store wet housings beside new cartridges. Moisture, confusion, and mixed parts make the next service slower and dirtier than the first one.
 
-## Bottom Line
-
+## The practical decision
 For nuisance sediment, chlorine taste, and other noncritical service jobs, a bypass is worth planning. It shortens downtime, limits cleanup, and keeps the house usable while the filter is open.
 
 For lead, PFAS, bacteria, nitrate, or any other health-critical concern, bypass is only a temporary service tool. Normal operation stays on the treated side of the system, and the maintenance window stays short and controlled.
@@ -175,3 +174,7 @@ Check them at least seasonally. Valves that never move are more likely to stiffe
 
 ### What is the biggest sign that a bypass plan is too complicated?
 If the valves are hard to reach, the drain is awkward, and the cartridge change is already messy, the bypass plan is fighting the space. A simpler shutoff strategy is better than forcing extra hardware into a cramped layout.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

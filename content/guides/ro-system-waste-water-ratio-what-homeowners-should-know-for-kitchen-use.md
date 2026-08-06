@@ -1,13 +1,13 @@
 ---
-title: "RO System Waste Water Ratio: What Homeowners Should Know for Kitchen Use"
+title: "RO Wastewater Ratio Explained for Homeowners"
 slug: "ro-system-waste-water-ratio-what-homeowners-should-know-for-kitchen-use"
 keyword_id: 40433170
 topic_key: "guide:ro system waste water ratio explained for homeowner"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "A reverse osmosis system always sends some water down the drain. That is part of how it separates purified water from the minerals and other dissolved material the membrane rejects. The waste water ratio tells you how much drain water the system uses for each gallon of clean water it keeps."
+summary: "A reverse osmosis system always sends some water down the drain. That is part of how it separates purified water from the minerals and other dissolved material the membrane rejects."
 description: "Learn what an RO waste-water ratio means, how to calculate it, what changes the ratio, and when a more efficient kitchen system is worth considering."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -140,8 +140,7 @@ If you already have an RO system, a few habits help it stay closer to its intend
 
 Most performance problems start with neglected maintenance, not with the ratio itself.
 
-## Bottom line
-
+## The practical decision
 For kitchen use, 3:1 to 4:1 is the sweet spot for most homeowners. It gives a sensible balance between water use, dependable output, and everyday upkeep. A 2:1 system can be a good choice, but only when the home's pressure, water quality, and cabinet space support it. If the kitchen only needs better-tasting water, a simpler filter can be the cleaner solution.
 
 The best RO setup is the one that fits the house as well as it fits the water. A good ratio helps, but a system that is easy to maintain and steady in real kitchen conditions usually matters more.
@@ -165,3 +164,8 @@ No. A higher waste ratio does not automatically mean better drinking water. It o
 
 ### Should a homeowner worry about the ratio if water use is low?
 If the kitchen uses only a little RO water, the total waste is smaller. In that case, cabinet space, ease of service, and overall simplicity may matter more than shaving off one more gallon of drain water.
+
+## Sources and verification
+
+- [NSF/ANSI 58 scope for reverse-osmosis systems](https://www.nsf.org/knowledge-library/nsf-ansi-58-reverse-osmosis-drinking-water-treatment-systems)
+- [NSF guide to product-specific water-treatment claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

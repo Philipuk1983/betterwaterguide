@@ -4,10 +4,10 @@ slug: "how-to-test-your-whole-house-water-filter-s-performance-at-home-beginner-
 keyword_id: 40433404
 topic_key: "guide:how to test whole house water filter performance at home"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "A whole-house filter is easiest to judge when the test matches the job the filter is supposed to do. If the goal is chlorine reduction, test chlorine. If the goal is hardness control, test hardness. If the goal is sediment control, watch pressure and cartridge loading. Taste alone is too vague, and a TDS reading by itself can miss a carbon stage that is working normally."
+summary: "A whole-house filter is easiest to judge when the test matches the job the filter is supposed to do. If the goal is chlorine reduction, test chlorine. If the goal is hardness control, test hardness."
 description: "A whole-house filter is easiest to judge when the test matches the job the filter is supposed to do. If the goal is chlorine reduction, test chlorine."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -39,7 +39,7 @@ faq:
   - question: "How often should I test?"
     answer: "Test after installation, after each cartridge change, after plumbing work, after a utility notice, and whenever the water changes in taste, pressure, or appearance. For many carbon systems, a monthly check is a practical habit."
   - question: "Can a home test prove bacteria removal?"
-    answer: "No. Home strips do not prove bacteria control. If bacteria is part of the concern, use a researched product analysis and treat that as the deciding result."
+    answer: "No. Home strips do not prove bacteria control. If bacteria is part of the concern, use an appropriate certified laboratory and follow public-health guidance for the result."
 ---
 
 Home testing is useful for routine upkeep. It is not a replacement for a lab when the concern is bacteria, nitrate, arsenic, PFAS, or a boil-water notice.
@@ -93,8 +93,8 @@ The goal is not a one-time number. The goal is a baseline you can compare agains
 | Test | Best use | What a good result looks like | What it does not tell you |
 | --- | --- | --- | --- |
 | Pressure gauge | Sediment loading, restriction, clogged cartridges | Pressure stays close to your normal baseline and flow feels steady | Chlorine, hardness, iron, bacteria |
-| Free chlorine strip | Chlorinated city water | Outlet chlorine drops to near zero or clearly below the inlet | Chloramine, hardness, sediment |
-| Total chlorine strip | Chloramine-treated city water | Outlet total chlorine drops to near zero or clearly below the inlet | Hardness, iron, bacteria |
+| Free chlorine strip | Chlorinated city water | Compare inlet and outlet against the exact filter claim and test instructions | Chloramine, hardness, sediment |
+| Total chlorine strip | Chloramine-treated city water | Compare inlet and outlet against the exact filter claim and test instructions | Hardness, iron, bacteria |
 | Hardness strip | Softener performance | Outlet hardness falls into the soft range compared with the inlet | Chlorine, sediment, iron |
 | Iron strip | Well water staining problems | Outlet iron is lower than the inlet and staining slows down | Bacteria, hardness, chlorination |
 | TDS meter | RO or mineral-reduction systems | Useful when the system is supposed to lower dissolved solids | Carbon filters, sediment, chlorine, iron |
@@ -164,11 +164,14 @@ Home testing is not enough when the concern is health or contamination. Use a la
 
 If the water changed suddenly and the result does not make sense, stop using home testing as the final answer. That is the point where a lab result or service visit saves time.
 
-## Bottom line
-
+## The practical decision
 The best home test is the one that matches the filter's job. Use chlorine strips for carbon systems, hardness strips for softeners, iron strips for staining problems, and pressure for sediment loading. Keep the sample method the same each time so you can compare one reading to the next.
 
 If the reading still does not explain the problem, the answer is usually not more strip testing. It is a better water test or a service check.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 
@@ -186,4 +189,4 @@ Test after installation, after each cartridge change, after plumbing work, after
 
 ### Can a home test prove bacteria removal?
 
-No. Home strips do not prove bacteria control. If bacteria is part of the concern, use a researched product analysis and treat that as the deciding result.
+No. Home strips do not prove bacteria control. If bacteria is part of the concern, use an appropriate certified laboratory and follow public-health guidance for the result.

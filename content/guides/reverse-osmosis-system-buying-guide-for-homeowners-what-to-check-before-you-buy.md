@@ -1,13 +1,13 @@
 ---
-title: "Reverse Osmosis System Buying Guide for Homeowners: What to Check Before You Buy"
+title: "Reverse Osmosis Buying Guide: What to Check"
 slug: "reverse-osmosis-system-buying-guide-for-homeowners-what-to-check-before-you-buy"
 keyword_id: 40596820
 topic_key: "guide:reverse osmosis system buying guide for homeowner"
 date: 2026-07-05
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Buying a reverse osmosis system for a home kitchen is less about chasing a long feature list and more about matching the system to the water problem, the sink cabinet, and the upkeep you are willing to keep doing. RO is a strong choice for dissolved contaminants at a drinking-water tap. It is not the cleanest answer for every water complaint because the wrong system adds cost and cabinet clutter without fixing the issue."
+summary: "Buying a reverse osmosis system for a home kitchen is less about chasing a long feature list and more about matching the system to the water problem, the sink cabinet, and the upkeep you are willing to keep doing."
 description: "Buying a reverse osmosis system for a home kitchen is less about chasing a long feature list and more about matching the system to the water problem."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -126,11 +126,15 @@ Use this order before you buy:
 
 If one of those items is a bad fit, stop there and look at a different treatment type. That saves more trouble than a bigger feature list ever will.
 
-## Bottom Line
-
+## The practical decision
 A home reverse osmosis system is worth buying when the water report points to dissolved contaminants, the cabinet has enough room, and the household can handle regular filter changes. It is also a strong choice when you want one dedicated drinking-water tap and you are ready for the plumbing and upkeep that come with it.
 
 Skip RO when the real problem is taste, odor, sediment, or scale. Carbon filtration and water softening solve those problems with less cabinet clutter and less maintenance. The right system is the one that matches the water issue first and the kitchen layout second.
+
+## Sources and verification
+
+- [NSF/ANSI 58 scope for reverse-osmosis systems](https://www.nsf.org/knowledge-library/nsf-ansi-58-reverse-osmosis-drinking-water-treatment-systems)
+- [NSF guide to product-specific water-treatment claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

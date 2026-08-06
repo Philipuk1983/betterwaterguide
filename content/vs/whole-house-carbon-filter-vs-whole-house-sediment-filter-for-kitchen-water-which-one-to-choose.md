@@ -1,13 +1,13 @@
 ---
-title: "Whole-House Carbon Filter vs. Whole-House Sediment Filter: Which Should You Choose?"
+title: "Whole-House Carbon vs Sediment Filters"
 slug: "whole-house-carbon-filter-vs-whole-house-sediment-filter-for-kitchen-water-which-one-to-choose"
 keyword_id: 40436419
 topic_key: "comparison:whole house carbon filter vs whole house sediment filter"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: comparison
 category: "home-maintenance"
-summary: "Kitchens make water problems obvious. Clear water that tastes flat points to one kind of filter. Water that leaves behind rust, sand, or cloudiness points to another. That is why the choice between a whole house carbon filter and a whole house sediment filter is less about brand and more about the problem you see at the tap."
+summary: "Kitchens make water problems obvious. Clear water that tastes flat points to one kind of filter. Water that leaves behind rust, sand, or cloudiness points to another."
 description: "Choose carbon filtration for chlorine taste and odor or sediment filtration for sand, rust, and cloudiness, with kitchen and whole-home trade-offs."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
@@ -54,8 +54,7 @@ faq:
 
 If the water is already clear but the taste or odor bothers you, carbon is the cleaner match. If the kitchen shows particles, cloudy bursts, or grit, sediment should come first. And if both show up, the order matters: sediment first, carbon second.
 
-## Quick verdict
-
+## The short answer
 - Choose a [whole house carbon filter](https://www.amazon.com/s?k=whole%20house%20carbon%20filter&tag=betterwaterguide-20) when kitchen water looks clear but tastes or smells off.
 - Choose a [whole house sediment filter](https://www.amazon.com/s?k=whole%20house%20sediment%20filter&tag=betterwaterguide-20) when you see sand, rust, cloudiness, or other particles.
 - Use both when the water has both problems, with sediment first and carbon after it.
@@ -176,3 +175,7 @@ For kitchen water, the choice is simple once you name the problem.
 Choose a [whole house carbon filter](https://www.amazon.com/s?k=whole%20house%20carbon%20filter&tag=betterwaterguide-20) when the water looks clear but tastes or smells wrong. Choose a [whole house sediment filter](https://www.amazon.com/s?k=whole%20house%20sediment%20filter&tag=betterwaterguide-20) when the water carries rust, sand, cloudiness, or grit. If both problems are present, sediment should come first and carbon should follow.
 
 If only the kitchen matters, a whole house setup may be more than you need. If the same water issue affects the rest of the home, the full-house route makes more sense. The right choice is the one that matches the problem at the tap, not the one with the most filters.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

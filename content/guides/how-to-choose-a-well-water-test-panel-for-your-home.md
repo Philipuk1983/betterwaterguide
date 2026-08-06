@@ -4,10 +4,10 @@ slug: "how-to-choose-a-well-water-test-panel-for-your-home"
 keyword_id: 41740697
 topic_key: "guide:a well water test panel for homeowner"
 date: 2026-07-26
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Start with a state-certified laboratory panel that includes total coliform bacteria, E. coli, nitrate, pH, and total dissolved solids. Add arsenic when local groundwater conditions point to a risk; the federal drinking-water standard for arsenic is 10 µg/L."
+summary: "Start with a state-certified laboratory panel that includes total coliform bacteria, E. coli, nitrate, pH, and total dissolved solids."
 description: "Start with a state-certified laboratory panel that includes total coliform bacteria, E. coli, nitrate, pH, and total dissolved solids."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -235,11 +235,15 @@ Do not collect bacteria samples from a hose, outdoor spigot, or dirty faucet unl
 
 Do not order every available analyte without a reason. A panel tied to local groundwater, property conditions, plumbing, and treatment decisions produces results that are easier to act on.
 
-## Bottom Line
-
+## The practical decision
 For most private wells, begin with certified laboratory testing for bacteria, nitrate, pH, and total dissolved solids. Add arsenic, metals, hardness, VOCs, or other tests when the property, local groundwater conditions, plumbing, or past results point to a reason.
 
 Use a broader panel for a new home or an untested well, collect water from the correct point in the system, and keep annual results with well and filter maintenance records. Good testing narrows down the actual water issue before money is spent on treatment equipment.
+
+## Sources and verification
+
+- [EPA guidance for testing and protecting private-well water](https://www.epa.gov/privatewells/protect-your-homes-water)
+- [NSF guide to matching treatment standards with exact contaminant claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

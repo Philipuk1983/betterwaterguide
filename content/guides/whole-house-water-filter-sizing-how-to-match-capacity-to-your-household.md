@@ -1,13 +1,13 @@
 ---
-title: "Whole House Water Filter Sizing: How to Match Capacity to Your Household"
+title: "Whole-House Water Filter Sizing: Capacity and Flow"
 slug: "whole-house-water-filter-sizing-how-to-match-capacity-to-your-household"
 keyword_id: 40525504
 topic_key: "guide:whole house water filter sizing guide for household"
 date: 2026-07-05
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "A whole-house filter should be sized for the busiest stretch of the day, not for the number of bedrooms or the square footage of the house. The right system is the one that can keep water moving when a shower, a load of laundry, and the kitchen tap are all open at once."
+summary: "A whole-house filter should be sized for the busiest stretch of the day, not for the number of bedrooms or the square footage of the house."
 description: "A whole-house filter should be sized for the busiest stretch of the day, not for the number of bedrooms or the square footage of the house."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -136,8 +136,11 @@ If you want a practical way to choose, follow this order:
 
 That process keeps the decision grounded in how the house actually works.
 
-## Bottom line
-
+## The practical decision
 For many households, 10 to 15 GPM is the practical middle ground. Move up to 15 to 20 GPM when several fixtures overlap or when the plumbing already loses pressure. Stay smaller only when the problem is limited to one tap or when a different treatment, such as softening, solves the real issue better.
 
 A well-sized whole-house filter should disappear into daily life: enough flow for busy mornings, enough treatment for the water source, and enough access to stay maintained.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

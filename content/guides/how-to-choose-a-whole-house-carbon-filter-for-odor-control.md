@@ -4,10 +4,10 @@ slug: "how-to-choose-a-whole-house-carbon-filter-for-odor-control"
 keyword_id: 40525810
 topic_key: "guide:a whole house carbon filter for odor"
 date: 2026-07-09
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Use this guide in order. Start with the odor source, then match the carbon media, then add pretreatment if the water is dirty, and finally size the system for the house's real demand. Whole-house carbon makes sense when the smell is in the incoming water and every tap is affected."
+summary: "Use this guide in order. Start with the odor source, then match the carbon media, then add pretreatment if the water is dirty, and finally size the system for the house's real demand."
 description: "How to Choose a Whole-House Carbon Filter for Odor Control. Compare buyer fit, setup, maintenance, and practical trade-offs."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -162,3 +162,7 @@ Carbon should go after sediment filtration. Some homes place carbon before a sof
 ### When should I skip a whole-house carbon filter?
 
 Skip it when the odor is only at one fixture, only in hot water, or tied to heavy sediment or strong sulfur that needs another treatment method first. In those cases, carbon may still be useful later, but it should not be the first move.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

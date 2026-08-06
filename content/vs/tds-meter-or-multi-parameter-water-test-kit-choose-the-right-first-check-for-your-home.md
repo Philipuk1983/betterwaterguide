@@ -1,13 +1,13 @@
 ---
-title: "TDS Meter vs Multi-Parameter Water Test Kit: Which Should You Use First at Home?"
+title: "TDS Meter vs Water Test Kit: Which Should You Use?"
 slug: "tds-meter-or-multi-parameter-water-test-kit-choose-the-right-first-check-for-your-home"
 keyword_id: 40811274
 topic_key: "comparison:tap water tds meter vs whole house water tester"
 date: 2026-07-14
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: comparison
 category: "home-maintenance"
-summary: "A multi-parameter kit such as the Varify 17-in-1 Complete Drinking Water Test Kit is the better first check when you do not yet know which water characteristic is causing taste, scale, odor, or staining. Choose the HM Digital TDS-EZ Water Quality TDS Tester when the job is repeated trend tracking at one tap or comparing water before and after a treatment stage. Neither establishes that water is safe to drink; a certified laboratory test is the right next step for health-related contaminant concerns."
+summary: "A multi-parameter kit such as the Varify 17-in-1 Complete Drinking Water Test Kit is the better first check when you do not yet know which water characteristic is causing taste, scale, odor, or staining."
 description: "A multi-parameter kit such as the Varify 17-in-1 Complete Drinking Water Test Kit is the better first check when you do not yet know which water characteristic."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -42,8 +42,7 @@ faq:
     answer: "Collect source and treated samples at locations that isolate the treatment stage, using consistent flush conditions. A professional can identify the correct ports when plumbing is complex."
 ---
 
-## Final Verdict
-
+## The decision
 Choose the Varify 17-in-1 kit for the most common starting point: a homeowner with several water complaints and no clear treatment target. It offers the broader first map.
 
 Choose the HM Digital TDS-EZ for repeated tap-to-tap or before-and-after trends, especially around RO. Choose certified laboratory analysis whenever the answer affects drinking-water safety, a private well decision, or a large whole-house investment.
@@ -131,6 +130,13 @@ A certified lab test costs more than a home screen but provides the best value w
 Use TDS as a trend, not a verdict. Use multi-parameter strips as a screen, not a complete diagnosis. The frustrations each avoids are different: the meter prevents slow repeated strip work, while the broader kit prevents treating one number as the whole water story.
 
 The recommendation changes after the first screen. Once a specific issue is suspected, move to a test designed for that issue, then match treatment to confirmed water chemistry and household flow.
+
+## Sources and verification
+
+- [EPA guidance for testing and protecting private-well water](https://www.epa.gov/privatewells/protect-your-homes-water)
+- [HM Digital TDS-EZ specifications](https://hmdigital.com/product/handhelds/)
+- [Varify Complete Drinking Water Test Kit product page](https://varify.com/products/complete-drinking-water-test-kit)
+- [NSF guide to matching treatment standards with exact contaminant claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

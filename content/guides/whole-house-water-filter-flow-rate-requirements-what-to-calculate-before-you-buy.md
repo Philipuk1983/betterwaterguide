@@ -1,10 +1,10 @@
 ---
-title: "Whole-House Water Filter Flow Rate Requirements: What to Know Before You Buy"
+title: "Whole-House Water Filter Flow Rate: How to Size It"
 slug: "whole-house-water-filter-flow-rate-requirements-what-to-calculate-before-you-buy"
 keyword_id: 40596834
 topic_key: "guide:whole house water filter flow rate requirement explained"
 date: 2026-07-10
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
 summary: "A whole-house water filter has to keep up when more than one fixture runs at once. For many homes, a planning range of 8 to 12 GPM covers moderate use."
@@ -110,3 +110,7 @@ Contaminant removal comes first. The water problem decides the filter type; the 
 | Fit constraint | Keeps the guidance tied to the real setup instead of generic tips | Size, compatibility, timing, budget, skill level, or storage limits |
 | Wrong-fit signal | Shows when the default answer is likely to disappoint | The setup, upkeep, storage, or follow-through requirement cannot be met |
 | Lower-risk next step | Turns the guide into an action plan | Measure, compare, test, verify, or choose the simpler path before committing |
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

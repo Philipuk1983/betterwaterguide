@@ -4,7 +4,7 @@ slug: "what-a-whole-house-water-filter-is-and-how-it-works"
 keyword_id: 40596284
 topic_key: "guide:what is a whole house water filter and how it work"
 date: 2026-07-10
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
 summary: "A whole-house water filter installs on the main water line and treats water before it reaches showers, sinks, laundry, and appliances. One system treats the water for the house instead of only one tap."
@@ -172,8 +172,7 @@ A small housing that fills fast creates constant cleanup. A setup that uses hard
 
 If one sink needs help and everything else is fine, a main-line system adds work without much payoff.
 
-## Bottom Line
-
+## The practical decision
 A whole-house water filter treats water at the main line so the whole house sees the same treatment. It is most useful when the same problem shows up at showers, sinks, laundry, and appliances. It is less useful when the issue lives at one tap or when the plumbing layout makes service awkward.
 
 For city water with chlorine or light sediment, a whole-house carbon-and-sediment setup is a common route. For wells with iron, sulfur, hardness, bacteria, or nitrate, the filter is usually one part of a larger treatment plan. For one drinking tap, an under-sink filter or reverse osmosis system keeps the project smaller and the upkeep lighter.
@@ -185,6 +184,10 @@ For city water with chlorine or light sediment, a whole-house carbon-and-sedimen
 - Is a drain available if the system needs one?
 - Will the installation create a pressure drop the plumbing can handle?
 - Does the system match the contaminant it is meant to address?
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

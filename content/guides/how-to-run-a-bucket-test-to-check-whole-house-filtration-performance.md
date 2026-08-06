@@ -4,10 +4,10 @@ slug: "how-to-run-a-bucket-test-to-check-whole-house-filtration-performance"
 keyword_id: 41588981
 topic_key: "guide:how to run a bucket test for whole house filtration performance"
 date: 2026-07-23
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "A 5-gallon bucket test is a simple way to see how much water your whole-house filtration system delivers at a high-flow fixture. Time how long it takes to fill a marked 5-gallon bucket from a fully open cold-water faucet, then convert that time to gallons per minute (GPM)."
+summary: "A 5-gallon bucket test is a simple way to see how much water your whole-house filtration system delivers at a high-flow fixture."
 description: "A 5-gallon bucket test is a simple way to see how much water your whole-house filtration system delivers at a high-flow fixture."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -289,13 +289,16 @@ A well system, pressure tank, or softener regeneration cycle can affect water de
 
 Bypass mode is useful for troubleshooting, but it sends untreated water through the plumbing. Return the valves to their normal filtered position as soon as the comparison is complete.
 
-## Bottom Line
-
+## The practical decision
 A 5-gallon bucket test gives you a clear, repeatable snapshot of whole-house filtration flow. Divide 5 by the average fill time in seconds, then multiply by 60 to calculate GPM.
 
 At one high-flow fixture, 5 GPM or more is generally workable, while a result below 3 GPM calls for a closer look. The best use of the test is tracking the same fixture over time, especially before and after cartridge replacement or other filter service.
 
 Use bucket-test records and pressure readings to follow flow. Use chlorine testing or laboratory water testing to evaluate treatment performance. One tells you how freely water is moving; the other tells you whether the filtration system is addressing the water-quality concern.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

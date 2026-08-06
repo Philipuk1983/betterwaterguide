@@ -1,13 +1,13 @@
 ---
-title: "Well Water Whole-House Filter vs. Point-of-Use Filter: Which Should You Choose?"
+title: "Well Water: Whole-House vs Point-of-Use Filters"
 slug: "well-water-whole-house-filter-vs-point-of-use-filter-for-the-kitchen-which-one-to-choose"
 keyword_id: 40436417
 topic_key: "comparison:point of use filter vs well water whole house filter"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: comparison
 category: "home-maintenance"
-summary: "For a kitchen-only well water problem, the smaller fix is usually the better place to start: a point-of-use filter at the sink. A whole-house filter makes more sense when the same water issue shows up throughout the home. The choice is not about which system sounds stronger. It is about where the problem lives."
+summary: "For a kitchen-only well water problem, the smaller fix is usually the better place to start: a point-of-use filter at the sink."
 description: "For a kitchen-only well water problem, the smaller fix is usually the better place to start: a point-of-use filter at the sink."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
@@ -120,8 +120,7 @@ Choose a whole-house filter if the same water issue affects the whole home and y
 
 Skip both as the first answer if the issue is really hardness, iron, sulfur-related water quality, or microbial concern. In those cases, the right treatment comes first, and the filter location comes second.
 
-## Final verdict
-
+## The decision
 For a kitchen-only well water issue, the point-of-use filter is usually the better choice. It keeps the solution centered on the water people actually drink and cook with, without turning the whole home into a project.
 
 A whole-house filter makes more sense when the same problem reaches the rest of the house. Then the broader system is doing real work, because every tap is part of the concern.
@@ -137,3 +136,8 @@ If the problem is hardness, iron, sulfur-related water issues, or microbial conc
 
 - [Point-of-use filters](https://www.amazon.com/s?k=point-of-use%20filter&tag=betterwaterguide-20)
 - [Well water whole-house filters](https://www.amazon.com/s?k=well%20water%20whole%20house%20filter&tag=betterwaterguide-20)
+
+## Sources and verification
+
+- [EPA guidance for testing and protecting private-well water](https://www.epa.gov/privatewells/protect-your-homes-water)
+- [NSF guide to matching treatment standards with exact contaminant claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

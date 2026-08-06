@@ -4,7 +4,7 @@ slug: "whole-house-water-filtration-low-water-pressure-diagnosis-checklist"
 keyword_id: 41858073
 topic_key: "tool:whole house water filtration low water pressure diagnosis checklist tool"
 date: 2026-07-29
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
 summary: "Use this checklist to find out whether a whole-house filter is actually causing low water pressure or whether the restriction is elsewhere in the plumbing, well system, or incoming water supply."
@@ -305,11 +305,14 @@ For private wells, EPA guidance calls for yearly testing for total coliform bact
 9. Look for reducing fittings, undersized pipe sections, and reversed directional components.
 10. Address well, pressure-tank, municipal service, or incoming-supply problems before changing filter size.
 
-## Bottom Line
-
+## The practical decision
 Replace or clean the filtration stage when bypass restores flow and the pressure drop appears across the filter while water is running.
 
 Change the filtration layout when a clean system still restricts normal household water use. When pressure is weak before water reaches the filter, focus on plumbing, the incoming service, or the well system instead. The repair should remove the restriction without removing treatment the household still needs.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

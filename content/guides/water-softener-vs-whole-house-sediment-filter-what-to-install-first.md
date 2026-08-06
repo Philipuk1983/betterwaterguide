@@ -4,10 +4,10 @@ slug: "water-softener-vs-whole-house-sediment-filter-what-to-install-first"
 keyword_id: 40526052
 topic_key: "guide:water softener vs whole house sediment filter what to buy first"
 date: 2026-07-11
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "If the water is clear but leaves scale behind, start with a softener. If the water carries sand, rust, or visible grit, start with a sediment filter. If both problems show up, put the sediment filter first so the softener is not asked to trap debris it cannot remove."
+summary: "If the water is clear but leaves scale behind, start with a softener. If the water carries sand, rust, or visible grit, start with a sediment filter."
 description: "If the water is clear but leaves scale behind, start with a softener. If the water carries sand, rust, or visible grit, start with a sediment filter."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -145,6 +145,10 @@ Use a softener first when:
 - There is no visible particle problem.
 
 If both are true, install the sediment filter first and the softener second.
+
+## Sources and verification
+
+- [NSF guide to water softeners, filters, and treatment standards](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

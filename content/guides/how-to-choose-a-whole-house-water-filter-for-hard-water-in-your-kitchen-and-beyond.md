@@ -4,10 +4,10 @@ slug: "how-to-choose-a-whole-house-water-filter-for-hard-water-in-your-kitchen-a
 keyword_id: 40433395
 topic_key: "guide:a whole house filter for hard water"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Hard water often announces itself in plain sight: white crust around faucets, spots on glass, dull laundry, and scale that keeps coming back on showerheads and fixtures. When those signs show up across the house, a whole-house system is the right place to start."
+summary: "Hard water often announces itself in plain sight: white crust around faucets, spots on glass, dull laundry, and scale that keeps coming back on showerheads and fixtures."
 description: "Learn why ordinary filters do not remove hardness and how to choose between softening, conditioning, and targeted filtration after testing your water."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -167,8 +167,11 @@ If you want the most direct path, use this order:
 
 That process keeps the decision grounded in the house itself instead of in a product name or a sales pitch.
 
-## Bottom line
-
+## The practical decision
 For hard water across the home, start with the problem you can see: scale on fixtures, cloudy glass, rough laundry, and buildup on the water heater. If scale is the main issue, a salt-based softener is the clearest answer. If you want less maintenance or have install limits, a salt-free conditioner can be a practical scale-control option. If the water carries grit or rust, add sediment protection first. And if the issue is only at one faucet, skip the whole-house setup and use a smaller filter instead.
 
 The best choice is the one that matches the water, the space, and the upkeep the household can live with over time.
+
+## Sources and verification
+
+- [NSF guide to water softeners, filters, and treatment standards](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

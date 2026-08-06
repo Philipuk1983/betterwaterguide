@@ -4,10 +4,10 @@ slug: "water-test-kit-results-explained-for-homeowners-what-they-mean-for-your-k
 keyword_id: 40525457
 topic_key: "guide:water test kit result explained for homeowner"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Water test kit results are useful only when they lead to the right fix. A reading that points to bacteria or lead belongs in a very different category from a reading that points to hard water, mineral scale, or a tired faucet aerator. For homeowners, the goal is not to memorize every number. It is to tell, fast, whether the kitchen needs a health-related follow-up, a plumbing check, or a simple treatment for scale and taste."
+summary: "Home test kits can screen hardness, chlorine, pH, or TDS, but they cannot clear water for drinking. Learn which results need a certified laboratory, utility, health department, or plumbing follow-up."
 description: "Interpret home water-test results for bacteria, lead, hardness, chlorine, pH, and dissolved solids, then choose the right follow-up for your kitchen."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -130,11 +130,15 @@ Water test numbers are most useful when they lead to the right kind of treatment
 
 That is the practical value of the test. It keeps you from buying the wrong fix for the wrong problem.
 
-## Bottom line
-
+## The practical decision
 For homeowners, water test kit results make sense when you sort them by problem, not by color. Health-related readings belong in one bucket, and kitchen nuisance readings belong in another. E. coli, lead, nitrate, nitrite, and arsenic call for a more serious response than hardness, TDS, chlorine, or mild pH drift. First-draw vs flushed water also matters, especially in older homes.
 
 If the reading points to scale, taste, or appliance buildup, a simple home kit is usually enough to guide the next move. If the reading could change what people drink or cook with, use a more controlled sample and treat the result as a real follow-up, not a rough guess.
+
+## Sources and verification
+
+- [EPA guidance for testing and protecting private-well water](https://www.epa.gov/privatewells/protect-your-homes-water)
+- [NSF guide to matching treatment standards with exact contaminant claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

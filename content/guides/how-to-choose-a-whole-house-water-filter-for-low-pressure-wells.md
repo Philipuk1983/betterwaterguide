@@ -4,10 +4,10 @@ slug: "how-to-choose-a-whole-house-water-filter-for-low-pressure-wells"
 keyword_id: 41588336
 topic_key: "guide:a whole house filter for low pressure well"
 date: 2026-07-20
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Start by sizing the filter around the pressure your well system can actually deliver during household use. A whole-house filter should meet peak demand with no more than about 3 to 5 PSI of pressure loss while the system is near its pressure-switch cut-in point."
+summary: "Start by sizing the filter around the pressure your well system can actually deliver during household use."
 description: "Choose whole-house filtration for a low-pressure well by measuring pump performance, peak demand, filter flow, pressure drop, and service condition."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -226,13 +226,17 @@ Do not use a whole-house carbon filter as the answer to every odor. Sulfur odor,
 
 Do not ignore pressure loss after installation. A loaded filter is a maintenance signal. Raising pump pressure without diagnosing the restriction can hide the problem rather than solve it.
 
-## Bottom Line
-
+## The practical decision
 For a low-pressure well, begin with measured PSI and GPM, then use the least restrictive treatment that addresses the actual water problem.
 
 Homes with sand or visible sediment often benefit from a flushable coarse first stage followed by a properly sized sediment cartridge. Homes with iron, sulfur odor, hardness, bacteria, nitrate, or arsenic need water testing before equipment selection.
 
 Fix weak pressure and poor well recovery before adding treatment. Once the well system can deliver reliable flow, choose equipment that stays within its real pressure and flow limits.
+
+## Sources and verification
+
+- [EPA guidance for testing and protecting private-well water](https://www.epa.gov/privatewells/protect-your-homes-water)
+- [NSF guide to matching treatment standards with exact contaminant claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

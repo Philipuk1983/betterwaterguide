@@ -4,10 +4,10 @@ slug: "whole-house-carbon-water-filter-capacity-planning-what-to-size-and-how-to
 keyword_id: 40596832
 topic_key: "guide:whole house carbon filter capacity planning"
 date: 2026-07-11
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Size a whole-house carbon filter by the fixtures that can run at the same time, not by bedroom count or square footage. A large floor plan with light fixture overlap may need less capacity than a smaller house where a shower, dishwasher, and laundry can all run together."
+summary: "Size a whole-house carbon filter by the fixtures that can run at the same time, not by bedroom count or square footage."
 description: "Size whole-house carbon filtration from simultaneous fixture demand, required contact time, tested contaminants, pressure loss, and media service life."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -123,7 +123,7 @@ Use this quick worksheet to narrow the decision:
 
 If the result points to a system much larger than the space, the drain access, or the maintenance schedule can support, that is a sign to simplify the setup. It may be better to treat only the part of the home that truly needs it, or to use a different treatment first.
 
-## Bottom line
+## The practical decision
 A whole-house carbon filter should be sized for the way water moves through the home, not for the size of the house itself. Start with overlapping fixtures, add a modest buffer above the peak flow, and then match the carbon to the actual water problem. That approach keeps the system focused on what it is meant to do: improve water at the main line without creating a maintenance headache.
 
 ## Decision Checklist
@@ -133,3 +133,7 @@ A whole-house carbon filter should be sized for the way water moves through the 
 | Fit constraint | Keeps the guidance tied to the real setup instead of generic tips | Size, compatibility, timing, budget, skill level, or storage limits |
 | Wrong-fit signal | Shows when the default answer is likely to disappoint | The setup, upkeep, storage, or follow-through requirement cannot be met |
 | Lower-risk next step | Turns the guide into an action plan | Measure, compare, test, verify, or choose the simpler path before committing |
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

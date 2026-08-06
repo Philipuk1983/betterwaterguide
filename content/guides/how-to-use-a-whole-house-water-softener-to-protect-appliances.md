@@ -4,10 +4,10 @@ slug: "how-to-use-a-whole-house-water-softener-to-protect-appliances"
 keyword_id: 41588988
 topic_key: "guide:how to use a whole house water softener to protect appliance"
 date: 2026-07-23
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Hard water can leave mineral scale on water-heater surfaces, dishwasher components, washing-machine parts, ice makers, and hot-water plumbing. For homes with hardness around 7 grains per gallon (gpg) or higher, a whole-house ion-exchange softener reduces the calcium and magnesium that cause those new deposits."
+summary: "Hard water can leave mineral scale on water-heater surfaces, dishwasher components, washing-machine parts, ice makers, and hot-water plumbing."
 description: "Hard water can leave mineral scale on water-heater surfaces, dishwasher components, washing-machine parts, ice makers, and hot-water plumbing."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -199,11 +199,14 @@ Do not assume softened water removes scale already inside an older water heater 
 
 Do not bury the softener behind storage shelves or other obstacles. Skipped salt checks, inaccessible bypass valves, and neglected drain connections often create avoidable service problems.
 
-## Bottom Line
-
+## The practical decision
 For homes with hardness at or above about 7 gpg, a whole-house ion-exchange softener helps protect appliances by reducing the minerals that form new scale. Program it with the measured incoming-water hardness, install it before the water heater, size it for both capacity and peak household flow, and maintain the salt and drainage system.
 
 Where well water contains iron, manganese, sediment, bacteria, or other contaminants, address those conditions as part of the treatment sequence. Where there is no drain access, no room for salt storage, or a medical reason to avoid sodium or potassium exchange, choose a treatment route that fits the plumbing and water-quality problem.
+
+## Sources and verification
+
+- [NSF guide to water softeners, filters, and treatment standards](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

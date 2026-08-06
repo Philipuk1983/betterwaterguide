@@ -4,10 +4,10 @@ slug: "how-to-maintain-a-whole-house-reverse-osmosis-prefilter-stage"
 keyword_id: 41860588
 topic_key: "guide:how to maintain a whole house reverse osmosis prefilter stage"
 date: 2026-07-28
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Start with two measurements: pressure drop across the prefilter stage and chlorine after the carbon stage. Replace sediment cartridges when the differential pressure rises by 10 to 15 PSI. Replace carbon media before chlorine or chloramine reaches the RO membrane. Clean and sanitize filter housings during every cartridge change."
+summary: "Start with two measurements: pressure drop across the prefilter stage and chlorine after the carbon stage. Replace sediment cartridges when the differential pressure rises by 10 to 15 PSI."
 description: "Maintain a whole-house RO prefilter by tracking pressure drop, chlorine breakthrough, cartridge condition, change intervals, sanitation, and leak checks."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -220,11 +220,15 @@ Over-tightening can damage threads, distort O-rings, and make the next service h
 
 Use only a compatible food-grade lubricant approved for potable-water filter systems. Petroleum-based products can damage some O-ring materials.
 
-## Bottom Line
-
+## The practical decision
 Maintain a whole-house RO prefilter stage with pressure gauges, chlorine testing, and clean cartridge-change practices. Replace sediment cartridges when pressure drop rises by 10 to 15 PSI. Replace carbon media before chlorine or chloramine reaches the RO membrane. Clean and sanitize the housings every time cartridges are changed.
 
 A well-maintained prefilter stage keeps sediment out of the system, protects the membrane from disinfectants, and helps the RO equipment receive stable feed flow and pressure.
+
+## Sources and verification
+
+- [NSF/ANSI 58 scope for reverse-osmosis systems](https://www.nsf.org/knowledge-library/nsf-ansi-58-reverse-osmosis-drinking-water-treatment-systems)
+- [NSF guide to product-specific water-treatment claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

@@ -4,10 +4,10 @@ slug: "well-water-filtration-checklist-for-first-time-homeowners-kitchen-setup"
 keyword_id: 40433206
 topic_key: "guide:well water filtration checklist for first time homeowner"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Private well water can be perfectly usable in the kitchen, but it rarely behaves like city water. The first step is not buying the biggest filter. The first step is figuring out what the water actually needs, then building a kitchen setup that handles that problem without turning the sink cabinet into a storage headache."
+summary: "Private well water can be perfectly usable in the kitchen, but it rarely behaves like city water. The first step is not buying the biggest filter."
 description: "Private well water can be perfectly usable in the kitchen, but it rarely behaves like city water. The first step is not buying the biggest filter."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -156,6 +156,11 @@ In those cases, start upstream. The kitchen can still get a final drinking-water
 For a first-time homeowner on a well, the right kitchen setup starts with the water test, not the faucet. If the issue is mainly taste or odor, a simple under-sink carbon filter may be enough. If the water carries sediment, put that protection in front of the fine filter. If the goal is a stronger drinking-water step, reverse osmosis is the more involved sink-side route, but it asks for more cabinet space and more upkeep. When bacteria, nitrate, hardness, iron, or heavy sediment affect the house more broadly, move treatment upstream first and use the kitchen as the final drinking-water stage.
 
 The best plan is the one that matches the water, fits the cabinet, and stays easy enough to service month after month.
+
+## Sources and verification
+
+- [EPA guidance for testing and protecting private-well water](https://www.epa.gov/privatewells/protect-your-homes-water)
+- [NSF guide to matching treatment standards with exact contaminant claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

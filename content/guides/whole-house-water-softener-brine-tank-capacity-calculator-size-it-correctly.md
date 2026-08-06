@@ -1,13 +1,13 @@
 ---
-title: "Whole House Water Softener Brine Tank Capacity Calculator: Size It Correctly"
+title: "Water Softener Brine Tank Capacity Calculator"
 slug: "whole-house-water-softener-brine-tank-capacity-calculator-size-it-correctly"
 keyword_id: 40436690
 topic_key: "tool:whole house water softener brine tank capacity tool"
 date: 2026-07-03
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "A brine tank calculator is useful because the right answer is not the biggest tank that fits. It is the tank that gives you enough salt storage for your household's water use without turning refills and cleaning into a hassle. In a whole-house softener, the brine tank stores the salt and water used to make brine for regeneration. That makes it a storage choice, not a treatment rating. A larger tank does not make the water softer on its own. It only changes how much reserve you have between refills."
+summary: "A brine tank calculator is useful because the right answer is not the biggest tank that fits."
 description: "Size a water-softener brine tank by household use, salt reserve, regeneration schedule, refill frequency, cleaning access, and available floor space."
 schema_type: Article
 evidence_tier: "research_only"
@@ -249,3 +249,7 @@ If your room stays humid, choose a salt form that is less likely to cake and avo
 ## Verdict
 
 Size the brine tank for the routine you can actually keep up with. The best choice is not the biggest reservoir and not the smallest footprint. It is the tank that matches your water hardness, household use, and room access without creating extra work later. If the result is close between two sizes, favor the one that is easier to reach, easier to open, and easier to refill. That is the size most homeowners can keep in good shape over time.
+
+## Sources and verification
+
+- [NSF guide to water softeners, filters, and treatment standards](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

@@ -1,10 +1,10 @@
 ---
-title: "Whole House Water Filtration vs Under-Sink Drinking Water Filtration: Which One Fits Your Home?"
+title: "Whole-House vs Under-Sink Water Filtration"
 slug: "whole-house-water-filtration-vs-under-sink-drinking-water-filtration-which-one-fits-your-home"
 keyword_id: 40708205
 topic_key: "comparison:under sink drinking water filtration vs whole house water filtration"
 date: 2026-07-06
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: comparison
 category: "home-maintenance"
 summary: "Comparing whole house water filtration vs under sink drinking water filtration comes down to scope. Whole-house treatment sits at the main line and treats water for the entire home."
@@ -118,8 +118,7 @@ Whole-house water filtration suits homes where the same problem shows up in mult
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=under%20sink%20drinking%20water%20filtration&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View under sink drinking water filtration on Amazon</a>
 </div>
 
-## Final Recommendation
-
+## Our recommendation
 For most homes, [under-sink drinking water filtration](https://www.amazon.com/s?k=under%20sink%20drinking%20water%20filtration&tag=betterwaterguide-20) is the first place to look. It solves the problem people notice most often—the water they drink and cook with—without turning the whole house into a plumbing project.
 
 Choose [whole house water filtration](https://www.amazon.com/s?k=whole%20house%20water%20filtration&tag=betterwaterguide-20) when the same issue shows up in showers, laundry, fixtures, or appliances, or when a water report points to a whole-home nuisance problem.
@@ -127,6 +126,10 @@ Choose [whole house water filtration](https://www.amazon.com/s?k=whole%20house%2
 <div class="section-product-cta">
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20filtration&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
 </div>
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

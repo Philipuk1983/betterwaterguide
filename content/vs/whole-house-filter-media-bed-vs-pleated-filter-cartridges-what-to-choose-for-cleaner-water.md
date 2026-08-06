@@ -1,13 +1,13 @@
 ---
-title: "Whole House Filter Media Bed vs Pleated Filter Cartridge: What to Choose for Cleaner Water"
+title: "Media Tank vs Pleated Whole-House Filter"
 slug: "whole-house-filter-media-bed-vs-pleated-filter-cartridges-what-to-choose-for-cleaner-water"
 keyword_id: 40811312
 topic_key: "comparison:pleated filter cartridge vs whole house filter media bed"
 date: 2026-07-12
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: comparison
 category: "home-maintenance"
-summary: "If you are comparing a whole house filter media bed vs pleated filter cartridge, the first question is not brand or price. It is how much grit the house actually pushes through the system and how much room you have to service it."
+summary: "If you are comparing a whole house filter media bed vs pleated filter cartridge, the first question is not brand or price."
 description: "If you are comparing a whole house filter media bed vs pleated filter cartridge, the first question is not brand or price."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
@@ -130,8 +130,7 @@ If the house is dealing with more grit than a cartridge can comfortably handle, 
 
 That is the real difference in the whole house filter media bed vs pleated filter cartridge comparison. One is compact and simple. The other is larger and built to carry more sediment before it needs attention.
 
-## Bottom line
-
+## The practical decision
 For many homes, a [pleated filter cartridge](https://www.amazon.com/s?k=pleated%20filter%20cartridge&tag=betterwaterguide-20) is the cleaner choice because it is compact, straightforward, and easy to fit into a normal mechanical area. It makes sense when sediment is present but not overwhelming.
 
 Choose a [whole house filter media bed](https://www.amazon.com/s?k=whole%20house%20filter%20media%20bed&tag=betterwaterguide-20) when sediment is heavy enough that cartridges clog too fast, or when the house has a well, older plumbing, or a stronger debris load that calls for more capacity.
@@ -149,3 +148,7 @@ If the water problem is mainly sediment, that split gives you a clear starting p
 | Best fit | Choose when its main strength matches the reader's highest-priority use case | Choose when its trade-off is easier to live with |
 | Constraint to check | Verify setup, compatibility, capacity, and upkeep before choosing | Verify the same constraint so the comparison stays fair |
 | Wrong-fit signal | Skip if the main limitation affects daily use | Skip if the alternative handles that limitation better |
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

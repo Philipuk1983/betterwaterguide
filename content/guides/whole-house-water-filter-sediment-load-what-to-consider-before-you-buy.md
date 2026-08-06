@@ -1,10 +1,10 @@
 ---
-title: "Whole-House Water Filter Sediment Load: What to Consider Before You Buy"
+title: "Whole-House Water Filter Sediment Load: Buying Guide"
 slug: "whole-house-water-filter-sediment-load-what-to-consider-before-you-buy"
 keyword_id: 40596837
 topic_key: "guide:whole house water filter sediment load consideration"
 date: 2026-07-11
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
 summary: "For heavy sediment, start coarse: a 50 to 100 micron first stage for sand and grit, a 20 to 50 micron stage for moderate rust or silt, and a 5 to 10 micron stage only when the water is already fairly clean."
@@ -182,11 +182,14 @@ Another common mistake is ignoring surface area. A small housing with a tight ca
 
 Do not use TDS as a sediment test. It does not measure sand, rust, or suspended silt. And do not treat the filter as the fix when the real source is an aging pipe or recurring well debris.
 
-## Bottom Line
-
+## The practical decision
 For wells, sand, or recurring rust, start with a coarse, serviceable first stage and add finer filtration only if the house still needs it. That keeps pressure loss under control and avoids constant cartridge changes.
 
 For municipal water with occasional particles, a larger cartridge stage or a simple separator usually covers the problem without overbuilding the system. If the water is already mostly clean, skip the aggressive fine filter and keep maintenance light.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

@@ -1,13 +1,13 @@
 ---
-title: "Whole-House Reverse Osmosis vs. Point-of-Use Reverse Osmosis: Which Should You Choose?"
+title: "Whole-House vs Under-Sink Reverse Osmosis"
 slug: "whole-house-reverse-osmosis-vs-point-of-use-reverse-osmosis-for-your-kitchen-what-to-choose"
 keyword_id: 40436629
 topic_key: "comparison:point of use reverse osmosis vs whole house reverse osmosis"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: comparison
 category: "home-maintenance"
-summary: "For a kitchen, the real question is not which reverse osmosis setup sounds more impressive. It is whether you want treated water at one sink or across the whole house. Most kitchens are better served by point-of-use reverse osmosis because the water is used in one place: the tap for drinking, cooking, coffee, tea, and food prep. Whole-house reverse osmosis belongs in a broader water plan where every faucet needs the same treatment."
+summary: "For a kitchen, the real question is not which reverse osmosis setup sounds more impressive. It is whether you want treated water at one sink or across the whole house."
 description: "Choose point-of-use RO for most kitchens or whole-house RO for a documented home-wide need, after comparing cost, waste water, storage, and upkeep."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
@@ -151,6 +151,11 @@ A smaller filter can also make sense when the kitchen is tight on space and the 
 For a kitchen-only need, [point-of-use reverse osmosis](https://www.amazon.com/s?k=point%20of%20use%20reverse%20osmosis&tag=betterwaterguide-20) is the better choice in most homes. It puts treated water where it will actually be used, keeps the project local, and avoids turning a sink job into a whole-house install.
 
 Choose [whole-house reverse osmosis](https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&tag=betterwaterguide-20) only when the same water issue reaches the rest of the home and the house has the space and plumbing setup to support that larger system. If the kitchen is the only place that matters, whole-house is too much system for too little gain.
+
+## Sources and verification
+
+- [NSF/ANSI 58 scope for reverse-osmosis systems](https://www.nsf.org/knowledge-library/nsf-ansi-58-reverse-osmosis-drinking-water-treatment-systems)
+- [NSF guide to product-specific water-treatment claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

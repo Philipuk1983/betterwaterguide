@@ -1,13 +1,13 @@
 ---
-title: "Whole-House Water Filter Installation Steps for First-Time Homeowners (Kitchen System Setup)"
+title: "Whole-House Water Filter Installation Checklist"
 slug: "whole-house-water-filter-installation-steps-for-first-time-homeowners-kitchen-system-setup"
 keyword_id: 40433171
 topic_key: "guide:whole house filter installation step overview for first timer"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "A whole-house filter install is less about the filter body and more about the plumbing around it. For a first-time homeowner, the real job is finding a spot where the line can be cut, the water can be shut off cleanly, and the filter can still be serviced later without turning the room upside down."
+summary: "A whole-house filter install is less about the filter body and more about the plumbing around it."
 description: "Plan a first whole-house filter installation around shutoffs, bypass plumbing, flow direction, support, drainage, service clearance, and leak testing."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -135,8 +135,7 @@ Bring in a plumber if the main shutoff leaks, the pipe is old galvanized, the li
 
 That is especially true when the home already has weak pressure. Fixing a plumbing problem first makes the filter easier to place and easier to service later.
 
-## Bottom Line
-
+## The practical decision
 A whole-house filter install is really a planning exercise with plumbing attached. Start by choosing a reachable spot, confirm the shutoff works, leave space for a bypass, and mount the filter where it can be serviced without trouble. Shut the water off, drain the line, connect the filter in the correct direction, bring the water back on slowly, and flush the system before regular use.
 
 If the house only needs better water at the kitchen sink, a smaller under-sink setup is usually the cleaner route. If the whole home needs treatment, put the main filter on the line first and let the kitchen setup handle the final drinking-water step.
@@ -157,3 +156,7 @@ Old galvanized pipe, a leaky shutoff, slab access, and cramped crawlspaces are t
 
 ### How much room should I leave around the housing?
 Leave enough space to remove the cartridge or sump without moving other items out of the way first.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

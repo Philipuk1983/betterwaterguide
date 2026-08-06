@@ -1,13 +1,13 @@
 ---
-title: "Whole-House Water Filter Placement: What to Prioritize Before You Install"
+title: "Where to Install a Whole-House Water Filter"
 slug: "whole-house-water-filter-placement-what-to-prioritize-before-you-install"
 keyword_id: 40526086
 topic_key: "guide:whole house water filter placement what to prioritize"
 date: 2026-07-10
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Whole-house filter placement comes down to three things: leave 12 to 18 inches of service clearance, keep pressure loss near or under 10 PSI at peak demand, and install the unit on the cold main before the water heater. Those choices decide whether the system is easy to live with or a pain to service."
+summary: "Whole-house filter placement comes down to three things: leave 12 to 18 inches of service clearance, keep pressure loss near or under 10 PSI at peak demand, and install the unit on the cold main before the."
 description: "Whole-house filter placement comes down to three things: leave 12 to 18 inches of service clearance, keep pressure loss near or under 10 PSI at peak demand."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -142,11 +142,14 @@ A better test can change the layout faster than a new filter can.
 
 If the test result changes, the placement changes with it.
 
-## Bottom line
-
+## The practical decision
 The best whole-house filter placement protects the right equipment, preserves pressure, and stays easy to service. For city water, that usually means after the meter and pressure regulator, before the branches and water heater. For well water, that usually means after the pressure tank and pressure switch, with sediment handled before finer stages.
 
 If only one drinking tap needs help, use a point-of-use filter instead. Whole-house placement pays off when the water issue affects the entire home and the service setup stays practical.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

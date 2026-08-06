@@ -4,10 +4,10 @@ slug: "ro-vs-whole-house-filtration-how-to-choose-for-cleaner-kitchen-water"
 keyword_id: 40433396
 topic_key: "guide:between ro and whole house filtration"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "If your main goal is cleaner drinking and cooking water at one sink, reverse osmosis, or RO, is usually the sharper tool. It treats the water at the kitchen tap, where you actually drink it, cook with it, and fill glasses and pitchers."
+summary: "If your main goal is cleaner drinking and cooking water at one sink, reverse osmosis, or RO, is usually the sharper tool."
 description: "If your main goal is cleaner drinking and cooking water at one sink, reverse osmosis, or RO, is usually the sharper tool."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -137,8 +137,7 @@ That makes it a good starting point for renters, small households, or anyone who
 
 The biggest mistake is trying to make one system do a job it was not meant to do.
 
-## Bottom line
-
+## The practical decision
 Choose RO when cleaner kitchen water is the main goal and you want the strongest treatment at one tap.
 
 Choose whole-house filtration when the water issue reaches beyond the kitchen and you want the whole home to benefit.
@@ -146,6 +145,11 @@ Choose whole-house filtration when the water issue reaches beyond the kitchen an
 Choose both when the home needs broad treatment and the kitchen still deserves the cleanest drinking-water step.
 
 Choose a softener first if hardness and scale are the real problem, then add filtration as needed.
+
+## Sources and verification
+
+- [NSF/ANSI 58 scope for reverse-osmosis systems](https://www.nsf.org/knowledge-library/nsf-ansi-58-reverse-osmosis-drinking-water-treatment-systems)
+- [NSF guide to product-specific water-treatment claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

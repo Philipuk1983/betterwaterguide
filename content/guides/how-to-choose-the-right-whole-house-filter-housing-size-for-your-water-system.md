@@ -1,13 +1,13 @@
 ---
-title: "How to Choose the Right Whole-House Filter Housing Size for Your Water System"
+title: "Whole-House Filter Housing Size: How to Choose"
 slug: "how-to-choose-the-right-whole-house-filter-housing-size-for-your-water-system"
 keyword_id: 40596816
 topic_key: "guide:whole house filter housing size"
 date: 2026-07-05
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Choosing by size alone leads to bad installs. A housing that is too small can load quickly and make water feel restricted. A housing that is too large can be hard to fit into a cramped utility area and annoying to service. The practical answer is the smallest housing that can handle the load without creating a pressure problem or a maintenance headache."
+summary: "Choosing by size alone leads to bad installs. A housing that is too small can load quickly and make water feel restricted."
 description: "Choosing by size alone leads to bad installs. A housing that is too small can load quickly and make water feel restricted."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -134,10 +134,14 @@ Sometimes the right answer is not a different housing size. It is a different tr
 
 Use a spin-down separator first if the water carries a lot of sand or visible grit. Use a softener if the issue is hardness and scale. Use a sulfur or iron treatment path if those are the real problems. Use a UV system if bacteria control is part of the goal. A cartridge housing can still play a useful role in those systems, but it should not be asked to do everything by itself.
 
-## Bottom line
+## The practical decision
 For whole-house filter housing size, start with the water problem, then size for flow and service access. In most homes, a 4.5-inch housing is the practical middle ground. Move up to 4.5 x 20 when the water load is heavier or you want longer time between changes. Use 2.5 x 10 only when the install space is tight and the water demand is modest.
 
 The best choice is the smallest housing that handles the water cleanly, does not choke the system, and can still be serviced without frustration.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

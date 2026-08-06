@@ -1,10 +1,10 @@
 ---
-title: "RO System Recovery Rate Explained for Homeowners: What It Means for Your Water Use"
+title: "RO Recovery Rate Explained for Homeowners"
 slug: "ro-system-recovery-rate-explained-for-homeowners-what-it-means-for-your-water-use"
 keyword_id: 40525456
 topic_key: "guide:ro system recovery rate explained for homeowner"
 date: 2026-07-09
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
 summary: "RO system recovery rate is the share of feed water that becomes purified water. A system with 25% recovery turns 4 gallons of feed water into 1 gallon at the faucet and sends the other 3 gallons to drain."
@@ -135,11 +135,15 @@ Look elsewhere if there is no workable drain access, the water is very hard and 
 
 Also look elsewhere if the goal is zero wastewater. RO is a membrane process, so some reject water is part of the design. Higher recovery lowers that amount, but it does not remove it.
 
-## Bottom line
-
+## The practical decision
 For most homeowners, recovery rate matters after water quality, pressure, and installation fit are settled. A range around 35% to 50% works for many homes because it trims drain waste without needing ideal pressure and pretreatment. Below 30%, reject water becomes hard to ignore. Above 50%, pretreatment, pressure, and cartridge discipline matter more.
 
 If the water problem is only taste, a carbon system is usually the cleaner answer. If the problem is dissolved contaminants, recovery rate becomes a useful ownership number, not just a marketing line.
+
+## Sources and verification
+
+- [NSF/ANSI 58 scope for reverse-osmosis systems](https://www.nsf.org/knowledge-library/nsf-ansi-58-reverse-osmosis-drinking-water-treatment-systems)
+- [NSF guide to product-specific water-treatment claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

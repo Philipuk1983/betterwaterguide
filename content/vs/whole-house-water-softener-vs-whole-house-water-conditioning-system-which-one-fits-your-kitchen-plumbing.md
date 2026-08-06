@@ -1,13 +1,13 @@
 ---
-title: "Whole-House Water Softener vs. Whole-House Water Conditioning System: Which Is Right for Your Home?"
+title: "Water Softener vs Salt-Free Conditioner"
 slug: "whole-house-water-softener-vs-whole-house-water-conditioning-system-which-one-fits-your-kitchen-plumbing"
 keyword_id: 40436632
 topic_key: "comparison:whole house water conditioning system vs whole house water softener"
 date: 2026-07-01
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: comparison
 category: "home-maintenance"
-summary: "These are whole-house systems, so the decision starts in the kitchen but reaches every tap because a fix that feels perfect at the sink can be annoying everywhere else if it needs more room, more setup, or more routine attention than your home can support."
+summary: "These are whole-house systems, so the decision starts in the kitchen but reaches every tap because a fix that feels perfect at the sink can be annoying everywhere else if it needs more room, more setup, or."
 description: "Compare salt-based softening with water conditioning by scale control, water feel, space, drainage, salt use, maintenance, and kitchen-plumbing goals."
 schema_type: FAQPage
 evidence_tier: "specs_plus_sources"
@@ -130,7 +130,7 @@ Skip both if the house also has other water problems that have nothing to do wit
 
 Skip both if you do not control the plumbing layout. These are whole-house systems, so they make the most sense when the home can actually support the install and the upkeep.
 
-## Final verdict
+## The decision
 For most homes that are trying to fix visible scale in the kitchen, the [whole house water softener](https://www.amazon.com/s?k=whole%20house%20water%20softener&tag=betterwaterguide-20) is the stronger choice. It removes hardness minerals and gives you the more direct answer to buildup on faucets, sink fixtures, and appliance parts.
 
 Choose the [whole house water conditioning system](https://www.amazon.com/s?k=whole%20house%20water%20conditioning%20system&tag=betterwaterguide-20) when the home needs a simpler setup, the plumbing space is tight, or the household wants lower upkeep and can accept lighter scale control.
@@ -140,6 +140,10 @@ If the kitchen is the place where hard water is making itself known, the softene
 <div class="section-product-cta">
     <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20softener&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house water softener on Amazon</a>
 </div>
+
+## Sources and verification
+
+- [NSF guide to water softeners, filters, and treatment standards](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 

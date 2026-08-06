@@ -4,10 +4,10 @@ slug: "how-to-reduce-pressure-drop-in-whole-house-filtration-systems"
 keyword_id: 41439174
 topic_key: "guide:how to reduce pressure drop in whole house filtration system"
 date: 2026-07-19
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "Pressure loss in a whole-house filter usually comes from one of four causes: a loaded cartridge, filtration that is too fine for the water, a housing that is too small for household demand, or a restriction elsewhere in the plumbing."
+summary: "Pressure loss in a whole-house filter usually comes from one of four causes: a loaded cartridge, filtration that is too fine for the water, a housing that is too small for household demand, or a restriction."
 description: "Pressure loss in a whole-house filter usually comes from one of four causes: a loaded cartridge, filtration that is too fine for the water."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -147,8 +147,11 @@ Use another treatment route when the issue is larger than routine cartridge poli
 
 **Ignoring the bypass test.** Weak pressure with the filter bypassed points away from the filter and toward the water supply or plumbing.
 
-## Bottom Line
-
+## The practical decision
 Reduce whole-house filter pressure drop by measuring inlet and outlet PSI under real household demand, sizing the filter path for simultaneous water use, and using coarse sediment filtration before finer media.
 
 Keep the clean system baseline near 2 to 5 PSI of pressure loss. Investigate readings approaching 10 PSI and service cartridges before the loss reaches 15 PSI. If a new filter still produces a large pressure drop, look at housing capacity, cartridge media, ports, pipe size, and peak household flow rather than adding more pressure or more fine filtration.
+
+## Sources and verification
+
+- [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)

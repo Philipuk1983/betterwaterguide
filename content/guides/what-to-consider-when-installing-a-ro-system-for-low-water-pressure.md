@@ -4,10 +4,10 @@ slug: "what-to-consider-when-installing-a-ro-system-for-low-water-pressure"
 keyword_id: 41439145
 topic_key: "guide:ro system installation consideration for homeowner with low water pressure"
 date: 2026-07-19
-lastmod: 2026-08-02
+lastmod: 2026-08-06
 type: guide
 category: "home-maintenance"
-summary: "A residential RO system needs at least 40 PSI at its cold-water feed while water is flowing. A flowing pressure of 50 to 60 PSI gives the membrane a more reliable operating range. Below 40 PSI, correct the plumbing pressure problem or install an RO system with a booster pump before relying on the membrane."
+summary: "A residential RO system needs at least 40 PSI at its cold-water feed while water is flowing. A flowing pressure of 50 to 60 PSI gives the membrane a more reliable operating range."
 description: "Check flowing pressure before installing reverse osmosis, learn when a booster pump is needed, and avoid poor output from an underfed membrane."
 schema_type: FAQPage
 evidence_tier: "research_only"
@@ -195,11 +195,15 @@ Do not treat a TDS meter as a complete water-quality test. TDS shows the overall
 
 Avoid placing the system where filters cannot be removed without emptying the entire sink cabinet. A tight installation may look neat at first, but restricted access makes cartridge changes harder and raises the chance of spills.
 
-## Bottom Line
-
+## The practical decision
 Install a standard RO system when flowing kitchen pressure stays at or above 40 PSI. A steady 50 to 60 PSI gives the membrane a more dependable operating range and helps the storage tank refill faster.
 
 Add a booster pump when pressure falls below that range, fluctuates with well-pump cycles, or drops sharply when other fixtures run. If pressure remains persistently weak and the goal is simply better-tasting water, a carbon filter is often the cleaner, simpler route.
+
+## Sources and verification
+
+- [NSF/ANSI 58 scope for reverse-osmosis systems](https://www.nsf.org/knowledge-library/nsf-ansi-58-reverse-osmosis-drinking-water-treatment-systems)
+- [NSF guide to product-specific water-treatment claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
 
