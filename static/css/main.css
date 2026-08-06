@@ -293,13 +293,17 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .bold-card { border: 0; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); box-shadow: 0 16px 32px rgba(15, 23, 42, 0.07); }
 .modern-card { border-radius: 20px; }
 .bold-spotlight { border: 0; background: linear-gradient(135deg, rgba(124,58,237,0.08), rgba(244,114,182,0.08)); }
-@media (min-width: 68rem) {
+@media (min-width: 72rem) {
+    body.layout-sidebar-left main:has(> article.article-shell > .audible-sponsored-slot),
+    body.layout-sidebar-right main:has(> article.article-shell > .audible-sponsored-slot) { max-width: var(--max-width, 72rem); }
+    main > article.article-shell:has(> .audible-sponsored-slot) { width: 100%; max-width: var(--content-width, 48rem); margin-left: 0; margin-right: auto; }
     article.article-shell:has(.audible-sponsored-slot) .audible-inline-sponsored { display: none; }
-    .audible-sponsored-slot { display: block; position: absolute; left: calc(100% + 1rem); top: 0; bottom: 0; width: min(320px, calc((100vw - 100%) / 2 - 1rem)); max-width: 320px; z-index: 2; pointer-events: none; }
-    .audible-sponsored-slot .sponsored-side-stack { width: min(100%, 320px); max-width: 320px; pointer-events: auto; }
-    .audible-sponsored-slot .audible-sponsored-panel { width: 100%; max-width: 320px; }
+    .audible-sponsored-slot { display: block; position: absolute; left: calc(100% + 1rem); top: 0; bottom: 0; width: 320px; max-width: 320px; z-index: 2; pointer-events: none; }
+    .audible-sponsored-slot .sponsored-side-stack { width: 100%; max-width: 100%; pointer-events: auto; }
+    .audible-sponsored-slot .audible-sponsored-panel,
+    .audible-sponsored-slot .kindle-sponsored-panel { width: 100%; max-width: 100%; }
 }
-@media (max-width: 67.999rem) {
+@media (max-width: 71.999rem) {
     .audible-sponsored-slot { display: none !important; }
 }
 @media (max-width: 900px) {
@@ -4403,12 +4407,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .theme-3dprinterlab table { table-layout: fixed; }
 .theme-3dprinterlab th,
 .theme-3dprinterlab td { min-width: 0; overflow-wrap: anywhere; word-break: normal; }
-@media (min-width: 68rem) {
-    .theme-3dprinterlab .audible-sponsored-slot { width: min(18rem, calc((100vw - var(--content-width, 48rem)) / 2 - 1.5rem)); }
-    .theme-3dprinterlab .audible-sponsored-slot .sponsored-side-stack,
-    .theme-3dprinterlab .audible-sponsored-slot .audible-sponsored-panel,
-    .theme-3dprinterlab .audible-sponsored-slot .kindle-sponsored-panel { max-width: 100%; }
-}
+
 .theme-3dprinterlab .affiliate-cta,
 .theme-3dprinterlab .product-cta {
     display: flex;
