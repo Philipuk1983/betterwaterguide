@@ -23,8 +23,8 @@ source_basis:
   - "published details available at the time of writing"
 keywords:
   - "i spring whole house uv system review for bacteria"
-  - "i spring whole house uv system review for bacteria review"
-  - "is i spring whole house uv system review for bacteria worth it"
+  - "ispring uvf55fs review"
+  - "12 gpm whole house uv system"
 tags:
   - "home water filtration"
   - "water filter"
