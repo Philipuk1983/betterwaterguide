@@ -193,6 +193,16 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .affiliate-cta--mid, .affiliate-cta--post-editor { margin: 1.75rem 0; }
 .affiliate-cta__action, .article-affiliate-cta { display: flex; flex-direction: column; gap: 0.45rem; flex-shrink: 0; }
 .affiliate-cta__action { align-items: flex-end; }
+.affiliate-cta__title { display: block; color: var(--color-text); font-family: var(--font-heading); font-size: 1rem; line-height: 1.35; }
+.affiliate-cta--product-links { display: grid; grid-template-columns: minmax(10rem, 0.55fr) minmax(0, 1.45fr); align-items: start; gap: 1rem 1.25rem; padding: 1rem; }
+.affiliate-cta--product-links .affiliate-cta__copy { min-width: 0; padding: 0.2rem 0; }
+.affiliate-product-list { display: grid; gap: 0.55rem; min-width: 0; }
+.affiliate-product-link { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; min-width: 0; padding: 0.72rem 0.85rem; border: 1px solid var(--border); border-radius: 12px; background: rgba(255,255,255,0.72); color: var(--color-text); text-decoration: none; box-shadow: none; transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease; }
+.affiliate-product-link:hover { border-color: var(--color-primary); background: #ffffff; color: var(--color-text); transform: translateY(-1px); }
+.affiliate-product-link:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 2px; }
+.affiliate-product-link__name { min-width: 0; font-weight: 750; line-height: 1.35; overflow-wrap: anywhere; }
+.affiliate-product-link__action { color: var(--color-primary); font-size: 0.82rem; font-weight: 800; line-height: 1.2; white-space: nowrap; }
+.affiliate-product-link__action::after { content: " \2192"; }
 .affiliate-cta__name-link { color: var(--color-text); text-decoration: none; }
 .affiliate-cta__name-link:hover { color: var(--color-primary); }
 .affiliate-cta__fit { display: grid; gap: 0.55rem; margin-top: 0.75rem; max-width: 64rem; }
@@ -309,12 +319,17 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 @media (max-width: 900px) {
     .affiliate-cta__action { align-items: stretch; width: 100%; }
     .section-product-cta .button-link, .affiliate-cta .button-link { width: 100%; min-width: 0; }
+    .affiliate-cta--product-links { grid-template-columns: minmax(0, 1fr); }
     .affiliate-cta__fit-grid { grid-template-columns: 1fr; gap: 0.55rem; }
     .review-verdict-card__fit { grid-template-columns: 1fr; gap: 0.65rem; }
     .review-verdict-card__actions { align-items: stretch; }
     .review-verdict-card__primary { width: 100%; justify-content: center; }
     .product-intel-widget__compare, .product-intel-widget__fit-grid { grid-template-columns: 1fr; gap: 0.55rem; }
     .audible-inline-sponsored__action, .audible-inline-sponsored__action a { width: 100%; }
+}
+@media (max-width: 520px) {
+    .affiliate-product-link { grid-template-columns: minmax(0, 1fr); gap: 0.35rem; }
+    .affiliate-product-link__action { white-space: normal; }
 }
 .theme-editorial body, .theme-editorial { background-color: #fefdf7; }
 .theme-editorial .article-card, .theme-editorial .spotlight-card, .theme-editorial .feature-row { box-shadow: none; border-radius: 0; }
@@ -4433,6 +4448,26 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
     color: var(--pl-text);
     transform: none;
 }
+.theme-3dprinterlab .affiliate-cta--product-links {
+    display: grid;
+    grid-template-columns: minmax(10rem, 0.55fr) minmax(0, 1.45fr);
+    align-items: start;
+}
+.theme-3dprinterlab .affiliate-product-link {
+    display: grid;
+    width: 100%;
+    min-height: 0;
+    padding: 0.72rem 0.85rem;
+    border: 1px solid var(--pl-line);
+    border-radius: 12px;
+    background: #ffffff;
+    color: var(--pl-text);
+    font-weight: 400;
+    box-shadow: none;
+}
+.theme-3dprinterlab .affiliate-product-link:hover { border-color: var(--pl-blue); background: var(--pl-bg-soft); color: var(--pl-text); }
+.theme-3dprinterlab .affiliate-product-link__name { color: var(--pl-text); }
+.theme-3dprinterlab .affiliate-product-link__action { color: var(--pl-blue-dark); }
 .theme-3dprinterlab .affiliate-cta > div:first-child,
 .theme-3dprinterlab .product-cta > div:first-child { flex: 1 1 auto; min-width: 12rem; }
 .theme-3dprinterlab .affiliate-cta__action { align-items: flex-end; flex: 0 0 auto; }
@@ -4492,6 +4527,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
     .theme-3dprinterlab .article-header::after { position: static; width: max-content; margin: 0 0 0.75rem; }
     .theme-3dprinterlab .affiliate-cta,
     .theme-3dprinterlab .product-cta { align-items: stretch; flex-direction: column; }
+    .theme-3dprinterlab .affiliate-cta--product-links { grid-template-columns: minmax(0, 1fr); }
     .theme-3dprinterlab .affiliate-cta__action,
     .theme-3dprinterlab .affiliate-cta .button-link,
     .theme-3dprinterlab .product-cta .button-link { width: 100%; align-items: stretch; }
@@ -7054,6 +7090,7 @@ body.theme-soundsleepgear article.article-shell > * { box-sizing: border-box; ma
     .theme-storyscreen .story-method-grid,
     .theme-storyscreen .story-cluster-panel { grid-template-columns: minmax(0, 1fr); }
     .affiliate-cta__action { align-items: flex-start; }
+    .affiliate-cta--product-links { display: grid; grid-template-columns: minmax(0, 1fr); }
     .roundup-hero-callout { flex-direction: column; align-items: flex-start; }
     .roundup-hero-callout__action { width: 100%; justify-content: flex-start; }
     .home-latest-item { grid-template-columns: minmax(0, 1fr); }

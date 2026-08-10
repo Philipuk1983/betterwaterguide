@@ -584,31 +584,60 @@
         modifier.split(/\s+/).filter(Boolean).forEach((className) => wrapper.classList.add(className));
 
         const copy = document.createElement("div");
+        copy.className = "affiliate-cta__copy";
         const label = document.createElement("p");
         label.className = "cta-label";
-        label.textContent = usableProducts.length === 1 ? "Product link" : "Product links";
+        label.textContent = usableProducts.length === 1 ? "Featured product" : "Compare products";
         const title = document.createElement("strong");
+        title.className = "affiliate-cta__title";
         title.textContent = headingText;
         copy.append(label, title);
 
-        const action = document.createElement("div");
-        action.className = "affiliate-cta__action";
-        usableProducts.forEach((product) => {
+        if (usableProducts.length === 1) {
+            const product = usableProducts[0];
+            const action = document.createElement("div");
+            action.className = "affiliate-cta__action";
+
             const link = document.createElement("a");
             link.href = product.amazon_url;
             link.target = "_blank";
             link.rel = "nofollow sponsored noopener";
             link.className = "button-link amazon-button";
-            link.textContent = usableProducts.length === 1
-                ? "Check price on Amazon"
-                : `View ${product.name} on Amazon`;
+            link.dataset.productName = product.name;
+            link.setAttribute("aria-label", `Check the Amazon price for ${product.name}`);
+            link.textContent = "Check price on Amazon";
+            action.appendChild(link);
+
+            wrapper.append(copy, action);
+            return wrapper;
+        }
+
+        wrapper.classList.add("affiliate-cta--product-links");
+        const action = document.createElement("div");
+        action.className = "affiliate-product-list";
+        action.setAttribute("role", "list");
+        usableProducts.forEach((product) => {
+            const link = document.createElement("a");
+            link.href = product.amazon_url;
+            link.target = "_blank";
+            link.rel = "nofollow sponsored noopener";
+            link.className = "affiliate-product-link";
+            link.dataset.productName = product.name;
+            link.setAttribute("role", "listitem");
+            link.setAttribute("aria-label", `Check the Amazon price for ${product.name}`);
+
+            const name = document.createElement("span");
+            name.className = "affiliate-product-link__name";
+            name.textContent = product.name;
+
+            const linkAction = document.createElement("span");
+            linkAction.className = "affiliate-product-link__action";
+            linkAction.textContent = "Check Amazon price";
+
+            link.append(name, linkAction);
             action.appendChild(link);
         });
 
-        const note = document.createElement("p");
-        note.className = "affiliate-note";
-        note.innerHTML = "<em>As an Amazon Associate, we may earn from qualifying purchases.</em>";
-        action.appendChild(note);
         wrapper.append(copy, action);
         return wrapper;
     };
@@ -684,7 +713,7 @@
             return;
         }
 
-        const cta = createProductLinksCta(products, "affiliate-cta--hero", "Compare the current Amazon listings");
+        const cta = createProductLinksCta(products, "affiliate-cta--hero", "Compare exact products");
         const anchor = article.querySelector(".disclosure-inline");
         if (cta && anchor?.parentNode) {
             anchor.parentNode.insertBefore(cta, anchor.nextSibling);
