@@ -46,7 +46,7 @@
     {{ else if .Params.summary }}<div data-module="article-summary" class="article-summary" itemprop="description"><p>{{ .Params.summary }}</p></div>{{ end }}
     {{ if $affiliateAllowed }}{{- partial "disclosure-notice.html" . -}}{{ end }}
             {{- partial "utility-tool.html" . -}}
-    {{ if and $affiliateAllowed $singleProductPage $primaryAmazonUrl }}{{ if eq (.Type | default "") "review" }}{{ partial "review-verdict-card.html" (dict "Page" . "product" $primaryProduct "site" .Site) }}{{ else }}{{ partial "affiliate-cta.html" (dict "Page" . "product" $primaryProduct "site" .Site "class" "affiliate-cta--hero") }}{{ end }}{{ end }}
+    {{ if and $affiliateAllowed $singleProductPage (not $roundupPage) $primaryAmazonUrl }}{{ if eq (.Type | default "") "review" }}{{ partial "review-verdict-card.html" (dict "Page" . "product" $primaryProduct "site" .Site) }}{{ else }}{{ partial "affiliate-cta.html" (dict "Page" . "product" $primaryProduct "site" .Site "class" "affiliate-cta--hero") }}{{ end }}{{ end }}
     {{ if and (ne .Section "authors") (.Site.Params.showTableOfContents) (.Params.toc | default true) }}
     <details data-module="table-of-contents" class="table-of-contents">
         <summary>Contents</summary>
