@@ -632,7 +632,7 @@
 
             const linkAction = document.createElement("span");
             linkAction.className = "affiliate-product-link__action";
-            linkAction.textContent = "Check Amazon price";
+            linkAction.textContent = "Check price on Amazon";
 
             link.append(name, linkAction);
             action.appendChild(link);
