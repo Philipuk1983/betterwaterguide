@@ -13,6 +13,7 @@
     {{ $primaryAmazonUrl = index $primaryProduct "amazon_url" }}
     {{ if and (not $primaryAmazonUrl) $primaryProduct.asin }}{{ $primaryAmazonUrl = printf "https://www.amazon.com/dp/%s?tag=%s" $primaryProduct.asin .Site.Params.amazonTag }}{{ end }}
 {{ end }}
+{{ $mergedReviewVerdict := and $singleProductPage (not $roundupPage) (eq (.Type | default "") "review") $primaryAmazonUrl }}
 <article data-module="article-shell" data-module-role="article" class="article-shell clean-shell{{ if $roundupPage }} article-shell--roundup{{ end }}" itemscope itemtype="https://schema.org/Article"
     data-content-type="{{ .Type }}"
     data-review-framing="{{ .Params.review_framing | default "" }}"
@@ -43,7 +44,7 @@
             {{ if .Params.summary }}<p class="roundup-hero-callout__summary" itemprop="description">{{ .Params.summary | markdownify | plainify }}</p>{{ end }}
             </div>
     </div>
-    {{ else if .Params.summary }}<div data-module="article-summary" class="article-summary" itemprop="description"><p>{{ .Params.summary }}</p></div>{{ end }}
+    {{ else if and .Params.summary (not $mergedReviewVerdict) }}<div data-module="article-summary" class="article-summary" itemprop="description"><p>{{ .Params.summary }}</p></div>{{ end }}
     {{ if $affiliateAllowed }}{{- partial "disclosure-notice.html" . -}}{{ end }}
             {{- partial "utility-tool.html" . -}}
     {{ if and $affiliateAllowed $singleProductPage (not $roundupPage) $primaryAmazonUrl }}{{ if eq (.Type | default "") "review" }}{{ partial "review-verdict-card.html" (dict "Page" . "product" $primaryProduct "site" .Site) }}{{ else }}{{ partial "affiliate-cta.html" (dict "Page" . "product" $primaryProduct "site" .Site "class" "affiliate-cta--hero") }}{{ end }}{{ end }}
