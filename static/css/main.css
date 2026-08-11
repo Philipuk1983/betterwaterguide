@@ -246,7 +246,7 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .article-body .section-product-cta + :is(h2, h3, h4) { margin-top: 2.35rem; }
 .article-body .affiliate-inline-link { color: #b45309; font-weight: 700; text-decoration-thickness: 0.08em; }
 .article-body .affiliate-inline-link:hover { color: #92400e; }
-.cta-button, .button-link { justify-content: center; padding: 0.7rem 1.1rem; border-radius: 999px; background: var(--color-accent); color: #ffffff; text-decoration: none; font-weight: 700; white-space: nowrap; text-align: center; }
+.cta-button, .button-link { justify-content: center; min-width: 0; max-width: 100%; padding: 0.7rem 1.1rem; border-radius: 999px; background: var(--color-accent); color: #ffffff; text-decoration: none; font-weight: 700; white-space: normal; overflow-wrap: anywhere; line-height: 1.25; text-align: center; }
 .affiliate-cta .button-link, .section-product-cta .button-link { white-space: normal; overflow-wrap: anywhere; line-height: 1.25; max-width: 100%; }
 .cta-button:hover, .button-link:hover { color: #ffffff; opacity: 0.92; }
 .affiliate-note { margin: 0; font-size: 0.82rem; color: var(--muted); }
