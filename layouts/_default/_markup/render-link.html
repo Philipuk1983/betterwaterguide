@@ -1,0 +1,3 @@
+{{- $destination := .Destination -}}
+{{- $isAmazon := or (strings.HasPrefix $destination "https://www.amazon.com/") (strings.HasPrefix $destination "https://amazon.com/") -}}
+<a href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isAmazon }} rel="nofollow sponsored noopener" target="_blank"{{ end }}>{{ .Text | safeHTML }}</a>

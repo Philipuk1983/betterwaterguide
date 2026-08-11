@@ -4,7 +4,7 @@ slug: "how-to-choose-the-right-whole-house-filter-housing-size-for-your-water-sy
 keyword_id: 40596816
 topic_key: "guide:whole house filter housing size"
 date: 2026-07-05
-lastmod: 2026-08-06
+lastmod: 2026-08-11
 type: guide
 category: "home-maintenance"
 summary: "Choosing by size alone leads to bad installs. A housing that is too small can load quickly and make water feel restricted."
@@ -41,6 +41,8 @@ faq:
   - question: "How do I know the housing is too small?"
     answer: "Frequent cartridge changes, noticeable flow restriction, or a housing that is hard to service are the clearest signs that the size is not working for the home."
 ---
+
+**Choose the cartridge format before the brand.** A 4.5-by-20-inch housing is the practical default for many whole-house sediment jobs because it provides more cartridge area and service life than a slim 2.5-inch housing, but it still has to fit the tested water problem, peak flow, pressure, and service space. For a current three-housing example, see the exact 20-by-4.5-inch cartridge and clearance requirements in our [iSpring WGB32BM review](/reviews/ispring-whole-house-water-filter-is-it-worth-the-cost-for-cleaner-water-buyer-guide/).
 
 ## Start with the water, not the box
 A whole-house filter housing is only the shell. The cartridge inside does the work, so the right size is the one that lets the cartridge handle the water without becoming the tight spot in the system. Three things matter most: how much water the house uses, how much sediment or debris is in that water, and how much room you have to remove the housing and swap the cartridge later.
@@ -141,6 +143,7 @@ The best choice is the smallest housing that handles the water cleanly, does not
 
 ## Sources and verification
 
+- [iSpring WGB32BM official product specifications](https://www.ispringfilter.com/ispring-whole-house-water-filtration-system-sediment-carbon-iron-manganese-big-blue)
 - [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ

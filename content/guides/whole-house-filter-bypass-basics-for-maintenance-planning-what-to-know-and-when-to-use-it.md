@@ -4,7 +4,7 @@ slug: "whole-house-filter-bypass-basics-for-maintenance-planning-what-to-know-an
 keyword_id: 40596258
 topic_key: "guide:whole house filter bypass basic for maintenance planning"
 date: 2026-07-09
-lastmod: 2026-08-06
+lastmod: 2026-08-11
 type: guide
 category: "home-maintenance"
 summary: "A whole-house filter bypass is a service path, not a normal setting. Its job is simple: keep water moving through the house while a cartridge, valve, or housing is opened."
@@ -41,6 +41,8 @@ faq:
   - question: "What water tests matter before planning bypass use?"
     answer: "Strip tests are useful for chlorine and hardness. Lab tests are the better source for lead, arsenic, nitrate, PFAS, and bacteria. If the filter protects against a health-risk contaminant, bypass stays temporary."
 ---
+
+**The practical answer:** use a bypass only as a short service route, and choose the bypass arrangement that the exact filter manufacturer documents. If you are still choosing hardware, start with the [whole-house housing-size guide](/guides/how-to-choose-the-right-whole-house-filter-housing-size-for-your-water-system/). For current integrated systems, compare the documented bypass and service requirements in our [Aquasana Rhino Max Flow review](/reviews/aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer-guide/) and [iSpring WGB32BM review](/reviews/ispring-whole-house-water-filter-is-it-worth-the-cost-for-cleaner-water-buyer-guide/).
 
 ## What a Bypass Does
 
@@ -177,4 +179,5 @@ If the valves are hard to reach, the drain is awkward, and the cartridge change 
 
 ## Sources and verification
 
+- [Aquasana Rhino Max Flow product page and Pro-Grade Bypass Kit details](https://www.aquasana.com/whole-house-water-filters/rhino-max-flow-100362408.html)
 - [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
