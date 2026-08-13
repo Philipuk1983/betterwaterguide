@@ -4,7 +4,7 @@ slug: "whole-house-reverse-osmosis-vs-point-of-use-reverse-osmosis-for-your-kitc
 keyword_id: 40436629
 topic_key: "comparison:point of use reverse osmosis vs whole house reverse osmosis"
 date: 2026-07-01
-lastmod: 2026-08-06
+lastmod: 2026-08-13
 type: comparison
 category: "home-maintenance"
 summary: "For a kitchen, the real question is not which reverse osmosis setup sounds more impressive. It is whether you want treated water at one sink or across the whole house."
@@ -23,12 +23,12 @@ source_basis:
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
 products:
-  - name: "whole house reverse osmosis"
-    amazon_url: "https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&tag=betterwaterguide-20"
+  - name: "Waterdrop G3P800 tankless under-sink RO"
+    amazon_url: "https://www.amazon.com/dp/B0987FCQQW?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
-  - name: "point of use reverse osmosis"
-    amazon_url: "https://www.amazon.com/s?k=point%20of%20use%20reverse%20osmosis&tag=betterwaterguide-20"
+  - name: "iSpring RCC7AK tank-based under-sink RO"
+    amazon_url: "https://www.amazon.com/dp/B005LJ8EXU?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
 keywords:
@@ -54,15 +54,15 @@ faq:
 
 ## The short answer
 
-If you only want the kitchen covered, choose [point-of-use reverse osmosis](https://www.amazon.com/s?k=point%20of%20use%20reverse%20osmosis&tag=betterwaterguide-20).
+If you only want the kitchen covered, choose point-of-use reverse osmosis.
 
-If the whole home needs the same water treatment, choose [whole-house reverse osmosis](https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&tag=betterwaterguide-20).
+If the whole home needs the same water treatment, treat whole-house reverse osmosis as an engineered water-treatment project rather than an off-the-shelf marketplace purchase.
 
 That simple split handles most homes. The rest of the decision comes down to where the equipment can live, how much plumbing work the home can support, and whether you want one sink fixed or the whole house covered.
 
 Shop the two setups:
-- [Whole-house reverse osmosis on Amazon](https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&tag=betterwaterguide-20)
-- [Point-of-use reverse osmosis on Amazon](https://www.amazon.com/s?k=point%20of%20use%20reverse%20osmosis&tag=betterwaterguide-20)
+- [Waterdrop G3P800 tankless under-sink RO](https://www.amazon.com/dp/B0987FCQQW?tag=betterwaterguide-20)
+- [iSpring RCC7AK tank-based under-sink RO](https://www.amazon.com/dp/B005LJ8EXU?tag=betterwaterguide-20)
 
 ## What each system means in practice
 
@@ -148,14 +148,15 @@ A smaller filter can also make sense when the kitchen is tight on space and the 
 
 ## Practical verdict
 
-For a kitchen-only need, [point-of-use reverse osmosis](https://www.amazon.com/s?k=point%20of%20use%20reverse%20osmosis&tag=betterwaterguide-20) is the better choice in most homes. It puts treated water where it will actually be used, keeps the project local, and avoids turning a sink job into a whole-house install.
+For a kitchen-only need, point-of-use reverse osmosis is the better choice in most homes. The exact [Waterdrop G3P800](https://www.amazon.com/dp/B0987FCQQW?tag=betterwaterguide-20) is the high-output tankless example; match model WD-G3P800-W and ASIN `B0987FCQQW`. The [iSpring RCC7AK](https://www.amazon.com/dp/B005LJ8EXU?tag=betterwaterguide-20) is the traditional tank-and-remineralization example; match model RCC7AK and ASIN `B005LJ8EXU`.
 
-Choose [whole-house reverse osmosis](https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&tag=betterwaterguide-20) only when the same water issue reaches the rest of the home and the house has the space and plumbing setup to support that larger system. If the kitchen is the only place that matters, whole-house is too much system for too little gain.
+Choose whole-house reverse osmosis only when the same verified water issue reaches the rest of the home and a qualified treatment professional has sized the pretreatment, storage, repressurization, drain, and maintenance plan. If the kitchen is the only place that matters, whole-house is too much system for too little gain.
 
 ## Sources and verification
 
 - [NSF/ANSI 58 scope for reverse-osmosis systems](https://www.nsf.org/knowledge-library/nsf-ansi-58-reverse-osmosis-drinking-water-treatment-systems)
 - [NSF guide to product-specific water-treatment claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
+- [Waterdrop G3P800 official specifications](https://www.waterdropfilter.com/pages/reverse-osmosis-system-g3p800)
 
 ## FAQ
 

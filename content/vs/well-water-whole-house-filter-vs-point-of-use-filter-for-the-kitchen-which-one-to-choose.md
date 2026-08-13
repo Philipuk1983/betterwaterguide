@@ -4,7 +4,7 @@ slug: "well-water-whole-house-filter-vs-point-of-use-filter-for-the-kitchen-whic
 keyword_id: 40436417
 topic_key: "comparison:point of use filter vs well water whole house filter"
 date: 2026-07-01
-lastmod: 2026-08-06
+lastmod: 2026-08-13
 type: comparison
 category: "home-maintenance"
 summary: "For a kitchen-only well water problem, the smaller fix is usually the better place to start: a point-of-use filter at the sink."
@@ -23,12 +23,12 @@ source_basis:
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
 products:
-  - name: "well water whole house filter"
-    amazon_url: "https://www.amazon.com/s?k=well%20water%20whole%20house%20filter&tag=betterwaterguide-20"
+  - name: "iSpring WGB32BM whole-house filter"
+    amazon_url: "https://www.amazon.com/dp/B01FI3BLYM?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
-  - name: "point-of-use filter"
-    amazon_url: "https://www.amazon.com/s?k=point-of-use%20filter&tag=betterwaterguide-20"
+  - name: "iSpring US31 under-sink filter"
+    amazon_url: "https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
 keywords:
@@ -128,16 +128,17 @@ A whole-house filter makes more sense when the same problem reaches the rest of 
 If the problem is hardness, iron, sulfur-related water issues, or microbial concern, start with the treatment that addresses that specific problem. A filter can still belong in the setup, but it should not be expected to carry the whole job alone.
 
 <div class='section-product-cta'>
-  <a class='button-link amazon-button' href='https://www.amazon.com/s?k=point-of-use%20filter&amp;tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>Shop point-of-use filters on Amazon</a>
-  <a class='button-link amazon-button' href='https://www.amazon.com/s?k=well%20water%20whole%20house%20filter&amp;tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>Shop well water whole-house filters on Amazon</a>
+  <a class='button-link amazon-button' href='https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>View iSpring US31 on Amazon</a>
+  <a class='button-link amazon-button' href='https://www.amazon.com/dp/B01FI3BLYM?tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>View iSpring WGB32BM on Amazon</a>
 </div>
 
-## Shop links
+## Exact examples and limits
 
-- [Point-of-use filters](https://www.amazon.com/s?k=point-of-use%20filter&tag=betterwaterguide-20)
-- [Well water whole-house filters](https://www.amazon.com/s?k=well%20water%20whole%20house%20filter&tag=betterwaterguide-20)
+- [iSpring US31 under-sink filter](https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20), model US31 and ASIN `B07CHXVRS5`, is a sediment-and-carbon drinking-water example. Use it only downstream of water that is already microbiologically safe and matches its treatment claims.
+- [iSpring WGB32BM whole-house filter](https://www.amazon.com/dp/B01FI3BLYM?tag=betterwaterguide-20), model WGB32BM and ASIN `B01FI3BLYM`, is a sediment, carbon, and iron/manganese example. It is not disinfection and should not be bought until a current well test supports those stages.
 
 ## Sources and verification
 
 - [EPA guidance for testing and protecting private-well water](https://www.epa.gov/privatewells/protect-your-homes-water)
 - [NSF guide to matching treatment standards with exact contaminant claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
+- [iSpring WGB32BM cartridge configuration](https://www.ispringfilter.com/ac/index.php?download_id=56&rt=account%2Fdownload%2Fstartdownload)

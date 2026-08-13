@@ -4,7 +4,7 @@ slug: "whole-house-carbon-filter-vs-whole-house-sediment-filter-for-kitchen-wate
 keyword_id: 40436419
 topic_key: "comparison:whole house carbon filter vs whole house sediment filter"
 date: 2026-07-01
-lastmod: 2026-08-06
+lastmod: 2026-08-13
 type: comparison
 category: "home-maintenance"
 summary: "Kitchens make water problems obvious. Clear water that tastes flat points to one kind of filter. Water that leaves behind rust, sand, or cloudiness points to another."
@@ -23,12 +23,12 @@ source_basis:
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
 products:
-  - name: "whole house carbon filter"
-    amazon_url: "https://www.amazon.com/s?k=whole%20house%20carbon%20filter&tag=betterwaterguide-20"
+  - name: "iSpring WGB32B sediment-and-carbon system"
+    amazon_url: "https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
-  - name: "whole house sediment filter"
-    amazon_url: "https://www.amazon.com/s?k=whole%20house%20sediment%20filter&tag=betterwaterguide-20"
+  - name: "Pentek R50-BB pleated sediment cartridge"
+    amazon_url: "https://www.amazon.com/dp/B0CJMXSP9Z?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
 keywords:
@@ -55,13 +55,13 @@ faq:
 If the water is already clear but the taste or odor bothers you, carbon is the cleaner match. If the kitchen shows particles, cloudy bursts, or grit, sediment should come first. And if both show up, the order matters: sediment first, carbon second.
 
 ## The short answer
-- Choose a [whole house carbon filter](https://www.amazon.com/s?k=whole%20house%20carbon%20filter&tag=betterwaterguide-20) when kitchen water looks clear but tastes or smells off.
-- Choose a [whole house sediment filter](https://www.amazon.com/s?k=whole%20house%20sediment%20filter&tag=betterwaterguide-20) when you see sand, rust, cloudiness, or other particles.
+- Choose carbon filtration when kitchen water looks clear but has a chlorine taste or odor supported by the water report.
+- Choose sediment filtration when you see sand, rust, cloudiness, or other particles.
 - Use both when the water has both problems, with sediment first and carbon after it.
 
 <div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20carbon%20filter&tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house carbon filter on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20sediment%20filter&tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house sediment filter on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring WGB32B on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B0CJMXSP9Z?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View Pentek R50-BB on Amazon</a>
 </div>
 
 ## Comparison at a glance
@@ -172,10 +172,14 @@ Use both: sediment first, carbon second. That handles the visible particles and 
 
 For kitchen water, the choice is simple once you name the problem.
 
-Choose a [whole house carbon filter](https://www.amazon.com/s?k=whole%20house%20carbon%20filter&tag=betterwaterguide-20) when the water looks clear but tastes or smells wrong. Choose a [whole house sediment filter](https://www.amazon.com/s?k=whole%20house%20sediment%20filter&tag=betterwaterguide-20) when the water carries rust, sand, cloudiness, or grit. If both problems are present, sediment should come first and carbon should follow.
+Choose carbon when the water looks clear but a verified chlorine issue affects taste or odor. Choose sediment when the water carries rust, sand, cloudiness, or grit. If both problems are present, sediment should come first and carbon should follow.
+
+The exact [iSpring WGB32B](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20) combines a 5-micron sediment stage with two carbon-block stages; match model WGB32B and ASIN `B008GNRMYK`. The [Pentek R50-BB](https://www.amazon.com/dp/B0CJMXSP9Z?tag=betterwaterguide-20) is a 50-micron pleated sediment cartridge, model R50-BB and ASIN `B0CJMXSP9Z`, and requires a compatible 10-inch Big Blue housing. These are concrete examples, not substitutes for matching the micron rating and contaminant claim to the water test.
 
 If only the kitchen matters, a whole house setup may be more than you need. If the same water issue affects the rest of the home, the full-house route makes more sense. The right choice is the one that matches the problem at the tap, not the one with the most filters.
 
 ## Sources and verification
 
 - [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
+- [iSpring WGB32B official product page](https://www.ispringfilter.com/ispring-whole-house-water-filtration-system-sediment-carbon-big-blue)
+- [Pentek R Series specification sheet](https://www.pentair.com/content/dam/extranet/web/nam/pentek/spec-sheets/310066-pentek-r-series-spec-sheet.pdf)

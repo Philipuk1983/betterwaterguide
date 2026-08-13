@@ -4,7 +4,7 @@ slug: "whole-house-water-filtration-vs-under-sink-drinking-water-filtration-whic
 keyword_id: 40708205
 topic_key: "comparison:under sink drinking water filtration vs whole house water filtration"
 date: 2026-07-06
-lastmod: 2026-08-06
+lastmod: 2026-08-13
 type: comparison
 category: "home-maintenance"
 summary: "Comparing whole house water filtration vs under sink drinking water filtration comes down to scope. Whole-house treatment sits at the main line and treats water for the entire home."
@@ -23,12 +23,12 @@ source_basis:
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
 products:
-  - name: "whole house water filtration"
-    amazon_url: "https://www.amazon.com/s?k=whole%20house%20water%20filtration&tag=betterwaterguide-20"
+  - name: "iSpring WGB32B whole-house filter"
+    amazon_url: "https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
-  - name: "under sink drinking water filtration"
-    amazon_url: "https://www.amazon.com/s?k=under%20sink%20drinking%20water%20filtration&tag=betterwaterguide-20"
+  - name: "iSpring US31 under-sink filter"
+    amazon_url: "https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
 keywords:
@@ -114,22 +114,23 @@ The core trade-off is scope: whole-house filtration treats the entire plumbing s
 Whole-house water filtration suits homes where the same problem shows up in multiple places, such as chlorine odor in showers, sediment on fixtures, or off tastes and residue throughout the house. Under-sink drinking water filtration suits homes where the complaint is mostly at one faucet and the goal is better-tasting water for drinking, coffee, tea, and ice.
 
 <div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20filtration&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house water filtration on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=under%20sink%20drinking%20water%20filtration&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View under sink drinking water filtration on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring WGB32B on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring US31 on Amazon</a>
 </div>
 
 ## Our recommendation
-For most homes, [under-sink drinking water filtration](https://www.amazon.com/s?k=under%20sink%20drinking%20water%20filtration&tag=betterwaterguide-20) is the first place to look. It solves the problem people notice most often—the water they drink and cook with—without turning the whole house into a plumbing project.
+For most homes, under-sink drinking-water filtration is the first place to look. It solves the problem people notice most often—the water they drink and cook with—without turning the whole house into a plumbing project. The exact [iSpring US31](https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20), model US31 and ASIN `B07CHXVRS5`, is a three-stage sediment-and-carbon example; it is not reverse osmosis or disinfection.
 
-Choose [whole house water filtration](https://www.amazon.com/s?k=whole%20house%20water%20filtration&tag=betterwaterguide-20) when the same issue shows up in showers, laundry, fixtures, or appliances, or when a water report points to a whole-home nuisance problem.
+Choose whole-house filtration when the same issue shows up in showers, laundry, fixtures, or appliances, or when a water report points to a whole-home nuisance problem. The exact [iSpring WGB32B](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20), model WGB32B and ASIN `B008GNRMYK`, combines a sediment stage with two carbon-block stages for treated water that matches those claims.
 
 <div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20filtration&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring WGB32B on Amazon</a>
 </div>
 
 ## Sources and verification
 
 - [NSF guide to water-treatment standards and product-specific claims](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
+- [iSpring WGB32B official product page](https://www.ispringfilter.com/ispring-whole-house-water-filtration-system-sediment-carbon-big-blue)
 
 ## FAQ
 

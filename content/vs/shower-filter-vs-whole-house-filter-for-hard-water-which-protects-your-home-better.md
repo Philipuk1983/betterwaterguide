@@ -4,7 +4,7 @@ slug: "shower-filter-vs-whole-house-filter-for-hard-water-which-protects-your-ho
 keyword_id: 40436395
 topic_key: "comparison:shower filter vs whole house filter"
 date: 2026-07-01
-lastmod: 2026-08-06
+lastmod: 2026-08-13
 type: comparison
 category: "home-maintenance"
 summary: "Neither a shower filter nor a general whole-house filter removes hardness minerals. Choose a softener for scale; compare these filters only when chlorine or another documented filtration concern is the real issue."
@@ -23,12 +23,12 @@ source_basis:
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
 products:
-  - name: "shower filter"
-    amazon_url: "https://www.amazon.com/s?k=shower%20filter&tag=betterwaterguide-20"
+  - name: "AquaBliss SF100 shower filter"
+    amazon_url: "https://www.amazon.com/dp/B01MUBU0YC?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
-  - name: "whole house filter"
-    amazon_url: "https://www.amazon.com/s?k=whole%20house%20filter&tag=betterwaterguide-20"
+  - name: "iSpring WGB32B whole-house filter"
+    amazon_url: "https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
 keywords:
@@ -43,9 +43,9 @@ tags:
   - "lane:beginner_vs_pro"
 faq:
   - question: "Which option is better for most people?"
-    answer: "The better option for most people is the one with the stronger value and fewer ownership compromises."
+    answer: "Choose a shower filter for a chlorine-related complaint at one shower and a whole-house filter when the same documented issue affects several fixtures. Neither is a water softener."
   - question: "Is the pricier option worth it?"
-    answer: "The pricier option is only worth it if its premium strengths matter in normal use."
+    answer: "A main-line filter is worth the added plumbing only when several fixtures need the same treatment and the exact system is sized for household flow."
 ---
 
 ## Start with the job each product does
@@ -114,16 +114,19 @@ Skip a whole-house filter if the home only has one problem fixture, the plumbing
 
 And skip both as the main answer if the real issue is hard-water scale. That is the clearest wrong turn in this category. The right fix for scale is usually a softener or another system built for mineral control.
 
-## Shop options
-- [Shop shower filters on Amazon](https://www.amazon.com/s?k=shower%20filter&tag=betterwaterguide-20)
-- [Shop whole-house filters on Amazon](https://www.amazon.com/s?k=whole%20house%20filter&tag=betterwaterguide-20)
+## Exact examples to compare
+
+- [AquaBliss SF100 shower filter](https://www.amazon.com/dp/B01MUBU0YC?tag=betterwaterguide-20), model AB-SF100 and ASIN `B01MUBU0YC`, is the single-fixture example.
+- [iSpring WGB32B](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20), model WGB32B and ASIN `B008GNRMYK`, is the whole-house sediment-and-carbon example.
+
+Neither product removes hardness minerals. Buy one only for its documented filtration job, not because the page title includes “hard water.”
 
 <div class='section-product-cta'>
-  <a class='button-link amazon-button' href='https://www.amazon.com/s?k=shower%20filter&amp;tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>Shop shower filters on Amazon</a>
+  <a class='button-link amazon-button' href='https://www.amazon.com/dp/B01MUBU0YC?tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>View AquaBliss SF100 on Amazon</a>
 </div>
 
 <div class='section-product-cta'>
-  <a class='button-link amazon-button' href='https://www.amazon.com/s?k=whole%20house%20filter&amp;tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>Shop whole-house filters on Amazon</a>
+  <a class='button-link amazon-button' href='https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>View iSpring WGB32B on Amazon</a>
 </div>
 
 ## The practical decision
@@ -134,3 +137,4 @@ If you want the shortest path to a decision, use this rule: one bathroom points 
 ## Sources and verification
 
 - [NSF guide to water softeners, filters, and treatment standards](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
+- [iSpring WGB32B official product page](https://www.ispringfilter.com/ispring-whole-house-water-filtration-system-sediment-carbon-big-blue)

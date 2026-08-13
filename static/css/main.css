@@ -971,8 +971,8 @@ article[itemtype="https://schema.org/Article"]:has(.audible-sponsored-slot) { po
 .theme-betterwaterguide textarea:focus-visible { outline: 3px solid rgba(65,214,232,0.42); outline-offset: 3px; }
 @media (max-width: 760px) {
     .theme-betterwaterguide .header-inner { min-height: auto; padding: 0.85rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
-    .theme-betterwaterguide .site-nav { width: 100%; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.2rem; }
-    .theme-betterwaterguide .site-nav a { white-space: nowrap; font-size: 0.86rem; }
+    .theme-betterwaterguide .site-nav { width: 100%; gap: 0.55rem 0.75rem; overflow-x: visible; padding-bottom: 0.2rem; }
+    .theme-betterwaterguide .site-nav a { white-space: normal; font-size: 0.82rem; }
     .theme-betterwaterguide main,
     .theme-betterwaterguide .container,
     .theme-betterwaterguide .content { width: auto; padding-left: 1rem; padding-right: 1rem; }
@@ -7154,4 +7154,18 @@ body.theme-soundsleepgear article.article-shell > * { box-sizing: border-box; ma
         border-radius: 14px;
     }
     .article-summary > :last-child { margin-bottom: 0; }
+}
+
+@media (max-width: 760px) {
+    .theme-betterwaterguide .site-nav {
+        flex-flow: row wrap;
+        overflow-x: visible;
+        scrollbar-width: auto;
+    }
+
+    .theme-betterwaterguide .site-nav a {
+        flex: 0 1 auto;
+        white-space: normal;
+        padding: 0.25rem 0.4rem;
+    }
 }

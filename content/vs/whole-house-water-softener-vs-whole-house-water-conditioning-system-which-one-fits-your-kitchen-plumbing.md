@@ -4,7 +4,7 @@ slug: "whole-house-water-softener-vs-whole-house-water-conditioning-system-which
 keyword_id: 40436632
 topic_key: "comparison:whole house water conditioning system vs whole house water softener"
 date: 2026-07-01
-lastmod: 2026-08-06
+lastmod: 2026-08-13
 type: comparison
 category: "home-maintenance"
 summary: "These are whole-house systems, so the decision starts in the kitchen but reaches every tap because a fix that feels perfect at the sink can be annoying everywhere else if it needs more room, more setup, or."
@@ -23,12 +23,12 @@ source_basis:
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
 products:
-  - name: "whole house water softener"
-    amazon_url: "https://www.amazon.com/s?k=whole%20house%20water%20softener&tag=betterwaterguide-20"
+  - name: "Aquasure Harmony AS-HS32D water softener"
+    amazon_url: "https://www.amazon.com/dp/B07F18VG8L?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
-  - name: "whole house water conditioning system"
-    amazon_url: "https://www.amazon.com/s?k=whole%20house%20water%20conditioning%20system&tag=betterwaterguide-20"
+  - name: "Pentair Pelican NS3-P salt-free conditioner"
+    amazon_url: "https://www.amazon.com/dp/B000NG3YJU?tag=betterwaterguide-20"
     cta_label: "Product link"
     cta_text: "Check price on Amazon"
 keywords:
@@ -53,13 +53,13 @@ faq:
 ---
 
 ## Start with the kitchen problem
-If your kitchen keeps collecting white scale on faucet parts, sink edges, or dishwasher pieces, the choice between a [whole house water softener](https://www.amazon.com/s?k=whole%20house%20water%20softener&tag=betterwaterguide-20) and a [whole house water conditioning system](https://www.amazon.com/s?k=whole%20house%20water%20conditioning%20system&tag=betterwaterguide-20) is not just about water treatment. It is about how much of that buildup you want to remove versus how much upkeep you want the system to ask from the household.
+If your kitchen keeps collecting white scale on faucet parts, sink edges, or dishwasher pieces, the choice between a true ion-exchange softener and a salt-free conditioning system is not just about water treatment. It is about removing hardness minerals versus trying to control how scale forms, and about how much upkeep the household will accept.
 
 If you want the shortest answer: choose the softener when hard-water scale is the real problem. Choose the conditioning system when the home needs a lighter setup and the kitchen can live with less aggressive scale control.
 
 <div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20softener&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house water softener on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20conditioning%20system&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house water conditioning system on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B07F18VG8L?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View Aquasure Harmony AS-HS32D on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B000NG3YJU?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View Pentair Pelican NS3-P on Amazon</a>
 </div>
 
 ## The core difference
@@ -131,19 +131,20 @@ Skip both if the house also has other water problems that have nothing to do wit
 Skip both if you do not control the plumbing layout. These are whole-house systems, so they make the most sense when the home can actually support the install and the upkeep.
 
 ## The decision
-For most homes that are trying to fix visible scale in the kitchen, the [whole house water softener](https://www.amazon.com/s?k=whole%20house%20water%20softener&tag=betterwaterguide-20) is the stronger choice. It removes hardness minerals and gives you the more direct answer to buildup on faucets, sink fixtures, and appliance parts.
+For most homes that are trying to fix visible scale in the kitchen, a true water softener is the stronger choice. The exact [Aquasure Harmony AS-HS32D](https://www.amazon.com/dp/B07F18VG8L?tag=betterwaterguide-20), ASIN `B07F18VG8L`, is a 32,000-grain ion-exchange example for a smaller household after water-test sizing.
 
-Choose the [whole house water conditioning system](https://www.amazon.com/s?k=whole%20house%20water%20conditioning%20system&tag=betterwaterguide-20) when the home needs a simpler setup, the plumbing space is tight, or the household wants lower upkeep and can accept lighter scale control.
+Choose a salt-free conditioner when the household wants no brine tank and accepts scale control instead of mineral removal. The exact [Pentair Pelican NS3-P](https://www.amazon.com/dp/B000NG3YJU?tag=betterwaterguide-20), ASIN `B000NG3YJU`, is the 1-to-3-bathroom salt-free example; do not describe its conditioned water as softened water.
 
 If the kitchen is the place where hard water is making itself known, the softener is the better pick. If the home needs a less demanding system, the conditioning option is the easier one to live with.
 
 <div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20water%20softener&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house water softener on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B07F18VG8L?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View Aquasure Harmony AS-HS32D on Amazon</a>
 </div>
 
 ## Sources and verification
 
 - [NSF guide to water softeners, filters, and treatment standards](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
+- [Aquasure Harmony AS-HS32D specifications](https://aquasureusa.com/products/aquasure-harmony-series-whole-house-water-softening-system-32-000-grains)
 
 ## FAQ
 

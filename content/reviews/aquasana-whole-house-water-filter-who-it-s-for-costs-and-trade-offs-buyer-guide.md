@@ -4,7 +4,7 @@ slug: "aquasana-whole-house-water-filter-who-it-s-for-costs-and-trade-offs-buyer
 keyword_id: 26188765
 topic_key: "review:aquasana whole house water filter review"
 date: 2026-06-30
-lastmod: 2026-08-11
+lastmod: 2026-08-13
 type: review
 category: "home-maintenance"
 summary: "Aquasana Rhino Max Flow WH-1010 is a strong city-water option when whole-home chlorine reduction and high flow justify the installation cost."
@@ -57,6 +57,12 @@ review_verdict_card:
 **The Aquasana Rhino Max Flow WH-1010 is worth buying when chlorine affects water across a city-water home and you need the brand's higher-flow configuration. [Check the current WH-1010 configuration at Aquasana](https://www.aquasana.com/whole-house-water-filters/rhino-max-flow-100362408.html), where the exact base model, available upgrades, current documentation, and installation options are identified.**
 
 Choose the base Rhino instead when 7 gpm is sufficient. Choose an under-sink filter when the issue is limited to drinking water. Choose a real ion-exchange softener when scale is the problem. The WH-1010 should not win by default simply because “whole house” sounds comprehensive.
+
+Aquasana does not currently give this review a dependable exact Rhino Max Flow Amazon package. If you want a marketplace alternative for treated municipal water, compare the exact [iSpring WGB32B three-stage system](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20), which uses a sediment stage followed by two carbon-block stages. It is an alternative, not the reviewed Rhino, and it has different cartridges, flow claims, capacity, warranty, and installation requirements.
+
+<div class="section-product-cta">
+  <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View the iSpring WGB32B alternative on Amazon</a>
+</div>
 
 | Decision | Rhino Max Flow WH-1010 |
 |---|---|
@@ -129,13 +135,14 @@ Buy the base Rhino when normal peak demand fits its flow and the exact performan
 
 Before ordering, verify the SKU is WH-1010 and compare every claimed reduction with the current performance data sheet. Confirm whether the listing includes the base unit only or a conditioner, UV, bypass, or prefilter upgrade. Measure the installation area, calculate peak flow, and obtain an installed quote rather than comparing box prices alone.
 
-No dependable exact WH-1010 Amazon package was verified for this update, so the buyer route stays manufacturer-direct. Walk away from a marketplace listing that blurs Rhino, Rhino Max Flow, chloramine, well-water, or OptimH2O configurations.
+No dependable exact WH-1010 Amazon package was verified for this update, so the Rhino buyer route stays manufacturer-direct. The Amazon button above is explicitly for iSpring model WGB32B, ASIN `B008GNRMYK`, as a municipal-water alternative. Walk away from a marketplace listing that blurs Rhino, Rhino Max Flow, chloramine, well-water, or OptimH2O configurations.
 
 ## Sources and verification
 
 - [Aquasana Rhino Max Flow WH-1010 product page](https://www.aquasana.com/whole-house-water-filters/rhino-max-flow-100362408.html)
 - [Aquasana whole-house system comparison](https://www.aquasana.com/info/which-aquasana-system-is-right-for-you-pd.html)
 - [Aquasana WH-1010 owner manual](https://www.aquasana.com/on/demandware.static/-/Sites-aquasana-Library/default/dwa29d7235/PDF/WH-1010_Install.pdf)
+- [iSpring WGB32B official product page](https://www.ispringfilter.com/ispring-whole-house-water-filtration-system-sediment-carbon-big-blue)
 - [NSF guide to water-treatment standards and claim scope](https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems)
 
 ## FAQ
