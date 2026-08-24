@@ -139,6 +139,8 @@ Use TDS as a trend, not a verdict. Use multi-parameter strips as a screen, not a
 
 The recommendation changes after the first screen. Once a specific issue is suspected, move to a test designed for that issue, then match treatment to confirmed water chemistry and household flow.
 
+If a no-install pitcher is the likely next step, the [Clearly Filtered water pitcher review](/reviews/clearly-filtered-water-pitcher-review/) shows how to match a named concern to published reduction evidence without treating a low TDS number—or one certification label—as a universal safety verdict.
+
 ## Sources and verification
 
 - [EPA guidance for testing and protecting private-well water](https://www.epa.gov/privatewells/protect-your-homes-water)

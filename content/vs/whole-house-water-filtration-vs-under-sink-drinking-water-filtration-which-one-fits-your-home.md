@@ -68,6 +68,8 @@ Under-sink filtration treats one branch, usually at the kitchen sink. That keeps
 
 If you want a mild taste fix without plumbing work, a pitcher or faucet filter sits between these two options. It is easier to set up, but it stays limited to the sink where it is installed.
 
+For the higher-evidence end of that no-install category, the [Clearly Filtered pitcher review](/reviews/clearly-filtered-water-pitcher-review/) maps certification scope, third-party testing, refill frequency, and the municipal-water-only boundary before you choose it over a plumbed system.
+
 ## When Whole-House Makes More Sense
 
 Whole-house filtration fits best when the water issue is not confined to one faucet. That includes homes where showers smell like chlorine, fixtures collect sediment, or laundry picks up an off odor. It is also the broader answer when the goal is to reduce nuisance issues across the home instead of solving only drinking-water concerns.
