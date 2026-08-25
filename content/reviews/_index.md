@@ -9,3 +9,5 @@ These reviews focus on exact systems rather than treating every whole-house prod
 Ultraviolet treatment has a narrower role. The [iSpring UVF55FS review](/reviews/ispring-uvf55fs-review-is-12-gpm-enough-for-your-whole-house/) examines whether that specific unit's rated flow fits the household use case; UV does not remove sediment, hardness, or dissolved chemicals. Before choosing any reviewed model, confirm the exact configuration, certification or validated treatment claim, pressure range, replacement schedule, and installation requirements for your water evidence.
 
 For a no-install point-of-use option, the [Clearly Filtered water pitcher review](/reviews/clearly-filtered-water-pitcher-review/) separates NSF 42/372 certification scope from broader third-party performance testing and calculates how household refills change the 100-gallon interval.
+
+For a traditional tank-based point-of-use system, the [APEC ROES-50 review](/reviews/apec-roes-50-review/) checks the exact cabinet and tank footprints, 40–85 psi feed range, cold-water and drain connections, certification scope, wastewater, and future filter-service access before purchase.

@@ -136,6 +136,8 @@ Buy the Waterdrop G3P800 for high-demand drinking-water use, limited cabinet flo
 
 The best choice begins with a water test and a cabinet measurement. Flow and stage counts only become useful after the system fits the water problem and can be maintained without shortcuts.
 
+If the traditional tank path is the better architecture but the iSpring remineralization stage is not part of the goal, the [APEC ROES-50 review](/reviews/apec-roes-50-review/) provides a separate five-stage decision built around pressure, tank space, drain/faucet work, and housing maintenance.
+
 ## Sources and verification
 
 - [Waterdrop G3P800 official product page and certified-performance details](https://www.waterdropfilter.com/products/tankless-reverse-osmosis-system-wd-g3p800-w-fc-1)

@@ -129,6 +129,8 @@ If one of those items is a bad fit, stop there and look at a different treatment
 ## The practical decision
 A home reverse osmosis system is worth buying when the water report points to dissolved contaminants, the cabinet has enough room, and the household can handle regular filter changes. It is also a strong choice when you want one dedicated drinking-water tap and you are ready for the plumbing and upkeep that come with it.
 
+For those checks applied to one current traditional tank system, the [APEC ROES-50 review](/reviews/apec-roes-50-review/) maps the exact 40–85 psi feed range, system and tank dimensions, faucet and drain work, service clearance, staged replacement schedule, and current evidence limits.
+
 Skip RO when the real problem is taste, odor, sediment, or scale. Carbon filtration and water softening solve those problems with less cabinet clutter and less maintenance. The right system is the one that matches the water issue first and the kitchen layout second.
 
 ## Sources and verification
