@@ -151,7 +151,7 @@ Skip the pitcher when a health authority has issued instructions, microbial safe
 
 Skip it when scale, sediment, odor, or staining affects every fixture. That is a scope problem, and a kitchen pitcher cannot protect showers, a water heater, laundry, or plumbing.
 
-Skip it when certification for a particular reduction claim is a firm requirement. Search the certifier’s current listing for the exact model and standard rather than extending the 42/372 certifications to the entire third-party table.
+Skip it when certification for a particular reduction claim is a firm requirement. Search the certifier’s current listing for the exact model and standard rather than extending the 42/372 certifications to the entire third-party table. The [five-gate NSF certification check](/guides/nsf-water-filter-certification-42-53-58-401-claims/) explains how to trace a standard number to the exact claim, system, replacement element, and current listing.
 
 Finally, skip it when two or more daily reservoir fills sound tedious. At that rate, filter changes arrive around every 100 days or sooner, and the household may be happier with a properly selected plumbed system.
 

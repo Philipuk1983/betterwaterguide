@@ -1,0 +1,134 @@
+{
+  "dataset": "water-filter-certification-claim-verification",
+  "version": 1,
+  "retrievedUtc": "2026-08-26T13:42:00Z",
+  "region": "United States and Canada standards context",
+  "scope": "Buyer-side interpretation of common drinking-water treatment certification labels; not a product certification database or water-safety determination.",
+  "standards": [
+    {
+      "standard": "NSF/ANSI 42",
+      "systemScope": "Point-of-use and point-of-entry filtration for aesthetic effects",
+      "claimExamples": ["chlorine reduction", "taste and odor reduction", "chloramine reduction", "particulate reduction"],
+      "buyerMustVerify": ["exact model", "exact replacement element where listed", "specific certified reduction claim", "current certifier listing"],
+      "doesNotEstablish": ["certification for every health-related contaminant", "universal contaminant removal"],
+      "sourceUrl": "https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems",
+      "sourceType": "NSF consumer standards guidance",
+      "retrievalDate": "2026-08-26",
+      "units": null,
+      "uncertainty": "The exact certified claims vary by product and must be checked in a current certifier listing."
+    },
+    {
+      "standard": "NSF/ANSI 53",
+      "systemScope": "Filtration claims for contaminants with a health effect",
+      "claimExamples": ["lead reduction", "cyst reduction", "PFOA reduction", "PFOS reduction", "VOC reduction"],
+      "buyerMustVerify": ["exact model", "exact replacement element where listed", "named contaminant reduction claim", "service cycle and flow where listed"],
+      "doesNotEstablish": ["reduction of every contaminant covered anywhere in the standard", "fitness for an untested water condition"],
+      "sourceUrl": "https://info.nsf.org/Certified/DWTU/?os=app",
+      "sourceType": "NSF current certified-product search fields and reduction claims",
+      "retrievalDate": "2026-08-26",
+      "units": "Service cycle may be listed in gallons and flow in gallons per minute for individual products.",
+      "uncertainty": "A product may carry only a subset of the available Standard 53 claims."
+    },
+    {
+      "standard": "NSF/ANSI 58",
+      "systemScope": "Point-of-use reverse-osmosis drinking-water treatment systems",
+      "claimExamples": ["TDS reduction", "specific chemical or mechanical reduction claims", "recovery or efficiency ratings where certified"],
+      "buyerMustVerify": ["exact RO system model", "specific reduction claims", "performance data sheet", "current certifier listing"],
+      "doesNotEstablish": ["reduction of every dissolved contaminant", "certification of every prefilter or postfilter claim under another standard"],
+      "sourceUrl": "https://www.epa.gov/system/files/documents/2024-11/ws-products-home-water-treatment-guide_508.pdf",
+      "sourceType": "U.S. EPA WaterSense home water-treatment selection guide",
+      "retrievalDate": "2026-08-26",
+      "units": "Performance can include percent TDS reduction, recovery, efficiency, flow, and storage capacity depending on the claim.",
+      "uncertainty": "Additional filters in an RO system can carry separate certifications; Standard 58 alone does not describe every added stage."
+    },
+    {
+      "standard": "NSF/ANSI 401",
+      "systemScope": "Point-of-use and point-of-entry treatment claims for emerging compounds or incidental contaminants",
+      "claimExamples": ["one or more named emerging-compound reductions"],
+      "buyerMustVerify": ["exact model", "specific named 401 reduction claim", "current certifier listing"],
+      "doesNotEstablish": ["reduction of every compound covered by the standard", "a general all-contaminants claim"],
+      "sourceUrl": "https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems",
+      "sourceType": "NSF consumer standards guidance",
+      "retrievalDate": "2026-08-26",
+      "units": null,
+      "uncertainty": "The set of certified claims is product-specific and listings can change."
+    },
+    {
+      "standard": "NSF/ANSI 372",
+      "systemScope": "Lead-content compliance for wetted product materials",
+      "claimExamples": ["weighted-average lead content no greater than 0.25 percent"],
+      "buyerMustVerify": ["whether the need is material lead content or lead reduction from water"],
+      "doesNotEstablish": ["lead reduction from drinking water", "complete removal of lead"],
+      "sourceUrl": "https://wqa.org/wp-content/uploads/2022/10/LeadinDrinkingWater-FAQ.083122.pdf",
+      "sourceType": "Water Quality Association lead FAQ",
+      "retrievalDate": "2026-08-26",
+      "units": "0.25 percent weighted-average lead content threshold",
+      "uncertainty": "This record distinguishes a materials requirement from a treatment-performance claim; it does not evaluate any product."
+    }
+  ],
+  "verificationGates": [
+    {
+      "order": 1,
+      "gate": "Target",
+      "question": "What named contaminant, aesthetic problem, or treatment technology is the purchase meant to address?",
+      "evidence": "Utility report, appropriate water test, or a clearly defined taste/odor goal."
+    },
+    {
+      "order": 2,
+      "gate": "Standard",
+      "question": "Does the cited standard cover that kind of treatment or claim?",
+      "evidence": "NSF standards guidance or the applicable standard scope."
+    },
+    {
+      "order": 3,
+      "gate": "Claim",
+      "question": "Is the exact reduction claim named, rather than inferred from the standard number?",
+      "evidence": "Current accredited-certifier listing and product performance data."
+    },
+    {
+      "order": 4,
+      "gate": "Identity",
+      "question": "Does the listing match the exact system model and replacement element being bought?",
+      "evidence": "Model, trade name, element, and product type in the current listing."
+    },
+    {
+      "order": 5,
+      "gate": "Operating envelope",
+      "question": "Do capacity, flow, replacement interval, source-water limits, and other conditions fit the home?",
+      "evidence": "Performance data sheet, current manual, and certifier listing."
+    }
+  ],
+  "derivedFindings": [
+    "A standard number identifies a testing scope; it does not grant every reduction claim available under that standard.",
+    "Certification must be traced through both claim and product identity, including the replacement element when the listing distinguishes it.",
+    "NSF/ANSI 372 is a materials lead-content standard and must not be treated as proof of lead reduction from water.",
+    "An RO system can carry NSF/ANSI 58 plus separate certifications for added filtration stages, so the full claim set cannot be inferred from the RO label alone."
+  ],
+  "sources": [
+    {
+      "url": "https://www.nsf.org/consumer-resources/articles/standards-water-treatment-systems",
+      "retrievalDate": "2026-08-26",
+      "role": "Standard scopes and product-specific claim warning"
+    },
+    {
+      "url": "https://www.epa.gov/system/files/documents/2024-11/ws-products-home-water-treatment-guide_508.pdf",
+      "retrievalDate": "2026-08-26",
+      "role": "Independent certification, performance-data-sheet, and certifier-listing workflow"
+    },
+    {
+      "url": "https://info.nsf.org/Certified/DWTU/?os=app",
+      "retrievalDate": "2026-08-26",
+      "role": "Current product, element, standard, type, and reduction-claim search fields"
+    },
+    {
+      "url": "https://wqa.org/grow/product-certification/",
+      "retrievalDate": "2026-08-26",
+      "role": "Distinction between an NSF/ANSI standard and certification by an accredited body"
+    },
+    {
+      "url": "https://wqa.org/wp-content/uploads/2022/10/LeadinDrinkingWater-FAQ.083122.pdf",
+      "retrievalDate": "2026-08-26",
+      "role": "NSF/ANSI 372 lead-content versus lead-reduction distinction"
+    }
+  ]
+}

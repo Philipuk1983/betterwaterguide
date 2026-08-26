@@ -124,7 +124,7 @@ The NSF/ANSI standard should match the problem:
 - NSF/ANSI 44 for softeners
 - NSF/ANSI 55 for UV treatment
 
-A certification only matters for the contaminant it covers. A chlorine-rated filter is not a lead filter, and a softener is not a sediment filter. TDS strips do not identify chlorine, lead, or bacteria by themselves.
+A certification only matters for the contaminant it covers. A chlorine-rated filter is not a lead filter, and a softener is not a sediment filter. TDS strips do not identify chlorine, lead, or bacteria by themselves. Use the [five-gate NSF certification check](/guides/nsf-water-filter-certification-42-53-58-401-claims/) to match the exact standard, reduction claim, system model, and replacement element before buying.
 
 Long pipe runs and low pressure make placement even more important. A larger housing or a less aggressive micron rating can keep pressure loss smaller, while a cramped install forces harder trade-offs.
 

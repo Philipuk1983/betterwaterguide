@@ -90,6 +90,8 @@ Look for these points first:
 - Cartridge sizes and membrane replacements that are easy to source again later.
 - A faucet, tank, or tankless footprint that fits the sink area without crowding the cabinet.
 
+The standard number is only the first check. Our [water-filter certification claim guide](/guides/nsf-water-filter-certification-42-53-58-401-claims/) shows how to verify the exact reduction claim, complete system, replacement element, certifier listing, and performance data before treating the badge as evidence.
+
 Gallons per day can help, but it does not tell the whole story. Pressure, feed water temperature, and how often the household uses the tap all affect real-world output. A large rating is not useful if the cabinet is cramped, the feed pressure is weak, or the system is difficult to service.
 
 ## Maintenance Is Part of the Purchase
