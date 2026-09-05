@@ -236,7 +236,7 @@ Choose a slim whole-house filter when compact installation is the priority and w
 For heavy sediment, pair a Big Blue-style housing with an appropriate sediment cartridge or use a coarse sediment separator before the cartridge stage. For hardness, bacteria, iron, sulfur, nitrate, or another specific water issue, use treatment designed for that condition rather than relying on housing size alone.
 
 <div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=big%20blue%20style%20filter&tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=big%20blue%20style%20filter&tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
 </div>
 
 Useful next reads: [Whole-House Water Filter Installation Checklist](/guides/whole-house-water-filter-installation-steps-for-first-time-homeowners-kitchen-system-setup/) and [Where to Install a Whole-House Water Filter](/guides/whole-house-water-filter-placement-what-to-prioritize-before-you-install/).

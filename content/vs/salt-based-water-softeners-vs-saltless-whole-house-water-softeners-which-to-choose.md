@@ -186,7 +186,7 @@ Choose a saltless whole-house conditioner when a salt-based setup is impractical
 For households with serious hard-water symptoms, salt-based is the clear winner. For households prioritizing a cleaner, simpler treatment setup over full hardness removal, saltless is the better fit.
 
 <div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=salt%20based%20water%20softener&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=salt%20based%20water%20softener&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
 </div>
 
 ## Sources and verification

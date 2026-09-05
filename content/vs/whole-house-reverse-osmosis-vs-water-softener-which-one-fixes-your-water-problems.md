@@ -205,7 +205,7 @@ Whole-house reverse osmosis is the stronger system for a documented dissolved-wa
 Many homes do not need to choose one technology exclusively. A softener can protect the plumbing and reduce scale, while an under-sink RO system provides treated water for drinking and cooking. A full whole-house RO setup is most appropriate when the entire source water supply needs broad treatment beyond hardness control.
 
 <div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
 </div>
 
 ## Sources and verification

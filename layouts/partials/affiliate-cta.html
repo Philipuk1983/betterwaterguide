@@ -31,7 +31,7 @@
     {{ if and (not $amazonUrl) $product.asin }}{{ $amazonUrl = printf "https://www.amazon.com/dp/%s?tag=%s" $product.asin $site.Params.amazonTag }}{{ end }}
     {{ with $amazonUrl }}
     <div class="affiliate-cta__action">
-        <a href="{{ . }}" rel="nofollow sponsored noopener" target="_blank" class="button-link amazon-button">Check price on Amazon</a>
+        <a href="{{ . }}" rel="nofollow sponsored noopener" target="_blank" class="button-link amazon-button">{{ if in (lower .) "amazon.com/s?" }}Search Amazon{{ else }}View on Amazon{{ end }}</a>
         <p class="affiliate-note"><em>As an Amazon Associate, we may earn from qualifying purchases.</em></p>
     </div>
     {{ end }}

@@ -110,7 +110,7 @@ If you want to compare the two options directly, start here:
 The cleaner choice is the one that matches the water problem in the house, not the one that looks more impressive on paper.
 
 <div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=multistage%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=multistage%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
 </div>
 
 ## Comparison Table for multistage filter vs single stage whole house filter

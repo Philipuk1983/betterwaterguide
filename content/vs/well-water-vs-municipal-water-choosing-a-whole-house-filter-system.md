@@ -136,5 +136,5 @@ For a private well, use certified laboratory results to design the treatment tra
 If only one faucet needs help, use an under-sink filter instead. If only hot water smells, start at the water heater. Those two checks solve a lot of avoidable filter purchases before they start.
 
 <div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=well%20water&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a>
+    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=well%20water&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
 </div>

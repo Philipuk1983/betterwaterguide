@@ -7,5 +7,6 @@
     {{ with .Site.Data.site.author }}<span>By <a href="/authors/{{ .slug }}/">{{ .name }}</a></span>{{ end }}
     {{ $showReadingTime := or (eq .Section "best") (eq .Section "reviews") (eq .Section "vs") (eq .Section "guides") (eq .Section "fix") (eq .Section "compare") (eq .Section "size") (eq .Section "care") (eq .Section "replace") (eq .Section "avoid") (eq .Section "guide") (eq .Section "hub") (eq .Section "passages") (eq .Section "context") (eq .Section "comparisons") (eq .Section "topics") (eq .Section "based-on-books") (eq .Section "reading-orders") (eq .Section "book-vs-screen") (eq .Section "audiobooks") (eq .Section "books-like") (eq .Section "upcoming-adaptations") }}
     {{ if and $showReadingTime (gt .ReadingTime 0) }}<span>{{ .ReadingTime }} min read</span>{{ end }}
+    {{ if and (eq .Type "review") (isset .Params "hands_on_tested") (eq .Params.hands_on_tested false) }}<span><a href="/editorial-policy/">Research-based review; no hands-on testing</a></span>{{ end }}
     {{ end }}
 </div>
