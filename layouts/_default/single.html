@@ -31,7 +31,7 @@
 <div class="reading-layout"><aside class="reading-index" aria-label="Article contents">    {{ if and (ne .Section "authors") (.Site.Params.showTableOfContents) (.Params.toc | default true) }}
     <details data-module="table-of-contents" id="article-toc" class="table-of-contents">
         <summary>Contents</summary>
-        {{ .TableOfContents }}
+        {{ .TableOfContents | replaceRE `(?s)<a\s+[^>]*href="https?://[^"]*"[^>]*>(.*?)</a>` "$1" | safeHTML }}
     </details>
     {{ end }}</aside><div class="reading-content">
     {{ if and $affiliateAllowed $roundupPage $primaryAmazonUrl }}
