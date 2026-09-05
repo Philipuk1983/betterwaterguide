@@ -1,10 +1,17 @@
 ---
+purchase_options:
+- label: Search Amazon for SpringWell CF1
+  url: https://www.amazon.com/s?k=SpringWell%20CF1&tag=betterwaterguide-20
+- label: Search Amazon for Aquasana Rhino EQ-1000
+  url: https://www.amazon.com/s?k=Aquasana%20Rhino%20EQ-1000&tag=betterwaterguide-20
+purchase_note: Confirm the complete treatment system, included installation components, and suitability for your tested city
+  water.
 title: "SpringWell CF1 vs Aquasana Rhino EQ-1000 for City Water"
 slug: "springwell-cf1-vs-aquasana-rhino-eq-1000-for-city-water"
 keyword_id: 42126066
 topic_key: "comparison:aquasana rhino eq 1000 vs springwell cf1"
 date: 2026-08-12
-lastmod: 2026-08-12
+lastmod: 2026-09-05
 type: comparison
 category: "general"
 summary: "The SpringWell CF1 is the better fit for a household that prioritizes higher service flow and a relatively straightforward catalytic-carbon system for chlorinated city water."

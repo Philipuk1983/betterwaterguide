@@ -1,0 +1,12 @@
+{{ with .Params.purchase_options }}
+<section class="purchase-options" data-module="purchase-options" aria-label="Buying options">
+    <h2>Buying options</h2>
+    {{ with $.Params.purchase_note }}<p>{{ . }}</p>{{ end }}
+    <ul>
+    {{ range . }}
+        {{ if or (not .label) (not .url) }}{{ errorf "Incomplete purchase option in %s" $.File.Path }}{{ end }}
+        <li><a href="{{ .url }}" rel="nofollow sponsored noopener" target="_blank">{{ .label }}</a></li>
+    {{ end }}
+    </ul>
+</section>
+{{ end }}

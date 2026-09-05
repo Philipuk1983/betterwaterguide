@@ -1,10 +1,14 @@
 ---
+purchase_options:
+- label: Search Amazon for AquaBliss SF100 shower filter
+  url: https://www.amazon.com/s?k=AquaBliss%20SF100%20shower%20filter&tag=betterwaterguide-20
+purchase_note: Confirm SF100 and cartridge compatibility. A shower filter does not turn hard water into softened water.
 title: "AquaBliss SF100 Review: A Shower Filter for Chlorine, Not Hard-Water Softening"
 slug: "aquabliss-sf100-review-a-shower-filter-for-chlorine-not-hard-water-softening"
 keyword_id: 42126142
 topic_key: "review:aquabliss sf100 shower filter review"
 date: 2026-08-14
-lastmod: 2026-08-14
+lastmod: 2026-09-05
 type: review
 category: "general"
 summary: "Verdict: the AquaBliss SF100 Daily Revitalize Shower Filter is a reasonable low-plumbing option when the goal is to reduce shower chlorine and sediment and the standard half-inch connection fits."
