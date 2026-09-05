@@ -235,6 +235,9 @@
 
                 const summary = document.createElement("summary");
                 summary.textContent = extractFaqQuestionText(questionNode);
+                if (questionNode.id) {
+                    summary.id = questionNode.id;
+                }
 
                 currentAnswer = document.createElement("div");
                 currentAnswer.className = "faq-answer";
@@ -318,6 +321,9 @@
 
             const summary = document.createElement("summary");
             summary.textContent = extractFaqQuestionText(question);
+            if (question.id) {
+                summary.id = question.id;
+            }
 
             const answer = document.createElement("div");
             answer.className = "faq-answer";
@@ -1521,5 +1527,31 @@
         } else if (roundupArticle && products.length > 0) {
             ensureProductClosingCta(articleBody, products.slice(0, 1), `Best overall: ${products[0].name}`);
         }
+
+
+        const revealFaqFragment = () => {
+            if (!window.location.hash) {
+                return;
+            }
+            let fragmentId;
+            try {
+                fragmentId = decodeURIComponent(window.location.hash.slice(1));
+            } catch {
+                return;
+            }
+            const target = document.getElementById(fragmentId);
+            if (!target || !articleBody.contains(target) || !target.closest(".faq-section")) {
+                return;
+            }
+            let ancestor = target.closest("details");
+            while (ancestor) {
+                ancestor.open = true;
+                ancestor = ancestor.parentElement?.closest("details");
+            }
+            const scrollTarget = target.tagName === "DETAILS" ? target.firstElementChild : target;
+            scrollTarget.scrollIntoView({ block: "center" });
+        };
+        window.addEventListener("hashchange", revealFaqFragment);
+        requestAnimationFrame(revealFaqFragment);
     });
 })();
