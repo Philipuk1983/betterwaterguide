@@ -222,9 +222,10 @@ gtag('config', 'G-V3GZKYJF7J');
 <meta name="description" content="{{ $description }}">
 {{ with .Params.robots }}<meta name="robots" content="{{ . }}">{{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
-<link rel="icon" type="image/svg+xml" href="/logo.svg">
+
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <meta property="og:title" content="{{ $pageTitle }}">
@@ -245,28 +246,10 @@ gtag('config', 'G-V3GZKYJF7J');
 <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}feed.xml">
 {{ end }}
 
-{{ $headingFont := .Site.Params.headingFont | default "system-ui" }}
-{{ $bodyFont := .Site.Params.bodyFont | default "system-ui" }}
-{{ $fontFamilies := slice }}
-{{ if ne $headingFont "system-ui" }}
-  {{ $fontFamilies = $fontFamilies | append (printf "family=%s:wght@400;700" (replace $headingFont " " "%20")) }}
-{{ end }}
-{{ if and (ne $bodyFont "system-ui") (ne $bodyFont $headingFont) }}
-  {{ $fontFamilies = $fontFamilies | append (printf "family=%s:wght@400;600;700" (replace $bodyFont " " "%20")) }}
-{{ end }}
-{{ if gt (len $fontFamilies) 0 }}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="{{ printf "https://fonts.googleapis.com/css2?%s&display=swap" (delimit $fontFamilies "&") | safeURL }}" rel="stylesheet">
-{{ end }}
-
-{{ $css := resources.Get "css/main.css" }}
-{{ if $css }}
-  {{ $styles := $css | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
-{{ else }}
-  <link rel="stylesheet" href="/css/main.css">
-{{ end }}
+{{ $styles := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{ $libraryScript := resources.Get "js/site.js" | minify | fingerprint }}
+<script defer src="{{ $libraryScript.RelPermalink }}" integrity="{{ $libraryScript.Data.Integrity }}"></script>
 <script defer src="/js/article-enhancements.js?v={{ now.Unix }}"></script>
 
 {{- partial "schema-site.html" . -}}

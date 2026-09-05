@@ -3,13 +3,14 @@
 <head>
     {{- partial "head.html" . -}}
 </head>
-<body class="theme-{{ .Site.Params.themeVariant }} layout-{{ .Site.Params.layout }}">
+<body class="site-betterwaterguide {{ if .IsHome }}page-home{{ else if .IsPage }}page-article{{ else }}page-library{{ end }}">
+<a class="skip-link" href="#main-content">Skip to content</a>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T2FRHBB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {{- partial "header.html" . -}}
-    <main>
+    <main id="main-content" tabindex="-1">
         {{ if not .IsHome }}{{- partial "breadcrumbs.html" . -}}{{ end }}
         {{ block "main" . }}{{ end }}
     </main>

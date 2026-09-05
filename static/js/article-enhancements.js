@@ -1518,7 +1518,7 @@
             ensureProductClosingCta(articleBody, products, products[0].name);
         } else if (comparisonArticle) {
             ensureProductClosingCta(articleBody, products.slice(0, 2), "Compare both options");
-        } else if (roundupArticle) {
+        } else if (roundupArticle && products.length > 0) {
             ensureProductClosingCta(articleBody, products.slice(0, 1), `Best overall: ${products[0].name}`);
         }
     });

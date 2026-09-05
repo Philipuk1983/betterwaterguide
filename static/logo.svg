@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347 56" role="img" aria-label="Better Water Guide">
-  <style>
-    .logo-first { font-family: 'Manrope', system-ui, sans-serif; font-size: 28px; font-weight: 700; fill: #41d6e8; }
-    .logo-rest { font-family: 'Manrope', system-ui, sans-serif; font-size: 28px; font-weight: 700; fill: #0f8ec7; }
-  </style>
-  <text x="10" y="36" class="logo-first">Better</text>
-  <text x="130" y="36" class="logo-rest">Water Guide</text>
-
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="betterwaterguide"><rect width="40" height="40" fill="#153e57"/><g transform="translate(4 4)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3S6 14 6 20a10 10 0 0020 0C26 14 16 3 16 3zM10 21c0 4 3 5 6 5M12 17h8"/></g></svg>

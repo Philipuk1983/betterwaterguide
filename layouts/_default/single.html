@@ -15,25 +15,25 @@
     {{ if and (not $primaryAmazonUrl) $primaryProduct.asin }}{{ $primaryAmazonUrl = printf "https://www.amazon.com/dp/%s?tag=%s" $primaryProduct.asin .Site.Params.amazonTag }}{{ end }}
 {{ end }}
 {{ $mergedReviewVerdict := and $singleProductPage (not $roundupPage) (eq (.Type | default "") "review") $primaryAmazonUrl }}
-<article data-module="article-shell" data-module-role="article" class="article-shell clean-shell{{ if $roundupPage }} article-shell--roundup{{ end }}" itemscope itemtype="https://schema.org/Article"
+<article data-module="article-shell" data-module-role="article" class="article-shell betterwaterguide-article{{ if $roundupPage }} article-shell--roundup{{ end }}" itemscope itemtype="https://schema.org/Article"
     data-content-type="{{ .Type }}"
     data-review-framing="{{ .Params.review_framing | default "" }}"
     {{ if and $affiliateAllowed $singleProductPage $primaryAmazonUrl }}
     data-primary-product-name="{{ index $primaryProduct "name" }}"
     data-primary-product-url="{{ $primaryAmazonUrl }}"
     {{ end }}>
-    {{ if and $affiliateAllowed .Site.Params.amazonTag }}
-    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offers">
-        <div class="sponsored-side-stack">
-            {{- partial "audible-sponsored.html" . -}}
-            {{- partial "kindle-unlimited-sponsored.html" . -}}
-        </div>
-    </div>
-    {{ end }}
-    <header data-module="article-header" class="article-header">
+
+    <header data-module="article-header" class="article-header betterwaterguide-article-heading">
         <h1 itemprop="headline">{{ .Title }}</h1>
         {{- partial "article-meta.html" . -}}
-    </header>
+    <nav class="reading-tools" aria-label="Article navigation"><a href="#article-copy">Read the article <span aria-hidden="true">&darr;</span></a>{{ if and (ne .Section "authors") (.Site.Params.showTableOfContents) (.Params.toc | default true) }}<a href="#article-toc">On this page</a>{{ end }}</nav>
+</header>
+<div class="reading-layout"><aside class="reading-index" aria-label="Article contents">    {{ if and (ne .Section "authors") (.Site.Params.showTableOfContents) (.Params.toc | default true) }}
+    <details data-module="table-of-contents" id="article-toc" class="table-of-contents">
+        <summary>Contents</summary>
+        {{ .TableOfContents }}
+    </details>
+    {{ end }}</aside><div class="reading-content">
     {{ if and $affiliateAllowed $roundupPage $primaryAmazonUrl }}
     <div data-module="roundup-hero" class="roundup-hero-callout">
         <div class="roundup-hero-callout__content">
@@ -49,13 +49,8 @@
     {{ if $affiliateAllowed }}{{- partial "disclosure-notice.html" . -}}{{ end }}
             {{- partial "utility-tool.html" . -}}
     {{ if and $affiliateAllowed $singleProductPage (not $roundupPage) $primaryAmazonUrl }}{{ if eq (.Type | default "") "review" }}{{ partial "review-verdict-card.html" (dict "Page" . "product" $primaryProduct "site" .Site) }}{{ else }}{{ partial "affiliate-cta.html" (dict "Page" . "product" $primaryProduct "site" .Site "class" "affiliate-cta--hero") }}{{ end }}{{ end }}
-    {{ if and (ne .Section "authors") (.Site.Params.showTableOfContents) (.Params.toc | default true) }}
-    <details data-module="table-of-contents" class="table-of-contents">
-        <summary>Contents</summary>
-        {{ .TableOfContents }}
-    </details>
-    {{ end }}
-    {{ if $affiliateAllowed }}{{- partial "audible-inline-sponsored.html" . -}}{{ end }}
+
+
     {{ if $hasPrimaryProduct }}<script data-module="article-products-data" id="article-products-data" type="application/json">{{ jsonify $products | safeJS }}</script>{{ end }}
     {{ if and $singleProductPage $primaryAmazonUrl (ne (.Type | default "") "review") }}
     <template data-module="affiliate-cta-template" id="article-affiliate-cta-template">
@@ -65,13 +60,27 @@
     {{ if and $affiliateAllowed .Site.Params.amazonTag }}
     <div class="article-content-layout" style="position: relative;">
         <div class="article-main-column">
-            <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody">{{ partial "article-body.html" . }}</div>
+            <div data-module="article-body" data-section-root="article-body" id="article-copy" class="article-body" itemprop="articleBody">{{ partial "article-body.html" . }}</div>
             {{- partial "see-also.html" . -}}
         </div>
     </div>
     {{ else }}
-    <div data-module="article-body" data-section-root="article-body" class="article-body" itemprop="articleBody">{{ partial "article-body.html" . }}</div>
+    <div data-module="article-body" data-section-root="article-body" id="article-copy" class="article-body" itemprop="articleBody">{{ partial "article-body.html" . }}</div>
     {{- partial "see-also.html" . -}}
     {{ end }}
+
+{{ if and $affiliateAllowed .Site.Params.amazonTag }}
+<details class="sponsored-reading"><summary>Sponsored reading &amp; listening offers</summary>
+    {{ if and $affiliateAllowed .Site.Params.amazonTag }}
+    <div class="audible-sponsored-slot" role="complementary" aria-label="Sponsored offers">
+        <div class="sponsored-side-stack">
+            {{- partial "audible-sponsored.html" . -}}
+            {{- partial "kindle-unlimited-sponsored.html" . -}}
+        </div>
+    </div>
+    {{ end }}
+</details>
+{{ end }}
+</div></div>
 </article>
 {{ end }}

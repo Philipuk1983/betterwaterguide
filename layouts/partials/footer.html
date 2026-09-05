@@ -1,17 +1,4 @@
-<footer class="site-footer">
-    {{ $footerAffiliateAllowed := true }}
-{{ with .File }}{{ if eq .BaseFileName "about" }}{{ $footerAffiliateAllowed = false }}{{ end }}{{ end }}
-<div class="footer-inner">
-        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
-        <nav class="footer-nav">
-            <a href="/about/">About</a>
-            <a href="/disclosure/">Disclosure</a>
-            <a href="/privacy/">Privacy Policy</a>
-        </nav>
-{{ if $footerAffiliateAllowed }}
-        <p class="footer-disclosure">
-            <a href="/disclosure/">Disclosure</a>: As an Amazon Associate I earn from qualifying purchases. Other links may earn a commission at no extra cost to you.
-        </p>
-{{ end }}
-    </div>
-</footer>
+<footer class="site-footer minimal-footer betterwaterguide-colophon"><div class="footer-inner"><div>
+<p class="footer-brand">{{ .Site.Title }}</p><p class="footer-copy">Compare filter types, cartridge costs, and installation needs before committing to a water-treatment system.</p>
+{{ if .Site.Params.amazonTag }}<p class="footer-note">As an Amazon Associate, we earn from qualifying purchases.</p>{{ end }}
+</div><nav class="footer-nav" aria-label="Site information">{{ with .Site.GetPage "/about" }}<a href="{{ .RelPermalink }}">About</a>{{ end }}{{ with .Site.GetPage "/editorial-policy" }}<a href="{{ .RelPermalink }}">Editorial policy</a>{{ end }}{{ with .Site.GetPage "/disclosure" }}<a href="{{ .RelPermalink }}">Affiliate disclosure</a>{{ end }}{{ with .Site.GetPage "/privacy" }}<a href="{{ .RelPermalink }}">Privacy</a>{{ end }}{{ with .Site.GetPage "/spoiler-policy" }}<a href="{{ .RelPermalink }}">Spoiler policy</a>{{ end }}</nav></div></footer>
