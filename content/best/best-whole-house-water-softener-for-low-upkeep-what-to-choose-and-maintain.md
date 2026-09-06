@@ -134,7 +134,7 @@ Extra nominal capacity can reduce regeneration frequency when a system is correc
 
 ## How to size before choosing
 
-Start with a hardness result in grains per gallon (gpg), or convert a laboratory result from milligrams per litre as calcium carbonate using the lab or manufacturer's guidance. Estimate normal daily water use, then account for iron or manganese only as the softener manufacturer instructs. The goal is enough usable capacity between regenerations with a sensible reserve—not the largest tank you can fit.
+Start with a hardness result in grains per gallon (gpg), or convert a laboratory result from milligrams per litre as calcium carbonate using the lab or manufacturer's guidance. Estimate normal daily water use, then account for iron or manganese only as the softener manufacturer instructs. The goal is enough usable capacity between regenerations with a sensible reserve, not the largest tank you can fit.
 
 Three details change the answer:
 

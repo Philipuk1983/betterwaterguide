@@ -139,7 +139,7 @@ Renters may appreciate the reversible installation, subject to lease terms and t
 
 ## Who should choose another treatment
 
-Choose a softener for verified hardness and scale. Choose a whole-house system when the target contaminant must be addressed at baths, laundry, sinks, and appliances—and size it by tested water conditions and peak flow. The guide to [choosing a whole-house treatment system for hard water](https://betterwaterguide.com/guides/how-to-choose-a-whole-house-water-treatment-system-for-hard-water/) covers that route.
+Choose a softener for verified hardness and scale. Choose a whole-house system when the target contaminant must be addressed at baths, laundry, sinks, and appliances and size it by tested water conditions and peak flow. The guide to [choosing a whole-house treatment system for hard water](https://betterwaterguide.com/guides/how-to-choose-a-whole-house-water-treatment-system-for-hard-water/) covers that route.
 
 Do not use the SF100 as a drinking-water treatment unless the manufacturer specifically documents that application; it is a shower device. For private-well microbial risk or a health-based contaminant, use testing and certified treatment designed for that hazard.
 

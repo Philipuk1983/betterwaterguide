@@ -61,7 +61,7 @@ review_verdict_card:
     - "Changing three large cartridges will be difficult or too expensive"
 ---
 
-**Buy the [iSpring WGB32BM](https://www.amazon.com/dp/B01FI3BLYM?tag=betterwaterguide-20) when a water test supports all three jobs in its cartridge train: sediment first, chlorine and taste/odor second, then iron and manganese reduction. It is a strong fit for that combination—not a generic answer for every well or city-water problem.**
+**Buy the [iSpring WGB32BM](https://www.amazon.com/dp/B01FI3BLYM?tag=betterwaterguide-20) when a water test supports all three jobs in its cartridge train: sediment first, chlorine and taste/odor second, then iron and manganese reduction. It is a strong fit for that combination, not a generic answer for every well or city-water problem.**
 
 Skip it if the real issue is hardness, high TDS, microbes, or one drinking-water tap. Also skip it when iron or manganese exceeds the manufacturer's stated input range or when sulfur odor has not been diagnosed. Those cases need different treatment, not a more optimistic reading of the product title.
 

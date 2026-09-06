@@ -121,7 +121,7 @@ Whole-house water filtration suits homes where the same problem shows up in mult
 </div>
 
 ## Our recommendation
-For most homes, under-sink drinking-water filtration is the first place to look. It solves the problem people notice most often—the water they drink and cook with—without turning the whole house into a plumbing project. The exact [iSpring US31](https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20), model US31 and ASIN `B07CHXVRS5`, is a three-stage sediment-and-carbon example; it is not reverse osmosis or disinfection.
+For most homes, under-sink drinking-water filtration is the first place to look. It solves the problem people notice most often (the water they drink and cook with) without turning the whole house into a plumbing project. The exact [iSpring US31](https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20), model US31 and ASIN `B07CHXVRS5`, is a three-stage sediment-and-carbon example; it is not reverse osmosis or disinfection.
 
 Choose whole-house filtration when the same issue shows up in showers, laundry, fixtures, or appliances, or when a water report points to a whole-home nuisance problem. The exact [iSpring WGB32B](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20), model WGB32B and ASIN `B008GNRMYK`, combines a sediment stage with two carbon-block stages for treated water that matches those claims.
 

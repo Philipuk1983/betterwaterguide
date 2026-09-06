@@ -161,7 +161,7 @@ A pitcher or certified under-sink carbon filter can be simpler when chlorine tas
 
 ## Bottom line
 
-The APEC ROES-50 is worth considering as a conventional, documented under-sink RO system—not as a universal clean-water box. Its current operating range, dimensions, tank, component map, and service instructions make a disciplined pre-purchase decision possible.
+The APEC ROES-50 is worth considering as a conventional, documented under-sink RO system, not as a universal clean-water box. Its current operating range, dimensions, tank, component map, and service instructions make a disciplined pre-purchase decision possible.
 
 The strongest buyer measures pressure and cabinet clearance, verifies the exact treatment claim, resolves faucet and drain work, and accepts the filter schedule before ordering. If any one of those jobs fails, a different treatment type or RO architecture is the better purchase.
 

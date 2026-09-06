@@ -115,7 +115,7 @@ High TDS, brackish water, elevated sodium, nitrate, arsenic, and other dissolved
 
 That does not mean every home with unpleasant drinking water needs whole-house RO. Treating every gallon used for toilet flushing, laundry, bathing, and utility sinks is a major undertaking. For a drinking-water concern limited to the kitchen, under-sink RO or another targeted filter is often a more proportionate solution.
 
-Whole-house RO becomes more compelling when the water itself is difficult across the house. A challenging private well or brackish source can affect fixtures, appliances, bathing, laundry, and cooking water—not just a single drinking-water faucet.
+Whole-house RO becomes more compelling when the water itself is difficult across the house. A challenging private well or brackish source can affect fixtures, appliances, bathing, laundry, and cooking water, not just a single drinking-water faucet.
 
 Choose whole-house reverse osmosis when:
 
@@ -198,7 +198,7 @@ Skip both as a first response to a plumbing-specific issue. Brown water from cor
 Renters and households without a practical drain connection may be better served by a countertop filter or under-sink RO unit for drinking and cooking water. That approach keeps treatment focused on the water people consume most often.
 
 ## The decision
-For the usual hard-water complaints—scale, spots, soap residue, stiff laundry, and difficult bathroom cleaning—a water softener is the better purchase. It directly targets calcium and magnesium, keeps whole-house plumbing relatively straightforward, and has a lighter maintenance routine.
+For the usual hard-water complaints (scale, spots, soap residue, stiff laundry, and difficult bathroom cleaning), a water softener is the better purchase. It directly targets calcium and magnesium, keeps whole-house plumbing relatively straightforward, and has a lighter maintenance routine.
 
 Whole-house reverse osmosis is the stronger system for a documented dissolved-water problem that affects the entire home. It can reduce a broader range of dissolved material, but it demands more equipment, more maintenance, storage capacity, adequate pressure, and careful drainage planning.
 
