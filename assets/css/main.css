@@ -57,3 +57,6 @@ main{min-height:65vh}.site-home,.section-listing{max-width:1180px;padding:2.5rem
 .article-header .roundup-hero-callout{color:var(--ink)}.article-header .roundup-hero-callout a:not(.button-link){color:var(--accent)}.article-header .roundup-hero-callout .button-link{color:var(--paper)}
 
 .site-footer{border-top:1px solid var(--accent)}.footer-inner{flex-direction:column;gap:1rem}.footer-brand{font-weight:400;font-size:2rem}.footer-nav{max-width:none;border-top:1px solid var(--line);padding-top:1rem}
+/* Site-owned homepage artwork, September 2026. */
+.water-art{margin:2rem 0 3rem;min-width:0}.water-art img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}@media(max-width:760px){.water-index{order:0}.water-main{order:1}.water-art{margin:1.5rem 0 2rem}.water-art img{max-height:170px;object-position:center 55%}}
+@media(min-width:761px){.water-art img{height:250px;object-position:center 54%}}

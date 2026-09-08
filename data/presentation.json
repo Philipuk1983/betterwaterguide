@@ -14,7 +14,10 @@
     "assets/js/site.js",
     "static/js/article-enhancements.js",
     "hugo.toml",
-    "static/logo.svg"
+    "static/logo.svg",
+    "static/images/homepage-art/niche-editorial-480.webp",
+    "static/images/homepage-art/niche-editorial-768.webp",
+    "static/images/homepage-art/niche-editorial-1120.webp"
   ],
-  "revision": 2
+  "revision": 3
 }

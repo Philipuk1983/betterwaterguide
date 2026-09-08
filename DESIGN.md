@@ -20,3 +20,7 @@ The homepage composition in `layouts/index.html` is specific to this publication
 Build with Hugo and inspect the homepage, a library, a guide and a commercial page at desktop and phone widths. Compare screenshots with neighbouring portfolio sites, not just this site in isolation. Different filenames, class names or hashes are not proof of visual distinction.
 
 Keep real content, canonical URLs, author identity, analytics, product destinations and affiliate disclosures intact. Shared widget bug fixes must be reviewed against this site's local files. There is no claim that a visual redesign conceals common ownership or produces an SEO or conversion gain.
+
+## Homepage artwork, September 2026
+
+The water guide’s decorative flow bars are replaced by an original shallow carafe photograph within the reading surface. The question index remains the first mobile route, and the image is editorial niche context without a purification or testing claim.
