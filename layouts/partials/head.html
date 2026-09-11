@@ -216,8 +216,7 @@ gtag('config', 'G-V3GZKYJF7J');
 {{ $seoImageUrl := "" }}
 {{ with $seoImage }}{{ $seoImageUrl = cond (hasPrefix . "http") . (. | absURL) }}{{ end }}
 {{ $siteName := .Site.Params.footerLabel | default .Site.Title }}
-{{ $pageTitle := .Site.Title }}
-{{ if not .IsHome }}{{ $pageTitle = .Title }}{{ end }}
+{{ $pageTitle := .Title }}
 <title>{{ $pageTitle }}</title>
 <meta name="description" content="{{ $description }}">
 {{ with .Params.robots }}<meta name="robots" content="{{ . }}">{{ end }}

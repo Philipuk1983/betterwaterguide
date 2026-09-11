@@ -1,5 +1,5 @@
 ---
-title: "Better Water Guide"
+title: "Better Water Guide: Home Water Filter Reviews"
 description: "Better Water Guide helps U.S. homeowners choose home water filtration for clearer taste, cleaner fixtures, and easier maintenance."
 layout: "home"
 ---
