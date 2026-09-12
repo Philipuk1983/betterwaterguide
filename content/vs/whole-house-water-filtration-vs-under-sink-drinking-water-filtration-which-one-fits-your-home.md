@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "iSpring WGB32B whole-house filter"
-    amazon_url: "https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "iSpring US31 under-sink filter"
-    amazon_url: "https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "whole house water filtration vs under sink drinking water filtration"
   - "whole house water filtration vs under sink drinking water filtration comparison"
@@ -50,6 +41,16 @@ faq:
     answer: "Whole-house filtration is harder to maintain because it sits on the main line and usually takes more space, shutoff steps, and cleanup."
   - question: "Do I need a water test before buying either one?"
     answer: "A water report or basic home test is the most useful way to tell whether the problem is house-wide or limited to one tap."
+
+products:
+- name: iSpring WGB32B whole-house filter
+  amazon_url: https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+- name: iSpring US31 under-sink filter
+  amazon_url: https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
 ---
 ## The Short Version
 
@@ -115,19 +116,10 @@ The core trade-off is scope: whole-house filtration treats the entire plumbing s
 
 Whole-house water filtration suits homes where the same problem shows up in multiple places, such as chlorine odor in showers, sediment on fixtures, or off tastes and residue throughout the house. Under-sink drinking water filtration suits homes where the complaint is mostly at one faucet and the goal is better-tasting water for drinking, coffee, tea, and ice.
 
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring WGB32B on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring US31 on Amazon</a>
-</div>
-
 ## Our recommendation
 For most homes, under-sink drinking-water filtration is the first place to look. It solves the problem people notice most often (the water they drink and cook with) without turning the whole house into a plumbing project. The exact [iSpring US31](https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20), model US31 and ASIN `B07CHXVRS5`, is a three-stage sediment-and-carbon example; it is not reverse osmosis or disinfection.
 
 Choose whole-house filtration when the same issue shows up in showers, laundry, fixtures, or appliances, or when a water report points to a whole-home nuisance problem. The exact [iSpring WGB32B](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20), model WGB32B and ASIN `B008GNRMYK`, combines a sediment stage with two carbon-block stages for treated water that matches those claims.
-
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring WGB32B on Amazon</a>
-</div>
 
 ## Sources and verification
 

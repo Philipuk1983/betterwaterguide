@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "multistage filter"
-    amazon_url: "https://www.amazon.com/s?k=multistage%20filter&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "single stage whole house filter"
-    amazon_url: "https://www.amazon.com/s?k=single%20stage%20whole%20house%20filter&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "multistage filter vs single stage whole house filter"
   - "multistage filter vs single stage whole house filter comparison"
@@ -41,11 +32,7 @@ tags:
   - "water filter comparison"
   - "home water filtration"
   - "lane:direct_rivals"
-faq:
-  - question: "Which option is better for most people?"
-    answer: "The better option for most people is the one with the stronger value and fewer ownership compromises."
-  - question: "Is the pricier option worth it?"
-    answer: "The pricier option is only worth it if its premium strengths matter in normal use."
+
 ---
 
 A multistage setup splits the job into steps, so rough filtration and finer treatment do not depend on one cartridge alone. A single-stage whole house filter keeps everything in one housing, which makes the system easier to understand and maintain.
@@ -53,11 +40,6 @@ A multistage setup splits the job into steps, so rough filtration and finer trea
 If a water test or utility report shows sediment, rust staining, cloudy water, or fast filter loading, multistage is the better match. If the water is already fairly clean and the issue is mostly taste, odor, or a little debris, single-stage keeps things simpler. If hardness is the problem, neither one solves it.
 
 ## Quick comparison
-
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=multistage%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View multistage filter on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=single%20stage%20whole%20house%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View single stage whole house filter on Amazon</a>
-</div>
 
 ## What separates them
 
@@ -104,14 +86,10 @@ For homes with sediment, rust, or changing water quality, a multistage filter is
 
 If you want to compare the two options directly, start here:
 
-- [Multistage filter](https://www.amazon.com/s?k=multistage%20filter&tag=betterwaterguide-20)
-- [Single-stage whole house filter](https://www.amazon.com/s?k=single%20stage%20whole%20house%20filter&tag=betterwaterguide-20)
+- Multistage filter
+- Single-stage whole house filter
 
 The cleaner choice is the one that matches the water problem in the house, not the one that looks more impressive on paper.
-
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=multistage%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
-</div>
 
 ## Comparison Table for multistage filter vs single stage whole house filter
 

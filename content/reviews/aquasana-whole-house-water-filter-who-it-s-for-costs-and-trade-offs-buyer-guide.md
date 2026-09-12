@@ -60,10 +60,6 @@ Choose the base Rhino instead when 7 gpm is sufficient. Choose an under-sink fil
 
 Aquasana does not currently give this review a dependable exact Rhino Max Flow Amazon package. If you want a marketplace alternative for treated municipal water, compare the exact [iSpring WGB32B three-stage system](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20), which uses a sediment stage followed by two carbon-block stages. It is an alternative, not the reviewed Rhino, and it has different cartridges, flow claims, capacity, warranty, and installation requirements.
 
-<div class="section-product-cta">
-  <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View the iSpring WGB32B alternative on Amazon</a>
-</div>
-
 | Decision | Rhino Max Flow WH-1010 |
 |---|---|
 | Best use | Whole-home chlorine reduction on treated city water |

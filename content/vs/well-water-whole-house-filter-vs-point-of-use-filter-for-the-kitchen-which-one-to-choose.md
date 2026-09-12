@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "iSpring WGB32BM whole-house filter"
-    amazon_url: "https://www.amazon.com/dp/B01FI3BLYM?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "iSpring US31 under-sink filter"
-    amazon_url: "https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "well water whole house filter vs point-of-use filter"
   - "well water whole house filter vs point-of-use filter comparison"
@@ -41,11 +32,16 @@ tags:
   - "water filter comparison"
   - "home water filtration"
   - "lane:beginner_vs_pro"
-faq:
-  - question: "Which option is better for most people?"
-    answer: "The better option for most people is the one with the stronger value and fewer ownership compromises."
-  - question: "Is the pricier option worth it?"
-    answer: "The pricier option is only worth it if its premium strengths matter in normal use."
+
+products:
+- name: iSpring WGB32BM whole-house filter
+  amazon_url: https://www.amazon.com/dp/B01FI3BLYM?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+- name: iSpring US31 under-sink filter
+  amazon_url: https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
 ---
 
 ## Quick answer
@@ -126,11 +122,6 @@ For a kitchen-only well water issue, the point-of-use filter is usually the bett
 A whole-house filter makes more sense when the same problem reaches the rest of the house. Then the broader system is doing real work, because every tap is part of the concern.
 
 If the problem is hardness, iron, sulfur-related water issues, or microbial concern, start with the treatment that addresses that specific problem. A filter can still belong in the setup, but it should not be expected to carry the whole job alone.
-
-<div class='section-product-cta'>
-  <a class='button-link amazon-button' href='https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>View iSpring US31 on Amazon</a>
-  <a class='button-link amazon-button' href='https://www.amazon.com/dp/B01FI3BLYM?tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>View iSpring WGB32BM on Amazon</a>
-</div>
 
 ## Exact examples and limits
 

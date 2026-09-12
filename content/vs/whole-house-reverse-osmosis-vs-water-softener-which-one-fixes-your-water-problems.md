@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "whole house reverse osmosis"
-    amazon_url: "https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "water softener"
-    amazon_url: "https://www.amazon.com/s?k=water%20softener&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "whole house reverse osmosis vs water softener"
   - "whole house reverse osmosis vs water softener comparison"
@@ -66,11 +57,6 @@ faq:
 For plain hard-water problems, buy a water softener. It addresses the minerals that leave crusty deposits on fixtures, make soap harder to rinse away, and build up inside water-using appliances.
 
 Choose whole-house reverse osmosis when a water test identifies a broader issue that affects water at every tap. That route can handle more than hardness, but it also requires more space, plumbing work, maintenance, and drain capacity.
-
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house reverse osmosis on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=water%20softener&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View water softener on Amazon</a>
-</div>
 
 ## A Softener Solves Hardness. Whole-House RO Treats a Broader Water Problem.
 
@@ -203,10 +189,6 @@ For the usual hard-water complaints (scale, spots, soap residue, stiff laundry, 
 Whole-house reverse osmosis is the stronger system for a documented dissolved-water problem that affects the entire home. It can reduce a broader range of dissolved material, but it demands more equipment, more maintenance, storage capacity, adequate pressure, and careful drainage planning.
 
 Many homes do not need to choose one technology exclusively. A softener can protect the plumbing and reduce scale, while an under-sink RO system provides treated water for drinking and cooking. A full whole-house RO setup is most appropriate when the entire source water supply needs broad treatment beyond hardness control.
-
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20reverse%20osmosis&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
-</div>
 
 ## Sources and verification
 

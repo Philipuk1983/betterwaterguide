@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "iSpring WGB32B sediment-and-carbon system"
-    amazon_url: "https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "Pentek R50-BB pleated sediment cartridge"
-    amazon_url: "https://www.amazon.com/dp/B0CJMXSP9Z?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "whole house carbon filter vs whole house sediment filter"
   - "whole house carbon filter vs whole house sediment filter comparison"
@@ -50,6 +41,16 @@ faq:
     answer: "If the well water carries sand, rust, or cloudy particles, sediment should come first. If the water also has taste or odor issues, carbon can follow."
   - question: "Is a whole house system too much for a kitchen-only problem?"
     answer: "Often, yes. If the rest of the house does not need the same treatment, a pitcher filter or an under-sink filter is usually the simpler path."
+
+products:
+- name: iSpring WGB32B sediment-and-carbon system
+  amazon_url: https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+- name: Pentek R50-BB pleated sediment cartridge
+  amazon_url: https://www.amazon.com/dp/B0CJMXSP9Z?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
 ---
 
 If the water is already clear but the taste or odor bothers you, carbon is the cleaner match. If the kitchen shows particles, cloudy bursts, or grit, sediment should come first. And if both show up, the order matters: sediment first, carbon second.
@@ -58,11 +59,6 @@ If the water is already clear but the taste or odor bothers you, carbon is the c
 - Choose carbon filtration when kitchen water looks clear but has a chlorine taste or odor supported by the water report.
 - Choose sediment filtration when you see sand, rust, cloudiness, or other particles.
 - Use both when the water has both problems, with sediment first and carbon after it.
-
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring WGB32B on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B0CJMXSP9Z?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View Pentek R50-BB on Amazon</a>
-</div>
 
 ## Comparison at a glance
 

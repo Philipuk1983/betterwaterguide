@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "well water"
-    amazon_url: "https://www.amazon.com/s?k=well%20water&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "municipal water whole house filter"
-    amazon_url: "https://www.amazon.com/s?k=municipal%20water%20whole%20house%20filter&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "well water vs municipal water whole house filter"
   - "well water vs municipal water whole house filter comparison"
@@ -92,11 +83,6 @@ Water pressure matters too. If the house already has weak flow, do not stack on 
 
 ## Quick comparison
 
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=well%20water&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View well water on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=municipal%20water%20whole%20house%20filter&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View municipal water whole house filter on Amazon</a>
-</div>
-
 ## Comparison Table for well water vs municipal water whole house filter
 
 | Decision point | well water | municipal water whole house filter |
@@ -135,6 +121,3 @@ For a private well, use certified laboratory results to design the treatment tra
 
 If only one faucet needs help, use an under-sink filter instead. If only hot water smells, start at the water heater. Those two checks solve a lot of avoidable filter purchases before they start.
 
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=well%20water&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
-</div>

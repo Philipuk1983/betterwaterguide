@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "AquaBliss SF100 shower filter"
-    amazon_url: "https://www.amazon.com/dp/B01MUBU0YC?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "iSpring WGB32B whole-house filter"
-    amazon_url: "https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "shower filter vs whole house filter for hard water"
   - "shower filter vs whole house filter for hard water comparison"
@@ -41,11 +32,16 @@ tags:
   - "water filter comparison"
   - "home water filtration"
   - "lane:beginner_vs_pro"
-faq:
-  - question: "Which option is better for most people?"
-    answer: "Choose a shower filter for a chlorine-related complaint at one shower and a whole-house filter when the same documented issue affects several fixtures. Neither is a water softener."
-  - question: "Is the pricier option worth it?"
-    answer: "A main-line filter is worth the added plumbing only when several fixtures need the same treatment and the exact system is sized for household flow."
+
+products:
+- name: AquaBliss SF100 shower filter
+  amazon_url: https://www.amazon.com/dp/B01MUBU0YC?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+- name: iSpring WGB32B whole-house filter
+  amazon_url: https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
 ---
 
 ## Start with the job each product does
@@ -120,14 +116,6 @@ And skip both as the main answer if the real issue is hard-water scale. That is 
 - [iSpring WGB32B](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20), model WGB32B and ASIN `B008GNRMYK`, is the whole-house sediment-and-carbon example.
 
 Neither product removes hardness minerals. Buy one only for its documented filtration job, not because the page title includes “hard water.”
-
-<div class='section-product-cta'>
-  <a class='button-link amazon-button' href='https://www.amazon.com/dp/B01MUBU0YC?tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>View AquaBliss SF100 on Amazon</a>
-</div>
-
-<div class='section-product-cta'>
-  <a class='button-link amazon-button' href='https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20' rel='nofollow sponsored noopener' target='_blank'>View iSpring WGB32B on Amazon</a>
-</div>
 
 ## The practical decision
 For coverage, the whole-house filter wins because it treats the entire home instead of one shower. For a small, local fix, a shower filter is the simpler choice. For the actual hard-water problem, though, neither option is the final answer on its own. If scale is the main issue, a softener or scale-control system belongs in the plan.

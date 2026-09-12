@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "Aquasure Harmony AS-HS32D water softener"
-    amazon_url: "https://www.amazon.com/dp/B07F18VG8L?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "Pentair Pelican NS3-P salt-free conditioner"
-    amazon_url: "https://www.amazon.com/dp/B000NG3YJU?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "whole house water softener vs whole house water conditioning system"
   - "whole house water softener vs whole house water conditioning system comparison"
@@ -50,17 +41,22 @@ faq:
     answer: "Usually yes. It tends to ask less from the household than a standard softener setup."
   - question: "What if the only issue is taste at the kitchen sink?"
     answer: "Neither is the first choice. A point-of-use under-sink filter or reverse osmosis system is a better match."
+
+products:
+- name: Aquasure Harmony AS-HS32D water softener
+  amazon_url: https://www.amazon.com/dp/B07F18VG8L?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+- name: Pentair Pelican NS3-P salt-free conditioner
+  amazon_url: https://www.amazon.com/dp/B000NG3YJU?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
 ---
 
 ## Start with the kitchen problem
 If your kitchen keeps collecting white scale on faucet parts, sink edges, or dishwasher pieces, the choice between a true ion-exchange softener and a salt-free conditioning system is not just about water treatment. It is about removing hardness minerals versus trying to control how scale forms, and about how much upkeep the household will accept.
 
 If you want the shortest answer: choose the softener when hard-water scale is the real problem. Choose the conditioning system when the home needs a lighter setup and the kitchen can live with less aggressive scale control.
-
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B07F18VG8L?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View Aquasure Harmony AS-HS32D on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B000NG3YJU?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View Pentair Pelican NS3-P on Amazon</a>
-</div>
 
 ## The core difference
 A softener removes hardness minerals such as calcium and magnesium from incoming water. That is the direct way to reduce the mineral buildup that shows up on faucet aerators, sink hardware, dishwashers, and other kitchen surfaces that see a lot of water.
@@ -136,10 +132,6 @@ For most homes that are trying to fix visible scale in the kitchen, a true water
 Choose a salt-free conditioner when the household wants no brine tank and accepts scale control instead of mineral removal. The exact [Pentair Pelican NS3-P](https://www.amazon.com/dp/B000NG3YJU?tag=betterwaterguide-20), ASIN `B000NG3YJU`, is the 1-to-3-bathroom salt-free example; do not describe its conditioned water as softened water.
 
 If the kitchen is the place where hard water is making itself known, the softener is the better pick. If the home needs a less demanding system, the conditioning option is the easier one to live with.
-
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B07F18VG8L?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View Aquasure Harmony AS-HS32D on Amazon</a>
-</div>
 
 ## Sources and verification
 

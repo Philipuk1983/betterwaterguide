@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "Waterdrop G3P800 tankless under-sink RO"
-    amazon_url: "https://www.amazon.com/dp/B0987FCQQW?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "iSpring RCC7AK tank-based under-sink RO"
-    amazon_url: "https://www.amazon.com/dp/B005LJ8EXU?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "whole house reverse osmosis vs point of use reverse osmosis"
   - "whole house reverse osmosis vs point of use reverse osmosis comparison"
@@ -50,6 +41,16 @@ faq:
     answer: "Then point-of-use may be awkward to place. In that case, a simpler under-sink filter or pitcher can be easier to live with than forcing another large piece of equipment into the cabinet."
   - question: "Should a kitchen decision start with the water or the space?"
     answer: "Start with both. If the kitchen is the only place that needs treated water, point-of-use usually wins. If the whole home needs the same treatment and there is proper space for the equipment, whole-house becomes the stronger option."
+
+products:
+- name: Waterdrop G3P800 tankless under-sink RO
+  amazon_url: https://www.amazon.com/dp/B0987FCQQW?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+- name: iSpring RCC7AK tank-based under-sink RO
+  amazon_url: https://www.amazon.com/dp/B005LJ8EXU?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
 ---
 
 ## The short answer

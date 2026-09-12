@@ -19,9 +19,9 @@ description: "The SpringWell CF1 is the better fit for a household that prioriti
 schema_type: Article
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
-claim_ceiling: "research_only"
+claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "editorial_research"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow

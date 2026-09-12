@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "iSpring US31 under-sink filter"
-    amazon_url: "https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "iSpring WGB32B whole-house filter"
-    amazon_url: "https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "undersink carbon filter vs whole house carbon filter"
   - "undersink carbon filter vs whole house carbon filter comparison"
@@ -41,11 +32,16 @@ tags:
   - "water filter comparison"
   - "home water filtration"
   - "lane:convenience_vs_performance"
-faq:
-  - question: "Which option is better for most people?"
-    answer: "Under-sink carbon is the better default when only drinking water needs treatment; whole-house carbon is justified when the same chlorine issue affects several fixtures."
-  - question: "Is the pricier option worth it?"
-    answer: "Whole-house carbon is worth the added plumbing only when a water report and multi-fixture symptoms support treating the full household flow."
+
+products:
+- name: iSpring US31 under-sink filter
+  amazon_url: https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+- name: iSpring WGB32B whole-house filter
+  amazon_url: https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
 ---
 If the goal is better-tasting drinking water at the kitchen sink, the undersink route keeps the job local. If the goal is to improve the water that reaches showers, laundry, and every indoor tap, the whole-house route reaches farther. Neither choice is a cure-all, and that matters more than the marketing language around either one.
 
@@ -64,11 +60,6 @@ The core trade-off is reach versus simplicity. Undersink carbon keeps the fix lo
 For a single faucet with taste or odor, undersink carbon is the tighter match. For housewide chlorine-style smell or taste in showers, bathrooms, and laundry, whole-house carbon is the broader option. If the issue is hardness, iron, visible sediment, or microbial safety, neither style should be treated as the first solution; and if chloramine is involved, the media and system design matter more than the filter category alone.
 
 The concrete examples here are the [iSpring US31 under-sink system](https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20) and [iSpring WGB32B whole-house system](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20). Match the exact models and treatment claims rather than treating either as a universal carbon filter.
-
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring US31 on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring WGB32B on Amazon</a>
-</div>
 
 ## What each filter actually does
 
@@ -130,10 +121,6 @@ For a single tap that tastes or smells off, the [iSpring US31](https://www.amazo
 For housewide chlorine-style taste or odor, the [iSpring WGB32B](https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20) is the broader example. Match model WGB32B and ASIN `B008GNRMYK`; it uses a sediment stage and two carbon-block stages and must be sized for peak household flow.
 
 If the water issue is not mainly taste or smell, neither of these should be treated as a catch-all.
-
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring US31 on Amazon</a>
-</div>
 
 ## Sources and verification
 

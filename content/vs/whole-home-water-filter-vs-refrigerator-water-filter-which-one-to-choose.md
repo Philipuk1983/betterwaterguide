@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "iSpring WGB32B whole-house filter"
-    amazon_url: "https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "everydrop Filter 1 EDR1RXD1"
-    amazon_url: "https://www.amazon.com/dp/B00UB38V2A?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "whole house filter vs refrigerator water filter"
   - "whole house filter vs refrigerator water filter comparison"
@@ -50,6 +41,16 @@ faq:
     answer: "No. A whole-house filter treats incoming household water, while the refrigerator filter remains the appliance's separate point-of-use cartridge. Using both means replacing both filters on their own schedules."
   - question: "Is a whole-house filter enough for hard water?"
     answer: "No. Standard whole-house sediment and carbon filters do not remove the hardness minerals responsible for scale. Hard-water treatment requires a water softener or another system designed for hardness reduction."
+
+products:
+- name: iSpring WGB32B whole-house filter
+  amazon_url: https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+- name: everydrop Filter 1 EDR1RXD1
+  amazon_url: https://www.amazon.com/dp/B00UB38V2A?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
 ---
 
 A whole-house filter is built for a different problem: water concerns that show up throughout the home. If showers smell strongly of chlorine, several faucets collect grit, or you want treated water at bathroom sinks, laundry hookups, and kitchen taps, filtration at the refrigerator will not reach far enough.
@@ -69,11 +70,6 @@ A whole-house filter is built for a different problem: water concerns that show 
 **Choose a refrigerator water filter** when the concern is limited to drinking water and ice. It is the clear winner for apartments, condos, rentals, and homes where nobody is bothered by shower water, bathroom water, or laundry water.
 
 **Choose a whole house filter** when the problem is noticeable at more than one fixture. It is the better route for chlorine odor in showers, sediment at several faucets, or water concerns that affect the entire household rather than one dispenser.
-
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring WGB32B on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B00UB38V2A?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View everydrop Filter 1 on Amazon</a>
-</div>
 
 ## The Main Difference: Where the Water Is Filtered
 
@@ -190,10 +186,6 @@ Buy a whole-house filter when water concerns reach beyond the refrigerator. Chlo
 The deciding question is simple: Is the problem in one appliance, or is it in the water used across the house? A refrigerator filter handles the first situation. A whole-house system handles the second.
 
 For a concrete comparison, iSpring model WGB32B (ASIN `B008GNRMYK`) is a three-stage, main-line sediment-and-carbon system. everydrop Filter 1 model EDR1RXD1 (ASIN `B00UB38V2A`) is an appliance cartridge and should be bought only after the refrigerator compatibility list confirms the exact model. They illustrate the scope difference; they are not interchangeable substitutes.
-
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View iSpring WGB32B on Amazon</a>
-</div>
 
 ## Sources and verification
 

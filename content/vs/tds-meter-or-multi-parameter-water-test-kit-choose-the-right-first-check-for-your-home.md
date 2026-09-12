@@ -12,9 +12,9 @@ description: "A multi-parameter kit such as the Varify 17-in-1 Complete Drinking
 schema_type: FAQPage
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
-claim_ceiling: "research_only"
+claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "editorial_research"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,13 +22,6 @@ source_basis:
   - "current HM Digital and Varify product specifications"
   - "EPA private-well testing guidance"
   - "editorial analysis of screening limits and repeat-use value"
-products:
-  - name: "HM Digital TDS-EZ Water Quality Tester"
-    amazon_url: "https://www.amazon.com/dp/B002C0A7ZY?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-    buyer_note: "Best for: repeat before-and-after TDS trends around an RO system, not drinking-water safety clearance."
-    brand: "HM Digital"
 keywords:
   - "tap water tds meter vs whole house water tester"
   - "tap water tds meter vs whole house water tester comparison"
@@ -48,6 +41,15 @@ faq:
     answer: "No. It is a broad home screen with visual interpretation and limited scope. A certified lab uses methods selected for named contaminants and formal results."
   - question: "Where should I sample whole-house water?"
     answer: "Collect source and treated samples at locations that isolate the treatment stage, using consistent flush conditions. A professional can identify the correct ports when plumbing is complex."
+
+products:
+- name: HM Digital TDS-EZ Water Quality Tester
+  amazon_url: https://www.amazon.com/dp/B002C0A7ZY?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+  buyer_note: 'Best for: repeat before-and-after TDS trends around an RO system, not
+    drinking-water safety clearance.'
+  brand: HM Digital
 ---
 
 ## The decision

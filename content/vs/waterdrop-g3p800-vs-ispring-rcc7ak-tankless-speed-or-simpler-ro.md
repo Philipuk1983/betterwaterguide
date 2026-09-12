@@ -12,9 +12,9 @@ description: "Choose the Waterdrop G3P800 when fast tankless dispensing, a narro
 schema_type: Article
 evidence_tier: "research_only"
 methodology_mode: "editorial_research"
-claim_ceiling: "research_only"
+claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "editorial_research"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,19 +22,6 @@ source_basis:
   - "current Waterdrop G3P800 and iSpring RCC7AK product pages and manuals"
   - "current model-level certification information"
   - "editorial analysis of cabinet fit, recovery, service, and ownership cost"
-products:
-  - name: "Waterdrop G3P800 Tankless Reverse Osmosis System"
-    amazon_url: "https://www.amazon.com/dp/B0987FCQQW?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-    buyer_note: "Best for: high drinking-water demand, limited cabinet floor space, and buyers who accept power and proprietary cartridges."
-    brand: "Waterdrop"
-  - name: "iSpring RCC7AK 75-GPD Alkaline Reverse Osmosis System"
-    amazon_url: "https://www.amazon.com/dp/B005LJ8EXU?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-    buyer_note: "Best for: buyers who prefer a traditional tank, standard staged service, and no powered pump."
-    brand: "iSpring"
 keywords:
   - "waterdrop g3p800 vs ispring rcc7ak"
   - "waterdrop g3p800 vs ispring rcc7ak comparison"
@@ -68,6 +55,22 @@ tags:
   - "general"
   - "home-maintenance"
   - "lane:direct_rivals"
+
+products:
+- name: Waterdrop G3P800 Tankless Reverse Osmosis System
+  amazon_url: https://www.amazon.com/dp/B0987FCQQW?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+  buyer_note: 'Best for: high drinking-water demand, limited cabinet floor space,
+    and buyers who accept power and proprietary cartridges.'
+  brand: Waterdrop
+- name: iSpring RCC7AK 75-GPD Alkaline Reverse Osmosis System
+  amazon_url: https://www.amazon.com/dp/B005LJ8EXU?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
+  buyer_note: 'Best for: buyers who prefer a traditional tank, standard staged service,
+    and no powered pump.'
+  brand: iSpring
 ---
 
 Neither is automatically the better filter for every home. Source-water chemistry, pressure, drain access, cabinet layout, local plumbing rules, and the exact certified performance claims must match the installation.

@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "big blue style filter"
-    amazon_url: "https://www.amazon.com/s?k=big%20blue%20style%20filter&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "slim whole house filter"
-    amazon_url: "https://www.amazon.com/s?k=slim%20whole%20house%20filter&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "big blue style filter vs slim whole house filter"
   - "big blue style filter vs slim whole house filter comparison"
@@ -76,11 +67,6 @@ faq:
 
 A slim whole-house filter is the better pick when installation space is tight and water use is light. It fits more easily in a compact utility area, and the smaller cartridges are easier to store and handle.
 
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=big%20blue%20style%20filter&tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View big blue style filter on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=slim%20whole%20house%20filter&tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View slim whole house filter on Amazon</a>
-</div>
-
 ## Quick Comparison
 
 | Decision factor | Big Blue-style filter | Slim whole-house filter |
@@ -93,11 +79,6 @@ A slim whole-house filter is the better pick when installation space is tight an
 | Low incoming pressure | Helps avoid adding unnecessary restriction when paired with an appropriate cartridge. | A restrictive cartridge can make an existing low-pressure problem more noticeable. |
 
 The choice comes down to capacity versus space. A Big Blue-style housing gives the cartridge more room to work. A slim housing takes up less room in the mechanical area.
-
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=big%20blue%20style%20filter&tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View big blue style filter on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=slim%20whole%20house%20filter&tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View slim whole house filter on Amazon</a>
-</div>
 
 ## Why the Housing Size Matters
 
@@ -234,10 +215,6 @@ Choose a Big Blue-style filter for the usual whole-house job: a full-time home t
 Choose a slim whole-house filter when compact installation is the priority and water demand is modest. It suits small homes, condos, cabins, simple prefilter duties, and locations where a larger housing cannot be serviced properly.
 
 For heavy sediment, pair a Big Blue-style housing with an appropriate sediment cartridge or use a coarse sediment separator before the cartridge stage. For hardness, bacteria, iron, sulfur, nitrate, or another specific water issue, use treatment designed for that condition rather than relying on housing size alone.
-
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=big%20blue%20style%20filter&tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
-</div>
 
 Useful next reads: [Whole-House Water Filter Installation Checklist](/guides/whole-house-water-filter-installation-steps-for-first-time-homeowners-kitchen-system-setup/) and [Where to Install a Whole-House Water Filter](/guides/whole-house-water-filter-placement-what-to-prioritize-before-you-install/).
 

@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,11 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "Pentek R50-BB pleated sediment cartridge"
-    amazon_url: "https://www.amazon.com/dp/B0CJMXSP9Z?tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "whole house filter media bed vs pleated filter cartridge"
   - "whole house filter media bed vs pleated filter cartridge comparison"
@@ -37,11 +32,12 @@ tags:
   - "water filter comparison"
   - "home water filtration"
   - "lane:direct_rivals"
-faq:
-  - question: "Which option is better for most people?"
-    answer: "The better option for most people is the one with the stronger value and fewer ownership compromises."
-  - question: "Is the pricier option worth it?"
-    answer: "The pricier option is only worth it if its premium strengths matter in normal use."
+
+products:
+- name: Pentek R50-BB pleated sediment cartridge
+  amazon_url: https://www.amazon.com/dp/B0CJMXSP9Z?tag=betterwaterguide-20
+  cta_label: Product link
+  cta_text: Check price on Amazon
 ---
 
 ## Start with the sediment load
@@ -132,10 +128,6 @@ For many homes, a pleated filter cartridge is the cleaner choice because it is c
 Choose a professionally sized backwashing media tank when sediment is heavy enough that cartridges clog too fast. No dependable one-size-fits-all media-tank Amazon path was verified for this update because tank diameter, control valve, media, backwash flow, drain capacity, and the actual sediment load all change the right configuration.
 
 If the water problem is mainly sediment, that split gives you a clear starting point. If the problem goes beyond sediment, the filter choice should follow the actual water issue rather than the easiest-looking housing.
-
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/dp/B0CJMXSP9Z?tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View Pentek R50-BB on Amazon</a>
-</div>
 
 ## Comparison Table for whole house filter media bed vs pleated filter cartridge
 

@@ -14,7 +14,7 @@ evidence_tier: "specs_plus_sources"
 methodology_mode: "structured_product_research"
 claim_ceiling: "no_first_hand_claims"
 hands_on_tested: false
-review_framing: "structured_commercial_analysis"
+review_framing: "researched_buyer_analysis"
 toc: true
 draft: false
 robots: index,follow
@@ -22,15 +22,6 @@ source_basis:
   - "structured product specifications"
   - "retailer and listing details available at publication time"
   - "editorial synthesis of fit, trade-offs, and buying criteria"
-products:
-  - name: "salt based water softener"
-    amazon_url: "https://www.amazon.com/s?k=salt%20based%20water%20softener&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
-  - name: "whole house saltless water softener"
-    amazon_url: "https://www.amazon.com/s?k=whole%20house%20saltless%20water%20softener&tag=betterwaterguide-20"
-    cta_label: "Product link"
-    cta_text: "Check price on Amazon"
 keywords:
   - "salt based water softener vs whole house saltless water softener"
   - "salt based water softener vs whole house saltless water softener comparison"
@@ -70,20 +61,15 @@ A saltless whole-house system is better described as a water conditioner. It lea
 
 **Choose saltless** when you mainly want a simpler whole-house scale-control setup and do not want to handle salt or regeneration wastewater.
 
-<div class="section-product-cta comparison-cta-pair">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=salt%20based%20water%20softener&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View salt based water softener on Amazon</a>
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=whole%20house%20saltless%20water%20softener&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">View whole house saltless water softener on Amazon</a>
-</div>
-
 ## Salt-Based Softening and Saltless Conditioning Are Different Treatments
 
 The word “softener” gets used loosely, but these systems do different jobs.
 
-A [salt-based water softener](https://www.amazon.com/s?k=salt%20based%20water%20softener&tag=betterwaterguide-20) uses ion-exchange resin to remove calcium and magnesium from the water. As hard water moves through the resin tank, the hardness minerals are exchanged for sodium or potassium ions. The resin is later cleaned during regeneration with a salt brine solution, and the rinse water is sent to a drain.
+A salt-based water softener uses ion-exchange resin to remove calcium and magnesium from the water. As hard water moves through the resin tank, the hardness minerals are exchanged for sodium or potassium ions. The resin is later cleaned during regeneration with a salt brine solution, and the rinse water is sent to a drain.
 
 That mineral removal is why a salt-based system addresses the familiar signs of hard water: white crust around faucets, spots on shower doors, film on glassware, reduced soap lather, and stiff-feeling laundry.
 
-A [whole-house saltless water softener](https://www.amazon.com/s?k=whole%20house%20saltless%20water%20softener&tag=betterwaterguide-20) does not remove calcium and magnesium. It uses conditioning media intended to change how those minerals form scale crystals. The hardness stays dissolved in the water, so a hardness test will still show hard water after treatment.
+A whole-house saltless water softener does not remove calcium and magnesium. It uses conditioning media intended to change how those minerals form scale crystals. The hardness stays dissolved in the water, so a hardness test will still show hard water after treatment.
 
 This distinction matters most when the household expects a noticeable change in bathing, cleaning, and laundry. Saltless conditioning can help with scale management, but it does not create the same soft-water result as ion exchange.
 
@@ -184,10 +170,6 @@ Buy a salt-based water softener when hard water is affecting daily life througho
 Choose a saltless whole-house conditioner when a salt-based setup is impractical or unwanted. It avoids salt bags, brine discharge, and a regeneration drain, making it better suited to tight spaces and drain-limited installations. Its role is scale conditioning, not true softening.
 
 For households with serious hard-water symptoms, salt-based is the clear winner. For households prioritizing a cleaner, simpler treatment setup over full hardness removal, saltless is the better fit.
-
-<div class="section-product-cta">
-    <a class="button-link amazon-button" href="https://www.amazon.com/s?k=salt%20based%20water%20softener&amp;tag=betterwaterguide-20" rel="nofollow sponsored noopener" target="_blank">Search Amazon</a>
-</div>
 
 ## Sources and verification
 
