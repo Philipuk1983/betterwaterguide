@@ -1237,31 +1237,33 @@
     const calculateUtilityResult = (spec, form) => {
         const values = getToolValues(form);
         if (spec.kind === "picker") {
-            const votes = {};
+            const checks = [];
             form.querySelectorAll("select[data-tool-input]").forEach((select) => {
                 const selected = select.selectedOptions[0];
-                const result = selected?.dataset.result;
-                if (result) {
-                    const weight = Math.max(1, toNumber(selected.dataset.weight, 1));
-                    votes[result] = (votes[result] || 0) + weight;
-                }
+                const input = spec.inputs.find((item) => item.key === select.name);
+                const results = spec.results.filter((item) => item.key === selected.dataset.result);
+                results.forEach((result) => checks.push({
+                    title: `${input.label}: ${selected.textContent}`,
+                    body: result.body
+                }));
             });
-            const winner = Object.entries(votes).sort((left, right) => right[1] - left[1])[0]?.[0] || "balanced";
-            const result = findToolResult(spec, winner);
-            return result
-                ? { title: result.title, body: result.body }
-                : { title: "Balanced fit", body: "Use the guide below to compare your constraints before deciding." };
+            return {
+                title: "Checks for your selections",
+                body: "Review all selected conditions. A favorable answer does not cancel another restriction.",
+                checks
+            };
         }
 
         if (spec.kind === "checklist") {
             const inputs = spec.inputs || [];
             const checked = inputs.filter((input) => values[input.key] === true).length;
-            const percent = inputs.length ? Math.round((checked / inputs.length) * 100) : 0;
-            const key = percent >= 80 ? "high" : percent >= 50 ? "medium" : "low";
-            const result = findToolResult(spec, key);
             return {
-                title: `${percent}% complete - ${formatUtilityText(result?.title || "Readiness check")}`,
-                body: result?.body || "Use the guide below to close the remaining gaps."
+                title: `${checked} of ${inputs.length} checks marked complete`,
+                body: "Completion records your answers, not verified readiness or safety. Resolve each outstanding requirement before relying on this checklist.",
+                checks: inputs.filter((input) => values[input.key] !== true).map((input) => ({
+                    title: input.label,
+                    body: "Not marked complete. Check this requirement against the relevant instructions."
+                }))
             };
         }
 
@@ -1326,19 +1328,38 @@
 
             const output = document.createElement("output");
             output.className = "utility-tool__result";
+            output.style.display = "block";
             output.setAttribute("aria-live", "polite");
             const title = document.createElement("strong");
             const body = document.createElement("span");
+            title.style.display = "block";
+            body.style.display = "block";
+            body.style.marginTop = "0.5rem";
             output.append(title, body);
             const button = document.createElement("button");
             button.className = "utility-tool__action";
             button.type = "submit";
-            button.textContent = spec.kind === "calculator" ? "Calculate result" : "Update result";
+            button.textContent = spec.kind === "calculator" ? "Calculate result" : "Review selected checks";
 
             const update = () => {
                 const result = calculateUtilityResult(spec, form);
                 title.textContent = formatUtilityText(result.title);
                 body.textContent = result.body;
+                output.querySelectorAll("[data-tool-checks]").forEach((list) => list.remove());
+                if (result.checks?.length) {
+                    const list = document.createElement("ul");
+                    list.dataset.toolChecks = "true";
+                    list.style.paddingInlineStart = "1.25rem";
+                    result.checks.forEach((check) => {
+                        const item = document.createElement("li");
+                        item.style.marginBlock = "0.75rem";
+                        const label = document.createElement("strong");
+                        label.textContent = check.title;
+                        item.append(label, document.createTextNode(`: ${check.body}`));
+                        list.appendChild(item);
+                    });
+                    output.appendChild(list);
+                }
             };
 
             root.closest(".utility-tool")?.querySelector("#utility-tool-title")?.childNodes.forEach((node) => {

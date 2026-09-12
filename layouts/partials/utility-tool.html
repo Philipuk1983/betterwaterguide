@@ -1,15 +1,22 @@
 {{ with .Params.utility_tool }}
 <section class="utility-tool" data-module="utility-tool" aria-labelledby="utility-tool-title">
     <div class="utility-tool__intro">
-        <p class="utility-tool__kicker">Interactive Tool</p>
+        {{ if eq .kind "calculator" }}
+        <p class="utility-tool__kicker">Interactive calculation</p>
         <h2 id="utility-tool-title">{{ .title }}</h2>
         {{ with .dek }}<p>{{ . }}</p>{{ end }}
-        <p class="utility-tool__assumptions">Assumes your inputs reflect the current room, budget, workflow, or constraint. Verify measurements, prices, compatibility, safety limits, and policy requirements before acting.</p>
+        {{ else }}
+        <p class="utility-tool__kicker">Interactive checklist</p>
+        <h2 id="utility-tool-title">Checks for this decision</h2>
+        <p>Choose the options that match your situation and review each condition below. This checklist does not calculate a safety score or verify product compatibility.</p>
+        {{ end }}
+        {{ if eq .kind "calculator" }}<p class="utility-tool__assumptions">Assumes your inputs reflect the current room, budget, workflow, or constraint. Verify measurements, prices, compatibility, safety limits, and policy requirements before acting.</p>{{ end }}
     </div>
     <div class="utility-tool__app" data-tool-root>
         <noscript>Enable JavaScript to use this tool.</noscript>
         <script type="application/json" data-tool-spec>{{ . | jsonify | safeJS }}</script>
     </div>
+    {{ if eq .kind "calculator" }}
     {{ with .examples }}
     <div class="utility-tool__examples" aria-label="Worked tool example">
         {{ range first 1 . }}
@@ -25,6 +32,7 @@
         {{ with .next_decision }}<p><strong>Next decision:</strong> {{ . }}</p>{{ end }}
         {{ end }}
     </div>
+    {{ end }}
     {{ end }}
 </section>
 {{ end }}
