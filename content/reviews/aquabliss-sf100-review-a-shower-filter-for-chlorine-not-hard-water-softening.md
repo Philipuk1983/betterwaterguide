@@ -2,65 +2,79 @@
 purchase_options:
 - label: Search Amazon for AquaBliss SF100 shower filter
   url: https://www.amazon.com/s?k=AquaBliss%20SF100%20shower%20filter&tag=betterwaterguide-20
-purchase_note: Confirm SF100 and cartridge compatibility. A shower filter does not turn hard water into softened water.
-title: "AquaBliss SF100 Review: A Shower Filter for Chlorine, Not Hard-Water Softening"
-slug: "aquabliss-sf100-review-a-shower-filter-for-chlorine-not-hard-water-softening"
+purchase_note: Confirm SF100 and cartridge compatibility. A shower filter does not turn hard water into softened
+  water.
+title: 'AquaBliss SF100 Review: A Shower Filter for Chlorine, Not Hard-Water Softening'
+slug: aquabliss-sf100-review-a-shower-filter-for-chlorine-not-hard-water-softening
 keyword_id: 42126142
-topic_key: "review:aquabliss sf100 shower filter review"
+topic_key: review:aquabliss sf100 shower filter review
 date: 2026-08-14
-lastmod: 2026-09-05
+lastmod: '2026-09-23'
 type: review
-category: "general"
-summary: "Verdict: the AquaBliss SF100 Daily Revitalize Shower Filter is a reasonable low-plumbing option when the goal is to reduce shower chlorine and sediment and the standard half-inch connection fits."
-description: "Verdict: the AquaBliss SF100 Daily Revitalize Shower Filter is a reasonable low-plumbing option when the goal is to reduce shower chlorine and sediment."
+category: general
+summary: 'Verdict: the AquaBliss SF100 Daily Revitalize Shower Filter is a reasonable low-plumbing option when the
+  goal is to reduce shower chlorine and sediment and the standard half-inch connection fits.'
+description: Review AquaBliss SF100 cartridge compatibility, chlorine claims, replacement routine and the limits
+  of its chloramine and hardness evidence.
 schema_type: Article
-evidence_tier: "research_only"
-methodology_mode: "editorial_research"
-claim_ceiling: "research_only"
+evidence_tier: research_only
+methodology_mode: editorial_research
+claim_ceiling: research_only
 hands_on_tested: false
-review_framing: "researched_fit_analysis"
+review_framing: researched_fit_analysis
 toc: true
 draft: false
 robots: index,follow
 source_basis:
-  - "editorial research and decision-support framing"
-  - "published details available at the time of writing"
+- editorial research and decision-support framing
+- published details available at the time of writing
 keywords:
-  - "AquaBliss SF100 shower filter review"
-  - "AquaBliss SF100 shower filter review review"
-  - "is AquaBliss SF100 shower filter review worth it"
+- AquaBliss SF100 shower filter review
+- AquaBliss SF100 shower filter review review
+- is AquaBliss SF100 shower filter review worth it
 tags:
-  - "home water filtration"
-  - "water filter"
-  - "under sink water filter"
-  - "whole house water filter"
-  - "reverse osmosis system"
-  - "hard water filter"
-  - "water filter pitcher"
-  - "water test kit"
-  - "chlorine water filter"
-  - "drinking water filter"
-  - "water filter replacement"
-  - "well water filter"
-  - "sediment filter"
-  - "carbon water filter"
-  - "water softener"
-  - "filtered tap water"
-  - "kitchen water filter"
-  - "shower water filter"
-  - "limescale filter"
-  - "ro water system"
-  - "water filtration guide"
-  - "best water filter"
-  - "home water quality"
-  - "filter cartridges"
-  - "clean drinking water"
-  - "general"
-  - "home-maintenance"
-  - "lane:mainstream_pick"
+- home water filtration
+- water filter
+- under sink water filter
+- whole house water filter
+- reverse osmosis system
+- hard water filter
+- water filter pitcher
+- water test kit
+- chlorine water filter
+- drinking water filter
+- water filter replacement
+- well water filter
+- sediment filter
+- carbon water filter
+- water softener
+- filtered tap water
+- kitchen water filter
+- shower water filter
+- limescale filter
+- ro water system
+- water filtration guide
+- best water filter
+- home water quality
+- filter cartridges
+- clean drinking water
+- general
+- home-maintenance
+- lane:mainstream_pick
 ---
 
 The SF100's strength is convenience: it installs between the shower arm and shower head, uses a replaceable SFC100 cartridge, and does not require a whole-house plumbing project. Its compromises are recurring cartridge changes, added bulk at the shower connection, and performance claims that need to be matched to the actual water problem.
+
+
+## Check the replacement family before comparing bundle prices
+
+AquaBliss's [current compatibility guide](https://help.aquabliss.com/en/articles/1764881884-which-cartridges-can-i-use) separates the SF100/SF220 family from the SF400/SF500 family. The SFC100 is the SF100's standard cartridge; similar naming does not make every AquaBliss replacement interchangeable.
+
+Use this checkout record: housing model, finish, included cartridge, spare-cartridge model and quantity. A low headline price may buy only a replacement element, while a larger bundle may contain spares you will not use before your plans change. Price the housing once and the actual SFC100 replacement routine separately.
+
+Also check the physical effect with the existing shower head: added projection, comfortable standing height and room to open the housing. A half-inch connection establishes only part of fit. It does not establish a sound wall connection or clearance for a heavy handheld assembly.
+
+The [SF100 product page](https://aquabliss.com/products/sf100-shower-filter) documents the current model and marketing claims. This review has not independently measured reduction performance or verified a model-specific certification for chloramine reduction. If that is your decisive requirement, obtain the exact supporting evidence before buying; a media list or skin-and-hair promise is insufficient.
 
 ## What AquaBliss documents
 

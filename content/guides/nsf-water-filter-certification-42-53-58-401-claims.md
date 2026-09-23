@@ -1,41 +1,58 @@
 ---
-title: "NSF Water Filter Certification: Verify 42, 53, 58 and 401 Claims"
-slug: "nsf-water-filter-certification-42-53-58-401-claims"
-topic_key: "guide:nsf water filter certification 42 53 58 401 claims"
+title: 'NSF Water Filter Certification: Verify 42, 53, 58 and 401 Claims'
+slug: nsf-water-filter-certification-42-53-58-401-claims
+topic_key: guide:nsf water filter certification 42 53 58 401 claims
 date: 2026-08-26
-lastmod: 2026-08-26
+lastmod: '2026-09-23'
 type: guide
-category: "home-maintenance"
-summary: "An NSF/ANSI standard number is only the start. Verify the exact contaminant claim, system model, replacement element, certifier listing, and operating limits before buying a water filter."
-description: "Use this five-gate method to verify NSF/ANSI 42, 53, 58, 401, and 372 water-filter claims without treating a standard badge as universal proof."
+category: home-maintenance
+summary: An NSF/ANSI standard number is only the start. Verify the exact contaminant claim, system model, replacement
+  element, certifier listing, and operating limits before buying a water filter.
+description: Use this five-gate method to verify NSF/ANSI 42, 53, 58, 401, and 372 water-filter claims without treating
+  a standard badge as universal proof.
 schema_type: Article
-evidence_tier: "research_only"
-methodology_mode: "source_reconciliation"
-claim_ceiling: "research_only"
+evidence_tier: research_only
+methodology_mode: source_reconciliation
+claim_ceiling: research_only
 hands_on_tested: false
-review_framing: "editorial_research"
+review_framing: editorial_research
 toc: true
 draft: false
 robots: index,follow
 source_basis:
-  - "NSF drinking-water standards guidance and current certified-product search fields"
-  - "U.S. EPA WaterSense treatment-selection guidance"
-  - "Water Quality Association certification and lead-content guidance"
+- NSF drinking-water standards guidance and current certified-product search fields
+- U.S. EPA WaterSense treatment-selection guidance
+- Water Quality Association certification and lead-content guidance
 keywords:
-  - "NSF water filter certification"
-  - "NSF 42 vs 53 vs 58 vs 401"
-  - "how to verify water filter certification"
-  - "NSF 372 lead reduction"
+- NSF water filter certification
+- NSF 42 vs 53 vs 58 vs 401
+- how to verify water filter certification
+- NSF 372 lead reduction
 tags:
-  - "water filter certification"
-  - "water filtration guide"
-  - "NSF ANSI standards"
-  - "lane:buying_factors"
+- water filter certification
+- water filtration guide
+- NSF ANSI standards
+- lane:buying_factors
 ---
 
 An NSF/ANSI number does **not** mean a water filter reduces every contaminant associated with that standard. Before buying, verify five things in order: the water problem, the applicable standard, the exact certified reduction claim, the exact system and replacement element, and the conditions shown in the current listing or performance data sheet.
 
 That order prevents the most common certification mistake: seeing a familiar number on a box and silently extending it into a claim the exact product never earned.
+
+
+## When the box, seller and certification listing disagree
+
+Treat a mismatch as an unresolved purchase condition. Save the listing date, complete model suffix, replacement cartridge code and named reduction claim. A family name such as “Advanced” does not identify the tested assembly.
+
+| Conflict | Evidence to request before relying on the claim |
+|---|---|
+| Retail page lists a claim absent from the certifier entry | A direct entry for the exact system and that contaminant |
+| Box names a different replacement cartridge | Written confirmation linking that cartridge to the listed assembly |
+| Only a component appears in the directory | The complete-system listing, or a clear statement that it is not system certification |
+| Old data sheet and current listing differ | Current performance sheet and explanation of the revision |
+| Product cannot be found under the advertised brand | Legal manufacturer, alternate listed model and certifier confirmation |
+
+A missing search result alone does not prove fraud: private-label names and punctuation can make directory searches awkward. Equally, a seller's screenshot is not enough to resolve an identity conflict. Record the outcome as **verified**, **different claim**, or **unresolved**. If the claim is the reason for buying, keep the product off the shortlist until it is verified. This preserves a useful distinction between “not established by the evidence” and “proven ineffective.”
 
 ## The five-gate certification check
 

@@ -7,16 +7,18 @@ toc: false
 
 ## Who We Are
 
-Better Water Guide is an independent product review site focused on home water filtration, water filter, under sink water filter, whole house water filter, reverse osmosis system, hard water filter, water filter pitcher, water test kit, chlorine water filter, drinking water filter, water filter replacement, well water filter, sediment filter, carbon water filter, water softener, filtered tap water, kitchen water filter, shower water filter, limescale filter, ro water system, water filtration guide, best water filter, home water quality, filter cartridges, and clean drinking water for U.S. shoppers. We research specifications, analyze real user feedback, and compare products so you can make confident buying decisions.
+Better Water Guide helps U.S. homeowners turn water reports and equipment specifications into a clear purchase brief. Our guides distinguish treatment claims from marketing labels, show how to compare installation quotes, and make replacement-part and maintenance requirements easier to check.
 
 ## How We Review Products
 
-Every product we cover goes through the same process:
+Our researched buying guides use these checks:
 
 1. **Specification analysis** - We compare official specs across competing products, focusing on the numbers that actually affect daily use.
-2. **User feedback research** - We analyze buyer feedback across major U.S. retailers, identifying repeated praise and recurring complaints.
+2. **Claim verification** - We distinguish manufacturer statements, independent certification scopes and unresolved questions. A standard number is not proof of every reduction claim.
 3. **Comparison context** - Every review places the product against direct competitors so you can see how it stacks up.
 4. **Honest assessment** - We highlight genuine strengths and real limitations. No product is perfect, and we do not pretend otherwise.
+
+We have not conducted hands-on product testing for these researched reviews. Worked calculations are labelled examples, not household measurements. A guide cannot diagnose a water supply or establish that it is safe; source-specific laboratory results and qualified local advice may be necessary. Product requirements and availability can change, so the exact current model documentation matters.
 
 ## Editorial Independence
 

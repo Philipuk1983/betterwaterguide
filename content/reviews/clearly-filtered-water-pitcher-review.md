@@ -1,51 +1,74 @@
 ---
-title: "Clearly Filtered Water Pitcher Review: Certification, Filter Life, and Fit"
-slug: "clearly-filtered-water-pitcher-review"
-topic_key: "review:clearly filtered water pitcher review"
+title: 'Clearly Filtered Water Pitcher Review: Certification, Filter Life, and Fit'
+slug: clearly-filtered-water-pitcher-review
+topic_key: review:clearly filtered water pitcher review
 date: 2026-08-24
-lastmod: 2026-08-24
+lastmod: '2026-09-23'
 type: review
-category: "drinking-water-filters"
-summary: "The Clearly Filtered pitcher offers broad published reduction data in a no-install format, but buyers should separate its NSF 42 and 372 certifications from its wider third-party testing."
-description: "A researched Clearly Filtered water pitcher review covering certification scope, performance data, capacity, filter-life math, water-source limits, and buyer fit."
+category: drinking-water-filters
+summary: The Clearly Filtered pitcher offers broad published reduction data in a no-install format, but buyers should
+  separate its NSF 42 and 372 certifications from its wider third-party testing.
+description: A researched Clearly Filtered water pitcher review covering certification scope, performance data,
+  capacity, filter-life math, water-source limits, and buyer fit.
 schema_type: Article
-evidence_tier: "specs_plus_sources"
-methodology_mode: "structured_product_research"
-claim_ceiling: "no_first_hand_claims"
+evidence_tier: specs_plus_sources
+methodology_mode: structured_product_research
+claim_ceiling: no_first_hand_claims
 hands_on_tested: false
-review_framing: "researched_buyer_analysis"
+review_framing: researched_buyer_analysis
 toc: true
 draft: false
 robots: index,follow
 source_basis:
-  - "Clearly Filtered current product specifications, checked August 24, 2026"
-  - "Clearly Filtered November 2025 pitcher performance data and certification scope"
-  - "Clearly Filtered current filter-life and use guidance"
-  - "WaterFilterGuru July 2026 independent test and use report"
-  - "editorial certification, usage, and treatment-fit analysis without hands-on testing"
+- Clearly Filtered current product specifications, checked August 24, 2026
+- Clearly Filtered November 2025 pitcher performance data and certification scope
+- Clearly Filtered current filter-life and use guidance
+- WaterFilterGuru July 2026 independent test and use report
+- editorial certification, usage, and treatment-fit analysis without hands-on testing
 products:
-  - name: "Clearly Filtered Water Pitcher, updated model"
-    asin: "B0CW4CDPNJ"
-    cta_text: "View the exact Clearly Filtered pitcher on Amazon"
-    buyer_note: "Best for municipally treated tap water when a renter or small household wants no-install filtration and has checked the published data for its actual concern."
+- name: Clearly Filtered Water Pitcher, updated model
+  asin: B0CW4CDPNJ
+  cta_text: View the exact Clearly Filtered pitcher on Amazon
+  buyer_note: Best for municipally treated tap water when a renter or small household wants no-install filtration
+    and has checked the published data for its actual concern.
 review_verdict_card:
   primary_cta:
-    label: "View the exact Clearly Filtered pitcher on Amazon"
-    href: "https://www.amazon.com/dp/B0CW4CDPNJ?tag=betterwaterguide-20"
-keywords: ["clearly filtered water pitcher review", "clearly filtered pitcher review", "is clearly filtered worth it"]
-tags: ["water filter pitcher", "drinking water", "filter certification"]
+    label: View the exact Clearly Filtered pitcher on Amazon
+    href: https://www.amazon.com/dp/B0CW4CDPNJ?tag=betterwaterguide-20
+keywords:
+- clearly filtered water pitcher review
+- clearly filtered pitcher review
+- is clearly filtered worth it
+tags:
+- water filter pitcher
+- drinking water
+- filter certification
 faq:
-  - question: "Is the Clearly Filtered pitcher NSF certified?"
-    answer: "Yes, the current pitcher is certified to NSF/ANSI 42 for chlorine taste and odor reduction and NSF/ANSI 372 for lead-content requirements. Its wider contaminant-reduction table comes from additional third-party laboratory testing, not certification to every listed reduction standard."
-  - question: "How often should the Clearly Filtered pitcher filter be replaced?"
-    answer: "Clearly Filtered recommends replacement after 100 gallons or six months, whichever comes first. Frequent refills or difficult source water can bring that date forward."
-  - question: "Can the pitcher make unsafe water safe?"
-    answer: "No. The manufacturer designs it for municipally treated tap water and says it is not for microbiologically unsafe water or water of unknown quality. Follow local health-authority guidance for a notice, private well, or unknown source."
+- question: Is the Clearly Filtered pitcher NSF certified?
+  answer: Yes, the current pitcher is certified to NSF/ANSI 42 for chlorine taste and odor reduction and NSF/ANSI
+    372 for lead-content requirements. Its wider contaminant-reduction table comes from additional third-party laboratory
+    testing, not certification to every listed reduction standard.
+- question: How often should the Clearly Filtered pitcher filter be replaced?
+  answer: Clearly Filtered recommends replacement after 100 gallons or six months, whichever comes first. Frequent
+    refills or difficult source water can bring that date forward.
+- question: Can the pitcher make unsafe water safe?
+  answer: No. The manufacturer designs it for municipally treated tap water and says it is not for microbiologically
+    unsafe water or water of unknown quality. Follow local health-authority guidance for a notice, private well,
+    or unknown source.
 ---
 
 The Clearly Filtered Water Pitcher is a strong no-install option for buyers who want to look beyond chlorine taste and odor, but only after one important distinction: the current pitcher is NSF certified to Standards 42 and 372, while its much broader contaminant-reduction table comes from additional third-party laboratory testing. Those are both useful forms of evidence; they are not interchangeable.
 
 Buy it when a municipal water report or appropriate test gives you a specific treatment question, the published performance table addresses it, and a gravity pitcher fits the household’s refill routine. Skip it when the source is microbiologically unsafe or unknown, the entire home needs treatment, or the household will resent filling a half-gallon reservoir several times a day.
+
+
+## Read a high reduction percentage with its footnotes
+
+The [manufacturer's performance page](https://clearlyfiltered.com/pages/pitcher-performance-data) says its displayed results are maximum removal percentages and notes that not every tested contaminant had an established NSF/ANSI protocol. That qualification matters alongside the existing certification distinction.
+
+For a concern that drives your purchase, save the exact result row together with its units, challenge concentration, reported output, test method and capacity information. Ask for clarification if the summary table does not establish how performance was assessed through filter life. A maximum percentage from controlled testing is not a promise of the same reduction on every fill in your home.
+
+Do not rank two pitchers solely by “99.x%” labels when the test water or reporting limits differ. An output shown as less than a laboratory limit is also not necessarily zero. Compare the evidence relevant to your water concern first, then apply the refill and replacement arithmetic below. This keeps a useful broad test table from becoming a blanket safety guarantee.
 
 ## Quick verdict
 

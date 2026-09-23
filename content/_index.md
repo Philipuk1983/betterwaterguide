@@ -4,4 +4,4 @@ description: "Better Water Guide helps U.S. homeowners choose home water filtrat
 layout: "home"
 ---
 
-Better Water Guide is a practical home water filtration desk that helps U.S. homeowners choose the right water filter, from under-sink water filter and reverse osmosis system to whole house water filter, water filter pitcher, and well water filter. We break down water concerns like chlorine, sediment, and hard water, then match them to the right system, limescale filter, shower water filter, water softener, and filtered tap water setup, with clear trade-offs on pressure, flow, and installation. Get maintenance-ready guidance on filter cartridges and water filter replacement schedules, plus testing support with a water test kit so you can verify clean drinking water before you buy.
+Start with the water question, then choose the equipment. Better Water Guide explains how to read treatment claims, compare installation quotes and plan maintenance for kitchen and whole-house systems. Our researched reviews and worked examples make the limits of the evidence visible, including when a laboratory result or qualified installer is needed.

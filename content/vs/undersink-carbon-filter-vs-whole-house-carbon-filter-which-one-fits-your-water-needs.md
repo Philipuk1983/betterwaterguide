@@ -1,49 +1,59 @@
 ---
-title: "Under-Sink vs Whole-House Carbon Filters"
-slug: "undersink-carbon-filter-vs-whole-house-carbon-filter-which-one-fits-your-water-needs"
+title: Under-Sink vs Whole-House Carbon Filters
+slug: undersink-carbon-filter-vs-whole-house-carbon-filter-which-one-fits-your-water-needs
 keyword_id: 40708217
-topic_key: "comparison:undersink carbon filter vs whole house carbon filter"
+topic_key: comparison:undersink carbon filter vs whole house carbon filter
 date: 2026-07-06
-lastmod: 2026-08-13
+lastmod: '2026-09-23'
 type: comparison
-category: "home-maintenance"
-summary: "An undersink carbon filter is the narrower fix when the problem is mainly at one faucet. A whole-house carbon filter makes more sense when the same chlorine taste or smell shows up across the home."
-description: "Choose an under-sink carbon filter for one drinking tap or whole-house carbon when chlorine taste and odor affect showers, laundry, and every faucet."
+category: home-maintenance
+summary: An undersink carbon filter is the narrower fix when the problem is mainly at one faucet. A whole-house
+  carbon filter makes more sense when the same chlorine taste or smell shows up across the home.
+description: Compare under-sink and whole-house carbon by treated branches, claim-specific flow and capacity at
+  your actual water use.
 schema_type: FAQPage
-evidence_tier: "specs_plus_sources"
-methodology_mode: "structured_product_research"
-claim_ceiling: "no_first_hand_claims"
+evidence_tier: specs_plus_sources
+methodology_mode: structured_product_research
+claim_ceiling: no_first_hand_claims
 hands_on_tested: false
-review_framing: "researched_buyer_analysis"
+review_framing: researched_buyer_analysis
 toc: true
 draft: false
 robots: index,follow
 source_basis:
-  - "structured product specifications"
-  - "retailer and listing details available at publication time"
-  - "editorial synthesis of fit, trade-offs, and buying criteria"
+- structured product specifications
+- retailer and listing details available at publication time
+- editorial synthesis of fit, trade-offs, and buying criteria
 keywords:
-  - "undersink carbon filter vs whole house carbon filter"
-  - "undersink carbon filter vs whole house carbon filter comparison"
-  - "undersink carbon filter or whole house carbon filter"
-  - "home water filtration"
+- undersink carbon filter vs whole house carbon filter
+- undersink carbon filter vs whole house carbon filter comparison
+- undersink carbon filter or whole house carbon filter
+- home water filtration
 tags:
-  - "undersink carbon filter vs whole house carbon filter"
-  - "water filter comparison"
-  - "home water filtration"
-  - "lane:convenience_vs_performance"
-
+- undersink carbon filter vs whole house carbon filter
+- water filter comparison
+- home water filtration
+- lane:convenience_vs_performance
 products:
 - name: iSpring US31 under-sink filter
   amazon_url: https://www.amazon.com/dp/B07CHXVRS5?tag=betterwaterguide-20
-  cta_label: Product link
+  cta_label: iSpring US31 under-sink filter
   cta_text: Check price on Amazon
 - name: iSpring WGB32B whole-house filter
   amazon_url: https://www.amazon.com/dp/B008GNRMYK?tag=betterwaterguide-20
-  cta_label: Product link
+  cta_label: iSpring WGB32B whole-house filter
   cta_text: Check price on Amazon
 ---
 If the goal is better-tasting drinking water at the kitchen sink, the undersink route keeps the job local. If the goal is to improve the water that reaches showers, laundry, and every indoor tap, the whole-house route reaches farther. Neither choice is a cure-all, and that matters more than the marketing language around either one.
+
+
+## Compare carbon capacity on the water you will actually treat
+
+Draw the treated branch for each option before comparing replacement costs. A dedicated under-sink drinking faucet may treat only drinking and cooking volumes. A direct-connect cold-tap installation also treats handwashing and other cold-tap use. A main-line system sees still more water, depending on branch layout.
+
+For illustration, a 1,000-gallon cartridge used at 2 gallons daily reaches that volume in 500 days; at 10 gallons daily it reaches it in 100 days. These are hypothetical inputs, not US31 ratings, and the manufacturer's calendar limit can require earlier replacement. The point is that the same cartridge has a different ownership pattern depending on the faucet it serves.
+
+Then compare the exact chlorine or chloramine claim, flow and rated capacity. Do not transfer a small drinking-water cartridge's reduction claim to a larger whole-house carbon tank or vice versa. The media family alone does not make the evidence equivalent. This branch-and-capacity check is useful even when both installations would physically fit.
 
 ## Quick comparison
 
@@ -53,7 +63,7 @@ If the goal is better-tasting drinking water at the kitchen sink, the undersink 
 | Main use case | Kitchen taste or odor on drinking and cooking water | Chlorine-style smell or taste in showers, sinks, and laundry |
 | Installation scope | Smaller cabinet-based project | More involved entry-point plumbing work |
 | Maintenance access | Easier to isolate at one faucet during service | Broader system affects the whole house during service |
-| When it is too broad | Too much if only one tap is affected | More system than needed when the complaint stays at the sink |
+| When it is a poor fit | Cannot cover other outlets that require treatment | More system than needed when the objective is limited to drinking water |
 
 The core trade-off is reach versus simplicity. Undersink carbon keeps the fix local, so it stays focused on the water people drink and cook with. Whole-house carbon spreads the same treatment to every indoor fixture, which makes sense when the complaint shows up beyond the kitchen but also turns the project into a main-line plumbing decision.
 
